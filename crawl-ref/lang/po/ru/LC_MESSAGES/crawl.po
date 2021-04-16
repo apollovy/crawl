@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Yury Apollov <apollovy@gmail.com>, 2021.
+#
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:675
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:724
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:737
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:836
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:843
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:863
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:935
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:937
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-17 02:17+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:136
+msgid "Loading databases..."
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:139
+msgid "Loading spells and features..."
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:145
+msgid "Loading maps..."
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:196
+msgid ""
+"Non-debug Crawl cannot run tests. Please use a debug build (defined "
+"FULLDEBUG, DEBUG_DIAGNOSTIC or DEBUG_TESTS)"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:228
+#, c-format
+msgid "Dismissing %s"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:338
+msgid "chk_startgame"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:338
+msgid "b"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:402
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:438
+msgid "Dungeon Crawl"
+msgstr "Барсучий жир"
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:403
+msgid "Dungeon Crawl: The main game: full of monsters, items, gods and danger!"
+msgstr "Барсучий жир"
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:405
+msgid "Choose Game Seed"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:406
+msgid "Play with a chosen custom dungeon seed."
+msgstr "Барсучий жир"
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:407
+msgid "Tutorial for Dungeon Crawl"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:408
+msgid "Tutorial that covers the basics of Dungeon Crawl survival."
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:409
+msgid "Hints Mode for Dungeon Crawl"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:410
+msgid ""
+"A mostly normal game that provides more advanced hints than the tutorial."
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:412
+msgid "Dungeon Sprint"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:413
+msgid "Hard, fixed single level game mode."
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:414
+msgid "Instructions"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:414
+msgid "Help menu."
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:415
+msgid "The Arena"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:416
+msgid "Pit computer controlled teams versus each other!"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:417
+msgid "High Scores"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:418
+msgid "View the high score list."
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:439
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:440
+msgid "crawl"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:439
+msgid ""
+"/Users/apollov/Library/Application Support/Dungeon Crawl Stone Soup/locale"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:459
+msgid "New Game"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:497
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:510
+msgid " (WIZ)"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:574
+msgid "Enter your name:"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:590
+msgid "Choices:"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:611
+msgid "Saved games:"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:668
+msgid "<white>[tab]</white> quick-load last game: "
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:669
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:676
+msgid "\n"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:674
+msgid "<white>[tab]</white> quick-start last combo: "
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:675
+msgid " the "
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:679
+msgid "<white>[ctrl-p]</white> view rc file information and log"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:681
+msgid " (<red>Errors during initialization!</red>)"
+msgstr ""
+
+#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:967
+msgid "cancel"
+msgstr ""

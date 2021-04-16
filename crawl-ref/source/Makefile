@@ -94,7 +94,8 @@
 ifndef GAME
 	GAME = crawl
 endif
-
+# FIXME: unbind from absolute path
+LIBS += /usr/local/lib/libintl.dylib
 # Disable GNU Make implicit rules and variables. Leaving them enabled will slow
 # down MinGW and Cygwin builds by a very VERY noticeable degree. Besides, we have
 # _explicit_ rules defined for everything. So we don't need them.
