@@ -64,6 +64,7 @@
 #include "viewmap.h"
 #include "wiz-dgn.h"
 #include "wiz-mon.h"
+#include "crawl_locale.h"
 
 enum LOSSelect
 {
@@ -3149,7 +3150,7 @@ static string _base_feature_desc(dungeon_feature_type grid, trap_type trap)
     else if (!is_valid_feature_type(grid))
         return "";
     else
-        return get_feature_def(grid).name;
+        return _(get_feature_def(grid).name);
 
 }
 
@@ -3280,7 +3281,7 @@ string feature_description_at(const coord_def& where, bool covering,
 
         desc += covering_description;
 
-        return thing_do_grammar(dtype, desc);
+        return thing_do_grammar(dtype, _(desc.c_str()));
     }
 
     switch (grid)

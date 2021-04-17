@@ -153,6 +153,7 @@
 #include "wiz-you.h" // FREEZE_TIME_KEY
 #include "wizard.h" // handle_wizard_command() and enter_explore_mode()
 #include "xom.h" // XOM_CLOUD_TRAIL_TYPE_KEY
+#include "crawl_locale.h"
 
 // ----------------------------------------------------------------------
 // Globals whose construction/destruction order needs to be managed
@@ -237,6 +238,9 @@ __attribute__((externally_visible))
 #endif
 int main(int argc, char *argv[])
 {
+    //FIXME: apollov: unbind from absolute path
+    bindtextdomain("crawl", "/Users/apollov/Library/Application Support/Dungeon Crawl Stone Soup/locale/mo");
+    textdomain("crawl");
 #ifndef __ANDROID__
 # ifdef DGAMELAUNCH
     // avoid commas instead of dots, etc, on CDO

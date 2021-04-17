@@ -62,8 +62,7 @@
  #include "windowmanager.h"
 #endif
 #include "ui.h"
-#include <libintl.h>
-#define _(String) gettext (String)
+#include "crawl_locale.h"
 
 using namespace ui;
 
@@ -433,9 +432,6 @@ static void _construct_game_modes_menu(shared_ptr<OuterMenu>& container)
         hbox->add_child(move(tile));
         hbox->add_child(label);
 #endif
-        //FIXME: unbind from absolute path
-        bindtextdomain("crawl", "/Users/apollov/Library/Application Support/Dungeon Crawl Stone Soup/locale/mo");
-        textdomain("crawl");
         label->set_text(formatted_string(_(entry.label), WHITE));
 
         auto btn = make_shared<MenuButton>();

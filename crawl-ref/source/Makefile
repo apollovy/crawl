@@ -94,7 +94,7 @@
 ifndef GAME
 	GAME = crawl
 endif
-# FIXME: unbind from absolute path
+# FIXME: apollov: unbind from absolute path
 LIBS += /usr/local/lib/libintl.dylib
 # Disable GNU Make implicit rules and variables. Leaving them enabled will slow
 # down MinGW and Cygwin builds by a very VERY noticeable degree. Besides, we have
@@ -185,9 +185,11 @@ DOXYGEN_SIMPLE_CONF = crawl_simple.doxy
 DOXYGEN_ALL_CONF = crawl_all.doxy
 DOXYGEN_HTML_GEN = html/
 # Prefer python3, if available
-PYTHON = python
-ifneq (, $(shell which python3 2>&1))
-	PYTHON = python3
+ifndef PYTHON
+	PYTHON = python
+	ifneq (, $(shell which python3 2>&1))
+		PYTHON = python3
+	endif
 endif
 
 export AR
