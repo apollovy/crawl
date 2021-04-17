@@ -42,6 +42,7 @@
 #include "version.h"
 #include "ui.h"
 #include "outer-menu.h"
+#include "crawl_locale.h"
 
 using namespace ui;
 
@@ -165,12 +166,12 @@ static string _welcome(const newgame_def& ng)
 {
     string text;
     if (ng.species != SP_UNKNOWN)
-        text = species::name(ng.species);
+        text = _(species::name(ng.species).c_str());
     if (ng.job != JOB_UNKNOWN)
     {
         if (!text.empty())
             text += " ";
-        text += get_job_name(ng.job);
+        text += _(get_job_name(ng.job));
     }
     if (!ng.name.empty())
     {
@@ -179,10 +180,10 @@ static string _welcome(const newgame_def& ng)
         text = ng.name + text;
     }
     else if (!text.empty())
-        text = "unnamed " + text;
+        text = _("unnamed ") + text;
     if (!text.empty())
         text = ", " + text;
-    text = "Welcome" + text + ".";
+    text = _("Welcome") + text + ".";
     return text;
 }
 
