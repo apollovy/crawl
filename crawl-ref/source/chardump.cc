@@ -58,6 +58,7 @@
 #include "viewchar.h"
 #include "view.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 struct dump_params;
 
@@ -189,10 +190,10 @@ bool dump_char(const string &fname, bool quiet, bool full_id,
 string seed_description()
 {
     return make_stringf(
-        "Game seed: %" PRIu64 "%s", crawl_state.seed,
+        _("Game seed: %" PRIu64 "%s"), crawl_state.seed,
             crawl_state.type == GAME_TYPE_CUSTOM_SEED
-            ? " (custom seed)"
-            : you.deterministic_levelgen ? "" : " (classic levelgen)");
+            ? _(" (custom seed)")
+            : you.deterministic_levelgen ? "" : _(" (classic levelgen)"));
 }
 
 static void _sdump_header(dump_params &par)

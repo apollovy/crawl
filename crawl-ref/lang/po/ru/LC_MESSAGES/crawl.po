@@ -704,7 +704,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:669
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:5198
 msgid " the "
-msgstr ""
+msgstr " "
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:182
 msgid "unnamed "
@@ -2873,7 +2873,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:433
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:3694
 msgid " back"
-msgstr ""
+msgstr " обратно"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:436
 msgid ".</yellow>"
@@ -88906,15 +88906,15 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/chardump.cc:192
 #, c-format
 msgid "Game seed: %<PRIu64>%s"
-msgstr ""
+msgstr "Семя игры: %<PRIu64>%s"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/chardump.cc:194
 msgid " (custom seed)"
-msgstr ""
+msgstr " (предопределённое семя)"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/chardump.cc:195
 msgid " (classic levelgen)"
-msgstr ""
+msgstr " (классический генератор уровней)"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/chardump.cc:204
 msgid " DCSS"
@@ -95006,3 +95006,7 @@ msgstr ""
 #, c-format
 msgid "Failed to start gdb: %s\n"
 msgstr ""
+
+#: crawl-ref/source/main.cc:436
+msgid "<yellow>Welcome%s, %s%s%s %s.</yellow>"
+msgstr "<yellow>Добро пожаловать%s, %s%s%s %s.</yellow>"

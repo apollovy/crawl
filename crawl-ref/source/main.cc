@@ -430,11 +430,11 @@ NORETURN static void _launch_game()
 
     if (!crawl_state.game_is_tutorial())
     {
-        msg::stream << "<yellow>Welcome" << (game_start? "" : " back") << ", "
-                    << you.your_name << " the "
-                    << species::name(you.species)
-                    << " " << get_job_name(you.char_class) << ".</yellow>"
-                    << endl;
+        msg::stream << make_stringf(
+                _("<yellow>Welcome%s, %s%s%s %s.</yellow>"),
+                game_start ? "" : _(" back"), you.your_name.c_str(), _(" the "),
+                _(species::name(you.species).c_str()), _(get_job_name(you.char_class))
+        ) << endl;
         // TODO: seeded sprint?
         if (crawl_state.type == GAME_TYPE_CUSTOM_SEED)
             msg::stream << "<white>" << seed_description() << "</white>" << endl;
