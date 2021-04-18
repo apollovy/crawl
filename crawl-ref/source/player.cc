@@ -90,6 +90,7 @@
 #include "view.h"
 #include "wizard-option-type.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 static void _moveto_maybe_repel_stairs()
 {
@@ -5177,7 +5178,7 @@ bool player_save_info::operator<(const player_save_info& rhs) const
 string player_save_info::really_short_desc() const
 {
     ostringstream desc;
-    desc << name << " the " << species_name << ' ' << class_name;
+    desc << name << _(" the ") << _(species_name.c_str()) << ' ' << _(class_name.c_str());
 
     return desc.str();
 }
@@ -5192,13 +5193,18 @@ string player_save_info::short_desc(bool use_qualifier) const
     if (!qualifier.empty())
         desc << "[" << qualifier << "] ";
 
-    desc << name << ", a level " << experience_level << ' '
-         << species_name << ' ' << class_name;
-
-    if (religion == GOD_JIYVA)
-        desc << " of " << god_name << " " << jiyva_second_name;
-    else if (religion != GOD_NO_GOD)
-        desc << " of " << god_name;
+    desc << make_stringf(
+            _("%s, a level %i %s %s%s"),
+            name.c_str(), experience_level, _(species_name.c_str()), _(class_name.c_str()),
+            religion == GOD_JIYVA ? make_stringf(
+                    _(" of %s %s"),
+                    _(god_name.c_str()), _(jiyva_second_name.c_str())
+            ).c_str() :
+            religion != GOD_NO_GOD ? make_stringf(
+                    _(" of %s"),
+                    _(god_name.c_str())
+                    ).c_str() : ""
+    );
 
 #ifdef WIZARD
     if (wizard)

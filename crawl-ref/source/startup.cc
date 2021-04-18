@@ -132,16 +132,16 @@ static void _initialize()
 #endif
 
     // Initialise internal databases.
-    _loading_message("Loading databases...");
+    _loading_message(_("Loading databases..."));
     databaseSystemInit();
 
-    _loading_message("Loading spells and features...");
+    _loading_message(_("Loading spells and features..."));
     init_feat_desc_cache();
     init_spell_name_cache();
     init_spell_rarities();
 
     // Read special levels and vaults.
-    _loading_message("Loading maps...");
+    _loading_message(_("Loading maps..."));
     read_maps();
     run_map_global_preludes();
 
@@ -192,9 +192,9 @@ static void _initialize()
         run_tests();
         // doesn't return
 #else
-        end(1, false, "Non-debug Crawl cannot run tests. "
+        end(1, false, _("Non-debug Crawl cannot run tests. "
             "Please use a debug build (defined FULLDEBUG, DEBUG_DIAGNOSTIC "
-            "or DEBUG_TESTS)");
+            "or DEBUG_TESTS)"));
 #endif
     }
 
@@ -224,7 +224,7 @@ static void _zap_los_monsters()
         if (mon == nullptr || !mons_is_threatening(*mon) || mon->friendly())
             continue;
 
-        dprf("Dismissing %s",
+        dprf(_("Dismissing %s"),
              mon->name(DESC_PLAIN, true).c_str());
 
         if (mons_is_or_was_unique(*mon))
@@ -442,7 +442,7 @@ static void _construct_game_modes_menu(shared_ptr<OuterMenu>& container)
         btn->set_child(move(label));
 #endif
         btn->id = entry.id;
-        btn->description = entry.description;
+        btn->description = _(entry.description);
         btn->highlight_colour = LIGHTGREY;
         container->add_button(move(btn), 0, i);
     }
@@ -450,7 +450,7 @@ static void _construct_game_modes_menu(shared_ptr<OuterMenu>& container)
 
 static shared_ptr<MenuButton> _make_newgame_button(int num_chars)
 {
-    auto label = make_shared<Text>(formatted_string("New Game", WHITE));
+    auto label = make_shared<Text>(formatted_string(_("New Game"), WHITE));
 
 #ifdef USE_TILE_LOCAL
     auto hbox = make_shared<Box>(Box::HORZ);
@@ -565,7 +565,7 @@ public:
         auto grid = make_shared<Grid>();
         grid->set_margin_for_crt(0, 0, 1, 0);
 
-        auto name_prompt = make_shared<Text>("Enter your name:");
+        auto name_prompt = make_shared<Text>(_("Enter your name:"));
         name_prompt->set_margin_for_crt(0, 1, 1, 0);
         name_prompt->set_margin_for_sdl(0, 0, 10, 0);
 
@@ -581,7 +581,7 @@ public:
 
         descriptions = make_shared<Switcher>();
 
-        auto mode_prompt = make_shared<Text>("Choices:");
+        auto mode_prompt = make_shared<Text>(_("Choices:"));
         mode_prompt->set_margin_for_crt(0, 1, 1, 0);
         mode_prompt->set_margin_for_sdl(0, 0, 10, 0);
         game_modes_menu = make_shared<OuterMenu>(true, 1, ARRAYSZ(entries));
@@ -602,7 +602,7 @@ public:
         save_games_menu = make_shared<OuterMenu>(num_saves > 1, 1, num_saves + 1);
         if (num_saves > 0)
         {
-            auto save_prompt = make_shared<Text>("Saved games:");
+            auto save_prompt = make_shared<Text>(_("Saved games:"));
             save_prompt->set_margin_for_crt(0, 1, 1, 0);
             save_prompt->set_margin_for_sdl(0, 0, 10, 0);
             save_games_menu->set_margin_for_sdl(0, 0, 10, 10);
@@ -659,20 +659,20 @@ public:
         {
             auto save = _find_save(chars, defaults.name);
             instructions_text +=
-                    "<white>[tab]</white> quick-load last game: "
+                    _("<white>[tab]</white> quick-load last game: ")
                     + chars[save].really_short_desc() + "\n";
         }
         else if (_game_defined(defaults))
         {
             instructions_text +=
-                    "<white>[tab]</white> quick-start last combo: "
+                    _("<white>[tab]</white> quick-start last combo: ")
                     + (defaults.name.size() ? (defaults.name + " the ") : "")
                     + newgame_char_description(defaults) + "\n";
         }
         instructions_text +=
-            "<white>[ctrl-p]</white> view rc file information and log";
+            _("<white>[ctrl-p]</white> view rc file information and log");
         if (recent_error_messages())
-            instructions_text += " (<red>Errors during initialization!</red>)";
+            instructions_text += _(" (<red>Errors during initialization!</red>)");
 
         m_root->add_child(make_shared<Text>(
                         formatted_string::parse_string(instructions_text)));

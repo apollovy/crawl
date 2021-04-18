@@ -8853,14 +8853,14 @@ msgid "You draw %s blood!"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ng-input.cc:20
-msgid "<yellow>Hello, welcome to "
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ng-input.cc:20
 msgid ""
-"!</yellow>\n"
-"<brown>(c) Copyright 1997-2002 Linley Henzell, 2002-2021 Crawl DevTeam"
+"<yellow>Hello, welcome to %s %s!</yellow>\n"
+"<brown>(c) Copyright 1997-2002 Linley Henzell, 2002-2021 Crawl "
+"DevTeam</brown>"
 msgstr ""
+"<yellow>Здравствуйте, добро пожаловать в %s</yellow>\n"
+"<brown>(c) Copyright 1997-2002 Linley Henzell, 2002-2021 Команда разработки "
+"Crawl</brown>"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ng-input.cc:33
 msgid "<lightgrey>Options read from \""
@@ -10226,7 +10226,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/species-data.h:29
 msgid "Barachi"
-msgstr ""
+msgstr "Барахим"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/species-data.h:29
 msgid "Barachian"
@@ -19714,7 +19714,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/state.cc:618
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:410
 msgid "Dungeon Sprint"
-msgstr ""
+msgstr "Забег по подземелью"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/state.cc:620
 msgid "Unknown"
@@ -59645,7 +59645,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/job-data.h:163
 msgid "Gladiator"
-msgstr ""
+msgstr "Гладиатор"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/job-data.h:167
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/invent.cc:1033
@@ -70556,6 +70556,9 @@ msgid ""
 "Non-debug Crawl cannot run tests. Please use a debug build (defined "
 "FULLDEBUG, DEBUG_DIAGNOSTIC or DEBUG_TESTS)"
 msgstr ""
+"Игра, собранная не для отладки, не может запускать тесты. Пожалуйста, "
+"используйте отладочную сборку (задав флаги FULLDEBUG, DEBUG_DIAGNOSTIC или "
+"DEBUG_TESTS)"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:227
 #, c-format
@@ -70573,79 +70576,82 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:401
 msgid "Dungeon Crawl: The main game: full of monsters, items, gods and danger!"
 msgstr ""
+"Dungeon Crawl: Основная игра: полная монстров, предметов, богов и опасности!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:403
 msgid "Choose Game Seed"
-msgstr ""
+msgstr "Выбрать Семя Игры"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:404
 msgid "Play with a chosen custom dungeon seed."
-msgstr ""
+msgstr "Играть с выбранным заданным семенем игры."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:405
 msgid "Tutorial for Dungeon Crawl"
-msgstr ""
+msgstr "Обучение Dungeon Crawl"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:406
 msgid "Tutorial that covers the basics of Dungeon Crawl survival."
-msgstr ""
+msgstr "Обучающий курс, который содержит азы выживания в Dungeon Crawl."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:407
 msgid "Hints Mode for Dungeon Crawl"
-msgstr ""
+msgstr "Режим подсказок для Dungeon Crawl"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:408
 msgid ""
 "A mostly normal game that provides more advanced hints than the tutorial."
 msgstr ""
+"В основном, нормальная игра, в которой даются более продвинутые подсказки, "
+"чем в обучении азам."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:411
 msgid "Hard, fixed single level game mode."
-msgstr ""
+msgstr "Сложный игровой режим с одним предопределённым уровнем."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:412
 msgid "Instructions"
-msgstr ""
+msgstr "Инструкции"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:412
 msgid "Help menu."
-msgstr ""
+msgstr "Меню помощи."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:413
 msgid "The Arena"
-msgstr ""
+msgstr "Арена"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:414
 msgid "Pit computer controlled teams versus each other!"
-msgstr ""
+msgstr "Столкнитесь с контролируемыми компьютером командами друг против друга!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:415
 msgid "High Scores"
-msgstr ""
+msgstr "Рекорды"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:416
 msgid "View the high score list."
-msgstr ""
+msgstr "Посмотреть список лучших результатов."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:453
 msgid "New Game"
-msgstr ""
+msgstr "Новая игра"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:568
 msgid "Enter your name:"
-msgstr ""
+msgstr "Введите ваше имя:"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:584
 msgid "Choices:"
-msgstr ""
+msgstr "Варианты:"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:605
 msgid "Saved games:"
-msgstr ""
+msgstr "Сохранённые игры:"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:662
 msgid "<white>[tab]</white> quick-load last game: "
-msgstr ""
+msgstr "<white>[tab]</white> быстрая загрузка последней игры: "
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:668
 msgid "<white>[tab]</white> quick-start last combo: "
@@ -70653,7 +70659,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:673
 msgid "<white>[ctrl-p]</white> view rc file information and log"
-msgstr ""
+msgstr "<white>[ctrl-p]</white> просмотреть информацию rc файла и лог"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:675
 msgid " (<red>Errors during initialization!</red>)"
@@ -88721,7 +88727,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/loading-screen.cc:56
 msgid "Loading complete, press any key to start."
-msgstr ""
+msgstr "Загрузка завершена, нажмите любую клавишу, чтобы начать."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-movetarget.cc:78
 msgid "No path found!"

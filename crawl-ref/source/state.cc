@@ -23,6 +23,7 @@
 #include "religion.h"
 #include "showsymb.h"
 #include "unwind.h"
+#include "crawl_locale.h"
 
 game_state::game_state()
     : game_crashed(false), crash_debug_scans_safe(true),
@@ -609,15 +610,15 @@ string game_state::game_type_name_for(game_type _type)
         // No explicit game type name for default game.
         return "";
     case GAME_TYPE_CUSTOM_SEED:
-        return "Seeded";
+        return _("Seeded");
     case GAME_TYPE_TUTORIAL:
-        return "Tutorial";
+        return _("Tutorial");
     case GAME_TYPE_ARENA:
-        return "Arena";
+        return _("Arena");
     case GAME_TYPE_SPRINT:
-        return "Dungeon Sprint";
+        return _("Dungeon Sprint");
     case NUM_GAME_TYPE:
-        return "Unknown";
+        return _("Unknown");
     }
 }
 

@@ -12,13 +12,16 @@
 #include "stringutil.h"
 #include "unicode.h"
 #include "version.h"
+#include "crawl_locale.h"
 
 // Eventually, this should be something more grand. {dlb}
 formatted_string opening_screen()
 {
-    string msg =
-    "<yellow>Hello, welcome to " CRAWL " " + string(Version::Long) + "!</yellow>\n"
-    "<brown>(c) Copyright 1997-2002 Linley Henzell, 2002-2021 Crawl DevTeam";
+    string msg = make_stringf(_(
+            "<yellow>Hello, welcome to %s %s!</yellow>\n"
+            "<brown>(c) Copyright 1997-2002 Linley Henzell, 2002-2021 Crawl DevTeam</brown>"
+            ), _(CRAWL), string(Version::Long).c_str()
+    );
 
     return formatted_string::parse_string(msg);
 }
