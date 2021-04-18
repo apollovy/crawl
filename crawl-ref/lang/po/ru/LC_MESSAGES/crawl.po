@@ -95016,3 +95016,7 @@ msgstr ""
 #: crawl-ref/source/main.cc:436
 msgid "<yellow>Welcome%s, %s%s%s %s.</yellow>"
 msgstr "<yellow>Добро пожаловать%s, %s%s%s %s.</yellow>"
+
+#: crawl-ref/source/player.cc:5220
+msgid "%s, a level %i %s %s%s"
+msgstr "%s, %3$s %4$s%5$s уровня %2$i"
