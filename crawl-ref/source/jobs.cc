@@ -12,6 +12,7 @@
 #include "stringutil.h"
 
 #include "job-data.h"
+#include "crawl_locale.h"
 
 static const job_def& _job_def(job_type job)
 {
@@ -38,9 +39,9 @@ job_type get_job_by_abbrev(const char *abbrev)
 const char *get_job_name(job_type which_job)
 {
     if (which_job == JOB_UNKNOWN)
-        return "Unemployed";
+        return _("Unemployed");
 
-    return _job_def(which_job).name;
+    return _(_job_def(which_job).name);
 }
 
 job_type get_job_by_name(const char *name)

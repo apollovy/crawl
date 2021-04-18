@@ -176,7 +176,7 @@ static string _welcome(const newgame_def& ng)
     if (!ng.name.empty())
     {
         if (!text.empty())
-            text = " the " + text;
+            text = _(" the ") + text;
         text = ng.name + text;
     }
     else if (!text.empty())
@@ -307,6 +307,8 @@ static string _highlight_pattern(const newgame_def& ng)
 static void _prompt_choice(int choice_type, newgame_def& ng, newgame_def& ng_choice,
                         const newgame_def& defaults);
 
+static shared_ptr<Box> _create_titled_box(newgame_def &ng);
+
 static void _choose_species_job(newgame_def& ng, newgame_def& ng_choice,
                                 const newgame_def& defaults)
 {
@@ -339,30 +341,7 @@ static void _choose_species_job(newgame_def& ng, newgame_def& ng_choice,
 // reroll characters until the player accepts one of them or quits.
 static bool _reroll_random(newgame_def& ng)
 {
-    string specs = chop_string(species::name(ng.species), 79, false);
-
-    formatted_string prompt;
-    prompt.cprintf("You are a%s %s %s.",
-            (is_vowel(specs[0])) ? "n" : "", specs.c_str(),
-            get_job_name(ng.job));
-
-    auto title_hbox = make_shared<Box>(Widget::HORZ);
-#ifdef USE_TILE
-    dolls_data doll;
-    fill_doll_for_newgame(doll, ng);
-#ifdef USE_TILE_LOCAL
-    auto tile = make_shared<ui::PlayerDoll>(doll);
-    tile->set_margin_for_sdl(0, 10, 0, 0);
-    title_hbox->add_child(move(tile));
-#endif
-#endif
-    title_hbox->add_child(make_shared<Text>(prompt));
-    title_hbox->set_cross_alignment(Widget::CENTER);
-    title_hbox->set_margin_for_sdl(0, 0, 20, 0);
-    title_hbox->set_margin_for_crt(0, 0, 1, 0);
-
-    auto vbox = make_shared<Box>(Box::VERT);
-    vbox->add_child(move(title_hbox));
+    shared_ptr<Box> vbox = _create_titled_box(ng);
     vbox->add_child(make_shared<Text>("Do you want to play this combination? [Y/n/q]"));
     auto popup = make_shared<ui::Popup>(move(vbox));
 
@@ -554,30 +533,8 @@ static void _choose_name(newgame_def& ng, newgame_def& choice)
     bool good_name = true;
     bool cancel = false;
 
-    string specs = chop_string(species::name(ng.species), 79, false);
+    shared_ptr<Box> vbox = _create_titled_box(ng);
 
-    formatted_string title;
-    title.cprintf("You are a%s %s %s.",
-            (is_vowel(specs[0])) ? "n" : "", specs.c_str(),
-            get_job_name(ng.job));
-
-    auto title_hbox = make_shared<Box>(Widget::HORZ);
-#ifdef USE_TILE
-    dolls_data doll;
-    fill_doll_for_newgame(doll, ng);
-#ifdef USE_TILE_LOCAL
-    auto tile = make_shared<ui::PlayerDoll>(doll);
-    tile->set_margin_for_sdl(0, 10, 0, 0);
-    title_hbox->add_child(move(tile));
-#endif
-#endif
-    title_hbox->add_child(make_shared<Text>(title));
-    title_hbox->set_cross_alignment(Widget::CENTER);
-    title_hbox->set_margin_for_sdl(0, 0, 20, 0);
-    title_hbox->set_margin_for_crt(0, 0, 1, 0);
-
-    auto vbox = make_shared<Box>(Box::VERT);
-    vbox->add_child(move(title_hbox));
     auto prompt_ui = make_shared<Text>();
     vbox->add_child(prompt_ui);
 
@@ -585,15 +542,15 @@ static void _choose_name(newgame_def& ng, newgame_def& choice)
     vbox->add_child(sub_items);
 
     _add_menu_sub_item(sub_items, 0, 0,
-            "Esc - Quit", "", CK_ESCAPE, CK_ESCAPE);
+            _("Esc - Quit"), "", CK_ESCAPE, CK_ESCAPE);
     _add_menu_sub_item(sub_items, 1, 0,
-            "* - Random name", "", '*', '*');
+            _("* - Random name"), "", '*', '*');
 
     auto ok_switcher = make_shared<Switcher>();
     ok_switcher->align_y = Widget::STRETCH;
     {
         auto tmp = make_shared<Text>();
-        tmp->set_text(formatted_string("Enter - Begin!", BROWN));
+        tmp->set_text(formatted_string(_("Enter - Begin!"), BROWN));
 
         auto btn = make_shared<MenuButton>();
         btn->on_activate_event([&](const ActivateEvent&) {
@@ -674,12 +631,12 @@ static void _choose_name(newgame_def& ng, newgame_def& choice)
     {
         formatted_string prompt;
         prompt.textcolour(CYAN);
-        prompt.cprintf("What is your name today? ");
+        prompt.cprintf(_("What is your name today? "));
         prompt.textcolour(LIGHTGREY);
         prompt.cprintf("%s\n", buf);
         prompt.textcolour(LIGHTRED);
         if (overwrite_prompt)
-            prompt.cprintf("You have an existing game under this name; really overwrite? [Y/n]");
+            prompt.cprintf(_("You have an existing game under this name; really overwrite? [Y/n]"));
         prompt_ui->set_text(prompt);
 
         ui::pump_events();
@@ -688,6 +645,34 @@ static void _choose_name(newgame_def& ng, newgame_def& choice)
 
     if (cancel || crawl_state.seen_hups)
         game_ended(game_exit::abort);
+}
+
+static shared_ptr<Box> _create_titled_box(newgame_def &ng) {
+    string specs = chop_string(species::name(ng.species), 79, false);
+
+    formatted_string title;
+    title.cprintf(_("You are a%s %s %s."),
+            (is_vowel(specs[0])) ? "n" : "", specs.c_str(),
+            get_job_name(ng.job));
+
+    auto title_hbox = make_shared<Box>(Widget::HORZ);
+#ifdef USE_TILE
+    dolls_data doll;
+        fill_doll_for_newgame(doll, ng);
+#ifdef USE_TILE_LOCAL
+        auto tile = make_shared<ui::PlayerDoll>(doll);
+        tile->set_margin_for_sdl(0, 10, 0, 0);
+        title_hbox->add_child(move(tile));
+#endif
+#endif
+    title_hbox->add_child(make_shared<Text>(title));
+    title_hbox->set_cross_alignment(Widget::CENTER);
+    title_hbox->set_margin_for_sdl(0, 0, 20, 0);
+    title_hbox->set_margin_for_crt(0, 0, 1, 0);
+
+    auto vbox = make_shared<Box>(Box::VERT);
+    vbox->add_child(move(title_hbox));
+    return vbox;
 }
 
 #endif
@@ -1141,8 +1126,9 @@ public:
         welcome.textcolour(BROWN);
         welcome.cprintf("%s", _welcome(m_ng).c_str());
         welcome.textcolour(YELLOW);
-        welcome.cprintf(" Please select your ");
-        welcome.cprintf(m_choice_type == C_JOB ? "background." : "species.");
+        welcome.cprintf(
+                m_choice_type == C_JOB ? _(" Please select your background.") : _(" Please select your species.")
+                );
         m_vbox->add_child(make_shared<Text>(welcome));
 
         descriptions = make_shared<Switcher>();
@@ -1324,15 +1310,12 @@ protected:
                                         const newgame_def& ng,
                                         const newgame_def& defaults)
     {
-        string choice_name = choice_type == C_JOB ? "background" : "species";
-        string other_choice_name = choice_type == C_JOB ? "species" : "background";
-
         string text, desc;
 
         if (choice_type == C_SPECIES)
-            text = "+ - Recommended species";
+            text = _("+ - Recommended species");
         else
-            text = "+ - Recommended background";
+            text = _("+ - Recommended background");
 
         int id;
         // If the player has species chosen, use VIABLE, otherwise use RANDOM
@@ -1343,43 +1326,53 @@ protected:
         }
         else
             id = M_RANDOM;
-        desc = "Picks a random recommended " + other_choice_name + " based on your current " + choice_name + " choice.";
+        desc = choice_type == C_JOB ? _("Picks a random recommended background based on your current species choice.") :
+                _("Picks a random recommended species based on your current background choice.");
 
         _add_choice_menu_option(0, 0,
                 text, '+', id, desc);
 
         _add_choice_menu_option(0, 1,
-                "# - Recommended character", '#', M_VIABLE_CHAR,
-                "Shuffles through random recommended character combinations "
-                "until you accept one.");
+                _("# - Recommended character"), '#', M_VIABLE_CHAR,
+                _("Shuffles through random recommended character combinations "
+                "until you accept one."));
 
         _add_choice_menu_option(0, 2,
-                "% - List aptitudes", '%', M_APTITUDES,
-                "Lists the numerical skill train aptitudes for all races.");
+                _("% - List aptitudes"), '%', M_APTITUDES,
+                _("Lists the numerical skill train aptitudes for all races."));
 
         _add_choice_menu_option(0, 3,
-                "? - Help", '?', M_HELP,
-                "Opens the help screen.");
+                _("? - Help"), '?', M_HELP,
+                _("Opens the help screen."));
 
         _add_choice_menu_option(1, 0,
-                "    * - Random " + choice_name, '*', M_RANDOM,
-                "Picks a random " + choice_name + ".");
+                choice_type == C_JOB ? _("    * - Random background") : _("    * - Random species"), '*', M_RANDOM,
+                choice_type == C_JOB ? _("Picks a random background.") : _("Picks a random species."));
 
         _add_choice_menu_option(1, 1,
-                "    ! - Random character", '!', M_RANDOM_CHAR,
-                "Shuffles through random character combinations "
-                "until you accept one.");
+                _("    ! - Random character"), '!', M_RANDOM_CHAR,
+                _("Shuffles through random character combinations "
+                "until you accept one."));
 
-        if ((choice_type == C_JOB && ng.species != SP_UNKNOWN)
-            || (choice_type == C_SPECIES && ng.job != JOB_UNKNOWN))
+        if (choice_type == C_JOB && ng.species != SP_UNKNOWN)
         {
-            text = "Space - Change " + other_choice_name;
-            desc = "Lets you change your " + other_choice_name + " choice.";
+            text = _("Space - Change background");
+            desc = _("Lets you change your background choice.");
         }
-        else
+        else if (choice_type == C_SPECIES && ng.job != JOB_UNKNOWN)
         {
-            text = "Space - Pick " + other_choice_name + " first";
-            desc = "Lets you pick your " + other_choice_name + " first.";
+            text = _("Space - Change species");
+            desc = _("Lets you change your species choice.");
+        }
+        else if (choice_type == C_SPECIES)
+        {
+            text = _("Space - Pick background first");
+            desc = _("Lets you pick your background first.");
+        }
+        else if (choice_type == C_JOB)
+        {
+            text = _("Space - Pick species first");
+            desc = _("Lets you pick your species first.");
         }
         _add_choice_menu_option(1, 2,
                 text, ' ', M_ABORT, desc);
@@ -1389,7 +1382,7 @@ protected:
             _add_choice_menu_option(1, 3,
                     "  Tab - " + newgame_char_description(defaults), '\t',
                     M_DEFAULT_CHOICE,
-                    "Play a new game with your previous choice.");
+                    _("Play a new game with your previous choice."));
         }
     }
 

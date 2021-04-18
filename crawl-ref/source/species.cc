@@ -17,6 +17,7 @@
 #include "tiledoll.h"
 
 #include "species-data.h"
+#include "crawl_locale.h"
 
 /*
  * Get the species_def for the given species type. Asserts if the species_type
@@ -45,10 +46,10 @@ namespace species
     {
         const species_def& def = get_species_def(speci);
         if (spname_type == SPNAME_GENUS && def.genus_name)
-            return def.genus_name;
+            return _(def.genus_name);
         else if (spname_type == SPNAME_ADJ && def.adj_name)
-            return def.adj_name;
-        return def.name;
+            return _(def.adj_name);
+        return _(def.name);
     }
 
     /// Does exact case-sensitive lookup of a species name
