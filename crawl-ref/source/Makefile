@@ -94,8 +94,6 @@
 ifndef GAME
 	GAME = crawl
 endif
-# FIXME: apollov: unbind from absolute path
-LIBS += /usr/local/lib/libintl.dylib
 # Disable GNU Make implicit rules and variables. Leaving them enabled will slow
 # down MinGW and Cygwin builds by a very VERY noticeable degree. Besides, we have
 # _explicit_ rules defined for everything. So we don't need them.
@@ -268,6 +266,7 @@ ifdef msys
 	endif
 endif
 ifeq ($(uname_S),Darwin)
+	LIBS += /usr/local/lib/libintl.dylib
 ifdef MAC_TARGET
 	# for reasons I really cannot figure out, setting GAME later (when the
 	# other MAC_TARGET checks are done) really does not work.
@@ -330,7 +329,7 @@ ifdef BUILD_ALL
 endif
 
 # Should be the first rule, but must come after $(GAME) is set.
-all: greet check-fonts $(GAME) docs webserver
+all: greet check-fonts $(GAME) docs webserver l10n
 
 LIBPCRE := contrib/install/$(ARCH)/lib/libpcre.a
 LIBSDL2 := contrib/install/$(ARCH)/lib/libSDL2.a
@@ -1670,7 +1669,7 @@ doxygen-simple:
 doxy-all: doxygen-all
 doxygen-all:
 	$(DOXYGEN) $(DOXYGEN_ALL_CONF)
-
+l10n: $(shell msgfmt -o ./lang/mo/ru/LC_MESSAGES/crawl.mo ./lang/po/ru/LC_MESSAGES/crawl.po)
 # Dependency generation
 #
 ifndef NO_INLINE_DEPGEN

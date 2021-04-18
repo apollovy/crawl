@@ -238,8 +238,7 @@ __attribute__((externally_visible))
 #endif
 int main(int argc, char *argv[])
 {
-    //FIXME: apollov: unbind from absolute path
-    bindtextdomain("crawl", "/Users/apollov/Library/Application Support/Dungeon Crawl Stone Soup/locale/mo");
+    bindtextdomain("crawl", "./lang/mo");
     textdomain("crawl");
 #ifndef __ANDROID__
 # ifdef DGAMELAUNCH
