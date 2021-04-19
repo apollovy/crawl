@@ -79,6 +79,11 @@ static const char *features[] =
 #ifdef DGL_MILESTONES
     "Milestones",
 #endif
+
+#if defined(ENABLE_NLS) && ENABLE_NLS
+    "Localization",
+#endif
+
 };
 
 static string _get_version_information()

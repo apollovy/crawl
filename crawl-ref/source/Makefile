@@ -106,7 +106,7 @@ MAKEFLAGS += -rR # This only works for recursive makes, i.e. contribs ...
         distclean debug debug-lite profile package-source source \
         build-windows package-windows-installer docs greet api api-dev android FORCE \
         monster catch2-tests plug-and-play-tests \
-        crawl-universal crawl-arm64-apple-macos11 crawl-x86_64-apple-macos10.7 clean-mac
+        crawl-universal crawl-arm64-apple-macos11 crawl-x86_64-apple-macos10.7 clean-mac l10n
 
 include Makefile.obj
 
@@ -154,6 +154,12 @@ CFWARN_L += -Wextra \
 	    -Wno-uninitialized \
 
 DEFINES := $(EXTERNAL_DEFINES)
+
+ifdef ENABLE_NLS
+	# it's VERY important to leave 1 here, because with other values it might not work as expected
+	DEFINES += -DENABLE_NLS=1
+endif
+
 
 ifndef ANDROID
 LDFLAGS :=

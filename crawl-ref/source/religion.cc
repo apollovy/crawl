@@ -70,6 +70,7 @@
 #include "terrain.h"
 #include "transform.h"
 #include "view.h"
+#include "crawl_locale.h"
 
 #ifdef DEBUG_RELIGION
 #    define DEBUG_DIAGNOSTICS
@@ -4725,4 +4726,13 @@ const god_power* god_power_from_ability(ability_type abil)
         }
     }
     return nullptr;
+}
+
+const char* god_description(god_type religion, const string& god_name, const string& jiyva_second_name)
+{
+    return religion == GOD_JIYVA ? _(make_stringf(
+            " of %s %s",
+            god_name.c_str(), jiyva_second_name.c_str()
+    ).c_str()) :
+           religion != GOD_NO_GOD ? _(make_stringf(" of %s", god_name.c_str()).c_str()) : "";
 }

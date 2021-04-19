@@ -282,6 +282,7 @@ static void _nowrap_eol_cprintf_touchui(const char *format, ...)
 #define CPRINTF wrapcprintf
 #define NOWRAP_EOL_CPRINTF nowrap_eol_cprintf
 #endif
+#include "crawl_locale.h"
 
 static string _god_powers();
 static string _god_asterisks();
@@ -1272,9 +1273,7 @@ static void _redraw_title()
     }
     else
     {
-        string god = " of ";
-        god += you_worship(GOD_JIYVA) ? god_name_jiyva(true)
-                                      : god_name(you.religion);
+        string god = god_description(you.religion, god_name(you.religion), you.jiyva_second_name);
         NOWRAP_EOL_CPRINTF("%s", god.c_str());
 
         string piety = _god_asterisks();

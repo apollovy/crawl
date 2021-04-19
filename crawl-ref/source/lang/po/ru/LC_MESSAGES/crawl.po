@@ -18845,34 +18845,13 @@ msgstr ""
 msgid "an "
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1558
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1331
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:836
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:838
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:839
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:192
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:204
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:228
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:1823
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/throw.cc:527
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:387
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:402
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:417
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2566
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/traps.cc:141
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/movement.cc:334
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/movement.cc:337
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-util.cc:1169
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-util.cc:3139
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/fight.cc:1052
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/fight.cc:1107
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/fight.cc:1110
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/fight.cc:1193
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/fight.cc:1196
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/skills.cc:1840
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1148
+msgctxt "player_title"
 msgid "the "
 msgstr ""
+
+msgctxt "player_title"
+msgid "%s%s"
+msgstr "%2$s"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1576
 msgid "There "
@@ -70443,7 +70422,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:144
 msgid "Loading maps..."
-msgstr ""
+msgstr "Загрузка карт..."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:195
 msgid ""
@@ -94926,3 +94905,6 @@ msgstr " Пожалуйста, выберите свою профессию."
 #: crawl-ref/source/newgame.cc:1145
 msgid " Please select your species."
 msgstr " Пожалуйста, выберите свой вид."
+
+msgid "Marksfrog"
+msgstr "Снайквер"

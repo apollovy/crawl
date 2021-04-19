@@ -5,7 +5,8 @@
 #ifndef SOURCE_CRAWL_LOCALE_H
 #define SOURCE_CRAWL_LOCALE_H
 
-#include <libintl.h>
-#define _(String) gettext (String)
+#include "gettext.h"
+#define _(Msgid) gettext (Msgid)
+#define __(Msgctxt, Msgid) pgettext_expr (Msgctxt, Msgid)
 
 #endif //SOURCE_CRAWL_LOCALE_H

@@ -35,6 +35,7 @@
 #include "state.h"
 #include "stringutil.h"
 #include "tag-version.h"
+#include "crawl_locale.h"
 
 // MAX_COST_LIMIT is the maximum XP amount it will cost to raise a skill
 //                by 10 skill points (ie one standard practice).
@@ -1824,7 +1825,7 @@ string skill_title_by_rank(skill_type best_skill, uint8_t skill_rank,
         { "Weight", _stk_weight(species) },
     };
 
-    return replace_keys(result, replacements);
+    return _(replace_keys(result, replacements).c_str());
 }
 
 /** What is the player's current title.
@@ -1834,11 +1835,12 @@ string skill_title_by_rank(skill_type best_skill, uint8_t skill_rank,
  */
 string player_title(bool the)
 {
+    const char* text_context = "player_title";
     const skill_type best = best_skill(SK_FIRST_SKILL, SK_LAST_SKILL);
     const string title =
             skill_title_by_rank(best, get_skill_rank(you.skills[best]));
-    const string article = !the ? "" : title == "Petite Mort" ? "La " : "the ";
-    return article + title;
+    const string article = !the ? "" : title == _("Petite Mort") ? __(text_context, "La ") : __(text_context, "the ");
+    return make_stringf(__(text_context, "%s%s"), article.c_str(), title.c_str());
 }
 
 skill_type best_skill(skill_type min_skill, skill_type max_skill,

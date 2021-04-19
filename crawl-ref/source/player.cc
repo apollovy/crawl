@@ -5196,11 +5196,7 @@ string player_save_info::short_desc(bool use_qualifier) const
     desc << make_stringf(
             _("%s, a level %i %s %s%s"),
             name.c_str(), experience_level, _(species_name.c_str()), _(class_name.c_str()),
-            religion == GOD_JIYVA ? _(make_stringf(
-                    " of %s %s",
-                    god_name.c_str(), jiyva_second_name.c_str()
-            ).c_str()) :
-            religion != GOD_NO_GOD ? _(make_stringf(" of %s", god_name.c_str()).c_str()) : ""
+            god_description(religion, god_name, jiyva_second_name)
     );
 
 #ifdef WIZARD
