@@ -22,12 +22,12 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:55
 msgid "Failed to spawn projectile."
-msgstr ""
+msgstr "Не удалось создать снаряд."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:64
 #, c-format
 msgid "beam (%d,%d)+t*(%d,%d)  ray (%f,%f)+t*(%f,%f)"
-msgstr ""
+msgstr "луч (%d,%d)+t*(%d,%d)  луч (%f,%f)+t*(%f,%f)"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:92
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:3791
@@ -69,7 +69,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6842
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6852
 msgid "you"
-msgstr ""
+msgstr "вы"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:156
 #, c-format
@@ -93,7 +93,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:173
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mi-enum.h:75
 msgid "firewood"
-msgstr ""
+msgstr "дрова"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:181
 #, c-format
@@ -132,7 +132,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:293
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-data.h:6170
 msgid "orb of destruction"
-msgstr ""
+msgstr "сфера разрушения"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:331
 msgid "wavering "
@@ -167,15 +167,15 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:476
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:484
 msgid "The orb fizzles."
-msgstr ""
+msgstr "Сфера шипит."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:492
 msgid "The orbs collide in a blinding explosion!"
-msgstr ""
+msgstr "Сферы сталкиваются в ослепительном взрыве!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:494
 msgid "You hear a loud magical explosion!"
-msgstr ""
+msgstr "Вы слышите громкий магический взрыв!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:507
 msgid "iood: Swapping with a submerged monster."
@@ -188,7 +188,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:524
 #, c-format
 msgid "You block %s."
-msgstr ""
+msgstr "Вы блокируете %s."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:527
 msgid " blocks "
@@ -344,7 +344,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1110
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:653
 msgid "."
-msgstr ""
+msgstr "."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:539
 #, c-format
@@ -373,16 +373,16 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:147
 msgid "Recommended character"
-msgstr ""
+msgstr "Рекомендуемый персонаж"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:149
 msgid "Random character"
-msgstr ""
+msgstr "Случайный персонаж"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:152
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:157
 msgid "Random "
-msgstr ""
+msgstr "Случайный "
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:152
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:157
@@ -871,7 +871,7 @@ msgstr "Enter - Начать!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:622
 msgid "That's a silly name!"
-msgstr ""
+msgstr "Это глупое имя!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:676
 msgid "What is your name today? "
@@ -935,7 +935,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:3557
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:5183
 msgid "%"
-msgstr ""
+msgstr "%"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:772
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:826
@@ -963,7 +963,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:1258
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:4039
 msgid "seed"
-msgstr ""
+msgstr "семя"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:836
 msgid "[-] Clear"
@@ -1045,7 +1045,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:3504
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:5091
 msgid "title"
-msgstr ""
+msgstr "титул"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:949
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:215
@@ -1058,7 +1058,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:951
 msgid "seed-selection"
-msgstr ""
+msgstr "выбор семени"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1011
 msgid "No player name specified."
@@ -1068,24 +1068,24 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:162
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/skills.cc:69
 msgid "Warrior"
-msgstr ""
+msgstr "Воин"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1086
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/skills.cc:1666
 msgid "Adventurer"
-msgstr ""
+msgstr "Авантюрист"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1091
 msgid "Zealot"
-msgstr ""
+msgstr "Фанатик"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1096
 msgid "Warrior-mage"
-msgstr ""
+msgstr "Воин-маг"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1102
 msgid "Mage"
-msgstr ""
+msgstr "Маг"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1141
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:405
@@ -1385,7 +1385,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/end.cc:577
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:961
 msgid "cancel"
-msgstr ""
+msgstr "отмена"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1283
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2133
@@ -1545,27 +1545,27 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:608
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mutation-data.h:714
 msgid "claws"
-msgstr ""
+msgstr "когти"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1666
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1809
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:568
 msgid "unarmed"
-msgstr ""
+msgstr "безоружный"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1674
 msgid "large rocks"
-msgstr ""
+msgstr "большие камни"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1681
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:573
 msgid "boomerangs"
-msgstr ""
+msgstr "бумеранги"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1688
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:574
 msgid "javelins"
-msgstr ""
+msgstr "копья"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1694
 msgid " and throwing nets"
@@ -1597,7 +1597,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4532
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4851
 msgid " and "
-msgstr ""
+msgstr " и "
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1707
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:318
@@ -1853,11 +1853,11 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2229
 msgid "lessons"
-msgstr ""
+msgstr "уроки"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2229
 msgid "maps"
-msgstr ""
+msgstr "карты"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2236
 msgid "map-main"
@@ -1904,7 +1904,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:121
 msgid "escape"
-msgstr ""
+msgstr "побег"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:121
 msgid "mainly dealing with various forms of escape."
@@ -1914,7 +1914,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:1753
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:1762
 msgid "destruction"
-msgstr ""
+msgstr "разрушение"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:126
 msgid ""
@@ -1926,7 +1926,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:688
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-item.cc:1206
 msgid "summoning"
-msgstr ""
+msgstr "призыв"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:132
 msgid "depicting a range of weird and wonderful creatures."
@@ -1934,7 +1934,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:137
 msgid "punishment"
-msgstr ""
+msgstr "наказание"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:137
 msgid "which wreak havoc on the user."
@@ -1942,93 +1942,93 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:154
 msgid "Velocity"
-msgstr ""
+msgstr "Скорость"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:155
 msgid "Exile"
-msgstr ""
+msgstr "Изгнание"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:156
 msgid "the Elixir"
-msgstr ""
+msgstr "Эликсир"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:157
 msgid "the Stairs"
-msgstr ""
+msgstr "Ступени"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:158
 msgid "the Tomb"
-msgstr ""
+msgstr "Гробница"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:159
 msgid "Wild Magic"
-msgstr ""
+msgstr "Дикая Магия"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:160
 msgid "the Elements"
-msgstr ""
+msgstr "Элементы"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:161
 msgid "the Pentagram"
-msgstr ""
+msgstr "Пентаграмма"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:162
 msgid "the Dance"
-msgstr ""
+msgstr "Танец"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:163
 msgid "the Swarm"
-msgstr ""
+msgstr "Болото"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:164
 msgid "the Rangers"
-msgstr ""
+msgstr "Следопыты"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:165
 msgid "Vitriol"
-msgstr ""
+msgstr "Купорос"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:166
 msgid "the Cloud"
-msgstr ""
+msgstr "Облако"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:167
 msgid "the Storm"
-msgstr ""
+msgstr "Буря"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:168
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-data.h:563
 msgid "Pain"
-msgstr ""
+msgstr "Боль"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:169
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:388
 msgid "Torment"
-msgstr ""
+msgstr "Мучения"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:170
 msgid "Wrath"
-msgstr ""
+msgstr "Гнев"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:171
 msgid "the Wraith"
-msgstr ""
+msgstr "Призрак"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:172
 msgid "the Swine"
-msgstr ""
+msgstr "Свинья"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:173
 msgid "the Orb"
-msgstr ""
+msgstr "Сфера"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:174
 msgid "the Illusion"
-msgstr ""
+msgstr "Иллюзия"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:175
 msgid "Degeneration"
-msgstr ""
+msgstr "Вырождение"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:181
 msgid "a buggy card"
@@ -2415,7 +2415,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:368
 msgid "cards"
-msgstr ""
+msgstr "карты"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:382
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lookup-help.cc:542
@@ -2426,7 +2426,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:384
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1167
 msgid "No description found.\n"
-msgstr ""
+msgstr "Описание не найдено.\n"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:410
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-dgn.cc:1775
@@ -2451,7 +2451,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/files.cc:892
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:863
 msgid "name"
-msgstr ""
+msgstr "имя"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:411
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-dgn.cc:1778
@@ -2726,53 +2726,53 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1172
 msgid "You begin rapidly regenerating health and magic."
-msgstr ""
+msgstr "Вы начинаете быстро восстанавливать здоровье и магию."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1187
 msgid "You somehow manage to escape divine attention..."
-msgstr ""
+msgstr "Вам как-то удается избежать божественного внимания..."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1224
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1270
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-clone.cc:210
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-place.cc:2952
 msgid "You see a puff of smoke."
-msgstr ""
+msgstr "Вы видите слой дыма"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1230
 msgid "You sense the presence of something unfriendly."
-msgstr ""
+msgstr "Вы чувствуете присутствие чего-то недружелюбного."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1393
 msgid "Clouds appear around you!"
-msgstr ""
+msgstr "Вокруг вас появляются облака!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1439
 msgid "electrical discharge"
-msgstr ""
+msgstr "электрический разряд"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1440
 msgid "the storm"
-msgstr ""
+msgstr "буря"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1441
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-explode.cc:78
 msgid "You hear a clap of thunder!"
-msgstr ""
+msgstr "Вы слышите раскат грома!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1458
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-you.cc:1291
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/duration-data.h:238
 msgid "mighty"
-msgstr ""
+msgstr "мощный"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1459
 msgid "violent"
-msgstr ""
+msgstr "жестокий"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1460
 msgid "cataclysmic"
-msgstr ""
+msgstr "катастрофический"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:1461
 #, c-format
@@ -3250,35 +3250,35 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:768
 msgid "You're about to run into a slime covered wall!"
-msgstr ""
+msgstr "Вы собираетесь столкнуться со стеной, покрытой слизью!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:806
 msgid "You can't repeat informational commands."
-msgstr ""
+msgstr "Информационные команды повторять нельзя."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:823
 msgid "You can't repeat multi-turn commands."
-msgstr ""
+msgstr "Вы не можете повторять команды, длящиеся несколько ходов."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:848
 msgid "You can't repeat that command."
-msgstr ""
+msgstr "Вы не можете повторить эту команду."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:852
 msgid "You can't repeat map commands."
-msgstr ""
+msgstr "Вы не можете повторить команды карты."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:857
 msgid "You can't repeat mouse clicks or movements."
-msgstr ""
+msgstr "Вы не можете повторять клики мышью или движения."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:861
 msgid "You can't repeat the repeat command!"
-msgstr ""
+msgstr "Вы не можете повторить команду повтора!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:872
 msgid "Why would you want to repeat a run command?"
-msgstr ""
+msgstr "Зачем вы хотите повторить команду запуска?"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:879
 msgid "No previous command to repeat."
@@ -3363,7 +3363,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature-data.h:318
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/travel.cc:4865
 msgid "shop"
-msgstr ""
+msgstr "магазин"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1271
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/viewchar.cc:105
@@ -3372,7 +3372,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1907
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/travel.cc:4866
 msgid "altar"
-msgstr ""
+msgstr "алтарь"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1303
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/movement.cc:1171
@@ -3384,29 +3384,29 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1319
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stairs.cc:357
 msgid "There is nothing on the other side of the stone arch."
-msgstr ""
+msgstr "По ту сторону каменной арки ничего нет."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1321
 msgid "This shop appears to be closed."
-msgstr ""
+msgstr "Кажется, этот магазин закрыт."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1325
 msgid "A magical barricade bars your way!"
-msgstr ""
+msgstr "Волшебная баррикада преграждает вам путь!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1328
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stairs.cc:363
 msgid "You can't go down here!"
-msgstr ""
+msgstr "Вы не можете спуститься здесь!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1330
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stairs.cc:361
 msgid "You can't go up here!"
-msgstr ""
+msgstr "Вы не можете подняться здесь!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1348
 msgid "You need a rune to enter this place."
-msgstr ""
+msgstr "Вам требуется руна, чтобы войти в это место."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1350
 #, c-format
@@ -3454,27 +3454,27 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1466
 msgid "Alright, then stay!"
-msgstr ""
+msgstr "Хорошо, тогда останься!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1474
 msgid "Really go through this one-way escape hatch?"
-msgstr ""
+msgstr "Действительно пройти через этот аварийный люк без обратного пути?"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1476
 msgid "Really dive through this shaft in the floor?"
-msgstr ""
+msgstr "Действительно нырнуть через этот проход в полу?"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1491
 msgid "The transporter is blocked on the other side!"
-msgstr ""
+msgstr "Портал заблокирован с другой стороны!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1504
 msgid "The transporter is blocked by a creature on the other side!"
-msgstr ""
+msgstr "Портал заблокирован существом с другой стороны!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1524
 msgid "You enter the transporter and appear at another place."
-msgstr ""
+msgstr "Вы вошли в портал и оказались в другом месте."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1585
 #, c-format
@@ -3493,7 +3493,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1599
 msgid "With the way you've been playing, I'm surprised you got this far."
-msgstr ""
+msgstr "Я удивлён, что вы зашли так далеко с вашей манерой игры."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1617
 #, c-format
@@ -3559,11 +3559,11 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1630
 msgid "You are forever immune to Zot's power."
-msgstr ""
+msgstr "Вы навсегда невосприимчивы к силе Зота."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1632
 msgid "You have unlimited time to explore this branch."
-msgstr ""
+msgstr "У вас есть неограниченное время для изучения этой ветви."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1635
 msgid "Zot will find you in "
@@ -3590,27 +3590,28 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1659
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-use.cc:3376
 msgid "You can't wear or remove anything in your present form."
-msgstr ""
+msgstr "Вы не можете ничего носить или снимать в своей нынешней форме."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1664
 msgid "Take off which item?"
-msgstr ""
+msgstr "Какой предмет снять?"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1672
 msgid "You pace your travel speed to your slowest ally."
 msgstr ""
+"Вы снизили скорость своего движения до скорости самого медленного союзника."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1675
 msgid "You travel at normal speed."
-msgstr ""
+msgstr "Вы передвигаетесь на нормальной скорости."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1689
 msgid "You start waiting."
-msgstr ""
+msgstr "Вы начинаете ждать."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1694
 msgid "You start resting."
-msgstr ""
+msgstr "Вы начинаете отдыхать."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1708
 msgid ""
@@ -3620,7 +3621,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1717
 msgid "Returning to the game..."
-msgstr ""
+msgstr "Возвращаемся к игре..."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1736
 #, c-format
@@ -3658,11 +3659,11 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1778
 msgid "Unknown autofight command"
-msgstr ""
+msgstr "Неизвестная команда автобоя"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1794
 msgid "Nothing quivered!"
-msgstr ""
+msgstr "Ваш колчан пуст!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1808
 msgid "get_af_fire_stop"
@@ -3710,19 +3711,19 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2092
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:3022
 msgid "command"
-msgstr ""
+msgstr "приказ"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2180
 msgid "Save game and return to main menu?"
-msgstr ""
+msgstr "Сохранить игру и вернуться в главное меню?"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2181
 msgid "Save game and exit?"
-msgstr ""
+msgstr "Сохранить игру и выйти?"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2192
 msgid "Saving game... please wait."
-msgstr ""
+msgstr "Сохраняем игру... пожалуйста подождите."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2200
 #, c-format
@@ -3743,7 +3744,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2230
 msgid "Unknown command."
-msgstr ""
+msgstr "Неизвестная команда."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2234
 msgid "Press <w>%</w> or <w>%</w> to pray at altars."
@@ -3775,15 +3776,15 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2322
 msgid "You hear a snapping sound."
-msgstr ""
+msgstr "Вы слышите щелкающий звук."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2413
 msgid "Outside, the world ends."
-msgstr ""
+msgstr "На той стороне мир заканчивается."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2414
 msgid "Sorry, but your quest for the Orb is now rather pointless. You quit..."
-msgstr ""
+msgstr "Извините, но ваши поиски Сферы теперь довольно бессмысленны. Вы уходите..."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2444
 #, c-format
@@ -3792,19 +3793,19 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2583
 msgid "You feel a strong urge to attack something."
-msgstr ""
+msgstr "Вы чувствуете сильное желание атаковать что-то."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2586
 msgid "You feel your anger nearly subside."
-msgstr ""
+msgstr "Вы чувствуете, что ваш гнев почти утихает."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2589
 msgid "Your blood rage is quickly leaving you."
-msgstr ""
+msgstr "Ваша кровавая ярость быстро покидает вас."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2645
 msgid "repeat"
-msgstr ""
+msgstr "повторить"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2687
 msgid ""
@@ -3814,7 +3815,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2691
 msgid "Can't repeat a command which takes no turns, cancelling repetitions."
-msgstr ""
+msgstr "Невозможно повторить команду, которая не занимает времени (ходов), отменяем повторы."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:2716
 msgid "(Key replay stole keys)"
@@ -4170,15 +4171,15 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:853
 msgid "burns"
-msgstr ""
+msgstr "горит"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:854
 msgid "freezes"
-msgstr ""
+msgstr "замерзает"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:855
 msgid "bugs"
-msgstr ""
+msgstr "ошибки"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:861
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:915
@@ -4223,21 +4224,21 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:877
 msgid "You hear a grinding noise."
-msgstr ""
+msgstr "Вы слышите скрежет."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:891
 msgid "The damaged grate falls apart."
-msgstr ""
+msgstr "Поврежденная решетка разваливается."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:895
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/colour.cc:484
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mutation-data.h:2178
 msgid "slime"
-msgstr ""
+msgstr "слизь"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:897
 msgid "weird stuff"
-msgstr ""
+msgstr "странные вещи"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:899
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/colour.cc:535
@@ -4265,7 +4266,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-damage.cc:998
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:647
 msgid "rock"
-msgstr ""
+msgstr "камень"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:901
 #, c-format
@@ -4462,11 +4463,11 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:2000
 msgid "You have difficulty breathing."
-msgstr ""
+msgstr "Вам трудно дышать."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:2002
 msgid "curare-induced apnoea"
-msgstr ""
+msgstr "апноэ, вызванное кураре"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:2047
 msgid "The silver sears "
@@ -4508,7 +4509,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/teleport.cc:91
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:4963
 msgid "!"
-msgstr ""
+msgstr "!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:2179
 #, c-format
@@ -4517,7 +4518,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:2181
 msgid "by a malign offering"
-msgstr ""
+msgstr "злонамеренным предложением"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:2193
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:1226
@@ -4589,7 +4590,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:2214
 msgid "by vampiric draining"
-msgstr ""
+msgstr "вампирским высасыванием"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:2220
 msgid " is healed by the life force!"
@@ -6181,7 +6182,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-ench.cc:358
 msgid "Zombie hands"
-msgstr ""
+msgstr "Руки зомби"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-ench.cc:359
 msgid "Roots"
@@ -6527,7 +6528,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-ench.cc:991
 msgid "zombie hands"
-msgstr ""
+msgstr "руки зомби"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-ench.cc:992
 msgid "roots"
@@ -12000,8 +12001,8 @@ msgstr ""
 msgid ""
 " is a closed door. You can open it by walking into it. Sometimes it is "
 "useful to close a door. Do so by <console>pressing <w>%</w> while next to "
-"it. If there are several doors, you will then be prompted for a "
-"direction.</console><tiles>clicking on the door while next to it.</tiles>"
+"it. If there are several doors, you will then be prompted for a direction.</"
+"console><tiles>clicking on the door while next to it.</tiles>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1631
@@ -12050,8 +12051,8 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1684
 msgid ""
-"<console>type <w>%</w>.</console><tiles>click on the skill tab in the "
-"bottom-right.</tiles>"
+"<console>type <w>%</w>.</console><tiles>click on the skill tab in the bottom-"
+"right.</tiles>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1691
@@ -12092,8 +12093,8 @@ msgstr ""
 msgid ""
 "Enchantments of all types can befall you temporarily. Brief descriptions of "
 "these appear at the lower end of the stats area. Press <w>%</w> for more "
-"details. You can search for full enchantment descriptions by pressing "
-"<w>%/T</w>."
+"details. You can search for full enchantment descriptions by pressing <w>%/"
+"T</w>."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1743
@@ -12151,8 +12152,8 @@ msgstr ""
 msgid ""
 "As you explore a level, orientation can become difficult. Press <w>%</w> to "
 "bring up the level map. Typing <w>?</w> shows the list of level map "
-"commands. Most importantly, moving the cursor to a spot and pressing "
-"<w>.</w> or <w>Enter</w> lets your character move there on its own."
+"commands. Most importantly, moving the cursor to a spot and pressing <w>.</"
+"w> or <w>Enter</w> lets your character move there on its own."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1801
@@ -12191,9 +12192,9 @@ msgid ""
 "this easier some immobile monsters listed in the <w>auto_exclude</w> option "
 "(such as this one) are considered dangerous enough to warrant an automatic "
 "setting of an exclusion. It will be automatically cleared if you manage to "
-"kill the monster. You could also manually remove the exclusion with "
-"<w>%ee</w> but unless you remove this monster from the auto_exclude list, "
-"the exclusion will be reset the next turn."
+"kill the monster. You could also manually remove the exclusion with <w>%ee</"
+"w> but unless you remove this monster from the auto_exclude list, the "
+"exclusion will be reset the next turn."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1869
@@ -12238,8 +12239,8 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1924
 msgid ""
-"Against particularly difficult foes, you should use your Berserk "
-"<w>%</w>bility. Killing monsters while berserking makes it last longer."
+"Against particularly difficult foes, you should use your Berserk <w>%</"
+"w>bility. Killing monsters while berserking makes it last longer."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1931
@@ -12336,9 +12337,9 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:2047
 msgid ""
-"Equipping this item affects your resistances. Check the overview screen "
-"(<w>%</w> or click on the <w>character overview button</w> in the command "
-"panel) for details."
+"Equipping this item affects your resistances. Check the overview screen (<w>"
+"%</w> or click on the <w>character overview button</w> in the command panel) "
+"for details."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:2063
@@ -12702,10 +12703,10 @@ msgstr ""
 msgid ""
 "While you are silenced, you cannot cast spells, read scrolls or use divine "
 "invocations. The same is true for any monster within the effect radius. The "
-"field of silence (recognizable by the special-looking frame "
-"tilesdifferent-coloured floor squares) is always centered on you and will "
-"move along with you. The radius will gradually shrink, eventually making you "
-"the only one affected, before the effect fades entirely."
+"field of silence (recognizable by the special-looking frame tilesdifferent-"
+"coloured floor squares) is always centered on you and will move along with "
+"you. The radius will gradually shrink, eventually making you the only one "
+"affected, before the effect fades entirely."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:2528
@@ -12960,9 +12961,8 @@ msgstr ""
 msgid ""
 "\n"
 "\n"
-"A spell that isn't <darkgray>grayed out</darkgray> or "
-"<lightred>forbidden</lightred> can be memorised right away by selecting it "
-"at this menu."
+"A spell that isn't <darkgray>grayed out</darkgray> or <lightred>forbidden</"
+"lightred> can be memorised right away by selecting it at this menu."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:2756
@@ -12990,16 +12990,16 @@ msgid ""
 "you can <w>left mouse click</w> on the monster you wish to target (or on "
 "your player character to cast a spell on yourself) while pressing the "
 "<w>Control key</w>, and then select a spell from the menu. Or you can switch "
-"to the spellcasting display by <w>clicking on the</w> corresponding "
-"<w>tab</w>.\n"
+"to the spellcasting display by <w>clicking on the</w> corresponding <w>tab</"
+"w>.\n"
 "\n"
 "Alternatively, "
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:2773
 msgid ""
-"you can type <w>%</w> and choose a spell, e.g. <w>a</w> (check with "
-"<w>?</w>). For attack spells you'll "
+"you can type <w>%</w> and choose a spell, e.g. <w>a</w> (check with <w>?</"
+"w>). For attack spells you'll "
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:2790
@@ -13214,8 +13214,8 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3068
 msgid ""
-"You can wear pieces of armour with <w>%</w> and take them off again with "
-"<w>%</w>, or, alternatively, simply click on their tiles to perform either "
+"You can wear pieces of armour with <w>%</w> and take them off again with <w>"
+"%</w>, or, alternatively, simply click on their tiles to perform either "
 "action."
 msgstr ""
 
@@ -13261,8 +13261,8 @@ msgstr ""
 msgid ""
 "\n"
 "\n"
-"When worn, some types of armour (such as this one) offer certain "
-"<w>%</w>bilities you can activate. "
+"When worn, some types of armour (such as this one) offer certain <w>%</"
+"w>bilities you can activate. "
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3144
@@ -13337,8 +13337,8 @@ msgstr ""
 msgid ""
 "\n"
 "\n"
-"When worn, some types of jewellery (such as this one) offer certain "
-"<w>%</w>bilities you can activate. "
+"When worn, some types of jewellery (such as this one) offer certain <w>%</"
+"w>bilities you can activate. "
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3222
@@ -13465,11 +13465,11 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3430
 msgid ""
-"You can enter the previous (shallower) level by following these up "
-"(<w><<</w>). This is ideal for retreating or finding a safe resting spot, "
-"since the previous level will have less monsters, and monsters on this level "
-"can't follow you up unless they're standing right next to you. To get back "
-"to this level again, press <w>></w> while standing on the downstairs."
+"You can enter the previous (shallower) level by following these up (<w><<</"
+"w>). This is ideal for retreating or finding a safe resting spot, since the "
+"previous level will have less monsters, and monsters on this level can't "
+"follow you up unless they're standing right next to you. To get back to this "
+"level again, press <w>></w> while standing on the downstairs."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3439
@@ -13480,9 +13480,8 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3452
 msgid ""
-"Escape hatches can be used to quickly leave a level with <w><<</w> and "
-"<w>></w>, respectively. Note that you will usually be unable to return right "
-"away."
+"Escape hatches can be used to quickly leave a level with <w><<</w> and <w>></"
+"w>, respectively. Note that you will usually be unable to return right away."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3470
@@ -13701,8 +13700,8 @@ msgstr ""
 msgid ""
 "\n"
 "This monster doesn't appear to have any resistances or susceptibilities. It "
-"cannot fly and is of average speed. Examining other, possibly more "
-"high-level monsters can give important clues as to how to deal with them."
+"cannot fly and is of average speed. Examining other, possibly more high-"
+"level monsters can give important clues as to how to deal with them."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3804
@@ -16157,7 +16156,7 @@ msgstr ""
 msgid ""
 "\n"
 "Examples:\n"
-msgstr ""
+msgstr "Примеры:"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/arena.cc:1506
 msgid "  Sigmund v Jessica\n"
@@ -18847,7 +18846,7 @@ msgstr ""
 
 msgctxt "player_title"
 msgid "the "
-msgstr ""
+msgstr " "
 
 msgctxt "player_title"
 msgid "%s%s"
@@ -20643,8 +20642,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shout.cc:1287
 #, c-format
 msgid ""
-"[NOISE] Actor %s (%d,%d) perceives noise (%d) from (%d,%d), real source "
-"(%d,%d), distance: %d, noise travelled: %d"
+"[NOISE] Actor %s (%d,%d) perceives noise (%d) from (%d,%d), real source (%d,"
+"%d), distance: %d, noise travelled: %d"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dbg-maps.cc:78
@@ -20757,6 +20756,9 @@ msgid ""
 "\n"
 "Map errors:\n"
 msgstr ""
+"\n"
+"\n"
+"Ошибки карты:\n"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dbg-maps.cc:348
 #, c-format
@@ -20770,6 +20772,9 @@ msgid ""
 "\n"
 "Levels with no maps:\n"
 msgstr ""
+"\n"
+"\n"
+"Уровни без карт:\n"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dbg-maps.cc:373
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dbg-maps.cc:417
@@ -20816,6 +20821,10 @@ msgid ""
 "Maps by level:\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"Карты по уровню:"
+"\n"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dbg-maps.cc:431
 #, c-format
@@ -21801,7 +21810,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:1270
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-data.h:4829
 msgid "zombie"
-msgstr ""
+msgstr "зомби"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1073
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:130
@@ -24225,8 +24234,8 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-book.cc:656
 msgid ""
-"[<yellow>?</yellow>] help                [<yellow>Ctrl-f</yellow>] search    "
-"  [<yellow>!</yellow>] "
+"[<yellow>?</yellow>] help                [<yellow>Ctrl-f</yellow>] "
+"search      [<yellow>!</yellow>] "
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-book.cc:660
@@ -24256,8 +24265,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-book.cc:848
 #, c-format
 msgid ""
-"<lightgreen>Select a spell to cast with Divine Exegesis: %d MP "
-"available</lightgreen>"
+"<lightgreen>Select a spell to cast with Divine Exegesis: %d MP available</"
+"lightgreen>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-book.cc:853
@@ -25404,8 +25413,8 @@ msgstr ""
 #, c-format
 msgid ""
 "Select layers to display:\n"
-"<%s>(m)onsters</%s>|<%s>(p)layer</%s>|<%s>(i)tems</%s>|<%s>(c)louds</%s>|<%s>monster "
-"(w)eapons</%s>|<%s>monster (h)ealth</%s>"
+"<%s>(m)onsters</%s>|<%s>(p)layer</%s>|<%s>(i)tems</%s>|<%s>(c)louds</%s>|<"
+"%s>monster (w)eapons</%s>|<%s>monster (h)ealth</%s>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/view.cc:1780
@@ -25820,7 +25829,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:1724
 msgid "Your target is gone."
-msgstr ""
+msgstr "Ваша цель скрылась из вида."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:1746
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1320
@@ -31184,6 +31193,8 @@ msgid ""
 "\n"
 "Map:\n"
 msgstr ""
+"\n"
+"Карта:"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dbg-asrt.cc:747
 #, c-format
@@ -32448,8 +32459,8 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/form-data.h:265
 msgid ""
-"<lightred>You become terrified and freeze when enemies are "
-"visible.</lightred>"
+"<lightred>You become terrified and freeze when enemies are visible.</"
+"lightred>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/form-data.h:270
@@ -34490,8 +34501,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:3076
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:3083
 msgid ""
-"<white>Your body glows with a rainbow of weird colours and "
-"disappears.</white>"
+"<white>Your body glows with a rainbow of weird colours and disappears.</"
+"white>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:3081
@@ -36008,7 +36019,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:887
 msgid "zirconium"
-msgstr ""
+msgstr "цирконий"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:888
 msgid "citrine"
@@ -36781,8 +36792,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:2078
 #, c-format
 msgid ""
-"<white>Runes of Zot (</white><%s>%d</%s><white> collected) & Orbs of "
-"Power</white>"
+"<white>Runes of Zot (</white><%s>%d</%s><white> collected) & Orbs of Power</"
+"white>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:2321
@@ -46494,6 +46505,9 @@ msgid ""
 "\n"
 "*"
 msgstr ""
+"\n"
+"\n"
+"*"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/database.cc:888
 msgid ""
@@ -51009,7 +51023,9 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:1196
 msgid ""
-"header,hiscore,stats,misc,inventory,skills,spells,overview,mutations,messages,screenshot,monlist,kills,notes,screenshots,vaults,skill_gains,action_counts"
+"header,hiscore,stats,misc,inventory,skills,spells,overview,mutations,"
+"messages,screenshot,monlist,kills,notes,screenshots,vaults,skill_gains,"
+"action_counts"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:1202
@@ -52011,8 +52027,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:3534
 #, c-format
 msgid ""
-"Unknown value for tile_display_mode: '%s' (possible values: "
-"tiles/glyphs/hybrid"
+"Unknown value for tile_display_mode: '%s' (possible values: tiles/glyphs/"
+"hybrid"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:3544
@@ -52920,8 +52936,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:4559
 #, c-format
 msgid ""
-"Bones file '%s' is from the future (%d.%d), this instance of crawl needs "
-"%d.%d.\n"
+"Bones file '%s' is from the future (%d.%d), this instance of crawl needs %d."
+"%d.\n"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:4596
@@ -55898,22 +55914,6 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature.cc:228
 #, c-format
 msgid "Invalid feature type %d"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/compflag.h:4
-msgid ""
-"-O0 -ggdb -pipe -fprofile-instr-generate -fcoverage-mapping -DUSE_TILE "
-"-DUSE_TILE_LOCAL -DUSE_SDL -DUSE_GL -DUSE_FT -Wall -Wformat-security -Wundef "
-"-Wextra -Wno-missing-field-initializers -Wno-implicit-fallthrough "
-"-Wno-type-limits -Wno-uninitialized -Wno-array-bounds "
-"-Wno-format-zero-length -Wmissing-declarations -Wredundant-decls "
-"-Wno-tautological-unsigned-enum-zero-compare -Wno-parentheses "
-"-Wwrite-strings -Wshadow -pedantic -Iutil -I. -isystem "
-"contrib/install/x86_64-apple-darwin20.3.0/include/SDL2 -isystem "
-"contrib/install/x86_64-apple-darwin20.3.0/include/freetype2 -isystem "
-"contrib/install/x86_64-apple-darwin20.3.0/include -DFULLDEBUG -DDEBUG "
-"-DWIZARD -DASSERTS -DPROPORTIONAL_FONT=\"contrib/fonts/DejaVuSans.ttf\" "
-"-DMONOSPACED_FONT=\"contrib/fonts/DejaVuSansMono.ttf\" -DCLUA_BINDINGS"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/compflag.h:5
@@ -61125,118 +61125,6 @@ msgstr ""
 msgid "Error in make_irregular_box: UNSET_GLYPH in final box"
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:603
-msgid "\x1bOp"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:604
-msgid "\x1bOq"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:605
-msgid "\x1bOr"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:606
-msgid "\x1bOs"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:607
-msgid "\x1bOt"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:608
-msgid "\x1bOu"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:609
-msgid "\x1bOv"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:610
-msgid "\x1bOw"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:611
-msgid "\x1bOx"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:612
-msgid "\x1bOy"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:615
-msgid "\x1bOM"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:623
-msgid "\x1bOP"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:624
-msgid "\x1bOQ"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:625
-msgid "\x1bOR"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:626
-msgid "\x1bOS"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:628
-msgid "\x1bOj"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:629
-msgid "\x1bOk"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:630
-msgid "\x1bOl"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:631
-msgid "\x1bOm"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:632
-msgid "\x1bOn"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:633
-msgid "\x1bOo"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:636
-msgid "\x1b[1~"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:637
-msgid "\x1b[4~"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:638
-msgid "\x1b[E"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:676
-msgid "kbs"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:679
-msgid "\b"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:688
-msgid "\x1b[?1051l\x1b[?1052l\x1b[?1060l\x1b[?1061h"
-msgstr ""
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:689
-msgid "\x1b[?1051l\x1b[?1052l\x1b[?1060l\x1b[?1061l"
-msgstr ""
-
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libunix.cc:1569
 #, c-format
 msgid "{\"msg\":\"delay\",\"t\":%d}"
@@ -63045,15 +62933,15 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1546
 msgid ""
-"<lightgrey>: only useless items found; press <w>=</w> to show.               "
-"     </lightgrey>"
+"<lightgrey>: only useless items found; press <w>=</w> to "
+"show.                    </lightgrey>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1554
 #, c-format
 msgid ""
-"<lightgrey>: <w>%s</w> [toggle: <w>!</w>], by <w>%s</w> [<w>/</w>], "
-"<w>%s</w> useless & duplicates [<w>=</w>]</lightgrey>"
+"<lightgrey>: <w>%s</w> [toggle: <w>!</w>], by <w>%s</w> [<w>/</w>], <w>%s</"
+"w> useless & duplicates [<w>=</w>]</lightgrey>"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1559
@@ -64167,8 +64055,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/skill-menu.cc:514
 msgid ""
 "Press the letter of a skill to cycle between <darkgrey>disabled</darkgrey> "
-"(<darkgrey>-</darkgrey>), enabled (+) and <white>focused</white> "
-"(<white>*</white>). Focused skills train twice as fast relative to others."
+"(<darkgrey>-</darkgrey>), enabled (+) and <white>focused</white> (<white>*</"
+"white>). Focused skills train twice as fast relative to others."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/skill-menu.cc:525
@@ -78378,8 +78266,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tags.cc:713
 #, c-format
 msgid ""
-"Fixing missing constriction for %s (mindex=%d mid=%d) of %s (mindex=%d "
-"mid=%d)"
+"Fixing missing constriction for %s (mindex=%d mid=%d) of %s (mindex=%d mid="
+"%d)"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tags.cc:832
@@ -82337,6 +82225,8 @@ msgid ""
 "\n"
 "It is an ancient artefact."
 msgstr ""
+"\n"
+"Это древний артефакт."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2286
 msgid " disapproves of the use of such an item."
@@ -83534,6 +83424,9 @@ msgid ""
 "\n"
 "Monster Spells:\n"
 msgstr ""
+"\n"
+"\n"
+"Заклинания монстра:"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4940
 msgid "emergency, "
@@ -83569,6 +83462,9 @@ msgid ""
 "\n"
 "Monster Inventory:\n"
 msgstr ""
+"\n"
+"\n"
+"Инвентарь монстра:"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4970
 msgid ""
@@ -84383,8 +84279,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-item.cc:1528
 #, c-format
-msgid ""
-"                           ------------------------------------------------\n"
+msgid "                           ------------------------------------------------\n"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-item.cc:1529
@@ -87695,7 +87590,8 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tiledoll.cc:90
 #, c-format
 msgid ""
-"#Shadow/Base/Cloak/Boots/Legs/Body/Gloves/Weapon/Shield/Hair/Beard/Helmet/Halo/Enchant/DrcHead/DrcWing\n"
+"#Shadow/Base/Cloak/Boots/Legs/Body/Gloves/Weapon/Shield/Hair/Beard/Helmet/"
+"Halo/Enchant/DrcHead/DrcWing\n"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tiledoll.cc:92
@@ -90526,10 +90422,10 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:933
 msgid ""
-"Many commands have context sensitive help, among them <w>%</w>, <w>%</w>, "
-"<w>%</w> (or any form of targeting), <w>%</w>, and <w>%</w>.\n"
-"You can read descriptions of your current spells (<w>%</w>), skills "
-"(<w>%?</w>) and abilities (<w>%!</w>)."
+"Many commands have context sensitive help, among them <w>%</w>, <w>%</w>, <w>"
+"%</w> (or any form of targeting), <w>%</w>, and <w>%</w>.\n"
+"You can read descriptions of your current spells (<w>%</w>), skills (<w>%?</"
+"w>) and abilities (<w>%!</w>)."
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:974
@@ -90719,8 +90615,7 @@ msgid "Failed to open '%s'!"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:1146
-msgid ""
-"------------------------------------------------------------------------"
+msgid "------------------------------------------------------------------------"
 msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:1159
@@ -91877,7 +91772,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/death-curse.cc:143
 msgid "Your bones ache."
-msgstr ""
+msgstr "Ваши кости болят."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/death-curse.cc:179
 msgid "You feel weird for a moment."
@@ -92142,7 +92037,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:2419
 msgid "Someone"
-msgstr ""
+msgstr "Кто-то"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:2421
 msgid "The doors slam shut!"
@@ -93085,7 +92980,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:330
 msgid "Hop"
-msgstr ""
+msgstr "Прыжок"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:332
 msgid "Rolling Charge"
@@ -93808,7 +93703,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1422
 msgid "unable to breathe"
-msgstr ""
+msgstr "невозможно дышать"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1454
 msgid "Really use "
@@ -93828,7 +93723,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1511
 msgid "You have nothing to donate!"
-msgstr ""
+msgstr "Вам нечем пожертвовать!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1527
 msgid "Nothing ails you!"
@@ -93836,7 +93731,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1536
 msgid "You aren't in the Abyss!"
-msgstr ""
+msgstr "Вы не в Бездне!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1592
 msgid "You don't have enough innate magic capacity."
@@ -93844,7 +93739,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1627
 msgid "You are already invisible!"
-msgstr ""
+msgstr "Вы уже невидимы!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1645
 msgid "You don't have enough experience to sacrifice."
@@ -93979,7 +93874,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2345
 msgid "Another wave of unholy energy enters you."
-msgstr ""
+msgstr "В вас входит еще одна волна нечестивой энергии."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2348
 #, c-format
@@ -93988,15 +93883,15 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2361
 msgid "There are no remains here to animate!"
-msgstr ""
+msgstr "Здесь нет останков для оживления!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2390
 msgid "You feel life flooding into your body."
-msgstr ""
+msgstr "You feel life flooding into your body."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2410
 msgid "Your soul already belongs to Yredelemnul."
-msgstr ""
+msgstr "Твоя душа уже принадлежит Иределемнулу."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2419
 msgid "'s clone doesn't have a soul to enslave!"
@@ -94004,7 +93899,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2427
 msgid "You see nothing there you can enslave the soul of!"
-msgstr ""
+msgstr "Вы не видите там никого, чью душу можно было бы поработить!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2434
 msgid "'s soul is too badly injured."
@@ -94016,23 +93911,23 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2449
 msgid "You feel more confident with your borrowed prowess."
-msgstr ""
+msgstr "Вы чувствуете себя увереннее с заимствованной отвагой."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2450
 msgid "You gain the combat prowess of a mighty hero."
-msgstr ""
+msgstr "Вы обретаете боевую отвагу могучего героя."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2465
 msgid "new energy."
-msgstr ""
+msgstr "новая энергия."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2468
 msgid "You can now deal lightning-fast blows."
-msgstr ""
+msgstr "Теперь вы можете наносить молниеносные удары."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2598
 msgid "You renew your call for help."
-msgstr ""
+msgstr "Вы возобновляете свой призыв о помощи."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2601
 #, c-format
@@ -94041,11 +93936,11 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2620
 msgid "You are healed."
-msgstr ""
+msgstr "Вы исцелены."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2671
 msgid "You cannot banish yourself!"
-msgstr ""
+msgstr "Вы не можете изгнать себя!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2701
 msgid " will brand one of your weapons with the corruption of the Abyss."
@@ -94053,7 +93948,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2774
 msgid "You stop recalling your allies."
-msgstr ""
+msgstr "Вы перестаете вспоминать своих союзников."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2845
 #, c-format
@@ -94062,55 +93957,55 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2972
 msgid "You're too exhausted to draw out your power."
-msgstr ""
+msgstr "Вы слишком устали, чтобы использовать свою силу."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2982
 msgid "You have no need to draw out power."
-msgstr ""
+msgstr "Вам нет нужды использовать силу."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2992
 msgid "You're too exhausted to power leap."
-msgstr ""
+msgstr "Вы слишком устали, чтобы использовать мощный прыжок."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3012
 msgid "You're too exhausted to unleash your apocalyptic power."
-msgstr ""
+msgstr "Вы слишком устали, чтобы раскрыть свою апокалиптическую силу."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3028
 msgid "You feel a buildup of energy."
-msgstr ""
+msgstr "Вы чувствуете прилив энергии."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3080
 msgid "You are already lashing out."
-msgstr ""
+msgstr "Вы уже набрасываетесь."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3085
 msgid "You are too exhausted to lash out."
-msgstr ""
+msgstr "Вы слишком устали, чтобы наброситься."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3089
 msgid "Your muscles tense, ready for explosive movement..."
-msgstr ""
+msgstr "Ваши мышцы напрягаются, готовые к взрывному движению..."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3097
 msgid "You are already engulfed in a heavenly storm!"
-msgstr ""
+msgstr "Вы уже поглощены божественной бурей!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3110
 msgid "Really renounce your faith, foregoing its fabulous benefits?"
-msgstr ""
+msgstr "Неужели откажитесь от своей веры, отказавшись от ее баснословных благ?"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3112
 msgid "Are you sure?"
-msgstr ""
+msgstr "Вы уверены?"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3135
 msgid "Sorry, you can't do that."
-msgstr ""
+msgstr "Извините, вы не можете этого сделать."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3139
 msgid "invalid ability"
-msgstr ""
+msgstr "недействительная способность"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3176
 #, c-format
@@ -94262,11 +94157,11 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/species.cc:323
 msgid "Walk"
-msgstr ""
+msgstr "Идти"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/species.cc:338
 msgid "kneel at"
-msgstr ""
+msgstr "преклонить колени"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/species.cc:341
 msgid "yell"
@@ -94274,7 +94169,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/species.cc:341
 msgid "scream"
-msgstr ""
+msgstr "крик"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/species.cc:342
 msgid "meow"
@@ -94488,7 +94383,7 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:891
 msgid "A beastly little devil appears in a puff of flame."
-msgstr ""
+msgstr "В облаке пламени появляется чудовищный дьяволёнок."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:914
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:948
@@ -94497,33 +94392,35 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:938
 msgid "A demon appears!"
-msgstr ""
+msgstr "Демон появляется!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:943
 msgid "It doesn't seem very happy."
-msgstr ""
+msgstr "Он не кажется очень счастливым."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1005
 msgid "You open a gate to Pandemonium!"
-msgstr ""
+msgstr "Вы открыли дверь в Пандемониум!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1021
 msgid "Wisps of shadow whirl around you..."
-msgstr ""
+msgstr "Обрывки теней кружат вокруг вас..."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1093
 msgid "The shadows disperse without effect."
-msgstr ""
+msgstr "Тени рассеиваются без эффекта."
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1150
 msgid ""
 "The dungeon shakes, a horrible noise fills the air, and a portal to some "
 "otherworldly place is opened!"
 msgstr ""
+"Подземелье трясется, воздух наполняется ужасным шумом, и открывается портал "
+"в какое-то потустороннее место!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1181
 msgid "A gateway cannot be opened in this cramped space!"
-msgstr ""
+msgstr "Врата не могут быть открыты в такой тесноте!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1192
 msgid "SHT_int_loss"
@@ -94543,19 +94440,19 @@ msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1399
 msgid "walking"
-msgstr ""
+msgstr "ходьба"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1401
 msgid "hopping"
-msgstr ""
+msgstr "прыжки"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1409
 msgid "crawling"
-msgstr ""
+msgstr "ползанье"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1413
 msgid "The dead have arisen!"
-msgstr ""
+msgstr "Мёртвые воскресли!"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:1416
 #, c-format
@@ -94653,7 +94550,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2314
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2378
 msgid "foe"
-msgstr ""
+msgstr "враг"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2224
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2254
@@ -94662,7 +94559,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2344
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2388
 msgid "firing"
-msgstr ""
+msgstr "стрельба"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2251
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2253
@@ -94672,7 +94569,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2387
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2397
 msgid "tracking"
-msgstr ""
+msgstr "отслеживание"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2280
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:2289
