@@ -145,17 +145,17 @@ static char_choice_restriction _job_allowed(species_type sp, job_type job) {
 string newgame_char_description(const newgame_def& ng)
 {
     if (_is_random_viable_choice(ng))
-        return "Recommended character";
+        return _("Recommended character");
     else if (_is_random_choice(ng))
-        return "Random character";
+        return _("Random character");
     else if (_is_random_job(ng.job))
     {
-        const string j = (ng.job == JOB_RANDOM ? "Random " : "Recommended ");
+        const string j = (ng.job == JOB_RANDOM ? _("Random ") : _("Recommended "));
         return j + species::name(ng.species);
     }
     else if (_is_random_species(ng.species))
     {
-        const string s = (ng.species == SP_RANDOM ? "Random " : "Recommended ");
+        const string s = (ng.species == SP_RANDOM ? _("Random ") : _("Recommended "));
         return s + get_job_name(ng.job);
     }
     else
@@ -342,7 +342,7 @@ static void _choose_species_job(newgame_def& ng, newgame_def& ng_choice,
 static bool _reroll_random(newgame_def& ng)
 {
     shared_ptr<Box> vbox = _create_titled_box(ng);
-    vbox->add_child(make_shared<Text>("Do you want to play this combination? [Y/n/q]"));
+    vbox->add_child(make_shared<Text>(_("Do you want to play this combination? [Y/n/q]")));
     auto popup = make_shared<ui::Popup>(move(vbox));
 
     bool done = false;
@@ -577,7 +577,7 @@ static void _choose_name(newgame_def& ng, newgame_def& choice)
         btn->highlight_colour = STARTUP_HIGHLIGHT_CONTROL;
 
         auto err = make_shared<Text>(
-                formatted_string("That's a silly name!", LIGHTRED));
+                formatted_string(_("That's a silly name!"), LIGHTRED));
         err->set_margin_for_sdl(0, 0, 0, 10);
         auto box = make_shared<Box>(Box::HORZ);
         box->set_cross_alignment(Widget::CENTER);
@@ -836,7 +836,7 @@ static void _choose_seed(newgame_def& ng, newgame_def& choice,
     seed_hbox->add_child(move(clear_btn));
 
     auto d_btn_label = make_shared<ui::Text>();
-    d_btn_label->set_text(formatted_string("[d] Today's daily seed", BROWN));
+    d_btn_label->set_text(formatted_string(_("[d] Today's daily seed"), BROWN));
     d_btn_label->set_margin_for_sdl(4,8);
     d_btn_label->set_margin_for_crt(0, 2, 0, 0);
 
@@ -1657,7 +1657,7 @@ static void _construct_weapon_menu(const newgame_def& ng,
         {
         case WPN_UNARMED:
             choices.emplace_back(SK_UNARMED_COMBAT,
-                        species::has_claws(ng.species) ? "claws" : "unarmed");
+                        species::has_claws(ng.species) ? _("claws") : _("unarmed"));
             break;
         case WPN_THROWN:
         {
@@ -1665,27 +1665,27 @@ static void _construct_weapon_menu(const newgame_def& ng,
             tileidx_t tile = 0;
             if (species::can_throw_large_rocks(ng.species))
             {
-                thrown_name = "large rocks";
+                thrown_name = _("large rocks");
 #ifdef USE_TILE
                 tile = TILE_MI_LARGE_ROCK;
 #endif
             }
             else if (species::size(ng.species, PSIZE_TORSO) <= SIZE_SMALL)
             {
-                thrown_name = "boomerangs";
+                thrown_name = _("boomerangs");
 #ifdef USE_TILE
                 tile = TILE_MI_BOOMERANG;
 #endif
             }
             else
             {
-                thrown_name = "javelins";
+                thrown_name = _("javelins");
 #ifdef USE_TILE
                 tile = TILE_MI_JAVELIN;
 #endif
             }
             choices.emplace_back(SK_THROWING,
-                    thrown_name + " and throwing nets", tile);
+                    thrown_name + _(" and throwing nets"), tile);
             break;
         }
         default:
@@ -1764,7 +1764,7 @@ static void _construct_weapon_menu(const newgame_def& ng,
         label->set_text(formatted_string(text, fg));
 
         hbox->set_main_alignment(Widget::Align::STRETCH);
-        string apt_text = make_stringf("(%+d apt)",
+        string apt_text = make_stringf(_("(%+d apt)"),
                 species_apt(choice.skill, ng.species));
         auto suffix = make_shared<Text>(formatted_string(apt_text, fg));
         hbox->add_child(suffix);
@@ -1781,31 +1781,31 @@ static void _construct_weapon_menu(const newgame_def& ng,
         main_items->add_button(move(btn), 0, i);
     }
 
-    _add_menu_sub_item(sub_items, 0, 0, "+ - Recommended random choice",
-            "Picks a random recommended weapon", '+', M_VIABLE);
-    _add_menu_sub_item(sub_items, 0, 1, "% - List aptitudes",
-            "Lists the numerical skill train aptitudes for all races", '%',
+    _add_menu_sub_item(sub_items, 0, 0, _("+ - Recommended random choice"),
+            _("Picks a random recommended weapon"), '+', M_VIABLE);
+    _add_menu_sub_item(sub_items, 0, 1, _("% - List aptitudes"),
+            _("Lists the numerical skill train aptitudes for all races"), '%',
             M_APTITUDES);
-    _add_menu_sub_item(sub_items, 0, 2, "? - Help",
-            "Opens the help screen", '?', M_HELP);
-    _add_menu_sub_item(sub_items, 1, 0, "* - Random weapon",
-            "Picks a random weapon", '*', WPN_RANDOM);
-    _add_menu_sub_item(sub_items, 1, 1, "Bksp - Return to character menu",
-            "Lets you return back to Character choice menu", CK_BKSP, M_ABORT);
+    _add_menu_sub_item(sub_items, 0, 2, _("? - Help"),
+            _("Opens the help screen"), '?', M_HELP);
+    _add_menu_sub_item(sub_items, 1, 0, _("* - Random weapon"),
+            _("Picks a random weapon"), '*', WPN_RANDOM);
+    _add_menu_sub_item(sub_items, 1, 1, _("Bksp - Return to character menu"),
+            _("Lets you return back to Character choice menu"), CK_BKSP, M_ABORT);
 
     if (defweapon != WPN_UNKNOWN)
     {
         string text = "Tab - ";
 
         ASSERT(defweapon != WPN_THROWN || thrown_name != "");
-        text += defweapon == WPN_RANDOM  ? "Random" :
-                defweapon == WPN_VIABLE  ? "Recommended" :
-                defweapon == WPN_UNARMED ? "unarmed" :
+        text += defweapon == WPN_RANDOM  ? _("Random") :
+                defweapon == WPN_VIABLE  ? _("Recommended") :
+                defweapon == WPN_UNARMED ? _("unarmed") :
                 defweapon == WPN_THROWN  ? thrown_name :
                 weapon_base_name(defweapon);
 
         _add_menu_sub_item(sub_items, 1, 2, text,
-                "Select your old weapon", '\t', M_DEFAULT_CHOICE);
+                _("Select your old weapon"), '\t', M_DEFAULT_CHOICE);
     }
 }
 
@@ -1837,7 +1837,7 @@ static bool _prompt_weapon(const newgame_def& ng, newgame_def& ng_choice,
     auto vbox = make_shared<Box>(Box::VERT);
     vbox->set_cross_alignment(Widget::Align::STRETCH);
     vbox->add_child(title_hbox);
-    auto prompt = make_shared<Text>(formatted_string("You have a choice of weapons.", CYAN));
+    auto prompt = make_shared<Text>(formatted_string(_("You have a choice of weapons."), CYAN));
     vbox->add_child(prompt);
 
     auto main_items = make_shared<OuterMenu>(true, 1, weapons.size());
@@ -2168,13 +2168,13 @@ static void _construct_gamemode_map_menu(const mapref_vector& maps,
     // Don't overwhelm new players with aptitudes or the full list of commands!
     if (!crawl_state.game_is_tutorial())
     {
-        _add_menu_sub_item(sub_items, 0, 0, "% - List aptitudes",
-                "Lists the numerical skill train aptitudes for all races",
+        _add_menu_sub_item(sub_items, 0, 0, _("% - List aptitudes"),
+                _("Lists the numerical skill train aptitudes for all races"),
                 '%', M_APTITUDES);
-        _add_menu_sub_item(sub_items, 0, 1, "? - Help",
-                "Opens the help screen", '?', M_HELP);
-        _add_menu_sub_item(sub_items, 1, 0, "* - Random map",
-                "Picks a random sprint map", '*', M_RANDOM);
+        _add_menu_sub_item(sub_items, 0, 1, _("? - Help"),
+                _("Opens the help screen"), '?', M_HELP);
+        _add_menu_sub_item(sub_items, 1, 0, _("* - Random map"),
+                _("Picks a random sprint map"), '*', M_RANDOM);
     }
 
     // TODO: let players escape back to first screen menu
@@ -2214,13 +2214,13 @@ static void _prompt_gamemode_map(newgame_def& ng, newgame_def& ng_choice,
 {
     formatted_string welcome;
     welcome.textcolour(BROWN);
-    welcome.cprintf("%s\n", _welcome(ng).c_str());
+    welcome.cprintf(_("%s\n"), _welcome(ng).c_str());
     if (Options.seed_from_rc)
-        welcome.cprintf("Custom seed: %" PRIu64 "\n", Options.seed_from_rc);
+        welcome.cprintf(_("Custom seed: %" PRIu64 "\n"), Options.seed_from_rc);
 
     welcome.textcolour(CYAN);
-    welcome.cprintf("\nYou have a choice of %s:",
-            ng_choice.type == GAME_TYPE_TUTORIAL ? "lessons" : "maps");
+    welcome.cprintf(_("\nYou have a choice of %s:"),
+            ng_choice.type == GAME_TYPE_TUTORIAL ? _("lessons") : _("maps"));
 
     auto vbox = make_shared<Box>(Box::VERT);
     vbox->set_cross_alignment(Widget::Align::STRETCH);

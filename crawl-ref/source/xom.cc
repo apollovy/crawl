@@ -68,6 +68,7 @@
 #include "travel.h"
 #include "viewchar.h"
 #include "view.h"
+#include "crawl_locale.h"
 
 #ifdef DEBUG_XOM
 #    define DEBUG_RELIGION
@@ -1759,7 +1760,7 @@ static void _xom_destruction(int sever, bool real)
     if (rc)
     {
         take_note(Note(NOTE_XOM_EFFECT, you.piety, -1,
-                       real ? "destruction" : "fake destruction"), true);
+                       real ? _("destruction") : _("fake destruction")), true);
     }
 }
 

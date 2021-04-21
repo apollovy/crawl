@@ -48,6 +48,7 @@
 #include "viewgeom.h"
 #include "viewmap.h"
 #include "ui.h"
+#include "crawl_locale.h"
 
 using namespace ui;
 
@@ -246,7 +247,7 @@ void pick_hints(newgame_def& choice)
     sub_items->linked_menus[0] = main_items;
 
     {
-        auto label = make_shared<Text>(formatted_string("Esc - Quit", BROWN));
+        auto label = make_shared<Text>(formatted_string(_("Esc - Quit"), BROWN));
         auto btn = make_shared<MenuButton>();
         btn->set_child(move(label));
         btn->hotkey = CK_ESCAPE;

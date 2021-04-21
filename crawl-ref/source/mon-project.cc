@@ -27,6 +27,7 @@
 #include "stepdown.h"
 #include "terrain.h"
 #include "viewchar.h"
+#include "crawl_locale.h"
 
 static void _fuzz_direction(const actor *caster, monster& mon, int pow);
 
@@ -52,7 +53,7 @@ spret cast_iood(actor *caster, int pow, bolt *beam, float vx, float vy,
                 mtarg).set_summoned(caster, 0, SPELL_IOOD), true, true);
     if (!mon)
     {
-        mprf(MSGCH_ERROR, "Failed to spawn projectile.");
+        mprf(MSGCH_ERROR, _("Failed to spawn projectile."));
         return spret::abort;
     }
 
@@ -290,7 +291,7 @@ dice_def iood_damage(int pow, int dist)
 static bool _iood_hit(monster& mon, const coord_def &pos, bool big_boom = false)
 {
     bolt beam;
-    beam.name = "orb of destruction";
+    beam.name = _("orb of destruction");
     beam.flavour = BEAM_DEVASTATION;
     beam.attitude = mon.attitude;
 
@@ -473,7 +474,7 @@ move_again:
                 if (mons->props[IOOD_DIST].get_int() < 2)
                 {
                     if (you.see_cell(pos))
-                        mpr("The orb fizzles.");
+                        mpr(_("The orb fizzles."));
                     monster_die(*mons, KILL_DISMISSED, NON_MONSTER);
                 }
 
@@ -481,7 +482,7 @@ move_again:
                 if (mon.props[IOOD_DIST].get_int() < 2)
                 {
                     if (you.see_cell(pos))
-                        mpr("The orb fizzles.");
+                        mpr(_("The orb fizzles."));
                     monster_die(mon, KILL_DISMISSED, NON_MONSTER);
                     return true;
                 }
@@ -489,9 +490,9 @@ move_again:
             else
             {
                 if (mon.observable())
-                    mpr("The orbs collide in a blinding explosion!");
+                    mpr(_("The orbs collide in a blinding explosion!"));
                 else
-                    mpr("You hear a loud magical explosion!");
+                    mpr(_("You hear a loud magical explosion!"));
                 noisy(40, pos);
                 monster_die(*mons, KILL_DISMISSED, NON_MONSTER);
                 _iood_hit(mon, pos, true);
@@ -521,7 +522,7 @@ move_again:
             if ((!shield || !shield_reflects(*shield)) && !victim->reflection())
             {
                 if (victim->is_player())
-                    mprf("You block %s.", mon.name(DESC_THE, true).c_str());
+                    mprf(_("You block %s."), mon.name(DESC_THE, true).c_str());
                 else
                 {
                     simple_monster_message(*mons, (" blocks "

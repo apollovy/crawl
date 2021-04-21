@@ -77,6 +77,7 @@
 #include "rltiles/tiledef-player.h"
 #endif
 #include "tiles-build-specific.h"
+#include "crawl_locale.h"
 
 
 
@@ -605,14 +606,14 @@ static string _weapon_to_str(weapon_type wpn_type)
     switch (wpn_type)
     {
     case WPN_UNARMED:
-        return "claws";
+        return _("claws");
     case WPN_THROWN:
-        return "thrown";
+        return _("thrown");
     case WPN_VIABLE:
-        return "viable";
+        return _("viable");
     case WPN_RANDOM:
     default:
-        return "random";
+        return _("random");
     }
 }
 

@@ -20,14 +20,8 @@ msgstr ""
 "X-Language: ru_RU\n"
 "X-Source-Language: C\n"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:55
 msgid "Failed to spawn projectile."
 msgstr "Не удалось создать снаряд."
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:64
-#, c-format
-msgid "beam (%d,%d)+t*(%d,%d)  ray (%f,%f)+t*(%f,%f)"
-msgstr "луч (%d,%d)+t*(%d,%d)  луч (%f,%f)+t*(%f,%f)"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:92
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:3791
@@ -68,6 +62,8 @@ msgstr "луч (%d,%d)+t*(%d,%d)  луч (%f,%f)+t*(%f,%f)"
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6767
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6842
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6852
+# Очень общий перевод, в итоге может быть и "вас" и "вы" и вам". Скорее всего будет
+# разным в разном контексте.
 msgid "you"
 msgstr "вы"
 
@@ -129,8 +125,6 @@ msgstr ""
 msgid "iood shield: pro %d, con %d"
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:293
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-data.h:6170
 msgid "orb of destruction"
 msgstr "сфера разрушения"
 
@@ -164,16 +158,12 @@ msgstr ""
 msgid "%s hits %s."
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:476
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:484
 msgid "The orb fizzles."
 msgstr "Сфера шипит."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:492
 msgid "The orbs collide in a blinding explosion!"
 msgstr "Сферы сталкиваются в ослепительном взрыве!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:494
 msgid "You hear a loud magical explosion!"
 msgstr "Вы слышите громкий магический взрыв!"
 
@@ -185,7 +175,6 @@ msgstr ""
 msgid "iood: Boosting above a submerged monster (can't swap)."
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:524
 #, c-format
 msgid "You block %s."
 msgstr "Вы блокируете %s."
@@ -344,7 +333,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1110
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:653
 msgid "."
-msgstr "."
+msgstr ""
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:539
 #, c-format
@@ -371,16 +360,12 @@ msgstr ""
 msgid "%s bounces off of thin air!"
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:147
 msgid "Recommended character"
 msgstr "Рекомендуемый персонаж"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:149
 msgid "Random character"
 msgstr "Случайный персонаж"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:152
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:157
 msgid "Random "
 msgstr "Случайный "
 
@@ -706,7 +691,6 @@ msgstr ""
 msgid " the "
 msgstr " "
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:182
 msgid "unnamed "
 msgstr "безымянный "
 
@@ -798,7 +782,6 @@ msgstr "безымянный "
 msgid ", "
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:185
 msgid "Welcome"
 msgstr "Добро пожаловать"
 
@@ -824,8 +807,6 @@ msgstr ""
 msgid "Incompatible species and background (%s) selected."
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:344
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:559
 #, c-format
 msgid "You are a%s %s %s."
 msgstr "Вы — %2$s %3$s."
@@ -856,26 +837,20 @@ msgstr ""
 msgid ". Play trunk anyway? (Y/N)"
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:587
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:249
 msgid "Esc - Quit"
 msgstr "Esc - Выйти"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:589
 msgid "* - Random name"
 msgstr "* - Случайное имя"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:595
 msgid "Enter - Begin!"
 msgstr "Enter - Начать!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:622
 msgid "That's a silly name!"
 msgstr "Это глупое имя!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:676
 msgid "What is your name today? "
-msgstr "Как вас зовут сегодня?"
+msgstr "Как вас зовут сегодня? "
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:678
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2223
@@ -934,6 +909,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-debug.cc:420
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:3557
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:5183
+# скорее всего уйдёт
 msgid "%"
 msgstr "%"
 
@@ -962,6 +938,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:1107
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:1258
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:4039
+# По виду, исплользуется только в системных целях
 msgid "seed"
 msgstr "семя"
 
@@ -1044,6 +1021,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2949
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:3504
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:5091
+# похоже, используется только для системных целей, а именно — построения JSON
 msgid "title"
 msgstr "титул"
 
@@ -1056,34 +1034,22 @@ msgstr ""
 msgid "show_pregen_toggle"
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:951
-msgid "seed-selection"
-msgstr "выбор семени"
-
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1011
 msgid "No player name specified."
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1081
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:162
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/skills.cc:69
 msgid "Warrior"
 msgstr "Воин"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1086
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/skills.cc:1666
 msgid "Adventurer"
 msgstr "Авантюрист"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1091
 msgid "Zealot"
 msgstr "Фанатик"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1096
 msgid "Warrior-mage"
 msgstr "Воин-маг"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1102
 msgid "Mage"
 msgstr "Маг"
 
@@ -1347,6 +1313,7 @@ msgstr "Маг"
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/crash.cc:388
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/crash.cc:389
 #, c-format
+# распилится на тысячи контекстов или совсем помрёт
 msgid "%s"
 msgstr ""
 
@@ -1384,6 +1351,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:272
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/end.cc:577
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/startup.cc:961
+# похоже на системную строку
 msgid "cancel"
 msgstr "отмена"
 
@@ -1414,110 +1382,81 @@ msgstr ""
 msgid "species"
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1332
 msgid "+ - Recommended species"
 msgstr "+ - Рекомендованный вид"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1334
 msgid "+ - Recommended background"
 msgstr "+ - Рекомендованная профессия"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1347
 msgid "Picks a random recommended species based on your current background choice."
 msgstr "Выбирает случайный рекомендованный вид, основываясь на выбранной вами профессии."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1348
 msgid "Picks a random recommended background based on your current species choice."
 msgstr "Выбирает случайную рекомендованную профессию, основываясь на выбранном вами виде."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1351
 msgid "# - Recommended character"
 msgstr "# - Рекомендованный персонаж"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1352
 msgid ""
 "Shuffles through random recommended character combinations until you accept "
 "one."
 msgstr "Перебирает комбинации из случайных рекомендованных персонажей, пока вы не выберете одного из них."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1356
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1792
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2177
 #, c-format
 msgid "% - List aptitudes"
 msgstr "% - Список склонностей"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1357
 msgid "Lists the numerical skill train aptitudes for all races."
 msgstr "Выводит числовой список склонностей к тренировке тех или иных навыков для всех видов."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1360
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1795
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2180
 msgid "? - Help"
 msgstr "? - Помощь"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1361
 msgid "Opens the help screen."
 msgstr "Открывает окно помощи"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1367
 msgid "    * - Random background"
 msgstr "    * - Случайная профессия"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1367
 msgid "    * - Random species"
 msgstr "    * - Случайный вид"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1368
 msgid "Picks a random background."
 msgstr "Выбирает случайную профессию."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1368
 msgid "Picks a random species."
 msgstr "Выбирает случайный вид."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1368
 msgid "    ! - Random character"
 msgstr "    ! - Случайный персонаж"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1369
 msgid "Shuffles through random character combinations until you accept one."
 msgstr "Перебирает комбинации из случайных персонажей, пока вы не выберете одного из них."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1377
 msgid "Space - Change background"
 msgstr "Пробел - Изменить профессию"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1378
 msgid "Lets you change your background choice."
 msgstr "Позволяет вам изменить выбранную профессию."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1382
 msgid "Space - Change species"
 msgstr "Пробел - Изменить вид"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1383
 msgid "Lets you change your species choice."
 msgstr "Позволяет вам изменить выбранный вид."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1387
 msgid "Space - Pick species first"
 msgstr "Пробел - Сначала выбрать вид"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1388
 msgid "Lets you pick your species first."
 msgstr "Позволяет вам сначала выбрать вид."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1392
 msgid "Space - Pick background first"
 msgstr "Пробел - Сначала выбрать профессию"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1393
 msgid "Lets you pick your background first."
 msgstr "Позволяет вам сначала выбрать профессию."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1391
 msgid "Play a new game with your previous choice."
 msgstr "Начать новую игру, использовав ваш предыдущий выбор."
 
@@ -1540,36 +1479,23 @@ msgstr ""
 msgid "newgame-choice"
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1666
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:569
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:608
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mutation-data.h:714
 msgid "claws"
 msgstr "когти"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1666
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1809
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:568
 msgid "unarmed"
 msgstr "безоружный"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1674
 msgid "large rocks"
 msgstr "большие камни"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1681
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:573
 msgid "boomerangs"
 msgstr "бумеранги"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1688
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:574
 msgid "javelins"
-msgstr "копья"
+msgstr "метательные копья"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1694
 msgid " and throwing nets"
-msgstr ""
+msgstr "и метательные сети"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1704
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/exclude.cc:643
@@ -1596,6 +1522,7 @@ msgstr ""
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4515
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4532
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4851
+# очень общо, но может сработать во многих случаях
 msgid " and "
 msgstr " и "
 
@@ -1851,11 +1778,9 @@ msgid ""
 "You have a choice of %s:"
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2229
 msgid "lessons"
 msgstr "уроки"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2229
 msgid "maps"
 msgstr "карты"
 
@@ -1902,7 +1827,6 @@ msgstr ""
 msgid "Targeting interrupted by HUP signal."
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:121
 msgid "escape"
 msgstr "побег"
 
@@ -1910,9 +1834,6 @@ msgstr "побег"
 msgid "mainly dealing with various forms of escape."
 msgstr ""
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:126
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:1753
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:1762
 msgid "destruction"
 msgstr "разрушение"
 
