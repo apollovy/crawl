@@ -1332,11 +1332,19 @@ bool activate_ability()
 
 static bool _can_movement_ability(bool quiet)
 {
-    if (!you.attribute[ATTR_HELD])
-        return true;
-    if (!quiet)
-        mprf("You cannot do that while %s.", held_status());
-    return false;
+    if (you.attribute[ATTR_HELD])
+    {
+        if (!quiet)
+            mprf("You cannot do that while %s.", held_status());
+        return false;
+    }
+    else if (you.is_stationary())
+    {
+        if (!quiet)
+            canned_msg(MSG_CANNOT_MOVE);
+        return false;
+    }
+    return true;
 }
 
 static bool _can_hop(bool quiet)
@@ -2544,9 +2552,9 @@ static spret _do_ability(const ability_def& abil, bool fail, dist *target)
         if (!spell_direction(*target, beam))
             return spret::abort;
 
-        int power = you.skill(SK_INVOCATIONS, 1)
-                    + random2(1 + you.skill(SK_INVOCATIONS, 1))
-                    + random2(1 + you.skill(SK_INVOCATIONS, 1));
+        int power = you.skill(SK_INVOCATIONS, 2)
+                    + random2(1 + you.skill(SK_INVOCATIONS, 2))
+                    + random2(1 + you.skill(SK_INVOCATIONS, 2));
 
         // Since the actual beam is random, check with BEAM_MMISSILE.
         if (!player_tracer(ZAP_DEBUGGING_RAY, power, beam, beam.range))
@@ -2557,12 +2565,10 @@ static spret _do_ability(const ability_def& abil, bool fail, dist *target)
             beam.origin_spell = SPELL_NO_SPELL; // let zapping reset this
             zap_type ztype =
                 random_choose(ZAP_BOLT_OF_FIRE,
-                              ZAP_FIREBALL,
                               ZAP_LIGHTNING_BOLT,
-                              ZAP_STICKY_FLAME,
-                              ZAP_IRON_SHOT,
+                              ZAP_BOLT_OF_MAGMA,
                               ZAP_BOLT_OF_DRAINING,
-                              ZAP_ORB_OF_ELECTRICITY);
+                              ZAP_CORROSIVE_BOLT);
             zapping(ztype, power, beam);
         }
         break;

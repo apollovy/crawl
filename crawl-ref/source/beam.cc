@@ -838,6 +838,14 @@ void bolt::bounce()
     ray.bounce(rg);
     extra_range_used += 2;
 
+    // Keep length of bounced spells constant despite reduced los (scarf of
+    // shadows, Robe of Night)
+    if (bounces == 1)
+    {
+        extra_range_used -= spell_range(origin_spell, ench_power, true, true)
+                            - range;
+    }
+
     ASSERT(!cell_is_solid(ray.pos()));
 }
 
@@ -1033,7 +1041,7 @@ void bolt::affect_cell()
 
     // If the player can ever walk through walls, this will need
     // special-casing too.
-    bool hit_player = found_player();
+    bool hit_player = found_player() && !ignores_player();
     if (hit_player && can_affect_actor(&you))
     {
         const int prev_reflections = reflections;
@@ -3740,6 +3748,9 @@ void bolt::affect_player()
 {
     hit_count[MID_PLAYER]++;
 
+    if (ignores_player())
+        return;
+
     // Explosions only have an effect during their explosion phase.
     // Special cases can be handled here.
     if (is_explosion && !in_explosion_phase)
@@ -3748,10 +3759,6 @@ void bolt::affect_player()
         finish_beam();
         return;
     }
-
-    // Digging -- don't care.
-    if (flavour == BEAM_DIGGING)
-        return;
 
     if (is_tracer)
     {
@@ -4018,6 +4025,23 @@ void bolt::affect_player()
             you.duration[DUR_FROZEN] = (2 + random2(3)) * BASELINE_DELAY;
         }
     }
+}
+
+bool bolt::ignores_player() const
+{
+
+    // Digging -- don't care.
+    if (flavour == BEAM_DIGGING)
+        return true;
+
+    if (agent() && agent()->is_monster()
+        && mons_is_hepliaklqana_ancestor(agent()->as_monster()->type))
+    {
+        // friends!
+        return true;
+    }
+
+    return false;
 }
 
 int bolt::apply_AC(const actor *victim, int hurted)
@@ -4739,6 +4763,8 @@ void bolt::affect_monster(monster* mon)
         {
             if (testbits(mon->flags, MF_DEMONIC_GUARDIAN))
                 mpr("Your demonic guardian avoids your attack.");
+            else if (mons_is_hepliaklqana_ancestor(mon->type))
+                mprf("%s avoids your attack.", mon->name(DESC_THE).c_str());
             else if (!bush_immune(*mon))
             {
                 simple_god_message(
@@ -6674,14 +6700,17 @@ bool shoot_through_monster(const bolt& beam, const monster* victim)
         origin_attitude = temp->attitude;
     }
 
+    // Fedhas logic: the alignment check is to allow a penanced player
+    // to continue to fight hostile plants, in case what they angered can
+    // fight back
     return (origin_worships_fedhas
-            && fedhas_protects(victim))
+            && fedhas_protects(victim)
+            && (mons_atts_aligned(victim->attitude, origin_attitude)
+               || victim->neutral()))
+           // Player guardians
            || (originator->is_player()
-               && testbits(victim->flags, MF_DEMONIC_GUARDIAN))
-           && !beam.is_enchantment()
-           && beam.origin_spell != SPELL_CHAIN_LIGHTNING
-           && (mons_atts_aligned(victim->attitude, origin_attitude)
-               || victim->neutral());
+               && (testbits(victim->flags, MF_DEMONIC_GUARDIAN)
+                   || mons_is_hepliaklqana_ancestor(victim->type)));
 }
 
 /**
