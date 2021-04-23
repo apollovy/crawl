@@ -2116,7 +2116,7 @@ string god_name(god_type which_god, bool long_name)
     if (which_god == GOD_JIYVA)
     {
         return god_name_jiyva(long_name) +
-               (long_name? " the Shapeless" : "");
+               (long_name? _(" the Shapeless") : "");
     }
 
     if (long_name)
@@ -2128,46 +2128,46 @@ string god_name(god_type which_god, bool long_name)
 
     switch (which_god)
     {
-    case GOD_NO_GOD:        return "No God";
-    case GOD_RANDOM:        return "random";
-    case GOD_NAMELESS:      return "nameless";
-    case GOD_ZIN:           return "Zin";
-    case GOD_SHINING_ONE:   return "the Shining One";
-    case GOD_KIKUBAAQUDGHA: return "Kikubaaqudgha";
-    case GOD_YREDELEMNUL:   return "Yredelemnul";
-    case GOD_VEHUMET:       return "Vehumet";
-    case GOD_OKAWARU:       return "Okawaru";
-    case GOD_MAKHLEB:       return "Makhleb";
-    case GOD_SIF_MUNA:      return "Sif Muna";
-    case GOD_TROG:          return "Trog";
-    case GOD_NEMELEX_XOBEH: return "Nemelex Xobeh";
-    case GOD_ELYVILON:      return "Elyvilon";
-    case GOD_LUGONU:        return "Lugonu";
-    case GOD_BEOGH:         return "Beogh";
-    case GOD_FEDHAS:        return "Fedhas";
-    case GOD_CHEIBRIADOS:   return "Cheibriados";
-    case GOD_XOM:           return "Xom";
-    case GOD_ASHENZARI:     return "Ashenzari";
-    case GOD_DITHMENOS:     return "Dithmenos";
-    case GOD_GOZAG:         return "Gozag";
-    case GOD_QAZLAL:        return "Qazlal";
-    case GOD_RU:            return "Ru";
+    case GOD_NO_GOD:        return _("No God");
+    case GOD_RANDOM:        return _("random");
+    case GOD_NAMELESS:      return _("nameless");
+    case GOD_ZIN:           return _("Zin");
+    case GOD_SHINING_ONE:   return _("the Shining One");
+    case GOD_KIKUBAAQUDGHA: return _("Kikubaaqudgha");
+    case GOD_YREDELEMNUL:   return _("Yredelemnul");
+    case GOD_VEHUMET:       return _("Vehumet");
+    case GOD_OKAWARU:       return _("Okawaru");
+    case GOD_MAKHLEB:       return _("Makhleb");
+    case GOD_SIF_MUNA:      return _("Sif Muna");
+    case GOD_TROG:          return _("Trog");
+    case GOD_NEMELEX_XOBEH: return _("Nemelex Xobeh");
+    case GOD_ELYVILON:      return _("Elyvilon");
+    case GOD_LUGONU:        return _("Lugonu");
+    case GOD_BEOGH:         return _("Beogh");
+    case GOD_FEDHAS:        return _("Fedhas");
+    case GOD_CHEIBRIADOS:   return _("Cheibriados");
+    case GOD_XOM:           return _("Xom");
+    case GOD_ASHENZARI:     return _("Ashenzari");
+    case GOD_DITHMENOS:     return _("Dithmenos");
+    case GOD_GOZAG:         return _("Gozag");
+    case GOD_QAZLAL:        return _("Qazlal");
+    case GOD_RU:            return _("Ru");
 #if TAG_MAJOR_VERSION == 34
-    case GOD_PAKELLAS:      return "Pakellas";
+    case GOD_PAKELLAS:      return _("Pakellas");
 #endif
-    case GOD_USKAYAW:       return "Uskayaw";
-    case GOD_HEPLIAKLQANA:  return "Hepliaklqana";
-    case GOD_WU_JIAN:     return "Wu Jian";
+    case GOD_USKAYAW:       return _("Uskayaw");
+    case GOD_HEPLIAKLQANA:  return _("Hepliaklqana");
+    case GOD_WU_JIAN:     return _("Wu Jian");
     case GOD_JIYVA: // This is handled at the beginning of the function
-    case GOD_ECUMENICAL:    return "an unknown god";
-    case NUM_GODS:          return "Buggy";
+    case GOD_ECUMENICAL:    return _("an unknown god");
+    case NUM_GODS:          return _("Buggy");
     }
     return "";
 }
 
 string god_name_jiyva(bool second_name)
 {
-    string name = "Jiyva";
+    string name = _("Jiyva");
     if (second_name)
         name += " " + you.jiyva_second_name;
 
@@ -2178,14 +2178,14 @@ string wu_jian_random_sifu_name()
 {
     switch (random2(7))
     {
-        case 0: return "Deng Ai";
-        case 1: return "Jiang Wei";
-        case 2: return "Zhang Bao";
-        case 3: return "Ma Yunglu";
-        case 4: return "Sun Luban";
-        case 5: return "Gene Jian Bin";
-        case 6: return "Cai Fang";
-        default: return "Bug";
+        case 0: return _("Deng Ai");
+        case 1: return _("Jiang Wei");
+        case 2: return _("Zhang Bao");
+        case 3: return _("Ma Yunglu");
+        case 4: return _("Sun Luban");
+        case 5: return _("Gene Jian Bin");
+        case 6: return _("Cai Fang");
+        default: return _("Bug");
     }
 }
 

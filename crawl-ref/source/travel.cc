@@ -60,6 +60,7 @@
 #include "unicode.h"
 #include "unwind.h"
 #include "view.h"
+#include "crawl_locale.h"
 
 enum IntertravelDestination
 {
@@ -3271,8 +3272,8 @@ level_id level_id::get_next_level_id(const coord_def &pos)
 
 string level_id::describe(bool long_name, bool with_number) const
 {
-    string result = (long_name ? branches[branch].longname
-                               : branches[branch].abbrevname);
+    string result = (long_name ? _(branches[branch].longname)
+                               : _(branches[branch].abbrevname));
 
     if (with_number && brdepth[branch] != 1)
     {
@@ -3281,11 +3282,11 @@ string level_id::describe(bool long_name, bool with_number) const
             // decapitalise 'the'
             if (starts_with(result, "The"))
                 result[0] = 't';
-            result = make_stringf("Level %d of %s",
-                      depth, result.c_str());
+            result = make_stringf(_("Level %d of %s"),
+                      depth, __("Level %d of %s", result.c_str()));
         }
         else if (depth)
-            result = make_stringf("%s:%d", result.c_str(), depth);
+            result = make_stringf("%s:%d", _(result.c_str()), depth);
         else
             result = make_stringf("%s:$", result.c_str());
     }

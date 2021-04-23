@@ -58,6 +58,7 @@
 #include "unwind.h"
 #include "version.h"
 #include "outer-menu.h"
+#include "crawl_locale.h"
 
 using namespace ui;
 
@@ -423,7 +424,7 @@ UIHiscoresMenu::UIHiscoresMenu()
 #endif
 
     auto title = make_shared<Text>(formatted_string(
-                "Dungeon Crawl Stone Soup: High Scores", YELLOW));
+                _("Dungeon Crawl Stone Soup: High Scores"), YELLOW));
     title->set_margin_for_sdl(0, 0, 0, 16);
     title_hbox->add_child(move(title));
 
@@ -569,10 +570,10 @@ static string _hiscore_date_string(time_t time)
 {
     struct tm *date = TIME_FN(&time);
 
-    const char *mons[12] = { "Jan", "Feb", "Mar", "Apr", "May", "June",
-                             "July", "Aug", "Sept", "Oct", "Nov", "Dec" };
+    const char *mons[12] = { _("Jan"), _("Feb"), _("Mar"), _("Apr"), _("May"), _("June"),
+                             _("July"), _("Aug"), _("Sept"), _("Oct"), _("Nov"), _("Dec") };
 
-    return make_stringf("%s %d, %d", mons[date->tm_mon], date->tm_mday,
+    return make_stringf(_("%s %d, %d"), mons[date->tm_mon], date->tm_mday,
                                      date->tm_year + 1900);
 }
 
@@ -1803,7 +1804,7 @@ string scorefile_entry::game_time(death_desc_verbosity verbosity) const
 
     if (verbosity == DDV_VERBOSE)
     {
-        line += make_stringf("The game lasted %s (%d turns).",
+        line += make_stringf(_("The game lasted %s (%d turns)."),
                              make_time_string(real_time).c_str(), num_turns);
 
         line += _hiscore_newline_string();
@@ -1816,10 +1817,10 @@ const char *scorefile_entry::damage_verb() const
 {
     // GDL: here's an example of using final_hp. Verbiage could be better.
     // bwr: changed "blasted" since this is for melee
-    return (final_hp > -6)  ? "Slain"   :
-           (final_hp > -14) ? "Mangled" :
-           (final_hp > -22) ? "Demolished"
-                            : "Annihilated";
+    return (final_hp > -6)  ? _("Slain")   :
+           (final_hp > -14) ? _("Mangled") :
+           (final_hp > -22) ? _("Demolished")
+                            : _("Annihilated");
 }
 
 string scorefile_entry::death_source_desc() const
@@ -1830,7 +1831,7 @@ string scorefile_entry::death_source_desc() const
 string scorefile_entry::damage_string(bool terse) const
 {
     return make_stringf("(%d%s)", damage,
-                        terse? "" : " damage");
+                        terse? "" : _(" damage"));
 }
 
 string scorefile_entry::strip_article_a(const string &s) const
@@ -1921,8 +1922,8 @@ string scorefile_entry::single_cdesc() const
     string scname;
     scname = chop_string(name, 10);
 
-    return make_stringf("%8d %s %s-%02d%s", points, scname.c_str(),
-                        race_class_name.c_str(), lvl,
+    return make_stringf(_("%8d %s %s-%02d%s"), points, scname.c_str(),
+                        _(race_class_name.c_str()), lvl,
                         (wiz_mode == 1) ? "W" : (explore_mode == 1) ? "E" : "");
 }
 
@@ -1953,12 +1954,12 @@ scorefile_entry::character_description(death_desc_verbosity verbosity) const
     // Please excuse the following bit of mess in the name of flavour ;)
     if (verbose)
     {
-        desc = make_stringf("%8d %s the %s (level %d",
-                  points, name.c_str(), title.c_str(), lvl);
+        desc = make_stringf(_("%8d %s the %s (level %d"),
+                  points, name.c_str(), _(title.c_str()), lvl);
     }
     else
     {
-        desc = make_stringf("%8d %s the %s %s (level %d",
+        desc = make_stringf(_("%8d %s the %s %s (level %d"),
                   points, name.c_str(),
                   _species_name(race).c_str(),
                   _job_name(job), lvl);
@@ -1966,28 +1967,26 @@ scorefile_entry::character_description(death_desc_verbosity verbosity) const
 
     if (final_max_max_hp > 0)  // as the other two may be negative
     {
-        desc += make_stringf(", %d/%d", final_hp, final_max_hp);
+        desc += make_stringf(_(", %d/%d"), final_hp, final_max_hp);
 
         if (final_max_hp < final_max_max_hp)
-            desc += make_stringf(" (%d)", final_max_max_hp);
+            desc += make_stringf(_(" (%d)"), final_max_max_hp);
 
-        desc += " HPs";
+        desc += _(" HPs");
     }
 
-    desc += wiz_mode ? ") *WIZ*" : explore_mode ? ") *EXPLORE*" : ")";
+    desc += wiz_mode ? _(") *WIZ*") : explore_mode ? _(") *EXPLORE*") : ")";
     desc += _hiscore_newline_string();
 
     if (verbose)
     {
         string srace = _species_name(race);
-        desc += make_stringf("Began as a%s %s %s",
-                 is_vowel(srace[0]) ? "n" : "",
-                 srace.c_str(),
-                 _job_name(job));
-
         ASSERT(birth_time);
-        desc += " on ";
-        desc += _hiscore_date_string(birth_time);
+        desc += make_stringf(_("Began as a%s %s %s on %s"),
+                 is_vowel(srace[0]) ? _("n") : "",
+                 srace.c_str(),
+                 _job_name(job), _hiscore_date_string(birth_time).c_str());
+
         // TODO: show seed here?
 
         desc = _append_sentence_delimiter(desc, ".");
@@ -1999,8 +1998,8 @@ scorefile_entry::character_description(death_desc_verbosity verbosity) const
         {
             if (god == GOD_XOM)
             {
-                desc += make_stringf("Was a %sPlaything of Xom.",
-                                    (lvl >= 20) ? "Favourite " : "");
+                desc += make_stringf(_("Was a %sPlaything of Xom."),
+                                    (lvl >= 20) ? _("Favourite ") : "");
 
                 desc += _hiscore_newline_string();
             }
@@ -2008,16 +2007,16 @@ scorefile_entry::character_description(death_desc_verbosity verbosity) const
             {
                 // Not exactly the same as the religion screen, but
                 // good enough to fill this slot for now.
-                desc += make_stringf("Was %s of %s%s",
-                             (piety >= piety_breakpoint(5)) ? "the Champion" :
-                             (piety >= piety_breakpoint(4)) ? "a High Priest" :
-                             (piety >= piety_breakpoint(3)) ? "an Elder" :
-                             (piety >= piety_breakpoint(2)) ? "a Priest" :
-                             (piety >= piety_breakpoint(1)) ? "a Believer" :
-                             (piety >= piety_breakpoint(0)) ? "a Follower"
-                                                            : "an Initiate",
-                          god_name(god).c_str(),
-                             (penance > 0) ? " (penitent)." : ".");
+                desc += make_stringf(_("Was %s of %s%s"),
+                             (piety >= piety_breakpoint(5)) ? __("Was %s of %s%s", "the Champion") :
+                             (piety >= piety_breakpoint(4)) ? __("Was %s of %s%s", "a High Priest") :
+                             (piety >= piety_breakpoint(3)) ? __("Was %s of %s%s", "an Elder") :
+                             (piety >= piety_breakpoint(2)) ? __("Was %s of %s%s", "a Priest") :
+                             (piety >= piety_breakpoint(1)) ? __("Was %s of %s%s", "a Believer") :
+                             (piety >= piety_breakpoint(0)) ? __("Was %s of %s%s", "a Follower")
+                                                            : __("Was %s of %s%s", "an Initiate"),
+                                     __("Was %s of %s%s", god_name(god).c_str()),
+                             (penance > 0) ? _(" (penitent).") : ".");
 
                 desc += _hiscore_newline_string();
             }
@@ -2036,7 +2035,7 @@ string scorefile_entry::death_place(death_desc_verbosity verbosity) const
         return "";
 
     if (verbosity == DDV_ONELINE || verbosity == DDV_TERSE)
-        return " (" + level_id(branch, dlvl).describe() + ")";
+        return make_stringf(_(" (%s)"), _(level_id(branch, dlvl).describe().c_str()));
 
     if (verbose && death_type != KILLED_BY_QUITTING && death_type != KILLED_BY_WIZMODE)
         place += "...";
@@ -2050,8 +2049,7 @@ string scorefile_entry::death_place(death_desc_verbosity verbosity) const
     if (verbose && death_time
         && !_hiscore_same_day(birth_time, death_time))
     {
-        place += " on ";
-        place += _hiscore_date_string(death_time);
+        place += make_stringf(_(" on %s"), _hiscore_date_string(death_time).c_str());
     }
 
     place = _append_sentence_delimiter(place, ".");
@@ -2086,14 +2084,12 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
     {
     case KILLED_BY_MONSTER:
         if (terse)
-            desc += death_source_desc();
+            desc += __("slain by", death_source_desc().c_str());
         else if (oneline)
-            desc += "slain by " + death_source_desc();
+            desc += make_stringf(_("slain by %s"), __("slain by", death_source_desc().c_str()));
         else
         {
-            desc += damage_verb();
-            desc += " by ";
-            desc += death_source_desc();
+            desc += make_stringf(__("slain by", "%s by %s"), _(damage_verb()), __("slain by", death_source_desc().c_str()));
         }
 
         // put the damage on the weapon line if there is one
@@ -2769,11 +2765,11 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
                 {
                     if (!semiverbose)
                     {
-                        desc += "... " + sumname;
+                        desc += make_stringf(_("... %s"), _(sumname.c_str()));
                         desc += _hiscore_newline_string();
                     }
                     else
-                        desc += " (" + sumname;
+                        desc += make_stringf(_(" (%s"), _(sumname.c_str()));
                 }
 
                 if (semiverbose)

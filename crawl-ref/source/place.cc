@@ -10,6 +10,8 @@
 #include "branch.h"
 #include "libutil.h"
 #include "player.h"
+#include "stringutil.h"
+#include "crawl_locale.h"
 
 // Prepositional form of branch level name. For example, "in the
 // Vestibule of Hell" or "on level 3 of the Dungeon".
@@ -18,8 +20,10 @@ string prep_branch_level_name(level_id id)
     string place = id.describe(true, true);
     if (!place.empty() && place != "Pandemonium")
         place[0] = tolower_safe(place[0]);
-    return place.find("level") == 0 ? "on " + place
-                                    : "in " + place;
+    return make_stringf(
+        __("prep_branch_level_name", "%s %s"),
+        place.find("level") == 0 ? _("on ") : _("in "), place.c_str()
+    );
 }
 
 bool single_level_branch(branch_type branch)
