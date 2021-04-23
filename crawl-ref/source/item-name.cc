@@ -53,7 +53,8 @@
 #include "unicode.h"
 #include "unwind.h"
 #include "viewgeom.h"
-#include "crawl_locale.h"
+
+#define _(String) String
 
 static bool _is_consonant(char let);
 static char _random_vowel();
