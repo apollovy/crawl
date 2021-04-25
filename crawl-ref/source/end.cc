@@ -38,6 +38,7 @@
 #include "xom.h"
 #include "ui.h"
 #include "rltiles/tiledef-feat.h"
+#include "crawl_locale.h"
 
 #ifdef __ANDROID__
 #include <android/log.h>
@@ -491,7 +492,7 @@ NORETURN void end_game(scorefile_entry &se)
 
     goodbye_msg += hiscore;
 
-    goodbye_msg += make_stringf("\nBest Crawlers - %s\n",
+    goodbye_msg += make_stringf(_("\nBest Crawlers - %s\n"),
             crawl_state.game_type_name().c_str());
 
 #ifdef USE_TILE_LOCAL

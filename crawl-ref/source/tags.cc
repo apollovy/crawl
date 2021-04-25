@@ -92,6 +92,8 @@
 #include "unwind.h"
 #include "version.h"
 
+#define _(String) String
+
 vector<ghost_demon> global_ghosts; // only for reading/writing
 
 // defined in dgn-overview.cc
@@ -2218,21 +2220,21 @@ static void _tag_construct_companions(writer &th)
 // Save versions 30-32.26 are readable but don't store the names.
 static const char* old_species[]=
 {
-    "Human", "High Elf", "Deep Elf", "Sludge Elf", "Mountain Dwarf", "Halfling",
-    "Hill Orc", "Kobold", "Mummy", "Naga", "Ogre", "Troll",
-    "Red Draconian", "White Draconian", "Green Draconian", "Yellow Draconian",
-    "Grey Draconian", "Black Draconian", "Purple Draconian", "Mottled Draconian",
-    "Pale Draconian", "Draconian", "Centaur", "Demigod", "Spriggan", "Minotaur",
-    "Demonspawn", "Ghoul", "Tengu", "Merfolk", "Vampire", "Deep Dwarf", "Felid",
-    "Octopode",
+    _("Human"), _("High Elf"), _("Deep Elf"), _("Sludge Elf"), _("Mountain Dwarf"), _("Halfling"),
+    _("Hill Orc"), _("Kobold"), _("Mummy"), _("Naga"), _("Ogre"), _("Troll"),
+    _("Red Draconian"), _("White Draconian"), _("Green Draconian"), _("Yellow Draconian"),
+    _("Grey Draconian"), _("Black Draconian"), _("Purple Draconian"), _("Mottled Draconian"),
+    _("Pale Draconian"), _("Draconian"), _("Centaur"), _("Demigod"), _("Spriggan"), _("Minotaur"),
+    _("Demonspawn"), _("Ghoul"), _("Tengu"), _("Merfolk"), _("Vampire"), _("Deep Dwarf"), _("Felid"),
+    _("Octopode"),
 };
 
 static const char* old_gods[]=
 {
-    "", "Zin", "The Shining One", "Kikubaaqudgha", "Yredelemnul", "Xom",
-    "Vehumet", "Okawaru", "Makhleb", "Sif Muna", "Trog", "Nemelex Xobeh",
-    "Elyvilon", "Lugonu", "Beogh", "Jiyva", "Fedhas", "Cheibriados",
-    "Ashenzari",
+    "", _("Zin"), _("The Shining One"), _("Kikubaaqudgha"), _("Yredelemnul"), _("Xom"),
+    _("Vehumet"), _("Okawaru"), _("Makhleb"), _("Sif Muna"), _("Trog"), _("Nemelex Xobeh"),
+    _("Elyvilon"), _("Lugonu"), _("Beogh"), _("Jiyva"), _("Fedhas"), _("Cheibriados"),
+    _("Ashenzari"),
 };
 
 void tag_read_char(reader &th, uint8_t /*format*/, uint8_t major, uint8_t minor)

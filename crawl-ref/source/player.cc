@@ -5197,7 +5197,7 @@ string player_save_info::short_desc(bool use_qualifier) const
     desc << make_stringf(
             _("%s, a level %i %s %s%s"),
             name.c_str(), experience_level, _(species_name.c_str()), _(class_name.c_str()),
-            god_description(religion, god_name, jiyva_second_name)
+            god_description(religion, god_name, jiyva_second_name).c_str()
     );
 
 #ifdef WIZARD

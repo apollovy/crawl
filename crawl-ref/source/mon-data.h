@@ -5,6 +5,9 @@
 #include "enum.h"
 #include "tag-version.h"
 
+
+#define _(String) String
+
 /* ******************************************************************
 
    (see "mon-util.h" for the gory details)
@@ -133,7 +136,7 @@ static monsterentry mondata[] =
 // It is also a good prototype for new monsters.
 {
     // id, glyph, colour, name
-    MONS_PROGRAM_BUG, 'B', LIGHTRED, "program bug",
+    MONS_PROGRAM_BUG, 'B', LIGHTRED, _("program bug"),
     // monster flags
     M_NOT_DANGEROUS | M_CANT_SPAWN,
     // resistance flags
@@ -173,124 +176,124 @@ static monsterentry mondata[] =
 // Axed monsters.
 // AXED_MON(MONS_AXE_MURDERER, "Jason")
 #if TAG_MAJOR_VERSION == 34
-    AXED_MON(MONS_BUMBLEBEE, "bumblebee")
-    AXED_MON(MONS_WOOD_GOLEM, "wood golem")
-    AXED_MON(MONS_ANT_LARVA, "ant larva")
-    AXED_MON(MONS_LABORATORY_RAT, "laboratory rat")
-    AXED_MON(MONS_WAR_DOG, "war dog")
-    AXED_MON(MONS_SPIRIT, "spirit")
-    AXED_MON(MONS_PALADIN, "paladin")
-    AXED_MON(MONS_DEEP_ELF_SOLDIER, "deep elf soldier")
-    AXED_MON(MONS_PAN, "pan")
-    AXED_MON(MONS_LAMIA, "lamia")
-    AXED_MON(MONS_DEEP_DWARF_SCION, "deep dwarf scion")
-    AXED_MON(MONS_DEEP_DWARF_ARTIFICER, "deep dwarf artificer")
-    AXED_MON(MONS_DEEP_DWARF_NECROMANCER, "deep dwarf necromancer")
-    AXED_MON(MONS_CHAOS_BUTTERFLY, "chaos butterfly")
-    AXED_MON(MONS_POLYMOTH, "polymoth")
-    AXED_MON(MONS_MOTH_OF_SUPPRESSION, "moth of suppression")
-    AXED_MON(MONS_ROCK_WORM, "rock worm")
-    AXED_MON(MONS_FORMICID_DRONE, "formicid drone")
-    AXED_MON(MONS_SPIRIT_WOLF, "spirit wolf")
-    AXED_MON(MONS_LAVA_FISH, "lava fish")
-    AXED_MON(MONS_JELLYFISH, "jellyfish")
-    AXED_MON(MONS_GREY_RAT, "grey rat")
-    AXED_MON(MONS_SPINY_WORM, "spiny worm")
-    AXED_MON(MONS_ROCK_TROLL, "rock troll")
-    AXED_MON(MONS_MONSTROUS_ITEM_MIMIC, "monstrous item mimic")
-    AXED_MON(MONS_GIANT_AMOEBA, "giant amoeba")
-    AXED_MON(MONS_DEEP_DWARF_BERSERKER, "deep dwarf berserker")
-    AXED_MON(MONS_AGATE_SNAIL, "agate snail")
-    AXED_MON(MONS_GIANT_CENTIPEDE, "giant centipede")
-    AXED_MON(MONS_ANCIENT_BEAR, "ancient bear")
-    AXED_MON(MONS_ROTTING_DEVIL, "rotting devil")
-    AXED_MON(MONS_IGNIS, "ignis")
-    AXED_MON(MONS_DJINNI, "djinni")
-    AXED_MON(MONS_RAKSHASA_FAKE, "rakshasa fake")
-    AXED_MON(MONS_MARA_FAKE, "mara fake")
+    AXED_MON(MONS_BUMBLEBEE, _("bumblebee"))
+    AXED_MON(MONS_WOOD_GOLEM, _("wood golem"))
+    AXED_MON(MONS_ANT_LARVA, _("ant larva"))
+    AXED_MON(MONS_LABORATORY_RAT, _("laboratory rat"))
+    AXED_MON(MONS_WAR_DOG, _("war dog"))
+    AXED_MON(MONS_SPIRIT, _("spirit"))
+    AXED_MON(MONS_PALADIN, _("paladin"))
+    AXED_MON(MONS_DEEP_ELF_SOLDIER, _("deep elf soldier"))
+    AXED_MON(MONS_PAN, _("pan"))
+    AXED_MON(MONS_LAMIA, _("lamia"))
+    AXED_MON(MONS_DEEP_DWARF_SCION, _("deep dwarf scion"))
+    AXED_MON(MONS_DEEP_DWARF_ARTIFICER, _("deep dwarf artificer"))
+    AXED_MON(MONS_DEEP_DWARF_NECROMANCER, _("deep dwarf necromancer"))
+    AXED_MON(MONS_CHAOS_BUTTERFLY, _("chaos butterfly"))
+    AXED_MON(MONS_POLYMOTH, _("polymoth"))
+    AXED_MON(MONS_MOTH_OF_SUPPRESSION, _("moth of suppression"))
+    AXED_MON(MONS_ROCK_WORM, _("rock worm"))
+    AXED_MON(MONS_FORMICID_DRONE, _("formicid drone"))
+    AXED_MON(MONS_SPIRIT_WOLF, _("spirit wolf"))
+    AXED_MON(MONS_LAVA_FISH, _("lava fish"))
+    AXED_MON(MONS_JELLYFISH, _("jellyfish"))
+    AXED_MON(MONS_GREY_RAT, _("grey rat"))
+    AXED_MON(MONS_SPINY_WORM, _("spiny worm"))
+    AXED_MON(MONS_ROCK_TROLL, _("rock troll"))
+    AXED_MON(MONS_MONSTROUS_ITEM_MIMIC, _("monstrous item mimic"))
+    AXED_MON(MONS_GIANT_AMOEBA, _("giant amoeba"))
+    AXED_MON(MONS_DEEP_DWARF_BERSERKER, _("deep dwarf berserker"))
+    AXED_MON(MONS_AGATE_SNAIL, _("agate snail"))
+    AXED_MON(MONS_GIANT_CENTIPEDE, _("giant centipede"))
+    AXED_MON(MONS_ANCIENT_BEAR, _("ancient bear"))
+    AXED_MON(MONS_ROTTING_DEVIL, _("rotting devil"))
+    AXED_MON(MONS_IGNIS, _("ignis"))
+    AXED_MON(MONS_DJINNI, _("djinni"))
+    AXED_MON(MONS_RAKSHASA_FAKE, _("rakshasa fake"))
+    AXED_MON(MONS_MARA_FAKE, _("mara fake"))
     // GNOME_NO_MORE
-    AXED_MON(MONS_GNOME, "gnome")
+    AXED_MON(MONS_GNOME, _("gnome"))
     // GOLEM_NO_MORE
-    AXED_MON(MONS_CLAY_GOLEM, "clay golem")
-    AXED_MON(MONS_STONE_GOLEM, "stone golem")
-    AXED_MON(MONS_FORMICID_VENOM_MAGE, "formicid venom mage")
-    AXED_MON(MONS_SPRIGGAN_ASSASSIN, "spriggan assassin")
-    AXED_MON(MONS_VAPOUR, "vapour")
-    AXED_MON(MONS_THORN_LOTUS, "thorn lotus")
-    AXED_MON(MONS_GIANT_GOLDFISH, "giant goldfish")
-    AXED_MON(MONS_SILVER_STAR, "silver star")
-    AXED_MON(MONS_FLAMING_CORPSE, "flaming corpse")
-    AXED_MON(MONS_GRIZZLY_BEAR, "grizzly bear")
-    AXED_MON(MONS_SPRIGGAN_ENCHANTER, "spriggan enchanter")
-    AXED_MON(MONS_PHOENIX, "phoenix")
-    AXED_MON(MONS_SHEDU, "shedu")
-    AXED_MON(MONS_PLAGUE_SHAMBLER, "plague shambler")
-    AXED_MON(MONS_GIANT_SLUG, "giant slug")
-    AXED_MON(MONS_FIREFLY, "firefly")
-    AXED_MON(MONS_BROWN_OOZE, "brown ooze")
-    AXED_MON(MONS_PULSATING_LUMP, "pulsating lump")
-    AXED_MON(MONS_BIG_FISH, "big fish")
-    AXED_MON(MONS_LAVA_WORM, "lava worm")
-    AXED_MON(MONS_SHARK, "shark")
-    AXED_MON(MONS_INEPT_ITEM_MIMIC, "inept item mimic")
-    AXED_MON(MONS_ITEM_MIMIC, "item mimic")
-    AXED_MON(MONS_RAVENOUS_ITEM_MIMIC, "ravenous item mimic")
-    AXED_MON(MONS_INEPT_FEATURE_MIMIC, "inept feature mimic")
-    AXED_MON(MONS_FEATURE_MIMIC, "feature mimic")
-    AXED_MON(MONS_RAVENOUS_FEATURE_MIMIC, "ravenous feature mimic")
-    AXED_MON(MONS_MNOLEG_TENTACLE, "mnoleg tentacle")
-    AXED_MON(MONS_MNOLEG_TENTACLE_SEGMENT, "mnoleg tentacle segment")
-    AXED_MON(MONS_UNBORN, "unborn")
-    AXED_MON(MONS_GIANT_MITE, "giant mite")
-    AXED_MON(MONS_BABY_ALLIGATOR, "baby alligator")
-    AXED_MON(MONS_BORING_BEETLE, "boring beetle")
-    AXED_MON(MONS_CHIMERA, "chimera")
-    AXED_MON(MONS_RAVEN, "raven")
-    AXED_MON(MONS_SINGULARITY, "singularity")
-    AXED_MON(MONS_GRAND_AVATAR, "grand avatar")
-    AXED_MON(MONS_SALAMANDER_FIREBRAND, "salamander firebrand")
-    AXED_MON(MONS_OCTOPODE_CRUSHER, "octopode crusher")
-    AXED_MON(MONS_BLUE_DEVIL, "blue devil")
-    AXED_MON(MONS_BRAIN_WORM, "brain worm")
-    AXED_MON(MONS_DEEP_ELF_SUMMONER, "deep elf summoner")
-    AXED_MON(MONS_DEEP_ELF_CONJURER, "deep elf conjurer")
-    AXED_MON(MONS_DEEP_ELF_PRIEST, "deep elf priest")
-    AXED_MON(MONS_DEEP_ELF_FIGHTER, "deep elf fighter")
-    AXED_MON(MONS_TRAPDOOR_SPIDER, "trapdoor spider")
-    AXED_MON(MONS_SALAMANDER_STORMCALLER, "salamander stormcaller")
-    AXED_MON(MONS_NORRIS, "norris")
-    AXED_MON(MONS_MAUD, "maud")
-    AXED_MON(MONS_WIGLAF, "wiglaf")
-    AXED_MON(MONS_SHEEP, "sheep")
-    AXED_MON(MONS_ANUBIS_GUARD, "anubis guard")
-    AXED_MON(MONS_GRIFFON, "griffon")
-    AXED_MON(MONS_BEETLE, "beetle")
-    AXED_MON(MONS_PUTRID_DEMONSPAWN, "putrid demonspawn")
-    AXED_MON(MONS_CHAOS_CHAMPION, "chaos champion")
-    AXED_MON(MONS_WASP, "wasp")
-    AXED_MON(MONS_MOTTLED_DRACONIAN, "mottled draconian")
-    AXED_MON(MONS_DRACONIAN_ZEALOT, "draconian zealot")
-    AXED_MON(MONS_HILL_GIANT, "hill giant")
-    AXED_MON(MONS_BULTUNGIN, "bultungin")
-    AXED_MON(MONS_HYPERACTIVE_BALLISTOMYCETE, "hyperactive ballistomycete")
-    AXED_MON(MONS_HOMUNCULUS, "homunculus")
-    AXED_MON(MONS_SOUPLING, "soupling")
-    AXED_MON(MONS_BLESSED_TOE, "blessed toe")
-    AXED_MON(MONS_LAVA_ORC, "lava orc")
-    AXED_MON(MONS_MONSTROUS_FEATURE_MIMIC, "monstrous feature mimic")
-    AXED_MON(MONS_SLAVE, "slave")
-    AXED_MON(MONS_HUNGRY_GHOST, "hungry ghost")
-    AXED_MON(MONS_CROCODILE, "crocodile")
-    AXED_MON(MONS_HIPPOGRIFF, "hippogriff")
-    AXED_MON(MONS_PORCUPINE, "porcupine")
-    AXED_MON(MONS_CRAWLING_CORPSE, "crawling corpse")
-    AXED_MON(MONS_MACABRE_MASS, "macabre mass")
-    AXED_MON(MONS_EYE_OF_DRAINING, "eye of draining")
-    AXED_MON(MONS_DEATH_OOZE, "death ooze")
-    AXED_MON(MONS_LEOPARD_GECKO, "leopard gecko")
-    AXED_MON(MONS_WORKER_ANT, "worker ant")
-    AXED_MON(MONS_QUEEN_ANT, "queen ant")
-    AXED_MON(MONS_SOLDIER_ANT, "soldier ant")
+    AXED_MON(MONS_CLAY_GOLEM, _("clay golem"))
+    AXED_MON(MONS_STONE_GOLEM, _("stone golem"))
+    AXED_MON(MONS_FORMICID_VENOM_MAGE, _("formicid venom mage"))
+    AXED_MON(MONS_SPRIGGAN_ASSASSIN, _("spriggan assassin"))
+    AXED_MON(MONS_VAPOUR, _("vapour"))
+    AXED_MON(MONS_THORN_LOTUS, _("thorn lotus"))
+    AXED_MON(MONS_GIANT_GOLDFISH, _("giant goldfish"))
+    AXED_MON(MONS_SILVER_STAR, _("silver star"))
+    AXED_MON(MONS_FLAMING_CORPSE, _("flaming corpse"))
+    AXED_MON(MONS_GRIZZLY_BEAR, _("grizzly bear"))
+    AXED_MON(MONS_SPRIGGAN_ENCHANTER, _("spriggan enchanter"))
+    AXED_MON(MONS_PHOENIX, _("phoenix"))
+    AXED_MON(MONS_SHEDU, _("shedu"))
+    AXED_MON(MONS_PLAGUE_SHAMBLER, _("plague shambler"))
+    AXED_MON(MONS_GIANT_SLUG, _("giant slug"))
+    AXED_MON(MONS_FIREFLY, _("firefly"))
+    AXED_MON(MONS_BROWN_OOZE, _("brown ooze"))
+    AXED_MON(MONS_PULSATING_LUMP, _("pulsating lump"))
+    AXED_MON(MONS_BIG_FISH, _("big fish"))
+    AXED_MON(MONS_LAVA_WORM, _("lava worm"))
+    AXED_MON(MONS_SHARK, _("shark"))
+    AXED_MON(MONS_INEPT_ITEM_MIMIC, _("inept item mimic"))
+    AXED_MON(MONS_ITEM_MIMIC, _("item mimic"))
+    AXED_MON(MONS_RAVENOUS_ITEM_MIMIC, _("ravenous item mimic"))
+    AXED_MON(MONS_INEPT_FEATURE_MIMIC, _("inept feature mimic"))
+    AXED_MON(MONS_FEATURE_MIMIC, _("feature mimic"))
+    AXED_MON(MONS_RAVENOUS_FEATURE_MIMIC, _("ravenous feature mimic"))
+    AXED_MON(MONS_MNOLEG_TENTACLE, _("mnoleg tentacle"))
+    AXED_MON(MONS_MNOLEG_TENTACLE_SEGMENT, _("mnoleg tentacle segment"))
+    AXED_MON(MONS_UNBORN, _("unborn"))
+    AXED_MON(MONS_GIANT_MITE, _("giant mite"))
+    AXED_MON(MONS_BABY_ALLIGATOR, _("baby alligator"))
+    AXED_MON(MONS_BORING_BEETLE, _("boring beetle"))
+    AXED_MON(MONS_CHIMERA, _("chimera"))
+    AXED_MON(MONS_RAVEN, _("raven"))
+    AXED_MON(MONS_SINGULARITY, _("singularity"))
+    AXED_MON(MONS_GRAND_AVATAR, _("grand avatar"))
+    AXED_MON(MONS_SALAMANDER_FIREBRAND, _("salamander firebrand"))
+    AXED_MON(MONS_OCTOPODE_CRUSHER, _("octopode crusher"))
+    AXED_MON(MONS_BLUE_DEVIL, _("blue devil"))
+    AXED_MON(MONS_BRAIN_WORM, _("brain worm"))
+    AXED_MON(MONS_DEEP_ELF_SUMMONER, _("deep elf summoner"))
+    AXED_MON(MONS_DEEP_ELF_CONJURER, _("deep elf conjurer"))
+    AXED_MON(MONS_DEEP_ELF_PRIEST, _("deep elf priest"))
+    AXED_MON(MONS_DEEP_ELF_FIGHTER, _("deep elf fighter"))
+    AXED_MON(MONS_TRAPDOOR_SPIDER, _("trapdoor spider"))
+    AXED_MON(MONS_SALAMANDER_STORMCALLER, _("salamander stormcaller"))
+    AXED_MON(MONS_NORRIS, _("norris"))
+    AXED_MON(MONS_MAUD, _("maud"))
+    AXED_MON(MONS_WIGLAF, _("wiglaf"))
+    AXED_MON(MONS_SHEEP, _("sheep"))
+    AXED_MON(MONS_ANUBIS_GUARD, _("anubis guard"))
+    AXED_MON(MONS_GRIFFON, _("griffon"))
+    AXED_MON(MONS_BEETLE, _("beetle"))
+    AXED_MON(MONS_PUTRID_DEMONSPAWN, _("putrid demonspawn"))
+    AXED_MON(MONS_CHAOS_CHAMPION, _("chaos champion"))
+    AXED_MON(MONS_WASP, _("wasp"))
+    AXED_MON(MONS_MOTTLED_DRACONIAN, _("mottled draconian"))
+    AXED_MON(MONS_DRACONIAN_ZEALOT, _("draconian zealot"))
+    AXED_MON(MONS_HILL_GIANT, _("hill giant"))
+    AXED_MON(MONS_BULTUNGIN, _("bultungin"))
+    AXED_MON(MONS_HYPERACTIVE_BALLISTOMYCETE, _("hyperactive ballistomycete"))
+    AXED_MON(MONS_HOMUNCULUS, _("homunculus"))
+    AXED_MON(MONS_SOUPLING, _("soupling"))
+    AXED_MON(MONS_BLESSED_TOE, _("blessed toe"))
+    AXED_MON(MONS_LAVA_ORC, _("lava orc"))
+    AXED_MON(MONS_MONSTROUS_FEATURE_MIMIC, _("monstrous feature mimic"))
+    AXED_MON(MONS_SLAVE, _("slave"))
+    AXED_MON(MONS_HUNGRY_GHOST, _("hungry ghost"))
+    AXED_MON(MONS_CROCODILE, _("crocodile"))
+    AXED_MON(MONS_HIPPOGRIFF, _("hippogriff"))
+    AXED_MON(MONS_PORCUPINE, _("porcupine"))
+    AXED_MON(MONS_CRAWLING_CORPSE, _("crawling corpse"))
+    AXED_MON(MONS_MACABRE_MASS, _("macabre mass"))
+    AXED_MON(MONS_EYE_OF_DRAINING, _("eye of draining"))
+    AXED_MON(MONS_DEATH_OOZE, _("death ooze"))
+    AXED_MON(MONS_LEOPARD_GECKO, _("leopard gecko"))
+    AXED_MON(MONS_WORKER_ANT, _("worker ant"))
+    AXED_MON(MONS_QUEEN_ANT, _("queen ant"))
+    AXED_MON(MONS_SOLDIER_ANT, _("soldier ant"))
 #endif
 
 // Used for genus monsters (which are used for grouping monsters by how they
@@ -314,7 +317,7 @@ static monsterentry mondata[] =
 
 // ancients ('a')
 {
-    MONS_IMPERIAL_MYRMIDON, 'a', LIGHTCYAN, "imperial myrmidon",
+    MONS_IMPERIAL_MYRMIDON, 'a', LIGHTCYAN, _("imperial myrmidon"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 60,
@@ -327,7 +330,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_SERVANT_OF_WHISPERS, 'a', BROWN, "servant of whispers",
+    MONS_SERVANT_OF_WHISPERS, 'a', BROWN, _("servant of whispers"),
     M_SPEAKS | M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 60,
@@ -340,7 +343,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_RAGGED_HIEROPHANT, 'a', LIGHTMAGENTA, "ragged hierophant",
+    MONS_RAGGED_HIEROPHANT, 'a', LIGHTMAGENTA, _("ragged hierophant"),
     M_SPEAKS | M_WARM_BLOOD | M_SEE_INVIS,
     MR_NO_FLAGS,
     15, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 40,
@@ -354,7 +357,7 @@ static monsterentry mondata[] =
 
 // batty monsters ('b')
 {
-    MONS_BAT, 'b', LIGHTGREY, "bat",
+    MONS_BAT, 'b', LIGHTGREY, _("bat"),
     M_SEE_INVIS | M_UNBLINDABLE | M_WARM_BLOOD | M_BATTY | M_FLIES,
     MR_NO_FLAGS,
     4, MONS_BAT, MONS_BAT, MH_NATURAL, 0,
@@ -367,7 +370,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_BUTTERFLY, 'b', ETC_JEWEL, "butterfly",
+    MONS_BUTTERFLY, 'b', ETC_JEWEL, _("butterfly"),
     M_CONFUSED | M_NOT_DANGEROUS | M_FLIES,
     MR_VUL_POISON,
     10, MONS_BUTTERFLY, MONS_BUTTERFLY, MH_NATURAL, 10,
@@ -380,7 +383,7 @@ static monsterentry mondata[] =
 },
 
 { // one vault + player transform (Vp ability)
-    MONS_VAMPIRE_BAT, 'b', MAGENTA, "vampire bat",
+    MONS_VAMPIRE_BAT, 'b', MAGENTA, _("vampire bat"),
     M_SEE_INVIS | M_WARM_BLOOD | M_BATTY | M_NO_POLY_TO | M_FLIES,
     MR_NO_FLAGS,
     8, MONS_BAT, MONS_VAMPIRE_BAT, MH_UNDEAD, 10,
@@ -393,7 +396,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_FIRE_BAT, 'b', LIGHTRED, "fire bat",
+    MONS_FIRE_BAT, 'b', LIGHTRED, _("fire bat"),
     M_SEE_INVIS | M_UNBLINDABLE | M_WARM_BLOOD | M_BATTY | M_FLIES,
     mrd(MR_RES_FIRE, 3) | MR_VUL_COLD | MR_VUL_WATER,
     8, MONS_BAT, MONS_FIRE_BAT, MH_NATURAL, 10,
@@ -406,7 +409,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_BENNU, 'b', YELLOW, "bennu",
+    MONS_BENNU, 'b', YELLOW, _("bennu"),
     M_SEE_INVIS | M_WARM_BLOOD | M_FAST_REGEN | M_NO_POLY_TO | M_SPEAKS
         | M_FLIES,
     mrd(MR_RES_FIRE | MR_RES_NEG, 3) | MR_RES_POISON |
@@ -422,7 +425,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_CAUSTIC_SHRIKE, 'b', LIGHTGREEN, "caustic shrike",
+    MONS_CAUSTIC_SHRIKE, 'b', LIGHTGREEN, _("caustic shrike"),
     M_SEE_INVIS | M_UNBLINDABLE | M_WARM_BLOOD | M_FLIES,
     MR_RES_COLD | MR_RES_FIRE,
     15, MONS_CAUSTIC_SHRIKE, MONS_CAUSTIC_SHRIKE, MH_NATURAL, 80,
@@ -435,7 +438,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_SHARD_SHRIKE, 'b', LIGHTBLUE, "shard shrike",
+    MONS_SHARD_SHRIKE, 'b', LIGHTBLUE, _("shard shrike"),
     M_SEE_INVIS | M_UNBLINDABLE | M_WARM_BLOOD | M_BATTY | M_FLIES,
     mrd(MR_RES_COLD, 2),
     12, MONS_SHARD_SHRIKE, MONS_SHARD_SHRIKE, MH_NATURAL, 80,
@@ -449,7 +452,7 @@ static monsterentry mondata[] =
 
 // centaurs ('c')
 {
-    MONS_CENTAUR, 'c', BROWN, "centaur",
+    MONS_CENTAUR, 'c', BROWN, _("centaur"),
     M_WARM_BLOOD | M_ARCHER | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_CENTAUR, MONS_CENTAUR, MH_NATURAL, 20,
@@ -462,7 +465,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_CENTAUR_WARRIOR, 'c', YELLOW, "centaur warrior",
+    MONS_CENTAUR_WARRIOR, 'c', YELLOW, _("centaur warrior"),
     M_WARM_BLOOD | M_FIGHTER | M_ARCHER | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_CENTAUR, MONS_CENTAUR, MH_NATURAL, 40,
@@ -475,7 +478,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_YAKTAUR, 'c', RED, "yaktaur",
+    MONS_YAKTAUR, 'c', RED, _("yaktaur"),
     M_WARM_BLOOD | M_ARCHER | M_SPEAKS,
     MR_NO_FLAGS,
     9, MONS_YAKTAUR, MONS_YAKTAUR, MH_NATURAL, 40,
@@ -488,7 +491,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_YAKTAUR_CAPTAIN, 'c', LIGHTRED, "yaktaur captain",
+    MONS_YAKTAUR_CAPTAIN, 'c', LIGHTRED, _("yaktaur captain"),
     M_WARM_BLOOD | M_FIGHTER | M_ARCHER | M_SPEAKS,
     MR_NO_FLAGS,
     9, MONS_YAKTAUR, MONS_YAKTAUR, MH_NATURAL, 60,
@@ -501,7 +504,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_FAUN, 'c', GREEN, "faun",
+    MONS_FAUN, 'c', GREEN, _("faun"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     8, MONS_FAUN, MONS_FAUN, MH_NATURAL, 40,
@@ -515,7 +518,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_SATYR, 'c', LIGHTGREEN, "satyr",
+    MONS_SATYR, 'c', LIGHTGREEN, _("satyr"),
     M_WARM_BLOOD | M_SPEAKS | M_ARCHER | M_PREFER_RANGED,
     MR_NO_FLAGS,
     10, MONS_FAUN, MONS_SATYR, MH_NATURAL, 40,
@@ -530,7 +533,7 @@ static monsterentry mondata[] =
 
 // draconians ('d')
 {   // Base draconian.
-    MONS_DRACONIAN, 'd', BROWN, "draconian",
+    MONS_DRACONIAN, 'd', BROWN, _("draconian"),
     M_COLD_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_DRACONIAN, MH_NATURAL, 10,
@@ -543,7 +546,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_BLACK_DRACONIAN, 'd', BLUE, "black draconian",
+    MONS_BLACK_DRACONIAN, 'd', BLUE, _("black draconian"),
     M_COLD_BLOOD | M_SPEAKS | M_FLIES,
     mrd(MR_RES_ELEC, 3),
     10, MONS_DRACONIAN, MONS_BLACK_DRACONIAN, MH_NATURAL, 40,
@@ -557,7 +560,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_YELLOW_DRACONIAN, 'd', YELLOW, "yellow draconian",
+    MONS_YELLOW_DRACONIAN, 'd', YELLOW, _("yellow draconian"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_RES_ACID,
     10, MONS_DRACONIAN, MONS_YELLOW_DRACONIAN, MH_NATURAL, 40,
@@ -573,7 +576,7 @@ static monsterentry mondata[] =
 {
     // Colours are used for picking the right tile for Tiamat,
     // so this needs to be different from the grey draconian. (jpeg)
-    MONS_PALE_DRACONIAN, 'd', CYAN, "pale draconian",
+    MONS_PALE_DRACONIAN, 'd', CYAN, _("pale draconian"),
     M_COLD_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     MR_RES_STEAM,
     10, MONS_DRACONIAN, MONS_PALE_DRACONIAN, MH_NATURAL, 40,
@@ -587,7 +590,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_GREEN_DRACONIAN, 'd', GREEN, "green draconian",
+    MONS_GREEN_DRACONIAN, 'd', GREEN, _("green draconian"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_RES_POISON,
     10, MONS_DRACONIAN, MONS_GREEN_DRACONIAN, MH_NATURAL, 40,
@@ -602,7 +605,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_PURPLE_DRACONIAN, 'd', MAGENTA, "purple draconian",
+    MONS_PURPLE_DRACONIAN, 'd', MAGENTA, _("purple draconian"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_PURPLE_DRACONIAN, MH_NATURAL, 140,
@@ -616,7 +619,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_RED_DRACONIAN, 'd', LIGHTRED, "red draconian",
+    MONS_RED_DRACONIAN, 'd', LIGHTRED, _("red draconian"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_RES_FIRE,
     10, MONS_DRACONIAN, MONS_RED_DRACONIAN, MH_NATURAL, 40,
@@ -630,7 +633,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_WHITE_DRACONIAN, 'd', WHITE, "white draconian",
+    MONS_WHITE_DRACONIAN, 'd', WHITE, _("white draconian"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_RES_COLD,
     10, MONS_DRACONIAN, MONS_WHITE_DRACONIAN, MH_NATURAL, 40,
@@ -644,7 +647,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_GREY_DRACONIAN, 'd', LIGHTGREY, "grey draconian",
+    MONS_GREY_DRACONIAN, 'd', LIGHTGREY, _("grey draconian"),
     M_COLD_BLOOD | M_UNBREATHING | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_GREY_DRACONIAN, MH_NATURAL, 40,
@@ -661,7 +664,7 @@ static monsterentry mondata[] =
 // nonbase draconians ('q')
 // Nonbase draconian AC and EV is additive with the base type.
 {
-    MONS_DRACONIAN_STORMCALLER, 'q', BROWN, "draconian stormcaller",
+    MONS_DRACONIAN_STORMCALLER, 'q', BROWN, _("draconian stormcaller"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_DRACONIAN, MH_NATURAL, 40,
@@ -675,7 +678,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DRACONIAN_MONK, 'q', BLUE, "draconian monk",
+    MONS_DRACONIAN_MONK, 'q', BLUE, _("draconian monk"),
     M_FIGHTER | M_COLD_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_DRACONIAN, MH_NATURAL, 40,
@@ -690,7 +693,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DRACONIAN_SHIFTER, 'q', LIGHTCYAN, "draconian shifter",
+    MONS_DRACONIAN_SHIFTER, 'q', LIGHTCYAN, _("draconian shifter"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_DRACONIAN, MH_NATURAL, 40,
@@ -704,7 +707,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DRACONIAN_ANNIHILATOR, 'q', LIGHTBLUE, "draconian annihilator",
+    MONS_DRACONIAN_ANNIHILATOR, 'q', LIGHTBLUE, _("draconian annihilator"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_DRACONIAN, MH_NATURAL, 40,
@@ -718,7 +721,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DRACONIAN_KNIGHT, 'q', CYAN, "draconian knight",
+    MONS_DRACONIAN_KNIGHT, 'q', CYAN, _("draconian knight"),
     M_FIGHTER | M_COLD_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_DRACONIAN, MH_NATURAL, 40,
@@ -732,7 +735,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DRACONIAN_SCORCHER, 'q', LIGHTRED, "draconian scorcher",
+    MONS_DRACONIAN_SCORCHER, 'q', LIGHTRED, _("draconian scorcher"),
     M_COLD_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DRACONIAN, MONS_DRACONIAN, MH_NATURAL | MH_EVIL, 40,
@@ -747,7 +750,7 @@ static monsterentry mondata[] =
 
 // elves ('e')
 {
-    MONS_ELF, 'e', LIGHTRED, "elf",
+    MONS_ELF, 'e', LIGHTRED, _("elf"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_ELF, MONS_ELF, MH_NATURAL, 40,
@@ -760,7 +763,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_KNIGHT, 'e', BLUE, "deep elf knight",
+    MONS_DEEP_ELF_KNIGHT, 'e', BLUE, _("deep elf knight"),
     M_WARM_BLOOD | M_FIGHTER | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ELF, MONS_ELF, MH_NATURAL, 80,
@@ -773,7 +776,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_ARCHER, 'e', BROWN, "deep elf archer",
+    MONS_DEEP_ELF_ARCHER, 'e', BROWN, _("deep elf archer"),
     M_WARM_BLOOD | M_ARCHER | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ELF, MONS_ELF, MH_NATURAL, 80,
@@ -786,7 +789,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_BLADEMASTER, 'e', LIGHTCYAN, "deep elf blademaster",
+    MONS_DEEP_ELF_BLADEMASTER, 'e', LIGHTCYAN, _("deep elf blademaster"),
     M_WARM_BLOOD | M_FIGHTER | M_TWO_WEAPONS | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ELF, MONS_ELF, MH_NATURAL, 120,
@@ -799,7 +802,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_MASTER_ARCHER, 'e', LIGHTGREY, "deep elf master archer",
+    MONS_DEEP_ELF_MASTER_ARCHER, 'e', LIGHTGREY, _("deep elf master archer"),
     M_WARM_BLOOD | M_ARCHER | M_PREFER_RANGED | M_SPEAKS,
     MR_NO_FLAGS,
     30, MONS_ELF, MONS_ELF, MH_NATURAL, 100,
@@ -813,7 +816,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_AIR_MAGE, 'e', CYAN, "deep elf zephyrmancer",
+    MONS_DEEP_ELF_AIR_MAGE, 'e', CYAN, _("deep elf zephyrmancer"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_ELF, MONS_ELF, MH_NATURAL, 40,
@@ -826,7 +829,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_FIRE_MAGE, 'e', RED, "deep elf pyromancer",
+    MONS_DEEP_ELF_FIRE_MAGE, 'e', RED, _("deep elf pyromancer"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_ELF, MONS_ELF, MH_NATURAL, 40,
@@ -839,7 +842,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_HIGH_PRIEST, 'e', LIGHTGREEN, "deep elf high priest",
+    MONS_DEEP_ELF_HIGH_PRIEST, 'e', LIGHTGREEN, _("deep elf high priest"),
     M_SPEAKS | M_WARM_BLOOD | M_SEE_INVIS,
     MR_NO_FLAGS,
     15, MONS_ELF, MONS_ELF, MH_NATURAL | MH_EVIL, 80,
@@ -852,7 +855,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_DEMONOLOGIST, 'e', YELLOW, "deep elf demonologist",
+    MONS_DEEP_ELF_DEMONOLOGIST, 'e', YELLOW, _("deep elf demonologist"),
     M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     20, MONS_ELF, MONS_ELF, MH_NATURAL | MH_EVIL, 100,
@@ -865,7 +868,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_ANNIHILATOR, 'e', LIGHTBLUE, "deep elf annihilator",
+    MONS_DEEP_ELF_ANNIHILATOR, 'e', LIGHTBLUE, _("deep elf annihilator"),
     M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ELF, MONS_ELF, MH_NATURAL, 120,
@@ -878,7 +881,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_SORCERER, 'e', LIGHTMAGENTA, "deep elf sorcerer",
+    MONS_DEEP_ELF_SORCERER, 'e', LIGHTMAGENTA, _("deep elf sorcerer"),
     M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     17, MONS_ELF, MONS_ELF, MH_NATURAL | MH_EVIL, 120,
@@ -891,7 +894,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_DEATH_MAGE, 'e', WHITE, "deep elf death mage",
+    MONS_DEEP_ELF_DEATH_MAGE, 'e', WHITE, _("deep elf death mage"),
     M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ELF, MONS_ELF, MH_NATURAL | MH_EVIL, 120,
@@ -904,7 +907,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_ELF_ELEMENTALIST, 'e', LIGHTRED, "deep elf elementalist",
+    MONS_DEEP_ELF_ELEMENTALIST, 'e', LIGHTRED, _("deep elf elementalist"),
     M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     17, MONS_ELF, MONS_ELF, MH_NATURAL, 120,
@@ -918,7 +921,7 @@ static monsterentry mondata[] =
 
 // Mobile plants and fungi ('f')
 {
-    MONS_WANDERING_MUSHROOM, 'f', BROWN, "wandering mushroom",
+    MONS_WANDERING_MUSHROOM, 'f', BROWN, _("wandering mushroom"),
     M_NO_FLAGS,
     MR_RES_POISON,
     10, MONS_FUNGUS, MONS_WANDERING_MUSHROOM, MH_PLANT, 40,
@@ -931,7 +934,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEATHCAP, 'f', LIGHTMAGENTA, "deathcap",
+    MONS_DEATHCAP, 'f', LIGHTMAGENTA, _("deathcap"),
     M_NO_FLAGS,
     MR_RES_COLD,
     6, MONS_FUNGUS, MONS_WANDERING_MUSHROOM, MH_UNDEAD, 80,
@@ -944,7 +947,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_THORN_HUNTER, 'f', WHITE, "thorn hunter",
+    MONS_THORN_HUNTER, 'f', WHITE, _("thorn hunter"),
     M_SEE_INVIS,
     MR_RES_POISON | MR_VUL_FIRE,
     14, MONS_PLANT, MONS_THORN_HUNTER, MH_PLANT, 100,
@@ -958,7 +961,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_SHAMBLING_MANGROVE, 'f', LIGHTRED, "shambling mangrove",
+    MONS_SHAMBLING_MANGROVE, 'f', LIGHTRED, _("shambling mangrove"),
     M_NO_FLAGS,
     MR_RES_POISON,
     15, MONS_SHAMBLING_MANGROVE, MONS_SHAMBLING_MANGROVE, MH_PLANT, 100,
@@ -971,7 +974,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_VINE_STALKER, 'f', GREEN, "vine stalker",
+    MONS_VINE_STALKER, 'f', GREEN, _("vine stalker"),
     M_SPEAKS | M_NO_POLY_TO | M_FAST_REGEN,
     MR_NO_FLAGS,
     10, MONS_VINE_STALKER, MONS_VINE_STALKER, MH_NATURAL, 40,
@@ -986,7 +989,7 @@ static monsterentry mondata[] =
 
 // goblins and other small humanoids ('g')
 {
-    MONS_GOBLIN, 'g', LIGHTGREY, "goblin",
+    MONS_GOBLIN, 'g', LIGHTGREY, _("goblin"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_GOBLIN, MONS_GOBLIN, MH_NATURAL, 0,
@@ -999,7 +1002,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_HOBGOBLIN, 'g', BROWN, "hobgoblin",
+    MONS_HOBGOBLIN, 'g', BROWN, _("hobgoblin"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_GOBLIN, MONS_HOBGOBLIN, MH_NATURAL, 0,
@@ -1012,7 +1015,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_GNOLL, 'g', YELLOW, "gnoll",
+    MONS_GNOLL, 'g', YELLOW, _("gnoll"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_GNOLL, MONS_GNOLL, MH_NATURAL, 10,
@@ -1025,7 +1028,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_GNOLL_SHAMAN, 'g', WHITE, "gnoll shaman",
+    MONS_GNOLL_SHAMAN, 'g', WHITE, _("gnoll shaman"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_GNOLL, MONS_GNOLL, MH_NATURAL, 20,
@@ -1038,7 +1041,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_GNOLL_SERGEANT, 'g', CYAN, "gnoll sergeant",
+    MONS_GNOLL_SERGEANT, 'g', CYAN, _("gnoll sergeant"),
     M_FIGHTER | M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_GNOLL, MONS_GNOLL, MH_NATURAL, 20,
@@ -1051,7 +1054,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_BOGGART, 'g', MAGENTA, "boggart",
+    MONS_BOGGART, 'g', MAGENTA, _("boggart"),
     M_SEE_INVIS | M_WARM_BLOOD,
     MR_NO_FLAGS,
     14, MONS_BOGGART, MONS_BOGGART, MH_NATURAL, 40,
@@ -1064,7 +1067,7 @@ static monsterentry mondata[] =
 },
 
 { // Another dummy monster.
-    MONS_DWARF, 'g', GREEN, "dwarf",
+    MONS_DWARF, 'g', GREEN, _("dwarf"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_DWARF, MONS_DWARF, MH_NATURAL, 20,
@@ -1077,7 +1080,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DEEP_DWARF, 'g', LIGHTBLUE, "deep dwarf",
+    MONS_DEEP_DWARF, 'g', LIGHTBLUE, _("deep dwarf"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_REGEN | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_DWARF, MONS_DEEP_DWARF, MH_NATURAL, 40,
@@ -1091,7 +1094,7 @@ static monsterentry mondata[] =
 
 // carnivorous quadrupeds ('h')
 {
-    MONS_JACKAL, 'h', BROWN, "jackal",
+    MONS_JACKAL, 'h', BROWN, _("jackal"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_HOUND, MONS_JACKAL, MH_NATURAL, 0,
@@ -1104,7 +1107,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_HOUND, 'h', YELLOW, "hound",
+    MONS_HOUND, 'h', YELLOW, _("hound"),
     M_SEE_INVIS | M_UNBLINDABLE | M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_HOUND, MONS_HOUND, MH_NATURAL, 10,
@@ -1117,7 +1120,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_HOWLER_MONKEY, 'h', LIGHTGREEN, "howler monkey",
+    MONS_HOWLER_MONKEY, 'h', LIGHTGREEN, _("howler monkey"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     15, MONS_HOWLER_MONKEY, MONS_HOWLER_MONKEY, MH_NATURAL, 10,
@@ -1130,7 +1133,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_WARG, 'h', WHITE, "warg",
+    MONS_WARG, 'h', WHITE, _("warg"),
     M_SEE_INVIS | M_UNBLINDABLE | M_WARM_BLOOD,
     MR_RES_POISON,
     12, MONS_HOUND, MONS_WARG, MH_NATURAL, 40,
@@ -1143,7 +1146,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_WOLF, 'h', LIGHTGREY, "wolf",
+    MONS_WOLF, 'h', LIGHTGREY, _("wolf"),
     M_SEE_INVIS | M_UNBLINDABLE | M_WARM_BLOOD,
     MR_NO_FLAGS,
     12, MONS_HOUND, MONS_WOLF, MH_NATURAL, 20,
@@ -1156,7 +1159,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_HOG, 'h', LIGHTMAGENTA, "hog",
+    MONS_HOG, 'h', LIGHTMAGENTA, _("hog"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_HOG, MONS_HOG, MH_NATURAL, 20,
@@ -1169,7 +1172,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_HELL_HOUND, 'h', CYAN, "hell hound",
+    MONS_HELL_HOUND, 'h', CYAN, _("hell hound"),
     M_SEE_INVIS | M_UNBLINDABLE,
     MR_RES_POISON | mrd(MR_RES_FIRE, 3) | MR_VUL_COLD,
     10, MONS_HOUND, MONS_HELL_HOUND, MH_DEMONIC, 20,
@@ -1182,7 +1185,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_DOOM_HOUND, 'h', GREEN, "doom hound",
+    MONS_DOOM_HOUND, 'h', GREEN, _("doom hound"),
     M_SEE_INVIS | M_UNBLINDABLE,
     MR_NO_FLAGS,
     10, MONS_HOUND, MONS_DOOM_HOUND, MH_DEMONIC, 20,
@@ -1195,7 +1198,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_RAIJU, 'h', LIGHTCYAN, "raiju",
+    MONS_RAIJU, 'h', LIGHTCYAN, _("raiju"),
     M_SEE_INVIS | M_UNBLINDABLE,
     mrd(MR_RES_ELEC, 3),
     12, MONS_HOUND, MONS_RAIJU, MH_NATURAL, 20,
@@ -1208,7 +1211,7 @@ static monsterentry mondata[] =
 },
 
 {
-    MONS_HELL_HOG, 'h', LIGHTRED, "hell hog",
+    MONS_HELL_HOG, 'h', LIGHTRED, _("hell hog"),
     M_NO_FLAGS,
     mrd(MR_RES_FIRE, 2),
     10, MONS_HOG, MONS_HELL_HOG, MH_DEMONIC, 40,
@@ -1221,7 +1224,7 @@ static monsterentry mondata[] =
 },
 
 {   // effect of porkalator cast on holies
-    MONS_HOLY_SWINE, 'h', YELLOW, "holy swine",
+    MONS_HOLY_SWINE, 'h', YELLOW, _("holy swine"),
     M_FLIES,
     MR_NO_FLAGS,
     10, MONS_HOG, MONS_HOLY_SWINE, MH_HOLY, 40,
@@ -1234,7 +1237,7 @@ static monsterentry mondata[] =
 },
 
 { // a dummy monster for recolouring
-    MONS_FELID, 'h', MAGENTA, "felid",
+    MONS_FELID, 'h', MAGENTA, _("felid"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_FELID, MONS_FELID, MH_NATURAL, 40,
@@ -1246,10 +1249,10 @@ static monsterentry mondata[] =
     {TILEP_MONS_FELID}, TILE_CORPSE_FELID
 },
 
-DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
+DUMMY(MONS_BEAR, 'h', LIGHTGREY, _("bear"), TILEP_MONS_BLACK_BEAR)
 
 {
-    MONS_POLAR_BEAR, 'h', LIGHTBLUE, "polar bear",
+    MONS_POLAR_BEAR, 'h', LIGHTBLUE, _("polar bear"),
     M_WARM_BLOOD,
     MR_RES_COLD,
     12, MONS_BEAR, MONS_POLAR_BEAR, MH_NATURAL, 20,
@@ -1263,7 +1266,7 @@ DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
 },
 
 {
-    MONS_BLACK_BEAR, 'h', BLUE, "black bear",
+    MONS_BLACK_BEAR, 'h', BLUE, _("black bear"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     9, MONS_BEAR, MONS_BLACK_BEAR, MH_NATURAL, 20,
@@ -1278,7 +1281,7 @@ DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
 
 // spriggans ('i')
 {
-    MONS_SPRIGGAN, 'i', LIGHTGREY, "spriggan",
+    MONS_SPRIGGAN, 'i', LIGHTGREY, _("spriggan"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS,
     MR_NO_FLAGS,
     10, MONS_SPRIGGAN, MONS_SPRIGGAN, MH_NATURAL, 60,
@@ -1291,7 +1294,7 @@ DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
 },
 
 {   // both the guy and his ride as one monster
-    MONS_SPRIGGAN_RIDER, 'i', LIGHTBLUE, "spriggan rider",
+    MONS_SPRIGGAN_RIDER, 'i', LIGHTBLUE, _("spriggan rider"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_FIGHTER | M_FLIES,
     MR_VUL_POISON, // the mount
     8, MONS_SPRIGGAN, MONS_SPRIGGAN, MH_NATURAL, 100,
@@ -1304,7 +1307,7 @@ DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
 },
 
 {
-    MONS_SPRIGGAN_DRUID, 'i', GREEN, "spriggan druid",
+    MONS_SPRIGGAN_DRUID, 'i', GREEN, _("spriggan druid"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS,
     MR_NO_FLAGS,
     10, MONS_SPRIGGAN, MONS_SPRIGGAN, MH_NATURAL, 100,
@@ -1317,7 +1320,7 @@ DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
 },
 
 {
-    MONS_SPRIGGAN_BERSERKER, 'i', LIGHTRED, "spriggan berserker",
+    MONS_SPRIGGAN_BERSERKER, 'i', LIGHTRED, _("spriggan berserker"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_FIGHTER,
     MR_NO_FLAGS,
     10, MONS_SPRIGGAN, MONS_SPRIGGAN, MH_NATURAL, 120,
@@ -1330,7 +1333,7 @@ DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
 },
 
 {
-    MONS_SPRIGGAN_AIR_MAGE, 'i', LIGHTCYAN, "spriggan air mage",
+    MONS_SPRIGGAN_AIR_MAGE, 'i', LIGHTCYAN, _("spriggan air mage"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_SPRIGGAN, MONS_SPRIGGAN, MH_NATURAL, 140,
@@ -1343,7 +1346,7 @@ DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
 },
 
 {
-    MONS_SPRIGGAN_DEFENDER, 'i', YELLOW, "spriggan defender",
+    MONS_SPRIGGAN_DEFENDER, 'i', YELLOW, _("spriggan defender"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_FIGHTER,
     MR_NO_FLAGS,
     10, MONS_SPRIGGAN, MONS_SPRIGGAN, MH_NATURAL, 140,
@@ -1356,10 +1359,10 @@ DUMMY(MONS_BEAR, 'h', LIGHTGREY, "bear", TILEP_MONS_BLACK_BEAR)
 },
 
 // drakes ('k')
-DUMMY(MONS_DRAKE, 'k', LIGHTGREY, "drake", TILEP_MONS_SWAMP_DRAKE)
+DUMMY(MONS_DRAKE, 'k', LIGHTGREY, _("drake"), TILEP_MONS_SWAMP_DRAKE)
 
 {
-    MONS_SWAMP_DRAKE, 'k', BROWN, "swamp drake",
+    MONS_SWAMP_DRAKE, 'k', BROWN, _("swamp drake"),
     M_WARM_BLOOD | M_FLIES,
     MR_RES_POISON,
     20, MONS_DRAKE, MONS_SWAMP_DRAKE, MH_NATURAL, 20,
@@ -1372,7 +1375,7 @@ DUMMY(MONS_DRAKE, 'k', LIGHTGREY, "drake", TILEP_MONS_SWAMP_DRAKE)
 },
 
 {
-    MONS_RIME_DRAKE, 'k', BLUE, "rime drake",
+    MONS_RIME_DRAKE, 'k', BLUE, _("rime drake"),
     M_WARM_BLOOD | M_FLIES,
     MR_RES_COLD,
     22, MONS_DRAKE, MONS_RIME_DRAKE, MH_NATURAL, 20,
@@ -1385,7 +1388,7 @@ DUMMY(MONS_DRAKE, 'k', LIGHTGREY, "drake", TILEP_MONS_SWAMP_DRAKE)
 },
 
 {
-    MONS_WIND_DRAKE, 'k', WHITE, "wind drake",
+    MONS_WIND_DRAKE, 'k', WHITE, _("wind drake"),
     M_WARM_BLOOD | M_FLIES,
     MR_NO_FLAGS,
     6, MONS_DRAKE, MONS_WIND_DRAKE, MH_NATURAL, 40,
@@ -1398,7 +1401,7 @@ DUMMY(MONS_DRAKE, 'k', LIGHTGREY, "drake", TILEP_MONS_SWAMP_DRAKE)
 },
 
 {
-    MONS_LINDWURM, 'k', LIGHTRED, "lindwurm",
+    MONS_LINDWURM, 'k', LIGHTRED, _("lindwurm"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     13, MONS_DRAKE, MONS_LINDWURM, MH_NATURAL, 40,
@@ -1412,7 +1415,7 @@ DUMMY(MONS_DRAKE, 'k', LIGHTGREY, "drake", TILEP_MONS_SWAMP_DRAKE)
 },
 
 {
-    MONS_DEATH_DRAKE, 'k', LIGHTGREY, "death drake",
+    MONS_DEATH_DRAKE, 'k', LIGHTGREY, _("death drake"),
     M_COLD_BLOOD | M_FLIES,
     MR_RES_POISON | MR_RES_MIASMA,
     10, MONS_DRAKE, MONS_DEATH_DRAKE, MH_NATURAL, 40,
@@ -1425,10 +1428,10 @@ DUMMY(MONS_DRAKE, 'k', LIGHTGREY, "drake", TILEP_MONS_SWAMP_DRAKE)
 },
 
 // lizards ('l')
-DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
+DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, _("giant lizard"), TILEP_MONS_IGUANA)
 
 {
-    MONS_FRILLED_LIZARD, 'l', GREEN, "frilled lizard",
+    MONS_FRILLED_LIZARD, 'l', GREEN, _("frilled lizard"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_GIANT_LIZARD, MONS_FRILLED_LIZARD, MH_NATURAL, 0,
@@ -1441,7 +1444,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_IGUANA, 'l', BLUE, "iguana",
+    MONS_IGUANA, 'l', BLUE, _("iguana"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     13, MONS_GIANT_LIZARD, MONS_IGUANA, MH_NATURAL, 10,
@@ -1454,7 +1457,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_BASILISK, 'l', MAGENTA, "basilisk",
+    MONS_BASILISK, 'l', MAGENTA, _("basilisk"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_GIANT_LIZARD, MONS_BASILISK, MH_NATURAL, 20,
@@ -1467,7 +1470,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_WYVERN, 'l', LIGHTGREEN, "wyvern",
+    MONS_WYVERN, 'l', LIGHTGREEN, _("wyvern"),
     M_WARM_BLOOD | M_FLIES,
     MR_NO_FLAGS,
     15, MONS_WYVERN, MONS_WYVERN, MH_NATURAL, 20,
@@ -1480,7 +1483,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_KOMODO_DRAGON, 'l', LIGHTRED, "komodo dragon",
+    MONS_KOMODO_DRAGON, 'l', LIGHTRED, _("komodo dragon"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_GIANT_LIZARD, MONS_KOMODO_DRAGON, MH_NATURAL, 40,
@@ -1494,7 +1497,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 
 // merfolk ('m')
 {
-    MONS_MERFOLK, 'm', LIGHTRED, "merfolk",
+    MONS_MERFOLK, 'm', LIGHTRED, _("merfolk"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     4, MONS_MERFOLK, MONS_MERFOLK, MH_NATURAL, 40,
@@ -1507,7 +1510,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_MERFOLK_IMPALER, 'm', YELLOW, "merfolk impaler",
+    MONS_MERFOLK_IMPALER, 'm', YELLOW, _("merfolk impaler"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     13, MONS_MERFOLK, MONS_MERFOLK, MH_NATURAL, 40,
@@ -1521,7 +1524,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_MERFOLK_JAVELINEER, 'm', WHITE, "merfolk javelineer",
+    MONS_MERFOLK_JAVELINEER, 'm', WHITE, _("merfolk javelineer"),
     M_WARM_BLOOD | M_ARCHER | M_PREFER_RANGED | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_MERFOLK, MONS_MERFOLK, MH_NATURAL, 60,
@@ -1534,7 +1537,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_MERFOLK_AQUAMANCER, 'm', GREEN, "merfolk aquamancer",
+    MONS_MERFOLK_AQUAMANCER, 'm', GREEN, _("merfolk aquamancer"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS,
     MR_NO_FLAGS,
     8, MONS_MERFOLK, MONS_MERFOLK, MH_NATURAL, 80,
@@ -1547,7 +1550,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_MERFOLK_SIREN, 'm', CYAN, "merfolk siren",
+    MONS_MERFOLK_SIREN, 'm', CYAN, _("merfolk siren"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_MERFOLK, MONS_MERFOLK, MH_NATURAL, 60,
@@ -1560,7 +1563,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_MERFOLK_AVATAR, 'm', LIGHTCYAN, "merfolk avatar",
+    MONS_MERFOLK_AVATAR, 'm', LIGHTCYAN, _("merfolk avatar"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_GEN_DERIVED,
     MR_NO_FLAGS,
     10, MONS_MERFOLK, MONS_MERFOLK, MH_NATURAL, 120,
@@ -1573,7 +1576,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_WATER_NYMPH, 'm', MAGENTA, "water nymph",
+    MONS_WATER_NYMPH, 'm', MAGENTA, _("water nymph"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_FEMALE,
     MR_NO_FLAGS,
     10, MONS_WATER_NYMPH, MONS_WATER_NYMPH, MH_NATURAL, 100,
@@ -1587,7 +1590,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 
 // undead corpses ('n')
 {
-    MONS_BOG_BODY, 'n', GREEN, "bog body",
+    MONS_BOG_BODY, 'n', GREEN, _("bog body"),
     M_NO_ZOMBIE,
     MR_RES_FIRE | MR_RES_COLD,
     16, MONS_GHOUL, MONS_BOG_BODY, MH_UNDEAD, 40,
@@ -1600,7 +1603,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_NECROPHAGE, 'n', LIGHTGREY, "necrophage",
+    MONS_NECROPHAGE, 'n', LIGHTGREY, _("necrophage"),
     M_NO_ZOMBIE,
     MR_RES_COLD,
     12, MONS_GHOUL, MONS_NECROPHAGE, MH_UNDEAD, 40,
@@ -1613,7 +1616,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_BLOATED_HUSK, 'n', YELLOW, "bloated husk",
+    MONS_BLOATED_HUSK, 'n', YELLOW, _("bloated husk"),
     M_NO_ZOMBIE,
     MR_RES_COLD,
     10, MONS_GHOUL, MONS_BLOATED_HUSK, MH_UNDEAD, 40,
@@ -1626,7 +1629,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_GHOUL, 'n', RED, "ghoul",
+    MONS_GHOUL, 'n', RED, _("ghoul"),
     M_NO_ZOMBIE,
     MR_RES_COLD,
     10, MONS_GHOUL, MONS_GHOUL, MH_UNDEAD, 80,
@@ -1640,7 +1643,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 
 // orcs ('o')
 {
-    MONS_ORC, 'o', LIGHTRED, "orc",
+    MONS_ORC, 'o', LIGHTRED, _("orc"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     15, MONS_ORC, MONS_ORC, MH_NATURAL, 0,
@@ -1653,7 +1656,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_ORC_WIZARD, 'o', MAGENTA, "orc wizard",
+    MONS_ORC_WIZARD, 'o', MAGENTA, _("orc wizard"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ORC, MONS_ORC, MH_NATURAL, 20,
@@ -1666,7 +1669,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_ORC_PRIEST, 'o', GREEN, "orc priest",
+    MONS_ORC_PRIEST, 'o', GREEN, _("orc priest"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ORC, MONS_ORC, MH_NATURAL | MH_EVIL, 20,
@@ -1679,7 +1682,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_ORC_WARRIOR, 'o', YELLOW, "orc warrior",
+    MONS_ORC_WARRIOR, 'o', YELLOW, _("orc warrior"),
     M_FIGHTER | M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     16, MONS_ORC, MONS_ORC, MH_NATURAL, 20,
@@ -1692,7 +1695,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_ORC_KNIGHT, 'o', CYAN, "orc knight",
+    MONS_ORC_KNIGHT, 'o', CYAN, _("orc knight"),
     M_FIGHTER | M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     9, MONS_ORC, MONS_ORC, MH_NATURAL, 40,
@@ -1705,7 +1708,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_ORC_WARLORD, 'o', LIGHTCYAN, "orc warlord",
+    MONS_ORC_WARLORD, 'o', LIGHTCYAN, _("orc warlord"),
     M_FIGHTER | M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     11, MONS_ORC, MONS_ORC, MH_NATURAL, 60,
@@ -1718,7 +1721,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_ORC_SORCERER, 'o', LIGHTMAGENTA, "orc sorcerer",
+    MONS_ORC_SORCERER, 'o', LIGHTMAGENTA, _("orc sorcerer"),
     M_SEE_INVIS | M_SPEAKS | M_WARM_BLOOD,
     MR_NO_FLAGS,
     12, MONS_ORC, MONS_ORC, MH_NATURAL, 40,
@@ -1731,7 +1734,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_ORC_HIGH_PRIEST, 'o', LIGHTGREEN, "orc high priest",
+    MONS_ORC_HIGH_PRIEST, 'o', LIGHTGREEN, _("orc high priest"),
     M_SEE_INVIS | M_SPEAKS | M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_ORC, MONS_ORC, MH_NATURAL | MH_EVIL, 60,
@@ -1745,7 +1748,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 
 // humans ('p')
 {
-    MONS_HUMAN, 'p', LIGHTGREY, "human",
+    MONS_HUMAN, 'p', LIGHTGREY, _("human"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 20,
@@ -1758,7 +1761,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_HELL_KNIGHT, 'p', RED, "hell knight",
+    MONS_HELL_KNIGHT, 'p', RED, _("hell knight"),
     M_FIGHTER | M_WARM_BLOOD | M_SPEAKS,
     mrd(MR_RES_FIRE, 3),
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL | MH_EVIL, 40,
@@ -1771,7 +1774,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_DEATH_KNIGHT, 'p', GREEN, "death knight",
+    MONS_DEATH_KNIGHT, 'p', GREEN, _("death knight"),
     M_WARM_BLOOD | M_FIGHTER | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_HUMAN, MONS_HUMAN, MH_NATURAL | MH_EVIL, 80,
@@ -1784,7 +1787,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_NECROMANCER, 'p', WHITE, "necromancer",
+    MONS_NECROMANCER, 'p', WHITE, _("necromancer"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL | MH_EVIL, 60,
@@ -1797,7 +1800,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_WIZARD, 'p', MAGENTA, "wizard",
+    MONS_WIZARD, 'p', MAGENTA, _("wizard"),
     M_SPEAKS | M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL | MH_EVIL, 60,
@@ -1810,7 +1813,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_VAULT_GUARD, 'p', CYAN, "vault guard",
+    MONS_VAULT_GUARD, 'p', CYAN, _("vault guard"),
     M_FIGHTER | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 60,
@@ -1823,7 +1826,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_VAULT_SENTINEL, 'p', LIGHTBLUE, "vault sentinel",
+    MONS_VAULT_SENTINEL, 'p', LIGHTBLUE, _("vault sentinel"),
     M_FIGHTER | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 40,
@@ -1836,7 +1839,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_VAULT_WARDEN, 'p', LIGHTRED, "vault warden",
+    MONS_VAULT_WARDEN, 'p', LIGHTRED, _("vault warden"),
     M_FIGHTER | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 60,
@@ -1849,7 +1852,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_IRONBOUND_CONVOKER, 'p', YELLOW, "ironbound convoker",
+    MONS_IRONBOUND_CONVOKER, 'p', YELLOW, _("ironbound convoker"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 40,
@@ -1862,7 +1865,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_IRONBOUND_FROSTHEART, 'p', BLUE, "ironbound frostheart",
+    MONS_IRONBOUND_FROSTHEART, 'p', BLUE, _("ironbound frostheart"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS,
     MR_RES_COLD,
     12, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 40,
@@ -1875,7 +1878,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_IRONBOUND_PRESERVER, 'p', LIGHTGREEN, "ironbound preserver",
+    MONS_IRONBOUND_PRESERVER, 'p', LIGHTGREEN, _("ironbound preserver"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 40,
@@ -1888,7 +1891,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_IRONBOUND_BEASTMASTER, 'p', BROWN, "ironbound beastmaster",
+    MONS_IRONBOUND_BEASTMASTER, 'p', BROWN, _("ironbound beastmaster"),
     M_WARM_BLOOD | M_SPEAKS | M_REQUIRE_BAND,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 40,
@@ -1901,7 +1904,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_SHAPESHIFTER, 'p', LIGHTRED, "shapeshifter",
+    MONS_SHAPESHIFTER, 'p', LIGHTRED, _("shapeshifter"),
     M_NO_SKELETON | M_NO_ZOMBIE,
     MR_NO_FLAGS,
     10, MONS_SHAPESHIFTER, MONS_SHAPESHIFTER, MH_NATURAL, 40,
@@ -1914,7 +1917,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_GLOWING_SHAPESHIFTER, 'p', LIGHTRED, "glowing shapeshifter",
+    MONS_GLOWING_SHAPESHIFTER, 'p', LIGHTRED, _("glowing shapeshifter"),
     M_NO_SKELETON | M_NO_ZOMBIE,
     MR_NO_FLAGS,
     10, MONS_SHAPESHIFTER, MONS_GLOWING_SHAPESHIFTER, MH_NATURAL, 80,
@@ -1927,7 +1930,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_KILLER_KLOWN, 'p', ETC_RANDOM, "Killer Klown",
+    MONS_KILLER_KLOWN, 'p', ETC_RANDOM, _("Killer Klown"),
     M_SEE_INVIS | M_SPEAKS | M_WARM_BLOOD | M_NO_POLY_TO | M_NO_GEN_DERIVED,
     MR_NO_FLAGS,
     17, MONS_HUMAN, MONS_KILLER_KLOWN, MH_NATURAL, 160,
@@ -1940,7 +1943,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 { // dummy; spawns in a single vault.
-    MONS_DEMIGOD, 'p', YELLOW, "demigod",
+    MONS_DEMIGOD, 'p', YELLOW, _("demigod"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_DEMIGOD, MH_NATURAL, 20,
@@ -1953,7 +1956,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 { // dummy... literally; single vault
-    MONS_HALFLING, 'p', LIGHTGREY, "halfling",
+    MONS_HALFLING, 'p', LIGHTGREY, _("halfling"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_HALFLING, MONS_HALFLING, MH_NATURAL, 10,
@@ -1967,7 +1970,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 
 // rodents ('r')
 {
-    MONS_RAT, 'r', BROWN, "rat",
+    MONS_RAT, 'r', BROWN, _("rat"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     1, MONS_RAT, MONS_RAT, MH_NATURAL, 0,
@@ -1980,7 +1983,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_QUOKKA, 'r', WHITE, "quokka",
+    MONS_QUOKKA, 'r', WHITE, _("quokka"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_QUOKKA, MONS_QUOKKA, MH_NATURAL, 0,
@@ -1993,7 +1996,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_RIVER_RAT, 'r', LIGHTGREEN, "river rat",
+    MONS_RIVER_RAT, 'r', LIGHTGREEN, _("river rat"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     13, MONS_RAT, MONS_RIVER_RAT, MH_NATURAL, 10,
@@ -2006,7 +2009,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_HELL_RAT, 'r', LIGHTRED, "hell rat",
+    MONS_HELL_RAT, 'r', LIGHTRED, _("hell rat"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_RAT, MONS_HELL_RAT, MH_DEMONIC, 20,
@@ -2020,7 +2023,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 
 // arachnids ('s')
 {
-    MONS_SCORPION, 's', YELLOW, "scorpion",
+    MONS_SCORPION, 's', YELLOW, _("scorpion"),
     M_NO_SKELETON,
     MR_VUL_POISON,
     13, MONS_SCORPION, MONS_SCORPION, MH_NATURAL, 20,
@@ -2033,7 +2036,7 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
 },
 
 {
-    MONS_EMPEROR_SCORPION, 's', LIGHTGREY, "emperor scorpion",
+    MONS_EMPEROR_SCORPION, 's', LIGHTGREY, _("emperor scorpion"),
     M_NO_SKELETON,
     MR_RES_POISON,
     13, MONS_SCORPION, MONS_EMPEROR_SCORPION, MH_NATURAL, 60,
@@ -2046,10 +2049,10 @@ DUMMY(MONS_GIANT_LIZARD, 'l', LIGHTGREY, "giant lizard", TILEP_MONS_IGUANA)
     {TILEP_MONS_EMPEROR_SCORPION}, TILE_CORPSE_EMPEROR_SCORPION
 },
 
-DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
+DUMMY(MONS_SPIDER, 's', CYAN, _("spider"), TILEP_MONS_REDBACK)
 
 {
-    MONS_TARANTELLA, 's', LIGHTMAGENTA, "tarantella",
+    MONS_TARANTELLA, 's', LIGHTMAGENTA, _("tarantella"),
     M_NO_SKELETON,
     MR_VUL_POISON,
     6, MONS_SPIDER, MONS_TARANTELLA, MH_NATURAL, 20,
@@ -2062,7 +2065,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
 },
 
 {
-    MONS_JUMPING_SPIDER, 's', LIGHTBLUE, "jumping spider",
+    MONS_JUMPING_SPIDER, 's', LIGHTBLUE, _("jumping spider"),
     M_NO_SKELETON,
     MR_VUL_POISON,
     8, MONS_SPIDER, MONS_JUMPING_SPIDER, MH_NATURAL, 20,
@@ -2076,7 +2079,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
 },
 
 {
-    MONS_WOLF_SPIDER, 's', WHITE, "wolf spider",
+    MONS_WOLF_SPIDER, 's', WHITE, _("wolf spider"),
     M_NO_SKELETON,
     MR_VUL_POISON,
     4, MONS_SPIDER, MONS_WOLF_SPIDER, MH_NATURAL, 20,
@@ -2090,7 +2093,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
 },
 
 {
-    MONS_REDBACK, 's', LIGHTRED, "redback",
+    MONS_REDBACK, 's', LIGHTRED, _("redback"),
     M_NO_SKELETON,
     MR_VUL_POISON,
     5, MONS_SPIDER, MONS_REDBACK, MH_NATURAL, 20,
@@ -2103,7 +2106,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
 },
 
 {
-    MONS_DEMONIC_CRAWLER, 's', LIGHTGREEN, "demonic crawler",
+    MONS_DEMONIC_CRAWLER, 's', LIGHTGREEN, _("demonic crawler"),
     M_NO_SKELETON | M_SEE_INVIS,
     MR_RES_ELEC | MR_RES_POISON | MR_RES_COLD | MR_RES_FIRE,
     4, MONS_DEMONIC_CRAWLER, MONS_DEMONIC_CRAWLER, MH_DEMONIC, 100,
@@ -2117,7 +2120,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
 },
 
 {
-    MONS_ORB_SPIDER, 's', MAGENTA, "orb spider",
+    MONS_ORB_SPIDER, 's', MAGENTA, _("orb spider"),
     M_NO_SKELETON | M_MAINTAIN_RANGE,
     MR_VUL_POISON,
     20, MONS_SPIDER, MONS_ORB_SPIDER, MH_NATURAL, 40,
@@ -2131,7 +2134,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
 
 // alligators, testudines, and crabs ('t')
 {
-    MONS_ALLIGATOR, 't', LIGHTBLUE, "alligator",
+    MONS_ALLIGATOR, 't', LIGHTBLUE, _("alligator"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_GIANT_LIZARD, MONS_ALLIGATOR, MH_NATURAL, 40,
@@ -2145,7 +2148,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
 },
 
 {
-    MONS_SNAPPING_TURTLE, 't', GREEN, "snapping turtle",
+    MONS_SNAPPING_TURTLE, 't', GREEN, _("snapping turtle"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_SNAPPING_TURTLE, MONS_SNAPPING_TURTLE, MH_NATURAL, 40,
@@ -2158,7 +2161,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
 },
 
 {
-    MONS_ALLIGATOR_SNAPPING_TURTLE, 't', LIGHTGREEN, "alligator snapping turtle",
+    MONS_ALLIGATOR_SNAPPING_TURTLE, 't', LIGHTGREEN, _("alligator snapping turtle"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_SNAPPING_TURTLE, MONS_ALLIGATOR_SNAPPING_TURTLE,
@@ -2171,7 +2174,7 @@ DUMMY(MONS_SPIDER, 's', CYAN, "spider", TILEP_MONS_REDBACK)
     {TILEP_MONS_ALLIGATOR_SNAPPING_TURTLE}, TILE_CORPSE_ALLIGATOR_SNAPPING_TURTLE
 },
 
-DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
+DUMMY(MONS_CRAB, 't', LIGHTGREY, _("crab"), TILEP_MONS_FIRE_CRAB)
 
 {
     MONS_FIRE_CRAB, 't', LIGHTRED, "fire crab",
@@ -2187,7 +2190,7 @@ DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
 },
 
 {
-    MONS_GHOST_CRAB, 't', LIGHTGREY, "ghost crab",
+    MONS_GHOST_CRAB, 't', LIGHTGREY, _("ghost crab"),
     M_NO_SKELETON,
     MR_NO_FLAGS,
     25, MONS_CRAB, MONS_GHOST_CRAB, MH_UNDEAD, 40,
@@ -2200,7 +2203,7 @@ DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
 },
 
 {
-    MONS_APOCALYPSE_CRAB, 't', WHITE, "apocalypse crab",
+    MONS_APOCALYPSE_CRAB, 't', WHITE, _("apocalypse crab"),
     M_NO_SKELETON | M_SEE_INVIS,
     MR_VUL_POISON | mrd(MR_RES_FIRE | MR_RES_COLD, 2),
     13, MONS_CRAB, MONS_APOCALYPSE_CRAB, MH_DEMONIC, 60,
@@ -2216,7 +2219,7 @@ DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
 // NOTE: ugly things are ghost demons and thus their stats vary treacherously
 // from those below. beware!
 {
-    MONS_UGLY_THING, 'u', COLOUR_UNDEF, "ugly thing",
+    MONS_UGLY_THING, 'u', COLOUR_UNDEF, _("ugly thing"),
     M_WARM_BLOOD | M_HERD | M_NO_GEN_DERIVED | M_GHOST_DEMON,
     MR_NO_FLAGS,
     6, MONS_UGLY_THING, MONS_UGLY_THING, MH_NATURAL, 40,
@@ -2229,7 +2232,7 @@ DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
 },
 
 {
-    MONS_VERY_UGLY_THING, 'u', COLOUR_UNDEF, "very ugly thing",
+    MONS_VERY_UGLY_THING, 'u', COLOUR_UNDEF, _("very ugly thing"),
     M_WARM_BLOOD | M_HERD | M_NO_GEN_DERIVED | M_GHOST_DEMON,
     MR_NO_FLAGS,
     10, MONS_UGLY_THING, MONS_VERY_UGLY_THING, MH_NATURAL, 40,
@@ -2243,7 +2246,7 @@ DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
 
 // vortices ('v')
 {
-    MONS_FIRE_VORTEX, 'v', RED, "fire vortex",
+    MONS_FIRE_VORTEX, 'v', RED, _("fire vortex"),
     M_CONFUSED | M_INSUBSTANTIAL | M_CONJURED | M_FLIES | M_NO_EXP_GAIN,
     mrd(MR_RES_FIRE, 3) | MR_VUL_COLD | MR_RES_ELEC,
     5, MONS_FIRE_VORTEX, MONS_FIRE_VORTEX, MH_NONLIVING, WILL_INVULN,
@@ -2256,7 +2259,7 @@ DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
 },
 
 {
-    MONS_SPATIAL_VORTEX, 'v', ETC_RANDOM, "spatial vortex",
+    MONS_SPATIAL_VORTEX, 'v', ETC_RANDOM, _("spatial vortex"),
     M_CONFUSED | M_INSUBSTANTIAL | M_CONJURED | M_FLIES,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     5, MONS_FIRE_VORTEX, MONS_SPATIAL_VORTEX, MH_NONLIVING, WILL_INVULN,
@@ -2269,7 +2272,7 @@ DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
 },
 
 {
-    MONS_SPATIAL_MAELSTROM, 'v', YELLOW, "spatial maelstrom",
+    MONS_SPATIAL_MAELSTROM, 'v', YELLOW, _("spatial maelstrom"),
     M_BATTY | M_INSUBSTANTIAL | M_FLIES,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | MR_RES_ELEC,
     5, MONS_SPATIAL_MAELSTROM, MONS_SPATIAL_MAELSTROM,
@@ -2284,11 +2287,11 @@ DUMMY(MONS_CRAB, 't', LIGHTGREY, "crab", TILEP_MONS_FIRE_CRAB)
 },
 
 // wisp-form
-DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
+DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, _("insubstantial wisp"),
       TILEP_MONS_WILL_O_THE_WISP)
 
 {
-    MONS_WILL_O_THE_WISP, 'v', GREEN, "will-o-the-wisp",
+    MONS_WILL_O_THE_WISP, 'v', GREEN, _("will-o-the-wisp"),
     M_INSUBSTANTIAL | M_FLIES | M_SEE_INVIS,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     10, MONS_WILL_O_THE_WISP, MONS_WILL_O_THE_WISP, MH_NONLIVING, WILL_INVULN,
@@ -2301,7 +2304,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 { // miscast only
-    MONS_TWISTER, 'v', ETC_AIR, "twister",
+    MONS_TWISTER, 'v', ETC_AIR, _("twister"),
     M_CONFUSED | M_INSUBSTANTIAL | M_BATTY | M_NO_EXP_GAIN | M_NO_POLY_TO
         | M_FLIES,
     MR_RES_FIRE | MR_RES_COLD | mrd(MR_RES_ELEC, 3) | MR_RES_TORNADO,
@@ -2316,7 +2319,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 
 // worms and slugs ('w')
 {
-    MONS_WORM, 'w', LIGHTRED, "worm",
+    MONS_WORM, 'w', LIGHTRED, _("worm"),
     M_NO_SKELETON | M_FAST_REGEN,
     MR_NO_FLAGS,
     3, MONS_WORM, MONS_WORM, MH_NATURAL, 10,
@@ -2329,7 +2332,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_SWAMP_WORM, 'w', BROWN, "swamp worm",
+    MONS_SWAMP_WORM, 'w', BROWN, _("swamp worm"),
     M_NO_SKELETON,
     MR_NO_FLAGS,
     3, MONS_WORM, MONS_SWAMP_WORM, MH_NATURAL, 10,
@@ -2342,7 +2345,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_TYRANT_LEECH, 'w', RED, "tyrant leech",
+    MONS_TYRANT_LEECH, 'w', RED, _("tyrant leech"),
     M_NO_SKELETON,
     MR_NO_FLAGS,
     8, MONS_TYRANT_LEECH, MONS_TYRANT_LEECH, MH_NATURAL, 40,
@@ -2355,7 +2358,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_DART_SLUG, 'w', CYAN, "dart slug",
+    MONS_DART_SLUG, 'w', CYAN, _("dart slug"),
     M_NO_SKELETON,
     MR_VUL_POISON,
     40, MONS_ELEPHANT_SLUG, MONS_DART_SLUG, MH_NATURAL, 0,
@@ -2368,7 +2371,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_TORPOR_SNAIL, 'w', GREEN, "torpor snail",
+    MONS_TORPOR_SNAIL, 'w', GREEN, _("torpor snail"),
     M_NO_SKELETON,
     MR_NO_FLAGS,
     20, MONS_ELEPHANT_SLUG, MONS_TORPOR_SNAIL, MH_NATURAL, 40,
@@ -2382,7 +2385,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 
 // dummy genus monster; not using DUMMY since it's also a dummy species
 {
-    MONS_ELEPHANT_SLUG, 'w', WHITE, "elephant slug",
+    MONS_ELEPHANT_SLUG, 'w', WHITE, _("elephant slug"),
     M_NO_SKELETON | M_CANT_SPAWN,
     MR_VUL_POISON,
     2, MONS_ELEPHANT_SLUG, MONS_ELEPHANT_SLUG, MH_NATURAL, 80,
@@ -2396,7 +2399,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 
 // small abominations ('x')
 {
-    MONS_UNSEEN_HORROR, 'x', MAGENTA, "unseen horror",
+    MONS_UNSEEN_HORROR, 'x', MAGENTA, _("unseen horror"),
     M_SEE_INVIS | M_INVIS | M_BATTY,
     MR_NO_FLAGS,
     6, MONS_UNSEEN_HORROR, MONS_UNSEEN_HORROR, MH_NATURAL, 20,
@@ -2409,7 +2412,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_ABOMINATION_SMALL, 'x', LIGHTRED, "small abomination",
+    MONS_ABOMINATION_SMALL, 'x', LIGHTRED, _("small abomination"),
     M_NO_REGEN,
     MR_NO_FLAGS,
     10, MONS_ABOMINATION_SMALL, MONS_ABOMINATION_SMALL, MH_UNDEAD, 40,
@@ -2422,7 +2425,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_ANCIENT_ZYME, 'x', GREEN, "ancient zyme",
+    MONS_ANCIENT_ZYME, 'x', GREEN, _("ancient zyme"),
     M_SEE_INVIS | M_FLIES,
     MR_NO_FLAGS,
     8, MONS_ANCIENT_ZYME, MONS_ANCIENT_ZYME, MH_NONLIVING, 60,
@@ -2435,7 +2438,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_WORLDBINDER, 'x', CYAN, "worldbinder",
+    MONS_WORLDBINDER, 'x', CYAN, _("worldbinder"),
     M_SEE_INVIS | M_FLIES,
     MR_NO_FLAGS,
     13, MONS_WORLDBINDER, MONS_WORLDBINDER, MH_NONLIVING, 60,
@@ -2449,7 +2452,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_BUNYIP, 'x', YELLOW, "bunyip",
+    MONS_BUNYIP, 'x', YELLOW, _("bunyip"),
     M_WARM_BLOOD,
     MR_RES_POISON,
     7, MONS_BUNYIP, MONS_BUNYIP, MH_NATURAL, 60,
@@ -2463,7 +2466,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 
 // flying insects ('y')
 {
-    MONS_KILLER_BEE, 'y', BROWN, "killer bee",
+    MONS_KILLER_BEE, 'y', BROWN, _("killer bee"),
     M_NO_SKELETON | M_FLIES,
     MR_VUL_POISON,
     11, MONS_KILLER_BEE, MONS_KILLER_BEE, MH_NATURAL, 10,
@@ -2476,7 +2479,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_QUEEN_BEE, 'y', LIGHTMAGENTA, "queen bee",
+    MONS_QUEEN_BEE, 'y', LIGHTMAGENTA, _("queen bee"),
     M_NO_SKELETON | M_FLIES,
     MR_VUL_POISON,
     14, MONS_KILLER_BEE, MONS_QUEEN_BEE, MH_NATURAL, 20,
@@ -2489,7 +2492,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_VAMPIRE_MOSQUITO, 'y', LIGHTGREY, "vampire mosquito",
+    MONS_VAMPIRE_MOSQUITO, 'y', LIGHTGREY, _("vampire mosquito"),
     M_NO_SKELETON | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_VAMPIRE_MOSQUITO, MONS_VAMPIRE_MOSQUITO, MH_UNDEAD, 20,
@@ -2502,7 +2505,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_HORNET, 'y', YELLOW, "hornet",
+    MONS_HORNET, 'y', YELLOW, _("hornet"),
     M_NO_SKELETON | M_FLIES,
     MR_VUL_POISON,
     13, MONS_HORNET, MONS_HORNET, MH_NATURAL, 30,
@@ -2515,7 +2518,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_MELIAI, 'y', GREEN, "meliai",
+    MONS_MELIAI, 'y', GREEN, _("meliai"),
     M_NO_SKELETON | M_FLIES,
     MR_VUL_POISON,
     6, MONS_KILLER_BEE, MONS_MELIAI, MH_NATURAL, 20,
@@ -2528,7 +2531,7 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
 },
 
 {
-    MONS_SPARK_WASP, 'y', LIGHTCYAN, "spark wasp",
+    MONS_SPARK_WASP, 'y', LIGHTCYAN, _("spark wasp"),
     M_NO_SKELETON | M_FLIES,
     mrd(MR_RES_ELEC, 3) | MR_VUL_POISON,
     12, MONS_SPARK_WASP, MONS_SPARK_WASP, MH_NATURAL, 40,
@@ -2540,10 +2543,10 @@ DUMMY(MONS_INSUBSTANTIAL_WISP, 'v', LIGHTGREY, "insubstantial wisp",
     {TILEP_MONS_SPARK_WASP}, TILE_CORPSE_SPARK_WASP
 },
 
-DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
+DUMMY(MONS_MOTH, 'y', WHITE, _("moth"), TILEP_MONS_MOTH_OF_WRATH)
 
 {
-    MONS_GHOST_MOTH, 'y', MAGENTA, "ghost moth",
+    MONS_GHOST_MOTH, 'y', MAGENTA, _("ghost moth"),
     M_NO_SKELETON | M_INVIS | M_FLIES,
     MR_RES_POISON | MR_RES_COLD,
     18, MONS_MOTH, MONS_GHOST_MOTH, MH_NATURAL, 100,
@@ -2557,7 +2560,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_MOTH_OF_WRATH, 'y', LIGHTRED, "moth of wrath",
+    MONS_MOTH_OF_WRATH, 'y', LIGHTRED, _("moth of wrath"),
     M_NO_SKELETON | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_MOTH, MONS_MOTH_OF_WRATH, MH_NATURAL, 40,
@@ -2571,7 +2574,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 
 // corporeal (semi-)humanoid undead ('z')
 {
-    MONS_WIGHT, 'z', GREEN, "wight",
+    MONS_WIGHT, 'z', GREEN, _("wight"),
     M_NO_FLAGS,
     mrd(MR_RES_COLD, 2),
     16, MONS_WIGHT, MONS_WIGHT, MH_UNDEAD, 20,
@@ -2584,7 +2587,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_SKELETAL_WARRIOR, 'z', CYAN, "skeletal warrior",
+    MONS_SKELETAL_WARRIOR, 'z', CYAN, _("skeletal warrior"),
     M_FIGHTER,
     MR_RES_COLD,
     10, MONS_SKELETAL_WARRIOR, MONS_SKELETAL_WARRIOR, MH_UNDEAD, 100,
@@ -2597,7 +2600,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_ANCIENT_CHAMPION, 'z', LIGHTCYAN, "ancient champion",
+    MONS_ANCIENT_CHAMPION, 'z', LIGHTCYAN, _("ancient champion"),
     M_FIGHTER,
     MR_RES_COLD,
     24, MONS_ANCIENT_CHAMPION, MONS_ANCIENT_CHAMPION, MH_UNDEAD, 120,
@@ -2610,7 +2613,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_FLYING_SKULL, 'z', WHITE, "flying skull",
+    MONS_FLYING_SKULL, 'z', WHITE, _("flying skull"),
     M_NO_FLAGS | M_FLIES, // duh
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     10, MONS_FLYING_SKULL, MONS_FLYING_SKULL, MH_UNDEAD, 20,
@@ -2623,7 +2626,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_CURSE_SKULL, 'z', LIGHTMAGENTA, "curse skull",
+    MONS_CURSE_SKULL, 'z', LIGHTMAGENTA, _("curse skull"),
     M_SEE_INVIS | M_SPEAKS | M_FLIES,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | MR_RES_ELEC,
     20, MONS_CURSE_SKULL, MONS_CURSE_SKULL, MH_UNDEAD, WILL_INVULN,
@@ -2636,7 +2639,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_CURSE_TOE, 'z', LIGHTGREEN, "curse toe",
+    MONS_CURSE_TOE, 'z', LIGHTGREEN, _("curse toe"),
     M_SEE_INVIS | M_SPEAKS | M_FLIES,
     MR_RES_ELEC | mrd(MR_RES_FIRE, 3) | MR_RES_COLD,
     60, MONS_LICH, MONS_CURSE_TOE, MH_UNDEAD, WILL_INVULN,
@@ -2650,7 +2653,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 
 // angelic beings ('A')
 {
-    MONS_ANGEL, 'A', WHITE, "angel",
+    MONS_ANGEL, 'A', WHITE, _("angel"),
     M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_FLIES,
     MR_RES_POISON | MR_RES_ELEC,
     10, MONS_ANGEL, MONS_ANGEL, MH_HOLY, 120,
@@ -2665,7 +2668,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_CHERUB, 'A', LIGHTBLUE, "cherub",
+    MONS_CHERUB, 'A', LIGHTBLUE, _("cherub"),
     M_FIGHTER | M_ARCHER | M_SEE_INVIS | M_SPEAKS | M_FLIES,
     MR_RES_POISON | MR_RES_ELEC | MR_RES_FIRE,
     10, MONS_ANGEL, MONS_CHERUB, MH_HOLY, 100,
@@ -2680,7 +2683,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_SERAPH, 'A', LIGHTMAGENTA, "seraph",
+    MONS_SERAPH, 'A', LIGHTMAGENTA, _("seraph"),
     M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_FLIES | M_TALL_TILE,
     MR_RES_POISON | MR_RES_ELEC | mrd(MR_RES_FIRE, 3),
     10, MONS_ANGEL, MONS_SERAPH, MH_HOLY, 160,
@@ -2695,7 +2698,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_DAEVA, 'A', YELLOW, "daeva",
+    MONS_DAEVA, 'A', YELLOW, _("daeva"),
     M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_FLIES,
     MR_RES_POISON,
     12, MONS_ANGEL, MONS_DAEVA, MH_HOLY, 140,
@@ -2710,7 +2713,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_PROFANE_SERVITOR, 'A', RED, "profane servitor",
+    MONS_PROFANE_SERVITOR, 'A', RED, _("profane servitor"),
     M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_FLIES,
     MR_RES_COLD | MR_RES_ELEC,
     10, MONS_ANGEL, MONS_PROFANE_SERVITOR, MH_UNDEAD, 140,
@@ -2727,7 +2730,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 // beetles and other insects ('B')
 
 {
-    MONS_GIANT_COCKROACH, 'B', BROWN, "giant cockroach",
+    MONS_GIANT_COCKROACH, 'B', BROWN, _("giant cockroach"),
     M_NO_SKELETON,
     MR_VUL_POISON,
     10, MONS_GIANT_COCKROACH, MONS_GIANT_COCKROACH, MH_NATURAL, 0,
@@ -2741,7 +2744,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 
 // dummy for recolouring
 {
-    MONS_FORMICID, 'B', GREEN, "formicid",
+    MONS_FORMICID, 'B', GREEN, _("formicid"),
     M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS | M_NO_SKELETON | M_NO_POLY_TO
         | M_NO_GEN_DERIVED,
     MR_NO_FLAGS,
@@ -2755,7 +2758,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_ENTROPY_WEAVER, 'B', LIGHTCYAN, "entropy weaver",
+    MONS_ENTROPY_WEAVER, 'B', LIGHTCYAN, _("entropy weaver"),
     M_WARM_BLOOD | M_NO_SKELETON | M_FIGHTER | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ENTROPY_WEAVER, MONS_ENTROPY_WEAVER, MH_NATURAL, 60,
@@ -2768,7 +2771,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_BOULDER_BEETLE, 'B', LIGHTGREY, "boulder beetle",
+    MONS_BOULDER_BEETLE, 'B', LIGHTGREY, _("boulder beetle"),
     M_NO_SKELETON,
     MR_VUL_POISON,
     12, MONS_BOULDER_BEETLE, MONS_BOULDER_BEETLE, MH_NATURAL, 40,
@@ -2781,7 +2784,7 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 {
-    MONS_DEATH_SCARAB, 'B', BLUE, "death scarab",
+    MONS_DEATH_SCARAB, 'B', BLUE, _("death scarab"),
     M_NO_SKELETON | M_BATTY,
     MR_NO_FLAGS,
     12, MONS_DEATH_SCARAB, MONS_DEATH_SCARAB, MH_UNDEAD, 60,
@@ -2794,10 +2797,10 @@ DUMMY(MONS_MOTH, 'y', WHITE, "moth", TILEP_MONS_MOTH_OF_WRATH)
 },
 
 // cyclopes and giants ('C')
-DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
+DUMMY(MONS_GIANT, 'C', LIGHTGREY, _("giant"), TILEP_MONS_STONE_GIANT)
 
 {
-    MONS_CYCLOPS, 'C', YELLOW, "cyclops",
+    MONS_CYCLOPS, 'C', YELLOW, _("cyclops"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     14, MONS_GIANT, MONS_CYCLOPS, MH_NATURAL, 40,
@@ -2810,7 +2813,7 @@ DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
 },
 
 {
-    MONS_ETTIN, 'C', BROWN, "ettin",
+    MONS_ETTIN, 'C', BROWN, _("ettin"),
     M_WARM_BLOOD | M_TWO_WEAPONS | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_GIANT, MONS_ETTIN, MH_NATURAL, 40,
@@ -2823,7 +2826,7 @@ DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
 },
 
 {
-    MONS_FIRE_GIANT, 'C', RED, "fire giant",
+    MONS_FIRE_GIANT, 'C', RED, _("fire giant"),
     M_FIGHTER | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_FIRE, 2),
     13, MONS_GIANT, MONS_FIRE_GIANT, MH_NATURAL, 80,
@@ -2836,7 +2839,7 @@ DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
 },
 
 {
-    MONS_FROST_GIANT, 'C', LIGHTBLUE, "frost giant",
+    MONS_FROST_GIANT, 'C', LIGHTBLUE, _("frost giant"),
     M_FIGHTER | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_COLD, 2),
     11, MONS_GIANT, MONS_FROST_GIANT, MH_NATURAL, 80,
@@ -2849,7 +2852,7 @@ DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
 },
 
 {
-    MONS_STONE_GIANT, 'C', LIGHTGREY, "stone giant",
+    MONS_STONE_GIANT, 'C', LIGHTGREY, _("stone giant"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     9, MONS_GIANT, MONS_STONE_GIANT, MH_NATURAL, 80,
@@ -2862,7 +2865,7 @@ DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
 },
 
 {
-    MONS_TITAN, 'C', MAGENTA, "titan",
+    MONS_TITAN, 'C', MAGENTA, _("titan"),
     M_FIGHTER | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_ELEC, 3),
     12, MONS_GIANT, MONS_TITAN, MH_NATURAL, 180,
@@ -2875,7 +2878,7 @@ DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
 },
 
 {
-    MONS_JUGGERNAUT, 'C', LIGHTGREEN, "juggernaut",
+    MONS_JUGGERNAUT, 'C', LIGHTGREEN, _("juggernaut"),
     M_FIGHTER | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_GIANT, MONS_JUGGERNAUT, MH_NATURAL, 120,
@@ -2888,7 +2891,7 @@ DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
 },
 
 {
-    MONS_IRON_GIANT, 'C', CYAN, "iron giant",
+    MONS_IRON_GIANT, 'C', CYAN, _("iron giant"),
     M_WARM_BLOOD | M_SPEAKS | M_FIGHTER | M_SEE_INVIS,
     MR_RES_POISON | MR_RES_FIRE | MR_RES_COLD,
     10, MONS_GIANT, MONS_IRON_GIANT, MH_NATURAL, 120,
@@ -2901,10 +2904,10 @@ DUMMY(MONS_GIANT, 'C', LIGHTGREY, "giant", TILEP_MONS_STONE_GIANT)
 },
 
 // dragons ('D')
-DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
+DUMMY(MONS_DRAGON, 'D', GREEN, _("dragon"), TILEP_MONS_FIRE_DRAGON)
 
 {
-    MONS_FIRE_DRAGON, 'D', LIGHTRED, "fire dragon",
+    MONS_FIRE_DRAGON, 'D', LIGHTRED, _("fire dragon"),
     M_WARM_BLOOD | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_FIRE, 2) | MR_VUL_COLD,
     12, MONS_DRAGON, MONS_FIRE_DRAGON, MH_NATURAL, 60,
@@ -2918,7 +2921,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_HYDRA, 'D', LIGHTGREEN, "hydra",
+    MONS_HYDRA, 'D', LIGHTGREEN, _("hydra"),
     M_COLD_BLOOD | M_FAST_REGEN,
     MR_RES_POISON,
     11, MONS_HYDRA, MONS_HYDRA, MH_NATURAL, 60,
@@ -2931,7 +2934,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_ICE_DRAGON, 'D', WHITE, "ice dragon",
+    MONS_ICE_DRAGON, 'D', WHITE, _("ice dragon"),
     M_COLD_BLOOD | M_FLIES,
     MR_RES_POISON | MR_VUL_FIRE | mrd(MR_RES_COLD, 2),
     10, MONS_DRAGON, MONS_ICE_DRAGON, MH_NATURAL, 40,
@@ -2945,7 +2948,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_STEAM_DRAGON, 'D', BLUE, "steam dragon",
+    MONS_STEAM_DRAGON, 'D', BLUE, _("steam dragon"),
     M_WARM_BLOOD | M_FLIES,
     MR_RES_STEAM,
     29, MONS_DRAGON, MONS_STEAM_DRAGON, MH_NATURAL, 20,
@@ -2958,7 +2961,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_SWAMP_DRAGON, 'D', BROWN, "swamp dragon",
+    MONS_SWAMP_DRAGON, 'D', BROWN, _("swamp dragon"),
     M_WARM_BLOOD | M_FLIES,
     MR_RES_POISON,
     11, MONS_DRAGON, MONS_SWAMP_DRAGON, MH_NATURAL, 40,
@@ -2972,7 +2975,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_ACID_DRAGON, 'D', GREEN, "acid dragon",
+    MONS_ACID_DRAGON, 'D', GREEN, _("acid dragon"),
     M_WARM_BLOOD | M_FLIES,
     MR_RES_POISON | MR_RES_ACID,
     16, MONS_DRAGON, MONS_ACID_DRAGON, MH_NATURAL, 20,
@@ -2985,7 +2988,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_QUICKSILVER_DRAGON, 'D', LIGHTCYAN, "quicksilver dragon",
+    MONS_QUICKSILVER_DRAGON, 'D', LIGHTCYAN, _("quicksilver dragon"),
     M_SEE_INVIS | M_WARM_BLOOD | M_FLIES,
     MR_NO_FLAGS,
     14, MONS_DRAGON, MONS_QUICKSILVER_DRAGON, MH_NATURAL, 140,
@@ -2998,7 +3001,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_IRON_DRAGON, 'D', CYAN, "iron dragon",
+    MONS_IRON_DRAGON, 'D', CYAN, _("iron dragon"),
     M_SEE_INVIS | M_WARM_BLOOD | M_UNBREATHING,
     MR_RES_POISON | MR_RES_FIRE | MR_RES_COLD,
     14, MONS_DRAGON, MONS_IRON_DRAGON, MH_NATURAL, 160,
@@ -3012,7 +3015,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_STORM_DRAGON, 'D', LIGHTBLUE, "storm dragon",
+    MONS_STORM_DRAGON, 'D', LIGHTBLUE, _("storm dragon"),
     M_WARM_BLOOD | M_FLIES,
     mrd(MR_RES_ELEC, 3) | MR_RES_COLD,
     13, MONS_DRAGON, MONS_STORM_DRAGON, MH_NATURAL, 100,
@@ -3026,7 +3029,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_GOLDEN_DRAGON, 'D', YELLOW, "golden dragon",
+    MONS_GOLDEN_DRAGON, 'D', YELLOW, _("golden dragon"),
     M_SEE_INVIS | M_WARM_BLOOD | M_FLIES,
     MR_RES_ELEC | MR_RES_POISON | MR_RES_FIRE | MR_RES_COLD,
     26, MONS_DRAGON, MONS_GOLDEN_DRAGON, MH_NATURAL, 180,
@@ -3040,7 +3043,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_SHADOW_DRAGON, 'D', MAGENTA, "shadow dragon",
+    MONS_SHADOW_DRAGON, 'D', MAGENTA, _("shadow dragon"),
     M_SEE_INVIS | M_COLD_BLOOD | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_COLD, 2) | mrd(MR_RES_NEG, 3),
     12, MONS_DRAGON, MONS_SHADOW_DRAGON, MH_NATURAL, 120,
@@ -3054,7 +3057,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_BONE_DRAGON, 'D', LIGHTGREY, "bone dragon",
+    MONS_BONE_DRAGON, 'D', LIGHTGREY, _("bone dragon"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     12, MONS_DRAGON, MONS_BONE_DRAGON, MH_UNDEAD, 100,
@@ -3068,7 +3071,7 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 {
-    MONS_PEARL_DRAGON, 'D', ETC_HOLY, "pearl dragon",
+    MONS_PEARL_DRAGON, 'D', ETC_HOLY, _("pearl dragon"),
     M_SEE_INVIS | M_WARM_BLOOD | M_FLIES,
     MR_NO_FLAGS,
     16, MONS_DRAGON, MONS_PEARL_DRAGON, MH_HOLY, 160,
@@ -3081,10 +3084,10 @@ DUMMY(MONS_DRAGON, 'D', GREEN, "dragon", TILEP_MONS_FIRE_DRAGON)
 },
 
 // elementals (E)
-DUMMY(MONS_ELEMENTAL, 'E', LIGHTGREY, "elemental", TILEP_MONS_WATER_ELEMENTAL)
+DUMMY(MONS_ELEMENTAL, 'E', LIGHTGREY, _("elemental"), TILEP_MONS_WATER_ELEMENTAL)
 
 {
-    MONS_EARTH_ELEMENTAL, 'E', ETC_EARTH, "earth elemental",
+    MONS_EARTH_ELEMENTAL, 'E', ETC_EARTH, _("earth elemental"),
     M_NO_FLAGS,
     mrd(MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC, 3)
         | MR_RES_PETRIFY,
@@ -3098,7 +3101,7 @@ DUMMY(MONS_ELEMENTAL, 'E', LIGHTGREY, "elemental", TILEP_MONS_WATER_ELEMENTAL)
 },
 
 {
-    MONS_FIRE_ELEMENTAL, 'E', ETC_FIRE, "fire elemental",
+    MONS_FIRE_ELEMENTAL, 'E', ETC_FIRE, _("fire elemental"),
     M_INSUBSTANTIAL,
     mrd(MR_RES_FIRE, 3) | MR_VUL_COLD | MR_RES_ELEC
         | MR_VUL_WATER,
@@ -3112,7 +3115,7 @@ DUMMY(MONS_ELEMENTAL, 'E', LIGHTGREY, "elemental", TILEP_MONS_WATER_ELEMENTAL)
 },
 
 {
-    MONS_WATER_ELEMENTAL, 'E', ETC_WATER, "water elemental",
+    MONS_WATER_ELEMENTAL, 'E', ETC_WATER, _("water elemental"),
     M_NO_FLAGS,
     MR_VUL_FIRE | MR_RES_ELEC,
     12, MONS_ELEMENTAL, MONS_WATER_ELEMENTAL, MH_NONLIVING, WILL_INVULN,
@@ -3125,7 +3128,7 @@ DUMMY(MONS_ELEMENTAL, 'E', LIGHTGREY, "elemental", TILEP_MONS_WATER_ELEMENTAL)
 },
 
 {
-    MONS_AIR_ELEMENTAL, 'E', ETC_AIR, "air elemental",
+    MONS_AIR_ELEMENTAL, 'E', ETC_AIR, _("air elemental"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     mrd(MR_RES_ELEC, 3) | MR_RES_TORNADO,
     6, MONS_ELEMENTAL, MONS_AIR_ELEMENTAL, MH_NONLIVING, WILL_INVULN,
@@ -3138,7 +3141,7 @@ DUMMY(MONS_ELEMENTAL, 'E', LIGHTGREY, "elemental", TILEP_MONS_WATER_ELEMENTAL)
 },
 
 {
-    MONS_IRON_ELEMENTAL, 'E', ETC_IRON, "iron elemental",
+    MONS_IRON_ELEMENTAL, 'E', ETC_IRON, _("iron elemental"),
     M_NO_FLAGS,
     mrd(MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC, 3),
     13, MONS_ELEMENTAL, MONS_IRON_ELEMENTAL, MH_NONLIVING, WILL_INVULN,
@@ -3151,7 +3154,7 @@ DUMMY(MONS_ELEMENTAL, 'E', LIGHTGREY, "elemental", TILEP_MONS_WATER_ELEMENTAL)
 },
 
 {
-    MONS_ELEMENTAL_WELLSPRING, 'E', LIGHTCYAN, "elemental wellspring",
+    MONS_ELEMENTAL_WELLSPRING, 'E', LIGHTCYAN, _("elemental wellspring"),
     M_FAST_REGEN,
     MR_RES_ELEC,
     13, MONS_ELEMENTAL, MONS_ELEMENTAL_WELLSPRING, MH_NONLIVING, WILL_INVULN,
@@ -3164,10 +3167,10 @@ DUMMY(MONS_ELEMENTAL, 'E', LIGHTGREY, "elemental", TILEP_MONS_WATER_ELEMENTAL)
 },
 
 // frogs ('F')
-DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
+DUMMY(MONS_FROG, 'F', LIGHTGREEN, _("giant frog"), TILEP_MONS_BULLFROG)
 
 {
-    MONS_BULLFROG, 'F', GREEN, "bullfrog",
+    MONS_BULLFROG, 'F', GREEN, _("bullfrog"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_FROG, MONS_BULLFROG, MH_NATURAL, 20,
@@ -3180,7 +3183,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_CANE_TOAD, 'F', YELLOW, "cane toad",
+    MONS_CANE_TOAD, 'F', YELLOW, _("cane toad"),
     M_COLD_BLOOD,
     MR_RES_POISON,
     16, MONS_FROG, MONS_CANE_TOAD, MH_NATURAL, 20,
@@ -3193,7 +3196,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_BLINK_FROG, 'F', LIGHTGREEN, "blink frog",
+    MONS_BLINK_FROG, 'F', LIGHTGREEN, _("blink frog"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     13, MONS_FROG, MONS_BLINK_FROG, MH_NATURAL, 40,
@@ -3206,7 +3209,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_GOLIATH_FROG, 'F', LIGHTGREY, "goliath frog",
+    MONS_GOLIATH_FROG, 'F', LIGHTGREY, _("goliath frog"),
     M_COLD_BLOOD,
     MR_NO_FLAGS, // it's tough out there for a frog.
     10, MONS_FROG, MONS_GOLIATH_FROG, MH_NATURAL, 60,
@@ -3220,7 +3223,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 
 // dummy for recolouring
 {
-    MONS_BARACHI, 'F', LIGHTCYAN, "barachi",
+    MONS_BARACHI, 'F', LIGHTCYAN, _("barachi"),
     M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_FROG, MONS_BARACHI, MH_NATURAL, 10,
@@ -3234,7 +3237,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 
 // eyes ('G')
 {
-    MONS_FLOATING_EYE, 'G', WHITE, "floating eye",
+    MONS_FLOATING_EYE, 'G', WHITE, _("floating eye"),
     M_SEE_INVIS | M_FLIES,
     MR_NO_FLAGS,
     6, MONS_FLOATING_EYE, MONS_FLOATING_EYE, MH_NATURAL, 10,
@@ -3247,7 +3250,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_GLOWING_ORANGE_BRAIN, 'G', LIGHTRED, "glowing orange brain",
+    MONS_GLOWING_ORANGE_BRAIN, 'G', LIGHTRED, _("glowing orange brain"),
     M_WARM_BLOOD | M_SEE_INVIS | M_FLIES,
     MR_NO_FLAGS,
     13, MONS_GLOWING_ORANGE_BRAIN, MONS_GLOWING_ORANGE_BRAIN, MH_NATURAL, 100,
@@ -3260,7 +3263,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_GREAT_ORB_OF_EYES, 'G', LIGHTGREEN, "great orb of eyes",
+    MONS_GREAT_ORB_OF_EYES, 'G', LIGHTGREEN, _("great orb of eyes"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_POISON,
     13, MONS_FLOATING_EYE, MONS_GREAT_ORB_OF_EYES, MH_NATURAL, 120,
@@ -3273,7 +3276,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_SHINING_EYE, 'G', LIGHTMAGENTA, "shining eye",
+    MONS_SHINING_EYE, 'G', LIGHTMAGENTA, _("shining eye"),
     M_SEE_INVIS | M_FLIES,
     MR_NO_FLAGS,
     14, MONS_FLOATING_EYE, MONS_SHINING_EYE, MH_NATURAL, 100,
@@ -3286,7 +3289,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_EYE_OF_DEVASTATION, 'G', YELLOW, "eye of devastation",
+    MONS_EYE_OF_DEVASTATION, 'G', YELLOW, _("eye of devastation"),
     M_SEE_INVIS | M_FLIES,
     MR_NO_FLAGS,
     11, MONS_FLOATING_EYE, MONS_EYE_OF_DEVASTATION,
@@ -3300,7 +3303,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_GOLDEN_EYE, 'G', ETC_GOLD, "golden eye",
+    MONS_GOLDEN_EYE, 'G', ETC_GOLD, _("golden eye"),
     M_SEE_INVIS | M_BATTY | M_FLIES,
     MR_NO_FLAGS,
     17, MONS_FLOATING_EYE, MONS_GOLDEN_EYE, MH_NATURAL, 60,
@@ -3313,7 +3316,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_OPHAN, 'G', RED, "ophan",
+    MONS_OPHAN, 'G', RED, _("ophan"),
     M_SEE_INVIS | M_UNBREATHING | M_FLIES,
     MR_NO_FLAGS,
     14, MONS_ANGEL, MONS_OPHAN, MH_HOLY, 140,
@@ -3327,7 +3330,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 
 // hybrids ('H')
 {
-    MONS_MANTICORE, 'H', RED, "manticore",
+    MONS_MANTICORE, 'H', RED, _("manticore"),
     M_WARM_BLOOD | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_MANTICORE, MONS_MANTICORE, MH_NATURAL, 40,
@@ -3341,7 +3344,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_MINOTAUR, 'H', LIGHTRED, "minotaur",
+    MONS_MINOTAUR, 'H', LIGHTRED, _("minotaur"),
     M_FIGHTER | M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_MINOTAUR, MONS_MINOTAUR, MH_NATURAL, 100,
@@ -3354,7 +3357,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_FENSTRIDER_WITCH, 'H', LIGHTMAGENTA, "fenstrider witch",
+    MONS_FENSTRIDER_WITCH, 'H', LIGHTMAGENTA, _("fenstrider witch"),
     M_SPEAKS | M_WARM_BLOOD | M_SEE_INVIS,
     MR_RES_POISON | MR_RES_NEG,
     10, MONS_FENSTRIDER_WITCH, MONS_FENSTRIDER_WITCH, MH_NATURAL | MH_EVIL, 100,
@@ -3367,7 +3370,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_SPHINX, 'H', LIGHTGREY, "sphinx",
+    MONS_SPHINX, 'H', LIGHTGREY, _("sphinx"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_FLIES,
     MR_NO_FLAGS,
     12, MONS_SPHINX, MONS_SPHINX, MH_NATURAL, 60,
@@ -3381,7 +3384,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_HARPY, 'H', GREEN, "harpy",
+    MONS_HARPY, 'H', GREEN, _("harpy"),
     M_WARM_BLOOD | M_BATTY | M_FEMALE | M_FLIES,
     MR_RES_POISON,
     9, MONS_HARPY, MONS_HARPY, MH_NATURAL, 20,
@@ -3396,7 +3399,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 
 // dummy, though it's rude to say so
 {
-    MONS_PALENTONGA, 'H', YELLOW, "palentonga",
+    MONS_PALENTONGA, 'H', YELLOW, _("palentonga"),
     M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_PALENTONGA, MONS_PALENTONGA, MH_NATURAL, 10,
@@ -3411,7 +3414,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 
 // Mutant beasts - variable traits
 {
-    MONS_MUTANT_BEAST, 'H', MAGENTA, "mutant beast",
+    MONS_MUTANT_BEAST, 'H', MAGENTA, _("mutant beast"),
     M_NO_POLY_TO | M_NO_GEN_DERIVED,
     MR_NO_FLAGS,
     11, MONS_MUTANT_BEAST, MONS_MUTANT_BEAST, MH_NATURAL, -3,
@@ -3426,7 +3429,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 
 // Hepliaklqana's ancestor - variable traits
 {
-    MONS_ANCESTOR, 'R', LIGHTCYAN, "ancestor",
+    MONS_ANCESTOR, 'R', LIGHTCYAN, _("ancestor"),
     M_ANCESTOR | M_NO_POLY_TO | M_NO_GEN_DERIVED | M_FLIES | M_FAST_REGEN | M_INSUBSTANTIAL | M_SEE_INVIS,
     MR_RES_FIRE | MR_RES_COLD,
     1, MONS_ANCESTOR, MONS_ANCESTOR, MH_NONLIVING, -5,
@@ -3439,7 +3442,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_ANCESTOR_KNIGHT, 'R', LIGHTCYAN, "knight",
+    MONS_ANCESTOR_KNIGHT, 'R', LIGHTCYAN, _("knight"),
     M_ANCESTOR | M_NO_POLY_TO | M_NO_GEN_DERIVED | M_FLIES | M_FAST_REGEN | M_INSUBSTANTIAL | M_SEE_INVIS,
     MR_RES_FIRE | MR_RES_COLD,
     1, MONS_ANCESTOR, MONS_ANCESTOR_KNIGHT, MH_NONLIVING, -5,
@@ -3451,7 +3454,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
     {TILEP_MONS_ANCESTOR_KNIGHT}, TILE_ERROR
 },
 {
-    MONS_ANCESTOR_BATTLEMAGE, 'R', LIGHTCYAN, "battlemage",
+    MONS_ANCESTOR_BATTLEMAGE, 'R', LIGHTCYAN, _("battlemage"),
     M_ANCESTOR | M_NO_POLY_TO | M_NO_GEN_DERIVED | M_FLIES | M_FAST_REGEN | M_INSUBSTANTIAL | M_SEE_INVIS,
     MR_RES_FIRE | MR_RES_COLD,
     1, MONS_ANCESTOR, MONS_ANCESTOR_BATTLEMAGE, MH_NONLIVING, -5,
@@ -3463,7 +3466,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
     {TILEP_MONS_ANCESTOR_BATTLEMAGE}, TILE_ERROR
 },
 {
-    MONS_ANCESTOR_HEXER, 'R', LIGHTCYAN, "hexer",
+    MONS_ANCESTOR_HEXER, 'R', LIGHTCYAN, _("hexer"),
     M_ANCESTOR | M_NO_POLY_TO | M_NO_GEN_DERIVED | M_FLIES | M_FAST_REGEN | M_INSUBSTANTIAL | M_SEE_INVIS,
     MR_RES_FIRE | MR_RES_COLD,
     1, MONS_ANCESTOR, MONS_ANCESTOR_HEXER, MH_NONLIVING, -5,
@@ -3477,7 +3480,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 
 // jellies ('J')
 {
-    MONS_ENDOPLASM, 'J', LIGHTGREY, "endoplasm",
+    MONS_ENDOPLASM, 'J', LIGHTGREY, _("endoplasm"),
     M_SEE_INVIS | M_UNBLINDABLE,
     MR_RES_POISON | mrd(MR_RES_ACID, 3),
     10, MONS_JELLY, MONS_ENDOPLASM, MH_NATURAL, 0,
@@ -3490,7 +3493,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_JELLY, 'J', LIGHTRED, "jelly",
+    MONS_JELLY, 'J', LIGHTRED, _("jelly"),
     M_SEE_INVIS | M_UNBLINDABLE | M_SPLITS | M_ACID_SPLASH | M_EAT_DOORS,
     MR_RES_POISON | mrd(MR_RES_ACID, 3),
     15, MONS_JELLY, MONS_JELLY, MH_NATURAL, 10,
@@ -3503,7 +3506,7 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
 },
 
 {
-    MONS_SLIME_CREATURE, 'J', GREEN, "slime creature",
+    MONS_SLIME_CREATURE, 'J', GREEN, _("slime creature"),
     M_FAST_REGEN | M_HERD,
     MR_RES_POISON,
     3, MONS_JELLY, MONS_SLIME_CREATURE, MH_NATURAL, 40,
@@ -3515,11 +3518,11 @@ DUMMY(MONS_FROG, 'F', LIGHTGREEN, "giant frog", TILEP_MONS_BULLFROG)
     {TILEP_MONS_PROGRAM_BUG}, TILE_ERROR
 },
 
-DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
+DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, _("merged slime creature"),
       TILEP_MONS_PROGRAM_BUG)
 
 {
-    MONS_ROCKSLIME, 'J', BROWN, "rockslime",
+    MONS_ROCKSLIME, 'J', BROWN, _("rockslime"),
     M_SEE_INVIS | M_UNBLINDABLE | M_EAT_DOORS,
     MR_RES_POISON | MR_RES_ELEC | mrd(MR_RES_FIRE, 2),
     10, MONS_JELLY, MONS_ROCKSLIME, MH_NATURAL, 60,
@@ -3532,7 +3535,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_QUICKSILVER_OOZE, 'J', CYAN, "quicksilver ooze",
+    MONS_QUICKSILVER_OOZE, 'J', CYAN, _("quicksilver ooze"),
     M_SEE_INVIS | M_UNBLINDABLE | M_EAT_DOORS,
     MR_RES_POISON | mrd(MR_RES_ACID, 3),
     15, MONS_JELLY, MONS_QUICKSILVER_OOZE, MH_NATURAL, WILL_INVULN,
@@ -3545,7 +3548,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_AZURE_JELLY, 'J', LIGHTBLUE, "azure jelly",
+    MONS_AZURE_JELLY, 'J', LIGHTBLUE, _("azure jelly"),
     M_SEE_INVIS | M_UNBLINDABLE | M_EAT_DOORS,
     MR_RES_POISON | MR_RES_COLD | MR_VUL_FIRE | mrd(MR_RES_ACID, 3),
     14, MONS_JELLY, MONS_AZURE_JELLY, MH_NATURAL, 80,
@@ -3559,7 +3562,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_ACID_BLOB, 'J', LIGHTCYAN, "acid blob",
+    MONS_ACID_BLOB, 'J', LIGHTCYAN, _("acid blob"),
     M_SEE_INVIS | M_UNBLINDABLE | M_ACID_SPLASH | M_EAT_DOORS,
     MR_RES_POISON | mrd(MR_RES_ACID, 3),
     12, MONS_JELLY, MONS_ACID_BLOB, MH_NATURAL, 160,
@@ -3573,7 +3576,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 
 // kobolds ('K')
 {
-    MONS_KOBOLD, 'K', BROWN, "kobold",
+    MONS_KOBOLD, 'K', BROWN, _("kobold"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_KOBOLD, MONS_KOBOLD, MH_NATURAL, 0,
@@ -3586,7 +3589,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_KOBOLD_BRIGAND, 'K', YELLOW, "kobold brigand",
+    MONS_KOBOLD_BRIGAND, 'K', YELLOW, _("kobold brigand"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     7, MONS_KOBOLD, MONS_KOBOLD, MH_NATURAL, 20,
@@ -3599,7 +3602,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_KOBOLD_DEMONOLOGIST, 'K', MAGENTA, "kobold demonologist",
+    MONS_KOBOLD_DEMONOLOGIST, 'K', MAGENTA, _("kobold demonologist"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     18, MONS_KOBOLD, MONS_KOBOLD, MH_NATURAL | MH_EVIL, 40,
@@ -3613,7 +3616,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 
 // liches ('L')
 {
-    MONS_LICH, 'L', LIGHTGREY, "lich",
+    MONS_LICH, 'L', LIGHTGREY, _("lich"),
     M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_COLD, 2),
     18, MONS_LICH, MONS_LICH, MH_UNDEAD, WILL_INVULN,
@@ -3626,7 +3629,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_ANCIENT_LICH, 'L', WHITE, "ancient lich",
+    MONS_ANCIENT_LICH, 'L', WHITE, _("ancient lich"),
     M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_COLD, 2) | MR_RES_FIRE | MR_RES_ELEC,
     24, MONS_LICH, MONS_LICH, MH_UNDEAD, WILL_INVULN,
@@ -3639,7 +3642,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_DREAD_LICH, 'L', LIGHTMAGENTA, "dread lich",
+    MONS_DREAD_LICH, 'L', LIGHTMAGENTA, _("dread lich"),
     M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_COLD, 2) | MR_RES_FIRE | MR_RES_ELEC,
     24, MONS_LICH, MONS_LICH, MH_UNDEAD, WILL_INVULN,
@@ -3652,7 +3655,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_REVENANT, 'L', CYAN, "revenant",
+    MONS_REVENANT, 'L', CYAN, _("revenant"),
     M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_COLD, 2),
     18, MONS_REVENANT, MONS_REVENANT, MH_UNDEAD, WILL_INVULN,
@@ -3665,7 +3668,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_HALAZID_WARLOCK, 'L', GREEN, "halazid warlock",
+    MONS_HALAZID_WARLOCK, 'L', GREEN, _("halazid warlock"),
     M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_COLD, 2),
     10, MONS_LICH, MONS_LICH, MH_UNDEAD, 100,
@@ -3679,7 +3682,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 
 // mummies ('M')
 {
-    MONS_MUMMY, 'M', LIGHTGREY, "mummy",
+    MONS_MUMMY, 'M', LIGHTGREY, _("mummy"),
     M_NO_FLAGS,
     MR_VUL_FIRE | MR_RES_COLD,
     21, MONS_MUMMY, MONS_MUMMY, MH_UNDEAD, 20,
@@ -3692,7 +3695,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_GUARDIAN_MUMMY, 'M', YELLOW, "guardian mummy",
+    MONS_GUARDIAN_MUMMY, 'M', YELLOW, _("guardian mummy"),
     M_FIGHTER | M_SEE_INVIS,
     MR_RES_COLD,
     13, MONS_MUMMY, MONS_MUMMY, MH_UNDEAD, 40,
@@ -3705,7 +3708,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_ROYAL_MUMMY, 'M', WHITE, "royal mummy",
+    MONS_ROYAL_MUMMY, 'M', WHITE, _("royal mummy"),
     M_SEE_INVIS | M_SPEAKS,
     MR_RES_COLD | MR_RES_ELEC,
     24, MONS_MUMMY, MONS_MUMMY, MH_UNDEAD, 160,
@@ -3718,7 +3721,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_MUMMY_PRIEST, 'M', RED, "mummy priest",
+    MONS_MUMMY_PRIEST, 'M', RED, _("mummy priest"),
     M_SEE_INVIS | M_SPEAKS,
     MR_RES_COLD | MR_RES_ELEC,
     20, MONS_MUMMY, MONS_MUMMY, MH_UNDEAD, 120,
@@ -3732,7 +3735,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 
 // nagas ('N')
 {
-    MONS_NAGA, 'N', GREEN, "naga",
+    MONS_NAGA, 'N', GREEN, _("naga"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS,
     MR_RES_POISON,
     13, MONS_NAGA, MONS_NAGA, MH_NATURAL, 40,
@@ -3746,7 +3749,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_NAGA_MAGE, 'N', MAGENTA, "naga mage",
+    MONS_NAGA_MAGE, 'N', MAGENTA, _("naga mage"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS,
     MR_RES_POISON,
     14, MONS_NAGA, MONS_NAGA, MH_NATURAL, 60,
@@ -3760,7 +3763,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_NAGA_SHARPSHOOTER, 'N', LIGHTGRAY, "naga sharpshooter",
+    MONS_NAGA_SHARPSHOOTER, 'N', LIGHTGRAY, _("naga sharpshooter"),
     M_SEE_INVIS | M_WARM_BLOOD
         | M_ARCHER | M_PREFER_RANGED | M_SPEAKS,
     MR_RES_POISON,
@@ -3774,7 +3777,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_NAGA_RITUALIST, 'N', BROWN, "naga ritualist",
+    MONS_NAGA_RITUALIST, 'N', BROWN, _("naga ritualist"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS,
     MR_RES_POISON,
     14, MONS_NAGA, MONS_NAGA, MH_NATURAL, 60,
@@ -3788,7 +3791,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_NAGA_WARRIOR, 'N', BLUE, "naga warrior",
+    MONS_NAGA_WARRIOR, 'N', BLUE, _("naga warrior"),
     M_FIGHTER | M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS,
     MR_RES_POISON,
     11, MONS_NAGA, MONS_NAGA, MH_NATURAL, 80,
@@ -3802,7 +3805,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_NAGARAJA, 'N', LIGHTMAGENTA, "nagaraja",
+    MONS_NAGARAJA, 'N', LIGHTMAGENTA, _("nagaraja"),
     M_FIGHTER | M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS,
     MR_RES_POISON,
     15, MONS_NAGA, MONS_NAGA, MH_NATURAL, 140,
@@ -3817,7 +3820,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 
 // ogres ('O')
 {
-    MONS_OGRE, 'O', BROWN, "ogre",
+    MONS_OGRE, 'O', BROWN, _("ogre"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     9, MONS_OGRE, MONS_OGRE, MH_NATURAL, 20,
@@ -3832,7 +3835,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 // These guys get understated because the experience code can't see
 // that they wield two weapons... I'm raising their xp modifier. - bwr
 {
-    MONS_TWO_HEADED_OGRE, 'O', LIGHTRED, "two-headed ogre",
+    MONS_TWO_HEADED_OGRE, 'O', LIGHTRED, _("two-headed ogre"),
     M_WARM_BLOOD | M_TWO_WEAPONS | M_SPEAKS,
     MR_NO_FLAGS,
     15, MONS_OGRE, MONS_TWO_HEADED_OGRE, MH_NATURAL, 40,
@@ -3845,7 +3848,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_OGRE_MAGE, 'O', MAGENTA, "ogre mage",
+    MONS_OGRE_MAGE, 'O', MAGENTA, _("ogre mage"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     16, MONS_OGRE, MONS_OGRE, MH_NATURAL | MH_EVIL, 80,
@@ -3858,7 +3861,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_IRONBOUND_THUNDERHULK, 'O', LIGHTCYAN, "ironbound thunderhulk",
+    MONS_IRONBOUND_THUNDERHULK, 'O', LIGHTCYAN, _("ironbound thunderhulk"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_OGRE, MONS_OGRE, MH_NATURAL, 40,
@@ -3872,7 +3875,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 
 // immobile plants and fungi ('P')
 {
-    MONS_PLANT, 'P', GREEN, "plant",
+    MONS_PLANT, 'P', GREEN, _("plant"),
     M_STATIONARY | M_NOT_DANGEROUS | M_FRAGILE,
     MR_RES_POISON,
     10, MONS_PLANT, MONS_PLANT, MH_PLANT, WILL_INVULN,
@@ -3885,7 +3888,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_DEMONIC_PLANT, 'P', ETC_RANDOM, "demonic plant",
+    MONS_DEMONIC_PLANT, 'P', ETC_RANDOM, _("demonic plant"),
     M_STATIONARY | M_NOT_DANGEROUS | M_FRAGILE,
     MR_RES_POISON,
     10, MONS_PLANT, MONS_DEMONIC_PLANT, MH_PLANT, WILL_INVULN,
@@ -3898,7 +3901,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_WITHERED_PLANT, 'P', DARKGREY, "withered plant",
+    MONS_WITHERED_PLANT, 'P', DARKGREY, _("withered plant"),
     M_STATIONARY | M_NOT_DANGEROUS | M_FRAGILE,
     mrd(MR_RES_POISON, 3),
     10, MONS_PLANT, MONS_WITHERED_PLANT, MH_PLANT, WILL_INVULN,
@@ -3911,7 +3914,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_OKLOB_SAPLING, 'P', LIGHTCYAN, "oklob sapling",
+    MONS_OKLOB_SAPLING, 'P', LIGHTCYAN, _("oklob sapling"),
     M_STATIONARY,
     MR_RES_POISON | mrd(MR_RES_ACID, 3),
     10, MONS_PLANT, MONS_OKLOB_PLANT, MH_PLANT, 20,
@@ -3924,7 +3927,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_OKLOB_PLANT, 'P', LIGHTGREEN, "oklob plant",
+    MONS_OKLOB_PLANT, 'P', LIGHTGREEN, _("oklob plant"),
     M_STATIONARY,
     MR_RES_POISON | mrd(MR_RES_ACID, 3),
     10, MONS_PLANT, MONS_OKLOB_PLANT, MH_PLANT, 40,
@@ -3937,7 +3940,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_BUSH, 'P', BROWN, "bush",
+    MONS_BUSH, 'P', BROWN, _("bush"),
     M_STATIONARY | M_NOT_DANGEROUS,
     MR_RES_POISON | MR_VUL_FIRE,
     10, MONS_PLANT, MONS_BUSH, MH_PLANT, WILL_INVULN,
@@ -3950,7 +3953,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_BURNING_BUSH, 'P', RED, "burning bush",
+    MONS_BURNING_BUSH, 'P', RED, _("burning bush"),
     M_STATIONARY | M_SEE_INVIS,
     MR_RES_POISON | MR_RES_FIRE,
     10, MONS_PLANT, MONS_BUSH, MH_PLANT, 40,
@@ -3963,7 +3966,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_TOADSTOOL, 'P', COLOUR_UNDEF, "toadstool",
+    MONS_TOADSTOOL, 'P', COLOUR_UNDEF, _("toadstool"),
     M_NOT_DANGEROUS | M_STATIONARY,
     MR_RES_POISON,
     10, MONS_FUNGUS, MONS_TOADSTOOL, MH_PLANT, WILL_INVULN,
@@ -3976,7 +3979,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_FUNGUS, 'P', LIGHTGREY, "fungus",
+    MONS_FUNGUS, 'P', LIGHTGREY, _("fungus"),
     M_NOT_DANGEROUS | M_STATIONARY | M_FRAGILE,
     MR_RES_POISON,
     10, MONS_FUNGUS, MONS_FUNGUS, MH_PLANT, WILL_INVULN,
@@ -3989,7 +3992,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_BALLISTOMYCETE, 'P', MAGENTA, "ballistomycete",
+    MONS_BALLISTOMYCETE, 'P', MAGENTA, _("ballistomycete"),
     M_STATIONARY,
     MR_RES_POISON,
     10, MONS_FUNGUS, MONS_BALLISTOMYCETE, MH_PLANT, WILL_INVULN,
@@ -4002,7 +4005,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_BRIAR_PATCH, 'P', YELLOW, "briar patch",
+    MONS_BRIAR_PATCH, 'P', YELLOW, _("briar patch"),
     M_STATIONARY | M_NOT_DANGEROUS | M_SPINY,
     MR_RES_POISON | MR_VUL_FIRE,
     10, MONS_PLANT, MONS_BRIAR_PATCH, MH_PLANT, WILL_INVULN,
@@ -4016,7 +4019,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 
 // tengu ('Q')
 {
-    MONS_TENGU, 'Q', LIGHTBLUE, "tengu",
+    MONS_TENGU, 'Q', LIGHTBLUE, _("tengu"),
     M_WARM_BLOOD | M_SPEAKS | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_TENGU, MONS_TENGU, MH_NATURAL, 20,
@@ -4030,7 +4033,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_TENGU_CONJURER, 'Q', BLUE, "tengu conjurer",
+    MONS_TENGU_CONJURER, 'Q', BLUE, _("tengu conjurer"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_FLIES,
     MR_NO_FLAGS,
     13, MONS_TENGU, MONS_TENGU, MH_NATURAL, 20,
@@ -4044,7 +4047,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_TENGU_WARRIOR, 'Q', CYAN, "tengu warrior",
+    MONS_TENGU_WARRIOR, 'Q', CYAN, _("tengu warrior"),
     M_FIGHTER | M_ARCHER | M_WARM_BLOOD | M_SPEAKS | M_FLIES,
     MR_NO_FLAGS,
     13, MONS_TENGU, MONS_TENGU, MH_NATURAL, 40,
@@ -4058,7 +4061,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_TENGU_REAVER, 'Q', LIGHTMAGENTA, "tengu reaver",
+    MONS_TENGU_REAVER, 'Q', LIGHTMAGENTA, _("tengu reaver"),
     M_FIGHTER | M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_FLIES,
     MR_NO_FLAGS,
     13, MONS_TENGU, MONS_TENGU, MH_NATURAL, 60,
@@ -4073,7 +4076,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 
 // spiritual beings ('R')
 {
-    MONS_EFREET, 'R', RED, "efreet",
+    MONS_EFREET, 'R', RED, _("efreet"),
     M_SPEAKS | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_FIRE, 3) | MR_VUL_COLD | MR_VUL_WATER,
     12, MONS_EFREET, MONS_EFREET, MH_DEMONIC, 20,
@@ -4086,7 +4089,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_RAKSHASA, 'R', YELLOW, "rakshasa",
+    MONS_RAKSHASA, 'R', YELLOW, _("rakshasa"),
     M_SEE_INVIS,
     MR_RES_POISON,
     15, MONS_RAKSHASA, MONS_RAKSHASA, MH_DEMONIC, 140,
@@ -4099,7 +4102,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_DRYAD, 'R', LIGHTGREEN, "dryad",
+    MONS_DRYAD, 'R', LIGHTGREEN, _("dryad"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO | M_NO_GEN_DERIVED,
     MR_VUL_FIRE,
     10, MONS_DRYAD, MONS_DRYAD, MH_NATURAL, 80,
@@ -4112,7 +4115,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_ELEIONOMA, 'R', GREEN, "eleionoma",
+    MONS_ELEIONOMA, 'R', GREEN, _("eleionoma"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_ELEIONOMA, MONS_ELEIONOMA, MH_NATURAL, 100,
@@ -4125,7 +4128,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_SNAPLASHER_VINE, 'w', LIGHTGREEN, "snaplasher vine",
+    MONS_SNAPLASHER_VINE, 'w', LIGHTGREEN, _("snaplasher vine"),
     M_NO_EXP_GAIN | M_STATIONARY | M_NO_POLY_TO,
     MR_RES_POISON,
     10, MONS_PLANT, MONS_SNAPLASHER_VINE, MH_PLANT, 40,
@@ -4138,7 +4141,7 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 {
-    MONS_SNAPLASHER_VINE_SEGMENT, '*', LIGHTGREEN, "snaplasher vine segment",
+    MONS_SNAPLASHER_VINE_SEGMENT, '*', LIGHTGREEN, _("snaplasher vine segment"),
     M_NOT_DANGEROUS | M_STATIONARY | M_NO_POLY_TO,
     MR_RES_POISON,
     10, MONS_PLANT, MONS_SNAPLASHER_VINE, MH_PLANT, 40,
@@ -4151,10 +4154,10 @@ DUMMY(MONS_MERGED_SLIME_CREATURE, 'J', LIGHTGREEN, "merged slime creature",
 },
 
 // snakes ('S')
-DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
+DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, _("snake"), TILEP_MONS_ADDER)
 
 {
-    MONS_BALL_PYTHON, 'S', GREEN, "ball python",
+    MONS_BALL_PYTHON, 'S', GREEN, _("ball python"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     13, MONS_SNAKE, MONS_BALL_PYTHON, MH_NATURAL, 0,
@@ -4168,7 +4171,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_ADDER, 'S', LIGHTGREEN, "adder",
+    MONS_ADDER, 'S', LIGHTGREEN, _("adder"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_SNAKE, MONS_ADDER, MH_NATURAL, 10,
@@ -4181,7 +4184,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_WATER_MOCCASIN, 'S', BROWN, "water moccasin",
+    MONS_WATER_MOCCASIN, 'S', BROWN, _("water moccasin"),
     M_COLD_BLOOD,
     MR_RES_POISON,
     11, MONS_SNAKE, MONS_WATER_MOCCASIN, MH_NATURAL, 20,
@@ -4194,7 +4197,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_BLACK_MAMBA, 'S', BLUE, "black mamba",
+    MONS_BLACK_MAMBA, 'S', BLUE, _("black mamba"),
     M_COLD_BLOOD,
     MR_RES_POISON,
     12, MONS_SNAKE, MONS_BLACK_MAMBA, MH_NATURAL, 20,
@@ -4207,7 +4210,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SEA_SNAKE, 'S', LIGHTCYAN, "sea snake",
+    MONS_SEA_SNAKE, 'S', LIGHTCYAN, _("sea snake"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_SNAKE, MONS_SEA_SNAKE, MH_NATURAL, 40,
@@ -4220,7 +4223,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_ANACONDA, 'S', LIGHTGREY, "anaconda",
+    MONS_ANACONDA, 'S', LIGHTGREY, _("anaconda"),
     M_COLD_BLOOD,
     MR_NO_FLAGS,
     10, MONS_SNAKE, MONS_ANACONDA, MH_NATURAL, 40,
@@ -4234,7 +4237,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_GUARDIAN_SERPENT, 'S', WHITE, "guardian serpent",
+    MONS_GUARDIAN_SERPENT, 'S', WHITE, _("guardian serpent"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS,
     MR_RES_POISON,
     10, MONS_GUARDIAN_SERPENT, MONS_GUARDIAN_SERPENT, MH_NATURAL, 60,
@@ -4247,7 +4250,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SHOCK_SERPENT, 'S', LIGHTBLUE, "shock serpent",
+    MONS_SHOCK_SERPENT, 'S', LIGHTBLUE, _("shock serpent"),
     M_COLD_BLOOD,
     mrd(MR_RES_ELEC, 3),
     12, MONS_SNAKE, MONS_SHOCK_SERPENT, MH_NATURAL, 40,
@@ -4260,7 +4263,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_MANA_VIPER, 'S', MAGENTA, "mana viper",
+    MONS_MANA_VIPER, 'S', MAGENTA, _("mana viper"),
     M_COLD_BLOOD | M_SEE_INVIS,
     MR_RES_POISON,
     10, MONS_SNAKE, MONS_MANA_VIPER, MH_NATURAL, 100,
@@ -4274,7 +4277,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // trolls ('T')
 {
-    MONS_TROLL, 'T', BROWN, "troll",
+    MONS_TROLL, 'T', BROWN, _("troll"),
     M_WARM_BLOOD | M_SPEAKS | M_FAST_REGEN,
     MR_NO_FLAGS,
     10, MONS_TROLL, MONS_TROLL, MH_NATURAL, 20,
@@ -4288,7 +4291,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_IRON_TROLL, 'T', CYAN, "iron troll",
+    MONS_IRON_TROLL, 'T', CYAN, _("iron troll"),
     M_WARM_BLOOD | M_SPEAKS | M_FAST_REGEN,
     MR_RES_FIRE | MR_RES_COLD,
     10, MONS_TROLL, MONS_IRON_TROLL, MH_NATURAL, 100,
@@ -4302,7 +4305,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_DEEP_TROLL, 'T', YELLOW, "deep troll",
+    MONS_DEEP_TROLL, 'T', YELLOW, _("deep troll"),
     M_WARM_BLOOD | M_SEE_INVIS | M_UNBLINDABLE | M_SPEAKS | M_FAST_REGEN,
     MR_NO_FLAGS,
     9, MONS_TROLL, MONS_DEEP_TROLL, MH_NATURAL, 40,
@@ -4316,7 +4319,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_DEEP_TROLL_EARTH_MAGE, 'T', MAGENTA, "deep troll earth mage",
+    MONS_DEEP_TROLL_EARTH_MAGE, 'T', MAGENTA, _("deep troll earth mage"),
     M_WARM_BLOOD | M_SEE_INVIS | M_UNBLINDABLE | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_TROLL, MONS_DEEP_TROLL, MH_NATURAL, 40,
@@ -4331,7 +4334,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_DEEP_TROLL_SHAMAN, 'T', WHITE, "deep troll shaman",
+    MONS_DEEP_TROLL_SHAMAN, 'T', WHITE, _("deep troll shaman"),
     M_WARM_BLOOD | M_SEE_INVIS | M_UNBLINDABLE | M_SPEAKS,
     MR_NO_FLAGS,
     12, MONS_TROLL, MONS_DEEP_TROLL, MH_NATURAL, 40,
@@ -4346,7 +4349,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // vampires ('V')
 {
-    MONS_VAMPIRE, 'V', RED, "vampire",
+    MONS_VAMPIRE, 'V', RED, _("vampire"),
     M_SEE_INVIS | M_SPEAKS | M_WARM_BLOOD,
     MR_RES_COLD,
     11, MONS_VAMPIRE, MONS_VAMPIRE, MH_UNDEAD, 40,
@@ -4360,7 +4363,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_VAMPIRE_KNIGHT, 'V', CYAN, "vampire knight",
+    MONS_VAMPIRE_KNIGHT, 'V', CYAN, _("vampire knight"),
     M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_WARM_BLOOD,
     MR_RES_COLD,
     16, MONS_VAMPIRE, MONS_VAMPIRE, MH_UNDEAD, 80,
@@ -4374,7 +4377,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_VAMPIRE_MAGE, 'V', MAGENTA, "vampire mage",
+    MONS_VAMPIRE_MAGE, 'V', MAGENTA, _("vampire mage"),
     M_SEE_INVIS | M_SPEAKS | M_WARM_BLOOD | M_FLIES,
     MR_RES_COLD,
     15, MONS_VAMPIRE, MONS_VAMPIRE, MH_UNDEAD, 80,
@@ -4388,7 +4391,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_JIANGSHI, 'V', YELLOW, "jiangshi",
+    MONS_JIANGSHI, 'V', YELLOW, _("jiangshi"),
     M_SEE_INVIS | M_FIGHTER,
     MR_RES_COLD,
     10, MONS_JIANGSHI, MONS_VAMPIRE, MH_UNDEAD, 80,
@@ -4403,7 +4406,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // incorporeal undead ('W')
 { // dummy genus monster, but also used for removed monsters
-    MONS_GHOST, 'W', WHITE, "ghost",
+    MONS_GHOST, 'W', WHITE, _("ghost"),
     M_INSUBSTANTIAL | M_NO_POLY_TO | M_FLIES,
     MR_NO_FLAGS,
     0, MONS_GHOST, MONS_GHOST, MH_UNDEAD, 0,
@@ -4418,7 +4421,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 // XP modifier is 5 for these, because they really aren't all that
 // dangerous, but still come out at 200+ XP
 {
-    MONS_PHANTOM, 'W', BLUE, "phantom",
+    MONS_PHANTOM, 'W', BLUE, _("phantom"),
     M_INSUBSTANTIAL | M_FLIES,
     mrd(MR_RES_COLD, 2),
     5, MONS_PHANTOM, MONS_PHANTOM, MH_UNDEAD, 40,
@@ -4431,7 +4434,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_FLAYED_GHOST, 'W', RED, "flayed ghost",
+    MONS_FLAYED_GHOST, 'W', RED, _("flayed ghost"),
     M_INSUBSTANTIAL | M_SPEAKS | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_PHANTOM, MONS_FLAYED_GHOST, MH_UNDEAD, 60,
@@ -4445,7 +4448,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // player ghost - stats are stored in ghost struct
 {
-    MONS_PLAYER_GHOST, 'W', WHITE, "player ghost",
+    MONS_PLAYER_GHOST, 'W', WHITE, _("player ghost"),
     M_FIGHTER | M_SPEAKS | M_INSUBSTANTIAL | M_NO_POLY_TO | M_FLIES | M_GHOST_DEMON,
     MR_NO_FLAGS,
     15, MONS_PHANTOM, MONS_PLAYER_GHOST, MH_UNDEAD, -5,
@@ -4459,7 +4462,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 
 {
-    MONS_SHADOW, 'W', MAGENTA, "shadow",
+    MONS_SHADOW, 'W', MAGENTA, _("shadow"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     mrd(MR_RES_COLD, 3),
     18, MONS_WRAITH, MONS_SHADOW, MH_UNDEAD, 40,
@@ -4472,7 +4475,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SILENT_SPECTRE, 'W', CYAN, "silent spectre",
+    MONS_SILENT_SPECTRE, 'W', CYAN, _("silent spectre"),
     M_SPEAKS /* uh... */ | M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     mrd(MR_RES_COLD, 3),
     10, MONS_WRAITH, MONS_SILENT_SPECTRE, MH_UNDEAD, 40,
@@ -4485,7 +4488,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_DROWNED_SOUL, 'W', LIGHTCYAN, "drowned soul",
+    MONS_DROWNED_SOUL, 'W', LIGHTCYAN, _("drowned soul"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_SPEAKS | M_FLIES,
     mrd(MR_RES_COLD, 3),
     8, MONS_PHANTOM, MONS_DROWNED_SOUL, MH_UNDEAD, 60,
@@ -4498,7 +4501,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_WRAITH, 'W', LIGHTGREY, "wraith",
+    MONS_WRAITH, 'W', LIGHTGREY, _("wraith"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     MR_RES_COLD,
     14, MONS_WRAITH, MONS_WRAITH, MH_UNDEAD, 60,
@@ -4511,7 +4514,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SHADOW_WRAITH, 'W', LIGHTMAGENTA, "shadow wraith",
+    MONS_SHADOW_WRAITH, 'W', LIGHTMAGENTA, _("shadow wraith"),
     M_SEE_INVIS | M_INVIS | M_INSUBSTANTIAL | M_FLIES,
     MR_NO_FLAGS,
     15, MONS_WRAITH, MONS_SHADOW_WRAITH, MH_UNDEAD, 100,
@@ -4524,7 +4527,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_FREEZING_WRAITH, 'W', LIGHTBLUE, "freezing wraith",
+    MONS_FREEZING_WRAITH, 'W', LIGHTBLUE, _("freezing wraith"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     MR_VUL_FIRE | mrd(MR_RES_COLD, 3),
     10, MONS_WRAITH, MONS_FREEZING_WRAITH, MH_UNDEAD, 40,
@@ -4537,7 +4540,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_EIDOLON, 'W', BROWN, "eidolon",
+    MONS_EIDOLON, 'W', BROWN, _("eidolon"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     MR_RES_COLD,
     14, MONS_WRAITH, MONS_EIDOLON, MH_UNDEAD, 140,
@@ -4551,7 +4554,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_PHANTASMAL_WARRIOR, 'W', LIGHTGREEN, "phantasmal warrior",
+    MONS_PHANTASMAL_WARRIOR, 'W', LIGHTGREEN, _("phantasmal warrior"),
     M_FIGHTER | M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     MR_RES_COLD,
     13, MONS_WRAITH, MONS_PHANTASMAL_WARRIOR, MH_UNDEAD, 80,
@@ -4565,7 +4568,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // large abominations ('X')
 {
-    MONS_ABOMINATION_LARGE, 'X', LIGHTRED, "large abomination",
+    MONS_ABOMINATION_LARGE, 'X', LIGHTRED, _("large abomination"),
     M_NO_REGEN,
     MR_NO_FLAGS,
     10, MONS_ABOMINATION_SMALL, MONS_ABOMINATION_LARGE, MH_UNDEAD, 100,
@@ -4578,7 +4581,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_THRASHING_HORROR, 'X', YELLOW, "thrashing horror",
+    MONS_THRASHING_HORROR, 'X', YELLOW, _("thrashing horror"),
     M_BATTY | M_NO_POLY_TO,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     10, MONS_THRASHING_HORROR, MONS_THRASHING_HORROR, MH_NONLIVING, 60,
@@ -4592,7 +4595,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_TENTACLED_MONSTROSITY, 'X', GREEN, "tentacled monstrosity",
+    MONS_TENTACLED_MONSTROSITY, 'X', GREEN, _("tentacled monstrosity"),
     M_SEE_INVIS,
     MR_RES_POISON | MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     10, MONS_TENTACLED_MONSTROSITY, MONS_TENTACLED_MONSTROSITY,
@@ -4607,7 +4610,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_ORB_GUARDIAN, 'X', MAGENTA, "Orb Guardian",
+    MONS_ORB_GUARDIAN, 'X', MAGENTA, _("Orb Guardian"),
     M_FIGHTER | M_SEE_INVIS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     20, MONS_ORB_GUARDIAN, MONS_ORB_GUARDIAN, MH_NATURAL, 120,
@@ -4620,7 +4623,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_TENTACLED_STARSPAWN, 'X', LIGHTCYAN, "tentacled starspawn",
+    MONS_TENTACLED_STARSPAWN, 'X', LIGHTCYAN, _("tentacled starspawn"),
     M_SEE_INVIS,
     MR_NO_FLAGS,
     20, MONS_TENTACLED_STARSPAWN, MONS_TENTACLED_STARSPAWN, MH_NONLIVING, 120,
@@ -4634,7 +4637,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_STARSPAWN_TENTACLE, 'w', LIGHTCYAN, "starspawn tentacle",
+    MONS_STARSPAWN_TENTACLE, 'w', LIGHTCYAN, _("starspawn tentacle"),
     M_NO_EXP_GAIN | M_STATIONARY | M_NO_POLY_TO | M_FLIES | M_SEE_INVIS,
     MR_NO_FLAGS,
     10, MONS_TENTACLED_STARSPAWN, MONS_STARSPAWN_TENTACLE,
@@ -4648,7 +4651,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_STARSPAWN_TENTACLE_SEGMENT, '*', LIGHTCYAN, "starspawn tentacle segment",
+    MONS_STARSPAWN_TENTACLE_SEGMENT, '*', LIGHTCYAN, _("starspawn tentacle segment"),
     M_NOT_DANGEROUS | M_STATIONARY | M_NO_POLY_TO | M_FLIES | M_SEE_INVIS,
     MR_NO_FLAGS,
     10, MONS_TENTACLED_STARSPAWN, MONS_STARSPAWN_TENTACLE_SEGMENT,
@@ -4662,7 +4665,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_STARCURSED_MASS, 'X', BLUE, "starcursed mass",
+    MONS_STARCURSED_MASS, 'X', BLUE, _("starcursed mass"),
     M_SEE_INVIS | M_FAST_REGEN,
     MR_NO_FLAGS,
     12, MONS_STARCURSED_MASS, MONS_STARCURSED_MASS, MH_NONLIVING, 100,
@@ -4676,7 +4679,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // Summoning miscast, monster is scaled based on miscast strength
 {
-    MONS_NAMELESS, 'X', CYAN, "nameless horror",
+    MONS_NAMELESS, 'X', CYAN, _("nameless horror"),
     M_SEE_INVIS | M_NO_POLY_TO | M_NO_GEN_DERIVED,
     MR_NO_FLAGS,
     11, MONS_NAMELESS, MONS_NAMELESS, MH_NONLIVING, WILL_INVULN,
@@ -4690,7 +4693,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // yaks, sheep, elephants, and other beasts ('Y')
 {
-    MONS_DREAM_SHEEP, 'Y', CYAN, "dream sheep",
+    MONS_DREAM_SHEEP, 'Y', CYAN, _("dream sheep"),
     M_WARM_BLOOD | M_HERD,
     MR_NO_FLAGS,
     10, MONS_DREAM_SHEEP, MONS_DREAM_SHEEP, MH_NATURAL, 30,
@@ -4703,7 +4706,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_YAK, 'Y', BROWN, "yak",
+    MONS_YAK, 'Y', BROWN, _("yak"),
     M_WARM_BLOOD | M_HERD,
     MR_NO_FLAGS,
     9, MONS_YAK, MONS_YAK, MH_NATURAL, 20,
@@ -4716,7 +4719,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_DEATH_YAK, 'Y', YELLOW, "death yak",
+    MONS_DEATH_YAK, 'Y', YELLOW, _("death yak"),
     M_WARM_BLOOD | M_HERD,
     MR_NO_FLAGS,
     8, MONS_YAK, MONS_DEATH_YAK, MH_NATURAL, 100,
@@ -4729,7 +4732,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_CATOBLEPAS, 'Y', MAGENTA, "catoblepas",
+    MONS_CATOBLEPAS, 'Y', MAGENTA, _("catoblepas"),
     M_WARM_BLOOD,
     MR_RES_PETRIFY,
     8, MONS_YAK, MONS_CATOBLEPAS, MH_NATURAL, 100,
@@ -4742,7 +4745,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_ELEPHANT, 'Y', GREEN, "elephant",
+    MONS_ELEPHANT, 'Y', GREEN, _("elephant"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     9, MONS_ELEPHANT, MONS_ELEPHANT, MH_NATURAL, 60,
@@ -4756,7 +4759,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_DIRE_ELEPHANT, 'Y', BLUE, "dire elephant",
+    MONS_DIRE_ELEPHANT, 'Y', BLUE, _("dire elephant"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     8, MONS_ELEPHANT, MONS_DIRE_ELEPHANT, MH_NATURAL, 100,
@@ -4770,7 +4773,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_HELLEPHANT, 'Y', LIGHTRED, "hellephant",
+    MONS_HELLEPHANT, 'Y', LIGHTRED, _("hellephant"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     10, MONS_ELEPHANT, MONS_HELLEPHANT, MH_DEMONIC, 140,
@@ -4784,7 +4787,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_APIS, 'Y', WHITE, "apis",
+    MONS_APIS, 'Y', WHITE, _("apis"),
     M_WARM_BLOOD,
     MR_NO_FLAGS,
     8, MONS_APIS, MONS_APIS, MH_HOLY, 100,
@@ -4797,7 +4800,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_ICE_BEAST, 'Y', LIGHTBLUE, "ice beast",
+    MONS_ICE_BEAST, 'Y', LIGHTBLUE, _("ice beast"),
     M_NO_FLAGS,
     MR_RES_POISON | MR_VUL_FIRE | mrd(MR_RES_COLD, 3),
     13, MONS_ICE_BEAST, MONS_ICE_BEAST, MH_NATURAL, 20,
@@ -4810,7 +4813,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SKY_BEAST, 'Y', LIGHTCYAN, "sky beast",
+    MONS_SKY_BEAST, 'Y', LIGHTCYAN, _("sky beast"),
     M_NO_SKELETON | M_FLIES,
     mrd(MR_RES_ELEC, 3),
     13, MONS_SKY_BEAST, MONS_SKY_BEAST, MH_NATURAL, 20,
@@ -4826,7 +4829,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 // zombie, skeleton and simulacra species depend on corpse species,
 // or else are chosen randomly
 {
-    MONS_ZOMBIE, 'Z', BROWN, "zombie",
+    MONS_ZOMBIE, 'Z', BROWN, _("zombie"),
     M_NO_REGEN,
     mrd(MR_RES_COLD, 2),
     9, MONS_ZOMBIE, MONS_ZOMBIE, MH_UNDEAD, -1,
@@ -4839,7 +4842,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SKELETON, 'Z', LIGHTGREY, "skeleton",
+    MONS_SKELETON, 'Z', LIGHTGREY, _("skeleton"),
     M_NO_REGEN,
     mrd(MR_RES_COLD, 2),
     9, MONS_SKELETON, MONS_SKELETON, MH_UNDEAD, -1,
@@ -4852,7 +4855,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SIMULACRUM, 'Z', LIGHTBLUE, "simulacrum",
+    MONS_SIMULACRUM, 'Z', LIGHTBLUE, _("simulacrum"),
     M_NO_REGEN,
     MR_VUL_FIRE | mrd(MR_RES_COLD, 3),
     9, MONS_SIMULACRUM, MONS_SIMULACRUM, MH_UNDEAD, -1,
@@ -4865,7 +4868,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_ZOMBIE_SMALL, 'Z', BROWN, "small zombie",
+    MONS_ZOMBIE_SMALL, 'Z', BROWN, _("small zombie"),
     M_NO_REGEN,
     mrd(MR_RES_COLD, 2),
     9, MONS_ZOMBIE, MONS_ZOMBIE, MH_UNDEAD, -1,
@@ -4878,7 +4881,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SKELETON_SMALL, 'Z', LIGHTGREY, "small skeleton",
+    MONS_SKELETON_SMALL, 'Z', LIGHTGREY, _("small skeleton"),
     M_NO_REGEN,
     mrd(MR_RES_COLD, 2),
     9, MONS_SKELETON, MONS_SKELETON, MH_UNDEAD, -1,
@@ -4891,7 +4894,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SIMULACRUM_SMALL, 'Z', LIGHTBLUE, "small simulacrum",
+    MONS_SIMULACRUM_SMALL, 'Z', LIGHTBLUE, _("small simulacrum"),
     M_NO_REGEN,
     MR_VUL_FIRE | mrd(MR_RES_COLD, 3),
     9, MONS_SIMULACRUM, MONS_SIMULACRUM, MH_UNDEAD, -1,
@@ -4904,7 +4907,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_ZOMBIE_LARGE, 'Z', YELLOW, "large zombie",
+    MONS_ZOMBIE_LARGE, 'Z', YELLOW, _("large zombie"),
     M_NO_REGEN,
     mrd(MR_RES_COLD, 2),
     9, MONS_ZOMBIE, MONS_ZOMBIE, MH_UNDEAD, -1,
@@ -4917,7 +4920,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SKELETON_LARGE, 'Z', WHITE, "large skeleton",
+    MONS_SKELETON_LARGE, 'Z', WHITE, _("large skeleton"),
     M_NO_REGEN,
     mrd(MR_RES_COLD, 2),
     9, MONS_SKELETON, MONS_SKELETON, MH_UNDEAD, -1,
@@ -4930,7 +4933,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SIMULACRUM_LARGE, 'Z', LIGHTCYAN, "large simulacrum",
+    MONS_SIMULACRUM_LARGE, 'Z', LIGHTCYAN, _("large simulacrum"),
     M_NO_REGEN,
     MR_VUL_FIRE | mrd(MR_RES_COLD, 3),
     9, MONS_SIMULACRUM, MONS_SIMULACRUM, MH_UNDEAD, -1,
@@ -4944,7 +4947,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // spectral thing - similar to zombies/skeletons
 {
-    MONS_SPECTRAL_THING, 'Z', GREEN, "spectral thing",
+    MONS_SPECTRAL_THING, 'Z', GREEN, _("spectral thing"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     MR_RES_COLD,
     11, MONS_WRAITH, MONS_SPECTRAL_THING, MH_UNDEAD, WILL_INVULN,
@@ -4958,7 +4961,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // water monsters
 {
-    MONS_ELECTRIC_EEL, ';', LIGHTBLUE, "electric eel",
+    MONS_ELECTRIC_EEL, ';', LIGHTBLUE, _("electric eel"),
     M_NO_GEN_DERIVED | M_COLD_BLOOD,
     mrd(MR_RES_ELEC, 3),
     19, MONS_ELECTRIC_EEL, MONS_ELECTRIC_EEL, MH_NATURAL, 10,
@@ -4972,7 +4975,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // A kraken and its tentacles get a random colour from ETC_KRAKEN.
 {
-    MONS_KRAKEN, 'X', LIGHTMAGENTA, "kraken",
+    MONS_KRAKEN, 'X', LIGHTMAGENTA, _("kraken"),
     M_NO_SKELETON | M_COLD_BLOOD,
     MR_NO_FLAGS,
     6, MONS_KRAKEN, MONS_KRAKEN, MH_NATURAL, 60,
@@ -4985,7 +4988,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_KRAKEN_TENTACLE, 'w', LIGHTMAGENTA, "tentacle",
+    MONS_KRAKEN_TENTACLE, 'w', LIGHTMAGENTA, _("tentacle"),
     M_COLD_BLOOD | M_NO_EXP_GAIN | M_STATIONARY | M_NO_POLY_TO | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_KRAKEN, MONS_KRAKEN_TENTACLE, MH_NATURAL, WILL_INVULN,
@@ -4998,7 +5001,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_KRAKEN_TENTACLE_SEGMENT, '*', LIGHTMAGENTA, "tentacle segment",
+    MONS_KRAKEN_TENTACLE_SEGMENT, '*', LIGHTMAGENTA, _("tentacle segment"),
     M_COLD_BLOOD | M_NOT_DANGEROUS | M_STATIONARY | M_SUBMERGES | M_NO_POLY_TO | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_KRAKEN, MONS_KRAKEN_TENTACLE_SEGMENT, MH_NATURAL, WILL_INVULN,
@@ -5013,7 +5016,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 // Octopode race, not a 'normal' octopus.
 // Dummy monster for recolouring.
 {
-    MONS_OCTOPODE, 'x', LIGHTCYAN, "octopode",
+    MONS_OCTOPODE, 'x', LIGHTCYAN, _("octopode"),
     M_NO_SKELETON | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_OCTOPODE, MONS_OCTOPODE, MH_NATURAL, 10,
@@ -5028,7 +5031,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // lava monsters
 {
-    MONS_LAVA_SNAKE, 'S', LIGHTRED, "lava snake",
+    MONS_LAVA_SNAKE, 'S', LIGHTRED, _("lava snake"),
     M_WARM_BLOOD,
     mrd(MR_RES_FIRE, 3) | MR_VUL_COLD,
     17, MONS_SNAKE, MONS_LAVA_SNAKE, MH_NATURAL, 10,
@@ -5041,7 +5044,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SALAMANDER, 'N', LIGHTRED, "salamander",
+    MONS_SALAMANDER, 'N', LIGHTRED, _("salamander"),
     M_FIGHTER | M_WARM_BLOOD,
     mrd(MR_RES_FIRE, 3) | MR_VUL_COLD,
     10, MONS_NAGA, MONS_SALAMANDER, MH_NATURAL, 40,
@@ -5054,7 +5057,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SALAMANDER_MYSTIC, 'N', YELLOW, "salamander mystic",
+    MONS_SALAMANDER_MYSTIC, 'N', YELLOW, _("salamander mystic"),
     M_WARM_BLOOD,
     mrd(MR_RES_FIRE, 3) | MR_VUL_COLD,
     10, MONS_NAGA, MONS_SALAMANDER, MH_NATURAL, 60,
@@ -5067,7 +5070,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_SALAMANDER_TYRANT, 'N', RED, "salamander tyrant",
+    MONS_SALAMANDER_TYRANT, 'N', RED, _("salamander tyrant"),
     M_WARM_BLOOD,
     mrd(MR_RES_FIRE, 3) | MR_VUL_COLD,
     10, MONS_NAGA, MONS_SALAMANDER, MH_NATURAL, 60,
@@ -5081,7 +5084,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 
 // Semi-unique humans ('@')
 {
-    MONS_HELLBINDER, '@', ETC_FIRE, "Hellbinder",
+    MONS_HELLBINDER, '@', ETC_FIRE, _("Hellbinder"),
     M_SPEAKS | M_WARM_BLOOD | M_SEE_INVIS,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 100,
@@ -5094,7 +5097,7 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 {
-    MONS_CLOUD_MAGE, '@', ETC_SILVER, "Cloud Mage",
+    MONS_CLOUD_MAGE, '@', ETC_SILVER, _("Cloud Mage"),
     M_SPEAKS | M_WARM_BLOOD | M_SEE_INVIS | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 100,
@@ -5107,12 +5110,12 @@ DUMMY(MONS_SNAKE, 'S', LIGHTGREEN, "snake", TILEP_MONS_ADDER)
 },
 
 // 'dummy' a fairly accurate description
-DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
+DUMMY(MONS_PLAYER, '@', LIGHTGREY, _("player"), TILEP_MONS_PLAYER_GHOST)
 
 // player illusion (Mara) - stats are stored in ghost struct. Undead/demonic
 // flags are set based on the current player's species!
 {
-    MONS_PLAYER_ILLUSION, '@', WHITE, "player illusion",
+    MONS_PLAYER_ILLUSION, '@', WHITE, _("player illusion"),
     M_FIGHTER | M_SPEAKS | M_INSUBSTANTIAL | M_NO_POLY_TO | M_FLIES | M_GHOST_DEMON,
     MR_RES_POISON,
     15, MONS_PLAYER_ILLUSION, MONS_PLAYER_ILLUSION, MH_NATURAL, -5,
@@ -5125,7 +5128,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_PLAYER_SHADOW, 'W', MAGENTA, "shadow",
+    MONS_PLAYER_SHADOW, 'W', MAGENTA, _("shadow"),
     M_CANT_SPAWN | M_NO_EXP_GAIN | M_INSUBSTANTIAL | M_FLIES,
     MR_NO_FLAGS,
     10, MONS_HUMAN, MONS_HUMAN, MH_NONLIVING, -3,
@@ -5140,7 +5143,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 // These are named more explicitly when they attack, also when you use 'x'
 // to examine them.
 {
-    MONS_DANCING_WEAPON, '(', COLOUR_UNDEF, "dancing weapon",
+    MONS_DANCING_WEAPON, '(', COLOUR_UNDEF, _("dancing weapon"),
     M_FIGHTER | M_FLIES | M_GHOST_DEMON,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | mrd(MR_RES_ELEC, 3),
     10, MONS_DANCING_WEAPON, MONS_DANCING_WEAPON, MH_NONLIVING, WILL_INVULN,
@@ -5154,7 +5157,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 
 // spectral weapon, for skalds!
 {
-    MONS_SPECTRAL_WEAPON, '(', GREEN, "spectral weapon",
+    MONS_SPECTRAL_WEAPON, '(', GREEN, _("spectral weapon"),
     M_INSUBSTANTIAL | M_NO_REGEN | M_AVATAR | M_NO_EXP_GAIN | M_FLIES
         | M_GHOST_DEMON,
     MR_RES_FIRE | MR_RES_COLD |  MR_RES_ELEC,
@@ -5169,7 +5172,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 
 // animated armour - variable traits
 {
-    MONS_ANIMATED_ARMOUR, '[', GREEN, "animated armour",
+    MONS_ANIMATED_ARMOUR, '[', GREEN, _("animated armour"),
     M_NO_FLAGS,
     MR_NO_FLAGS,
     10, MONS_ANIMATED_ARMOUR, MONS_ANIMATED_ARMOUR, MH_NONLIVING, WILL_INVULN,
@@ -5183,7 +5186,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 
 // Demonic tentacle things.
 {
-    MONS_ELDRITCH_TENTACLE, 'w', COLOUR_UNDEF, "eldritch tentacle",
+    MONS_ELDRITCH_TENTACLE, 'w', COLOUR_UNDEF, _("eldritch tentacle"),
     M_NO_POLY_TO | M_STATIONARY | M_SEE_INVIS | M_FLIES,
     mrd(MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC
         | MR_RES_ACID, 3) | MR_RES_STICKY_FLAME,
@@ -5199,7 +5202,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_ELDRITCH_TENTACLE_SEGMENT, '*', COLOUR_UNDEF, "eldritch tentacle segment",
+    MONS_ELDRITCH_TENTACLE_SEGMENT, '*', COLOUR_UNDEF, _("eldritch tentacle segment"),
     M_NOT_DANGEROUS | M_STATIONARY | M_NO_POLY_TO | M_SEE_INVIS | M_FLIES,
     mrd(MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC
         | MR_RES_ACID, 3) | MR_RES_STICKY_FLAME,
@@ -5215,7 +5218,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 
 // demonspawn ('6')
 {
-    MONS_DEMONSPAWN, '6', BROWN, "demonspawn",
+    MONS_DEMONSPAWN, '6', BROWN, _("demonspawn"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_DEMONSPAWN, MONS_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 20,
@@ -5228,7 +5231,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_MONSTROUS_DEMONSPAWN, '6', LIGHTGRAY, "monstrous demonspawn",
+    MONS_MONSTROUS_DEMONSPAWN, '6', LIGHTGRAY, _("monstrous demonspawn"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_NO_POLY_TO,
     MR_NO_FLAGS,
     10, MONS_DEMONSPAWN, MONS_MONSTROUS_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 40,
@@ -5242,7 +5245,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_GELID_DEMONSPAWN, '6', BLUE, "gelid demonspawn",
+    MONS_GELID_DEMONSPAWN, '6', BLUE, _("gelid demonspawn"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     mrd(MR_RES_COLD, 3),
     10, MONS_DEMONSPAWN, MONS_GELID_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 40,
@@ -5255,7 +5258,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_INFERNAL_DEMONSPAWN, '6', RED, "infernal demonspawn",
+    MONS_INFERNAL_DEMONSPAWN, '6', RED, _("infernal demonspawn"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     mrd(MR_RES_FIRE, 3),
     10, MONS_DEMONSPAWN, MONS_INFERNAL_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 40,
@@ -5268,7 +5271,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_TORTUROUS_DEMONSPAWN, '6', MAGENTA, "torturous demonspawn",
+    MONS_TORTUROUS_DEMONSPAWN, '6', MAGENTA, _("torturous demonspawn"),
     M_WARM_BLOOD | M_SPEAKS | M_NO_POLY_TO,
     mrd(MR_RES_NEG, 3),
     10, MONS_DEMONSPAWN, MONS_TORTUROUS_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 40,
@@ -5283,7 +5286,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 // The nonbase demonspawn's hit dice HP values, AC, and EV are added to
 // those of the relevant base demonspawn type.
 {
-    MONS_BLOOD_SAINT, '6', LIGHTBLUE, "blood saint",
+    MONS_BLOOD_SAINT, '6', LIGHTBLUE, _("blood saint"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DEMONSPAWN, MONS_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 60,
@@ -5296,7 +5299,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_WARMONGER, '6', LIGHTCYAN, "warmonger",
+    MONS_WARMONGER, '6', LIGHTCYAN, _("warmonger"),
     M_WARM_BLOOD | M_SPEAKS | M_FIGHTER,
     MR_NO_FLAGS,
     10, MONS_DEMONSPAWN, MONS_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 60,
@@ -5309,7 +5312,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_CORRUPTER, '6', LIGHTGREEN, "corrupter",
+    MONS_CORRUPTER, '6', LIGHTGREEN, _("corrupter"),
     M_WARM_BLOOD | M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_DEMONSPAWN, MONS_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 60,
@@ -5322,7 +5325,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_BLACK_SUN, '6', LIGHTMAGENTA, "black sun",
+    MONS_BLACK_SUN, '6', LIGHTMAGENTA, _("black sun"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS,
     MR_NO_FLAGS,
     10, MONS_DEMONSPAWN, MONS_DEMONSPAWN, MH_NATURAL | MH_DEMONIC, 60,
@@ -5336,7 +5339,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 
 // minor demons: imps, etc. ('5')
 {
-    MONS_CRIMSON_IMP, '5', RED, "crimson imp",
+    MONS_CRIMSON_IMP, '5', RED, _("crimson imp"),
     M_SPEAKS | M_FAST_REGEN | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_FIRE, 3) | MR_VUL_COLD,
     13, MONS_CRIMSON_IMP, MONS_CRIMSON_IMP, MH_DEMONIC, 40,
@@ -5350,7 +5353,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_QUASIT, '5', LIGHTGREY, "quasit",
+    MONS_QUASIT, '5', LIGHTGREY, _("quasit"),
     M_NO_FLAGS,
     MR_RES_POISON | MR_RES_FIRE | MR_RES_COLD,
     13, MONS_QUASIT, MONS_QUASIT, MH_DEMONIC, 10,
@@ -5364,7 +5367,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_WHITE_IMP, '5', WHITE, "white imp",
+    MONS_WHITE_IMP, '5', WHITE, _("white imp"),
     M_SPEAKS | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_COLD, 2) | MR_VUL_FIRE,
     10, MONS_WHITE_IMP, MONS_WHITE_IMP, MH_DEMONIC, 10,
@@ -5378,7 +5381,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_UFETUBUS, '5', LIGHTCYAN, "ufetubus",
+    MONS_UFETUBUS, '5', LIGHTCYAN, _("ufetubus"),
     M_NO_FLAGS,
     MR_VUL_FIRE | MR_RES_COLD,
     28, MONS_UFETUBUS, MONS_UFETUBUS, MH_DEMONIC, 10,
@@ -5391,7 +5394,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_IRON_IMP, '5', CYAN, "iron imp",
+    MONS_IRON_IMP, '5', CYAN, _("iron imp"),
     M_SPEAKS,
     MR_RES_POISON | MR_RES_ELEC | mrd(MR_RES_FIRE, 3) | MR_RES_COLD,
     14, MONS_IRON_IMP, MONS_IRON_IMP, MH_DEMONIC, 10,
@@ -5404,7 +5407,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_SHADOW_IMP, '5', MAGENTA, "shadow imp",
+    MONS_SHADOW_IMP, '5', MAGENTA, _("shadow imp"),
     M_SEE_INVIS | M_SPEAKS,
     MR_RES_POISON | mrd(MR_RES_COLD, 2),
     11, MONS_SHADOW_IMP, MONS_SHADOW_IMP, MH_DEMONIC, 10,
@@ -5417,7 +5420,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_LEMURE, '5', YELLOW, "lemure",
+    MONS_LEMURE, '5', YELLOW, _("lemure"),
     M_SPEAKS,
     MR_NO_FLAGS,
     10, MONS_LEMURE, MONS_LEMURE, MH_DEMONIC, 20,
@@ -5431,7 +5434,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 
 // devils etc. ('4')
 {
-    MONS_RUST_DEVIL, '4', BROWN, "rust devil",
+    MONS_RUST_DEVIL, '4', BROWN, _("rust devil"),
     M_NO_FLAGS,
     MR_RES_POISON | MR_RES_ELEC | mrd(MR_RES_FIRE, 3) | MR_RES_COLD,
     15, MONS_RUST_DEVIL, MONS_RUST_DEVIL, MH_DEMONIC, 60,
@@ -5444,7 +5447,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_ORANGE_DEMON, '4', LIGHTRED, "orange demon",
+    MONS_ORANGE_DEMON, '4', LIGHTRED, _("orange demon"),
     M_NO_FLAGS,
     MR_NO_FLAGS,
     12, MONS_ORANGE_DEMON, MONS_ORANGE_DEMON, MH_DEMONIC, 60,
@@ -5458,7 +5461,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_RED_DEVIL, '4', RED, "red devil",
+    MONS_RED_DEVIL, '4', RED, _("red devil"),
     M_FIGHTER | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_FIRE, 3) | MR_VUL_COLD,
     13, MONS_RED_DEVIL, MONS_RED_DEVIL, MH_DEMONIC, 60,
@@ -5472,7 +5475,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_HELLWING, '4', LIGHTGREY, "hellwing",
+    MONS_HELLWING, '4', LIGHTGREY, _("hellwing"),
     M_FAST_REGEN | M_FLIES,
     MR_RES_POISON,
     12, MONS_HELLWING, MONS_HELLWING, MH_DEMONIC, 60,
@@ -5485,7 +5488,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_ICE_DEVIL, '4', WHITE, "ice devil",
+    MONS_ICE_DEVIL, '4', WHITE, _("ice devil"),
     M_NO_FLAGS,
     MR_RES_POISON | MR_VUL_FIRE | mrd(MR_RES_COLD, 3),
     11, MONS_ICE_DEVIL, MONS_ICE_DEVIL, MH_DEMONIC, 80,
@@ -5498,7 +5501,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_CHAOS_SPAWN, '4', ETC_RANDOM, "chaos spawn",
+    MONS_CHAOS_SPAWN, '4', ETC_RANDOM, _("chaos spawn"),
     M_SEE_INVIS,
     MR_NO_FLAGS,
     12, MONS_CHAOS_SPAWN, MONS_CHAOS_SPAWN, MH_DEMONIC, 60,
@@ -5512,7 +5515,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 
 // middle demons ('3')
 {
-    MONS_SUN_DEMON, '3', YELLOW, "sun demon",
+    MONS_SUN_DEMON, '3', YELLOW, _("sun demon"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_ELEC | MR_RES_POISON | MR_VUL_COLD | mrd(MR_RES_FIRE, 3)
         | MR_VUL_WATER,
@@ -5526,7 +5529,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_SOUL_EATER, '3', MAGENTA, "soul eater",
+    MONS_SOUL_EATER, '3', MAGENTA, _("soul eater"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_POISON | MR_RES_COLD,
     13, MONS_SOUL_EATER, MONS_SOUL_EATER, MH_DEMONIC, 140,
@@ -5539,7 +5542,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_SMOKE_DEMON, '3', LIGHTGREY, "smoke demon",
+    MONS_SMOKE_DEMON, '3', LIGHTGREY, _("smoke demon"),
     M_INSUBSTANTIAL | M_UNBREATHING | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_FIRE, 2),
     15, MONS_SMOKE_DEMON, MONS_SMOKE_DEMON, MH_DEMONIC, 60,
@@ -5553,7 +5556,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_NEQOXEC, '3', LIGHTMAGENTA, "neqoxec",
+    MONS_NEQOXEC, '3', LIGHTMAGENTA, _("neqoxec"),
     M_FLIES,
     MR_RES_POISON,
     12, MONS_NEQOXEC, MONS_NEQOXEC, MH_DEMONIC, 40,
@@ -5566,7 +5569,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_YNOXINUL, '3', LIGHTCYAN, "ynoxinul",
+    MONS_YNOXINUL, '3', LIGHTCYAN, _("ynoxinul"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_ELEC | MR_RES_POISON | MR_RES_COLD,
     13, MONS_YNOXINUL, MONS_YNOXINUL, MH_DEMONIC, 40,
@@ -5579,7 +5582,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_SIXFIRHY, '3', LIGHTBLUE, "sixfirhy",
+    MONS_SIXFIRHY, '3', LIGHTBLUE, _("sixfirhy"),
     M_NO_FLAGS,
     mrd(MR_RES_ELEC, 3),
     6, MONS_SIXFIRHY, MONS_SIXFIRHY, MH_DEMONIC, 60,
@@ -5594,7 +5597,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 // greater demons ('2')
 
 {
-    MONS_SHADOW_DEMON, '2', MAGENTA, "shadow demon",
+    MONS_SHADOW_DEMON, '2', MAGENTA, _("shadow demon"),
     M_SEE_INVIS,
     MR_RES_POISON | mrd(MR_RES_COLD, 2),
     13, MONS_SHADOW_DEMON, MONS_SHADOW_DEMON, MH_DEMONIC, 100,
@@ -5607,7 +5610,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_GREEN_DEATH, '2', GREEN, "green death",
+    MONS_GREEN_DEATH, '2', GREEN, _("green death"),
     M_SEE_INVIS,
     MR_RES_POISON,
     14, MONS_GREEN_DEATH, MONS_GREEN_DEATH, MH_DEMONIC, 160,
@@ -5620,7 +5623,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_BLIZZARD_DEMON, '2', LIGHTBLUE, "blizzard demon",
+    MONS_BLIZZARD_DEMON, '2', LIGHTBLUE, _("blizzard demon"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_POISON | MR_VUL_FIRE | mrd(MR_RES_COLD, 2) | mrd(MR_RES_ELEC, 3),
     16, MONS_BLIZZARD_DEMON, MONS_BLIZZARD_DEMON, MH_DEMONIC, 140,
@@ -5633,7 +5636,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_BALRUG, '2', RED, "balrug",
+    MONS_BALRUG, '2', RED, _("balrug"),
     M_FIGHTER | M_SEE_INVIS | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_FIRE, 3) | MR_VUL_COLD | MR_VUL_WATER,
     12, MONS_BALRUG, MONS_BALRUG, MH_DEMONIC, 160,
@@ -5646,7 +5649,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_CACODEMON, '2', YELLOW, "cacodemon",
+    MONS_CACODEMON, '2', YELLOW, _("cacodemon"),
     M_SEE_INVIS | M_FAST_REGEN | M_FLIES,
     MR_RES_POISON | MR_RES_ELEC,
     16, MONS_CACODEMON, MONS_CACODEMON, MH_DEMONIC, 160,
@@ -5659,7 +5662,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_HELL_BEAST, '2', BROWN, "hell beast",
+    MONS_HELL_BEAST, '2', BROWN, _("hell beast"),
     M_FIGHTER,
     MR_NO_FLAGS,
     17, MONS_HELL_BEAST, MONS_HELL_BEAST, MH_DEMONIC, 20,
@@ -5673,7 +5676,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_HELLION, '2', LIGHTRED, "hellion",
+    MONS_HELLION, '2', LIGHTRED, _("hellion"),
     M_NO_FLAGS,
     MR_RES_POISON | MR_RES_DAMNATION,
     12, MONS_HELLION, MONS_HELLION, MH_DEMONIC, 60,
@@ -5686,7 +5689,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_REAPER, '2', LIGHTGREY, "reaper",
+    MONS_REAPER, '2', LIGHTGREY, _("reaper"),
     M_FIGHTER | M_SEE_INVIS | M_SPEAKS,
     MR_RES_POISON | MR_RES_COLD,
     14, MONS_REAPER, MONS_REAPER, MH_DEMONIC, 100,
@@ -5699,7 +5702,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_LOROCYPROCA, '2', BLUE, "lorocyproca",
+    MONS_LOROCYPROCA, '2', BLUE, _("lorocyproca"),
     M_SEE_INVIS | M_INVIS,
     MR_RES_POISON | MR_RES_COLD | MR_RES_FIRE | MR_RES_ELEC,
     14, MONS_LOROCYPROCA, MONS_LOROCYPROCA, MH_DEMONIC, 140,
@@ -5712,7 +5715,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_TORMENTOR, '2', LIGHTMAGENTA, "tormentor",
+    MONS_TORMENTOR, '2', LIGHTMAGENTA, _("tormentor"),
     M_SPEAKS,
     MR_RES_POISON | MR_RES_FIRE,
     10, MONS_TORMENTOR, MONS_TORMENTOR, MH_DEMONIC, 60,
@@ -5726,7 +5729,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 
 // fiends, etc. ('1')
 {
-    MONS_BRIMSTONE_FIEND, '1', LIGHTRED, "Brimstone Fiend",
+    MONS_BRIMSTONE_FIEND, '1', LIGHTRED, _("Brimstone Fiend"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_POISON | MR_RES_DAMNATION | mrd(MR_RES_FIRE, 3) | MR_VUL_COLD
         | MR_VUL_WATER,
@@ -5741,7 +5744,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_ICE_FIEND, '1', WHITE, "Ice Fiend",
+    MONS_ICE_FIEND, '1', WHITE, _("Ice Fiend"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_POISON | MR_VUL_FIRE | mrd(MR_RES_COLD, 3),
     17, MONS_ICE_FIEND, MONS_ICE_FIEND, MH_DEMONIC, WILL_INVULN,
@@ -5754,7 +5757,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_TZITZIMITL, '1', MAGENTA, "Tzitzimitl",
+    MONS_TZITZIMITL, '1', MAGENTA, _("Tzitzimitl"),
     M_SEE_INVIS | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_COLD, 2) | MR_RES_ELEC,
     13, MONS_TZITZIMITL, MONS_TZITZIMITL, MH_DEMONIC, WILL_INVULN,
@@ -5768,7 +5771,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_HELL_SENTINEL, '1', BROWN, "Hell Sentinel",
+    MONS_HELL_SENTINEL, '1', BROWN, _("Hell Sentinel"),
     M_SEE_INVIS,
     MR_RES_DAMNATION
         | mrd(MR_RES_FIRE | MR_RES_POISON | MR_RES_COLD | MR_RES_ELEC, 3),
@@ -5782,7 +5785,7 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 {
-    MONS_EXECUTIONER, '1', LIGHTGREY, "Executioner",
+    MONS_EXECUTIONER, '1', LIGHTGREY, _("Executioner"),
     M_FIGHTER | M_SEE_INVIS,
     MR_RES_ELEC | MR_RES_FIRE | MR_RES_COLD | MR_RES_POISON,
     18, MONS_EXECUTIONER, MONS_EXECUTIONER, MH_DEMONIC, 140,
@@ -5796,14 +5799,14 @@ DUMMY(MONS_PLAYER, '@', LIGHTGREY, "player", TILEP_MONS_PLAYER_GHOST)
 },
 
 // trees and related creatures ('7')
-DUMMY(MONS_ANIMATED_TREE, '7', ETC_TREE, "animated tree", TILEP_MONS_TREANT)
+DUMMY(MONS_ANIMATED_TREE, '7', ETC_TREE, _("animated tree"), TILEP_MONS_TREANT)
 
 // non-living creatures
 // golems ('8')
 DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 
 {
-    MONS_SALTLING, '8', WHITE, "saltling",
+    MONS_SALTLING, '8', WHITE, _("saltling"),
     M_NO_FLAGS,
     MR_NO_FLAGS,
     10, MONS_GOLEM, MONS_SALTLING, MH_NONLIVING, WILL_INVULN,
@@ -5816,7 +5819,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_PEACEKEEPER, '8', YELLOW, "peacekeeper",
+    MONS_PEACEKEEPER, '8', YELLOW, _("peacekeeper"),
     M_SEE_INVIS,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     10, MONS_GOLEM, MONS_PEACEKEEPER, MH_NONLIVING, WILL_INVULN,
@@ -5829,7 +5832,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_IRON_GOLEM, '8', CYAN, "iron golem",
+    MONS_IRON_GOLEM, '8', CYAN, _("iron golem"),
     M_NO_FLAGS,
     mrd(MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC, 3),
     10, MONS_GOLEM, MONS_IRON_GOLEM, MH_NONLIVING, WILL_INVULN,
@@ -5842,7 +5845,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_CRYSTAL_GUARDIAN, '8', GREEN, "crystal guardian",
+    MONS_CRYSTAL_GUARDIAN, '8', GREEN, _("crystal guardian"),
     M_SEE_INVIS | M_SPEAKS,
     mrd(MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC, 3),
     10, MONS_GOLEM, MONS_CRYSTAL_GUARDIAN, MH_NONLIVING, WILL_INVULN,
@@ -5855,7 +5858,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_TOENAIL_GOLEM, '8', RED, "toenail golem",
+    MONS_TOENAIL_GOLEM, '8', RED, _("toenail golem"),
     M_NO_FLAGS,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     10, MONS_GOLEM, MONS_TOENAIL_GOLEM, MH_NONLIVING, WILL_INVULN,
@@ -5868,7 +5871,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_ELECTRIC_GOLEM, '8', LIGHTCYAN, "electric golem",
+    MONS_ELECTRIC_GOLEM, '8', LIGHTCYAN, _("electric golem"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_SPEAKS,
     mrd(MR_RES_ELEC, 3) | MR_RES_FIRE | MR_RES_COLD,
     12, MONS_GOLEM, MONS_ELECTRIC_GOLEM, MH_NONLIVING, WILL_INVULN,
@@ -5882,7 +5885,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_USHABTI, '8', BROWN, "ushabti",
+    MONS_USHABTI, '8', BROWN, _("ushabti"),
     M_FIGHTER | M_SEE_INVIS,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     10, MONS_GOLEM, MONS_USHABTI, MH_NONLIVING, WILL_INVULN,
@@ -5895,7 +5898,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_GUARDIAN_GOLEM, '8', LIGHTGREEN, "guardian golem",
+    MONS_GUARDIAN_GOLEM, '8', LIGHTGREEN, _("guardian golem"),
     M_NO_EXP_GAIN,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
     10, MONS_GOLEM, MONS_GUARDIAN_GOLEM, MH_NONLIVING, WILL_INVULN,
@@ -5908,7 +5911,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_SPELLFORGED_SERVITOR, '8', LIGHTMAGENTA, "spellforged servitor",
+    MONS_SPELLFORGED_SERVITOR, '8', LIGHTMAGENTA, _("spellforged servitor"),
     M_NO_POLY_TO | M_FLIES | M_NO_EXP_GAIN,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | MR_RES_ELEC,
     10, MONS_GOLEM, MONS_SPELLFORGED_SERVITOR, MH_NONLIVING, WILL_INVULN,
@@ -5922,7 +5925,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 
 // statues and statue-like things (also '8')
 {
-    MONS_ICE_STATUE, '8', LIGHTBLUE, "ice statue",
+    MONS_ICE_STATUE, '8', LIGHTBLUE, _("ice statue"),
     M_STATIONARY | M_SPEAKS,
     MR_VUL_FIRE | mrd(MR_RES_COLD, 3) | MR_RES_ELEC | MR_RES_PETRIFY,
     10, MONS_STATUE, MONS_ICE_STATUE, MH_NONLIVING, WILL_INVULN,
@@ -5935,7 +5938,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_OBSIDIAN_STATUE, '8', MAGENTA, "obsidian statue",
+    MONS_OBSIDIAN_STATUE, '8', MAGENTA, _("obsidian statue"),
     M_STATIONARY | M_SPEAKS | M_SEE_INVIS,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | MR_RES_ELEC
         | MR_RES_PETRIFY,
@@ -5949,7 +5952,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_ORANGE_STATUE, '8', LIGHTRED, "orange crystal statue",
+    MONS_ORANGE_STATUE, '8', LIGHTRED, _("orange crystal statue"),
     M_STATIONARY | M_SPEAKS | M_SEE_INVIS,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | MR_RES_ELEC | MR_RES_PETRIFY,
     10, MONS_STATUE, MONS_ORANGE_STATUE, MH_NONLIVING, WILL_INVULN,
@@ -5962,7 +5965,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 { // always redefined
-    MONS_STATUE, '8', LIGHTGREY, "statue",
+    MONS_STATUE, '8', LIGHTGREY, _("statue"),
     M_STATIONARY | M_SPEAKS | M_ARCHER | M_PREFER_RANGED | M_NO_POLY_TO,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | MR_RES_ELEC | MR_RES_PETRIFY,
     10, MONS_STATUE, MONS_STATUE, MH_NONLIVING, WILL_INVULN,
@@ -5975,7 +5978,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_TRAINING_DUMMY, '8', LIGHTGREY, "training dummy",
+    MONS_TRAINING_DUMMY, '8', LIGHTGREY, _("training dummy"),
     M_STATIONARY,
     MR_RES_PETRIFY,
     10, MONS_TRAINING_DUMMY, MONS_TRAINING_DUMMY, MH_NONLIVING, WILL_INVULN,
@@ -5988,7 +5991,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_PILLAR_OF_SALT, '8', WHITE, "pillar of salt",
+    MONS_PILLAR_OF_SALT, '8', WHITE, _("pillar of salt"),
     M_NOT_DANGEROUS | M_STATIONARY,
     MR_NO_FLAGS,
     10, MONS_PILLAR_OF_SALT, MONS_PILLAR_OF_SALT, MH_NONLIVING, WILL_INVULN,
@@ -6001,7 +6004,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_BLOCK_OF_ICE, '8', ETC_ICE, "block of ice",
+    MONS_BLOCK_OF_ICE, '8', ETC_ICE, _("block of ice"),
     M_NOT_DANGEROUS | M_STATIONARY,
     mrd(MR_RES_COLD, 3) | MR_VUL_FIRE,
     10, MONS_BLOCK_OF_ICE, MONS_BLOCK_OF_ICE, MH_NONLIVING, WILL_INVULN,
@@ -6014,7 +6017,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_DIAMOND_OBELISK, '8', WHITE, "diamond obelisk",
+    MONS_DIAMOND_OBELISK, '8', WHITE, _("diamond obelisk"),
     M_STATIONARY | M_NOT_DANGEROUS | M_NO_POLY_TO,
     MR_RES_PETRIFY,
     10, MONS_DIAMOND_OBELISK, MONS_DIAMOND_OBELISK, MH_NONLIVING, WILL_INVULN,
@@ -6027,7 +6030,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_LIGHTNING_SPIRE, '8', ETC_ELECTRICITY, "lightning spire",
+    MONS_LIGHTNING_SPIRE, '8', ETC_ELECTRICITY, _("lightning spire"),
     M_STATIONARY | M_NO_POLY_TO,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | mrd(MR_RES_ELEC, 3) | MR_RES_PETRIFY,
     10, MONS_LIGHTNING_SPIRE, MONS_LIGHTNING_SPIRE, MH_NONLIVING, WILL_INVULN,
@@ -6041,7 +6044,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 
 // gargoyles ('9')
 {
-    MONS_GARGOYLE, '9', LIGHTGREY, "gargoyle",
+    MONS_GARGOYLE, '9', LIGHTGREY, _("gargoyle"),
     M_FLIES,
     MR_RES_ELEC | MR_RES_PETRIFY,
     26, MONS_GOLEM, MONS_GARGOYLE, MH_NONLIVING, 40,
@@ -6055,7 +6058,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_WAR_GARGOYLE, '9', CYAN, "war gargoyle",
+    MONS_WAR_GARGOYLE, '9', CYAN, _("war gargoyle"),
     M_SEE_INVIS | M_FIGHTER | M_FLIES,
     MR_RES_ELEC | MR_RES_FIRE | MR_RES_COLD | MR_RES_PETRIFY,
     18, MONS_GOLEM, MONS_WAR_GARGOYLE, MH_NONLIVING, 100,
@@ -6069,7 +6072,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 },
 
 {
-    MONS_MOLTEN_GARGOYLE, '9', RED, "molten gargoyle",
+    MONS_MOLTEN_GARGOYLE, '9', RED, _("molten gargoyle"),
     M_FLIES,
     MR_RES_ELEC | mrd(MR_RES_FIRE, 3) | MR_RES_PETRIFY,
     18, MONS_GOLEM, MONS_MOLTEN_GARGOYLE, MH_NONLIVING, 60,
@@ -6085,7 +6088,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
 // major demons ('&')
 // Random demon in pan - only one per level. Stats are stored in ghost struct.
 {
-    MONS_PANDEMONIUM_LORD, '&', COLOUR_UNDEF, "pandemonium lord",
+    MONS_PANDEMONIUM_LORD, '&', COLOUR_UNDEF, _("pandemonium lord"),
     // See invis is also set in ghost.cc
     M_FIGHTER | M_SPEAKS | M_SEE_INVIS | M_GHOST_DEMON | M_TALL_TILE,
     MR_RES_POISON,
@@ -6098,7 +6101,7 @@ DUMMY(MONS_GOLEM, '8', LIGHTGREY, "golem", TILEP_MONS_IRON_GOLEM)
     {TILEP_MONS_PANDEMONIUM_LORD}, TILE_ERROR
 },
 
-DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
+DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, _("hell lord"), TILEP_MONS_PROGRAM_BUG)
 
 // explodey things / orb of fire ('*')
 {
@@ -6115,7 +6118,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_BALLISTOMYCETE_SPORE, '*', GREEN, "ballistomycete spore",
+    MONS_BALLISTOMYCETE_SPORE, '*', GREEN, _("ballistomycete spore"),
     M_FLIES | M_NO_EXP_GAIN,
     MR_RES_POISON,
     10, MONS_FUNGUS, MONS_BALLISTOMYCETE_SPORE, MH_PLANT, WILL_INVULN,
@@ -6128,7 +6131,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_LOST_SOUL, '*', LIGHTGREEN, "lost soul",
+    MONS_LOST_SOUL, '*', LIGHTGREEN, _("lost soul"),
     M_INSUBSTANTIAL | M_MAINTAIN_RANGE | M_FLIES | M_NO_EXP_GAIN | M_SEE_INVIS,
     MR_RES_ELEC | MR_RES_FIRE | MR_RES_COLD,
     2, MONS_LOST_SOUL, MONS_LOST_SOUL, MH_UNDEAD, WILL_INVULN,
@@ -6141,7 +6144,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_LURKING_HORROR, '*', BLUE, "lurking horror",
+    MONS_LURKING_HORROR, '*', BLUE, _("lurking horror"),
     M_INSUBSTANTIAL | M_FLIES | M_NO_EXP_GAIN,
     MR_NO_FLAGS,
     10, MONS_LURKING_HORROR, MONS_LURKING_HORROR, MH_NONLIVING, 10,
@@ -6154,7 +6157,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_ORB_OF_FIRE, '*', RED, "orb of fire",
+    MONS_ORB_OF_FIRE, '*', RED, _("orb of fire"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     mrd(MR_RES_FIRE | MR_RES_ELEC, 3) | MR_RES_COLD | MR_VUL_WATER,
     13, MONS_ORB_OF_FIRE, MONS_ORB_OF_FIRE, MH_NONLIVING, WILL_INVULN,
@@ -6167,7 +6170,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 { // not an actual monster, used by a spell
-    MONS_ORB_OF_DESTRUCTION, '*', WHITE, "orb of destruction",
+    MONS_ORB_OF_DESTRUCTION, '*', WHITE, _("orb of destruction"),
     M_INSUBSTANTIAL | M_NOT_DANGEROUS | M_NO_POLY_TO | M_PROJECTILE | M_FLIES,
     mrd(MR_RES_COLD | MR_RES_ELEC | MR_RES_ACID | MR_RES_FIRE, 3)
         | MR_RES_DAMNATION | MR_RES_STICKY_FLAME,
@@ -6182,7 +6185,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 { // not an actual monster, used by a spell
-    MONS_FOXFIRE, 'v', LIGHTRED, "foxfire",
+    MONS_FOXFIRE, 'v', LIGHTRED, _("foxfire"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_NOT_DANGEROUS | M_NO_POLY_TO
         | M_CONJURED | M_FLIES,
     mrd(MR_RES_FIRE, 3) | MR_RES_STICKY_FLAME,
@@ -6196,7 +6199,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 { // not an actual monster, used by a spell
-    MONS_FULMINANT_PRISM, '*', ETC_MAGIC, "fulminant prism",
+    MONS_FULMINANT_PRISM, '*', ETC_MAGIC, _("fulminant prism"),
     M_NO_POLY_TO | M_STATIONARY | M_CONJURED | M_NO_EXP_GAIN
         | M_FLIES,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_ELEC,
@@ -6210,7 +6213,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_WRETCHED_STAR, '*', MAGENTA, "wretched star",
+    MONS_WRETCHED_STAR, '*', MAGENTA, _("wretched star"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_FLIES,
     MR_RES_ELEC | MR_RES_FIRE | MR_RES_COLD,
     13, MONS_WRETCHED_STAR, MONS_WRETCHED_STAR, MH_NONLIVING, WILL_INVULN,
@@ -6223,7 +6226,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_BATTLESPHERE, '*', ETC_MAGIC, "battlesphere",
+    MONS_BATTLESPHERE, '*', ETC_MAGIC, _("battlesphere"),
     M_SEE_INVIS | M_INSUBSTANTIAL | M_NO_EXP_GAIN | M_NO_POLY_TO
         | M_MAINTAIN_RANGE | M_AVATAR | M_FLIES | M_UNBLINDABLE,
     mrd(MR_RES_COLD | MR_RES_FIRE, 2) | mrd(MR_RES_ELEC, 3)
@@ -6239,7 +6242,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // other symbols
 {
-    MONS_DEATH_COB, 'z', YELLOW, "death cob",
+    MONS_DEATH_COB, 'z', YELLOW, _("death cob"),
     M_SPEAKS,
     MR_RES_COLD,
     10, MONS_DEATH_COB, MONS_DEATH_COB, MH_UNDEAD, 40,
@@ -6254,7 +6257,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 // non-human uniques
 // "A"ngels.
 {
-    MONS_MENNAS, 'A', LIGHTCYAN, "Mennas",
+    MONS_MENNAS, 'A', LIGHTCYAN, _("Mennas"),
     M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_UNIQUE | M_MALE | M_FLIES,
     MR_RES_POISON | MR_RES_ELEC,
     18, MONS_ANGEL, MONS_ANGEL, MH_HOLY, 160,
@@ -6270,7 +6273,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "c"entaurs.
 {
-    MONS_NESSOS, 'c', MAGENTA, "Nessos",
+    MONS_NESSOS, 'c', MAGENTA, _("Nessos"),
     M_UNIQUE | M_WARM_BLOOD | M_ARCHER | M_SPEAKS | M_GENDER_NEUTRAL,
     MR_NO_FLAGS,
     18, MONS_CENTAUR, MONS_CENTAUR, MH_NATURAL, 20,
@@ -6284,7 +6287,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "C"yclopes and giants.
 {
-    MONS_CHUCK, 'C', WHITE, "Chuck",
+    MONS_CHUCK, 'C', WHITE, _("Chuck"),
     M_WARM_BLOOD | M_SPEAKS | M_UNIQUE | M_MALE,
     MR_NO_FLAGS,
     10, MONS_GIANT, MONS_STONE_GIANT, MH_NATURAL, 100,
@@ -6297,7 +6300,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_POLYPHEMUS, 'C', GREEN, "Polyphemus",
+    MONS_POLYPHEMUS, 'C', GREEN, _("Polyphemus"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     10, MONS_GIANT, MONS_CYCLOPS, MH_NATURAL, 60,
@@ -6310,7 +6313,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_ANTAEUS, 'C', LIGHTCYAN, "Antaeus",
+    MONS_ANTAEUS, 'C', LIGHTCYAN, _("Antaeus"),
     M_UNIQUE | M_WARM_BLOOD | M_FIGHTER | M_SEE_INVIS | M_MALE
         | M_SPEAKS | M_TALL_TILE,
     mrd(MR_RES_ELEC, 3) | mrd(MR_RES_COLD, 2) | MR_VUL_FIRE,
@@ -6325,7 +6328,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "d"raconians.
 {
-    MONS_TIAMAT, 'd', COLOUR_UNDEF, "Tiamat",
+    MONS_TIAMAT, 'd', COLOUR_UNDEF, _("Tiamat"),
     M_UNIQUE | M_SEE_INVIS | M_COLD_BLOOD | M_SPEAKS | M_FEMALE | M_FLIES,
     MR_RES_POISON,
     10, MONS_DRACONIAN, MONS_DRACONIAN, MH_NATURAL, 140,
@@ -6341,7 +6344,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_BAI_SUZHEN, 'd', LIGHTBLUE, "Bai Suzhen",
+    MONS_BAI_SUZHEN, 'd', LIGHTBLUE, _("Bai Suzhen"),
     M_UNIQUE | M_SEE_INVIS | M_COLD_BLOOD | M_SPEAKS | M_FEMALE,
     mrd(MR_RES_ELEC, 3) | MR_RES_COLD | MR_RES_POISON,
     16, MONS_DRAGON, MONS_STORM_DRAGON, MH_NATURAL, 100,
@@ -6356,7 +6359,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "D"ragons and hydras.
 {
-    MONS_XTAHUA, 'D', RED, "Xtahua",
+    MONS_XTAHUA, 'D', RED, _("Xtahua"),
     M_UNIQUE | M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_GENDER_NEUTRAL
         | M_CRASH_DOORS | M_FLIES,
     MR_RES_POISON | mrd(MR_RES_FIRE, 2) | MR_VUL_COLD,
@@ -6371,7 +6374,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_LERNAEAN_HYDRA, 'D', YELLOW, "the Lernaean hydra",
+    MONS_LERNAEAN_HYDRA, 'D', YELLOW, _("the Lernaean hydra"),
     M_UNIQUE | M_COLD_BLOOD | M_FAST_REGEN | M_TALL_TILE,
     MR_RES_POISON,
     11, MONS_HYDRA, MONS_HYDRA, MH_NATURAL, 120,
@@ -6384,7 +6387,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SERPENT_OF_HELL, 'D', ETC_FIRE, "the Serpent of Hell",
+    MONS_SERPENT_OF_HELL, 'D', ETC_FIRE, _("the Serpent of Hell"),
     M_SEE_INVIS | M_UNIQUE | M_CRASH_DOORS | M_FLIES | M_TALL_TILE,
     MR_RES_POISON | MR_RES_DAMNATION | mrd(MR_RES_FIRE, 3),
     21, MONS_DRAGON, MONS_SERPENT_OF_HELL, MH_DEMONIC, 180,
@@ -6398,7 +6401,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SERPENT_OF_HELL_COCYTUS, 'D', ETC_ICE, "the Serpent of Hell",
+    MONS_SERPENT_OF_HELL_COCYTUS, 'D', ETC_ICE, _("the Serpent of Hell"),
     M_SEE_INVIS | M_UNIQUE | M_CRASH_DOORS | M_FLIES | M_TALL_TILE,
     MR_RES_POISON | mrd(MR_RES_COLD, 3),
     21, MONS_DRAGON, MONS_SERPENT_OF_HELL, MH_DEMONIC, 180,
@@ -6412,7 +6415,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SERPENT_OF_HELL_DIS, 'D', ETC_IRON, "the Serpent of Hell",
+    MONS_SERPENT_OF_HELL_DIS, 'D', ETC_IRON, _("the Serpent of Hell"),
     M_SEE_INVIS | M_UNIQUE | M_CRASH_DOORS | M_TALL_TILE,
     MR_RES_POISON | MR_RES_FIRE | MR_RES_COLD,
     16, MONS_DRAGON, MONS_SERPENT_OF_HELL, MH_DEMONIC, 180,
@@ -6426,7 +6429,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SERPENT_OF_HELL_TARTARUS, 'D', ETC_DEATH, "the Serpent of Hell",
+    MONS_SERPENT_OF_HELL_TARTARUS, 'D', ETC_DEATH, _("the Serpent of Hell"),
     M_SEE_INVIS | M_UNIQUE | M_CRASH_DOORS | M_FLIES | M_TALL_TILE,
     MR_RES_POISON | mrd(MR_RES_COLD, 2),
     18, MONS_DRAGON, MONS_SERPENT_OF_HELL, MH_DEMONIC, 180,
@@ -6440,7 +6443,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_BAI_SUZHEN_DRAGON, 'D', ETC_ELECTRICITY, "Bai Suzhen",
+    MONS_BAI_SUZHEN_DRAGON, 'D', ETC_ELECTRICITY, _("Bai Suzhen"),
     M_UNIQUE | M_SEE_INVIS | M_COLD_BLOOD | M_SPEAKS | M_FEMALE | M_FLIES
         | M_THUNDER_RING,
     mrd(MR_RES_ELEC, 3) | MR_RES_COLD | MR_RES_POISON,
@@ -6456,7 +6459,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "e"lves
 {
-    MONS_DUVESSA, 'e', BLUE, "Duvessa",
+    MONS_DUVESSA, 'e', BLUE, _("Duvessa"),
     M_UNIQUE | M_FIGHTER | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     15, MONS_ELF, MONS_ELF, MH_NATURAL, 40,
@@ -6469,7 +6472,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_DOWAN, 'e', RED, "Dowan",
+    MONS_DOWAN, 'e', RED, _("Dowan"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     15, MONS_ELF, MONS_ELF, MH_NATURAL, 20,
@@ -6482,7 +6485,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_FANNAR, 'e', LIGHTBLUE, "Fannar",
+    MONS_FANNAR, 'e', LIGHTBLUE, _("Fannar"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_GENDER_NEUTRAL,
     MR_NO_FLAGS,
     16, MONS_ELF, MONS_ELF, MH_NATURAL, 80,
@@ -6496,7 +6499,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "F"rogs.
 {
-    MONS_PRINCE_RIBBIT, 'F', LIGHTCYAN, "Prince Ribbit",
+    MONS_PRINCE_RIBBIT, 'F', LIGHTCYAN, _("Prince Ribbit"),
     M_UNIQUE | M_COLD_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     12, MONS_FROG, MONS_HUMAN, MH_NATURAL, 40,
@@ -6510,7 +6513,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "g"oblins, gnolls, and dwarves.
 {
-    MONS_IJYB, 'g', BLUE, "Ijyb",
+    MONS_IJYB, 'g', BLUE, _("Ijyb"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE | M_ALWAYS_WAND,
     MR_NO_FLAGS,
     8, MONS_GOBLIN, MONS_GOBLIN, MH_NATURAL, 10,
@@ -6523,7 +6526,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_ROBIN, 'g', LIGHTCYAN, "Robin",
+    MONS_ROBIN, 'g', LIGHTCYAN, _("Robin"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_GENDER_NEUTRAL,
     MR_NO_FLAGS,
     10, MONS_GOBLIN, MONS_HOBGOBLIN, MH_NATURAL, 10,
@@ -6536,7 +6539,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_GRUM, 'g', LIGHTRED, "Grum",
+    MONS_GRUM, 'g', LIGHTRED, _("Grum"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     19, MONS_GNOLL, MONS_GNOLL, MH_NATURAL, 10,
@@ -6549,7 +6552,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_CRAZY_YIUF, 'g', COLOUR_UNDEF, "Crazy Yiuf",
+    MONS_CRAZY_YIUF, 'g', COLOUR_UNDEF, _("Crazy Yiuf"),
     M_WARM_BLOOD | M_SPEAKS | M_UNIQUE | M_MALE,
     MR_NO_FLAGS,
     10, MONS_GNOLL, MONS_GNOLL, MH_NATURAL, 10,
@@ -6562,7 +6565,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_JORGRUN, 'g', LIGHTMAGENTA, "Jorgrun",
+    MONS_JORGRUN, 'g', LIGHTMAGENTA, _("Jorgrun"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     18, MONS_DWARF, MONS_DWARF, MH_NATURAL, 120,
@@ -6576,7 +6579,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "h" - carnivorous quadrupeds
 {
-    MONS_NATASHA, 'h', MAGENTA, "Natasha",
+    MONS_NATASHA, 'h', MAGENTA, _("Natasha"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_UNIQUE | M_FEMALE,
     MR_NO_FLAGS,
     10, MONS_FELID, MONS_FELID, MH_NATURAL | MH_EVIL, 20,
@@ -6590,7 +6593,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "H"ybrids.
 {
-    MONS_ARACHNE, 'H', LIGHTCYAN, "Arachne",
+    MONS_ARACHNE, 'H', LIGHTCYAN, _("Arachne"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_FEMALE,
     MR_NO_FLAGS, // no rPois- (breathes through the human half)
     10, MONS_SPIDER, MONS_ARACHNE, MH_NATURAL, 60,
@@ -6603,7 +6606,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_ASTERION, 'H', LIGHTBLUE, "Asterion",
+    MONS_ASTERION, 'H', LIGHTBLUE, _("Asterion"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_UNIQUE | M_MALE,
     MR_NO_FLAGS,
     15, MONS_MINOTAUR, MONS_MINOTAUR, MH_NATURAL | MH_EVIL, 100,
@@ -6617,7 +6620,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // Spr"i"ggans.
 {
-    MONS_AGNES, 'i', LIGHTCYAN, "Agnes",
+    MONS_AGNES, 'i', LIGHTCYAN, _("Agnes"),
     M_UNIQUE | M_FIGHTER | M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_FEMALE,
     MR_NO_FLAGS,
     20, MONS_SPRIGGAN, MONS_SPRIGGAN, MH_NATURAL, 100,
@@ -6630,7 +6633,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_THE_ENCHANTRESS, 'i', LIGHTMAGENTA, "the Enchantress",
+    MONS_THE_ENCHANTRESS, 'i', LIGHTMAGENTA, _("the Enchantress"),
     M_WARM_BLOOD | M_SPEAKS | M_SEE_INVIS | M_UNIQUE | M_FEMALE,
     MR_NO_FLAGS,
     35, MONS_SPRIGGAN, MONS_SPRIGGAN, MH_NATURAL, 160,
@@ -6644,7 +6647,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "J"ellies.
 {
-    MONS_ROYAL_JELLY, 'J', YELLOW, "the Royal Jelly",
+    MONS_ROYAL_JELLY, 'J', YELLOW, _("the Royal Jelly"),
     M_SEE_INVIS | M_UNBLINDABLE | M_ACID_SPLASH | M_UNIQUE | M_EAT_DOORS
         | M_TALL_TILE,
     MR_RES_POISON | mrd(MR_RES_ACID, 3),
@@ -6658,7 +6661,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_DISSOLUTION, 'J', LIGHTMAGENTA, "Dissolution",
+    MONS_DISSOLUTION, 'J', LIGHTMAGENTA, _("Dissolution"),
     M_UNIQUE | M_SEE_INVIS | M_UNBLINDABLE | M_ACID_SPLASH | M_BURROWS
         | M_SPEAKS | M_FAST_REGEN | M_GENDER_NEUTRAL | M_EAT_DOORS,
     MR_RES_POISON | mrd(MR_RES_ACID, 3),
@@ -6673,7 +6676,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "K"obolds.
 {
-    MONS_SONJA, 'K', RED, "Sonja",
+    MONS_SONJA, 'K', RED, _("Sonja"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     40, MONS_KOBOLD, MONS_KOBOLD, MH_NATURAL, 10,
@@ -6688,7 +6691,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 {
     // XP modifier is very high to compensate for 4 created-friendly humans
-    MONS_PIKEL, 'K', BLUE, "Pikel",
+    MONS_PIKEL, 'K', BLUE, _("Pikel"),
     M_WARM_BLOOD | M_SPEAKS | M_UNIQUE | M_MALE,
     MR_NO_FLAGS,
     32, MONS_KOBOLD, MONS_KOBOLD, MH_NATURAL, 20,
@@ -6703,7 +6706,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 // "L"iches.
 {
     // May be re-spawned after his death.
-    MONS_BORIS, 'L', RED, "Boris",
+    MONS_BORIS, 'L', RED, _("Boris"),
     M_UNIQUE | M_SEE_INVIS | M_SPEAKS | M_MALE,
     mrd(MR_RES_COLD, 2) | MR_RES_ELEC,
     15, MONS_LICH, MONS_LICH, MH_UNDEAD, WILL_INVULN,
@@ -6718,7 +6721,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "M"ummies.
 {
-    MONS_MENKAURE, 'M', MAGENTA, "Menkaure",
+    MONS_MENKAURE, 'M', MAGENTA, _("Menkaure"),
     M_UNIQUE | M_SPEAKS | M_SEE_INVIS | M_MALE,
     MR_VUL_FIRE | MR_RES_COLD,
     48, MONS_MUMMY, MONS_MUMMY, MH_UNDEAD, 20,
@@ -6731,7 +6734,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_KHUFU, 'M', LIGHTRED, "Khufu",
+    MONS_KHUFU, 'M', LIGHTRED, _("Khufu"),
     M_SEE_INVIS | M_SPEAKS | M_UNIQUE | M_MALE,
     MR_RES_COLD | MR_RES_ELEC,
     20, MONS_MUMMY, MONS_MUMMY, MH_UNDEAD, 160,
@@ -6745,7 +6748,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "m"erfolk.
 {
-    MONS_ILSUIW, 'm', LIGHTGREEN, "Ilsuiw",
+    MONS_ILSUIW, 'm', LIGHTGREEN, _("Ilsuiw"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     10, MONS_MERFOLK, MONS_MERFOLK, MH_NATURAL, 140,
@@ -6759,7 +6762,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "N"agas.
 {
-    MONS_VASHNIA, 'N', LIGHTCYAN, "Vashnia",
+    MONS_VASHNIA, 'N', LIGHTCYAN, _("Vashnia"),
     M_SEE_INVIS | M_WARM_BLOOD | M_FEMALE
         | M_ARCHER | M_PREFER_RANGED | M_SPEAKS | M_UNIQUE,
     MR_RES_POISON,
@@ -6774,7 +6777,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "O"gres.
 {
-    MONS_EROLCHA, 'O', LIGHTBLUE, "Erolcha",
+    MONS_EROLCHA, 'O', LIGHTBLUE, _("Erolcha"),
     M_UNIQUE | M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     50, MONS_OGRE, MONS_OGRE, MH_NATURAL, 60,
@@ -6788,7 +6791,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "o"rcs.
 {
-    MONS_BLORK_THE_ORC, 'o', BROWN, "Blork the orc",
+    MONS_BLORK_THE_ORC, 'o', BROWN, _("Blork the orc"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     15, MONS_ORC, MONS_ORC, MH_NATURAL, 20,
@@ -6801,7 +6804,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_URUG, 'o', RED, "Urug",
+    MONS_URUG, 'o', RED, _("Urug"),
     M_UNIQUE | M_FIGHTER | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     15, MONS_ORC, MONS_ORC, MH_NATURAL, 40,
@@ -6814,7 +6817,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_NERGALLE, 'o', WHITE, "Nergalle",
+    MONS_NERGALLE, 'o', WHITE, _("Nergalle"),
     M_UNIQUE | M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     12, MONS_ORC, MONS_ORC, MH_NATURAL | MH_EVIL, 60,
@@ -6827,7 +6830,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SAINT_ROKA, 'o', LIGHTBLUE, "Saint Roka",
+    MONS_SAINT_ROKA, 'o', LIGHTBLUE, _("Saint Roka"),
     M_UNIQUE | M_FIGHTER | M_WARM_BLOOD | M_SPEAKS | M_GENDER_NEUTRAL,
     MR_NO_FLAGS,
     15, MONS_ORC, MONS_ORC, MH_NATURAL | MH_EVIL, 80,
@@ -6841,7 +6844,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // Tengu.
 {
-    MONS_SOJOBO, 'Q', LIGHTGREEN, "Sojobo",
+    MONS_SOJOBO, 'Q', LIGHTGREEN, _("Sojobo"),
     M_FIGHTER | M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_UNIQUE | M_FEMALE
         | M_FLIES,
     MR_RES_TORNADO,
@@ -6857,7 +6860,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // Rakshasas and demons.
 {
-    MONS_AZRAEL, 'R', LIGHTRED, "Azrael",
+    MONS_AZRAEL, 'R', LIGHTRED, _("Azrael"),
     M_UNIQUE | M_SPEAKS | M_MALE | M_FLIES,
     MR_RES_POISON | MR_RES_DAMNATION | mrd(MR_RES_FIRE, 3) | MR_VUL_COLD
         | MR_VUL_WATER,
@@ -6871,7 +6874,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_MARA, 'R', LIGHTMAGENTA, "Mara",
+    MONS_MARA, 'R', LIGHTMAGENTA, _("Mara"),
     M_SEE_INVIS | M_SPEAKS | M_UNIQUE | M_MALE,
     MR_RES_POISON | mrd(MR_RES_FIRE, 2),
     35, MONS_RAKSHASA, MONS_RAKSHASA, MH_DEMONIC, 140,
@@ -6885,7 +6888,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "S"nakes and guardian serpents.
 {
-    MONS_AIZUL, 'S', LIGHTMAGENTA, "Aizul",
+    MONS_AIZUL, 'S', LIGHTMAGENTA, _("Aizul"),
     M_SEE_INVIS | M_WARM_BLOOD | M_SPEAKS | M_UNIQUE | M_FEMALE,
     MR_RES_POISON,
     10, MONS_GUARDIAN_SERPENT, MONS_GUARDIAN_SERPENT, MH_NATURAL, 120,
@@ -6900,7 +6903,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 // "T"rolls.
 {
     // Snorg can go berserk.
-    MONS_SNORG, 'T', LIGHTGREEN, "Snorg",
+    MONS_SNORG, 'T', LIGHTGREEN, _("Snorg"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FAST_REGEN | M_FEMALE,
     MR_NO_FLAGS,
     25, MONS_TROLL, MONS_TROLL, MH_NATURAL, 60,
@@ -6914,7 +6917,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_PURGY, 'T', GREEN, "Purgy",
+    MONS_PURGY, 'T', GREEN, _("Purgy"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FAST_REGEN | M_MALE,
     MR_NO_FLAGS,
     10, MONS_TROLL, MONS_TROLL, MH_NATURAL, 10,
@@ -6929,7 +6932,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // Semi-unique in the moon base wizlab
 {
-    MONS_MOON_TROLL, 'T', LIGHTCYAN, "moon troll",
+    MONS_MOON_TROLL, 'T', LIGHTCYAN, _("moon troll"),
     M_WARM_BLOOD | M_SPEAKS | M_FAST_REGEN | M_SEE_INVIS
         | M_NO_POLY_TO | M_NO_GEN_DERIVED,
     MR_RES_FIRE | MR_RES_COLD | MR_RES_POISON,
@@ -6945,7 +6948,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // "V"ampires.
 {
-    MONS_JORY, 'V', LIGHTRED, "Jory",
+    MONS_JORY, 'V', LIGHTRED, _("Jory"),
     M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_MALE
         | M_WARM_BLOOD | M_UNIQUE,
     MR_RES_COLD,
@@ -6961,7 +6964,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // Snails and other gastropods.
 {
-    MONS_GASTRONOK, 'w', MAGENTA, "Gastronok",
+    MONS_GASTRONOK, 'w', MAGENTA, _("Gastronok"),
     M_UNIQUE | M_SEE_INVIS | M_SPEAKS | M_NO_WAND | M_MALE,
     MR_NO_FLAGS,
     16, MONS_ELEPHANT_SLUG, MONS_ELEPHANT_SLUG, MH_NATURAL, 80,
@@ -6975,7 +6978,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // Elephants.
 {
-    MONS_NELLIE, 'Y', LIGHTMAGENTA, "Nellie",
+    MONS_NELLIE, 'Y', LIGHTMAGENTA, _("Nellie"),
     M_WARM_BLOOD | M_UNIQUE | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     8, MONS_ELEPHANT, MONS_HELLEPHANT, MH_DEMONIC, 140,
@@ -6990,7 +6993,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // Skulls and "z" undead.
 {
-    MONS_MURRAY, 'z', LIGHTRED, "Murray",
+    MONS_MURRAY, 'z', LIGHTRED, _("Murray"),
     M_UNIQUE | M_SEE_INVIS | M_SPEAKS | M_MALE,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | MR_RES_ELEC,
     15, MONS_CURSE_SKULL, MONS_CURSE_SKULL, MH_UNDEAD, WILL_INVULN,
@@ -7004,7 +7007,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // numbers!
 {
-    MONS_IGNACIO, '1', LIGHTMAGENTA, "Ignacio",
+    MONS_IGNACIO, '1', LIGHTMAGENTA, _("Ignacio"),
     M_UNIQUE | M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_MALE,
     MR_RES_ELEC | MR_RES_FIRE | MR_RES_COLD | MR_RES_POISON,
     14, MONS_EXECUTIONER, MONS_EXECUTIONER, MH_DEMONIC, 160,
@@ -7018,7 +7021,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_GRINDER, '5', BLUE, "Grinder",
+    MONS_GRINDER, '5', BLUE, _("Grinder"),
     M_UNIQUE | M_SEE_INVIS | M_SPEAKS | M_NO_HT_WAND | M_FEMALE,
     MR_RES_POISON | mrd(MR_RES_COLD, 2),
     11, MONS_SHADOW_IMP, MONS_SHADOW_IMP, MH_DEMONIC, 20,
@@ -7033,7 +7036,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 {
     // Roxanne obviously can't use items, but we want to equip her with
     // a spellbook, so MONUSE_STARTING_EQUIPMENT is necessary.
-    MONS_ROXANNE, '8', BLUE, "Roxanne",
+    MONS_ROXANNE, '8', BLUE, _("Roxanne"),
     M_UNIQUE | M_STATIONARY | M_SPEAKS | M_NO_WAND | M_FEMALE,
     mrd(MR_RES_FIRE | MR_RES_COLD, 2) | MR_RES_ELEC
         | MR_RES_PETRIFY,
@@ -7048,7 +7051,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // human uniques
 {
-    MONS_TERENCE, '@', LIGHTCYAN, "Terence",
+    MONS_TERENCE, '@', LIGHTCYAN, _("Terence"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     20, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 10,
@@ -7061,7 +7064,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_JESSICA, '@', LIGHTGREY, "Jessica",
+    MONS_JESSICA, '@', LIGHTGREY, _("Jessica"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     125, MONS_HUMAN, MONS_HUMAN, MH_NATURAL | MH_EVIL, 10,
@@ -7074,7 +7077,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SIGMUND, '@', YELLOW, "Sigmund",
+    MONS_SIGMUND, '@', YELLOW, _("Sigmund"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     50, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 10,
@@ -7087,7 +7090,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_EDMUND, '@', RED, "Edmund",
+    MONS_EDMUND, '@', RED, _("Edmund"),
     M_UNIQUE | M_FIGHTER | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     15, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 20,
@@ -7100,7 +7103,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_PSYCHE, '@', LIGHTMAGENTA, "Psyche",
+    MONS_PSYCHE, '@', LIGHTMAGENTA, _("Psyche"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     20, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 60,
@@ -7113,7 +7116,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_DONALD, '@', BLUE, "Donald",
+    MONS_DONALD, '@', BLUE, _("Donald"),
     M_UNIQUE | M_FIGHTER | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     20, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 100,
@@ -7126,7 +7129,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_JOSEPH, '@', CYAN, "Joseph",
+    MONS_JOSEPH, '@', CYAN, _("Joseph"),
     M_UNIQUE | M_FIGHTER | M_ARCHER | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     15, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 40,
@@ -7139,7 +7142,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_ERICA, '@', MAGENTA, "Erica",
+    MONS_ERICA, '@', MAGENTA, _("Erica"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     20, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 60,
@@ -7152,7 +7155,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_JOSEPHINE, '@', WHITE, "Josephine",
+    MONS_JOSEPHINE, '@', WHITE, _("Josephine"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     mrd(MR_RES_NEG, 3),
     20, MONS_HUMAN, MONS_HUMAN, MH_NATURAL | MH_EVIL, 60,
@@ -7165,7 +7168,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_HAROLD, '@', LIGHTGREEN, "Harold",
+    MONS_HAROLD, '@', LIGHTGREEN, _("Harold"),
     M_UNIQUE | M_FIGHTER | M_WARM_BLOOD | M_MALE | M_SPEAKS,
     MR_NO_FLAGS,
     20, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 60,
@@ -7178,7 +7181,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_LOUISE, '@', LIGHTMAGENTA, "Louise",
+    MONS_LOUISE, '@', LIGHTMAGENTA, _("Louise"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     15, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 80,
@@ -7191,7 +7194,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_FRANCES, '@', YELLOW, "Frances",
+    MONS_FRANCES, '@', YELLOW, _("Frances"),
     M_UNIQUE | M_WARM_BLOOD | M_SEE_INVIS | M_FEMALE | M_SPEAKS,
     MR_NO_FLAGS,
     15, MONS_HUMAN, MONS_HUMAN, MH_NATURAL | MH_EVIL, 100,
@@ -7204,7 +7207,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_RUPERT, '@', LIGHTRED, "Rupert",
+    MONS_RUPERT, '@', LIGHTRED, _("Rupert"),
     M_UNIQUE | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     18, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 100,
@@ -7217,7 +7220,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_KIRKE, '@', LIGHTBLUE, "Kirke",
+    MONS_KIRKE, '@', LIGHTBLUE, _("Kirke"),
     M_UNIQUE | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     15, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 100,
@@ -7230,7 +7233,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_FREDERICK, '@', GREEN, "Frederick",
+    MONS_FREDERICK, '@', GREEN, _("Frederick"),
     M_UNIQUE | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     15, MONS_DEMIGOD, MONS_DEMIGOD, MH_NATURAL, 140,
@@ -7243,7 +7246,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_MAGGIE, '@', LIGHTRED, "Maggie",
+    MONS_MAGGIE, '@', LIGHTRED, _("Maggie"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     20, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 20,
@@ -7256,7 +7259,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_MARGERY, '@', LIGHTRED, "Margery",
+    MONS_MARGERY, '@', LIGHTRED, _("Margery"),
     M_UNIQUE | M_WARM_BLOOD | M_SEE_INVIS | M_SPEAKS | M_FEMALE,
     MR_NO_FLAGS,
     15, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 140,
@@ -7269,7 +7272,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_EUSTACHIO, '@', BLUE, "Eustachio",
+    MONS_EUSTACHIO, '@', BLUE, _("Eustachio"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE,
     MR_NO_FLAGS,
     20, MONS_HUMAN, MONS_HUMAN, MH_NATURAL | MH_EVIL, 20,
@@ -7282,7 +7285,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_MAURICE, '@', GREEN, "Maurice",
+    MONS_MAURICE, '@', GREEN, _("Maurice"),
     M_UNIQUE | M_WARM_BLOOD | M_SPEAKS | M_MALE | M_ALWAYS_WAND,
     MR_NO_FLAGS,
     24, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 20,
@@ -7295,7 +7298,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_NIKOLA, '@', LIGHTCYAN, "Nikola",
+    MONS_NIKOLA, '@', LIGHTCYAN, _("Nikola"),
     M_UNIQUE | M_WARM_BLOOD | M_SEE_INVIS | M_MALE | M_SPEAKS,
     MR_NO_FLAGS, // Xom would hate MR_RES_ELEC here.
     13, MONS_HUMAN, MONS_HUMAN, MH_NATURAL, 120,
@@ -7309,7 +7312,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // unique major demons ('&')
 {
-    MONS_MNOLEG, '&', LIGHTGREEN, "Mnoleg",
+    MONS_MNOLEG, '&', LIGHTGREEN, _("Mnoleg"),
     M_UNIQUE | M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_TALL_TILE
         | M_GENDER_NEUTRAL,
     MR_RES_ELEC | MR_RES_POISON | MR_RES_FIRE,
@@ -7324,7 +7327,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_LOM_LOBON, '&', LIGHTBLUE, "Lom Lobon",
+    MONS_LOM_LOBON, '&', LIGHTBLUE, _("Lom Lobon"),
     M_UNIQUE | M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_FLIES | M_TALL_TILE
         | M_GENDER_NEUTRAL,
     MR_RES_POISON | MR_RES_FIRE | mrd(MR_RES_COLD | MR_RES_ELEC, 3),
@@ -7338,7 +7341,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_CEREBOV, '&', RED, "Cerebov",
+    MONS_CEREBOV, '&', RED, _("Cerebov"),
     M_UNIQUE | M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_TALL_TILE
         | M_GENDER_NEUTRAL,
     MR_RES_POISON | MR_RES_DAMNATION | mrd(MR_RES_FIRE, 3),
@@ -7352,7 +7355,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_GLOORX_VLOQ, '&', LIGHTGREY, "Gloorx Vloq",
+    MONS_GLOORX_VLOQ, '&', LIGHTGREY, _("Gloorx Vloq"),
     M_UNIQUE | M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_FLIES | M_TALL_TILE
         | M_GENDER_NEUTRAL,
     MR_RES_POISON | MR_RES_COLD | MR_RES_ELEC,
@@ -7366,7 +7369,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_GERYON, '&', GREEN, "Geryon",
+    MONS_GERYON, '&', GREEN, _("Geryon"),
     M_UNIQUE | M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_MALE | M_FLIES
         | M_TALL_TILE,
     MR_NO_FLAGS,
@@ -7381,7 +7384,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_DISPATER, '&', MAGENTA, "Dispater",
+    MONS_DISPATER, '&', MAGENTA, _("Dispater"),
     M_UNIQUE | M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_TALL_TILE
         | M_GENDER_NEUTRAL,
     mrd(MR_RES_ELEC | MR_RES_FIRE, 3) | MR_RES_POISON | MR_RES_DAMNATION
@@ -7396,7 +7399,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_ASMODEUS, '&', LIGHTRED, "Asmodeus",
+    MONS_ASMODEUS, '&', LIGHTRED, _("Asmodeus"),
     M_UNIQUE | M_FIGHTER | M_SEE_INVIS | M_SPEAKS | M_MALE | M_FLIES
         | M_TALL_TILE | M_FIRE_RING,
     MR_RES_ELEC | MR_RES_POISON | MR_RES_DAMNATION | mrd(MR_RES_FIRE, 3),
@@ -7410,7 +7413,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_ERESHKIGAL, '&', WHITE, "Ereshkigal",
+    MONS_ERESHKIGAL, '&', WHITE, _("Ereshkigal"),
     M_UNIQUE | M_SEE_INVIS | M_SPEAKS | M_FEMALE | M_TALL_TILE,
     MR_RES_ELEC | MR_RES_POISON | MR_RES_COLD,
     15, MONS_HELL_LORD, MONS_ERESHKIGAL, MH_DEMONIC, WILL_INVULN,
@@ -7426,7 +7429,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 // unkillable, just sits there doing nothing but casting Shadow Creatures
 // over and over.
 {
-    MONS_TEST_SPAWNER, 'X', WHITE, "test spawner",
+    MONS_TEST_SPAWNER, 'X', WHITE, _("test spawner"),
     M_STATIONARY | M_INSUBSTANTIAL | M_NO_POLY_TO | M_FAST_REGEN,
     mrd(MR_RES_ELEC | MR_RES_FIRE | MR_RES_COLD
         | MR_RES_MIASMA | MR_RES_ACID, 4) | MR_RES_STICKY_FLAME,
@@ -7441,7 +7444,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // tons of hp, just sits there doing nothing except being a target.
 {
-    MONS_TEST_STATUE, 'X', WHITE, "test statue",
+    MONS_TEST_STATUE, 'X', WHITE, _("test statue"),
     M_STATIONARY | M_NO_POLY_TO | M_FAST_REGEN | M_NO_THREAT,
     MR_NO_FLAGS,
     15, MONS_TEST_STATUE, MONS_TEST_STATUE, MH_NONLIVING, 20,
@@ -7455,7 +7458,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // tons of hp, does not attack, but not stationary
 {
-    MONS_TEST_BLOB, 'J', WHITE, "test blob",
+    MONS_TEST_BLOB, 'J', WHITE, _("test blob"),
     M_NO_POLY_TO | M_FAST_REGEN | M_NO_THREAT,
     MR_NO_FLAGS,
     15, MONS_TEST_STATUE, MONS_TEST_STATUE, MH_NONLIVING, 20,
@@ -7470,7 +7473,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 
 // an unspecified monster
 {
-    MONS_SENSED, '{', RED, "sensed monster",
+    MONS_SENSED, '{', RED, _("sensed monster"),
     M_CANT_SPAWN,
     MR_NO_FLAGS,
     0, MONS_SENSED, MONS_SENSED, MH_NONLIVING, 0,
@@ -7483,7 +7486,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SENSED_FRIENDLY, '{', GREEN, "friendly sensed monster",
+    MONS_SENSED_FRIENDLY, '{', GREEN, _("friendly sensed monster"),
     M_CANT_SPAWN,
     MR_NO_FLAGS,
     0, MONS_SENSED, MONS_SENSED, MH_NONLIVING, 0,
@@ -7496,7 +7499,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SENSED_TRIVIAL, '{', BLUE, "trivial sensed monster",
+    MONS_SENSED_TRIVIAL, '{', BLUE, _("trivial sensed monster"),
     M_CANT_SPAWN,
     MR_NO_FLAGS,
     0, MONS_SENSED, MONS_SENSED, MH_NONLIVING, 0,
@@ -7509,7 +7512,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SENSED_EASY, '{', LIGHTGRAY, "easy sensed monster",
+    MONS_SENSED_EASY, '{', LIGHTGRAY, _("easy sensed monster"),
     M_CANT_SPAWN,
     MR_NO_FLAGS,
     0, MONS_SENSED, MONS_SENSED, MH_NONLIVING, 0,
@@ -7522,7 +7525,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SENSED_TOUGH, '{', YELLOW, "tough sensed monster",
+    MONS_SENSED_TOUGH, '{', YELLOW, _("tough sensed monster"),
     M_CANT_SPAWN,
     MR_NO_FLAGS,
     0, MONS_SENSED, MONS_SENSED, MH_NONLIVING, 0,
@@ -7535,7 +7538,7 @@ DUMMY(MONS_HELL_LORD, '&', COLOUR_UNDEF, "hell lord", TILEP_MONS_PROGRAM_BUG)
 },
 
 {
-    MONS_SENSED_NASTY, '{', LIGHTRED, "nasty sensed monster",
+    MONS_SENSED_NASTY, '{', LIGHTRED, _("nasty sensed monster"),
     M_CANT_SPAWN,
     MR_NO_FLAGS,
     0, MONS_SENSED, MONS_SENSED, MH_NONLIVING, 0,

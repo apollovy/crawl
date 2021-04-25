@@ -72,6 +72,8 @@
 #include "view.h"
 #include "crawl_locale.h"
 
+#define gettext_noop(String) String
+
 #ifdef DEBUG_RELIGION
 #    define DEBUG_DIAGNOSTICS
 #    define DEBUG_GIFTS
@@ -2128,39 +2130,39 @@ string god_name(god_type which_god, bool long_name)
 
     switch (which_god)
     {
-    case GOD_NO_GOD:        return _("No God");
-    case GOD_RANDOM:        return _("random");
-    case GOD_NAMELESS:      return _("nameless");
-    case GOD_ZIN:           return _("Zin");
-    case GOD_SHINING_ONE:   return _("the Shining One");
-    case GOD_KIKUBAAQUDGHA: return _("Kikubaaqudgha");
-    case GOD_YREDELEMNUL:   return _("Yredelemnul");
-    case GOD_VEHUMET:       return _("Vehumet");
-    case GOD_OKAWARU:       return _("Okawaru");
-    case GOD_MAKHLEB:       return _("Makhleb");
-    case GOD_SIF_MUNA:      return _("Sif Muna");
-    case GOD_TROG:          return _("Trog");
-    case GOD_NEMELEX_XOBEH: return _("Nemelex Xobeh");
-    case GOD_ELYVILON:      return _("Elyvilon");
-    case GOD_LUGONU:        return _("Lugonu");
-    case GOD_BEOGH:         return _("Beogh");
-    case GOD_FEDHAS:        return _("Fedhas");
-    case GOD_CHEIBRIADOS:   return _("Cheibriados");
-    case GOD_XOM:           return _("Xom");
-    case GOD_ASHENZARI:     return _("Ashenzari");
-    case GOD_DITHMENOS:     return _("Dithmenos");
-    case GOD_GOZAG:         return _("Gozag");
-    case GOD_QAZLAL:        return _("Qazlal");
-    case GOD_RU:            return _("Ru");
+    case GOD_NO_GOD:        return gettext_noop("No God");
+    case GOD_RANDOM:        return gettext_noop("random");
+    case GOD_NAMELESS:      return gettext_noop("nameless");
+    case GOD_ZIN:           return gettext_noop("Zin");
+    case GOD_SHINING_ONE:   return gettext_noop("the Shining One");
+    case GOD_KIKUBAAQUDGHA: return gettext_noop("Kikubaaqudgha");
+    case GOD_YREDELEMNUL:   return gettext_noop("Yredelemnul");
+    case GOD_VEHUMET:       return gettext_noop("Vehumet");
+    case GOD_OKAWARU:       return gettext_noop("Okawaru");
+    case GOD_MAKHLEB:       return gettext_noop("Makhleb");
+    case GOD_SIF_MUNA:      return gettext_noop("Sif Muna");
+    case GOD_TROG:          return gettext_noop("Trog");
+    case GOD_NEMELEX_XOBEH: return gettext_noop("Nemelex Xobeh");
+    case GOD_ELYVILON:      return gettext_noop("Elyvilon");
+    case GOD_LUGONU:        return gettext_noop("Lugonu");
+    case GOD_BEOGH:         return gettext_noop("Beogh");
+    case GOD_FEDHAS:        return gettext_noop("Fedhas");
+    case GOD_CHEIBRIADOS:   return gettext_noop("Cheibriados");
+    case GOD_XOM:           return gettext_noop("Xom");
+    case GOD_ASHENZARI:     return gettext_noop("Ashenzari");
+    case GOD_DITHMENOS:     return gettext_noop("Dithmenos");
+    case GOD_GOZAG:         return gettext_noop("Gozag");
+    case GOD_QAZLAL:        return gettext_noop("Qazlal");
+    case GOD_RU:            return gettext_noop("Ru");
 #if TAG_MAJOR_VERSION == 34
-    case GOD_PAKELLAS:      return _("Pakellas");
+    case GOD_PAKELLAS:      return gettext_noop("Pakellas");
 #endif
-    case GOD_USKAYAW:       return _("Uskayaw");
-    case GOD_HEPLIAKLQANA:  return _("Hepliaklqana");
-    case GOD_WU_JIAN:     return _("Wu Jian");
+    case GOD_USKAYAW:       return gettext_noop("Uskayaw");
+    case GOD_HEPLIAKLQANA:  return gettext_noop("Hepliaklqana");
+    case GOD_WU_JIAN:     return gettext_noop("Wu Jian");
     case GOD_JIYVA: // This is handled at the beginning of the function
-    case GOD_ECUMENICAL:    return _("an unknown god");
-    case NUM_GODS:          return _("Buggy");
+    case GOD_ECUMENICAL:    return gettext_noop("an unknown god");
+    case NUM_GODS:          return gettext_noop("Buggy");
     }
     return "";
 }
@@ -4731,7 +4733,7 @@ const god_power* god_power_from_ability(ability_type abil)
     return nullptr;
 }
 
-const char* god_description(god_type religion, const string& god_name, const string& jiyva_second_name)
+string god_description(god_type religion, const string& god_name, const string& jiyva_second_name)
 {
     return religion == GOD_JIYVA ? _(make_stringf(
             " of %s %s",
