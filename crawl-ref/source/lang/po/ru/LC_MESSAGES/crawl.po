@@ -1680,13 +1680,7 @@ msgstr "полёт"
 msgid "corrosion"
 msgstr "коррозия"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/viewchar.cc:104
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/colour.cc:532
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tilereg-dgn.cc:382
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:518
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1922
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature-data.h:241
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature-data.h:310
+#: tilereg-dgn.cc:383
 msgid "floor"
 msgstr "пол"
 
@@ -3222,11 +3216,164 @@ msgid "An "
 msgstr " "
 
 #. (одно)головая гидра
-#: english.cc:366
+#: english.cc:367
 msgid "one-"
 msgstr "одно"
 
-#: english.cc:418
+#: english.cc:423
 msgid "the "
 msgstr " "
+
+#: tilereg-abl.cc:89 tilereg-mem.cc:87 tilereg-spl.cc:87 tilereg-dgn.cc:726
+#: tilereg-cmd.cc:87 tilereg-skl.cc:107 tilereg-skl.cc:130 tilereg-inv.cc:252
+msgid "[L-Click] "
+msgstr "[Л-Клик] "
+
+#: tilereg-abl.cc:114
+msgid "[L-Click] Use (%)"
+msgstr "[Л-Клик] Использовать (%)"
+
+#: tilereg-abl.cc:118 tilereg-mem.cc:116 tilereg-skl.cc:141 tilereg-inv.cc:472
+msgid "\n"
+"[R-Click] Describe"
+msgstr "\n"
+"[П-Клик] Описание"
+
+#: tilereg-mem.cc:112
+msgid "[L-Click] Memorise (%)"
+msgstr "[Л-Клик] Запомнить (%)"
+
+#: directn.cc:2420
+msgid "[unseen terrain]"
+msgstr "[невиданные земли]"
+
+#: tilereg-spl.cc:112
+msgid "[L-Click] Cast (%)"
+msgstr "[Л-Клик] Колдовать (%)"
+
+#: tilereg-spl.cc:116
+msgid "\n"
+"[R-Click] Describe (%)"
+msgstr "\n"
+"[П-Клик] Описание (%)"
+
+#: tilereg-dgn.cc:718 tilereg-dgn.cc:754
+msgid "[L-Click] Move"
+msgstr "[Л-Клик] Переместиться"
+
+#: tilereg-dgn.cc:734
+msgid "[L-Click] Attack"
+msgstr "[Л-Клик] Атаковать"
+
+#: tilereg-dgn.cc:736 tilereg-dgn.cc:760 tilereg-dgn.cc:770
+msgid "[L-Click] Move towards"
+msgstr "[Л-Клик] Двигаться к"
+
+#: tilereg-dgn.cc:742
+msgid "[L-Click / Shift + L-Click] "
+msgstr "[Л-Клик / Shift + Л-Клик] "
+
+#: tilereg-dgn.cc:743 tilereg-dgn.cc:798
+msgid "[Shift + L-Click] "
+msgstr "[Shift + Л-Клик] "
+
+#: tilereg-dgn.cc:758 tilereg-dgn.cc:768
+msgid "[L-Click] Travel"
+msgstr "[Л-Клик] Путешествовать"
+
+#: tilereg-dgn.cc:774
+msgid "[L-Click] Open door (%)"
+msgstr "[Л-Клик] Открыть дверь (%)"
+
+#: tilereg-dgn.cc:789
+msgid "[L-Click] Pick up items (%)"
+msgstr "[Л-Клик] Поднять предметы (%)"
+
+#: tilereg-dgn.cc:828
+msgid "[L-Click] Use stairs (%)"
+msgstr "[Л-Клик] Использовать лестницу (%)"
+
+#: tilereg-dgn.cc:834
+msgid "[L-Click] Pray at altar (%)"
+msgstr "[Л-Клик] Молиться на алтаре (%)"
+
+#: tilereg-dgn.cc:840
+msgid "[L-Click] Wait one turn (%)"
+msgstr "[Л-Клик] Подождать 1 ход (%)"
+
+#: tilereg-dgn.cc:851
+msgid "[R-Click] Overview (%)"
+msgstr "[П-Клик] Обзор (%)"
+
+#: tilereg-dgn.cc:857
+msgid "[Shift + R-Click] Religion (%)"
+msgstr "[Shift + П-Клик] Религия (%)"
+
+#: tilereg-dgn.cc:864
+msgid "[R-Click] Describe"
+msgstr "[П-Клик] Описание"
+
+#: tilereg-cmd.cc:103
+msgid "[L-Click] %s"
+msgstr "[Л-Клик] %s"
+
+#: tilereg-skl.cc:109
+msgctxt "%([L-Click]) %(Manage skills)s"
+msgid "%s%s"
+msgstr "%s%s"
+
+#: tilereg-skl.cc:138
+msgid "\n"
+"[Ctrl + L-Click] Change skill level (wizmode)"
+msgstr "\n"
+"[Ctrl + Л-Клик]  Изменить уровень навыка (режим волшебника)"
+
+#: tilereg-inv.cc:274
+msgid "Next page\n"
+"[L-Click] Show next page of items"
+msgstr "Следующая страница\n"
+"[Л-Клик] Показать следующую страницу предметов"
+
+#: tilereg-inv.cc:279
+msgid "Previous page\n"
+"[L-Click] Show previous page of items"
+msgstr "Предыдушая страница\n"
+"[Л-Клик] Показать предыдущую страницу предметов"
+
+#: tilereg-inv.cc:321
+msgid "\n"
+"[L-Click] Pick up (%)"
+msgstr "\n"
+"[Л-Клик] Поднять (%)"
+
+#: tilereg-inv.cc:325
+msgid "\n"
+"[Ctrl + L-Click] Partial pick up (%)"
+msgstr "\n"
+"[Ctrl + Л-Клик] Поднять часть (%)"
+
+#: tilereg-inv.cc:349
+msgid "\n"
+"[L-Click] "
+msgstr "\n"
+"[Л-Клик] "
+
+#: tilereg-inv.cc:375 tilereg-inv.cc:384
+msgid "\n"
+"[Ctrl + L-Click] Fire (f)"
+msgstr "\n"
+"[Ctrl + Л-Клик] Стрелять (f)"
+
+#: tilereg-inv.cc:397 tilereg-inv.cc:426 tilereg-inv.cc:433 tilereg-inv.cc:442
+#: tilereg-inv.cc:452 tilereg-inv.cc:458 tilereg-inv.cc:462
+msgid "\n"
+"[Ctrl + L-Click] "
+msgstr "\n"
+"[Ctrl + Л-Клик] "
+
+#: tilereg-inv.cc:477
+msgid "\n"
+"[Shift + L-Click] Drop (%)"
+msgstr "\n"
+"[Shift + Л-Клик] Бросить (%)"
 

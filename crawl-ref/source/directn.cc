@@ -2417,7 +2417,7 @@ bool direction_chooser::choose_direction()
 string get_terse_square_desc(const coord_def &gc)
 {
     string desc = "";
-    const char *unseen_desc = "[unseen terrain]";
+    const char *unseen_desc = _("[unseen terrain]");
 
     if (gc == you.pos())
         desc = you.your_name;

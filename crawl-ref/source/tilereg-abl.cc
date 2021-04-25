@@ -16,6 +16,7 @@
 #include "rltiles/tiledef-icons.h"
 #include "tilepick.h"
 #include "tiles-build-specific.h"
+#include "crawl_locale.h"
 
 AbilityRegion::AbilityRegion(const TileRegionInit &init) : GridRegion(init)
 {
@@ -45,7 +46,7 @@ void AbilityRegion::draw_tag()
     const ability_type ability = (ability_type) idx;
     const string failure = failure_rate_to_string(get_talent(ability,
                                                              false).fail);
-    string desc = make_stringf("%s    (%s)",
+    string desc = make_stringf(_("%s    (%s)"),
                                ability_name(ability), failure.c_str());
     draw_desc(desc.c_str());
 }
@@ -85,12 +86,12 @@ int AbilityRegion::handle_mouse(wm_mouse_event &event)
 
 bool AbilityRegion::update_tab_tip_text(string &tip, bool active)
 {
-    const char *prefix1 = active ? "" : "[L-Click] ";
+    const char *prefix1 = active ? "" : _("[L-Click] ");
     const char *prefix2 = active ? "" : "          ";
 
-    tip = make_stringf("%s%s\n%s%s",
-                       prefix1, "Display abilities",
-                       prefix2, "Use abilities");
+    tip = make_stringf(_("%s%s\n%s%s"),
+                       prefix1, _("Display abilities"),
+                       prefix2, _("Use abilities"));
 
     return true;
 }
@@ -107,14 +108,14 @@ bool AbilityRegion::update_tip_text(string& tip)
     int flag = m_items[item_idx].flag;
     vector<command_type> cmd;
     if (flag & TILEI_FLAG_INVALID)
-        tip = "You cannot use this ability right now.";
+        tip = _("You cannot use this ability right now.");
     else
     {
-        tip = "[L-Click] Use (%)";
+        tip = _("[L-Click] Use (%)");
         cmd.push_back(CMD_USE_ABILITY);
     }
 
-    tip += "\n[R-Click] Describe";
+    tip += _("\n[R-Click] Describe");
     insert_commands(tip, cmd);
 
     return true;
