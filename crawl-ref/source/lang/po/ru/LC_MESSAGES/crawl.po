@@ -1267,7 +1267,7 @@ msgstr "опустошение"
 msgid "chaos"
 msgstr "хаос"
 
-#: item-name.cc:382
+#: output.cc:2567 item-name.cc:382
 msgid "slow"
 msgstr "замедление"
 
@@ -2816,6 +2816,10 @@ msgstr "Ру"
 msgid "venom"
 msgstr "яд"
 
+#: output.cc:2371 item-name.cc:581 item-name.cc:789
+msgid "rPois"
+msgstr "сЯду"
+
 #: item-name.cc:665
 msgid "ambrosia"
 msgstr "амброзия"
@@ -3199,7 +3203,7 @@ msgstr " и "
 msgid "spattered with blood"
 msgstr "забрызганный кровью"
 
-#: english.cc:359
+#: output.cc:1556 english.cc:359
 msgid "a "
 msgstr " "
 
@@ -3207,7 +3211,7 @@ msgstr " "
 msgid "A "
 msgstr " "
 
-#: english.cc:360
+#: output.cc:1556 english.cc:360
 msgid "an "
 msgstr " "
 
@@ -3220,7 +3224,7 @@ msgstr " "
 msgid "one-"
 msgstr "одно"
 
-#: english.cc:423
+#: output.cc:1558 english.cc:423
 msgid "the "
 msgstr " "
 
@@ -3322,11 +3326,43 @@ msgctxt "%([L-Click]) %(Manage skills)s"
 msgid "%s%s"
 msgstr "%s%s"
 
+#: tilereg-skl.cc:109
+msgid "Manage skills"
+msgstr "Управлять навыками"
+
+#: tilereg-skl.cc:125
+msgid "You cannot train this skill now."
+msgstr "Вы не можете тренировать этот навык сейчас"
+
+#: tilereg-skl.cc:132
+msgid "Disable training"
+msgstr "Не тренировать"
+
+#: tilereg-skl.cc:134
+msgid "Enable training"
+msgstr "Тренировать"
+
 #: tilereg-skl.cc:138
 msgid "\n"
 "[Ctrl + L-Click] Change skill level (wizmode)"
 msgstr "\n"
 "[Ctrl + Л-Клик]  Изменить уровень навыка (режим волшебника)"
+
+#: tilereg-inv.cc:244
+msgid "Unwield (%-)"
+msgstr "Убрать из рук (%-)"
+
+#: tilereg-inv.cc:246
+msgid "Wield (%)"
+msgstr "Взять в руки (%)"
+
+#: tilereg-inv.cc:256
+msgid "Display inventory"
+msgstr "Показать Инвентарь"
+
+#: tilereg-inv.cc:257
+msgid "Use items"
+msgstr "Использовать Вещи"
 
 #: tilereg-inv.cc:274
 msgid "Next page\n"
@@ -3339,6 +3375,14 @@ msgid "Previous page\n"
 "[L-Click] Show previous page of items"
 msgstr "Предыдушая страница\n"
 "[Л-Клик] Показать предыдущую страницу предметов"
+
+#: tilereg-inv.cc:314
+msgid " (holding %s)"
+msgstr " (в руках %s)"
+
+#: tilereg-inv.cc:316
+msgid "nobody"
+msgstr "никто"
 
 #: tilereg-inv.cc:321
 msgid "\n"
@@ -3364,6 +3408,14 @@ msgid "\n"
 msgstr "\n"
 "[Ctrl + Л-Клик] Стрелять (f)"
 
+#: tilereg-inv.cc:389
+msgid "Evoke (V)"
+msgstr "Использовать (V)"
+
+#: tilereg-inv.cc:395 tilereg-inv.cc:430
+msgid "Evoke (%)"
+msgstr "Использовать (%)"
+
 #: tilereg-inv.cc:397 tilereg-inv.cc:426 tilereg-inv.cc:433 tilereg-inv.cc:442
 #: tilereg-inv.cc:452 tilereg-inv.cc:458 tilereg-inv.cc:462
 msgid "\n"
@@ -3371,9 +3423,435 @@ msgid "\n"
 msgstr "\n"
 "[Ctrl + Л-Клик] "
 
+#: tilereg-inv.cc:403
+msgid "Wear (%)"
+msgstr "Надеть (%)"
+
+#: tilereg-inv.cc:408
+msgid "Take off (%)"
+msgstr "Снять (%)"
+
+#: tilereg-inv.cc:412
+msgid "Put on (%)"
+msgstr "Надеть (%)"
+
+#: tilereg-inv.cc:416
+msgid "Remove (%)"
+msgstr "Снять (%)"
+
+#: tilereg-inv.cc:422
+msgid "Fire (%)"
+msgstr "Стрелять (%)"
+
+#: tilereg-inv.cc:439
+msgid "Memorise (%)"
+msgstr "Запомнить (%)"
+
+#: tilereg-inv.cc:449
+msgid "Read (%)"
+msgstr "Читать (%)"
+
+#: tilereg-inv.cc:455
+msgid "Quaff (%)"
+msgstr "Выпить (%)"
+
+#: tilereg-inv.cc:465
+msgid "Use"
+msgstr "Использовать"
+
 #: tilereg-inv.cc:477
 msgid "\n"
 "[Shift + L-Click] Drop (%)"
 msgstr "\n"
 "[Shift + Л-Клик] Бросить (%)"
+
+#: tilereg-inv.cc:521 tilereg-inv.cc:549
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: tilereg-inv.cc:526 tilereg-inv.cc:551
+msgid "Previous page"
+msgstr "Предыдущая страница"
+
+#: output.cc:593
+msgid "Eq: "
+msgstr "Шм: "
+
+#: output.cc:593
+msgid "Equip: "
+msgstr "Надето: "
+
+#: output.cc:630
+msgid "Noise: "
+msgstr "Шум: "
+
+#: output.cc:680
+msgid "Silenced  "
+msgstr "Заглушён  "
+
+#: output.cc:720
+msgid "Gold:"
+msgstr "Золото:"
+
+#: output.cc:751
+msgid "MP: "
+msgstr "MP: "
+
+#: output.cc:751 output.cc:2157
+msgid "Magic:  "
+msgstr "Магия:  "
+
+#: output.cc:810
+msgid "HP: "
+msgstr "HP: "
+
+#: output.cc:810 output.cc:2137
+msgid "Health: "
+msgstr "Здоровье: "
+
+#: output.cc:1355
+msgid "XL: "
+msgstr "XL: "
+
+#: output.cc:1363
+msgid "Next: "
+msgstr "След: "
+
+#: output.cc:1451
+msgid "AC:"
+msgstr "КБ:"
+
+#: output.cc:1452
+msgid "EV:"
+msgstr "Укл:"
+
+#: output.cc:1453
+msgid "SH:"
+msgstr "КЩ:"
+
+#: output.cc:1455
+msgid "Str:"
+msgstr "Сил:"
+
+#: output.cc:1456
+msgid "Int:"
+msgstr "Инт:"
+
+#: output.cc:1457
+msgid "Dex:"
+msgstr "Лвк:"
+
+#: output.cc:1460
+msgid "Time:"
+msgstr "Время:"
+
+#: output.cc:1460
+msgid "Turn:"
+msgstr "Ход:"
+
+#: output.cc:1469
+msgid "Your terminal window is too small; please resize to at least %d,%d"
+msgstr "Ваше окно терминала слишком маленькое; пожалуйста, изменит размер хотя бы до %d,%d"
+
+#: output.cc:1545
+msgid "friendly"
+msgstr "дружелюбный"
+
+#: output.cc:1547
+msgid "neutral"
+msgstr "нейтральный"
+
+#: output.cc:1576
+msgid "There %s no monsters in sight"
+msgstr "В зоне видимости не%s монстров"
+
+#: output.cc:1576
+msgid "were"
+msgstr " было"
+
+#: output.cc:1576
+msgid "are"
+msgstr "т"
+
+#: output.cc:1597
+msgctxt "You %(could see)s %(a Bahamut)s."
+msgid "You %s %s."
+msgstr "Вы %s %s."
+
+#: output.cc:1598
+msgid "could see"
+msgstr "видели"
+
+#: output.cc:1598
+msgid "can see"
+msgstr "видите"
+
+#: output.cc:1815
+msgid "Weapon"
+msgstr "Оружие"
+
+#: output.cc:1815
+msgid "Cloak"
+msgstr "Накидка"
+
+#: output.cc:1815
+msgid "Helmet"
+msgstr "Шлем"
+
+#: output.cc:1815
+msgid "Gloves"
+msgstr "Перчатки"
+
+#: output.cc:1815
+msgid "Boots"
+msgstr "Ботинки"
+
+#: output.cc:1816
+msgid "Shield"
+msgstr "Щит"
+
+#: output.cc:1816
+msgid "Armour"
+msgstr "Броня"
+
+#: output.cc:1816
+msgid "Left Ring"
+msgstr "Левое кольцо"
+
+#: output.cc:1816
+msgid "Right Ring"
+msgstr "Правое кольцо"
+
+#: output.cc:1816
+msgid "Amulet"
+msgstr "Амулет"
+
+#: output.cc:1817
+msgid "First Ring"
+msgstr "Первое кольцо"
+
+#: output.cc:1817
+msgid "Second Ring"
+msgstr "Второе кольцо"
+
+#: output.cc:1817
+msgid "Third Ring"
+msgstr "Третье кольцо"
+
+#: output.cc:1817
+msgid "Fourth Ring"
+msgstr "Четвёртое кольцо"
+
+#: output.cc:1818
+msgid "Fifth Ring"
+msgstr "Пятое кольцо"
+
+#: output.cc:1818
+msgid "Sixth Ring"
+msgstr "Шестое кольцо"
+
+#: output.cc:1818
+msgid "Seventh Ring"
+msgstr "Седьмое кольцо"
+
+#: output.cc:1818
+msgid "Eighth Ring"
+msgstr "Восьмое кольцо"
+
+#: output.cc:1819
+msgid "Amulet Ring"
+msgstr "Кольцо вокруг шеи"
+
+#: output.cc:1829
+msgid "Ring"
+msgstr "Кольцо"
+
+#: output.cc:1894
+msgid "Stlth    "
+msgstr "Скырт:   "
+
+#: output.cc:1963
+msgid "melded "
+msgstr "слитый "
+
+#: output.cc:1972
+msgid "  - Unarmed"
+msgstr "  - Без оружия"
+
+#: output.cc:1981 output.cc:1991
+msgid "<darkgrey>(no %s)</darkgrey>"
+msgstr "<darkgrey>(нет %s)</darkgrey>"
+
+#: output.cc:1983
+msgid "<darkgrey>(%s unavailable)</darkgrey>"
+msgstr "<darkgrey>(%s недоступно)</darkgrey>"
+
+#: output.cc:1986
+msgid "<darkgrey>(%s currently unavailable)</darkgrey>"
+msgstr "<darkgrey>(%s в данный момент недоступно)</darkgrey>"
+
+#: output.cc:1989
+msgid "<darkgrey>(%s restricted)</darkgrey>"
+msgstr "<darkgrey>(%s ограничено)</darkgrey>"
+
+#: output.cc:2005
+msgid " Turns: %d, Time: "
+msgstr " Ходы: %d, Время: "
+
+#: output.cc:2135
+msgid "HP:   "
+msgstr "HP:   "
+
+#: output.cc:2155
+msgid "MP:   "
+msgstr "MP:   "
+
+#: output.cc:2177
+msgid "Gold: "
+msgstr "Злт:  "
+
+#: output.cc:2179
+msgid "Gold:   "
+msgstr "Золото: "
+
+#: output.cc:2189
+msgid "AC: "
+msgstr "КБ: "
+
+#: output.cc:2202
+msgid "EV: "
+msgstr "УКЛ: "
+
+#: output.cc:2215
+msgid "SH: "
+msgstr "КЩ: "
+
+#: output.cc:2228
+msgid "Str: "
+msgstr "Сил: "
+
+#: output.cc:2240
+msgid "Int: "
+msgstr "Инт: "
+
+#: output.cc:2252
+msgid "Dex: "
+msgstr "Лвк: "
+
+#: output.cc:2264
+msgid "XL:     "
+msgstr "XL:     "
+
+#: output.cc:2272
+msgid "   Next: "
+msgstr "   След: "
+
+#: output.cc:2282
+msgid "God:    "
+msgstr "Бог:    "
+
+#: output.cc:2299
+msgid "Spells: "
+msgstr "Заклинания: "
+
+#: output.cc:2302
+msgid "%d/%d levels left"
+msgstr "%d/%d уровней осталось"
+
+#: output.cc:2312
+msgid "Lives:  "
+msgstr "Жизни:  "
+
+#: output.cc:2318
+msgid "   Deaths: "
+msgstr "   Смерти: "
+
+#: output.cc:2362
+msgid "rFire"
+msgstr "сОгню"
+
+#: output.cc:2365
+msgid "rCold"
+msgstr "сХолод"
+
+#: output.cc:2368
+msgid "rNeg"
+msgstr "сНег"
+
+#: output.cc:2374
+msgid "rElec"
+msgstr "сЭлек"
+
+#: output.cc:2382
+msgid "rMut"
+msgstr "сМут"
+
+#: output.cc:2385
+msgid "Will"
+msgstr "Воля"
+
+#: output.cc:2391
+msgid "HPRegen  %d.%d%d/turn\n"
+""
+msgstr "HPРеген  %d.%d%d/ход\n"
+""
+
+#: output.cc:2397
+msgid "MPRegen  %d.%02d/turn%s\n"
+""
+msgstr "MPРеген %d.%02d/ход%s\n"
+"\n"
+""
+
+#: output.cc:2412
+msgid "SeeInvis"
+msgstr "ВидНевид"
+
+#: output.cc:2415
+msgid "Faith"
+msgstr "Вера"
+
+#: output.cc:2423
+msgid "Reflect"
+msgstr "Отражение"
+
+#: output.cc:2426
+msgid "Harm"
+msgstr "Вред"
+
+#: output.cc:2429
+msgid "Rampage"
+msgstr "Буйство"
+
+#: output.cc:2442
+msgid "Rnd*Rage"
+msgstr "Слч*Ярст"
+
+#: output.cc:2451
+msgid "NoTele"
+msgstr "НеТеле"
+
+#: output.cc:2453
+msgid "Rnd*Tele"
+msgstr "Слч*Теле"
+
+#: output.cc:2458
+msgid "NoCast"
+msgstr "НеКолд"
+
+#: output.cc:2565
+msgid "very quick"
+msgstr "очень быстрый"
+
+#: output.cc:2566
+msgid "quick"
+msgstr "быстрый"
+
+#: output.cc:2568
+msgid "very slow"
+msgstr "очень медленный"
+
+#: output.cc:2573
+msgid "no status effects"
+msgstr "нет эффектов статуса"
 
