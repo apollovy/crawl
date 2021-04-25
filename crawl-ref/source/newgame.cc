@@ -332,7 +332,7 @@ static void _choose_species_job(newgame_def& ng, newgame_def& ng_choice,
     {
         // Either an invalid combination was passed in through options,
         // or we messed up.
-        end(1, false, "Incompatible species and background (%s) selected.",
+        end(1, false, _("Incompatible species and background (%s) selected."),
                                 newgame_char_description(ng).c_str());
     }
 }
@@ -1268,7 +1268,7 @@ protected:
         string text;
         text += letter;
         text += " - ";
-        text += item_name;
+        text += _(item_name.c_str());
         label->set_text(formatted_string(text, fg));
 
         string desc = unwrap_desc(getGameStartDescription(item_name));

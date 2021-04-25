@@ -1984,8 +1984,8 @@ scorefile_entry::character_description(death_desc_verbosity verbosity) const
         ASSERT(birth_time);
         desc += make_stringf(_("Began as a%s %s %s on %s"),
                  is_vowel(srace[0]) ? _("n") : "",
-                 srace.c_str(),
-                 _job_name(job), _hiscore_date_string(birth_time).c_str());
+                 _(srace.c_str()),
+                 _(_job_name(job)), _hiscore_date_string(birth_time).c_str());
 
         // TODO: show seed here?
 
