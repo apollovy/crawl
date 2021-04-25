@@ -1064,28 +1064,28 @@ static void _construct_species_menu(const newgame_def& ng,
 static job_group jobs_order[] =
 {
     {
-        "Warrior",
+        gettext_noop("Warrior"),
         coord_def(0, 0), 20,
         { JOB_FIGHTER, JOB_GLADIATOR, JOB_MONK, JOB_HUNTER, JOB_BRIGAND }
     },
     {
-        "Adventurer",
+        gettext_noop("Adventurer"),
         coord_def(0, 7), 20,
         { JOB_ARTIFICER, JOB_WANDERER, JOB_DELVER, }
     },
     {
-        "Zealot",
+        gettext_noop("Zealot"),
         coord_def(1, 0), 25,
         { JOB_BERSERKER, JOB_ABYSSAL_KNIGHT, JOB_CHAOS_KNIGHT }
     },
     {
-        "Warrior-mage",
+        gettext_noop("Warrior-mage"),
         coord_def(1, 5), 26,
         { JOB_TRANSMUTER, JOB_WARPER, JOB_ARCANE_MARKSMAN,
           JOB_ENCHANTER }
     },
     {
-        "Mage",
+        gettext_noop("Mage"),
         coord_def(2, 0), 22,
         { JOB_WIZARD, JOB_CONJURER, JOB_SUMMONER, JOB_NECROMANCER,
           JOB_FIRE_ELEMENTALIST, JOB_ICE_ELEMENTALIST,
@@ -1498,7 +1498,7 @@ void UINewGameMenu::menu_item_activated(int id)
 void job_group::attach(const newgame_def& ng, const newgame_def& defaults,
                        UINewGameMenu* ng_menu, menu_letter &letter)
 {
-    ng_menu->_add_group_title(name, position);
+    ng_menu->_add_group_title(_(name), position);
 
     coord_def pos(position);
 
@@ -1543,7 +1543,7 @@ void job_group::attach(const newgame_def& ng, const newgame_def& defaults,
 void species_group::attach(const newgame_def& ng, const newgame_def& defaults,
                        UINewGameMenu* ng_menu, menu_letter &letter)
 {
-    ng_menu->_add_group_title(name, position);
+    ng_menu->_add_group_title(_(name), position);
 
     coord_def pos(position);
 

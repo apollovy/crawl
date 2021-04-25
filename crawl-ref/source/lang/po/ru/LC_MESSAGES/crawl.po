@@ -60,7 +60,7 @@ msgstr "вы"
 msgid "firewood"
 msgstr "дрова"
 
-#: ../mon-data.h:6173
+#: mon-project.cc:294 mon-data.h:6173
 msgid "orb of destruction"
 msgstr "сфера разрушения"
 
@@ -80,158 +80,6 @@ msgstr "Вы слышите громкий магический взрыв!"
 msgid "You block %s."
 msgstr "Вы блокируете %s."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:528
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:185
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:431
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:1365
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:219
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:249
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:346
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/syscalls.cc:373
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-dgngrd.cc:65
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-dgngrd.cc:80
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3726
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/status.cc:372
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/status.cc:614
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/status.cc:830
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/status.cc:875
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/status.cc:989
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:3722
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:3729
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:3883
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:607
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1606
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1799
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1898
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1417
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:1151
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lookup-help.cc:1170
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lookup-help.cc:1346
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-wpnench.cc:129
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-book.cc:1059
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-explode.cc:209
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/view.cc:352
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/view.cc:370
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3083
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3099
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3414
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3613
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3619
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-prayer.cc:46
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:4717
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:7602
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:7790
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:7803
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:7960
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:7973
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/attack.cc:958
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/target.cc:715
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:601
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:1611
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:2477
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:2534
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:2626
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:2806
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:3690
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/throw.cc:967
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/clua.cc:624
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/delay.cc:1005
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/delay.cc:1053
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-dgnbld.cc:1443
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-dgnbld.cc:1922
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-dgnbld.cc:2025
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:813
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:909
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:918
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:950
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:1002
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:1014
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:1993
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2020
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2057
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2716
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2825
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/transform.cc:833
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/transform.cc:844
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/database.cc:155
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stairs.cc:581
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stairs.cc:856
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-cast.cc:112
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-cast.cc:1157
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mutation.cc:2432
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:4362
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:2013
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:2094
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:2120
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:2701
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:628
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:637
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:757
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:1433
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:1451
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/notes.cc:429
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/notes.cc:439
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-conduct.cc:481
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-conduct.cc:494
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-conduct.cc:1100
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-conduct.cc:1113
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-util.cc:5417
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/map-knowledge.cc:136
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:107
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:111
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:113
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:118
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:120
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:1014
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-mon.cc:527
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-mon.cc:546
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/message.cc:1731
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:628
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1108
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1378
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1383
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1395
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1461
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1472
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-act.cc:2649
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/files.cc:615
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/files.cc:630
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/files.cc:645
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/files.cc:748
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:297
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:5808
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:900
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:966
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:1428
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:1464
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:1887
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2003
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2215
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2290
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2315
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2377
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2395
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2398
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2610
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2611
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2628
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2724
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2833
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4645
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4923
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:5251
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ranged-attack.cc:169
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lang-fake.cc:197
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/chardump.cc:698
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/travel.cc:929
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/travel.cc:4694
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/travel.cc:4819
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:945
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1110
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-summoning.cc:653
-msgid "."
-msgstr "."
-
 #: newgame.cc:148
 msgid "Recommended character"
 msgstr "Рекомендуемый персонаж"
@@ -243,312 +91,6 @@ msgstr "Случайный персонаж"
 #: newgame.cc:153 newgame.cc:158
 msgid "Random "
 msgstr "Случайный "
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:161
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:172
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/newgame.cc:2131
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:436
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:666
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:706
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dlua.cc:134
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:4886
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/melee-attack.cc:2394
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ng-input.cc:20
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1300
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1378
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1407
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1431
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1464
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1548
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:1635
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:2841
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3020
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3030
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hints.cc:3568
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/actor.cc:911
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:763
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:764
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:3721
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:3977
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:3991
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:4011
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:4040
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:4072
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:4079
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:4649
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:4701
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:5126
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:5429
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:5439
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:5450
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:6010
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:6012
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:6014
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:605
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:692
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:772
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:822
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1146
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1204
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1648
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1656
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1659
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:1810
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/output.cc:2025
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:922
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:924
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:934
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:971
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:973
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1039
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1057
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1065
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1073
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1080
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1083
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1337
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1339
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1415
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-info.cc:1417
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:136
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:1305
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:1313
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:1324
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:1334
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:1338
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:2043
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/items.cc:2064
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lookup-help.cc:336
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lookup-help.cc:781
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lookup-help.cc:809
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-book.cc:858
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-explode.cc:208
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/view.cc:325
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/view.cc:338
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/view.cc:350
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/view.cc:367
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3373
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3394
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3409
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3411
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3499
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3506
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3513
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3519
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3524
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3530
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3536
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3550
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3556
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3562
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3568
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3579
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3585
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3591
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3616
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:3663
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:261
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:281
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:5222
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:7801
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:7971
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:8057
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player.cc:8089
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/attack.cc:1067
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/windowmanager-sdl.cc:462
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/menu.cc:1989
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:507
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:776
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:794
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:828
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:900
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/randbook.cc:1015
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stringutil.h:224
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:1601
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:2171
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:2284
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/religion.cc:3542
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:219
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:221
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:277
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:1669
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:1729
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:1758
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:1799
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:1819
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:1822
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:2486
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/item-name.cc:3174
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:239
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:307
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/delay.cc:1035
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/delay.cc:1050
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/delay.cc:1051
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/delay.cc:1052
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:2655
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tileweb.cc:578
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tileweb.cc:1049
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:1040
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:1226
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:1280
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2045
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2083
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2148
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2680
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2688
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2786
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-speak.cc:87
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-speak.cc:229
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-speak.cc:230
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-speak.cc:231
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-speak.cc:246
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-speak.cc:247
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-speak.cc:261
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-speak.cc:564
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dungeon.cc:2316
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-cast.cc:141
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-damage.cc:3306
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ui.cc:695
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ui.cc:1931
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mutation.cc:651
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:800
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:1396
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:2245
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:4401
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/kills.cc:536
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/xom.cc:879
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:635
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:1059
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:1432
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:1449
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:2034
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/notes.cc:188
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/notes.cc:292
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/notes.cc:370
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/notes.cc:375
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-conduct.cc:484
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-conduct.cc:1103
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-spells.cc:149
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-spells.cc:512
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-spells.cc:549
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-util.cc:4286
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-dump.cc:210
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-dump.cc:223
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-dump.cc:481
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-dump.cc:547
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-dump.cc:567
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:428
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe-god.cc:592
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1347
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1352
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1358
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1364
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1366
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/known-items.cc:207
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/message.cc:1442
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tilesdl.cc:311
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:378
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:393
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:485
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:504
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:594
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:617
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:640
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/stash.cc:1259
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/format.cc:269
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dgn-overview.cc:278
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dgn-overview.cc:534
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dgn-overview.cc:995
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/skill-menu.cc:1422
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/files.cc:364
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libutil.cc:135
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libutil.cc:143
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libutil.cc:144
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libutil.cc:181
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libutil.cc:204
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libutil.cc:222
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libutil.cc:536
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-dgn.cc:206
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/invent.cc:187
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/invent.cc:227
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/invent.cc:232
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/invent.cc:1824
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:1182
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:1451
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:1455
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:1462
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:1471
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:1476
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:2059
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tags.cc:2187
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:154
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:195
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:2997
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:3003
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:3038
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:464
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:475
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:896
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:985
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2075
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:2116
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:3650
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:3892
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4009
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4011
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4136
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4152
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4386
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4387
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4393
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4394
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4404
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4412
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4427
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4438
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4450
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4456
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4466
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4467
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4476
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4554
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4566
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4573
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4574
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4590
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4657
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4820
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4848
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:4859
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:5203
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:5213
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ranged-attack.cc:184
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player-act.cc:616
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/teleport.cc:90
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/cloud.cc:1384
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/chardump.cc:206
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/chardump.cc:726
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/chardump.cc:828
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libw32c.cc:366
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:86
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:353
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:598
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:973
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:1074
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/travel.cc:4844
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:4961
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6629
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6631
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6634
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/artefact.cc:1194
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/artefact.cc:1213
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/artefact.cc:1220
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/artefact.cc:1393
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/artefact.cc:1403
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/artefact.cc:1675
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/crash.cc:357
-msgid " "
-msgstr " "
 
 #: newgame.cc:179 main.cc:434 player.cc:5182
 msgid " the "
@@ -616,23 +158,23 @@ msgstr "семя"
 msgid "title"
 msgstr "титул"
 
-#: 
+#: newgame.cc:1067
 msgid "Warrior"
 msgstr "Воин"
 
-#: skills.cc:1667
+#: newgame.cc:1072 skills.cc:1667
 msgid "Adventurer"
 msgstr "Авантюрист"
 
-#: 
+#: newgame.cc:1077
 msgid "Zealot"
 msgstr "Фанатик"
 
-#: 
+#: newgame.cc:1082
 msgid "Warrior-mage"
 msgstr "Воин-маг"
 
-#: 
+#: newgame.cc:1088
 msgid "Mage"
 msgstr "Маг"
 
@@ -2162,7 +1704,7 @@ msgstr "ловушка"
 msgid "fountain"
 msgstr "фонтан"
 
-#: ../mon-data.h:5968
+#: mon-data.h:5968
 msgid "statue"
 msgstr "статуя"
 
@@ -2467,7 +2009,7 @@ msgstr "\n"
 "Карты по уровню:\n"
 ""
 
-#: ../mon-data.h:4832
+#: mon-data.h:4832
 msgid "zombie"
 msgstr "зомби"
 
@@ -2613,19 +2155,19 @@ msgstr "\n"
 "\n"
 ""
 
-#: ../mon-data.h:196
+#: mon-data.h:196
 msgid "formicid drone"
 msgstr "муравей трутень"
 
-#: ../mon-data.h:219
+#: mon-data.h:219
 msgid "formicid venom mage"
 msgstr "муравей ядовитый маг"
 
-#: ../mon-data.h:2747
+#: mon-data.h:2747
 msgid "formicid"
 msgstr "муравей"
 
-#: ../mon-data.h:3551
+#: mon-data.h:3551
 msgid "azure jelly"
 msgstr "лазурное желе"
 
@@ -3176,19 +2718,436 @@ msgstr "на уровне %2$s "
 msgid " of Lugonu"
 msgstr " Лугону"
 
+#: state.cc:615
+msgid "Tutorial"
+msgstr "Обучение"
+
+#: state.cc:617
+msgid "Arena"
+msgstr "Арена"
+
+#: state.cc:621
+msgid "Unknown"
+msgstr "Неизвестный"
+
+#: religion.cc:2133
+msgid "nameless"
+msgstr "безымянный"
+
+#: religion.cc:2134 tags.cc:2234
+msgid "Zin"
+msgstr "Зин"
+
+#: religion.cc:2135
+msgid "the Shining One"
+msgstr "Сияющий"
+
+#: religion.cc:2136 tags.cc:2234
+msgid "Kikubaaqudgha"
+msgstr "Кикубаакудгха"
+
+#: religion.cc:2137 tags.cc:2234
+msgid "Yredelemnul"
+msgstr "Иределемнул"
+
+#: religion.cc:2138 tags.cc:2235
+msgid "Vehumet"
+msgstr "Вехумет"
+
+#: religion.cc:2139 tags.cc:2235
+msgid "Okawaru"
+msgstr "Окавару"
+
+#: religion.cc:2140 tags.cc:2235
+msgid "Makhleb"
+msgstr "Махлеб"
+
+#: religion.cc:2141 tags.cc:2235
+msgid "Sif Muna"
+msgstr "Сив Муна"
+
+#: religion.cc:2142 tags.cc:2235
+msgid "Trog"
+msgstr "Трог"
+
+#: religion.cc:2143 tags.cc:2235
+msgid "Nemelex Xobeh"
+msgstr "Немелекс Ксобех"
+
+#: religion.cc:2144 tags.cc:2236
+msgid "Elyvilon"
+msgstr "Эливилон"
+
 #: religion.cc:2145 tags.cc:2236
 msgid "Lugonu"
 msgstr "Лугону"
+
+#: religion.cc:2146 tags.cc:2236
+msgid "Beogh"
+msgstr "Бео"
+
+#: religion.cc:2147 tags.cc:2236
+msgid "Fedhas"
+msgstr "Федхаз"
+
+#: religion.cc:2148 tags.cc:2236
+msgid "Cheibriados"
+msgstr "Кайбриадос"
+
+#: religion.cc:2149 tags.cc:2234
+msgid "Xom"
+msgstr "Ксом"
+
+#: religion.cc:2150 tags.cc:2237
+msgid "Ashenzari"
+msgstr "Эшензари"
+
+#: religion.cc:2151
+msgid "Dithmenos"
+msgstr "Дитменос"
+
+#: religion.cc:2152
+msgid "Gozag"
+msgstr "Гозаг"
+
+#: religion.cc:2153
+msgid "Qazlal"
+msgstr "Казлал"
+
+#: religion.cc:2154
+msgid "Ru"
+msgstr "Ру"
+
+#: item-name.cc:411 item-name.cc:436
+msgid "venom"
+msgstr "яд"
+
+#: item-name.cc:665
+msgid "ambrosia"
+msgstr "амброзия"
+
+#: item-name.cc:668
+msgid "experience"
+msgstr "опыт"
+
+#: item-name.cc:671
+msgid "mutation"
+msgstr "мутация"
+
+#: item-name.cc:689
+msgid "noise"
+msgstr "шум"
+
+#: item-name.cc:697
+msgid "fog"
+msgstr "туман"
+
+#: item-name.cc:702
+msgid "silence"
+msgstr "тишина"
+
+#: item-name.cc:703
+msgid "amnesia"
+msgstr "амнезия"
+
+#: item-name.cc:705
+msgid "curse weapon"
+msgstr "проклятое оружие"
+
+#: item-name.cc:706
+msgid "curse armour"
+msgstr "проклятая броня"
+
+#: item-name.cc:707
+msgid "curse jewellery"
+msgstr "проклятые драгоценности"
+
+#: item-name.cc:734
+msgid "protection from fire"
+msgstr "защита от огня"
+
+#: item-name.cc:736
+msgid "protection from cold"
+msgstr "защита от холода"
+
+#: item-name.cc:762
+msgid "rage"
+msgstr "ярость"
+
+#: item-name.cc:771
+msgid "faith"
+msgstr "вера"
+
+#: item-name.cc:773
+msgid "regeneration"
+msgstr "регенерация"
+
+#: item-name.cc:824 item-name.cc:834
+msgid "ring of"
+msgstr "кольцо"
+
+#: item-name.cc:865 item-name.cc:889 item-name.cc:911 item-name.cc:1644
+msgid "golden"
+msgstr "золотой"
+
+#: item-name.cc:1008
+msgid "Fire"
+msgstr "Огонь"
+
+#: item-name.cc:1009
+msgid "Ice"
+msgstr "Лёд"
+
+#: item-name.cc:1013
+msgid "Death"
+msgstr "Смерть"
+
+#: item-name.cc:1014
+msgid "Misfortune"
+msgstr "Неудача"
+
+#: item-name.cc:1018
+msgid "Battle"
+msgstr "Битва"
+
+#: item-name.cc:1020
+msgid "Clouds"
+msgstr "Облака"
+
+#: item-name.cc:1021
+msgid "Necromancy"
+msgstr "Некромантия"
+
+#: item-name.cc:1035
+msgid "Geomancy"
+msgstr "Геомантия"
+
+#: item-name.cc:1036
+msgid "the Earth"
+msgstr "Земля"
+
+#: item-name.cc:1044
+msgid "the Dragon"
+msgstr "Дракон"
+
+#: item-name.cc:1047
+msgid "Alchemy"
+msgstr "Алхимия"
+
+#: item-name.cc:1049
+msgid "Beasts"
+msgstr "Чудовища"
+
+#: item-name.cc:1083
+msgid "death"
+msgstr "смерть"
+
+#: item-name.cc:1086
+msgid "earth"
+msgstr "земля"
+
+#: item-name.cc:1102
+msgid "weapon"
+msgstr "оружия"
+
+#: item-name.cc:1105 item-name.cc:1594
+msgid "wand"
+msgstr "жезл"
+
+#: item-name.cc:1106 item-name.cc:1667
+msgid "scroll"
+msgstr "свиток"
+
+#: item-name.cc:1107
+msgid "jewellery"
+msgstr "украшения"
+
+#: item-name.cc:1108 item-name.cc:1618
+msgid "potion"
+msgstr "зелье"
+
+#: item-name.cc:1109 item-name.cc:1752 item-name.cc:1756 item-name.cc:1761
+msgid "book"
+msgstr "книга"
+
+#: item-name.cc:1110 item-name.cc:1785 item-prop.cc:592
+msgid "staff"
+msgstr "посох"
+
+#: item-name.cc:1114
+msgid "orb"
+msgstr "сфера"
+
+#: item-name.cc:1116 item-name.cc:1174 item-name.cc:1836
+msgid "corpse"
+msgstr "труп"
+
+#: item-name.cc:1118
+msgid "rune"
+msgstr "руна"
+
+#: item-name.cc:1149
+msgid "Necronomicon"
+msgstr "Некрономикон"
+
+#: item-name.cc:1151
+msgid "Grand Grimoire"
+msgstr "Великий Гримуар"
+
+#: item-name.cc:1173
+msgid "orb of Zot"
+msgstr "сфера Зота"
+
+#: item-name.cc:1176 item-name.cc:1802
+msgid "rune of Zot"
+msgstr "руна Зота"
+
+#: item-name.cc:1684
+msgid "amulet"
+msgstr "амулет"
+
+#: item-name.cc:1686
+msgid "ring"
+msgstr "кольцо"
+
+#: item-name.cc:1796
+msgid "Orb of Zot"
+msgstr "Сфера Зота"
+
+#: item-name.cc:1838 mon-data.h:4845
+msgid "skeleton"
+msgstr "скелет"
+
+#: item-name.cc:1840
+msgid "corpse bug"
+msgstr "труп жука"
+
+#: item-name.cc:3119
+msgid "forbidden"
+msgstr "забытый"
+
+#: hiscores.cc:573
+msgid "Jan"
+msgstr "Янв"
+
+#: hiscores.cc:573
+msgid "Feb"
+msgstr "Фев"
+
+#: hiscores.cc:573
+msgid "Mar"
+msgstr "Мар"
+
+#: hiscores.cc:573
+msgid "May"
+msgstr "Май"
+
+#: hiscores.cc:573
+msgid "June"
+msgstr "Июнь"
+
+#: hiscores.cc:574
+msgid "July"
+msgstr "Июль"
+
+#: hiscores.cc:574
+msgid "Aug"
+msgstr "Авг"
+
+#: hiscores.cc:574
+msgid "Sept"
+msgstr "Сен"
+
+#: hiscores.cc:574
+msgid "Oct"
+msgstr "Окт"
+
+#: hiscores.cc:574
+msgid "Nov"
+msgstr "Ноя"
+
+#: hiscores.cc:574
+msgid "Dec"
+msgstr "Дек"
 
 #: hiscores.cc:1820
 msgid "Slain"
 msgstr "Убит"
 
-#: ../mon-data.h:2082
+#: hiscores.cc:2012
+msgctxt "Was %s of %s%s"
+msgid "a High Priest"
+msgstr "Первосвященник"
+
+#: job-data.h:49
+msgid "Air Elementalist"
+msgstr "Воздушный Элементалист"
+
+#: job-data.h:70
+msgid "Artificer"
+msgstr "Механик"
+
+#: job-data.h:81
+msgid "Berserker"
+msgstr "Берсерк"
+
+#: job-data.h:90
+msgid "Brigand"
+msgstr "Разбойник"
+
+#: job-data.h:101
+msgid "Chaos Knight"
+msgstr "Рыцарь Хаоса"
+
+#: job-data.h:143
+msgid "Fighter"
+msgstr "Боец"
+
+#: job-data.h:154
+msgid "Fire Elementalist"
+msgstr "Огненный Элементалист"
+
+#: job-data.h:176
+msgid "Hunter"
+msgstr "Охотник"
+
+#: job-data.h:207
+msgid "Monk"
+msgstr "Монах"
+
+#: job-data.h:218
+msgid "Necromancer"
+msgstr "Некромант"
+
+#: job-data.h:229
+msgid "Summoner"
+msgstr "Призывать"
+
+#: skills.cc:1711
+msgid "Blademaster"
+msgstr "Мастер клинка"
+
+#: skills.cc:1718
+msgid "Blood Saint"
+msgstr "Кровавый Святой"
+
+#: item-prop.cc:94
+msgid "robe"
+msgstr "мантия"
+
+#: item-prop.cc:96
+msgid "leather armour"
+msgstr "кожаная броня"
+
+#: species-data.h:620 tags.cc:2224
+msgid "Ogre"
+msgstr "Огр"
+
+#: mon-data.h:2082
 msgid "wolf spider"
 msgstr "паук-волк"
 
-#: 
+#: end.cc:495
 msgid "\n"
 "Best Crawlers - %s\n"
 ""
@@ -3215,4 +3174,59 @@ msgstr "Паучьего Гнезда"
 msgctxt "Was %s of %s%s"
 msgid "Lugonu"
 msgstr "Лугону"
+
+#: species-groups.h:12
+msgid "Simple"
+msgstr "Простые"
+
+#: species-groups.h:19
+msgid "Intermediate"
+msgstr "Средние"
+
+#: species-groups.h:26
+msgid "Advanced"
+msgstr "Продвинутые"
+
+#: directn.cc:3207
+msgid ", covered with ice"
+msgstr ", покрытый льдом"
+
+#: directn.cc:3212
+msgctxt "...%( and)s %(spattered with blood)s"
+msgid "%s %s"
+msgstr "%s %s"
+
+#: directn.cc:3213
+msgctxt "...%( and)s %(spattered with blood)s"
+msgid " and "
+msgstr " и "
+
+#: directn.cc:3214
+msgid "spattered with blood"
+msgstr "забрызганный кровью"
+
+#: english.cc:359
+msgid "a "
+msgstr " "
+
+#: english.cc:359
+msgid "A "
+msgstr " "
+
+#: english.cc:360
+msgid "an "
+msgstr " "
+
+#: english.cc:360
+msgid "An "
+msgstr " "
+
+#. (одно)головая гидра
+#: english.cc:366
+msgid "one-"
+msgstr "одно"
+
+#: english.cc:418
+msgid "the "
+msgstr " "
 

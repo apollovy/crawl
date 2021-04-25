@@ -13,6 +13,7 @@
 #include <string>
 
 #include "stringutil.h"
+#include "crawl_locale.h"
 
 const char * const standard_plural_qualifiers[] =
 {
@@ -355,27 +356,32 @@ string article_a(const string &name, bool lowercase)
     if (!name.length())
         return name;
 
-    const char *a  = lowercase? "a "  : "A ";
-    const char *an = lowercase? "an " : "An ";
+    const char *a  = lowercase? _("a ")  : _("A ");
+    const char *an = lowercase? _("an ") : _("An ");
+    string result;
     switch (name[0])
     {
         case 'a': case 'e': case 'i': case 'o': case 'u':
         case 'A': case 'E': case 'I': case 'O': case 'U':
             // XXX: Hack for hydras.
-            if (starts_with(name, "one-"))
-                return a + name;
-            return an + name;
+            if (starts_with(name, _("one-")))
+                result = a + name;
+            result = an + name;
         case '1':
             // XXX: Hack^2 for hydras.
             if (starts_with(name, "11-") || starts_with(name, "18-"))
-                return an + name;
-            return a + name;
+                result = an + name;
+            result = a + name;
         case '8':
             // Eighty, eight hundred, eight thousand, ...
-            return an + name;
+            result = an + name;
         default:
-            return a + name;
+            result = a + name;
     }
+    trim_string(result);
+    if (!lowercase)
+        result[0] = toupper(result[0]);
+    return result;
 }
 
 string apply_description(description_level_type desc, const string &name,
@@ -414,7 +420,7 @@ string thing_do_grammar(description_level_type dtype, string desc)
     switch (dtype)
     {
     case DESC_THE:
-        return "the " + desc;
+        return _("the ") + desc;
     case DESC_A:
         return article_a(desc, true);
     case DESC_NONE:

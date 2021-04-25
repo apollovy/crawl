@@ -3201,15 +3201,17 @@ string feature_description_at(const coord_def& where, bool covering,
     string marker_desc = env.markers.property_at(where, MAT_ANY,
                                                  "feature_description");
 
-    string covering_description = "";
+    string covering_description;
 
     if (covering && you.see_cell(where) && is_icecovered(where))
-        covering_description = ", covered with ice";
+        covering_description = _(", covered with ice");
 
     if (covering && you.see_cell(where) && is_bloodcovered(where))
     {
-        string prefix = covering_description.empty() ? ", " : " and ";
-        covering_description += prefix + "spattered with blood";
+        covering_description += make_stringf(
+                __("...%( and)s %(spattered with blood)s", "%s %s"),
+                covering_description.empty() ? ", " : __("...%( and)s %(spattered with blood)s", " and "),
+                _("spattered with blood"));
     }
 
     // FIXME: remove desc markers completely; only Zin walls are left.

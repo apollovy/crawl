@@ -72,8 +72,6 @@
 #include "view.h"
 #include "crawl_locale.h"
 
-#define gettext_noop(String) String
-
 #ifdef DEBUG_RELIGION
 #    define DEBUG_DIAGNOSTICS
 #    define DEBUG_GIFTS
