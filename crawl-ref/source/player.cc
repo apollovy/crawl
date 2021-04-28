@@ -1173,8 +1173,12 @@ int player_regen()
     if (you.duration[DUR_COLLAPSE])
         rr /= 4;
 
-    if (you.disease || regeneration_is_inhibited() || !player_regenerates_hp())
+    if (you.duration[DUR_SICKNESS]
+        || regeneration_is_inhibited()
+        || !player_regenerates_hp())
+    {
         rr = 0;
+    }
 
     // Trog's Hand. This circumvents sickness or inhibited regeneration.
     if (you.duration[DUR_TROGS_HAND])
@@ -4559,32 +4563,6 @@ void dec_haste_player(int delay)
     }
 }
 
-void dec_disease_player(int delay)
-{
-    if (you.disease)
-    {
-        int rr = 50;
-
-        // Extra regeneration means faster recovery from disease.
-        // But not if not actually regenerating!
-        if (player_regenerates_hp())
-            rr += _player_bonus_regen();
-
-        // Trog's Hand.
-        if (you.duration[DUR_TROGS_HAND])
-            rr += 100;
-
-        rr = div_rand_round(rr * delay, 50);
-
-        you.disease -= rr;
-        if (you.disease < 0)
-            you.disease = 0;
-
-        if (you.disease == 0)
-            mprf(MSGCH_RECOVERY, "You feel your health improve.");
-    }
-}
-
 void dec_elixir_player(int delay)
 {
     if (!you.duration[DUR_ELIXIR])
@@ -4913,7 +4891,6 @@ player::player()
     stat_loss.init(0);
     base_stats.init(0);
 
-    disease         = 0;
     max_level       = 1;
     hit_points_regeneration   = 0;
     magic_points_regeneration = 0;
@@ -6912,10 +6889,7 @@ bool player::sicken(int amount)
     }
 
     mpr("You feel ill.");
-
-    disease += amount * BASELINE_DELAY;
-    if (disease > 210 * BASELINE_DELAY)
-        disease = 210 * BASELINE_DELAY;
+    increase_duration(DUR_SICKNESS, amount, 210);
 
     return true;
 }

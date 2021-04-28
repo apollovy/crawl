@@ -1035,6 +1035,17 @@ static dungeon_feature_type rewrite_feature(dungeon_feature_type x,
 
     if (x == DNGN_ENTER_LABYRINTH)
         x = DNGN_ENTER_GAUNTLET;
+
+    if (minor_version < TAG_MINOR_NEW_TREES && x == DNGN_TREE)
+    {
+        if (you.where_are_you == BRANCH_SWAMP)
+            x = DNGN_MANGROVE;
+        else if (you.where_are_you == BRANCH_ABYSS
+                || you.where_are_you == BRANCH_PANDEMONIUM)
+        {
+            x = DNGN_DEMONIC_TREE;
+        }
+    }
 #else
     UNUSED(minor_version);
 #endif
@@ -1400,7 +1411,6 @@ static void _tag_construct_you(writer &th)
     marshallByte(th, you.berserk_penalty);
     marshallInt(th, you.abyss_speed);
 
-    marshallInt(th, you.disease);
     ASSERT(you.hp > 0 || you.pending_revival);
     marshallShort(th, you.pending_revival ? 0 : you.hp);
 
@@ -2555,7 +2565,11 @@ static void _tag_read_you(reader &th)
 
     you.abyss_speed = unmarshallInt(th);
 
-    you.disease         = unmarshallInt(th);
+#if TAG_MAJOR_VERSION == 34
+    // was you.disease
+    if (th.getMinorVersion() < TAG_MINOR_DISEASE)
+        unmarshallInt(th);
+#endif
     you.hp              = unmarshallShort(th);
 #if TAG_MAJOR_VERSION == 34
     // was you.hunger

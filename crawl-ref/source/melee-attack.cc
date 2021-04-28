@@ -711,7 +711,7 @@ bool melee_attack::handle_phase_killed()
 
 bool melee_attack::handle_phase_end()
 {
-    if (!cleave_targets.empty())
+    if (!cleave_targets.empty() && !simu)
     {
         attack_cleave_targets(*attacker, cleave_targets, attack_number,
                               effective_attack_number, wu_jian_attack,
@@ -2013,7 +2013,8 @@ void melee_attack::decapitate(int dam_type)
                              defender->as_monster()->hit_points, true);
         }
 
-        defender->hurt(attacker, INSTANT_DEATH);
+        if (!simu)
+            defender->hurt(attacker, INSTANT_DEATH);
 
         return;
     }

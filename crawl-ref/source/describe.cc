@@ -1204,7 +1204,11 @@ static string _handedness_string(const item_def &item)
     if (quad)
         return make_stringf("It is a weapon for %s %s.", n.c_str(), handname.c_str());
     else
-        return make_stringf("It is a %s-%sed weapon.", n.c_str(), handname.c_str());
+    {
+        return make_stringf("It is a %s-%s%s weapon.", n.c_str(),
+            handname.c_str(),
+            ends_with(handname, "e") ? "d" : "ed");
+    }
 
 }
 
@@ -1448,6 +1452,7 @@ static string _describe_weapon(const item_def &item, bool verbose)
             make_stringf(" '%s' category. ",
                          skill == SK_FIGHTING ? "buggy" : skill_name(skill));
 
+        // XX this is shown for felids, does that actually make sense?
         description += _handedness_string(item);
 
         if (!you.could_wield(item, true) && crawl_state.need_save)
@@ -2328,6 +2333,14 @@ static vector<extra_feature_desc> _get_feature_extra_descs(const coord_def &pos)
     vector<extra_feature_desc> ret;
     const dungeon_feature_type feat = env.map_knowledge(pos).feat();
 
+    if (feat_is_tree(feat) && env.forest_awoken_until)
+    {
+        ret.push_back({
+            "Awoken.",
+            getLongDescription("awoken"),
+            tile_def(TILE_AWOKEN_OVERLAY)
+        });
+    }
     if (feat_is_wall(feat) && env.map_knowledge(pos).flags & MAP_ICY)
     {
         ret.push_back({
@@ -2453,8 +2466,12 @@ void get_feature_desc(const coord_def &pos, describe_info &inf, bool include_ext
     if (feat_is_flammable(feat) && !is_temp_terrain(pos)
         && env.markers.property_at(pos, MAT_ANY, "veto_destroy") != "veto")
     {
-        long_desc += "\nIt is susceptible to bolts of lightning";
-        long_desc += " and to sufficiently intense sources of fire.";
+        if (feat == DNGN_TREE)
+            long_desc += "\n" + getLongDescription("tree burning");
+        else if (feat == DNGN_MANGROVE)
+            long_desc += "\n" + getLongDescription("mangrove burning");
+        else if (feat == DNGN_DEMONIC_TREE)
+            long_desc += "\n" + getLongDescription("demonic tree burning");
     }
 
     // mention that diggable walls are

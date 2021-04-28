@@ -2874,6 +2874,7 @@ KITEM:    * = *
 KITEM:    6| = |
 KFEAT:    h3456DHJK%$*| = W
 KFEAT:    K = w
+KFEAT:    t = mangrove
 KPROP:    ~"DE = no_tele_into
 SHUFFLE:  FH / IJ
 SUBST:    i : ch, j : ch, ~' = hhhhW, -" = W, k = .
@@ -9215,7 +9216,10 @@ ENDMAP
 NAME:    gammafunk_its_a_trap
 TAGS:    no_monster_gen no_trap_gen no_tele_into
 # Allow placement in Vaults as a room.
-TAGS:    vaults_hard preserve_wall passable
+TAGS:    vaults_hard preserve_wall
+: if you.in_branch("Vaults") then
+TAGS:    passable
+: end
 DEPTH:   Crypt, D:$, Depths, Elf, Snake, Spider, Pan, Vaults, Zot
 ORIENT:  float
 KMASK:   ^ = no_item_gen
