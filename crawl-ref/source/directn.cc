@@ -3150,7 +3150,7 @@ static string _base_feature_desc(dungeon_feature_type grid, trap_type trap)
     else if (!is_valid_feature_type(grid))
         return "";
     else
-        return _(get_feature_def(grid).name);
+        return get_feature_def(grid).name;
 
 }
 
@@ -3291,7 +3291,7 @@ string feature_description_at(const coord_def& where, bool covering,
 
         desc += covering_description;
 
-        return thing_do_grammar(dtype, _(desc.c_str()));
+        return _(thing_do_grammar(dtype, desc).c_str());
     }
 
     bool ignore_case = false;
@@ -3319,8 +3319,8 @@ string feature_description_at(const coord_def& where, bool covering,
         const string featdesc = grid == env.grid(where)
                               ? raw_feature_description(where)
                               : _base_feature_desc(grid, trap);
-        return thing_do_grammar(dtype, featdesc + covering_description,
-                ignore_case);
+        return _(thing_do_grammar(dtype, featdesc + covering_description,
+                ignore_case).c_str());
     }
 }
 

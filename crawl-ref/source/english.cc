@@ -358,30 +358,25 @@ string article_a(const string &name, bool lowercase)
 
     const char *a  = lowercase? "a "  : "A ";
     const char *an = lowercase? "an " : "An ";
-    string result;
     switch (name[0])
     {
         case 'a': case 'e': case 'i': case 'o': case 'u':
         case 'A': case 'E': case 'I': case 'O': case 'U':
             // XXX: Hack for hydras.
-            if (starts_with(name, _("one-")))
-                result = a + name;
-            result = an + name;
+            if (starts_with(name, "one-"))
+                return a + name;
+            return an + name;
         case '1':
             // XXX: Hack^2 for hydras.
             if (starts_with(name, "11-") || starts_with(name, "18-"))
-                result = an + name;
-            result = a + name;
+                return an + name;
+            return a + name;
         case '8':
             // Eighty, eight hundred, eight thousand, ...
-            result = an + name;
+            return an + name;
         default:
-            result = a + name;
+            return a + name;
     }
-    trim_string(result);
-    if (!lowercase)
-        result[0] = toupper(result[0]);
-    return result;
 }
 
 string apply_description(description_level_type desc, const string &name,
@@ -421,7 +416,7 @@ string thing_do_grammar(description_level_type dtype, string desc,
     switch (dtype)
     {
     case DESC_THE:
-        return _("the ") + desc;
+        return "the " + desc;
     case DESC_A:
         return article_a(desc, true);
     case DESC_NONE:
