@@ -20,6 +20,7 @@
  *   row 14: custom walking action, or nullptr
  *   row 15: custom prayer action, or nullptr
  */
+#define _(String) String
 
 static const map<species_type, species_def> species_data =
 {

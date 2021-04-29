@@ -1,7 +1,7 @@
 #if TAG_MAJOR_VERSION == 34
 { SP_SLUDGE_ELF, {
     "SE",
-    "Sludge Elf", "Elven", "Elf",
+    _("Sludge Elf"), _("Elven"), _("Elf"),
     SPF_NONE,
     0, -1, 1, 3,
     MONS_ELF,
@@ -19,7 +19,7 @@
 
 { SP_LAVA_ORC, {
     "LO",
-    "Lava Orc", "Orcish", "Orc",
+    _("Lava Orc"), _("Orcish"), _("Orc"),
     SPF_NO_HAIR,
     -1, 1, 0, 3,
     MONS_LAVA_ORC,
@@ -37,7 +37,7 @@
 
 { SP_HIGH_ELF, {
     "HE",
-    "High Elf", "Elven", "Elf",
+    _("High Elf"), _("Elven"), _("Elf"),
     SPF_NONE,
     -1, -1, 1, 4,
     MONS_ELF,

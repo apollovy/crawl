@@ -168,7 +168,7 @@ SPECIES_GROUPS_TEMPLATE['Intermediate'] = SpeciesGroup('coord_def(1, 0)', '20', 
 SPECIES_GROUPS_TEMPLATE['Advanced'] = SpeciesGroup('coord_def(2, 0)', '20', [])
 SPECIES_GROUP_TEMPLATE = """
     {{
-        "{name}",
+        _("{name}"),
         {position},
         {width},
         {{ {species} }}

@@ -1,7 +1,7 @@
 {tag_major_version_opener}
 {{ {enum}, {{
     "{short_name}",
-    "{name}", {adjective}, {genus},
+    _("{name}"), _({adjective}), _({genus}),
     {species_flags},
     {xp}, {hp}, {mp}, {mr},
     {monster_name},

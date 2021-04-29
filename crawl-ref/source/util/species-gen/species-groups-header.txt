@@ -4,5 +4,7 @@
  */
 #pragma once
 
+#define _(String) String
+
 static species_group species_groups[] =
 {
