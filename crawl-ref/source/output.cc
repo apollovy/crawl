@@ -2399,7 +2399,7 @@ static vector<formatted_string> _get_overview_resistances(
                         etheric ? "*" : "");
 #else
     const int mp_regen = player_mp_regen(); // round up
-    out += make_stringf("MPRegen  %d.%02d/turn\n",
+    out += make_stringf(_("MPRegen  %d.%02d/turn\n"),
                         mp_regen / 100, mp_regen % 100);
 #endif
 
