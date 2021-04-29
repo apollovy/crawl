@@ -356,8 +356,8 @@ string article_a(const string &name, bool lowercase)
     if (!name.length())
         return name;
 
-    const char *a  = lowercase? _("a ")  : _("A ");
-    const char *an = lowercase? _("an ") : _("An ");
+    const char *a  = lowercase? "a "  : "A ";
+    const char *an = lowercase? "an " : "An ";
     string result;
     switch (name[0])
     {
