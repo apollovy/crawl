@@ -369,8 +369,8 @@ const vector<god_power> god_powers[NUM_GODS] =
     },
 
     // Hepliaklqana
-    {   { 0, ABIL_HEPLIAKLQANA_RECALL, "recall your ancestor" },
-        { 0, ABIL_HEPLIAKLQANA_IDENTITY, "remember your ancestor's identity" },
+    {   { 1, ABIL_HEPLIAKLQANA_RECALL, "recall your ancestor" },
+        { 1, ABIL_HEPLIAKLQANA_IDENTITY, "remember your ancestor's identity" },
         { 3, ABIL_HEPLIAKLQANA_TRANSFERENCE, "swap creatures with your ancestor" },
         { 4, ABIL_HEPLIAKLQANA_IDEALISE, "heal and protect your ancestor" },
         { 5, "drain nearby creatures when transferring your ancestor"},
@@ -2407,8 +2407,22 @@ static void _gain_piety_point()
 
         const int rank = piety_rank();
         take_note(Note(NOTE_PIETY_RANK, you.religion, rank));
+
+        // For messaging reasons, we want to get our ancestor before
+        // we get the associated recall / rename powers.
+        if (rank == rank_for_passive(passive_t::frail)) {
+            calc_hp(); // adjust for frailty
+            // In exchange for your hp, you get an ancestor!
+            const mgen_data mg = hepliaklqana_ancestor_gen_data();
+            delayed_monster(mg);
+            simple_god_message(make_stringf(" forms a fragment of your life essence"
+                                            " into the memory of your ancestor, %s!",
+                                            mg.mname.c_str()).c_str());
+        }
+
         for (const auto& power : get_god_powers(you.religion))
         {
+
             if (power.rank == rank
                 || power.rank == 7 && can_do_capstone_ability(you.religion))
             {
@@ -2608,6 +2622,15 @@ void lose_piety(int pgn)
         redraw_screen();
         update_screen();
 #endif
+
+        if (will_have_passive(passive_t::frail) && !have_passive(passive_t::frail))
+        {
+            // hep: just lost 1*
+            // remove companion (gained at same tier as frail)
+            add_daction(DACT_ALLY_HEPLIAKLQANA);
+            remove_all_companions(GOD_HEPLIAKLQANA);
+            calc_hp(); // adjust for frailty
+        }
     }
 
     if (you.piety > 0 && you.piety <= 5)
@@ -2654,14 +2677,76 @@ static bool _fedhas_protects_species(monster_type mc)
            && mons_class_holiness(mc) & MH_PLANT;
 }
 
+/// Whether fedhas would protect `target` from harm if called on to do so.
 bool fedhas_protects(const monster *target)
 {
-    return target
-        ? _fedhas_protects_species(mons_base_type(*target))
-        : false;
+    return target && _fedhas_protects_species(mons_base_type(*target));
 }
 
-// Fedhas neutralises most plants and fungi
+/**
+ * Does some god protect monster `target` from harm triggered by `agent`?
+ * @param agent  The source of the damage. If nullptr, the damage has no source.
+ *               (Currently, no god does protect in this case.)
+ * @param target A monster that is the target of the damage.
+ * @param quiet  If false, do messaging to indicate that target has escaped
+ *               damage.
+ * @return       Whether target should escape damage.
+ */
+bool god_protects(const actor *agent, const monster *target, bool quiet)
+{
+    // The alignment check is to allow a penanced player to continue to fight
+    // hostiles that would otherwise be protected, in case what they angered can
+    // fight back
+
+    const bool aligned = agent && target
+        && ((agent->is_player()
+                ? target->friendly()
+                : mons_atts_aligned(target->attitude,
+                                                agent->as_monster()->attitude))
+            || target->neutral());
+    // XX does it matter whether this just checks fedhas vs.
+    // the shoot_through_plants passive
+    if (aligned
+        && ((agent->is_player() || agent->as_monster()->friendly())
+                        && have_passive(passive_t::shoot_through_plants)
+            || agent->is_monster() && agent->deity() == GOD_FEDHAS) // purely theoretical?
+        && fedhas_protects(target))
+    {
+        if (!quiet && you.can_see(*target))
+        {
+            simple_god_message(
+                        make_stringf(" protects %s plant from harm.",
+                            agent->is_player() ? "your" : "a").c_str(),
+                        GOD_FEDHAS);
+        }
+        return true;
+    }
+
+    if (agent && target && agent->is_player()
+        && mons_is_hepliaklqana_ancestor(target->type))
+    {
+        // TODO: this message does not work very well for all sorts of attacks
+        // should this be a god message?
+        if (!quiet && you.can_see(*target))
+            mprf("%s avoids your attack.", target->name(DESC_THE).c_str());
+        return true;
+    }
+    return false;
+}
+
+/**
+ * Does some god protect monster `target` from harm triggered by the player?
+ * @param target A monster that is the target of the damage.
+ * @param quiet  If false, do messaging to indicate that target has escaped
+ *               damage.
+ * @return       Whether target should escape damage.
+ */
+bool god_protects(const monster *target, bool quiet)
+{
+    return god_protects(&you, target, quiet);
+}
+
+/// Whether Fedhas would set `target` to a neutral attitude
 bool fedhas_neutralises(const monster& target)
 {
     return mons_is_plant(target)
@@ -3559,15 +3644,6 @@ static void _join_hepliaklqana()
         you.props[HEPLIAKLQANA_ALLY_NAME_KEY] = _make_ancestor_name(gender);
         you.props[HEPLIAKLQANA_ALLY_GENDER_KEY] = gender;
     }
-
-    calc_hp(); // adjust for frailty
-
-    // Complimentary ancestor upon joining.
-    const mgen_data mg = hepliaklqana_ancestor_gen_data();
-    delayed_monster(mg);
-    simple_god_message(make_stringf(" forms a fragment of your life essence"
-                                    " into the memory of your ancestor, %s!",
-                                    mg.mname.c_str()).c_str());
 }
 
 /// Setup when joining the gelatinous groupies of Jiyva.

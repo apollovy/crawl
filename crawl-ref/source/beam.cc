@@ -4762,22 +4762,12 @@ void bolt::affect_monster(monster* mon)
 
     if (shoot_through_monster(*this, mon) && !is_tracer)
     {
-        // FIXME: Could use a better message, something about
-        // dodging that doesn't sound excessively weird would be
-        // nice.
         if (you.see_cell(mon->pos()))
         {
             if (testbits(mon->flags, MF_DEMONIC_GUARDIAN))
                 mpr("Your demonic guardian avoids your attack.");
-            else if (mons_is_hepliaklqana_ancestor(mon->type))
-                mprf("%s avoids your attack.", mon->name(DESC_THE).c_str());
-            else if (!bush_immune(*mon))
-            {
-                simple_god_message(
-                    make_stringf(" protects %s plant from harm.",
-                        attitude == ATT_FRIENDLY ? "your" : "a").c_str(),
-                    GOD_FEDHAS);
-            }
+            else
+                god_protects(agent(), mon, false); // messaging
         }
     }
 
@@ -5041,8 +5031,7 @@ void bolt::affect_monster(monster* mon)
         //
         // FIXME: Should be a better way of doing this. For now, we are
         // just falsifying the death report... -cao
-        else if (you_worship(GOD_FEDHAS) && flavour == BEAM_SPORE
-            && fedhas_protects(mon))
+        else if (flavour == BEAM_SPORE && god_protects(mon) && fedhas_protects(mon))
         {
             if (mon->attitude == ATT_FRIENDLY)
                 mon->attitude = ATT_HOSTILE;
@@ -5218,7 +5207,7 @@ bool ench_flavour_affects_monster(beam_type flavour, const monster* mon,
 
     // These are special allies whose loyalty can't be so easily bent
     case BEAM_CHARM:
-        rc = !(mons_is_hepliaklqana_ancestor(mon->type)
+        rc = !(god_protects(mon)
                || testbits(mon->flags, MF_DEMONIC_GUARDIAN));
         break;
 
@@ -6684,36 +6673,9 @@ bool shoot_through_monster(const bolt& beam, const monster* victim)
     actor *originator = beam.agent();
     if (!victim || !originator)
         return false;
-
-    bool origin_worships_fedhas;
-    mon_attitude_type origin_attitude;
-    if (originator->is_player())
-    {
-        origin_worships_fedhas = have_passive(passive_t::shoot_through_plants);
-        origin_attitude = ATT_FRIENDLY;
-    }
-    else
-    {
-        monster* temp = originator->as_monster();
-        if (!temp)
-            return false;
-        origin_worships_fedhas = (temp->god == GOD_FEDHAS
-            || (temp->friendly()
-                && have_passive(passive_t::shoot_through_plants)));
-        origin_attitude = temp->attitude;
-    }
-
-    // Fedhas logic: the alignment check is to allow a penanced player
-    // to continue to fight hostile plants, in case what they angered can
-    // fight back
-    return (origin_worships_fedhas
-            && fedhas_protects(victim)
-            && (mons_atts_aligned(victim->attitude, origin_attitude)
-               || victim->neutral()))
-           // Player guardians
+    return god_protects(originator, victim)
            || (originator->is_player()
-               && (testbits(victim->flags, MF_DEMONIC_GUARDIAN)
-                   || mons_is_hepliaklqana_ancestor(victim->type)));
+               && testbits(victim->flags, MF_DEMONIC_GUARDIAN));
 }
 
 /**
