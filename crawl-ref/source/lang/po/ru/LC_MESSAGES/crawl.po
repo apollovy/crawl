@@ -13,45 +13,7 @@ msgstr "Не удалось создать снаряд."
 
 #. Очень общий перевод, в итоге может быть и "вас" и "вы" и вам". Скорее всего будет
 #. разным в разном контексте.
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-project.cc:92
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:3791
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:3842
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-dgn.cc:1118
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:190
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:271
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:1446
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2147
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2160
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2166
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2180
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2204
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2226
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/hiscores.cc:2584
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-you.cc:1355
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/l-you.cc:1655
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-damage.cc:467
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-damage.cc:1164
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-damage.cc:2185
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:2088
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/kills.cc:41
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-death.cc:1090
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/movement.cc:595
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-util.cc:4258
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-util.cc:4392
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-mon.cc:477
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1331
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1339
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/files.cc:2357
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/files.cc:3016
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:3297
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:4942
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/god-abil.cc:5220
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player-act.cc:445
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lang-fake.cc:73
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lang-fake.cc:74
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6767
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6842
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-cast.cc:6852
+#: player-act.cc:452
 msgid "you"
 msgstr "вы"
 
@@ -92,7 +54,7 @@ msgstr "Случайный персонаж"
 msgid "Random "
 msgstr "Случайный "
 
-#: newgame.cc:179 main.cc:434 player.cc:5182
+#: newgame.cc:179 main.cc:434 player.cc:5141
 msgid " the "
 msgstr " "
 
@@ -204,7 +166,7 @@ msgstr "# - Рекомендованный персонаж"
 msgid "Shuffles through random recommended character combinations until you accept one."
 msgstr "Перебирает комбинации из случайных рекомендованных персонажей, пока вы не выберете одного из них."
 
-#: newgame.cc:1341 newgame.cc:1786 newgame.cc:2171
+#: newgame.cc:1341 newgame.cc:1786 newgame.cc:2174
 msgid "% - List aptitudes"
 msgstr "% - Список склонностей"
 
@@ -212,7 +174,7 @@ msgstr "% - Список склонностей"
 msgid "Lists the numerical skill train aptitudes for all races."
 msgstr "Выводит числовой список склонностей к тренировке тех или иных навыков для всех видов."
 
-#: newgame.cc:1345 newgame.cc:1789 newgame.cc:2174
+#: newgame.cc:1345 newgame.cc:1789 newgame.cc:2177
 msgid "? - Help"
 msgstr "? - Помощь"
 
@@ -285,11 +247,11 @@ msgstr " и метательные сети"
 msgid " and "
 msgstr " и "
 
-#: newgame.cc:2223
+#: newgame.cc:2226
 msgid "lessons"
 msgstr "уроки"
 
-#: newgame.cc:2223
+#: newgame.cc:2226
 msgid "maps"
 msgstr "карты"
 
@@ -297,7 +259,7 @@ msgstr "карты"
 msgid "escape"
 msgstr "побег"
 
-#: xom.cc:1763
+#: xom.cc:1759
 msgid "destruction"
 msgstr "разрушение"
 
@@ -370,8 +332,7 @@ msgstr "Буря"
 msgid "Pain"
 msgstr "Боль"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:169
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:388
+#: ability.cc:393
 msgid "Torment"
 msgstr "Мучения"
 
@@ -403,8 +364,7 @@ msgstr "Вырождение"
 msgid "cards"
 msgstr "карты"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/decks.cc:384
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1167
+#: ability.cc:1172
 msgid "No description found.\n"
 ""
 msgstr "Описание не найдено.\n"
@@ -525,17 +485,7 @@ msgstr "Вы не можете повторить команду повтора!
 msgid "Why would you want to repeat a run command?"
 msgstr "Зачем вы хотите повторить команду запуска?"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/main.cc:1271
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:6003
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:6078
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/initfile.cc:2256
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1917
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dgn-overview.cc:685
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:966
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:2172
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/shopping.cc:2197
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature-data.h:318
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/travel.cc:4865
+#: feature-data.h:333
 msgid "shop"
 msgstr "магазин"
 
@@ -1027,24 +977,7 @@ msgstr "взрыв каменных осколков"
 msgid "Your demonic guardian avoids your attack."
 msgstr "Ваш демонический страж уклоняется от вашей атаки."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/beam.cc:4731
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/actor.cc:966
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/actor.cc:1012
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/potion.cc:431
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.h:41
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-transloc.cc:1394
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/english.cc:271
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-damage.cc:1554
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-damage.cc:1780
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/spl-damage.cc:2197
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/traps.cc:1211
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/movement.cc:336
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-util.cc:4391
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/fight.cc:1109
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/fight.cc:1195
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/libutil.cc:76
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player-act.cc:448
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/lang-fake.cc:504
+#: player-act.cc:455
 msgid "your"
 msgstr "ваше"
 
@@ -1680,7 +1613,7 @@ msgstr "полёт"
 msgid "corrosion"
 msgstr "коррозия"
 
-#: tilereg-dgn.cc:383
+#: tilereg-dgn.cc:383 feature-data.h:256 feature-data.h:325
 msgid "floor"
 msgstr "пол"
 
@@ -1702,11 +1635,7 @@ msgstr "фонтан"
 msgid "statue"
 msgstr "статуя"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/viewchar.cc:118
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/colour.cc:581
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/form-data.h:192
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/terrain.cc:1899
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature-data.h:87
+#: feature-data.h:88
 msgid "tree"
 msgstr "дерево"
 
@@ -1728,16 +1657,7 @@ msgstr "взрыв"
 msgid "kick"
 msgstr "пинок"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/melee-attack.cc:1012
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/melee-attack.cc:1088
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/melee-attack.cc:1711
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/melee-attack.cc:1987
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/form-data.h:130
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:2380
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/monster.cc:2553
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mon-util.cc:2107
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/player-act.cc:477
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/species.cc:415
+#: player-act.cc:484
 msgid "claw"
 msgstr "коготь"
 
@@ -1897,7 +1817,7 @@ msgstr "\t%s"
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/mapdef.cc:763
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/wiz-fsim.cc:661
 msgid "\t"
-msgstr "\t"
+msgstr " "
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dbg-objstat.cc:973
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/command.cc:1121
@@ -1916,10 +1836,7 @@ msgstr "Предмет"
 msgid "All Levels"
 msgstr "Все уровни"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/dbg-objstat.cc:1257
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:553
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/directn.cc:598
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/tilereg-mon.h:22
+#: directn.cc:553 directn.cc:597
 msgid "Monsters"
 msgstr "Монстры"
 
@@ -1943,19 +1860,19 @@ msgstr "Интеллект"
 msgid "Dexterity"
 msgstr "Ловкость"
 
-#: species-data.h:31
+#: species-data.h:30
 msgid "Barachi"
 msgstr "Барахим"
 
-#: species-data.h:69 tags.cc:2223
+#: species-data.h:68 tags.cc:2233
 msgid "Deep Elf"
 msgstr "Глубинный Эльф"
 
-#: species-data.h:373
+#: species-data.h:372
 msgid "Formicid"
 msgstr "Муравей"
 
-#: species-data.h:468 tags.cc:2224
+#: species-data.h:467 tags.cc:2234
 msgid "Hill Orc"
 msgstr "Орк с Холмов"
 
@@ -1968,7 +1885,7 @@ msgstr "\n"
 "\n"
 ""
 
-#: state.cc:619
+#: state.cc:618
 msgid "Dungeon Sprint"
 msgstr "Забег по подземелью"
 
@@ -2253,17 +2170,13 @@ msgstr "<white>[tab]</white> быстрая загрузка последней 
 msgid "<white>[ctrl-p]</white> view rc file information and log"
 msgstr "<white>[ctrl-p]</white> просмотреть информацию rc файла и лог"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature-data.h:45
+#: feature-data.h:46
 msgid "closed door"
 msgstr "закрытая дверь"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature-data.h:115
+#: feature-data.h:130
 msgid "rock wall"
-msgstr "каменная стена"
-
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/feature-data.h:481
-msgid "staircase leading out of the dungeon"
-msgstr "лестница, ведущая прочь из подземелья"
+msgstr "стена из камней"
 
 #: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/describe.cc:1248
 msgid "\n"
@@ -2355,7 +2268,7 @@ msgstr "Ваши кости болят."
 msgid "Someone"
 msgstr "Кто-то"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:330
+#: ability.cc:335
 msgid "Hop"
 msgstr "Прыжок"
 
@@ -2363,43 +2276,43 @@ msgstr "Прыжок"
 msgid "unable to breathe"
 msgstr "невозможно дышать"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1511
+#: ability.cc:1541
 msgid "You have nothing to donate!"
 msgstr "Вам нечем пожертвовать!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1536
+#: ability.cc:1567
 msgid "You aren't in the Abyss!"
 msgstr "Вы не в Бездне!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:1627
+#: ability.cc:1667
 msgid "You are already invisible!"
 msgstr "Вы уже невидимы!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2345
+#: ability.cc:2390
 msgid "Another wave of unholy energy enters you."
 msgstr "В вас входит еще одна волна нечестивой энергии."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2361
+#: ability.cc:2406
 msgid "There are no remains here to animate!"
 msgstr "Здесь нет останков для оживления!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2390
+#: ability.cc:2435
 msgid "You feel life flooding into your body."
 msgstr "You feel life flooding into your body."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2410
+#: ability.cc:2455
 msgid "Your soul already belongs to Yredelemnul."
 msgstr "Твоя душа уже принадлежит Иределемнулу."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2427
+#: ability.cc:2472
 msgid "You see nothing there you can enslave the soul of!"
 msgstr "Вы не видите там никого, чью душу можно было бы поработить!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2449
+#: ability.cc:2494
 msgid "You feel more confident with your borrowed prowess."
 msgstr "Вы чувствуете себя увереннее с заимствованной отвагой."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2450
+#: ability.cc:2495
 msgid "You gain the combat prowess of a mighty hero."
 msgstr "Вы обретаете боевую отвагу могучего героя."
 
@@ -2407,71 +2320,71 @@ msgstr "Вы обретаете боевую отвагу могучего ге�
 msgid "new energy."
 msgstr "новая энергия."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2468
+#: ability.cc:2513
 msgid "You can now deal lightning-fast blows."
 msgstr "Теперь вы можете наносить молниеносные удары."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2598
+#: ability.cc:2641
 msgid "You renew your call for help."
 msgstr "Вы возобновляете свой призыв о помощи."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2620
+#: ability.cc:2663
 msgid "You are healed."
 msgstr "Вы исцелены."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2671
+#: ability.cc:2714
 msgid "You cannot banish yourself!"
 msgstr "Вы не можете изгнать себя!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2774
+#: ability.cc:2817
 msgid "You stop recalling your allies."
 msgstr "Вы перестаете вспоминать своих союзников."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2972
+#: ability.cc:3015
 msgid "You're too exhausted to draw out your power."
 msgstr "Вы слишком устали, чтобы использовать свою силу."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2982
+#: ability.cc:3025
 msgid "You have no need to draw out power."
 msgstr "Вам нет нужды использовать силу."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:2992
+#: ability.cc:3035
 msgid "You're too exhausted to power leap."
 msgstr "Вы слишком устали, чтобы использовать мощный прыжок."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3012
+#: ability.cc:3055
 msgid "You're too exhausted to unleash your apocalyptic power."
 msgstr "Вы слишком устали, чтобы раскрыть свою апокалиптическую силу."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3028
+#: ability.cc:3071
 msgid "You feel a buildup of energy."
 msgstr "Вы чувствуете прилив энергии."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3080
+#: ability.cc:3123
 msgid "You are already lashing out."
 msgstr "Вы уже набрасываетесь."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3085
+#: ability.cc:3128
 msgid "You are too exhausted to lash out."
 msgstr "Вы слишком устали, чтобы наброситься."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3089
+#: ability.cc:3132
 msgid "Your muscles tense, ready for explosive movement..."
 msgstr "Ваши мышцы напрягаются, готовые к взрывному движению..."
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3097
+#: ability.cc:3140
 msgid "You are already engulfed in a heavenly storm!"
 msgstr "Вы уже поглощены божественной бурей!"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3110
+#: ability.cc:3153
 msgid "Really renounce your faith, foregoing its fabulous benefits?"
 msgstr "Неужели откажитесь от своей веры, отказавшись от ее баснословных благ?"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3112
+#: ability.cc:3155
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: /Users/apollov/work/DCSS/Libraries/crawl/crawl-ref/source/ability.cc:3135
+#: ability.cc:3178
 msgid "Sorry, you can't do that."
 msgstr "Извините, вы не можете этого сделать."
 
@@ -2647,7 +2560,7 @@ msgctxt "player_title"
 msgid "%s%s"
 msgstr "%2$s"
 
-#: player.cc:5198
+#: player.cc:5157
 msgid "%s, a level %i %s %s%s"
 msgstr "%s, %3$s %4$s%5$s уровня %2$i"
 
@@ -2716,7 +2629,7 @@ msgstr " Лугону"
 msgid "Picks a random recommended weapon"
 msgstr "Выбирает случайное рекомендованное оружие"
 
-#: newgame.cc:1790 newgame.cc:2175
+#: newgame.cc:1790 newgame.cc:2178
 msgid "Opens the help screen"
 msgstr "Открывает экран справки"
 
@@ -2728,15 +2641,15 @@ msgstr "Выбирает случайное оружие"
 msgid "Select your old weapon"
 msgstr "Выберите свое старое оружие"
 
-#: state.cc:615
+#: state.cc:614
 msgid "Tutorial"
 msgstr "Обучение"
 
-#: state.cc:617
+#: state.cc:616
 msgid "Arena"
 msgstr "Арена"
 
-#: state.cc:621
+#: state.cc:620
 msgid "Unknown"
 msgstr "Неизвестный"
 
@@ -2744,7 +2657,7 @@ msgstr "Неизвестный"
 msgid "nameless"
 msgstr "безымянный"
 
-#: religion.cc:2134 tags.cc:2234
+#: religion.cc:2134 tags.cc:2244
 msgid "Zin"
 msgstr "Зин"
 
@@ -2752,63 +2665,63 @@ msgstr "Зин"
 msgid "the Shining One"
 msgstr "Сияющий"
 
-#: religion.cc:2136 tags.cc:2234
+#: religion.cc:2136 tags.cc:2244
 msgid "Kikubaaqudgha"
 msgstr "Кикубаакудгха"
 
-#: religion.cc:2137 tags.cc:2234
+#: religion.cc:2137 tags.cc:2244
 msgid "Yredelemnul"
 msgstr "Иределемнул"
 
-#: religion.cc:2138 tags.cc:2235
+#: religion.cc:2138 tags.cc:2245
 msgid "Vehumet"
 msgstr "Вехумет"
 
-#: religion.cc:2139 tags.cc:2235
+#: religion.cc:2139 tags.cc:2245
 msgid "Okawaru"
 msgstr "Окавару"
 
-#: religion.cc:2140 tags.cc:2235
+#: religion.cc:2140 tags.cc:2245
 msgid "Makhleb"
 msgstr "Махлеб"
 
-#: religion.cc:2141 tags.cc:2235
+#: religion.cc:2141 tags.cc:2245
 msgid "Sif Muna"
 msgstr "Сив Муна"
 
-#: religion.cc:2142 tags.cc:2235
+#: religion.cc:2142 tags.cc:2245
 msgid "Trog"
 msgstr "Трог"
 
-#: religion.cc:2143 tags.cc:2235
+#: religion.cc:2143 tags.cc:2245
 msgid "Nemelex Xobeh"
 msgstr "Немелекс Ксобех"
 
-#: religion.cc:2144 tags.cc:2236
+#: religion.cc:2144 tags.cc:2246
 msgid "Elyvilon"
 msgstr "Эливилон"
 
-#: religion.cc:2145 tags.cc:2236
+#: religion.cc:2145 tags.cc:2246
 msgid "Lugonu"
 msgstr "Лугону"
 
-#: religion.cc:2146 tags.cc:2236
+#: religion.cc:2146 tags.cc:2246
 msgid "Beogh"
 msgstr "Бео"
 
-#: religion.cc:2147 tags.cc:2236
+#: religion.cc:2147 tags.cc:2246
 msgid "Fedhas"
 msgstr "Федхаз"
 
-#: religion.cc:2148 tags.cc:2236
+#: religion.cc:2148 tags.cc:2246
 msgid "Cheibriados"
 msgstr "Кайбриадос"
 
-#: religion.cc:2149 tags.cc:2234
+#: religion.cc:2149 tags.cc:2244
 msgid "Xom"
 msgstr "Ксом"
 
-#: religion.cc:2150 tags.cc:2237
+#: religion.cc:2150 tags.cc:2247
 msgid "Ashenzari"
 msgstr "Эшензари"
 
@@ -3338,6 +3251,10 @@ msgstr "Кровавый Святой"
 msgid "Black Lotus"
 msgstr "Чёрный Лотос"
 
+#: skills.cc:1752
+msgid "Wallbreaker"
+msgstr "Стенолом"
+
 #: item-prop.cc:94
 msgid "robe"
 msgstr "мантия"
@@ -3474,67 +3391,75 @@ msgstr "болт"
 msgid "large rock"
 msgstr "большой камень"
 
-#: species-data.h:69 species-data.h:753 species-data.h:789
+#: species-data.h:68 species-data.h:752 species-data.h:788
 msgid "Elf"
 msgstr "Эльф"
 
-#: species-data.h:88 tags.cc:2227
+#: species-data.h:87 tags.cc:2237
 msgid "Demigod"
 msgstr "Полубог"
 
-#: species-data.h:392
+#: species-data.h:381
+msgid "You can dig through walls and to a lower floor."
+msgstr "Вы можете пробивать стены и на рыть лаз на нижний этаж."
+
+#: species-data.h:391
 msgid "Gargoyle"
 msgstr "Гаргулия"
 
-#: species-data.h:411 tags.cc:2228
+#: species-data.h:410 tags.cc:2238
 msgid "Ghoul"
 msgstr "Гуль"
 
-#: species-data.h:430
+#: species-data.h:429
 msgid "Gnoll"
 msgstr "Гнолл"
 
-#: species-data.h:487 tags.cc:2223
+#: species-data.h:486 tags.cc:2233
 msgid "Human"
 msgstr "Человек"
 
-#: species-data.h:506 tags.cc:2224
+#: species-data.h:505 tags.cc:2234
 msgid "Kobold"
 msgstr "Кобольд"
 
-#: species-data.h:544 tags.cc:2227
+#: species-data.h:543 tags.cc:2237
 msgid "Minotaur"
 msgstr "Минотавр"
 
-#: species-data.h:563 tags.cc:2224
+#: species-data.h:562 tags.cc:2234
 msgid "Mummy"
 msgstr "Мумия"
 
-#: species-data.h:582 tags.cc:2224
+#: species-data.h:581 tags.cc:2234
 msgid "Naga"
 msgstr "Нага"
 
-#: species-data.h:620 tags.cc:2224
+#: species-data.h:619 tags.cc:2234
 msgid "Ogre"
 msgstr "Огр"
 
-#: species-data.h:677 tags.cc:2228
+#: species-data.h:676 tags.cc:2238
 msgid "Tengu"
 msgstr "Тенгу"
 
-#: species-data.h:696 tags.cc:2224
+#: species-data.h:695 tags.cc:2234
 msgid "Troll"
 msgstr "Троль"
 
-#: species-data.h:715 tags.cc:2228
+#: species-data.h:714 tags.cc:2238
 msgid "Vampire"
 msgstr "Вампир"
 
-#: species-data.h:771
+#: species-data.h:770
+msgid "Lava Orc"
+msgstr "Лавовый Орк"
+
+#: species-data.h:770
 msgid "Orc"
 msgstr "Орк"
 
-#: species-data.h:789 tags.cc:2223
+#: species-data.h:788 tags.cc:2233
 msgid "High Elf"
 msgstr "Высший эльф"
 
@@ -3545,6 +3470,10 @@ msgstr "деревянный голем"
 #: mon-data.h:195
 msgid "rock worm"
 msgstr "каменный червь"
+
+#: mon-data.h:198
+msgid "lava fish"
+msgstr "лавовая рыба"
 
 #: mon-data.h:199
 msgid "jellyfish"
@@ -3590,6 +3519,10 @@ msgstr "светлячок"
 msgid "big fish"
 msgstr "большая рыба"
 
+#: mon-data.h:236
+msgid "lava worm"
+msgstr "лавовый червь"
+
 #: mon-data.h:237
 msgid "shark"
 msgstr "акула"
@@ -3613,6 +3546,10 @@ msgstr "чемпион хаоса"
 #: mon-data.h:279
 msgid "homunculus"
 msgstr "гомункул"
+
+#: mon-data.h:282
+msgid "lava orc"
+msgstr "лавовый орк"
 
 #: mon-data.h:284
 msgid "slave"
@@ -4002,6 +3939,10 @@ msgstr "мумия-священник"
 msgid "naga"
 msgstr "нага"
 
+#: mon-data.h:5034
+msgid "lava snake"
+msgstr "лавовая змея"
+
 #: mon-data.h:5928
 msgid "ice statue"
 msgstr "ледяная статуя"
@@ -4190,7 +4131,7 @@ msgstr "Асмодей"
 msgid "Ereshkigal"
 msgstr "Эрешкигаль"
 
-#: tags.cc:2234
+#: tags.cc:2244
 msgid "The Shining One"
 msgstr "Сияющий"
 
@@ -4238,6 +4179,11 @@ msgctxt "slain by"
 msgid "a rock worm"
 msgstr "каменным червём"
 
+#: ../mon-data.h:198
+msgctxt "slain by"
+msgid "a lava fish"
+msgstr "лавовой рыбой"
+
 #: ../mon-data.h:217
 msgctxt "slain by"
 msgid "a clay golem"
@@ -4252,6 +4198,16 @@ msgstr "каменным големом"
 msgctxt "slain by"
 msgid "a vapour"
 msgstr "паром"
+
+#: ../mon-data.h:236
+msgctxt "slain by"
+msgid "a lava worm"
+msgstr "лавовым червём"
+
+#: ../mon-data.h:282
+msgctxt "slain by"
+msgid "a lava orc"
+msgstr "лавовым орком"
 
 #: ../mon-data.h:2082
 msgctxt "slain by"
@@ -4278,6 +4234,11 @@ msgctxt "slain by"
 msgid "a mummy priest"
 msgstr "мумией-священником"
 
+#: ../mon-data.h:5034
+msgctxt "slain by"
+msgid "a lava snake"
+msgstr "лавовой змеёй"
+
 #: 
 msgid "Spider"
 msgstr "Пауки"
@@ -4292,19 +4253,19 @@ msgctxt "Was %s of %s%s"
 msgid "Lugonu"
 msgstr "Лугону"
 
-#: species-groups.h:12
+#: species-groups.h:13
 msgid "Simple"
 msgstr "Простые"
 
-#: species-groups.h:19
+#: species-groups.h:20
 msgid "Intermediate"
 msgstr "Средние"
 
-#: species-groups.h:26
+#: species-groups.h:27
 msgid "Advanced"
 msgstr "Продвинутые"
 
-#: directn.cc:3207
+#: directn.cc:3215
 msgid ", covered with ice"
 msgstr ", покрытый льдом"
 
@@ -4322,7 +4283,7 @@ msgstr " и "
 msgid "spattered with blood"
 msgstr "забрызганный кровью"
 
-#: output.cc:1556 english.cc:359
+#: output.cc:1556
 msgid "a "
 msgstr " "
 
@@ -4330,7 +4291,7 @@ msgstr " "
 msgid "A "
 msgstr " "
 
-#: output.cc:1556 english.cc:360
+#: output.cc:1556
 msgid "an "
 msgstr " "
 
@@ -4343,7 +4304,7 @@ msgstr " "
 msgid "one-"
 msgstr "одно"
 
-#: output.cc:1558 english.cc:423
+#: output.cc:1558
 msgid "the "
 msgstr " "
 
@@ -4374,7 +4335,7 @@ msgstr "Вы не можете запомнить это заклинание с
 msgid "[L-Click] Memorise (%)"
 msgstr "[Л-Клик] Запомнить (%)"
 
-#: directn.cc:2420
+#: directn.cc:2419
 msgid "[unseen terrain]"
 msgstr "[невиданные земли]"
 
@@ -4430,11 +4391,11 @@ msgstr "войти в ворота"
 
 #: tilereg-dgn.cc:809
 msgid "use stairs"
-msgstr "использовать лестницу"
+msgstr "использовать ступени"
 
 #: tilereg-dgn.cc:828
 msgid "[L-Click] Use stairs (%)"
-msgstr "[Л-Клик] Использовать лестницу (%)"
+msgstr "[Л-Клик] Использовать ступени (%)"
 
 #: tilereg-dgn.cc:834
 msgid "[L-Click] Pray at altar (%)"
@@ -4455,6 +4416,10 @@ msgstr "[Shift + П-Клик] Религия (%)"
 #: tilereg-dgn.cc:864
 msgid "[R-Click] Describe"
 msgstr "[П-Клик] Описание"
+
+#: tilereg-dgn.cc:906
+msgid "Floor."
+msgstr "Пол."
 
 #: tilereg-cmd.cc:103
 msgid "[L-Click] %s"
@@ -5009,4 +4974,413 @@ msgstr "очень медленный"
 #: output.cc:2573
 msgid "no status effects"
 msgstr "нет эффектов статуса"
+
+#: ability.cc:512
+msgid "Wall of Briars"
+msgstr "Стена Шипов"
+
+#: ability.cc:649
+msgid "Wall Jump"
+msgstr "Прыжок от Стены"
+
+#: ability.cc:1722
+msgid "You are too terrified to wall jump!"
+msgstr "Вы слишком испуганы, чтобы отпрыгивать от стены!"
+
+#: ability.cc:1729
+msgid "You cannot wall jump while caught in a %s."
+msgstr "Вы не можете отпрыгнуть от стены, пока пойманы в %s."
+
+#: ability.cc:1731
+msgctxt "You cannot wall jump while caught in a %s."
+msgid "web"
+msgstr "паутину"
+
+#: ability.cc:1732
+msgctxt "You cannot wall jump while caught in a %s."
+msgid "net"
+msgstr "сеть"
+
+#: ability.cc:1748
+msgid "There is nothing to wall jump against here."
+msgstr "Тут нет стены, чтобы от неё отпрыгнуть."
+
+#: player-act.cc:640
+msgid "Nothing wielded"
+msgstr "В руках ничего нет"
+
+#: feature-data.h:116
+msgid "metal wall"
+msgstr "металлическая стена"
+
+#: feature-data.h:123
+msgid "crystal wall"
+msgstr "кристальная стена"
+
+#: feature-data.h:137
+msgid "slime covered rock wall"
+msgstr "покрытая слизью стена из камней"
+
+#: feature-data.h:144
+msgid "stone wall"
+msgstr "каменная стена"
+
+#: feature-data.h:151
+msgid "unnaturally hard rock wall"
+msgstr "неестественно твёрдая стена из камней"
+
+#: feature-data.h:158
+msgid "translucent rock wall"
+msgstr "прозрачная стена из камней"
+
+#: feature-data.h:165
+msgid "translucent stone wall"
+msgstr "прозрачная каменная стена"
+
+#: feature-data.h:172
+msgid "translucent unnaturally hard rock wall"
+msgstr "прозрачная неестественно твёрдая стена из камней"
+
+#: feature-data.h:193
+msgid "the endless lava"
+msgstr "бесконечная лава"
+
+#: feature-data.h:214
+msgid "granite statue"
+msgstr "гранитная статуя"
+
+#: feature-data.h:228
+msgid "some lava"
+msgstr "немного лавы"
+
+#: feature-data.h:362
+msgid "stone staircase leading down"
+msgstr "каменные ступени, ведущие вниз"
+
+#: feature-data.h:374
+msgid "stone staircase leading up"
+msgstr "каменные ступени, ведущие вверх"
+
+#: feature-data.h:385
+msgid "escape hatch in the floor"
+msgstr "аварийный люк в полу"
+
+#: feature-data.h:392 feature-data.h:399
+msgid "escape hatch in the ceiling"
+msgstr "аварийный люк в потолке"
+
+#: feature-data.h:457
+msgid "sand-covered staircase"
+msgstr "покрытые песком ступени"
+
+#: feature-data.h:496
+msgid "staircase leading out of the dungeon"
+msgstr "ступени, ведущие прочь из подземелья"
+
+#: feature-data.h:503
+msgid "staircase to the Slime Pits"
+msgstr "ступени к Ямам Слизи"
+
+#: feature-data.h:508 feature-data.h:537 feature-data.h:546 feature-data.h:549
+msgid "staircase back to the Lair"
+msgstr "ступени назад к Логову"
+
+#: feature-data.h:511
+msgid "staircase to the Orcish Mines"
+msgstr "ступени к Орочьим Шахтам"
+
+#: feature-data.h:516 feature-data.h:528 feature-data.h:534 feature-data.h:555
+msgid "staircase back to the Dungeon"
+msgstr "ступени назад к Подземелью"
+
+#: feature-data.h:519
+msgid "staircase to the Dwarven Hall"
+msgstr "ступени к Залу Дворфов"
+
+#: feature-data.h:520
+msgid "staircase to the Enchanted Forest"
+msgstr "ступени к Зачарованному Лесу"
+
+#: feature-data.h:521
+msgid "staircase to the Hall of Blades"
+msgstr "ступени к Залу Клинков"
+
+#: feature-data.h:522 feature-data.h:523 feature-data.h:524 feature-data.h:531
+msgid "staircase back to the Vaults"
+msgstr "ступени назад к Хранилищам"
+
+#: feature-data.h:527
+msgid "staircase to the Lair"
+msgstr "ступени к Логову"
+
+#: feature-data.h:530
+msgid "staircase to the Crypt"
+msgstr "ступени к Склепу"
+
+#: feature-data.h:533
+msgid "staircase to the Ecumenical Temple"
+msgstr "ступени ко Всемирному Храму"
+
+#: feature-data.h:536
+msgid "staircase to the Snake Pit"
+msgstr "ступени к Змеиной Яме"
+
+#: feature-data.h:539
+msgid "staircase to the Elven Halls"
+msgstr "ступени к Эльфийским залам"
+
+#: feature-data.h:540
+msgid "staircase back to the Mines"
+msgstr "ступени назад к Шахтам"
+
+#: feature-data.h:542
+msgid "staircase to the Tomb"
+msgstr "ступени к Могиле"
+
+#: feature-data.h:543
+msgid "staircase back to the Crypt"
+msgstr "ступени назад к Склепу"
+
+#: feature-data.h:545
+msgid "staircase to the Swamp"
+msgstr "ступени к Болоту"
+
+#: feature-data.h:548
+msgid "staircase to the Shoals"
+msgstr "ступени к Побережью"
+
+#: feature-data.h:552
+msgid "crawl-hole back to the Lair"
+msgstr "дыра, ведущая назад в Логово"
+
+#: feature-data.h:554
+msgid "staircase to the Depths"
+msgstr "ступени к Глубинам"
+
+#: feature-data.h:116
+msgid "a metal wall"
+msgstr "металлическая стена"
+
+#: feature-data.h:123
+msgid "a crystal wall"
+msgstr "клистальная стена"
+
+#: feature-data.h:130
+msgid "a rock wall"
+msgstr "стена из камней"
+
+#: feature-data.h:137
+msgid "a slime covered rock wall"
+msgstr "покрытая слизью стена из камня"
+
+#: feature-data.h:144
+msgid "a stone wall"
+msgstr "каменная стена"
+
+#: feature-data.h:151
+msgid "an unnaturally hard rock wall"
+msgstr "неестественно твёрдая стена из камней"
+
+#: feature-data.h:158
+msgid "a translucent rock wall"
+msgstr "прозрачная стена из камней"
+
+#: feature-data.h:165
+msgid "a translucent stone wall"
+msgstr "прозрачная каменная стена"
+
+#: feature-data.h:172
+msgid "a translucent unnaturally hard rock wall"
+msgstr "прозрачная неестественно твёрдая стена из камней"
+
+#: feature-data.h:193
+msgid "a the endless lava"
+msgstr "бесконечная лава"
+
+#: feature-data.h:214
+msgid "a granite statue"
+msgstr "гранитная статуя"
+
+#: feature-data.h:228
+msgid "a some lava"
+msgstr "немного лавы"
+
+#: feature-data.h:256 feature-data.h:325
+msgid "the floor"
+msgstr "пол"
+
+#: feature-data.h:362
+msgid "a stone staircase leading down"
+msgstr "каменные ступени, ведущие вниз"
+
+#: feature-data.h:374
+msgid "a stone staircase leading up"
+msgstr "каменные ступени, ведущие вниз"
+
+#: feature-data.h:385
+msgid "an escape hatch in the floor"
+msgstr "аварийный люк в полу"
+
+#: feature-data.h:392 feature-data.h:399
+msgid "an escape hatch in the ceiling"
+msgstr "аварийный люк в потолке"
+
+#: feature-data.h:457
+msgid "a sand-covered staircase"
+msgstr "покрытые песком ступени"
+
+#: feature-data.h:496
+msgid "a staircase leading out of the dungeon"
+msgstr "ступени, ведущие прочь из подземелья"
+
+#: feature-data.h:503
+msgid "a staircase to the Slime Pits"
+msgstr "ступени к Ямам Слизи"
+
+#: feature-data.h:508 feature-data.h:537 feature-data.h:546 feature-data.h:549
+msgid "a staircase back to the Lair"
+msgstr "ступени назад к Логову"
+
+#: feature-data.h:511
+msgid "a staircase to the Orcish Mines"
+msgstr "ступени к Орочьим Шахтам"
+
+#: feature-data.h:516 feature-data.h:528 feature-data.h:534 feature-data.h:555
+msgid "a staircase back to the Dungeon"
+msgstr "ступени назад к Подземелью"
+
+#: feature-data.h:519
+msgid "a staircase to the Dwarven Hall"
+msgstr "ступени к Залу Дворфов"
+
+#: feature-data.h:520
+msgid "a staircase to the Enchanted Forest"
+msgstr "ступени к Зачарованному Лесу"
+
+#: feature-data.h:521
+msgid "a staircase to the Hall of Blades"
+msgstr "ступени к Залу Клинков"
+
+#: feature-data.h:522 feature-data.h:523 feature-data.h:524 feature-data.h:531
+msgid "a staircase back to the Vaults"
+msgstr "ступени назад к Хранилищам"
+
+#: feature-data.h:527
+msgid "a staircase to the Lair"
+msgstr "ступени к Логову"
+
+#: feature-data.h:530
+msgid "a staircase to the Crypt"
+msgstr "ступени к Склепу"
+
+#: feature-data.h:533
+msgid "a staircase to the Ecumenical Temple"
+msgstr "ступени ко Всемирному Храму"
+
+#: feature-data.h:536
+msgid "a staircase to the Snake Pit"
+msgstr "ступени к Змеиной Яме"
+
+#: feature-data.h:539
+msgid "a staircase to the Elven Halls"
+msgstr "ступени к Эльфийским залам"
+
+#: feature-data.h:540
+msgid "a staircase back to the Mines"
+msgstr "ступени назад к Шахтам"
+
+#: feature-data.h:542
+msgid "a staircase to the Tomb"
+msgstr "ступени к Могиле"
+
+#: feature-data.h:543
+msgid "a staircase back to the Crypt"
+msgstr "ступени назад к Склепу"
+
+#: feature-data.h:545
+msgid "a staircase to the Swamp"
+msgstr "ступени к Болоту"
+
+#: feature-data.h:548
+msgid "a staircase to the Shoals"
+msgstr "ступени к Побережью"
+
+#: feature-data.h:552
+msgid "a crawl-hole back to the Lair"
+msgstr "дыра, ведущая назад в Логово"
+
+#: feature-data.h:554
+msgid "a staircase to the Depths"
+msgstr "ступени к Глубинам"
+
+#: directn.cc:311
+msgid "Press: ? - help"
+msgstr "Нажмите: ? - помощь"
+
+#: directn.cc:316
+msgid ", v - describe"
+msgstr ", v - описать"
+
+#: directn.cc:317
+msgid ", . - travel"
+msgstr ", . - идти"
+
+#: directn.cc:319
+msgid ", g - get item"
+msgstr ", g - взять предмет"
+
+#: describe.cc:2439
+msgid "\n"
+"You have not yet explored it and cannot tell where it leads."
+msgstr "Вы ещё не знаете, куда это вас приведёт."
+
+#: describe.cc:2460
+msgid "\n"
+"(Pray here with <w>%s</w> to learn more.)\n"
+""
+msgstr "\n"
+"(Помолитесь здесь <w>%s</w>, чтобы узнать больше.)\n"
+""
+
+#: describe.cc:2481
+msgid "\n"
+"It can be dug through."
+msgstr "\n"
+"Можно копать."
+
+#: directn.cc:697
+msgid " (not visited)"
+msgstr " (не посещено)"
+
+#: directn.cc:2530
+msgid "What do you want to examine?"
+msgstr "Что вы хотите осмотреть?"
+
+#: directn.cc:2531
+msgid "What do you want to remember?"
+msgstr "Что вы хотите вспомнить?"
+
+#: directn.cc:558 directn.cc:658
+msgid "Items"
+msgstr "Вещи"
+
+#: directn.cc:564 directn.cc:677
+msgid "Features"
+msgstr "Особенности"
+
+#: directn.cc:566
+msgid "Visible "
+msgstr "Видимые "
+
+#: directn.cc:568
+msgid " (select to examine)"
+msgstr " (выберите для осмотра)"
+
+#: directn.cc:571
+msgid " (select to examine, '!' to %s):"
+msgstr " (выберите для осмотра, '!' для %s):"
+
+#: directn.cc:572
+msgid " (select to %s, '!' to examine):"
+msgstr " (выберите для %s, '!' для осмотра):"
 

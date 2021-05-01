@@ -308,15 +308,15 @@ void direction_chooser::print_top_prompt() const
 void direction_chooser::print_key_hints() const
 {
     // TODO: build this as a vector and insert ,s and \ns in a smarter way
-    string prompt = "Press: ? - help";
+    string prompt = _("Press: ? - help");
 
     if (just_looking)
     {
         if (you.see_cell(target()))
-            prompt += ", v - describe";
-        prompt += ", . - travel";
+            prompt += _(", v - describe");
+        prompt += _(", . - travel");
         if (in_bounds(target()) && env.map_knowledge(target()).item())
-            prompt += ", g - get item";
+            prompt += _(", g - get item");
     }
     else
     {
@@ -328,18 +328,18 @@ void direction_chooser::print_key_hints() const
         }
         string direction_hint = "";
         if (!behaviour->targeted())
-            direction_hint = "Dir - look around, f - activate";
+            direction_hint = _("Dir - look around, f - activate");
         else
         {
             switch (restricts)
             {
             case DIR_NONE:
-                direction_hint = "Shift-Dir - straight line";
+                direction_hint = _("Shift-Dir - straight line");
                 break;
             case DIR_TARGET:
             case DIR_SHADOW_STEP:
             case DIR_LEAP:
-                direction_hint = "Dir - move target";
+                direction_hint = _("Dir - move target");
                 break;
             }
         }
@@ -550,27 +550,26 @@ static coord_def _full_describe_menu(vector<monster_info> const &list_mons,
     if (title.empty())
     {
         if (!list_mons.empty())
-            title  = "Monsters";
+            title  = _("Monsters");
         if (!list_items.empty())
         {
             if (!title.empty())
                 title += "/";
-            title += "Items";
+            title += _("Items");
         }
         if (!list_features.empty())
         {
             if (!title.empty())
                 title += "/";
-            title += "Features";
+            title += _("Features");
         }
-        title = "Visible " + title;
+        title = _("Visible ") + title;
         if (examine_only)
-            title += " (select to examine)";
+            title += _(" (select to examine)");
         else
         {
-            title_secondary = title + " (select to examine, '!' to "
-              + selectverb + "):";
-            title += " (select to " + selectverb + ", '!' to examine):";
+            title_secondary = title + make_stringf(_(" (select to examine, '!' to %s):"), selectverb.c_str());
+            title += make_stringf(_(" (select to %s, '!' to examine):"), selectverb.c_str());
         }
     }
 
@@ -595,7 +594,7 @@ static coord_def _full_describe_menu(vector<monster_info> const &list_mons,
     // Build menu entries for monsters.
     if (!list_mons.empty())
     {
-        desc_menu.add_entry(new MenuEntry("Monsters", MEL_SUBTITLE));
+        desc_menu.add_entry(new MenuEntry(_("Monsters"), MEL_SUBTITLE));
         for (const monster_info &mi : list_mons)
         {
             // List monsters in the form
@@ -656,7 +655,7 @@ static coord_def _full_describe_menu(vector<monster_info> const &list_mons,
         const menu_sort_condition *cond = desc_menu.find_menu_sort_condition();
         desc_menu.sort_menu(all_items, cond);
 
-        desc_menu.add_entry(new MenuEntry("Items", MEL_SUBTITLE));
+        desc_menu.add_entry(new MenuEntry(_("Items"), MEL_SUBTITLE));
         for (InvEntry *me : all_items)
         {
 #ifndef USE_TILE_LOCAL
@@ -675,7 +674,7 @@ static coord_def _full_describe_menu(vector<monster_info> const &list_mons,
 
     if (!list_features.empty())
     {
-        desc_menu.add_entry(new MenuEntry("Features", MEL_SUBTITLE));
+        desc_menu.add_entry(new MenuEntry(_("Features"), MEL_SUBTITLE));
         for (const coord_def &c : list_features)
         {
             ostringstream desc;
@@ -693,9 +692,9 @@ static coord_def _full_describe_menu(vector<monster_info> const &list_mons,
                 desc << "(" << relpos.x << ", " << -relpos.y << ") ";
             }
 
-            desc << feature_description_at(c, false, DESC_A);
+            desc << _(feature_description_at(c, false, DESC_A).c_str());
             if (is_unknown_stair(c) || is_unknown_transporter(c))
-                desc << " (not visited)";
+                desc << _(" (not visited)");
             FeatureMenuEntry *me = new FeatureMenuEntry(desc.str(), c, hotkey);
             me->tag        = "description";
             // Hack to make features selectable.
@@ -2441,7 +2440,7 @@ string get_terse_square_desc(const coord_def &gc)
             desc = env.item[you.visible_igrd(gc)].name(DESC_PLAIN);
     }
     else
-        desc = feature_description_at(gc, false, DESC_PLAIN);
+        desc = _(feature_description_at(gc, false, DESC_PLAIN).c_str());
 
     return desc;
 }
@@ -2528,8 +2527,8 @@ void full_describe_square(const coord_def &c, bool cleanup)
     if (quantity > 1)
     {
         _full_describe_menu(list_mons, list_items, list_features, "", true,
-                            you.see_cell(c) ? "What do you want to examine?"
-                                            : "What do you want to remember?");
+                            you.see_cell(c) ? _("What do you want to examine?")
+                                            : _("What do you want to remember?"));
     }
     else if (quantity == 1)
     {
@@ -3196,6 +3195,10 @@ static bool _interesting_feature(dungeon_feature_type feat)
 }
 #endif
 
+/*
+ * i18n: since this function is used to query DB, it should never return translated
+ * strings. Just mark ones for translation with gettext_noop.
+ */
 string feature_description_at(const coord_def& where, bool covering,
                               description_level_type dtype)
 {
@@ -3210,16 +3213,16 @@ string feature_description_at(const coord_def& where, bool covering,
     if (covering && you.see_cell(where))
     {
         if (feat_is_tree(grid) && env.forest_awoken_until)
-            covering_description += _(", awoken");
+            covering_description += gettext_noop(", awoken");
 
         if (is_icecovered(where))
-            covering_description = _(", covered with ice");
+            covering_description = gettext_noop(", covered with ice");
 
         if (is_temp_terrain(where))
-            covering_description = _(", summoned");
+            covering_description = gettext_noop(", summoned");
 
         if (is_bloodcovered(where))
-            covering_description += _(", spattered with blood");
+            covering_description += gettext_noop(", spattered with blood");
     }
 
     // FIXME: remove desc markers completely; only Zin walls are left.
@@ -3263,21 +3266,21 @@ string feature_description_at(const coord_def& where, bool covering,
         if (door_desc_veto.empty() || door_desc_veto != "veto")
         {
             if (grid == DNGN_OPEN_DOOR)
-                desc += "open ";
+                desc += gettext_noop("open ");
             else if (grid == DNGN_CLOSED_CLEAR_DOOR)
-                desc += "closed translucent ";
+                desc += gettext_noop("closed translucent ");
             else if (grid == DNGN_OPEN_CLEAR_DOOR)
-                desc += "open translucent ";
+                desc += gettext_noop("open translucent ");
             else if (grid == DNGN_RUNED_DOOR)
-                desc += "runed ";
+                desc += gettext_noop("runed ");
             else if (grid == DNGN_RUNED_CLEAR_DOOR)
-                desc += "runed translucent ";
+                desc += gettext_noop("runed translucent ");
             else if (grid == DNGN_SEALED_DOOR)
-                desc += "sealed ";
+                desc += gettext_noop("sealed ");
             else if (grid == DNGN_SEALED_CLEAR_DOOR)
-                desc += "sealed translucent ";
+                desc += gettext_noop("sealed translucent ");
             else
-                desc += "closed ";
+                desc += gettext_noop("closed ");
         }
 
         desc += door_desc_prefix;
@@ -3291,7 +3294,7 @@ string feature_description_at(const coord_def& where, bool covering,
 
         desc += covering_description;
 
-        return _(thing_do_grammar(dtype, desc).c_str());
+        return thing_do_grammar(dtype, desc);
     }
 
     bool ignore_case = false;
@@ -3319,8 +3322,7 @@ string feature_description_at(const coord_def& where, bool covering,
         const string featdesc = grid == env.grid(where)
                               ? raw_feature_description(where)
                               : _base_feature_desc(grid, trap);
-        return _(thing_do_grammar(dtype, featdesc + covering_description,
-                ignore_case).c_str());
+        return thing_do_grammar(dtype, featdesc + covering_description, ignore_case);
     }
 }
 

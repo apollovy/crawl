@@ -88,6 +88,7 @@
 #include "travel.h"
 #include "unicode.h"
 #include "viewchar.h"
+#include "crawl_locale.h"
 
 using namespace ui;
 
@@ -2404,7 +2405,7 @@ void get_feature_desc(const coord_def &pos, describe_info &inf, bool include_ext
     strip_suffix(db_name, " (summoned)");
     string long_desc = getLongDescription(db_name);
 
-    inf.title = uppercase_first(desc);
+    inf.title = uppercase_first(_(desc.c_str()));
     if (!ends_with(desc, ".") && !ends_with(desc, "!")
         && !ends_with(desc, "?"))
     {
@@ -2435,15 +2436,14 @@ void get_feature_desc(const coord_def &pos, describe_info &inf, bool include_ext
         {
             if (is_unknown_stair(pos))
             {
-                long_desc += "\nYou have not yet explored it and cannot tell ";
-                long_desc += "where it leads.";
+                long_desc += _("\nYou have not yet explored it and cannot tell where it leads.");
             }
             else
             {
                 long_desc +=
-                    make_stringf("\nYou can view the location it leads to by "
+                    make_stringf(_("\nYou can view the location it leads to by "
                                  "examining it with <w>%s</w> and pressing "
-                                 "<w>%s</w>.",
+                                 "<w>%s</w>."),
                                  command_to_string(CMD_DISPLAY_MAP).c_str(),
                                  command_to_string(
                                      feat_stair_direction(feat) ==
@@ -2457,7 +2457,7 @@ void get_feature_desc(const coord_def &pos, describe_info &inf, bool include_ext
     if (feat_is_altar(feat))
     {
         long_desc +=
-            make_stringf("\n(Pray here with <w>%s</w> to learn more.)\n",
+            make_stringf(_("\n(Pray here with <w>%s</w> to learn more.)\n"),
                          command_to_string(CMD_GO_DOWNSTAIRS).c_str());
     }
 
@@ -2478,7 +2478,7 @@ void get_feature_desc(const coord_def &pos, describe_info &inf, bool include_ext
     if (feat_is_diggable(feat)
         && env.markers.property_at(pos, MAT_ANY, "veto_destroy") != "veto")
     {
-        long_desc += "\nIt can be dug through.";
+        long_desc += _("\nIt can be dug through.");
     }
 
     inf.body << long_desc;
