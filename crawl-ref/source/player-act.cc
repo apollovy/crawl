@@ -35,6 +35,7 @@
 #include "transform.h"
 #include "traps.h"
 #include "viewgeom.h"
+#include "crawl_locale.h"
 
 int player::mindex() const
 {
@@ -379,7 +380,7 @@ bool player::could_wield(const item_def &item, bool ignore_brand,
         && item.is_type(OBJ_MISSILES, MI_LARGE_ROCK))
     {
         if (!quiet)
-            mpr("That's too large and heavy for you to wield.");
+            mpr(_("That's too large and heavy for you to wield."));
         return false;
     }
 
@@ -389,7 +390,7 @@ bool player::could_wield(const item_def &item, bool ignore_brand,
         if (item.base_type == OBJ_ARMOUR || item.base_type == OBJ_JEWELLERY)
         {
             if (!quiet)
-                mprf("You can't wield %s.", base_type_string(item));
+                mprf(_("You can't wield %s."), base_type_string(item));
             return false;
         }
 
@@ -398,13 +399,13 @@ bool player::could_wield(const item_def &item, bool ignore_brand,
     else if (you.has_mutation(MUT_NO_GRASPING))
     {
         if (!quiet)
-            mpr("You can't use weapons.");
+            mpr(_("You can't use weapons."));
         return false;
     }
     else if (!ignore_transform && !form_can_wield())
     {
         if (!quiet)
-            mpr("You can't use weapons in this form.");
+            mpr(_("You can't use weapons in this form."));
         return false;
     }
 
@@ -413,7 +414,7 @@ bool player::could_wield(const item_def &item, bool ignore_brand,
     if (!is_weapon_wieldable(item, bsize))
     {
         if (!quiet)
-            mpr("That's too large for you to wield.");
+            mpr(_("That's too large for you to wield."));
         return false;
     }
 
@@ -427,7 +428,7 @@ bool player::could_wield(const item_def &item, bool ignore_brand,
     if (!ignore_brand && undead_or_demonic() && is_holy_item(item))
     {
         if (!quiet)
-            mpr("This weapon is holy and will not allow you to wield it.");
+            mpr(_("This weapon is holy and will not allow you to wield it."));
         return false;
     }
 
@@ -448,10 +449,10 @@ string player::name(description_level_type dt, bool, bool) const
         return "";
     case DESC_A: case DESC_THE:
     default:
-        return "you";
+        return _("you");
     case DESC_YOUR:
     case DESC_ITS:
-        return "your";
+        return _("your");
     }
 }
 
@@ -477,25 +478,25 @@ static string _hand_name_singular(bool temp)
         return get_form()->hand_name;
 
     if (you.has_mutation(MUT_PAWS, temp))
-        return "paw"; // XX redundant with species
+        return _("paw"); // XX redundant with species
 
     if (you.has_usable_claws())
-        return "claw";
+        return _("claw");
 
     if (you.has_usable_tentacles())
-        return "tentacle";
+        return _("tentacle");
 
     // For flavor reasons, use "fists" instead of "hands" in various places,
     // but if the creature does have a custom hand name, let the above code
     // preempt it.
     if (temp && you.form == transformation::statue)
-        return "fist";
+        return _("fist");
 
     // player has no usable claws, but has the mutation -- they are suppressed
     // by something. (The species names will give the wrong answer for this
     // case, except for felids, where we want "blade paws".)
     if (you.has_mutation(MUT_CLAWS, false))
-        return "hand";
+        return _("hand");
 
     // then fall back on the species name
     return species::hand_name(you.species);
@@ -517,7 +518,7 @@ string player::base_hand_name(bool plural, bool temp, bool *can_plural) const
     // UC weapon display, where X is the custom hand name. For that reason, we
     // need to do the calculation here.
     if (temp && form == transformation::blade_hands)
-        singular += "blade ";
+        singular += _("blade ");
     singular += _hand_name_singular(temp);
     if (plural && *can_plural)
         return pluralise(singular);
@@ -549,34 +550,34 @@ static string _foot_name_singular(bool *can_plural)
         return get_form()->foot_name;
 
     if (you.get_mutation_level(MUT_HOOVES) >= 3)
-        return "hoof";
+        return _("hoof");
 
     if (you.has_usable_talons())
-        return "talon";
+        return _("talon");
 
     if (you.has_usable_tentacles())
     {
         *can_plural = false;
-        return "tentacles";
+        return _("tentacles");
     }
 
     if (you.species == SP_NAGA
         || you.species == SP_DJINNI)
     {
         *can_plural = false;
-        return "underbelly";
+        return _("underbelly");
     }
 
     if (you.has_mutation(MUT_PAWS))
-        return "paw";
+        return _("paw");
 
     if (you.fishtail)
     {
         *can_plural = false;
-        return "tail";
+        return _("tail");
     }
 
-    return "foot";
+    return _("foot");
 }
 
 /**
@@ -612,13 +613,13 @@ string player::arm_name(bool plural, bool *can_plural) const
 
     string adj;
     if (form == transformation::lich)
-        adj = "bony";
+        adj = _("bony");
     else if (form == transformation::shadow)
-        adj = "shadowy";
+        adj = _("shadowy");
     else
         adj = species::skin_name(species, true);
 
-    if (adj != "fleshy")
+    if (adj != _("fleshy"))
         str = adj + " " + str;
 
     if (plural)
@@ -636,17 +637,17 @@ string player::arm_name(bool plural, bool *can_plural) const
  */
 string player::unarmed_attack_name() const
 {
-    string default_name = "Nothing wielded";
+    string default_name = _("Nothing wielded");
 
     if (has_usable_claws(true))
     {
         if (you.has_mutation(MUT_FANGS))
-            default_name = "Teeth and claws";
+            default_name = _("Teeth and claws");
         else
-            default_name = "Claws";
+            default_name = _("Claws");
     }
     else if (has_usable_tentacles(true))
-        default_name = "Tentacles";
+        default_name = _("Tentacles");
 
     return get_form()->get_uc_attack_name(default_name);
 }
@@ -661,7 +662,7 @@ bool player::fumbles_attack()
     {
         if (x_chance_in_y(3, 8))
         {
-            mpr("Your unstable footing causes you to fumble your attack.");
+            mpr(_("Your unstable footing causes you to fumble your attack."));
             did_fumble = true;
         }
         if (floundering())
@@ -712,7 +713,7 @@ static bool _god_prevents_berserk_haste(bool intentional)
     // a part of your penance.
     if (!intentional)
     {
-        simple_god_message(" protects you from inadvertent hurry.");
+        simple_god_message(_(" protects you from inadvertent hurry."));
         return true;
     }
 
@@ -721,7 +722,7 @@ static bool _god_prevents_berserk_haste(bool intentional)
     if (!you_worship(old_religion))
         return false;
 
-    simple_god_message(" forces you to slow down.");
+    simple_god_message(_(" forces you to slow down."));
     return true;
 }
 
@@ -744,18 +745,18 @@ bool player::go_berserk(bool intentional, bool potion)
     if (crawl_state.game_is_hints())
         Hints.hints_berserk_counter++;
 
-    mpr("A red film seems to cover your vision as you go berserk!");
+    mpr(_("A red film seems to cover your vision as you go berserk!"));
 
     if (you.duration[DUR_FINESSE] > 0)
     {
         you.duration[DUR_FINESSE] = 0; // Totally incompatible.
-        mpr("Your finesse ends abruptly.");
+        mpr(_("Your finesse ends abruptly."));
     }
 
     if (!_god_prevents_berserk_haste(intentional))
-        mpr("You feel yourself moving faster!");
+        mpr(_("You feel yourself moving faster!"));
 
-    mpr("You feel mighty!");
+    mpr(_("You feel mighty!"));
 
     const int berserk_duration = (20 + random2avg(19,2)) / 2;
     you.increase_duration(DUR_BERSERK, berserk_duration);
@@ -788,21 +789,21 @@ bool player::can_go_berserk(bool intentional, bool potion, bool quiet,
     bool success = false;
 
     if (berserk() && temp)
-        msg = "You're already berserk!";
+        msg = _("You're already berserk!");
     else if (duration[DUR_BERSERK_COOLDOWN] && temp)
-        msg = "You're still recovering from your berserk rage.";
+        msg = _("You're still recovering from your berserk rage.");
     else if (duration[DUR_DEATHS_DOOR] && temp)
-        msg = "You can't enter a blood rage from death's door.";
+        msg = _("You can't enter a blood rage from death's door.");
     else if (beheld() && !player_equip_unrand(UNRAND_DEMON_AXE) && temp)
-        msg = "You are too mesmerised to rage.";
+        msg = _("You are too mesmerised to rage.");
     else if (afraid() && temp)
-        msg = "You are too terrified to rage.";
+        msg = _("You are too terrified to rage.");
     else if (!intentional && !potion && clarity() && temp)
-        msg = "You're too calm and focused to rage.";
+        msg = _("You're too calm and focused to rage.");
     else if (is_lifeless_undead(temp))
-        msg = "You cannot raise a blood rage in your lifeless body.";
+        msg = _("You cannot raise a blood rage in your lifeless body.");
     else if (stasis())
-        msg = "Your stasis prevents you from going berserk.";
+        msg = _("Your stasis prevents you from going berserk.");
     else
         success = true;
 
@@ -841,7 +842,7 @@ bool player::shove(const char* feat_name)
         {
             moveto(*di);
             if (*feat_name)
-                mprf("You are pushed out of the %s.", feat_name);
+                mprf(_("You are pushed out of the %s."), feat_name);
             dprf("Moved to (%d, %d).", pos().x, pos().y);
             return true;
         }
