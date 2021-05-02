@@ -3181,7 +3181,12 @@ msgstr "Убит"
 #: hiscores.cc:2012
 msgctxt "Was %s of %s%s"
 msgid "a High Priest"
-msgstr "Первосвященник"
+msgstr "Высшим Жрецом"
+
+#: hiscores.cc:2014
+msgctxt "Was %s of %s%s"
+msgid "a Priest"
+msgstr "Жрецом"
 
 #: job-data.h:49
 msgid "Air Elementalist"
@@ -3238,6 +3243,10 @@ msgstr "Рыцарь Смерти"
 #: job-data.h:313
 msgid "Healer"
 msgstr "Целитель"
+
+#: job-data.h:331
+msgid "Priest"
+msgstr "Жрец"
 
 #: skills.cc:1711
 msgid "Blademaster"
@@ -3527,6 +3536,10 @@ msgstr "лавовый червь"
 msgid "shark"
 msgstr "акула"
 
+#: mon-data.h:260
+msgid "deep elf priest"
+msgstr "глубинный эльф жрец"
+
 #: mon-data.h:267
 msgid "sheep"
 msgstr "овца"
@@ -3587,6 +3600,10 @@ msgstr "летучая мышь"
 msgid "butterfly"
 msgstr "бабочка"
 
+#: mon-data.h:428
+msgid "caustic shrike"
+msgstr "едкий сорокопут"
+
 #: mon-data.h:507
 msgid "faun"
 msgstr "фавн"
@@ -3594,6 +3611,10 @@ msgstr "фавн"
 #: mon-data.h:753
 msgid "elf"
 msgstr "эльф"
+
+#: mon-data.h:845
+msgid "deep elf high priest"
+msgstr "глубинный эльф высший жрец"
 
 #: mon-data.h:992
 msgid "goblin"
@@ -3679,6 +3700,10 @@ msgstr "орк"
 msgid "orc wizard"
 msgstr "орк-волшебник"
 
+#: mon-data.h:1672
+msgid "orc priest"
+msgstr "орк жрец"
+
 #: mon-data.h:1685
 msgid "orc warrior"
 msgstr "орк-воин"
@@ -3686,6 +3711,10 @@ msgstr "орк-воин"
 #: mon-data.h:1698
 msgid "orc knight"
 msgstr "орк-рыцарь"
+
+#: mon-data.h:1737
+msgid "orc high priest"
+msgstr "орк высший жрец"
 
 #: mon-data.h:1751
 msgid "human"
@@ -3933,7 +3962,7 @@ msgstr "королевская мумия"
 
 #: mon-data.h:3724
 msgid "mummy priest"
-msgstr "мумия-священник"
+msgstr "мумия священник"
 
 #: mon-data.h:3738
 msgid "naga"
@@ -4204,10 +4233,35 @@ msgctxt "slain by"
 msgid "a lava worm"
 msgstr "лавовым червём"
 
+#: ../mon-data.h:260
+msgctxt "slain by"
+msgid "a deep elf priest"
+msgstr "глубинным эльфом жрецом"
+
 #: ../mon-data.h:282
 msgctxt "slain by"
 msgid "a lava orc"
 msgstr "лавовым орком"
+
+#: ../mon-data.h:428
+msgctxt "slain by"
+msgid "a caustic shrike"
+msgstr "едким сорокопутом"
+
+#: ../mon-data.h:845
+msgctxt "slain by"
+msgid "a deep elf high priest"
+msgstr "глубинным эльфом высшим жрецом"
+
+#: ../mon-data.h:1672
+msgctxt "slain by"
+msgid "an orc priest"
+msgstr "орком жрецом"
+
+#: ../mon-data.h:1737
+msgctxt "slain by"
+msgid "an orc high priest"
+msgstr "орком высшим жрецом"
 
 #: ../mon-data.h:2082
 msgctxt "slain by"
@@ -4232,7 +4286,7 @@ msgstr "королевской мумией"
 #: ../mon-data.h:3724
 msgctxt "slain by"
 msgid "a mummy priest"
-msgstr "мумией-священником"
+msgstr "мумией священником"
 
 #: ../mon-data.h:5034
 msgctxt "slain by"
@@ -5332,7 +5386,8 @@ msgstr ", g - взять предмет"
 #: describe.cc:2439
 msgid "\n"
 "You have not yet explored it and cannot tell where it leads."
-msgstr "Вы ещё не знаете, куда это вас приведёт."
+msgstr "\n"
+"Вы ещё не знаете, куда это вас приведёт."
 
 #: describe.cc:2460
 msgid "\n"
