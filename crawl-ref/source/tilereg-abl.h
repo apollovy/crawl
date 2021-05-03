@@ -2,6 +2,7 @@
 #pragma once
 
 #include "tilereg-grid.h"
+#include "crawl_locale.h"
 
 class AbilityRegion : public GridRegion
 {
@@ -14,7 +15,7 @@ public:
     virtual bool update_tab_tip_text(string &tip, bool active) override;
     virtual bool update_alt_text(string &alt) override;
 
-    virtual const string name() const override { return "Abilities"; }
+    virtual const string name() const override { return _("Abilities"); }
 
 protected:
     virtual int get_max_slots();

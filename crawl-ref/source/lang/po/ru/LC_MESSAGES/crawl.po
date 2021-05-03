@@ -194,7 +194,7 @@ msgstr "Перебирает комбинации из случайных пер
 msgid "Play a new game with your previous choice."
 msgstr "Начать новую игру, использовав ваш предыдущий выбор."
 
-#: newgame.cc:1660 initfile.cc:609
+#: newgame.cc:1660 initfile.cc:610
 msgid "claws"
 msgstr "когти"
 
@@ -2276,43 +2276,43 @@ msgstr "Прыжок"
 msgid "unable to breathe"
 msgstr "невозможно дышать"
 
-#: ability.cc:1541
+#: ability.cc:1543
 msgid "You have nothing to donate!"
 msgstr "Вам нечем пожертвовать!"
 
-#: ability.cc:1567
+#: ability.cc:1569
 msgid "You aren't in the Abyss!"
 msgstr "Вы не в Бездне!"
 
-#: ability.cc:1667
+#: ability.cc:1669
 msgid "You are already invisible!"
 msgstr "Вы уже невидимы!"
 
-#: ability.cc:2390
+#: ability.cc:2392
 msgid "Another wave of unholy energy enters you."
 msgstr "В вас входит еще одна волна нечестивой энергии."
 
-#: ability.cc:2406
+#: ability.cc:2408
 msgid "There are no remains here to animate!"
 msgstr "Здесь нет останков для оживления!"
 
-#: ability.cc:2435
+#: ability.cc:2437
 msgid "You feel life flooding into your body."
 msgstr "You feel life flooding into your body."
 
-#: ability.cc:2455
+#: ability.cc:2457
 msgid "Your soul already belongs to Yredelemnul."
 msgstr "Твоя душа уже принадлежит Иределемнулу."
 
-#: ability.cc:2472
+#: ability.cc:2474
 msgid "You see nothing there you can enslave the soul of!"
 msgstr "Вы не видите там никого, чью душу можно было бы поработить!"
 
-#: ability.cc:2494
+#: ability.cc:2496
 msgid "You feel more confident with your borrowed prowess."
 msgstr "Вы чувствуете себя увереннее с заимствованной отвагой."
 
-#: ability.cc:2495
+#: ability.cc:2497
 msgid "You gain the combat prowess of a mighty hero."
 msgstr "Вы обретаете боевую отвагу могучего героя."
 
@@ -2320,71 +2320,71 @@ msgstr "Вы обретаете боевую отвагу могучего ге�
 msgid "new energy."
 msgstr "новая энергия."
 
-#: ability.cc:2513
+#: ability.cc:2515
 msgid "You can now deal lightning-fast blows."
 msgstr "Теперь вы можете наносить молниеносные удары."
 
-#: ability.cc:2641
+#: ability.cc:2643
 msgid "You renew your call for help."
 msgstr "Вы возобновляете свой призыв о помощи."
 
-#: ability.cc:2663
+#: ability.cc:2665
 msgid "You are healed."
 msgstr "Вы исцелены."
 
-#: ability.cc:2714
+#: ability.cc:2716
 msgid "You cannot banish yourself!"
 msgstr "Вы не можете изгнать себя!"
 
-#: ability.cc:2817
+#: ability.cc:2819
 msgid "You stop recalling your allies."
 msgstr "Вы перестаете вспоминать своих союзников."
 
-#: ability.cc:3015
+#: ability.cc:3017
 msgid "You're too exhausted to draw out your power."
 msgstr "Вы слишком устали, чтобы использовать свою силу."
 
-#: ability.cc:3025
+#: ability.cc:3027
 msgid "You have no need to draw out power."
 msgstr "Вам нет нужды использовать силу."
 
-#: ability.cc:3035
+#: ability.cc:3037
 msgid "You're too exhausted to power leap."
 msgstr "Вы слишком устали, чтобы использовать мощный прыжок."
 
-#: ability.cc:3055
+#: ability.cc:3057
 msgid "You're too exhausted to unleash your apocalyptic power."
 msgstr "Вы слишком устали, чтобы раскрыть свою апокалиптическую силу."
 
-#: ability.cc:3071
+#: ability.cc:3073
 msgid "You feel a buildup of energy."
 msgstr "Вы чувствуете прилив энергии."
 
-#: ability.cc:3123
+#: ability.cc:3125
 msgid "You are already lashing out."
 msgstr "Вы уже набрасываетесь."
 
-#: ability.cc:3128
+#: ability.cc:3130
 msgid "You are too exhausted to lash out."
 msgstr "Вы слишком устали, чтобы наброситься."
 
-#: ability.cc:3132
+#: ability.cc:3134
 msgid "Your muscles tense, ready for explosive movement..."
 msgstr "Ваши мышцы напрягаются, готовые к взрывному движению..."
 
-#: ability.cc:3140
+#: ability.cc:3142
 msgid "You are already engulfed in a heavenly storm!"
 msgstr "Вы уже поглощены божественной бурей!"
 
-#: ability.cc:3153
+#: ability.cc:3155
 msgid "Really renounce your faith, foregoing its fabulous benefits?"
 msgstr "Неужели откажитесь от своей веры, отказавшись от ее баснословных благ?"
 
-#: ability.cc:3155
+#: ability.cc:3157
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: ability.cc:3178
+#: ability.cc:3180
 msgid "Sorry, you can't do that."
 msgstr "Извините, вы не можете этого сделать."
 
@@ -2653,131 +2653,131 @@ msgstr "Арена"
 msgid "Unknown"
 msgstr "Неизвестный"
 
-#: religion.cc:2133
+#: religion.cc:2164
 msgid "nameless"
 msgstr "безымянный"
 
-#: religion.cc:2134 tags.cc:2244
+#: religion.cc:2165 tags.cc:2244
 msgid "Zin"
 msgstr "Зин"
 
-#: religion.cc:2135
+#: religion.cc:2166
 msgid "the Shining One"
 msgstr "Сияющий"
 
-#: religion.cc:2136 tags.cc:2244
+#: religion.cc:2167 tags.cc:2244
 msgid "Kikubaaqudgha"
 msgstr "Кикубаакудгха"
 
-#: religion.cc:2137 tags.cc:2244
+#: religion.cc:2168 tags.cc:2244
 msgid "Yredelemnul"
 msgstr "Иределемнул"
 
-#: religion.cc:2138 tags.cc:2245
+#: religion.cc:2169 tags.cc:2245
 msgid "Vehumet"
 msgstr "Вехумет"
 
-#: religion.cc:2139 tags.cc:2245
+#: religion.cc:2170 tags.cc:2245
 msgid "Okawaru"
 msgstr "Окавару"
 
-#: religion.cc:2140 tags.cc:2245
+#: religion.cc:2171 tags.cc:2245
 msgid "Makhleb"
 msgstr "Махлеб"
 
-#: religion.cc:2141 tags.cc:2245
+#: religion.cc:2172 tags.cc:2245
 msgid "Sif Muna"
 msgstr "Сив Муна"
 
-#: religion.cc:2142 tags.cc:2245
+#: religion.cc:2173 tags.cc:2245
 msgid "Trog"
 msgstr "Трог"
 
-#: religion.cc:2143 tags.cc:2245
+#: religion.cc:2174 tags.cc:2245
 msgid "Nemelex Xobeh"
 msgstr "Немелекс Ксобех"
 
-#: religion.cc:2144 tags.cc:2246
+#: religion.cc:2175 tags.cc:2246
 msgid "Elyvilon"
 msgstr "Эливилон"
 
-#: religion.cc:2145 tags.cc:2246
+#: religion.cc:2176 tags.cc:2246
 msgid "Lugonu"
 msgstr "Лугону"
 
-#: religion.cc:2146 tags.cc:2246
+#: religion.cc:2177 tags.cc:2246
 msgid "Beogh"
 msgstr "Бео"
 
-#: religion.cc:2147 tags.cc:2246
+#: religion.cc:2178 tags.cc:2246
 msgid "Fedhas"
 msgstr "Федхаз"
 
-#: religion.cc:2148 tags.cc:2246
+#: religion.cc:2179 tags.cc:2246
 msgid "Cheibriados"
 msgstr "Кайбриадос"
 
-#: religion.cc:2149 tags.cc:2244
+#: religion.cc:2180 tags.cc:2244
 msgid "Xom"
 msgstr "Ксом"
 
-#: religion.cc:2150 tags.cc:2247
+#: religion.cc:2181 tags.cc:2247
 msgid "Ashenzari"
 msgstr "Эшензари"
 
-#: religion.cc:2151
+#: religion.cc:2182
 msgid "Dithmenos"
 msgstr "Дитменос"
 
-#: religion.cc:2152
+#: religion.cc:2183
 msgid "Gozag"
 msgstr "Гозаг"
 
-#: religion.cc:2153
+#: religion.cc:2184
 msgid "Qazlal"
 msgstr "Кацлаль"
 
-#: religion.cc:2154
+#: religion.cc:2185
 msgid "Ru"
 msgstr "Ру"
 
-#: religion.cc:2156
+#: religion.cc:2187
 msgid "Pakellas"
 msgstr "Пакеллас"
 
-#: religion.cc:2160
+#: religion.cc:2191
 msgid "Wu Jian"
 msgstr "У Цзянь"
 
-#: religion.cc:2162
+#: religion.cc:2193
 msgid "an unknown god"
 msgstr "неизвестный бог"
 
-#: religion.cc:2181
+#: religion.cc:2212
 msgid "Deng Ai"
 msgstr "Дэн Ай"
 
-#: religion.cc:2182
+#: religion.cc:2213
 msgid "Jiang Wei"
 msgstr "Цзян Вэй"
 
-#: religion.cc:2183
+#: religion.cc:2214
 msgid "Zhang Bao"
 msgstr "Чжан Бао"
 
-#: religion.cc:2184
+#: religion.cc:2215
 msgid "Ma Yunglu"
 msgstr "Ма Юнглу"
 
-#: religion.cc:2185
+#: religion.cc:2216
 msgid "Sun Luban"
 msgstr "Сан Любань"
 
-#: religion.cc:2186
+#: religion.cc:2217
 msgid "Gene Jian Bin"
 msgstr "Джин Цзянь Бин"
 
-#: religion.cc:2187
+#: religion.cc:2218
 msgid "Cai Fang"
 msgstr "Кай Фан"
 
@@ -4385,6 +4385,7 @@ msgctxt "slain by"
 msgid "a mummy priest"
 msgstr "мумией священником"
 
+#. For whatever reasons this one goes without leading "a"
 #: ../mon-data.h:4709
 msgctxt "slain by"
 msgid "yak"
@@ -4494,16 +4495,24 @@ msgstr "одно"
 msgid "the "
 msgstr " "
 
-#: tilereg-abl.cc:89 tilereg-mem.cc:87 tilereg-spl.cc:87 tilereg-dgn.cc:726
+#: tilereg-abl.cc:94 tilereg-mem.cc:87 tilereg-spl.cc:87 tilereg-dgn.cc:726
 #: tilereg-cmd.cc:87 tilereg-skl.cc:107 tilereg-skl.cc:130 tilereg-inv.cc:252
 msgid "[L-Click] "
 msgstr "[Л-Клик] "
 
-#: tilereg-abl.cc:114
+#: tilereg-abl.cc:98
+msgid "Display abilities"
+msgstr "Показать способности"
+
+#: tilereg-abl.cc:99
+msgid "Use abilities"
+msgstr "Использовать способности"
+
+#: tilereg-abl.cc:119
 msgid "[L-Click] Use (%)"
 msgstr "[Л-Клик] Использовать (%)"
 
-#: tilereg-abl.cc:118 tilereg-mem.cc:116 tilereg-skl.cc:141 tilereg-inv.cc:472
+#: tilereg-abl.cc:123 tilereg-mem.cc:116 tilereg-skl.cc:141 tilereg-inv.cc:472
 msgid "\n"
 "[R-Click] Describe"
 msgstr "\n"
@@ -5169,6 +5178,10 @@ msgstr "Выдыхать Кислоту"
 msgid "Trog's Hand"
 msgstr "Рука Трога"
 
+#: ability.cc:464
+msgid "Depart the Abyss"
+msgstr "Покинуть Бездну"
+
 #: ability.cc:512
 msgid "Wall of Briars"
 msgstr "Стена Шипов"
@@ -5177,29 +5190,37 @@ msgstr "Стена Шипов"
 msgid "Wall Jump"
 msgstr "Прыжок от Стены"
 
-#: ability.cc:1722
+#: ability.cc:718
+msgid "no special abilities"
+msgstr "нет особых способностей"
+
+#: ability.cc:876
+msgid "This ability costs: "
+msgstr "Эта способность стоит: "
+
+#: ability.cc:1724
 msgid "You are too terrified to wall jump!"
 msgstr "Вы слишком испуганы, чтобы отпрыгивать от стены!"
 
-#: ability.cc:1729
+#: ability.cc:1731
 msgid "You cannot wall jump while caught in a %s."
 msgstr "Вы не можете отпрыгнуть от стены, пока пойманы в %s."
 
-#: ability.cc:1731
+#: ability.cc:1733
 msgctxt "You cannot wall jump while caught in a %s."
 msgid "web"
 msgstr "паутину"
 
-#: ability.cc:1732
+#: ability.cc:1734
 msgctxt "You cannot wall jump while caught in a %s."
 msgid "net"
 msgstr "сеть"
 
-#: ability.cc:1748
+#: ability.cc:1750
 msgid "There is nothing to wall jump against here."
 msgstr "Тут нет стены, чтобы от неё отпрыгнуть."
 
-#: ability.cc:2064 ability.cc:2138
+#: ability.cc:2066 ability.cc:2140
 msgid "You spit a glob of acid."
 msgstr "Вы выплёвываете шар кислоты."
 
@@ -5710,4 +5731,36 @@ msgstr "осиным"
 msgctxt "Was %s of %s%s"
 msgid "Cheibriados"
 msgstr "Кайбриадоса"
+
+#: tilereg-abl.h:18
+msgid "Abilities"
+msgstr "Способности"
+
+#: quiver.cc:1452
+msgid "Abil: "
+msgstr "Способность: "
+
+#: tilesdl.cc:379
+msgid "System Commands"
+msgstr "Системные Команды"
+
+#: tilesdl.cc:380
+msgid "Execute system commands"
+msgstr "Запустить системные команды"
+
+#: tilesdl.cc:383
+msgid "Navigation"
+msgstr "Навигация"
+
+#: tilesdl.cc:383
+msgid "Navigate around map"
+msgstr "Навигация по карте"
+
+#: tilesdl.cc:375
+msgid "Commands"
+msgstr "Команды"
+
+#: tilesdl.cc:376
+msgid "Execute commands"
+msgstr "Выполнить команды"
 

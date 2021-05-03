@@ -65,6 +65,7 @@
 #
 #    ANDROID       -- perform an Android build (see docs/develop/android.txt)
 #    TOUCH_UI      -- enable UI behaviour more compatible with touch-screens
+#    ENABLE_NLS    -- enable localization or not
 #
 # For various mac build tricks oriented at release builds see the various
 # mac-app-* targets as well as the crawl-universal target. (For normal dev

@@ -40,6 +40,7 @@
 #include "transform.h"
 #include "traps.h"
 #include "rltiles/tiledef-icons.h"
+#include "crawl_locale.h"
 
 static int _get_pack_slot(const item_def&);
 static bool _item_matches(const item_def &item, fire_type types,
@@ -1448,10 +1449,10 @@ namespace quiver
             formatted_string qdesc;
 
             qdesc.textcolour(Options.status_caption_colour);
-            qdesc.cprintf("Abil: ");
+            qdesc.cprintf(_("Abil: "));
 
             qdesc.textcolour(quiver_color());
-            qdesc.cprintf("%s", ability_name(ability));
+            qdesc.cprintf("%s", _(ability_name(ability)));
 
             return qdesc;
         }

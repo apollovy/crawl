@@ -49,6 +49,7 @@
 #include "viewgeom.h"
 #include "view.h"
 #include "windowmanager.h"
+#include "crawl_locale.h"
 
 #ifdef __ANDROID__
 #include <android/log.h>
@@ -370,14 +371,16 @@ bool TilesFramework::initialise()
     m_region_mon  = new MonsterRegion(m_init);
     m_region_skl  = new SkillRegion(m_init);
     m_region_cmd  = new CommandRegion(m_init, ct_action_commands,
-                                      ARRAYSZ(ct_action_commands));
+                                      ARRAYSZ(ct_action_commands),
+                                      _("Commands"),
+                                      _("Execute commands"));
     m_region_cmd_meta = new CommandRegion(m_init, ct_system_commands,
                                           ARRAYSZ(ct_system_commands),
-                                          "System Commands",
-                                          "Execute system commands");
+                                          _("System Commands"),
+                                          _("Execute system commands"));
     m_region_cmd_map = new CommandRegion(m_init, ct_map_commands,
                                          ARRAYSZ(ct_map_commands),
-                                         "Navigation", "Navigate around map");
+                                         _("Navigation"), _("Navigate around map"));
 
 #ifdef TOUCH_UI
     if (tiles.is_using_small_layout())

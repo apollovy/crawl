@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "tilereg-grid.h"
+#include "crawl_locale.h"
 
 using std::vector;
 
@@ -19,7 +20,7 @@ public:
     virtual bool update_tab_tip_text(string &tip, bool active) override;
     virtual bool update_alt_text(string &alt) override;
 
-    virtual const string name() const override { return "Monsters"; }
+    virtual const string name() const override { return _("Monsters"); }
 
 protected:
     const monster_info* get_monster(unsigned int idx) const;

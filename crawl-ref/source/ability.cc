@@ -1182,16 +1182,18 @@ string get_ability_desc(const ability_type ability, bool need_title)
         lookup += make_stringf(_("%s frowns upon the use of this ability.\n"), uppercase_first(god_name(you.religion)).c_str());
     }
 
-    ostringstream res;
-    if (need_title)
-        res << name << "\n\n";
-    res << lookup << "\n" << _detailed_cost_description(ability);
-
     const string quote = getQuoteString(name + " ability");
-    if (!quote.empty())
-        res << "\n\n" << quote;
-
-    return res.str();
+    return make_stringf(
+            _("%s%s\n%s%s"),
+            need_title
+            ? make_stringf("%s\n\n", _(name.c_str())).c_str()
+            : "",
+            lookup.c_str(),
+            _detailed_cost_description(ability).c_str(),
+            quote.empty()
+            ? ""
+            : make_stringf("\n\n%s", quote.c_str()).c_str()
+    );
 }
 
 static void _print_talent_description(const talent& tal)
