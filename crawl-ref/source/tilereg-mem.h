@@ -2,6 +2,7 @@
 #pragma once
 
 #include "tilereg-spl.h"
+#include "crawl_locale.h"
 
 class MemoriseRegion : public SpellRegion
 {
@@ -13,7 +14,7 @@ public:
     virtual bool update_tip_text(string &tip) override;
     virtual bool update_tab_tip_text(string &tip, bool active) override;
 
-    virtual const string name() const override { return "Memorisation"; }
+    virtual const string name() const override { return _("Memorisation"); }
 
 protected:
     virtual int get_max_slots() override;

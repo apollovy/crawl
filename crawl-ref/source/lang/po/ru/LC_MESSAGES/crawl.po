@@ -1836,7 +1836,7 @@ msgstr "Предмет"
 msgid "All Levels"
 msgstr "Все уровни"
 
-#: directn.cc:553 directn.cc:597
+#: directn.cc:553 directn.cc:597 tilereg-mon.h:23
 msgid "Monsters"
 msgstr "Монстры"
 
@@ -4495,24 +4495,24 @@ msgstr "одно"
 msgid "the "
 msgstr " "
 
-#: tilereg-abl.cc:94 tilereg-mem.cc:87 tilereg-spl.cc:87 tilereg-dgn.cc:726
+#: tilereg-abl.cc:89 tilereg-mem.cc:87 tilereg-spl.cc:87 tilereg-dgn.cc:726
 #: tilereg-cmd.cc:87 tilereg-skl.cc:107 tilereg-skl.cc:130 tilereg-inv.cc:252
 msgid "[L-Click] "
 msgstr "[Л-Клик] "
 
-#: tilereg-abl.cc:98
+#: tilereg-abl.cc:93
 msgid "Display abilities"
 msgstr "Показать способности"
 
-#: tilereg-abl.cc:99
+#: tilereg-abl.cc:94
 msgid "Use abilities"
 msgstr "Использовать способности"
 
-#: tilereg-abl.cc:119
+#: tilereg-abl.cc:114
 msgid "[L-Click] Use (%)"
 msgstr "[Л-Клик] Использовать (%)"
 
-#: tilereg-abl.cc:123 tilereg-mem.cc:116 tilereg-skl.cc:141 tilereg-inv.cc:472
+#: tilereg-abl.cc:118 tilereg-mem.cc:116 tilereg-skl.cc:141 tilereg-inv.cc:472
 msgid "\n"
 "[R-Click] Describe"
 msgstr "\n"
@@ -5763,4 +5763,20 @@ msgstr "Команды"
 #: tilesdl.cc:376
 msgid "Execute commands"
 msgstr "Выполнить команды"
+
+#: tilereg-skl.h:18
+msgid "Skills"
+msgstr "Навыки"
+
+#: tilereg-mem.h:17
+msgid "Memorisation"
+msgstr "Запоминание"
+
+#: tilereg-inv.h:18
+msgid "Inventory"
+msgstr "Инвентарь"
+
+#: tilereg-spl.h:18
+msgid "Spells"
+msgstr "Заклинания"
 

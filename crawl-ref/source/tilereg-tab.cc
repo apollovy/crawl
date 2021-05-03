@@ -13,6 +13,7 @@
 #include "stringutil.h"
 #include "rltiles/tiledef-gui.h"
 #include "tiles-build-specific.h"
+#include "crawl_locale.h"
 
 TabbedRegion::TabbedRegion(const TileRegionInit &init) :
     GridRegion(init),
@@ -427,12 +428,15 @@ bool TabbedRegion::update_alt_text(string &alt)
 int TabbedRegion::find_tab(string tab_name) const
 {
     lowercase(tab_name);
-    string pluralised_name = pluralise(tab_name);
+    tab_name = uppercase_first(tab_name);
+    string pluralised_name = _(pluralise(tab_name).c_str());
+    tab_name = _(tab_name.c_str());
     for (int i = 0, size = m_tabs.size(); i < size; ++i)
     {
         if (m_tabs[i].reg == nullptr) continue;
 
         string reg_name = lowercase_string(m_tabs[i].reg->name());
+        reg_name = uppercase_first(reg_name);
         if (tab_name == reg_name || pluralised_name == reg_name)
             return i;
     }
