@@ -1657,7 +1657,7 @@ msgstr "взрыв"
 msgid "kick"
 msgstr "пинок"
 
-#: player-act.cc:484
+#: monster.cc:2382 monster.cc:2554 player-act.cc:484
 msgid "claw"
 msgstr "коготь"
 
@@ -2735,7 +2735,7 @@ msgstr "Гозаг"
 
 #: religion.cc:2153
 msgid "Qazlal"
-msgstr "Казлал"
+msgstr "Кацлаль"
 
 #: religion.cc:2154
 msgid "Ru"
@@ -3132,47 +3132,47 @@ msgstr "книга заклинаний"
 
 #: hiscores.cc:573
 msgid "Jan"
-msgstr "Янв"
+msgstr "Января"
 
 #: hiscores.cc:573
 msgid "Feb"
-msgstr "Фев"
+msgstr "Февраля"
 
 #: hiscores.cc:573
 msgid "Mar"
-msgstr "Мар"
+msgstr "Марта"
 
 #: hiscores.cc:573
 msgid "May"
-msgstr "Май"
+msgstr "Мая"
 
 #: hiscores.cc:573
 msgid "June"
-msgstr "Июнь"
+msgstr "Июня"
 
 #: hiscores.cc:574
 msgid "July"
-msgstr "Июль"
+msgstr "Июля"
 
 #: hiscores.cc:574
 msgid "Aug"
-msgstr "Авг"
+msgstr "Августа"
 
 #: hiscores.cc:574
 msgid "Sept"
-msgstr "Сен"
+msgstr "Сентября"
 
 #: hiscores.cc:574
 msgid "Oct"
-msgstr "Окт"
+msgstr "Октября"
 
 #: hiscores.cc:574
 msgid "Nov"
-msgstr "Ноя"
+msgstr "Ноября"
 
 #: hiscores.cc:574
 msgid "Dec"
-msgstr "Дек"
+msgstr "Декабря"
 
 #: hiscores.cc:1820
 msgid "Slain"
@@ -3183,10 +3183,30 @@ msgctxt "Was %s of %s%s"
 msgid "a High Priest"
 msgstr "Высшим Жрецом"
 
+#: hiscores.cc:2013
+msgctxt "Was %s of %s%s"
+msgid "an Elder"
+msgstr "Старейшиной"
+
 #: hiscores.cc:2014
 msgctxt "Was %s of %s%s"
 msgid "a Priest"
 msgstr "Жрецом"
+
+#: hiscores.cc:2015
+msgctxt "Was %s of %s%s"
+msgid "a Believer"
+msgstr "Верующим"
+
+#: hiscores.cc:2016
+msgctxt "Was %s of %s%s"
+msgid "a Follower"
+msgstr "Последователем"
+
+#: hiscores.cc:2017
+msgctxt "Was %s of %s%s"
+msgid "an Initiate"
+msgstr "Послушником"
 
 #: job-data.h:49
 msgid "Air Elementalist"
@@ -3408,6 +3428,14 @@ msgstr "Эльф"
 msgid "Demigod"
 msgstr "Полубог"
 
+#: species-data.h:106 tags.cc:2238
+msgid "Demonspawn"
+msgstr "Демонорождённый"
+
+#: species-data.h:343
+msgid "You can spit globs of acid."
+msgstr "Вы можете плеваться шарами кислоты."
+
 #: species-data.h:381
 msgid "You can dig through walls and to a lower floor."
 msgstr "Вы можете пробивать стены и на рыть лаз на нижний этаж."
@@ -3552,6 +3580,10 @@ msgstr "грифон"
 msgid "beetle"
 msgstr "жук"
 
+#: mon-data.h:271
+msgid "putrid demonspawn"
+msgstr "мерзкий демонорождённый"
+
 #: mon-data.h:272
 msgid "chaos champion"
 msgstr "чемпион хаоса"
@@ -3603,6 +3635,14 @@ msgstr "бабочка"
 #: mon-data.h:428
 msgid "caustic shrike"
 msgstr "едкий сорокопут"
+
+#: mon-data.h:481
+msgid "yaktaur"
+msgstr "яктавр"
+
+#: mon-data.h:494
+msgid "yaktaur captain"
+msgstr "яктавр капитан"
 
 #: mon-data.h:507
 msgid "faun"
@@ -3944,6 +3984,10 @@ msgstr "водный элементаль"
 msgid "air elemental"
 msgstr "элементаль воздуха"
 
+#: mon-data.h:3565
+msgid "acid blob"
+msgstr "кислотный шар"
+
 #: mon-data.h:3619
 msgid "lich"
 msgstr "лич"
@@ -3968,9 +4012,37 @@ msgstr "мумия священник"
 msgid "naga"
 msgstr "нага"
 
+#: mon-data.h:4709
+msgid "yak"
+msgstr "як"
+
+#: mon-data.h:4722
+msgid "death yak"
+msgstr "як смерти"
+
 #: mon-data.h:5034
 msgid "lava snake"
 msgstr "лавовая змея"
+
+#: mon-data.h:5221
+msgid "demonspawn"
+msgstr "демонорождённый"
+
+#: mon-data.h:5234
+msgid "monstrous demonspawn"
+msgstr "монструозный демонорождённый"
+
+#: mon-data.h:5248
+msgid "gelid demonspawn"
+msgstr "желеобразный демонорождённый"
+
+#: mon-data.h:5261
+msgid "infernal demonspawn"
+msgstr "инфернальный демонорождённый"
+
+#: mon-data.h:5274
+msgid "torturous demonspawn"
+msgstr "мучительный демонорождённый"
 
 #: mon-data.h:5928
 msgid "ice statue"
@@ -4238,6 +4310,11 @@ msgctxt "slain by"
 msgid "a deep elf priest"
 msgstr "глубинным эльфом жрецом"
 
+#: ../mon-data.h:271
+msgctxt "slain by"
+msgid "a putrid demonspawn"
+msgstr "мерзким демонорождённым"
+
 #: ../mon-data.h:282
 msgctxt "slain by"
 msgid "a lava orc"
@@ -4247,6 +4324,16 @@ msgstr "лавовым орком"
 msgctxt "slain by"
 msgid "a caustic shrike"
 msgstr "едким сорокопутом"
+
+#: ../mon-data.h:481
+msgctxt "slain by"
+msgid "a yaktaur"
+msgstr "яктавром"
+
+#: ../mon-data.h:494
+msgctxt "slain by"
+msgid "a yaktaur captain"
+msgstr "яктавром капитаном"
 
 #: ../mon-data.h:845
 msgctxt "slain by"
@@ -4268,6 +4355,16 @@ msgctxt "slain by"
 msgid "a wolf spider"
 msgstr "пауком-волком"
 
+#: ../mon-data.h:2978
+msgctxt "slain by"
+msgid "an acid dragon"
+msgstr "кислотным драконом"
+
+#: ../mon-data.h:3565
+msgctxt "slain by"
+msgid "an acid blob"
+msgstr "кислотным шаром"
+
 #: ../mon-data.h:3685
 msgctxt "slain by"
 msgid "a mummy"
@@ -4288,10 +4385,45 @@ msgctxt "slain by"
 msgid "a mummy priest"
 msgstr "мумией священником"
 
+#: ../mon-data.h:4709
+msgctxt "slain by"
+msgid "yak"
+msgstr "яком"
+
+#: ../mon-data.h:4722
+msgctxt "slain by"
+msgid "a death yak"
+msgstr "яком смерти"
+
 #: ../mon-data.h:5034
 msgctxt "slain by"
 msgid "a lava snake"
 msgstr "лавовой змеёй"
+
+#: ../mon-data.h:5221
+msgctxt "slain by"
+msgid "a demonspawn"
+msgstr "демонорождённым"
+
+#: ../mon-data.h:5234
+msgctxt "slain by"
+msgid "a monstrous demonspawn"
+msgstr "монструозным демонорождённым"
+
+#: ../mon-data.h:5248
+msgctxt "slain by"
+msgid "a gelid demonspawn"
+msgstr "желеобразным демонорождённым"
+
+#: ../mon-data.h:5261
+msgctxt "slain by"
+msgid "an infernal demonspawn"
+msgstr "инфернальным демонорождённым"
+
+#: ../mon-data.h:5274
+msgctxt "slain by"
+msgid "a torturous demonspawn"
+msgstr "мучительным демонорождённым"
 
 #: 
 msgid "Spider"
@@ -4319,7 +4451,7 @@ msgstr "Средние"
 msgid "Advanced"
 msgstr "Продвинутые"
 
-#: directn.cc:3215
+#: directn.cc:3219
 msgid ", covered with ice"
 msgstr ", покрытый льдом"
 
@@ -5029,6 +5161,14 @@ msgstr "очень медленный"
 msgid "no status effects"
 msgstr "нет эффектов статуса"
 
+#: ability.cc:314
+msgid "Breathe Acid"
+msgstr "Выдыхать Кислоту"
+
+#: ability.cc:443
+msgid "Trog's Hand"
+msgstr "Рука Трога"
+
 #: ability.cc:512
 msgid "Wall of Briars"
 msgstr "Стена Шипов"
@@ -5058,6 +5198,10 @@ msgstr "сеть"
 #: ability.cc:1748
 msgid "There is nothing to wall jump against here."
 msgstr "Тут нет стены, чтобы от неё отпрыгнуть."
+
+#: ability.cc:2064 ability.cc:2138
+msgid "You spit a glob of acid."
+msgstr "Вы выплёвываете шар кислоты."
 
 #: player-act.cc:640
 msgid "Nothing wielded"
@@ -5210,6 +5354,26 @@ msgstr "дыра, ведущая назад в Логово"
 #: feature-data.h:554
 msgid "staircase to the Depths"
 msgstr "ступени к Глубинам"
+
+#: feature-data.h:575
+msgid "bloodstained altar of Trog"
+msgstr "окровавленный алтарь Трога"
+
+#: feature-data.h:578
+msgid "corrupted altar of Lugonu"
+msgstr "искажённый алтарь Лугону"
+
+#: feature-data.h:582
+msgid "snail-covered altar of Cheibriados"
+msgstr "покрытый улитками алтарь Кайбриадоса"
+
+#: feature-data.h:586
+msgid "stormy altar of Qazlal"
+msgstr "бурный алтарь Кацлаля"
+
+#: feature-data.h:594
+msgid "ornate altar of the Wu Jian Council"
+msgstr "богато украшенный алтарь Совета У Цзянь"
 
 #: feature-data.h:116
 msgid "a metal wall"
@@ -5367,6 +5531,26 @@ msgstr "дыра, ведущая назад в Логово"
 msgid "a staircase to the Depths"
 msgstr "ступени к Глубинам"
 
+#: feature-data.h:575
+msgid "a bloodstained altar of Trog"
+msgstr "окровавленный алтарь Трога"
+
+#: feature-data.h:578
+msgid "a corrupted altar of Lugonu"
+msgstr "искажённый алтарь Лугону"
+
+#: feature-data.h:582
+msgid "a snail-covered altar of Cheibriados"
+msgstr "покрытый улитками алтарь Кайбриадоса"
+
+#: feature-data.h:586
+msgid "a stormy altar of Qazlal"
+msgstr "бурный алтарь Кацлаля"
+
+#: feature-data.h:594
+msgid "an ornate altar of the Wu Jian Council"
+msgstr "богато украшенный алтарь Совета У Цзянь"
+
 #: directn.cc:311
 msgid "Press: ? - help"
 msgstr "Нажмите: ? - помощь"
@@ -5438,4 +5622,92 @@ msgstr " (выберите для осмотра, '!' для %s):"
 #: directn.cc:572
 msgid " (select to %s, '!' to examine):"
 msgstr " (выберите для %s, '!' для осмотра):"
+
+#: player.cc:6562
+msgid "You are splashed with acid%s%s"
+msgstr "вы забрызганы кислотой%s%s"
+
+#: monster.cc:1233
+msgctxt "%(The goblin)s drops %(a magic wand of acid)s."
+msgid "%s drops %s."
+msgstr "%s бросает %s."
+
+#: monster.cc:4300
+msgid "%s is splashed with acid%s"
+msgstr "%s забрызган кислотой%s"
+
+#: hiscores.cc:2545
+msgid "Splashed by %s acid"
+msgstr "Забрызган кислотой %s"
+
+#: hiscores.cc:2549
+msgid "Splashed with acid"
+msgstr "Забрызган кислотой"
+
+#: 
+msgctxt "Splashed by %s acid"
+msgid "a caustic shrike's"
+msgstr "едкого скоропута"
+
+#: 
+msgid "Depths"
+msgstr "Глубины"
+
+#: 
+msgctxt "Was %s of %s%s"
+msgid "Trog"
+msgstr "Трога"
+
+#: 
+msgctxt "Was %s of %s%s"
+msgid "Wu Jian"
+msgstr "У Цзяня"
+
+#: 
+msgctxt "Level %d of %s"
+msgid "the Depths"
+msgstr "Глубин"
+
+#: 
+msgctxt "Level %d of %s"
+msgid "the Dungeon"
+msgstr "Подземелья"
+
+#: hiscores.cc:2128
+msgid "Succumbed to poison"
+msgstr "Не смог справиться с ядом"
+
+#: hiscores.cc:2130 hiscores.cc:2140
+msgid "Succumbed to %s"
+msgstr "Не смог справиться с %s"
+
+#: hiscores.cc:2132
+msgctxt "killed by"
+msgid "poison"
+msgstr "ядом"
+
+#: hiscores.cc:2147
+msgctxt "Succumbed to %(their own)s %(poison)s."
+msgid "Succumbed to %s %s."
+msgstr "Не смог справиться с %s %s."
+
+#: hiscores.cc:2149
+msgctxt "Succumbed to %(their own)s poison."
+msgid "their own"
+msgstr "собственным"
+
+#: hiscores.cc:2152
+msgctxt "Succumbed to their own %(poison)s."
+msgid "poison"
+msgstr "ядом"
+
+#: 
+msgctxt "Succumbed to %(their own)s poison."
+msgid "a hornet's"
+msgstr "осиным"
+
+#: 
+msgctxt "Was %s of %s%s"
+msgid "Cheibriados"
+msgstr "Кайбриадоса"
 

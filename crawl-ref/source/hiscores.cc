@@ -2084,7 +2084,7 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
     {
     case KILLED_BY_MONSTER:
         if (terse)
-            desc += __("slain by", death_source_desc().c_str());
+            desc += __("slain by", _(death_source_desc().c_str()));
         else if (oneline)
             desc += make_stringf(_("slain by %s"), __("slain by", death_source_desc().c_str()));
         else
@@ -2125,24 +2125,33 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
         if (death_source_name.empty() || terse)
         {
             if (!terse)
-                desc += "Succumbed to poison";
+                desc += _("Succumbed to poison");
             else if (!death_source_name.empty())
-                desc += "poisoned by " + death_source_name;
+                desc += make_stringf(_("Succumbed to %s"), __("Succumbed to %s", death_source_name.c_str()));
             else
-                desc += "poison";
+                desc += __("killed by", "poison");
             if (!auxkilldata.empty())
                 desc += " (" + auxkilldata + ")";
         }
         else if (auxkilldata.empty()
                  && death_source_name.find("poison") != string::npos)
         {
-            desc += "Succumbed to " + death_source_name;
+            desc += make_stringf(
+                    _("Succumbed to %s"),
+                    __("Succumbed to %s", death_source_name.c_str())
+                    );
         }
         else
         {
-            desc += "Succumbed to " + ((death_source_name == "you")
-                      ? "their own" : apostrophise(death_source_name)) + " "
-                    + (auxkilldata.empty()? "poison" : auxkilldata);
+            desc += make_stringf(
+                    __("Succumbed to %(their own)s %(poison)s.", "Succumbed to %s %s."),
+                    (death_source_name == "you")
+                    ? __("Succumbed to %(their own)s poison.", "their own")
+                    : __("Succumbed to %(their own)s poison.", apostrophise(death_source_name).c_str()),
+                    auxkilldata.empty()
+                    ? __("Succumbed to their own %(poison)s.", "poison")
+                    : __("Succumbed to their own %(poison)s.", auxkilldata.c_str())
+            );
         }
         break;
 
@@ -2533,12 +2542,11 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
             desc += "acid";
         else if (!death_source_desc().empty())
         {
-            desc += "Splashed by "
-                    + apostrophise(death_source_desc())
-                    + " acid";
+            desc += make_stringf(_("Splashed by %s acid"),
+                __("Splashed by %s acid", apostrophise(death_source_desc()).c_str()));
         }
         else
-            desc += "Splashed with acid";
+            desc += _("Splashed with acid");
         needs_damage = true;
         break;
 

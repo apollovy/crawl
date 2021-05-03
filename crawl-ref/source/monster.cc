@@ -70,6 +70,7 @@
 #include "traps.h"
 #include "view.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 monster::monster()
     : hit_points(0), max_hit_points(0),
@@ -808,9 +809,8 @@ bool monster::likes_wand(const item_def &item) const
 
 void monster::equip_weapon_message(item_def &item)
 {
-    const string str = " wields " +
-                       item.name(DESC_A, false, false, true, false,
-                                 ISFLAG_CURSED) + ".";
+    const string str = make_stringf(_(" wields %s."),
+        __(" wields %s.", item.name(DESC_A, false, false, true, false, ISFLAG_CURSED).c_str()));
     simple_monster_message(*this, str.c_str());
 
     const int brand = get_weapon_brand(item);
@@ -819,50 +819,54 @@ void monster::equip_weapon_message(item_def &item)
     switch (brand)
     {
     case SPWPN_FLAMING:
-        mpr("It bursts into flame!");
+        mpr(_("It bursts into flame!"));
         break;
     case SPWPN_FREEZING:
-        mpr(is_range_weapon(item) ? "It is covered in frost."
-                                  : "It glows with a cold blue light!");
+        mpr(is_range_weapon(item) ? _("It is covered in frost.")
+                                  : _("It glows with a cold blue light!"));
         break;
     case SPWPN_HOLY_WRATH:
-        mpr("It softly glows with a divine radiance!");
+        mpr(_("It softly glows with a divine radiance!"));
         break;
     case SPWPN_ELECTROCUTION:
-        mprf(MSGCH_SOUND, "You hear the crackle of electricity.");
+        mprf(MSGCH_SOUND, _("You hear the crackle of electricity."));
         break;
     case SPWPN_VENOM:
-        mpr("It begins to drip with poison!");
+        mpr(_("It begins to drip with poison!"));
         break;
     case SPWPN_DRAINING:
-        mpr("You sense an unholy aura.");
+        mpr(_("You sense an unholy aura."));
         break;
     case SPWPN_DISTORTION:
-        mpr("Its appearance distorts for a moment.");
+        mpr(_("Its appearance distorts for a moment."));
         break;
     case SPWPN_CHAOS:
-        mpr("It is briefly surrounded by a scintillating aura of "
-            "random colours.");
+        mpr(_("It is briefly surrounded by a scintillating aura of "
+            "random colours."));
         break;
     case SPWPN_PENETRATION:
     {
         bool plural = true;
         string hand = hand_name(true, &plural);
-        mprf("%s %s briefly %s through it before %s %s to get a "
-             "firm grip on it.",
-             pronoun(PRONOUN_POSSESSIVE).c_str(),
-             hand.c_str(),
+        mprf(__("%(Her)s %(tentacle)s briefly %(passes)s through it before %(she)s %(manages)s to get a firm grip on it.",
+                "%s %s briefly %s through it before %s %s to get a firm grip on it."),
+             __("%(Her)s tentacle briefly passes through it before she manages to get a firm grip on it.",
+                pronoun(PRONOUN_POSSESSIVE).c_str()),
+             _(hand.c_str()),
              // Not conj_verb: the monster isn't the subject.
-             conjugate_verb("pass", plural).c_str(),
-             pronoun(PRONOUN_SUBJECTIVE).c_str(),
-             conjugate_verb("manage", pronoun_plurality()).c_str());
+             __("Her tentacle briefly %(passes)s through it before she manages to get a firm grip on it.",
+                conjugate_verb("pass", plural).c_str()),
+             __("Her tentacle briefly passes through it before %(she)s manages to get a firm grip on it.",
+                pronoun(PRONOUN_SUBJECTIVE).c_str()),
+             __("Her tentacle briefly passes through it before she %(manages)s to get a firm grip on it.",
+                conjugate_verb("manage", pronoun_plurality()).c_str()));
     }
         break;
     case SPWPN_REAPING:
-        mpr("It is briefly surrounded by shifting shadows.");
+        mpr(_("It is briefly surrounded by shifting shadows."));
         break;
     case SPWPN_ACID:
-        mprf("It begins to drip corrosive slime!");
+        mprf(_("It begins to drip corrosive slime!"));
         break;
 
     default:
@@ -905,8 +909,7 @@ int monster::armour_bonus(const item_def &item, bool calc_unid) const
 
 void monster::equip_armour_message(item_def &item)
 {
-    const string str = " wears " +
-                       item.name(DESC_A) + ".";
+    const string str = make_stringf(_(" wears %s."), __(" wears %(a hat)s.", item.name(DESC_A).c_str()));
     simple_monster_message(*this, str.c_str());
 }
 
@@ -914,8 +917,7 @@ void monster::equip_jewellery_message(item_def &item)
 {
     ASSERT(item.base_type == OBJ_JEWELLERY);
 
-    const string str = " puts on " +
-                       item.name(DESC_A) + ".";
+    const string str = make_stringf(_(" puts on %s."), __(" puts on %(a hat)s.", item.name(DESC_A).c_str()));
     simple_monster_message(*this, str.c_str());
 }
 
@@ -945,9 +947,8 @@ void monster::unequip_weapon(item_def &item, bool msg)
 {
     if (msg)
     {
-        const string str = " unwields " +
-                           item.name(DESC_A, false, false, true, false,
-                                     ISFLAG_CURSED) + ".";
+        const string str = make_stringf(_(" unwields %s."), __(" unwields %(a dagger)s.", item.name(DESC_A, false, false, true, false,
+                                     ISFLAG_CURSED).c_str()));
         msg = simple_monster_message(*this, str.c_str());
     }
 
@@ -958,23 +959,23 @@ void monster::unequip_weapon(item_def &item, bool msg)
         switch (brand)
         {
         case SPWPN_FLAMING:
-            mpr("It stops flaming.");
+            mpr(_("It stops flaming."));
             break;
 
         case SPWPN_HOLY_WRATH:
-            mpr("It stops glowing.");
+            mpr(_("It stops glowing."));
             break;
 
         case SPWPN_ELECTROCUTION:
-            mpr("It stops crackling.");
+            mpr(_("It stops crackling."));
             break;
 
         case SPWPN_VENOM:
-            mpr("It stops dripping with poison.");
+            mpr(_("It stops dripping with poison."));
             break;
 
         case SPWPN_DISTORTION:
-            mpr("Its appearance distorts for a moment.");
+            mpr(_("Its appearance distorts for a moment."));
             break;
 
         default:
@@ -998,8 +999,7 @@ void monster::unequip_armour(item_def &item, bool msg)
 {
     if (msg)
     {
-        const string str = " takes off " +
-                           item.name(DESC_A) + ".";
+        const string str = make_stringf(_(" takes off %s."), __(" takes off %(a robe)s.", item.name(DESC_A).c_str()));
         simple_monster_message(*this, str.c_str());
     }
 }
@@ -1010,8 +1010,7 @@ void monster::unequip_jewellery(item_def &item, bool msg)
 
     if (msg)
     {
-        const string str = " takes off " +
-                           item.name(DESC_A) + ".";
+        const string str = make_stringf(_(" takes off %s."), __(" takes off %(a ring)s.", item.name(DESC_A).c_str()));
         simple_monster_message(*this, str.c_str());
     }
 }
@@ -1072,10 +1071,10 @@ void monster::pickup_message(const item_def &item)
         flags |= MF_SEEN_RANGED;
     }
 
-    mprf("%s picks up %s.",
-         name(DESC_THE).c_str(),
-         item.base_type == OBJ_GOLD ? "some gold"
-                                    : item.name(DESC_A).c_str());
+    mprf(_("%s picks up %s."),
+         _(name(DESC_THE).c_str()),
+         item.base_type == OBJ_GOLD ? _("some gold")
+                                    : _(item.name(DESC_A).c_str()));
 }
 
 bool monster::pickup(item_def &item, mon_inv_type slot, bool msg)
@@ -1090,33 +1089,33 @@ bool monster::pickup(item_def &item, mon_inv_type slot, bool msg)
         {
             if (inv[slot] == item.index())
             {
-                mprf(MSGCH_DIAGNOSTICS, "Monster %s already holding item %s.",
-                     name(DESC_PLAIN, true).c_str(),
-                     item.name(DESC_PLAIN, false, true).c_str());
+                mprf(MSGCH_DIAGNOSTICS, _("Monster %s already holding item %s."),
+                     _(name(DESC_PLAIN, true).c_str()),
+                     _(item.name(DESC_PLAIN, false, true).c_str()));
                 return false;
             }
             else
             {
-                mprf(MSGCH_DIAGNOSTICS, "Item %s thinks it's already held by "
-                                        "monster %s.",
-                     item.name(DESC_PLAIN, false, true).c_str(),
-                     name(DESC_PLAIN, true).c_str());
+                mprf(MSGCH_DIAGNOSTICS, _("Item %s thinks it's already held by "
+                                        "monster %s."),
+                     _(item.name(DESC_PLAIN, false, true).c_str()),
+                     _(name(DESC_PLAIN, true).c_str()));
             }
         }
         else if (other_mon->type == MONS_NO_MONSTER)
         {
-            mprf(MSGCH_DIAGNOSTICS, "Item %s, held by dead monster, being "
-                                    "picked up by monster %s.",
-                 item.name(DESC_PLAIN, false, true).c_str(),
-                 name(DESC_PLAIN, true).c_str());
+            mprf(MSGCH_DIAGNOSTICS, _("Item %s, held by dead monster, being "
+                                    "picked up by monster %s."),
+                 _(item.name(DESC_PLAIN, false, true).c_str()),
+                 _(name(DESC_PLAIN, true).c_str()));
         }
         else
         {
-            mprf(MSGCH_DIAGNOSTICS, "Item %s, held by monster %s, being "
-                                    "picked up by monster %s.",
-                 item.name(DESC_PLAIN, false, true).c_str(),
-                 other_mon->name(DESC_PLAIN, true).c_str(),
-                 name(DESC_PLAIN, true).c_str());
+            mprf(MSGCH_DIAGNOSTICS, _("Item %s, held by monster %s, being "
+                                    "picked up by monster %s."),
+                 _(item.name(DESC_PLAIN, false, true).c_str()),
+                 _(other_mon->name(DESC_PLAIN, true).c_str()),
+                 _(name(DESC_PLAIN, true).c_str()));
         }
     }
 
@@ -1215,11 +1214,13 @@ bool monster::drop_item(mon_inv_type eslot, bool msg)
     {
         if (msg)
         {
-            mprf("%s %s as %s drops %s!",
-                 pitem.name(DESC_THE).c_str(),
-                 summoned_poof_msg(this, pitem).c_str(),
-                 name(DESC_THE).c_str(),
-                 pitem.quantity > 1 ? "them" : "it");
+            mprf(__("%(The poisoned darts)s %(disappears in a puff of smoke)s as %(the imp)s drops %(them).", "%s %s as %s drops %s!"),
+                 __("%(The poisoned darts)s disappears in a puff of smoke as the imp drops them.", pitem.name(DESC_THE).c_str()),
+                 __("The poisoned darts %(disappears in a puff of smoke)s as the imp drops them.", summoned_poof_msg(this, pitem).c_str()),
+                 __("The poisoned darts disappears in a puff of smoke as %(the imp)s drops them", name(DESC_THE).c_str()),
+                 pitem.quantity > 1
+                     ? __("The poisoned darts disappears in a puff of smoke as the imp drops %(them)", "them")
+                     : __("The poisoned darts disappears in a puff of smoke as the imp drops %(them)", "it"));
         }
 
         item_was_destroyed(pitem);
@@ -1229,8 +1230,9 @@ bool monster::drop_item(mon_inv_type eslot, bool msg)
     {
         if (msg)
         {
-            mprf("%s drops %s.", name(DESC_THE).c_str(),
-                 pitem.name(DESC_A).c_str());
+            mprf(__("%(The goblin)s drops %(a magic wand of acid)s.", "%s drops %s."),
+                 __("%(The goblin)s drops a magic wand of acid.", name(DESC_THE).c_str()),
+                 __("The goblin drops %(a magic wand of acid)s.", pitem.name(DESC_A).c_str()));
         }
         pitem.props[DROPPER_MID_KEY].get_int() = mid;
 
@@ -2268,11 +2270,11 @@ static string _mon_special_name(const monster& mon, description_level_type desc,
         switch (desc)
         {
         case DESC_THE: case DESC_A: case DESC_PLAIN: case DESC_YOUR:
-            return "something";
+            return _("something");
         case DESC_ITS:
-            return "something's";
+            return _("something's");
         default:
-            return "it (buggy)";
+            return _("it (buggy)");
         }
     }
 
@@ -2377,7 +2379,7 @@ string monster::hand_name(bool plural, bool *can_plural) const
     case MON_SHAPE_HUMANOID_TAILED:
     case MON_SHAPE_HUMANOID_WINGED_TAILED:
         if (ch == 'T' || ch == 'n' || mons_is_demon(type))
-            str = "claw";
+            str = _("claw");
         break;
 
     case MON_SHAPE_QUADRUPED:
@@ -2385,11 +2387,10 @@ string monster::hand_name(bool plural, bool *can_plural) const
     case MON_SHAPE_QUADRUPED_WINGED:
     case MON_SHAPE_ARACHNID:
         if (mons_genus(type) == MONS_SCORPION || rand && one_chance_in(4))
-            str = "pincer";
+            str = _("pincer");
         else
         {
-            str = "front ";
-            return str + foot_name(plural, can_plural);
+            return make_stringf(_("front %s"), foot_name(plural, can_plural).c_str());
         }
         break;
 
@@ -2400,32 +2401,32 @@ string monster::hand_name(bool plural, bool *can_plural) const
 
     case MON_SHAPE_BAT:
     case MON_SHAPE_BIRD:
-        str = "wing";
+        str = _("wing");
         break;
 
     case MON_SHAPE_INSECT:
     case MON_SHAPE_INSECT_WINGED:
     case MON_SHAPE_CENTIPEDE:
-        str = "antenna";
+        str = _("antenna");
         break;
 
     case MON_SHAPE_SNAIL:
-        str = "eye-stalk";
+        str = _("eye-stalk");
         break;
 
     case MON_SHAPE_PLANT:
-        str = "leaf";
+        str = _("leaf");
         break;
 
     case MON_SHAPE_MISC:
         if (ch == 'x' || ch == 'X' || rand)
         {
-            str = "tentacle";
+            str = _("tentacle");
             break;
         }
         // Deliberate fallthrough.
     case MON_SHAPE_FUNGUS:
-        str         = "body";
+        str         = _("body");
         *can_plural = false;
         break;
 
@@ -2433,7 +2434,7 @@ string monster::hand_name(bool plural, bool *can_plural) const
         switch (type)
         {
             case MONS_BALLISTOMYCETE_SPORE:
-                str = "rhizome";
+                str = _("rhizome");
                 break;
 
             case MONS_FLOATING_EYE:
@@ -2443,16 +2444,16 @@ string monster::hand_name(bool plural, bool *can_plural) const
                 *can_plural = false;
                 // Deliberate fallthrough.
             case MONS_GREAT_ORB_OF_EYES:
-                str = "pupil";
+                str = _("pupil");
                 break;
 
             case MONS_GLOWING_ORANGE_BRAIN:
             default:
                 if (rand)
-                    str = "rhizome";
+                    str = _("rhizome");
                 else
                 {
-                    str        = "body";
+                    str        = _("body");
                     *can_plural = false;
                 }
                 break;
@@ -2460,7 +2461,7 @@ string monster::hand_name(bool plural, bool *can_plural) const
         break;
 
     case MON_SHAPE_BUGGY:
-        str = "handbug";
+        str = _("handbug");
         break;
     }
 
@@ -2470,7 +2471,7 @@ string monster::hand_name(bool plural, bool *can_plural) const
         if (rand && coinflip())
             return hand_name(plural, can_plural);
 
-        str = "hand";
+        str = _("hand");
     }
 
     if (plural && *can_plural)
@@ -2500,7 +2501,7 @@ string monster::foot_name(bool plural, bool *can_plural) const
     case MON_SHAPE_INSECT_WINGED:
     case MON_SHAPE_ARACHNID:
     case MON_SHAPE_CENTIPEDE:
-        str = "leg";
+        str = _("leg");
         break;
 
     case MON_SHAPE_HUMANOID:
@@ -2508,16 +2509,16 @@ string monster::foot_name(bool plural, bool *can_plural) const
     case MON_SHAPE_HUMANOID_TAILED:
     case MON_SHAPE_HUMANOID_WINGED_TAILED:
         if (type == MONS_MINOTAUR)
-            str = "hoof";
+            str = _("hoof");
         else if (swimming() && mons_genus(type) == MONS_MERFOLK)
         {
-            str         = "tail";
+            str         = _("tail");
             *can_plural = false;
         }
         break;
 
     case MON_SHAPE_CENTAUR:
-        str = "hoof";
+        str = _("hoof");
         break;
 
     case MON_SHAPE_QUADRUPED:
@@ -2525,69 +2526,69 @@ string monster::foot_name(bool plural, bool *can_plural) const
     case MON_SHAPE_QUADRUPED_WINGED:
         if (rand)
         {
-            const char* feet[] = {"paw", "talon", "hoof"};
+            const char* feet[] = {_("paw"), _("talon"), _("hoof")};
             str = RANDOM_ELEMENT(feet);
         }
         else if (mons_genus(type) == MONS_HOG)
-            str = "trotter";
+            str = _("trotter");
         else if (ch == 'h')
-            str = "paw";
+            str = _("paw");
         else if (ch == 'l' || ch == 'D')
-            str = "talon";
+            str = _("talon");
         else if (type == MONS_YAK || type == MONS_DEATH_YAK)
-            str = "hoof";
+            str = _("hoof");
         else if (ch == 'H')
         {
             if (type == MONS_MANTICORE || type == MONS_SPHINX)
-                str = "paw";
+                str = _("paw");
             else
-                str = "talon";
+                str = _("talon");
         }
         break;
 
     case MON_SHAPE_BIRD:
-        str = "talon";
+        str = _("talon");
         break;
 
     case MON_SHAPE_BAT:
-        str = "claw";
+        str = _("claw");
         break;
 
     case MON_SHAPE_SNAKE:
     case MON_SHAPE_FISH:
-        str         = "tail";
+        str         = _("tail");
         *can_plural = false;
         break;
 
     case MON_SHAPE_PLANT:
-        str = "root";
+        str = _("root");
         break;
 
     case MON_SHAPE_FUNGUS:
-        str         = "stem";
+        str         = _("stem");
         *can_plural = false;
         break;
 
     case MON_SHAPE_BLOB:
-        str = "pseudopod";
+        str = _("pseudopod");
         break;
 
     case MON_SHAPE_MISC:
         if (ch == 'x' || ch == 'X' || rand)
         {
-            str = "tentacle";
+            str = _("tentacle");
             break;
         }
         // Deliberate fallthrough.
     case MON_SHAPE_SNAIL:
     case MON_SHAPE_NAGA:
     case MON_SHAPE_ORB:
-        str         = "underside";
+        str         = _("underside");
         *can_plural = false;
         break;
 
     case MON_SHAPE_BUGGY:
-        str = "footbug";
+        str = _("footbug");
         break;
     }
 
@@ -2597,7 +2598,7 @@ string monster::foot_name(bool plural, bool *can_plural) const
         if (rand && coinflip())
             return foot_name(plural, can_plural);
 
-        return plural ? "feet" : "foot";
+        return plural ? _("feet") : _("foot");
     }
 
     if (plural && *can_plural)
@@ -2617,26 +2618,26 @@ string monster::arm_name(bool plural, bool *can_plural) const
         *can_plural = true;
 
     string adj;
-    string str = "arm";
+    string str = _("arm");
 
     // TODO: shared code with species::skin_name for player species
     switch (mons_genus(type))
     {
     case MONS_DRACONIAN:
     case MONS_NAGA:
-        adj = "scaled";
+        adj = _("scaled");
         break;
 
     case MONS_TENGU:
-        adj = "feathered";
+        adj = _("feathered");
         break;
 
     case MONS_MUMMY:
-        adj = "bandage-wrapped";
+        adj = _("bandage-wrapped");
         break;
 
     case MONS_OCTOPODE:
-        str = "tentacle";
+        str = _("tentacle");
         break;
 
     // TODO: this looks extremely non-general
@@ -2644,7 +2645,7 @@ string monster::arm_name(bool plural, bool *can_plural) const
     case MONS_SKELETAL_WARRIOR:
     case MONS_ANCIENT_CHAMPION:
     case MONS_REVENANT:
-        adj = "bony";
+        adj = _("bony");
         break;
 
     default:
@@ -2712,14 +2713,15 @@ bool monster::fumbles_attack()
     {
         if (you.can_see(*this))
         {
-            mprf("%s %s", name(DESC_THE).c_str(), liquefied(pos())
-                 ? "becomes momentarily stuck in the liquid earth."
+            mprf(__("%(Goblin)s %(becomes momentarily stuck in the liquid earth.)s", "%s %s"),
+                 __("%(Goblin)s becomes momentarily stuck in the liquid earth.", name(DESC_THE).c_str()), liquefied(pos())
+                 ? __("Goblin %(becomes momentarily stuck in the liquid earth.)s", "becomes momentarily stuck in the liquid earth.")
                  : env.grid(pos()) == DNGN_TOXIC_BOG
-                 ? "becomes momentarily stuck in the toxic bog."
-                 : "splashes around in the water.");
+                 ? __("Goblin %(becomes momentarily stuck in the liquid earth.)s", "becomes momentarily stuck in the toxic bog.")
+                 : __("Goblin %(becomes momentarily stuck in the liquid earth.)s", "splashes around in the water."));
         }
         else if (player_can_hear(pos(), LOS_RADIUS))
-            mprf(MSGCH_SOUND, "You hear a splashing noise.");
+            mprf(MSGCH_SOUND, _("You hear a splashing noise."));
 
         return true;
     }
@@ -2744,8 +2746,8 @@ bool monster::go_frenzy(actor *source)
     {
         del_ench(ENCH_SLOW, true); // Give no additional message.
         simple_monster_message(*this,
-            make_stringf(" shakes off %s lethargy.",
-                         pronoun(PRONOUN_POSSESSIVE).c_str()).c_str());
+            make_stringf(_(" shakes off %s lethargy."),
+                         _(pronoun(PRONOUN_POSSESSIVE).c_str())).c_str());
     }
     del_ench(ENCH_HASTE, true);
     del_ench(ENCH_FATIGUE, true); // Give no additional message.
@@ -2760,7 +2762,7 @@ bool monster::go_frenzy(actor *source)
     }
     mons_att_changed(this);
 
-    if (simple_monster_message(*this, " flies into a frenzy!"))
+    if (simple_monster_message(*this, _(" flies into a frenzy!")))
         // Xom likes monsters going insane.
         xom_is_stimulated(friendly() ? 25 : 100);
 
@@ -2779,8 +2781,8 @@ bool monster::go_berserk(bool intentional, bool /* potion */)
     {
         del_ench(ENCH_SLOW, true); // Give no additional message.
         simple_monster_message(*this,
-            make_stringf(" shakes off %s lethargy.",
-                         pronoun(PRONOUN_POSSESSIVE).c_str()).c_str());
+            make_stringf(_(" shakes off %s lethargy."),
+                         _(pronoun(PRONOUN_POSSESSIVE).c_str())).c_str());
     }
     del_ench(ENCH_FATIGUE, true); // Give no additional message.
     del_ench(ENCH_FEAR, true);    // Going berserk breaks fear.
@@ -2792,7 +2794,7 @@ bool monster::go_berserk(bool intentional, bool /* potion */)
         wield_melee_weapon();
 
     add_ench(ENCH_BERSERK);
-    if (simple_monster_message(*this, " goes berserk!"))
+    if (simple_monster_message(*this, _(" goes berserk!")))
         // Xom likes monsters going berserk.
         xom_is_stimulated(friendly() ? 25 : 100);
 
@@ -2844,7 +2846,7 @@ void monster::banish(const actor *agent, const string &, const int, bool force)
     if (!force && player_in_branch(BRANCH_ABYSS)
         && x_chance_in_y(you.depth, brdepth[BRANCH_ABYSS]))
     {
-        simple_monster_message(*this, " wobbles for a moment.");
+        simple_monster_message(*this, _(" wobbles for a moment."));
         return;
     }
 
@@ -2858,7 +2860,7 @@ void monster::banish(const actor *agent, const string &, const int, bool force)
         }
     }
 
-    simple_monster_message(*this, " is devoured by a tear in reality.",
+    simple_monster_message(*this, _(" is devoured by a tear in reality."),
                            MSGCH_BANISHMENT);
     if (agent && mons_gives_xp(*this, *agent)
         && (agent->is_player() || agent->mid == MID_YOU_FAULTLESS))
@@ -4227,7 +4229,7 @@ bool monster::drain(const actor *agent, bool quiet, int /*pow*/)
         return false;
 
     if (!quiet && you.can_see(*this))
-        mprf("%s is drained!", name(DESC_THE).c_str());
+        mprf(_("%s is drained!"), _(name(DESC_THE).c_str()));
 
     // If quiet, don't clean up the monster in order to credit properly.
     hurt(agent, 2 + random2(3), BEAM_NEG, KILLED_BY_DRAINING, "", "", !quiet);
@@ -4271,9 +4273,9 @@ bool monster::corrode_equipment(const char* corrosion_source, int degree)
     if (you.see_cell(pos()))
     {
         if (!has_ench(ENCH_CORROSION))
-            mprf("%s corrodes %s!", corrosion_source, name(DESC_THE).c_str());
+            mprf(_("%s corrodes %s!"), corrosion_source, name(DESC_THE).c_str());
         else
-            mprf("%s seems to be corroded for longer.", name(DESC_THE).c_str());
+            mprf(_("%s seems to be corroded for longer."), name(DESC_THE).c_str());
     }
 
     add_ench(mon_enchant(ENCH_CORROSION, 0));
@@ -4295,7 +4297,7 @@ void monster::splash_with_acid(const actor* evildoer, int /*acid_strength*/,
 
     if (this->observable())
     {
-        mprf("%s is splashed with acid%s", this->name(DESC_THE).c_str(),
+        mprf(_("%s is splashed with acid%s"), _(this->name(DESC_THE).c_str()),
              attack_strength_punctuation(post_res_dam).c_str());
     }
 
@@ -4458,9 +4460,9 @@ int monster::hurt(const actor *agent, int amount, beam_type flavour,
             if (you.can_see(*this))
             {
                 if (type == MONS_WITHERED_PLANT)
-                    mprf("%s begins to crumble.", this->name(DESC_THE).c_str());
+                    mprf(_("%s begins to crumble."), this->name(DESC_THE).c_str());
                 else
-                    mprf("%s begins to die.", this->name(DESC_THE).c_str());
+                    mprf(_("%s begins to die."), this->name(DESC_THE).c_str());
             }
         }
     }
@@ -4498,7 +4500,7 @@ void monster::petrify(const actor *atk, bool /*force*/)
 bool monster::fully_petrify(bool quiet)
 {
     bool msg = !quiet && simple_monster_message(*this, mons_is_immotile(*this) ?
-                         " turns to stone!" : " stops moving altogether!");
+                         _(" turns to stone!") : _(" stops moving altogether!"));
 
     add_ench(ENCH_PETRIFIED);
     return msg;
@@ -4979,7 +4981,7 @@ bool monster::sicken(int amount)
     if (!has_ench(ENCH_SICK) && you.can_see(*this))
     {
         // Yes, could be confused with poisoning.
-        mprf("%s looks sick.", name(DESC_THE).c_str());
+        mprf(_("%s looks sick."), _(name(DESC_THE).c_str()));
     }
 
     add_ench(mon_enchant(ENCH_SICK, 0, 0, amount * BASELINE_DELAY));
@@ -5271,7 +5273,7 @@ bool monster::malmutate(const string &/*reason*/)
         return true;
     }
 
-    simple_monster_message(*this, " twists and deforms.");
+    simple_monster_message(*this, _(" twists and deforms."));
     add_ench(mon_enchant(ENCH_WRETCHED, 1));
     return true;
 }
@@ -5445,12 +5447,12 @@ void monster::apply_location_effects(const coord_def &oldpos,
     if (alive() && has_ench(ENCH_AQUATIC_LAND))
     {
         if (!monster_habitable_grid(this, env.grid(pos())))
-            simple_monster_message(*this, " flops around on dry land!");
+            simple_monster_message(*this, _(" flops around on dry land!"));
         else if (!monster_habitable_grid(this, env.grid(oldpos)))
         {
             if (you.can_see(*this))
             {
-                mprf("%s dives back into the %s!", name(DESC_THE).c_str(),
+                mprf(_("%s dives back into the %s!"), name(DESC_THE).c_str(),
                                                    feat_type_name(env.grid(pos())));
             }
             del_ench(ENCH_AQUATIC_LAND);
@@ -5490,7 +5492,7 @@ void monster::apply_location_effects(const coord_def &oldpos,
             {
                 string desc =
                     feature_description_at(pos(), false, DESC_THE);
-                mprf("The bloodstain on %s disappears!", desc.c_str());
+                mprf(_("The bloodstain on %s disappears!"), _(desc.c_str()));
             }
         }
     }
@@ -5606,9 +5608,9 @@ bool monster::do_shaft()
     if (!pacified() && !mons_is_conjured(type))
         set_transit(lev);
 
-    string msg = make_stringf(" %s a shaft!",
-                              !ground_level() ? "is sucked into"
-                                              : "falls through");
+    string msg = make_stringf(_(" %s a shaft!"),
+                              !ground_level() ? _("is sucked into")
+                                              : _("falls through"));
 
     const bool reveal = simple_monster_message(*this, msg.c_str());
 
@@ -5637,7 +5639,7 @@ void monster::put_to_sleep(actor */*attacker*/, int /*strength*/, bool hibernate
 void monster::weaken(actor *attacker, int pow)
 {
     if (!has_ench(ENCH_WEAK))
-        simple_monster_message(*this, " looks weaker.");
+        simple_monster_message(*this, _(" looks weaker."));
 
     add_ench(mon_enchant(ENCH_WEAK, 1, attacker,
                          (pow + random2(pow + 3)) * BASELINE_DELAY));
@@ -5825,14 +5827,14 @@ bool monster::should_drink_potion(potion_type ptype) const
 bool monster::drink_potion_effect(potion_type pot_eff, bool card)
 {
     if (!card)
-        simple_monster_message(*this, " drinks a potion.");
+        simple_monster_message(*this, _(" drinks a potion."));
 
     switch (pot_eff)
     {
     case POT_CURING:
     {
         if (heal(5 + random2(7)))
-            simple_monster_message(*this, " is healed!");
+            simple_monster_message(*this, _(" is healed!"));
 
         static const enchant_type cured_enchants[] =
         {
@@ -5846,7 +5848,7 @@ bool monster::drink_potion_effect(potion_type pot_eff, bool card)
 
     case POT_HEAL_WOUNDS:
         if (heal(10 + random2avg(28, 3)))
-            simple_monster_message(*this, " is healed!");
+            simple_monster_message(*this, _(" is healed!"));
         break;
 
     case POT_BERSERK_RAGE:
@@ -5934,12 +5936,10 @@ void monster::react_to_damage(const actor *oppressor, int damage,
             if (shared_damage > 0)
             {
                 if (owner->is_player())
-                    mpr("Your spectral weapon shares its damage with you!");
+                    mpr(_("Your spectral weapon shares its damage with you!"));
                 else if (owner->alive() && you.can_see(*owner))
                 {
-                    string buf = " shares ";
-                    buf += owner->pronoun(PRONOUN_POSSESSIVE);
-                    buf += " spectral weapon's damage!";
+                    string buf = make_stringf(_(" shares %s spectral weapon's damage!"), _(owner->pronoun(PRONOUN_POSSESSIVE).c_str()));
                     simple_monster_message(*owner->as_monster(), buf.c_str());
                 }
 
@@ -5969,7 +5969,7 @@ void monster::react_to_damage(const actor *oppressor, int damage,
     {
         mon_enchant i_f = get_ench(ENCH_INNER_FLAME);
         if (you.see_cell(pos()))
-            mprf("Flame seeps out of %s.", name(DESC_THE).c_str());
+            mprf(_("Flame seeps out of %s."), _(name(DESC_THE).c_str()));
         check_place_cloud(CLOUD_FIRE, pos(), 3, actor_by_mid(i_f.source));
     }
 
@@ -6025,19 +6025,19 @@ void monster::react_to_damage(const actor *oppressor, int damage,
                 hit_points = 0;
                 if (observable())
                 {
-                    mprf("As %s mount dies, %s plunges down into %s!",
-                         pronoun(PRONOUN_POSSESSIVE).c_str(),
-                         name(DESC_THE).c_str(),
+                    mprf(_("As %s mount dies, %s plunges down into %s!"),
+                         _(pronoun(PRONOUN_POSSESSIVE).c_str()),
+                         _(name(DESC_THE).c_str()),
                          env.grid(pos()) == DNGN_LAVA ?
-                             "lava and is incinerated" :
-                             "deep water and drowns");
+                             _("lava and is incinerated") :
+                             _("deep water and drowns"));
                 }
             }
             else if (fly_died && observable())
             {
-                mprf("%s falls from %s now dead mount.",
-                     name(DESC_THE).c_str(),
-                     pronoun(PRONOUN_POSSESSIVE).c_str());
+                mprf(_("%s falls from %s now dead mount."),
+                     _(name(DESC_THE).c_str()),
+                     _(pronoun(PRONOUN_POSSESSIVE).c_str()));
             }
         }
     }
@@ -6077,8 +6077,8 @@ void monster::react_to_damage(const actor *oppressor, int damage,
         if (observable())
         {
             mprf(MSGCH_WARN,
-                "%s roars in fury and transforms into a fierce dragon!",
-                name(DESC_THE).c_str());
+                _("%s roars in fury and transforms into a fierce dragon!"),
+                _(name(DESC_THE).c_str()));
         }
         if (caught())
             check_net_will_hold_monster(this);
@@ -6108,7 +6108,7 @@ void monster::steal_item_from_player()
         string msg = getSpeakString("Maurice confused nonstealing");
         if (!msg.empty() && msg != "__NONE")
         {
-            msg = replace_all(msg, "@The_monster@", name(DESC_THE));
+            msg = replace_all(msg, "@The_monster@", _(name(DESC_THE).c_str()));
             mprf(MSGCH_TALK, "%s", msg.c_str());
         }
         return;
@@ -6180,7 +6180,7 @@ void monster::steal_item_from_player()
             if (!complaint.empty())
             {
                 complaint = replace_all(complaint, "@The_monster@",
-                                        name(DESC_THE));
+                                        _(name(DESC_THE).c_str()));
                 mprf(MSGCH_TALK, "%s", complaint.c_str());
             }
 
@@ -6240,15 +6240,15 @@ void monster::steal_item_from_player()
             inv[MSLOT_GOLD] = idx;
             new_item.set_holding_monster(*this);
         }
-        mprf("%s steals %d gold piece%s!",
-             name(DESC_THE).c_str(),
+        mprf(_("%s steals %d gold piece%s!"),
+             _(name(DESC_THE).c_str()),
              stolen_amount,
              stolen_amount != 1 ? "s" : "");
 
         you.attribute[ATTR_GOLD_FOUND] -= stolen_amount;
 
         you.del_gold(stolen_amount);
-        mprf("You now have %d gold piece%s.",
+        mprf(_("You now have %d gold piece%s."),
              you.gold, you.gold != 1 ? "s" : "");
 
         return;
@@ -6294,16 +6294,16 @@ item_def* monster::take_item(int steal_what, mon_inv_type mslot,
         const int stolen_amount = 1 + random2(new_item.quantity);
         if (stolen_amount < new_item.quantity)
         {
-            mprf("%s steals %d of %s!",
-                 name(DESC_THE).c_str(),
+            mprf(_("%s steals %d of %s!"),
+                 _(name(DESC_THE).c_str()),
                  stolen_amount,
-                 new_item.name(DESC_YOUR).c_str());
+                 _(new_item.name(DESC_YOUR).c_str()));
         }
         else
         {
-            mprf("%s steals %s!",
-                 name(DESC_THE).c_str(),
-                 new_item.name(DESC_YOUR).c_str());
+            mprf(_("%s steals %s!"),
+                 _(name(DESC_THE).c_str()),
+                 _(new_item.name(DESC_YOUR).c_str()));
         }
         new_item.quantity = stolen_amount;
     }
@@ -6465,7 +6465,7 @@ bool monster::shove(const char* feat_name)
         {
             move_to_pos(*di);
             simple_monster_message(*this,
-                make_stringf(" is pushed out of the %s.", feat_name).c_str());
+                make_stringf(_(" is pushed out of the %s."), _(feat_name)).c_str());
             dprf("Moved to (%d, %d).", pos().x, pos().y);
 
             return true;
