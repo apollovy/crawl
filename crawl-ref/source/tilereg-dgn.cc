@@ -388,10 +388,10 @@ int DungeonRegion::handle_mouse(wm_mouse_event &event)
             if (cloud_struct* cloud = cloud_at(gc))
             {
                 string terrain_desc = desc;
-                desc = cloud->cloud_name(true);
+                desc = _(cloud->cloud_name(true).c_str());
 
                 if (!terrain_desc.empty())
-                    desc += "\n" + terrain_desc;
+                    desc += make_stringf("%s\n", _(terrain_desc.c_str()));
             }
         }
 

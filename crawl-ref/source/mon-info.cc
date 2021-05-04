@@ -42,6 +42,7 @@
 #include "tilepick.h"
 #endif
 #include "traps.h"
+#include "crawl_locale.h"
 
 #define SPELL_HD_KEY "spell_hd"
 #define NIGHTVISION_KEY "nightvision"
@@ -905,33 +906,33 @@ string monster_info::_core_name() const
     if (is(MB_NAME_REPLACE))
         s = mname;
     else if (nametype == MONS_LERNAEAN_HYDRA)
-        s = "Lernaean hydra"; // TODO: put this into mon-data.h
+        s = _("Lernaean hydra"); // TODO: put this into mon-data.h
     else if (nametype == MONS_ROYAL_JELLY)
-        s = "Royal Jelly";
+        s = _("Royal Jelly");
     else if (mons_species(nametype) == MONS_SERPENT_OF_HELL)
-        s = "Serpent of Hell";
+        s = _("Serpent of Hell");
     else if (invalid_monster_type(nametype) && nametype != MONS_PROGRAM_BUG)
         s = "INVALID MONSTER";
     else
     {
-        const char* slime_sizes[] = {"buggy ", "", "large ", "very large ",
-                                               "enormous ", "titanic "};
-        s = get_monster_data(nametype)->name;
+        const char* slime_sizes[] = {"buggy ", "", __("%(large )sjelly", "large "), __("%(large )sjelly", "very large "),
+                                     __("%(large )sjelly", "enormous "), __("%(large )sjelly", "titanic ")};
+        s = _(get_monster_data(nametype)->name);
 
         if (mons_is_draconian_job(type) && base_type != MONS_NO_MONSTER)
-            s = draconian_colour_name(base_type) + " " + s;
+            s = make_stringf(__("%(red)s %(draconian)s", "%s %s"), __("%(red)s draconian", draconian_colour_name(base_type).c_str()), s.c_str());
         else if (mons_is_demonspawn_job(type) && base_type != MONS_NO_MONSTER)
-            s = demonspawn_base_name(base_type) + " " + s;
+            s = make_stringf(__("%(putrid)s %(demonspawn)s", "%s %s"), __("%(putrid)s demonspawn", demonspawn_base_name(base_type).c_str()), s.c_str());
 
         switch (type)
         {
         case MONS_SLIME_CREATURE:
             ASSERT((size_t) slime_size <= ARRAYSZ(slime_sizes));
-            s = slime_sizes[slime_size] + s;
+            s = make_stringf(__("%(huge)s %(slime)s", "%s %s"), slime_sizes[slime_size], s.c_str());
             break;
         case MONS_UGLY_THING:
         case MONS_VERY_UGLY_THING:
-            s = ugly_thing_colour_name(_colour) + " " + s;
+            s = make_stringf(__("%(green)s %(ugly thing)s", "%s %s"), __("%(green)s ugly thing", ugly_thing_colour_name(_colour).c_str()), s.c_str());
             break;
 
         case MONS_DANCING_WEAPON:
@@ -1097,6 +1098,7 @@ string monster_info::common_name(description_level_type desc) const
     string s;
     // only respect unqualified if nothing was added ("Sigmund" or "The spectral Sigmund")
     if (!is(MB_NAME_UNQUALIFIED) || has_proper_name() || ss.str() != core)
+        // i18n: FIXME: "a " jumps from here, address later
         s = _apply_adjusted_description(desc, ss.str());
     else
         s = ss.str();
@@ -1133,7 +1135,7 @@ string monster_info::full_name(description_level_type desc) const
 
     if (has_proper_name())
     {
-        string s = mname + " the " + common_name();
+        string s = make_stringf("%s the %s", mname.c_str(), common_name().c_str());
         if (desc == DESC_ITS)
             s = apostrophise(s);
         return s;

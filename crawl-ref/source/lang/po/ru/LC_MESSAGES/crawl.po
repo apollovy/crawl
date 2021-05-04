@@ -5366,7 +5366,7 @@ msgstr "ступени к Болоту"
 
 #: feature-data.h:548
 msgid "staircase to the Shoals"
-msgstr "ступени к Побережью"
+msgstr "ступени к Отмелям"
 
 #: feature-data.h:552
 msgid "crawl-hole back to the Lair"
@@ -5542,7 +5542,7 @@ msgstr "ступени к Болоту"
 
 #: feature-data.h:548
 msgid "a staircase to the Shoals"
-msgstr "ступени к Побережью"
+msgstr "ступени к Отмелям"
 
 #: feature-data.h:552
 msgid "a crawl-hole back to the Lair"
