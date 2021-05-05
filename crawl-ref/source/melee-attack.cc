@@ -47,6 +47,7 @@
 #include "unwind.h"
 #include "view.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 #ifdef NOTE_DEBUG_CHAOS_BRAND
     #define NOTE_DEBUG_CHAOS_EFFECTS
@@ -314,10 +315,11 @@ bool melee_attack::handle_phase_dodged()
             player_warn_miss();
         else
         {
-            mprf("%s%s misses %s%s",
-                 atk_name(DESC_THE).c_str(),
-                 evasion_margin_adverb().c_str(),
-                 defender_name(true).c_str(),
+            mprf(
+                    __("%(The mighty blow)s%( completely)s misses %(centaur captain skeleton)s%(!)s", "%s%s misses %s%s"),
+                 __("%s completely misses centaur captain skeleton!", atk_name(DESC_THE).c_str()),
+                 __("The mighty blow%s misses centaur captain skeleton!", evasion_margin_adverb().c_str()),
+                 __("The mighty blow completely misses %s!", defender_name(true).c_str()),
                  attack_strength_punctuation(damage_done).c_str());
         }
     }
@@ -1264,8 +1266,11 @@ bool melee_attack::player_aux_test_hit()
     if (to_hit >= evasion || auto_hit)
         return true;
 
-    mprf("Your %s misses %s.", aux_attack.c_str(),
-         defender->name(DESC_THE).c_str());
+    mprf(
+            __("Your %(bite)s misses %(the zombie goblin)s.", "Your %s misses %s."),
+            __("Your %s misses the zombie goblin.", aux_attack.c_str()),
+            __("Your bite misses %s.", defender->name(DESC_THE).c_str())
+    );
 
     return false;
 }

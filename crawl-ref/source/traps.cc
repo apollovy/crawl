@@ -49,6 +49,7 @@
 #include "terrain.h"
 #include "travel.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 static const string TRAP_PROJECTILE_KEY = "trap_projectile";
 
@@ -1196,11 +1197,17 @@ void trap_def::shoot_ammo(actor& act, bool trig_smart)
     if (trap_hit < act.evasion())
     {
         if (act.is_player())
-            mprf("%s shoots out and misses you.", shot.name(DESC_A).c_str());
+            mprf(
+                    __("%(A poisoned dart)s shoots out and misses you.", "%s shoots out and misses you."),
+                    __("%s shoots out and misses you.", shot.name(DESC_A).c_str())
+        );
         else if (you.see_cell(act.pos()))
         {
-            mprf("%s misses %s!", shot.name(DESC_A).c_str(),
-                 act.name(DESC_THE).c_str());
+            mprf(
+                    __("%(A poisoned dart)s misses %(the dart slug)s!", "%s misses %s!"),
+                    __("%s misses the dart slug!", shot.name(DESC_A).c_str()),
+                    __("A poisoned dart misses %s!", act.name(DESC_THE).c_str())
+            );
         }
     }
     else if (pro_block >= con_block
@@ -1241,11 +1248,11 @@ void trap_def::shoot_ammo(actor& act, bool trig_smart)
         {
             if (you.see_cell(act.pos()))
             {
-                mprf("%s hits %s%s!",
-                     shot.name(DESC_A).c_str(),
-                     act.name(DESC_THE).c_str(),
+                mprf(__("%(A dart trap)s hits %(the giant cockroach)s%(, but does no damage)s!", "%s hits %s%s!"),
+                     __("%s hits the giant cockroach!", shot.name(DESC_A).c_str()),
+                     __("A dart trap hits %s!", act.name(DESC_THE).c_str()),
                      (damage_taken == 0 && !poison) ?
-                         ", but does no damage" : "");
+                         _(", but does no damage") : "");
             }
 
             if (poison)

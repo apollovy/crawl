@@ -67,6 +67,7 @@
 #include "traps.h"
 #include "travel.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 int interrupt_block::interrupts_blocked = 0;
 
@@ -900,29 +901,29 @@ static string _abyss_monster_creation_message(const monster* mon)
 {
     if (mon->type == MONS_DEATH_COB)
     {
-        return coinflip() ? " appears in a burst of microwaves!"
-                          : " pops from nullspace!";
+        return coinflip() ? _(" appears in a burst of microwaves!")
+                          : _(" pops from nullspace!");
     }
 
     // You may ask: "Why these weights?" So would I!
     const vector<pair<string, int>> messages = {
-        { " appears in a shower of translocational energy.", 17 },
-        { " appears in a shower of sparks.", 34 },
-        { " materialises.", 45 },
-        { " emerges from chaos.", 13 },
-        { " emerges from the beyond.", 26 },
-        { make_stringf(" assembles %s!",
-                       mon->pronoun(PRONOUN_REFLEXIVE).c_str()), 33 },
-        { " erupts from nowhere.", 9 },
-        { " bursts from nowhere.", 18 },
-        { " is cast out of space.", 7 },
-        { " is cast out of reality.", 14 },
-        { " coalesces out of pure chaos.", 5 },
-        { " coalesces out of seething chaos.", 10 },
-        { " punctures the fabric of time!", 2 },
-        { " punctures the fabric of the universe.", 7 },
-        { make_stringf(" manifests%s!",
-                       silenced(you.pos()) ? "" : " with a bang"), 3 },
+        { _(" appears in a shower of translocational energy."), 17 },
+        { _(" appears in a shower of sparks."), 34 },
+        { _(" materialises."), 45 },
+        { _(" emerges from chaos."), 13 },
+        { _(" emerges from the beyond."), 26 },
+        { make_stringf(_(" assembles %s!"),
+                       _(mon->pronoun(PRONOUN_REFLEXIVE).c_str())), 33 },
+        { _(" erupts from nowhere."), 9 },
+        { _(" bursts from nowhere."), 18 },
+        { _(" is cast out of space."), 7 },
+        { _(" is cast out of reality."), 14 },
+        { _(" coalesces out of pure chaos."), 5 },
+        { _(" coalesces out of seething chaos."), 10 },
+        { _(" punctures the fabric of time!"), 2 },
+        { _(" punctures the fabric of the universe."), 7 },
+        { make_stringf(_(" manifests%s!"),
+                       silenced(you.pos()) ? "" : _(" with a bang")), 3 },
 
 
     };
@@ -978,7 +979,7 @@ static inline bool _monster_warning(activity_interrupt ai,
 
         string text = getMiscString(mon->name(DESC_DBNAME) + " title");
         if (text.empty())
-            text = mon->full_name(DESC_A);
+            text = _(mon->full_name(DESC_A).c_str());
         if (mon->type == MONS_PLAYER_GHOST)
         {
             text += make_stringf(" (%s)",
@@ -986,38 +987,38 @@ static inline bool _monster_warning(activity_interrupt ai,
         }
 
         if (at.context == SC_DOOR)
-            text += " opens the door.";
+            text += _(" opens the door.");
         else if (at.context == SC_GATE)
-            text += " opens the gate.";
+            text += _(" opens the gate.");
         else if (at.context == SC_TELEPORT_IN)
-            text += " appears from thin air!";
+            text += _(" appears from thin air!");
         else if (at.context == SC_LEAP_IN)
-            text += " leaps into view!";
+            text += _(" leaps into view!");
         else if (at.context == SC_FISH_SURFACES)
         {
-            text += " bursts forth from the ";
+            text += _(" bursts forth from the %s");
             if (mons_primary_habitat(*mon) == HT_LAVA)
-                text += "lava";
+                text += __(" bursts forth from the %s", "lava");
             else if (mons_primary_habitat(*mon) == HT_WATER)
-                text += "water";
+                text += __(" bursts forth from the %s", "water");
             else
-                text += "realm of bugdom";
+                text += __(" bursts forth from the %s", "realm of bugdom");
             text += ".";
         }
         else if (at.context == SC_NONSWIMMER_SURFACES_FROM_DEEP)
-            text += " emerges from the water.";
+            text += _(" emerges from the water.");
         else if (at.context == SC_UPSTAIRS)
-            text += " comes up the stairs.";
+            text += _(" comes up the stairs.");
         else if (at.context == SC_DOWNSTAIRS)
-            text += " comes down the stairs.";
+            text += _(" comes down the stairs.");
         else if (at.context == SC_ARCH)
-            text += " comes through the gate.";
+            text += _(" comes through the gate.");
         else if (at.context == SC_ABYSS)
             text += _abyss_monster_creation_message(mon);
         else if (at.context == SC_THROWN_IN)
-            text += " is thrown into view!";
+            text += _(" is thrown into view!");
         else
-            text += " comes into view.";
+            text += _(" comes into view.");
 
         bool zin_id = false;
         string god_warning;

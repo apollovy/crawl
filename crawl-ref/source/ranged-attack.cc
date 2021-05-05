@@ -25,6 +25,7 @@
 #include "teleport.h"
 #include "throw.h"
 #include "traps.h"
+#include "crawl_locale.h"
 
 ranged_attack::ranged_attack(actor *attk, actor *defn, item_def *proj,
                              bool tele, actor *blame)
@@ -238,11 +239,12 @@ bool ranged_attack::handle_phase_dodged()
 
     if (needs_message)
     {
-        mprf("%s%s misses %s%s",
-             projectile->name(DESC_THE).c_str(),
-             evasion_margin_adverb().c_str(),
-             defender_name(false).c_str(),
-             attack_strength_punctuation(damage_done).c_str());
+        mprf(
+                __("%(The arrow)s%( barely)s misses %(goblin chief)s%(.)s", "%s%s misses %s%s"),
+                __("%s barely misses goblin chief.", projectile->name(DESC_THE).c_str()),
+                __("The arrow%s misses goblin chief.", evasion_margin_adverb().c_str()),
+                __("The arrow completely misses %s.", defender_name(false).c_str()),
+                attack_strength_punctuation(damage_done).c_str());
     }
 
     return true;

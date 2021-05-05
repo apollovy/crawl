@@ -22,23 +22,23 @@ msgstr "вы"
 msgid "firewood"
 msgstr "дрова"
 
-#: mon-project.cc:294 mon-data.h:6173
+#: mon-data.h:6173
 msgid "orb of destruction"
 msgstr "сфера разрушения"
 
-#: mon-project.cc:477 mon-project.cc:485
+#: mon-project.cc:480 mon-project.cc:488
 msgid "The orb fizzles."
 msgstr "Сфера шипит."
 
-#: mon-project.cc:493
+#: mon-project.cc:496
 msgid "The orbs collide in a blinding explosion!"
 msgstr "Сферы сталкиваются в ослепительном взрыве!"
 
-#: mon-project.cc:495
+#: mon-project.cc:498
 msgid "You hear a loud magical explosion!"
 msgstr "Вы слышите громкий магический взрыв!"
 
-#: mon-project.cc:525
+#: mon-project.cc:528
 msgid "You block %s."
 msgstr "Вы блокируете %s."
 
@@ -1920,7 +1920,7 @@ msgstr "\n"
 "Карты по уровню:\n"
 ""
 
-#: mon-info.cc:1058 mon-data.h:4832
+#: mon-data.h:4832
 msgid "zombie"
 msgstr "зомби"
 
@@ -2580,7 +2580,7 @@ msgstr " Пожалуйста, выберите свой вид."
 msgid "Marksfrog"
 msgstr "Снайквер"
 
-#: ../mon-data.h:3551
+#: mon-data.h:3551
 msgctxt "slain by"
 msgid "an azure jelly"
 msgstr "лазурным желе"
@@ -2625,6 +2625,10 @@ msgstr "на уровне %2$s "
 msgid " of Lugonu"
 msgstr " Лугону"
 
+#: newgame.cc:153 newgame.cc:158
+msgid "Recommended "
+msgstr "Рекомендуемые "
+
 #: newgame.cc:1785
 msgid "Picks a random recommended weapon"
 msgstr "Выбирает случайное рекомендованное оружие"
@@ -2633,13 +2637,33 @@ msgstr "Выбирает случайное рекомендованное ор�
 msgid "Opens the help screen"
 msgstr "Открывает экран справки"
 
+#: newgame.cc:1791
+msgid "* - Random weapon"
+msgstr "* - Случайное оружие"
+
 #: newgame.cc:1792
 msgid "Picks a random weapon"
 msgstr "Выбирает случайное оружие"
 
+#: newgame.cc:1801
+msgid "Random"
+msgstr "Случайный"
+
+#: newgame.cc:1802
+msgid "Recommended"
+msgstr "Рекомендуемые"
+
 #: newgame.cc:1808
 msgid "Select your old weapon"
 msgstr "Выберите свое старое оружие"
+
+#: newgame.cc:1840
+msgid "You have a choice of weapons."
+msgstr "У вас есть выбор оружия."
+
+#: newgame.cc:2179
+msgid "* - Random map"
+msgstr "* - Случайная карта"
 
 #: state.cc:614
 msgid "Tutorial"
@@ -2652,6 +2676,14 @@ msgstr "Арена"
 #: state.cc:620
 msgid "Unknown"
 msgstr "Неизвестный"
+
+#: religion.cc:2162
+msgid "No God"
+msgstr "Нет Бога"
+
+#: religion.cc:2163 initfile.cc:617
+msgid "random"
+msgstr "случайный"
 
 #: religion.cc:2164
 msgid "nameless"
@@ -2745,6 +2777,14 @@ msgstr "Ру"
 msgid "Pakellas"
 msgstr "Пакеллас"
 
+#: religion.cc:2189
+msgid "Uskayaw"
+msgstr "Ускайав"
+
+#: religion.cc:2190
+msgid "Hepliaklqana"
+msgstr "Хеплиаклкана"
+
 #: religion.cc:2191
 msgid "Wu Jian"
 msgstr "У Цзянь"
@@ -2752,6 +2792,14 @@ msgstr "У Цзянь"
 #: religion.cc:2193
 msgid "an unknown god"
 msgstr "неизвестный бог"
+
+#: religion.cc:2194
+msgid "Buggy"
+msgstr "Багги"
+
+#: religion.cc:2201 tags.cc:2246
+msgid "Jiyva"
+msgstr "Джийва"
 
 #: religion.cc:2212
 msgid "Deng Ai"
@@ -2785,7 +2833,7 @@ msgstr "Кай Фан"
 msgid "god gift"
 msgstr "подарок бога"
 
-#: item-name.cc:91 mon-data.h:7119
+#: mon-data.h:7119
 msgid "Donald"
 msgstr "Дональд"
 
@@ -2829,6 +2877,10 @@ msgstr "взорваться"
 #: item-name.cc:370 item-name.cc:865 item-name.cc:892
 msgid "steel"
 msgstr "сталь"
+
+#: item-name.cc:388
+msgid "sickness"
+msgstr "болезнь"
 
 #: item-name.cc:411 item-name.cc:436
 msgid "venom"
@@ -2914,6 +2966,62 @@ msgstr "кислотный"
 msgid "running"
 msgstr "бегущий"
 
+#: item-name.cc:537
+msgid "fire resistance"
+msgstr "сопротивление огню"
+
+#: item-name.cc:538
+msgid "cold resistance"
+msgstr "сопротивление холоду"
+
+#: item-name.cc:539 item-name.cc:735
+msgid "poison resistance"
+msgstr "сопротивление яду"
+
+#: item-name.cc:542 item-name.cc:737
+msgid "strength"
+msgstr "сила"
+
+#: item-name.cc:543 item-name.cc:746
+msgid "dexterity"
+msgstr "ловкость"
+
+#: item-name.cc:544 item-name.cc:747
+msgid "intelligence"
+msgstr "интеллект"
+
+#: item-name.cc:550 item-name.cc:745
+msgid "stealth"
+msgstr "скрытность"
+
+#: item-name.cc:553
+msgid "the Archmagi"
+msgstr "Архимаг"
+
+#: item-name.cc:557
+msgid "preservation"
+msgstr "сохранение"
+
+#: item-name.cc:558 item-name.cc:772
+msgid "reflection"
+msgstr "отражение"
+
+#: item-name.cc:559
+msgid "spirit shield"
+msgstr "щит духа"
+
+#: item-name.cc:560 item-name.cc:601
+msgid "archery"
+msgstr "стрельба из лука"
+
+#: item-name.cc:565 item-name.cc:606 item-name.cc:764
+msgid "harm"
+msgstr "вред"
+
+#: item-name.cc:566 item-name.cc:607
+msgid "shadows"
+msgstr "тени"
+
 #: output.cc:2371 item-name.cc:581 item-name.cc:789
 msgid "rPois"
 msgstr "сЯду"
@@ -2922,6 +3030,42 @@ msgstr "сЯду"
 msgid "rCorr"
 msgstr "сКорр"
 
+#: item-name.cc:646 item-name.cc:865 item-name.cc:903
+msgid "iron"
+msgstr "железный"
+
+#: item-name.cc:646 item-name.cc:865 item-name.cc:890
+msgid "brass"
+msgstr "латунный"
+
+#: item-name.cc:646 item-name.cc:867 item-name.cc:890 item-name.cc:906
+msgid "bone"
+msgstr "костяной"
+
+#: item-name.cc:646 item-name.cc:865
+msgid "wooden"
+msgstr "деревянный"
+
+#: item-name.cc:646 item-name.cc:866 item-name.cc:890
+msgid "copper"
+msgstr "медный"
+
+#: item-name.cc:646 item-name.cc:1117 item-name.cc:1175 item-prop.cc:178
+msgid "gold"
+msgstr "золотой"
+
+#: item-name.cc:647 item-name.cc:868 item-name.cc:889
+msgid "bronze"
+msgstr "бронзовый"
+
+#: item-name.cc:647 item-name.cc:866
+msgid "ivory"
+msgstr "из слоновый кости"
+
+#: item-name.cc:647 item-name.cc:866
+msgid "glass"
+msgstr "стеклянный"
+
 #: item-name.cc:665
 msgid "ambrosia"
 msgstr "амброзия"
@@ -2929,6 +3073,10 @@ msgstr "амброзия"
 #: item-name.cc:668
 msgid "experience"
 msgstr "опыт"
+
+#: item-name.cc:670
+msgid "berserk rage"
+msgstr "ярость берсерка"
 
 #: item-name.cc:671
 msgid "mutation"
@@ -2969,6 +3117,10 @@ msgstr "защита от огня"
 #: item-name.cc:736
 msgid "protection from cold"
 msgstr "защита от холода"
+
+#: item-name.cc:760
+msgid "the acrobat"
+msgstr "акробат"
 
 #: item-name.cc:762
 msgid "rage"
@@ -3114,7 +3266,11 @@ msgstr "кольцо"
 msgid "Orb of Zot"
 msgstr "Сфера Зота"
 
-#: mon-info.cc:1066 item-name.cc:1838 mon-data.h:4845
+#: item-name.cc:1812
+msgid "decaying skeleton"
+msgstr "разлагающийся скелет"
+
+#: mon-data.h:4845
 msgid "skeleton"
 msgstr "скелет"
 
@@ -3324,7 +3480,7 @@ msgstr "ботинки"
 msgid "storm"
 msgstr "буря"
 
-#: mon-data.h:4465 mon-data.h:5131 item-prop.cc:176
+#: mon-data.h:4465 mon-data.h:5131
 msgid "shadow"
 msgstr "тень"
 
@@ -3624,7 +3780,7 @@ msgstr "королева муравьёв"
 msgid "soldier ant"
 msgstr "муравей-солдат"
 
-#: mutant-beast.h:48 mon-data.h:360
+#: mon-data.h:360
 msgid "bat"
 msgstr "летучая мышь"
 
@@ -4012,6 +4168,14 @@ msgstr "мумия священник"
 msgid "naga"
 msgstr "нага"
 
+#: mon-data.h:4613
+msgid "Orb Guardian"
+msgstr "Защитник Сферы"
+
+#: mon-data.h:4682
+msgid "nameless horror"
+msgstr "безымянный ужас"
+
 #: mon-data.h:4709
 msgid "yak"
 msgstr "як"
@@ -4020,9 +4184,69 @@ msgstr "як"
 msgid "death yak"
 msgstr "як смерти"
 
+#: mon-data.h:4748
+msgid "elephant"
+msgstr "слон"
+
+#: mon-data.h:4762
+msgid "dire elephant"
+msgstr "ужасный слон"
+
+#: mon-data.h:4776
+msgid "hellephant"
+msgstr "адский слон"
+
+#: mon-data.h:4790
+msgid "apis"
+msgstr "пчела"
+
+#: mon-data.h:4871
+msgid "small zombie"
+msgstr "маленький зомби"
+
+#: mon-data.h:4884
+msgid "small skeleton"
+msgstr "маленький скелет"
+
+#: mon-data.h:4910
+msgid "large zombie"
+msgstr "большой зомби"
+
+#: mon-data.h:4923
+msgid "large skeleton"
+msgstr "большой скелет"
+
+#: mon-data.h:4978
+msgid "kraken"
+msgstr "кракен"
+
+#: mon-data.h:4991
+msgid "tentacle"
+msgstr "щупальце"
+
+#: mon-data.h:5004
+msgid "tentacle segment"
+msgstr "сегмент щупальца"
+
+#: mon-data.h:5019
+msgid "octopode"
+msgstr "осьминог"
+
 #: mon-data.h:5034
 msgid "lava snake"
 msgstr "лавовая змея"
+
+#: mon-data.h:5047
+msgid "salamander"
+msgstr "саламандр "
+
+#: mon-data.h:5100
+msgid "Cloud Mage"
+msgstr "Облачный Маг"
+
+#: mon-data.h:5118
+msgid "player illusion"
+msgstr "иллюзия игрока"
 
 #: mon-data.h:5221
 msgid "demonspawn"
@@ -4043,6 +4267,38 @@ msgstr "инфернальный демонорождённый"
 #: mon-data.h:5274
 msgid "torturous demonspawn"
 msgstr "мучительный демонорождённый"
+
+#: mon-data.h:5397
+msgid "iron imp"
+msgstr "железный бес"
+
+#: mon-data.h:5410
+msgid "shadow imp"
+msgstr "теневой бес"
+
+#: mon-data.h:5423
+msgid "lemure"
+msgstr "лемур"
+
+#: mon-data.h:5437
+msgid "rust devil"
+msgstr "ржавый дьявол"
+
+#: mon-data.h:5450
+msgid "orange demon"
+msgstr "оранжевый демон"
+
+#: mon-data.h:5464
+msgid "red devil"
+msgstr "красный дьявол"
+
+#: mon-data.h:5491
+msgid "ice devil"
+msgstr "ледяной дьявол"
+
+#: mon-data.h:5692
+msgid "reaper"
+msgstr "жнец"
 
 #: mon-data.h:5928
 msgid "ice statue"
@@ -4245,142 +4501,147 @@ msgstr "\n"
 "\n"
 ""
 
-#: ../mon-data.h:180
+#: mon-data.h:180
 msgctxt "slain by"
 msgid "a wood golem"
 msgstr "деревянным големом"
 
-#: ../mon-data.h:184
+#: mon-data.h:184
 msgctxt "slain by"
 msgid "a spirit"
 msgstr "духом"
 
-#: ../mon-data.h:185
+#: mon-data.h:185
 msgctxt "slain by"
 msgid "a paladin"
 msgstr "паладином"
 
-#: ../mon-data.h:187
+#: mon-data.h:187
 msgctxt "slain by"
 msgid "a pan"
 msgstr "кастрюлей"
 
-#: ../mon-data.h:188
+#: mon-data.h:188
 msgctxt "slain by"
 msgid "a lamia"
 msgstr "ламией"
 
-#: ../mon-data.h:192
+#: mon-data.h:192
 msgctxt "slain by"
 msgid "a chaos butterfly"
 msgstr "бабочкой хаоса"
 
-#: ../mon-data.h:195
+#: mon-data.h:195
 msgctxt "slain by"
 msgid "a rock worm"
 msgstr "каменным червём"
 
-#: ../mon-data.h:198
+#: mon-data.h:198
 msgctxt "slain by"
 msgid "a lava fish"
 msgstr "лавовой рыбой"
 
-#: ../mon-data.h:217
+#: mon-data.h:217
 msgctxt "slain by"
 msgid "a clay golem"
 msgstr "глиняным големом"
 
-#: ../mon-data.h:218
+#: mon-data.h:218
 msgctxt "slain by"
 msgid "a stone golem"
 msgstr "каменным големом"
 
-#: ../mon-data.h:221
+#: mon-data.h:221
 msgctxt "slain by"
 msgid "a vapour"
 msgstr "паром"
 
-#: ../mon-data.h:236
+#: mon-data.h:236
 msgctxt "slain by"
 msgid "a lava worm"
 msgstr "лавовым червём"
 
-#: ../mon-data.h:260
+#: mon-data.h:260
 msgctxt "slain by"
 msgid "a deep elf priest"
 msgstr "глубинным эльфом жрецом"
 
-#: ../mon-data.h:271
+#: mon-data.h:271
 msgctxt "slain by"
 msgid "a putrid demonspawn"
 msgstr "мерзким демонорождённым"
 
-#: ../mon-data.h:282
+#: mon-data.h:282
 msgctxt "slain by"
 msgid "a lava orc"
 msgstr "лавовым орком"
 
-#: ../mon-data.h:428
+#: mon-data.h:428
 msgctxt "slain by"
 msgid "a caustic shrike"
 msgstr "едким сорокопутом"
 
-#: ../mon-data.h:481
+#: mon-data.h:481
 msgctxt "slain by"
 msgid "a yaktaur"
 msgstr "яктавром"
 
-#: ../mon-data.h:494
+#: mon-data.h:494
 msgctxt "slain by"
 msgid "a yaktaur captain"
 msgstr "яктавром капитаном"
 
-#: ../mon-data.h:845
+#: mon-data.h:845
 msgctxt "slain by"
 msgid "a deep elf high priest"
 msgstr "глубинным эльфом высшим жрецом"
 
-#: ../mon-data.h:1672
+#: mon-data.h:1672
 msgctxt "slain by"
 msgid "an orc priest"
 msgstr "орком жрецом"
 
-#: ../mon-data.h:1737
+#: mon-data.h:1737
 msgctxt "slain by"
 msgid "an orc high priest"
 msgstr "орком высшим жрецом"
 
-#: ../mon-data.h:2082
+#: mon-data.h:2082
 msgctxt "slain by"
 msgid "a wolf spider"
 msgstr "пауком-волком"
 
-#: ../mon-data.h:2978
+#: mon-data.h:2733
+msgctxt "slain by"
+msgid "a giant cockroach"
+msgstr "гигантским тараканом"
+
+#: mon-data.h:2978
 msgctxt "slain by"
 msgid "an acid dragon"
 msgstr "кислотным драконом"
 
-#: ../mon-data.h:3565
+#: mon-data.h:3565
 msgctxt "slain by"
 msgid "an acid blob"
 msgstr "кислотным шаром"
 
-#: ../mon-data.h:3685
+#: mon-data.h:3685
 msgctxt "slain by"
 msgid "a mummy"
 msgstr "мумией"
 
-#: ../mon-data.h:3698
+#: mon-data.h:3698
 msgctxt "slain by"
 msgid "a guardian mummy"
 msgstr "мумией-охранником"
 
-#: ../mon-data.h:3711
+#: mon-data.h:3711
 msgctxt "slain by"
 msgid "a royal mummy"
 msgstr "королевской мумией"
 
-#: ../mon-data.h:3724
+#: mon-data.h:3724
 msgctxt "slain by"
 msgid "a mummy priest"
 msgstr "мумией священником"
@@ -4391,37 +4652,52 @@ msgctxt "slain by"
 msgid "yak"
 msgstr "яком"
 
-#: ../mon-data.h:4722
+#: mon-data.h:4722
 msgctxt "slain by"
 msgid "a death yak"
 msgstr "яком смерти"
 
-#: ../mon-data.h:5034
+#: mon-data.h:4845
+msgctxt "slain by"
+msgid "a skeleton"
+msgstr "скелетом"
+
+#: mon-data.h:4884
+msgctxt "slain by"
+msgid "a small skeleton"
+msgstr "маленьким скелетом"
+
+#: mon-data.h:4923
+msgctxt "slain by"
+msgid "a large skeleton"
+msgstr "большим скелетом"
+
+#: mon-data.h:5034
 msgctxt "slain by"
 msgid "a lava snake"
 msgstr "лавовой змеёй"
 
-#: ../mon-data.h:5221
+#: mon-data.h:5221
 msgctxt "slain by"
 msgid "a demonspawn"
 msgstr "демонорождённым"
 
-#: ../mon-data.h:5234
+#: mon-data.h:5234
 msgctxt "slain by"
 msgid "a monstrous demonspawn"
 msgstr "монструозным демонорождённым"
 
-#: ../mon-data.h:5248
+#: mon-data.h:5248
 msgctxt "slain by"
 msgid "a gelid demonspawn"
 msgstr "желеобразным демонорождённым"
 
-#: ../mon-data.h:5261
+#: mon-data.h:5261
 msgctxt "slain by"
 msgid "an infernal demonspawn"
 msgstr "инфернальным демонорождённым"
 
-#: ../mon-data.h:5274
+#: mon-data.h:5274
 msgctxt "slain by"
 msgid "a torturous demonspawn"
 msgstr "мучительным демонорождённым"
@@ -4579,6 +4855,10 @@ msgstr "[Л-Клик] Поднять предметы (%)"
 #: tilereg-dgn.cc:800
 msgid "enter shop"
 msgstr "войти в магазин"
+
+#: tilereg-dgn.cc:804
+msgid "pray at altar"
+msgstr "молиться у алтаря"
 
 #: tilereg-dgn.cc:807
 msgid "enter gate"
@@ -5170,6 +5450,10 @@ msgstr "очень медленный"
 msgid "no status effects"
 msgstr "нет эффектов статуса"
 
+#: ability.cc:296
+msgid "No ability"
+msgstr "Нет способности"
+
 #: ability.cc:314
 msgid "Breathe Acid"
 msgstr "Выдыхать Кислоту"
@@ -5194,9 +5478,39 @@ msgstr "Прыжок от Стены"
 msgid "no special abilities"
 msgstr "нет особых способностей"
 
+#: ability.cc:865
+msgid "large"
+msgstr "большой"
+
+#: ability.cc:867
+msgid "small"
+msgstr "маленький"
+
 #: ability.cc:876
 msgid "This ability costs: "
 msgstr "Эта способность стоит: "
+
+#: ability.cc:920
+msgid "\n"
+"One cursed item"
+msgstr "\n"
+"Один проклятый предмет"
+
+#: ability.cc:1223
+msgid "You're already flying!"
+msgstr "Вы уже летаете!"
+
+#: ability.cc:1326
+msgid "You can't do that."
+msgstr "Вы не можете это делать."
+
+#: ability.cc:1581
+msgid "You're already here!"
+msgstr "Вы уже здесь!"
+
+#: ability.cc:1697
+msgid "You have no magic power."
+msgstr "У вас нет магических сил."
 
 #: ability.cc:1724
 msgid "You are too terrified to wall jump!"
@@ -5220,13 +5534,60 @@ msgstr "сеть"
 msgid "There is nothing to wall jump against here."
 msgstr "Тут нет стены, чтобы от неё отпрыгнуть."
 
+#: ability.cc:1902
+msgctxt "This will reduce your %s to zero. "
+msgid "strength"
+msgstr "силу"
+
+#: ability.cc:1904
+msgctxt "This will reduce your %s to zero. "
+msgid "intelligence"
+msgstr "интеллект"
+
+#: ability.cc:1911
+msgid "Continue?"
+msgstr "Продолжить?"
+
 #: ability.cc:2066 ability.cc:2140
 msgid "You spit a glob of acid."
 msgstr "Вы выплёвываете шар кислоты."
 
+#: monster.cc:2529 monster.cc:2535 monster.cc:2543 player-act.cc:481
+#: player-act.cc:572
+msgid "paw"
+msgstr "лапа"
+
+#: player-act.cc:493
+msgid "fist"
+msgstr "кулак"
+
+#: monster.cc:2474 player-act.cc:499
+msgid "hand"
+msgstr "рука"
+
+#: player-act.cc:521
+msgid "blade "
+msgstr "клинок "
+
+#: monster.cc:2515 monster.cc:2559 player-act.cc:577
+msgid "tail"
+msgstr "хвост"
+
+#: monster.cc:2601 player-act.cc:580
+msgid "foot"
+msgstr "нога"
+
 #: player-act.cc:640
 msgid "Nothing wielded"
 msgstr "В руках ничего нет"
+
+#: player-act.cc:647
+msgid "Claws"
+msgstr "челюсти"
+
+#: player-act.cc:650
+msgid "Tentacles"
+msgstr "Щупальца"
 
 #: feature-data.h:116
 msgid "metal wall"
@@ -5272,6 +5633,10 @@ msgstr "гранитная статуя"
 msgid "some lava"
 msgstr "немного лавы"
 
+#: feature-data.h:321
+msgid "web"
+msgstr "паутина"
+
 #: feature-data.h:362
 msgid "stone staircase leading down"
 msgstr "каменные ступени, ведущие вниз"
@@ -5291,6 +5656,14 @@ msgstr "аварийный люк в потолке"
 #: feature-data.h:457
 msgid "sand-covered staircase"
 msgstr "покрытые песком ступени"
+
+#: feature-data.h:460
+msgid "frozen archway"
+msgstr "земерзшая арка"
+
+#: feature-data.h:461
+msgid "dark tunnel"
+msgstr "темный туннель"
 
 #: feature-data.h:496
 msgid "staircase leading out of the dungeon"
@@ -5396,6 +5769,22 @@ msgstr "бурный алтарь Кацлаля"
 msgid "ornate altar of the Wu Jian Council"
 msgstr "богато украшенный алтарь Совета У Цзянь"
 
+#: feature-data.h:605
+msgid "fountain of blood"
+msgstr "фонтан крови"
+
+#: feature-data.h:46
+msgid "a closed door"
+msgstr "закрытая дверь"
+
+#: feature-data.h:60
+msgid "a sealed door"
+msgstr "запечатанная дверь"
+
+#: feature-data.h:88
+msgid "a tree"
+msgstr "дерево"
+
 #: feature-data.h:116
 msgid "a metal wall"
 msgstr "металлическая стена"
@@ -5432,9 +5821,21 @@ msgstr "прозрачная каменная стена"
 msgid "a translucent unnaturally hard rock wall"
 msgstr "прозрачная неестественно твёрдая стена из камней"
 
+#: feature-data.h:179
+msgid "an iron grate"
+msgstr "железные ворота"
+
+#: feature-data.h:186
+msgid "a the open sea"
+msgstr "в открытом море"
+
 #: feature-data.h:193
 msgid "a the endless lava"
 msgstr "бесконечная лава"
+
+#: feature-data.h:207
+msgid "an orcish idol"
+msgstr "идол орков"
 
 #: feature-data.h:214
 msgid "a granite statue"
@@ -5447,6 +5848,58 @@ msgstr "немного лавы"
 #: feature-data.h:256 feature-data.h:325
 msgid "the floor"
 msgstr "пол"
+
+#: feature-data.h:272
+msgid "a collapsed entrance"
+msgstr "обрушившийся вход"
+
+#: feature-data.h:279
+msgid "an open door"
+msgstr "открытая дверь"
+
+#: feature-data.h:301
+msgid "a mechanical trap"
+msgstr "механическая ловушка"
+
+#: feature-data.h:303
+msgid "an arrow trap"
+msgstr "ловушка со стрелами"
+
+#: feature-data.h:304
+msgid "a spear trap"
+msgstr "ловушка  с копьями"
+
+#: feature-data.h:305
+msgid "a blade trap"
+msgstr "ловушка с мечами"
+
+#: feature-data.h:306
+msgid "a dart trap"
+msgstr "ловушка с дротиками"
+
+#: feature-data.h:307
+msgid "a bolt trap"
+msgstr "ловушка с болтами"
+
+#: feature-data.h:318
+msgid "a Zot trap"
+msgstr "ловушка Зота"
+
+#: feature-data.h:320
+msgid "a shaft"
+msgstr "шахта"
+
+#: feature-data.h:321
+msgid "a web"
+msgstr "паутина"
+
+#: feature-data.h:333
+msgid "a shop"
+msgstr "магазин"
+
+#: feature-data.h:340
+msgid "an abandoned shop"
+msgstr "заброшенный магазин"
 
 #: feature-data.h:362
 msgid "a stone staircase leading down"
@@ -5464,9 +5917,45 @@ msgstr "аварийный люк в полу"
 msgid "an escape hatch in the ceiling"
 msgstr "аварийный люк в потолке"
 
+#: feature-data.h:406
+msgid "a labyrinth entrance"
+msgstr "вход в лабиринт"
+
+#: feature-data.h:433
+msgid "a gateway to Hell"
+msgstr "врата в Ад"
+
+#: feature-data.h:447
+msgid "a gate to the Realm of Zot"
+msgstr "ворота в царство Зота"
+
+#: feature-data.h:453
+msgid "a gateway to a ziggurat"
+msgstr "ворота в зиккурат"
+
+#: feature-data.h:454
+msgid "a gateway to a bazaar"
+msgstr "ворота на базар"
+
 #: feature-data.h:457
 msgid "a sand-covered staircase"
 msgstr "покрытые песком ступени"
+
+#: feature-data.h:460
+msgid "a frozen archway"
+msgstr "замёрзшая арка"
+
+#: feature-data.h:461
+msgid "a dark tunnel"
+msgstr "тёмный туннель"
+
+#: feature-data.h:462
+msgid "a magical portal"
+msgstr "волшебный портал"
+
+#: feature-data.h:463
+msgid "a ruined gateway"
+msgstr "разрушенные ворота"
 
 #: feature-data.h:496
 msgid "a staircase leading out of the dungeon"
@@ -5544,6 +6033,10 @@ msgstr "ступени к Болоту"
 msgid "a staircase to the Shoals"
 msgstr "ступени к Отмелям"
 
+#: feature-data.h:551
+msgid "a hole to the Spider Nest"
+msgstr "дыра в Паучье Гнездо"
+
 #: feature-data.h:552
 msgid "a crawl-hole back to the Lair"
 msgstr "дыра, ведущая назад в Логово"
@@ -5572,6 +6065,18 @@ msgstr "бурный алтарь Кацлаля"
 msgid "an ornate altar of the Wu Jian Council"
 msgstr "богато украшенный алтарь Совета У Цзянь"
 
+#: feature-data.h:604
+msgid "a fountain of sparkling water"
+msgstr "фонтан с газированной водой"
+
+#: feature-data.h:605
+msgid "a fountain of blood"
+msgstr "фонтан крови"
+
+#: feature-data.h:606 feature-data.h:608 feature-data.h:609 feature-data.h:610
+msgid "a dry fountain"
+msgstr "высохший фонтан"
+
 #: directn.cc:311
 msgid "Press: ? - help"
 msgstr "Нажмите: ? - помощь"
@@ -5587,6 +6092,18 @@ msgstr ", . - идти"
 #: directn.cc:319
 msgid ", g - get item"
 msgstr ", g - взять предмет"
+
+#: directn.cc:3269
+msgid "open "
+msgstr "открыт "
+
+#: directn.cc:3279
+msgid "sealed "
+msgstr "запечатан "
+
+#: directn.cc:3283
+msgid "closed "
+msgstr "закрыт "
 
 #: describe.cc:2439
 msgid "\n"
@@ -5648,14 +6165,154 @@ msgstr " (выберите для %s, '!' для осмотра):"
 msgid "You are splashed with acid%s%s"
 msgstr "вы забрызганы кислотой%s%s"
 
+#: player.cc:6563
+msgid " but take no damage"
+msgstr " но не получает урона"
+
+#: monster.cc:822
+msgid "It bursts into flame!"
+msgstr "Он загорается!"
+
+#: monster.cc:825
+msgid "It is covered in frost."
+msgstr "Он покрыт инеем."
+
+#: monster.cc:835
+msgid "It begins to drip with poison!"
+msgstr "Начинает капать яд!"
+
+#: monster.cc:838
+msgid "You sense an unholy aura."
+msgstr "Вы чувствуете нечестивую ауру."
+
+#: monster.cc:841 monster.cc:978
+msgid "Its appearance distorts for a moment."
+msgstr "Его внешний вид на мгновение искажается."
+
+#: monster.cc:869
+msgid "It begins to drip corrosive slime!"
+msgstr "Начинает капать едкая слизь!"
+
+#: monster.cc:1076
+msgid "some gold"
+msgstr "немного золота"
+
 #: monster.cc:1233
 msgctxt "%(The goblin)s drops %(a magic wand of acid)s."
 msgid "%s drops %s."
 msgstr "%s бросает %s."
 
+#: monster.cc:2273
+msgid "something"
+msgstr "что-то"
+
+#: monster.cc:2390
+msgid "pincer"
+msgstr "клешня"
+
+#: monster.cc:2404
+msgid "wing"
+msgstr "крыло"
+
+#: monster.cc:2410
+msgid "antenna"
+msgstr "антенна"
+
+#: monster.cc:2418
+msgid "leaf"
+msgstr "лист"
+
+#: monster.cc:2429 monster.cc:2456
+msgid "body"
+msgstr "тело"
+
+#: monster.cc:2437 monster.cc:2453
+msgid "rhizome"
+msgstr "корневище"
+
+#: monster.cc:2447
+msgid "pupil"
+msgstr "ученик"
+
+#: monster.cc:2504
+msgid "leg"
+msgstr "нога"
+
+#: monster.cc:2533
+msgid "trotter"
+msgstr "рысак"
+
+#: monster.cc:2564
+msgid "root"
+msgstr "корень"
+
+#: monster.cc:2568
+msgid "stem"
+msgstr "ствол"
+
+#: monster.cc:2573
+msgid "pseudopod"
+msgstr "ложноножка"
+
+#: monster.cc:2586
+msgid "underside"
+msgstr "нижняя часть"
+
+#: monster.cc:2601
+msgid "feet"
+msgstr "ноги"
+
+#: monster.cc:2621
+msgid "arm"
+msgstr "рука"
+
+#: monster.cc:2628
+msgid "scaled"
+msgstr "чешуйчатый"
+
+#: monster.cc:2632
+msgid "feathered"
+msgstr "пернатый"
+
+#: monster.cc:2724
+msgid "You hear a splashing noise."
+msgstr "Вы слышите брызг."
+
 #: monster.cc:4300
 msgid "%s is splashed with acid%s"
 msgstr "%s забрызган кислотой%s"
+
+#: monster.cc:4503
+msgid " turns to stone!"
+msgstr " превращается в камень!"
+
+#: monster.cc:5612
+msgid "is sucked into"
+msgstr "всасывается в"
+
+#: monster.cc:5613
+msgid "falls through"
+msgstr "проваливается"
+
+#: monster.cc:5642
+msgid " looks weaker."
+msgstr " выглядит слабее."
+
+#: monster.cc:5830
+msgid " drinks a potion."
+msgstr " пьёт зелье."
+
+#: monster.cc:5837 monster.cc:5851
+msgid " is healed!"
+msgstr " исцелен!"
+
+#: monster.cc:5939
+msgid "Your spectral weapon shares its damage with you!"
+msgstr "Ваше призрачное оружие разделяет с вами урон!"
+
+#: monster.cc:6032
+msgid "lava and is incinerated"
+msgstr "лава и сжигается"
 
 #: hiscores.cc:2545
 msgid "Splashed by %s acid"
@@ -5935,4 +6592,206 @@ msgstr "старший"
 #: mutant-beast.h:54
 msgid "primal"
 msgstr "первобытный"
+
+#: mon-project.cc:462
+msgctxt "%(The giant cockroach)s hits %(a putrid demon)s."
+msgid "%s hits %s."
+msgstr "%s попадает по %s."
+
+#: beam.cc:3186
+msgid "The %s misses you."
+msgstr "%s не попадает по вам."
+
+#: beam.cc:3191
+msgid "The %s is repelled."
+msgstr "%s отражён."
+
+#: melee-attack.cc:319
+msgctxt "%(The mighty blow)s%( completely)s misses %(centaur captain skeleton)s%(!)s"
+msgid "%s%s misses %s%s"
+msgstr "%s%s не попадает %s%s"
+
+#: melee-attack.cc:1270
+msgctxt "Your %(bite)s misses %(the zombie goblin)s."
+msgid "Your %s misses %s."
+msgstr "Ваш %s не попадает по %s."
+
+#: delay.cc:904
+msgid " appears in a burst of microwaves!"
+msgstr " появляется во вспышке микроволн!"
+
+#: delay.cc:905
+msgid " pops from nullspace!"
+msgstr " возникает из никоткуда!"
+
+#: delay.cc:910
+msgid " appears in a shower of translocational energy."
+msgstr " появляется в водопаде транслокационной энергии."
+
+#: delay.cc:911
+msgid " appears in a shower of sparks."
+msgstr " появляется в водопаде искр."
+
+#: delay.cc:912
+msgid " materialises."
+msgstr " материализуется."
+
+#: delay.cc:913
+msgid " emerges from chaos."
+msgstr " выходит из хаоса."
+
+#: delay.cc:914
+msgid " emerges from the beyond."
+msgstr " выходит из-за границ бытия."
+
+#: delay.cc:915
+msgid " assembles %s!"
+msgstr " собирается!"
+
+#: delay.cc:917
+msgid " erupts from nowhere."
+msgstr " извергается из ниоткуда."
+
+#: delay.cc:918
+msgid " bursts from nowhere."
+msgstr " вырывается из ниоткуда."
+
+#: delay.cc:919
+msgid " is cast out of space."
+msgstr " изгнан из пространства."
+
+#: delay.cc:920
+msgid " is cast out of reality."
+msgstr " изгнан изрельности."
+
+#: delay.cc:921
+msgid " coalesces out of pure chaos."
+msgstr " формируется из чистого хаоса"
+
+#: delay.cc:922
+msgid " coalesces out of seething chaos."
+msgstr " формируется из бурлящего хаоса."
+
+#: delay.cc:923
+msgid " punctures the fabric of time!"
+msgstr " прокалывает ткань времени!"
+
+#: delay.cc:924
+msgid " punctures the fabric of the universe."
+msgstr " прокалывает ткань Вселенной."
+
+#: delay.cc:925
+msgid " manifests%s!"
+msgstr " проявляется%s!"
+
+#: delay.cc:926
+msgid " with a bang"
+msgstr " с хлопком"
+
+#: delay.cc:990
+msgid " opens the door."
+msgstr " открывает дверь."
+
+#: delay.cc:992
+msgid " opens the gate."
+msgstr " открывает врата."
+
+#: delay.cc:994
+msgid " appears from thin air!"
+msgstr " появляется из разреженного воздуха!"
+
+#: delay.cc:996
+msgid " leaps into view!"
+msgstr " впрыгивает в поле зрения!"
+
+#: delay.cc:999
+msgid " bursts forth from the %s"
+msgstr " вырывается из %s"
+
+#: delay.cc:1001
+msgctxt " bursts forth from the %s"
+msgid "lava"
+msgstr "лавы"
+
+#: delay.cc:1003
+msgctxt " bursts forth from the %s"
+msgid "water"
+msgstr "воды"
+
+#: delay.cc:1005
+msgctxt " bursts forth from the %s"
+msgid "realm of bugdom"
+msgstr "мира глюков"
+
+#: delay.cc:1009
+msgid " emerges from the water."
+msgstr " выходит из воды."
+
+#: delay.cc:1011
+msgid " comes up the stairs."
+msgstr " поднимается по ступеням."
+
+#: delay.cc:1013
+msgid " comes down the stairs."
+msgstr " спускается по ступеням."
+
+#: delay.cc:1015
+msgid " comes through the gate."
+msgstr " проходит через врата."
+
+#: delay.cc:1019
+msgid " is thrown into view!"
+msgstr " заброшен в поле зрения!"
+
+#: delay.cc:1021
+msgid " comes into view."
+msgstr " появляется в поле зрения."
+
+#: traps.cc:1201
+msgctxt "%(A poisoned dart)s shoots out and misses you."
+msgid "%s shoots out and misses you."
+msgstr "%s срабатывает и промахивается по вам."
+
+#: traps.cc:1207
+msgctxt "%(A poisoned dart)s misses %(the dart slug)s!"
+msgid "%s misses %s!"
+msgstr "%s не попадает по %s!"
+
+#: traps.cc:1251
+msgctxt "%(A dart trap)s hits %(the giant cockroach)s%(, but does no damage)s!"
+msgid "%s hits %s%s!"
+msgstr "%s попадает по %s%s!"
+
+#: traps.cc:1255
+msgid ", but does no damage"
+msgstr ", но не наносит повреждений."
+
+#: ranged-attack.cc:243
+msgctxt "%(The arrow)s%( barely)s misses %(goblin chief)s%(.)s"
+msgid "%s%s misses %s%s"
+msgstr "%s%s не попадает по %s%s"
+
+#: mon-data.h:2733
+msgctxt "The mighty blow completely misses %s!"
+msgid "giant cockroach"
+msgstr "гигантскому таракану"
+
+#: mon-data.h:2733
+msgctxt "Your bite misses %s."
+msgid "the giant cockroach"
+msgstr "гигантскому таракану"
+
+#: mon-data.h:2733
+msgctxt "%s hits a putrid demon"
+msgid "the giant cockroach"
+msgstr "гигантский таракан"
+
+#: mon-data.h:2733
+msgctxt "The giant cockroach hits %s"
+msgid "a giant cockroach"
+msgstr "гигантскому таракану"
+
+#: mon-data.h:2733
+msgid "a giant cockroach"
+msgstr "гигантский таракан"
 

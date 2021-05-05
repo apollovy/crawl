@@ -83,6 +83,7 @@
 #include "viewchar.h"
 #include "view.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 #define SAP_MAGIC_CHANCE() x_chance_in_y(7, 10)
 
@@ -3182,12 +3183,12 @@ bool bolt::misses_player()
 
     if (!_test_beam_hit(real_tohit, dodge, pierce, 0, r))
     {
-        mprf("The %s misses you.", name.c_str());
+        mprf(_("The %s misses you."), __("The %s misses you.", name.c_str()));
         count_action(CACT_DODGE, DODGE_EVASION);
     }
     else if (repel && !_test_beam_hit(real_tohit, dodge, pierce, repel, r))
     {
-        mprf("The %s is repelled.", name.c_str());
+        mprf(_("The %s is repelled."), __("The %s is repelled.", name.c_str()));
         count_action(CACT_DODGE, DODGE_REPEL);
     }
     else

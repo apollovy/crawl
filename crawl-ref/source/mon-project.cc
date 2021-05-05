@@ -458,8 +458,11 @@ move_again:
             && you.see_cell(pos)
             && you.see_cell(starting_pos))
         {
-            mprf("%s hits %s.", mon.name(DESC_THE, true).c_str(),
-                 feature_description_at(pos, false, DESC_A).c_str());
+            mprf(
+                    __("%(The giant cockroach)s hits %(a putrid demon)s.", "%s hits %s."),
+                    __("%s hits a putrid demon", mon.name(DESC_THE, true).c_str()),
+                    __("The giant cockroach hits %s", feature_description_at(pos, false, DESC_A).c_str())
+            );
         }
 
         monster* mons = (victim && victim->is_monster()) ?
