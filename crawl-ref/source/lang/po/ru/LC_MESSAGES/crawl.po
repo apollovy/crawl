@@ -3540,6 +3540,10 @@ msgstr "старый ятаган"
 msgid "scythe"
 msgstr "коса"
 
+#: item-prop.cc:632
+msgid "fustibalus"
+msgstr "фустибал"
+
 #: item-prop.cc:639
 msgid "arbalest"
 msgstr "арбалет"
@@ -3575,6 +3579,10 @@ msgstr "болт"
 #: item-prop.cc:674
 msgid "large rock"
 msgstr "большой камень"
+
+#: item-prop.cc:675
+msgid "sling bullet"
+msgstr "пуля для пращи"
 
 #: species-data.h:68 species-data.h:752 species-data.h:788
 msgid "Elf"

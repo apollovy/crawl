@@ -7,6 +7,6 @@
 
 #include "gettext.h"
 #define _(Msgid) gettext (Msgid)
-#define __(Msgctxt, Msgid) pgettext_expr (Msgctxt, Msgid)
+#define __(Msgctxt, Msgid) strlen(Msgctxt) ? pgettext_expr (Msgctxt, Msgid) : gettext(Msgid)
 
 #endif //SOURCE_CRAWL_LOCALE_H

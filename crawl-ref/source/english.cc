@@ -351,31 +351,32 @@ static string _number_to_string(unsigned number, bool in_words)
 }
 
 // Naively prefix A/an to a noun.
+// TODO: i18n: completely get rid of it, since it makes i18n harder.
 string article_a(const string &name, bool lowercase)
 {
     if (!name.length())
         return name;
 
-    const char *a  = lowercase? "a "  : "A ";
-    const char *an = lowercase? "an " : "An ";
+    string a  = make_stringf(lowercase? _("a %s")  : _("A %s"), name.c_str());
+    string an = make_stringf(lowercase? _("an %s") : _("An %s"), name.c_str());
     switch (name[0])
     {
         case 'a': case 'e': case 'i': case 'o': case 'u':
         case 'A': case 'E': case 'I': case 'O': case 'U':
             // XXX: Hack for hydras.
             if (starts_with(name, "one-"))
-                return a + name;
-            return an + name;
+                return a;
+            return an;
         case '1':
             // XXX: Hack^2 for hydras.
             if (starts_with(name, "11-") || starts_with(name, "18-"))
-                return an + name;
-            return a + name;
+                return an;
+            return a;
         case '8':
             // Eighty, eight hundred, eight thousand, ...
-            return an + name;
+            return an;
         default:
-            return a + name;
+            return a;
     }
 }
 
@@ -385,7 +386,7 @@ string apply_description(description_level_type desc, const string &name,
     switch (desc)
     {
     case DESC_THE:
-        return "the " + name;
+        return make_stringf(_("the %s"), name.c_str());
     case DESC_A:
         return quantity > 1 ? _number_to_string(quantity, in_words) + name
                             : article_a(name, true);
