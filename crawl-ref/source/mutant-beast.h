@@ -9,6 +9,7 @@
 
 #define MUTANT_BEAST_TIER "mutant_beast_tier"
 #define MUTANT_BEAST_FACETS "mutant_beast_facets"
+#define _(String) String
 
 /// types of mutant beast (MONS_MUTANT_BEAST)
 enum beast_facet
@@ -44,12 +45,12 @@ COMPILE_CHECK(ARRAYSZ(beast_tiers) == NUM_BEAST_TIERS);
 
 /// names of beast facets
 const string mutant_beast_facet_names[] = {
-    "buggy", "sting", "bat", "fire", "weird", "shock", "ox",
+    _("buggy"), _("sting"), _("bat"), _("fire"), _("weird"), _("shock"), _("ox"),
 };
 COMPILE_CHECK(ARRAYSZ(mutant_beast_facet_names) == NUM_BEAST_FACETS);
 
 /// names of beast tiers
 const char* const mutant_beast_tier_names[] = {
-    "buggy", "larval", "juvenile", "mature", "elder", "primal",
+    _("buggy"), _("larval"), _("juvenile"), _("mature"), _("elder"), _("primal"),
 };
 COMPILE_CHECK(ARRAYSZ(mutant_beast_tier_names) == NUM_BEAST_TIERS);

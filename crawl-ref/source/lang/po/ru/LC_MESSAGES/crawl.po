@@ -1090,7 +1090,7 @@ msgstr "рассеивание энергии"
 msgid "magic missile"
 msgstr "магический снаряд"
 
-#: item-name.cc:753 item-name.cc:1080 item-prop.cc:168
+#: mutant-beast.h:48 item-name.cc:753 item-name.cc:1080 item-prop.cc:168
 msgid "fire"
 msgstr "огонь"
 
@@ -1920,7 +1920,7 @@ msgstr "\n"
 "Карты по уровню:\n"
 ""
 
-#: mon-data.h:4832
+#: mon-info.cc:1058 mon-data.h:4832
 msgid "zombie"
 msgstr "зомби"
 
@@ -3114,7 +3114,7 @@ msgstr "кольцо"
 msgid "Orb of Zot"
 msgstr "Сфера Зота"
 
-#: item-name.cc:1838 mon-data.h:4845
+#: mon-info.cc:1066 item-name.cc:1838 mon-data.h:4845
 msgid "skeleton"
 msgstr "скелет"
 
@@ -3624,7 +3624,7 @@ msgstr "королева муравьёв"
 msgid "soldier ant"
 msgstr "муравей-солдат"
 
-#: mon-data.h:360
+#: mutant-beast.h:48 mon-data.h:360
 msgid "bat"
 msgstr "летучая мышь"
 
@@ -5779,4 +5779,160 @@ msgstr "Инвентарь"
 #: tilereg-spl.h:18
 msgid "Spells"
 msgstr "Заклинания"
+
+#: mon-info.cc:909
+msgid "Lernaean hydra"
+msgstr "Лернейская Гидра"
+
+#: mon-info.cc:911
+msgid "Royal Jelly"
+msgstr "Королевское Желе"
+
+#: mon-info.cc:913
+msgid "Serpent of Hell"
+msgstr "Змей Ада"
+
+#: mon-info.cc:918
+msgctxt "%(large )sjelly"
+msgid "large "
+msgstr "большое "
+
+#: mon-info.cc:918
+msgctxt "%(large )sjelly"
+msgid "very large "
+msgstr "очень большое "
+
+#: mon-info.cc:919
+msgctxt "%(large )sjelly"
+msgid "enormous "
+msgstr "громадное "
+
+#: mon-info.cc:919
+msgctxt "%(large )sjelly"
+msgid "titanic "
+msgstr "титаническое "
+
+#: mon-info.cc:923
+msgctxt "%(red)s %(draconian)s"
+msgid "%s %s"
+msgstr "%s %s"
+
+#: mon-info.cc:925
+msgctxt "%(putrid)s %(demonspawn)s"
+msgid "%s %s"
+msgstr "%s %s"
+
+#: mon-info.cc:931
+msgctxt "%(huge)s %(slime)s"
+msgid "%s %s"
+msgstr "%s %s"
+
+#: mon-info.cc:935
+msgctxt "%(green)s %(ugly thing)s"
+msgid "%s %s"
+msgstr "%s %s"
+
+#: english.cc:359
+msgid "a %s"
+msgstr "%s"
+
+#: english.cc:359
+msgid "A %s"
+msgstr "%s"
+
+#: english.cc:360
+msgid "an %s"
+msgstr "%s"
+
+#: english.cc:360
+msgid "An %s"
+msgstr "%s"
+
+#: english.cc:388
+msgid "the %s"
+msgstr "%s"
+
+#: mon-info.cc:1005
+msgid "helpless "
+msgstr "беспомощный "
+
+#: mon-info.cc:1008
+msgid "submerged "
+msgstr "погружённый "
+
+#: mon-info.cc:1011
+msgid "spectral "
+msgstr "спектральный "
+
+#: mon-info.cc:1014
+msgid "ghostly "
+msgstr "призрачный "
+
+#: mon-info.cc:1017
+msgid "sensed "
+msgstr "учуянный "
+
+#: mon-info.cc:1020
+msgid "active "
+msgstr "активный "
+
+#: mon-info.cc:1033
+msgid "-headed "
+msgstr "-головая "
+
+#: mon-info.cc:1043
+msgid " beast"
+msgstr " зверь"
+
+#: mon-info.cc:1078
+msgid "spectre"
+msgstr "дух"
+
+#: mon-info.cc:1081
+msgid "shaped pillar of salt"
+msgstr "формы столб соли"
+
+#: mon-info.cc:1084
+msgid "shaped block of ice"
+msgstr "формы блок льда"
+
+#: mon-info.cc:1095
+msgid " shaped shifter"
+msgstr " перевёртыш"
+
+#: mutant-beast.h:48
+msgid "sting"
+msgstr "жальный"
+
+#: mutant-beast.h:48
+msgid "weird"
+msgstr "странный"
+
+#: mutant-beast.h:48
+msgid "shock"
+msgstr "шокирующий"
+
+#: mutant-beast.h:48
+msgid "ox"
+msgstr "воловий"
+
+#: mutant-beast.h:54
+msgid "larval"
+msgstr "личиночный"
+
+#: mutant-beast.h:54
+msgid "juvenile"
+msgstr "юный"
+
+#: mutant-beast.h:54
+msgid "mature"
+msgstr "взрослый"
+
+#: mutant-beast.h:54
+msgid "elder"
+msgstr "старший"
+
+#: mutant-beast.h:54
+msgid "primal"
+msgstr "первобытный"
 

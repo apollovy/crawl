@@ -849,7 +849,7 @@ int monster_info::lighting_modifiers() const
 static string _mutant_beast_tier_name(short xl_tier)
 {
     if (xl_tier < 0 || xl_tier >= NUM_BEAST_TIERS)
-        return "buggy";
+        return _("buggy");
     return mutant_beast_tier_names[xl_tier];
 }
 
@@ -862,7 +862,7 @@ static string _mutant_beast_tier_name(short xl_tier)
 static string _mutant_beast_facet(int facet)
 {
     if (facet < 0 || facet >= NUM_BEAST_FACETS)
-        return "buggy";
+        return _("buggy");
     return mutant_beast_facet_names[facet];
 }
 
@@ -1002,22 +1002,22 @@ string monster_info::common_name(description_level_type desc) const
     ostringstream ss;
 
     if (props.exists("helpless"))
-        ss << "helpless ";
+        ss << _("helpless ");
 
     if (is(MB_SUBMERGED))
-        ss << "submerged ";
+        ss << _("submerged ");
 
     if (type == MONS_SPECTRAL_THING && !is(MB_NAME_ZOMBIE) && !nocore)
-        ss << "spectral ";
+        ss << _("spectral ");
 
     if (is(MB_SPECTRALISED))
-        ss << "ghostly ";
+        ss << _("ghostly ");
 
     if (type == MONS_SENSED && !mons_is_sensed(base_type))
-        ss << "sensed ";
+        ss << _("sensed ");
 
     if (type == MONS_BALLISTOMYCETE)
-        ss << (is_active ? "active " : "");
+        ss << (is_active ? _("active ") : "");
 
     if (_is_hydra(*this)
         && type != MONS_SENSED
@@ -1030,17 +1030,17 @@ string monster_info::common_name(description_level_type desc) const
         else
             ss << std::to_string(num_heads);
 
-        ss << "-headed ";
+        ss << _("-headed ");
     }
 
     if (type == MONS_MUTANT_BEAST && !is(MB_NAME_REPLACE))
     {
         const int xl = props[MUTANT_BEAST_TIER].get_short();
         const int tier = mutant_beast_tier(xl);
-        ss << _mutant_beast_tier_name(tier) << " ";
+        ss << _(_mutant_beast_tier_name(tier).c_str()) << " ";
         for (auto facet : props[MUTANT_BEAST_FACETS].get_vector())
-            ss << _mutant_beast_facet(facet.get_int()); // no space between
-        ss << " beast";
+            ss << _(_mutant_beast_facet(facet.get_int()).c_str()); // no space between
+        ss << _(" beast");
     }
 
     if (!nocore)
@@ -1055,7 +1055,7 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_ZOMBIE_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << "zombie";
+            ss << (nocore ? "" : " ") << _("zombie");
         break;
     case MONS_SKELETON:
 #if TAG_MAJOR_VERSION == 34
@@ -1063,7 +1063,7 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_SKELETON_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << "skeleton";
+            ss << (nocore ? "" : " ") << _("skeleton");
         break;
     case MONS_SIMULACRUM:
 #if TAG_MAJOR_VERSION == 34
@@ -1071,17 +1071,17 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_SIMULACRUM_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << "simulacrum";
+            ss << (nocore ? "" : " ") << _("simulacrum");
         break;
     case MONS_SPECTRAL_THING:
         if (nocore)
-            ss << "spectre";
+            ss << _("spectre");
         break;
     case MONS_PILLAR_OF_SALT:
-        ss << (nocore ? "" : " ") << "shaped pillar of salt";
+        ss << (nocore ? "" : " ") << _("shaped pillar of salt");
         break;
     case MONS_BLOCK_OF_ICE:
-        ss << (nocore ? "" : " ") << "shaped block of ice";
+        ss << (nocore ? "" : " ") << _("shaped block of ice");
         break;
     default:
         break;
@@ -1092,13 +1092,12 @@ string monster_info::common_name(description_level_type desc) const
         // If momentarily in original form, don't display "shaped
         // shifter".
         if (mons_genus(type) != MONS_SHAPESHIFTER)
-            ss << " shaped shifter";
+            ss << _(" shaped shifter");
     }
 
     string s;
     // only respect unqualified if nothing was added ("Sigmund" or "The spectral Sigmund")
     if (!is(MB_NAME_UNQUALIFIED) || has_proper_name() || ss.str() != core)
-        // i18n: FIXME: "a " jumps from here, address later
         s = _apply_adjusted_description(desc, ss.str());
     else
         s = ss.str();
