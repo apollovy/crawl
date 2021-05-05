@@ -42,7 +42,6 @@
 #include "tilepick.h"
 #endif
 #include "traps.h"
-#include "crawl_locale.h"
 
 #define SPELL_HD_KEY "spell_hd"
 #define NIGHTVISION_KEY "nightvision"
@@ -849,7 +848,7 @@ int monster_info::lighting_modifiers() const
 static string _mutant_beast_tier_name(short xl_tier)
 {
     if (xl_tier < 0 || xl_tier >= NUM_BEAST_TIERS)
-        return _("buggy");
+        return "buggy";
     return mutant_beast_tier_names[xl_tier];
 }
 
@@ -862,7 +861,7 @@ static string _mutant_beast_tier_name(short xl_tier)
 static string _mutant_beast_facet(int facet)
 {
     if (facet < 0 || facet >= NUM_BEAST_FACETS)
-        return _("buggy");
+        return "buggy";
     return mutant_beast_facet_names[facet];
 }
 
@@ -906,33 +905,33 @@ string monster_info::_core_name() const
     if (is(MB_NAME_REPLACE))
         s = mname;
     else if (nametype == MONS_LERNAEAN_HYDRA)
-        s = _("Lernaean hydra"); // TODO: put this into mon-data.h
+        s = "Lernaean hydra"; // TODO: put this into mon-data.h
     else if (nametype == MONS_ROYAL_JELLY)
-        s = _("Royal Jelly");
+        s = "Royal Jelly";
     else if (mons_species(nametype) == MONS_SERPENT_OF_HELL)
-        s = _("Serpent of Hell");
+        s = "Serpent of Hell";
     else if (invalid_monster_type(nametype) && nametype != MONS_PROGRAM_BUG)
         s = "INVALID MONSTER";
     else
     {
-        const char* slime_sizes[] = {"buggy ", "", __("%(large )sjelly", "large "), __("%(large )sjelly", "very large "),
-                                     __("%(large )sjelly", "enormous "), __("%(large )sjelly", "titanic ")};
-        s = _(get_monster_data(nametype)->name);
+        const char* slime_sizes[] = {"buggy ", "", "large ", "very large ",
+                                               "enormous ", "titanic "};
+        s = get_monster_data(nametype)->name;
 
         if (mons_is_draconian_job(type) && base_type != MONS_NO_MONSTER)
-            s = make_stringf(__("%(red)s %(draconian)s", "%s %s"), __("%(red)s draconian", draconian_colour_name(base_type).c_str()), s.c_str());
+            s = draconian_colour_name(base_type) + " " + s;
         else if (mons_is_demonspawn_job(type) && base_type != MONS_NO_MONSTER)
-            s = make_stringf(__("%(putrid)s %(demonspawn)s", "%s %s"), __("%(putrid)s demonspawn", demonspawn_base_name(base_type).c_str()), s.c_str());
+            s = demonspawn_base_name(base_type) + " " + s;
 
         switch (type)
         {
         case MONS_SLIME_CREATURE:
             ASSERT((size_t) slime_size <= ARRAYSZ(slime_sizes));
-            s = make_stringf(__("%(huge)s %(slime)s", "%s %s"), slime_sizes[slime_size], s.c_str());
+            s = slime_sizes[slime_size] + s;
             break;
         case MONS_UGLY_THING:
         case MONS_VERY_UGLY_THING:
-            s = make_stringf(__("%(green)s %(ugly thing)s", "%s %s"), __("%(green)s ugly thing", ugly_thing_colour_name(_colour).c_str()), s.c_str());
+            s = ugly_thing_colour_name(_colour) + " " + s;
             break;
 
         case MONS_DANCING_WEAPON:
@@ -1002,22 +1001,22 @@ string monster_info::common_name(description_level_type desc) const
     ostringstream ss;
 
     if (props.exists("helpless"))
-        ss << _("helpless ");
+        ss << "helpless ";
 
     if (is(MB_SUBMERGED))
-        ss << _("submerged ");
+        ss << "submerged ";
 
     if (type == MONS_SPECTRAL_THING && !is(MB_NAME_ZOMBIE) && !nocore)
-        ss << _("spectral ");
+        ss << "spectral ";
 
     if (is(MB_SPECTRALISED))
-        ss << _("ghostly ");
+        ss << "ghostly ";
 
     if (type == MONS_SENSED && !mons_is_sensed(base_type))
-        ss << _("sensed ");
+        ss << "sensed ";
 
     if (type == MONS_BALLISTOMYCETE)
-        ss << (is_active ? _("active ") : "");
+        ss << (is_active ? "active " : "");
 
     if (_is_hydra(*this)
         && type != MONS_SENSED
@@ -1030,17 +1029,17 @@ string monster_info::common_name(description_level_type desc) const
         else
             ss << std::to_string(num_heads);
 
-        ss << _("-headed ");
+        ss << "-headed ";
     }
 
     if (type == MONS_MUTANT_BEAST && !is(MB_NAME_REPLACE))
     {
         const int xl = props[MUTANT_BEAST_TIER].get_short();
         const int tier = mutant_beast_tier(xl);
-        ss << _(_mutant_beast_tier_name(tier).c_str()) << " ";
+        ss << _mutant_beast_tier_name(tier) << " ";
         for (auto facet : props[MUTANT_BEAST_FACETS].get_vector())
-            ss << _(_mutant_beast_facet(facet.get_int()).c_str()); // no space between
-        ss << _(" beast");
+            ss << _mutant_beast_facet(facet.get_int()); // no space between
+        ss << " beast";
     }
 
     if (!nocore)
@@ -1055,7 +1054,7 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_ZOMBIE_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << _("zombie");
+            ss << (nocore ? "" : " ") << "zombie";
         break;
     case MONS_SKELETON:
 #if TAG_MAJOR_VERSION == 34
@@ -1063,7 +1062,7 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_SKELETON_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << _("skeleton");
+            ss << (nocore ? "" : " ") << "skeleton";
         break;
     case MONS_SIMULACRUM:
 #if TAG_MAJOR_VERSION == 34
@@ -1071,17 +1070,17 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_SIMULACRUM_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << _("simulacrum");
+            ss << (nocore ? "" : " ") << "simulacrum";
         break;
     case MONS_SPECTRAL_THING:
         if (nocore)
-            ss << _("spectre");
+            ss << "spectre";
         break;
     case MONS_PILLAR_OF_SALT:
-        ss << (nocore ? "" : " ") << _("shaped pillar of salt");
+        ss << (nocore ? "" : " ") << "shaped pillar of salt";
         break;
     case MONS_BLOCK_OF_ICE:
-        ss << (nocore ? "" : " ") << _("shaped block of ice");
+        ss << (nocore ? "" : " ") << "shaped block of ice";
         break;
     default:
         break;
@@ -1092,7 +1091,7 @@ string monster_info::common_name(description_level_type desc) const
         // If momentarily in original form, don't display "shaped
         // shifter".
         if (mons_genus(type) != MONS_SHAPESHIFTER)
-            ss << _(" shaped shifter");
+            ss << " shaped shifter";
     }
 
     string s;
@@ -1134,7 +1133,7 @@ string monster_info::full_name(description_level_type desc) const
 
     if (has_proper_name())
     {
-        string s = make_stringf("%s the %s", mname.c_str(), common_name().c_str());
+        string s = mname + " the " + common_name();
         if (desc == DESC_ITS)
             s = apostrophise(s);
         return s;
