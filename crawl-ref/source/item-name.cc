@@ -82,12 +82,12 @@ string quant_name(const item_def &item, int quant,
 static const char* _interesting_origin(const item_def &item)
 {
     if (origin_as_god_gift(item) != GOD_NO_GOD)
-        return _("god gift");
+        return gettext_noop("god gift");
 
     if (item.orig_monnum == MONS_DONALD && get_equip_desc(item)
         && item.is_type(OBJ_ARMOUR, ARM_KITE_SHIELD))
     {
-        return _("Donald");
+        return gettext_noop("Donald");
     }
 
     return nullptr;
@@ -122,7 +122,7 @@ static string _item_inscription(const item_def &item)
     if (insparts.empty())
         return "";
 
-    return make_stringf(_(" {%s}"),
+    return make_stringf(gettext_noop(" {%s}"),
                         comma_separated_line(begin(insparts),
                                              end(insparts),
                                              ", ").c_str());
@@ -181,7 +181,7 @@ string item_def::name(description_level_type descrip, bool terse, bool ident,
                & MF_NAME_SPECIES)
               && !(corpse_flags & MF_NAME_DEFINITE))
          && !(corpse_flags & MF_NAME_SUFFIX)
-         && !starts_with(get_corpse_name(*this), _("shaped ")))
+         && !starts_with(get_corpse_name(*this), gettext_noop("shaped ")))
         || item_is_orb(*this) || item_is_horn_of_geryon(*this)
         || (ident || item_type_known(*this)) && is_artefact(*this)
             && special != UNRAND_OCTOPUS_KING_RING)
@@ -247,16 +247,16 @@ string item_def::name(description_level_type descrip, bool terse, bool ident,
         if (eq != EQ_NONE)
         {
             if (you.melded[eq])
-                buff << _(" (melded)");
+                buff << gettext_noop(" (melded)");
             else
             {
                 switch (eq)
                 {
                 case EQ_WEAPON:
                     if (is_weapon(*this))
-                        buff << _(" (weapon)");
+                        buff << gettext_noop(" (weapon)");
                     else if (you.has_mutation(MUT_NO_GRASPING))
-                        buff << _(" (in mouth)");
+                        buff << gettext_noop(" (in mouth)");
                     else
                         buff << " (in " << you.hand_name(false) << ")";
                     break;
@@ -266,7 +266,7 @@ string item_def::name(description_level_type descrip, bool terse, bool ident,
                 case EQ_BOOTS:
                 case EQ_SHIELD:
                 case EQ_BODY_ARMOUR:
-                    buff << _(" (worn)");
+                    buff << gettext_noop(" (worn)");
                     break;
                 case EQ_LEFT_RING:
                 case EQ_RIGHT_RING:
@@ -281,9 +281,9 @@ string item_def::name(description_level_type descrip, bool terse, bool ident,
                     break;
                 case EQ_AMULET:
                     if (you.species == SP_OCTOPODE && form_keeps_mutations())
-                        buff << _(" (around mantle)");
+                        buff << gettext_noop(" (around mantle)");
                     else
-                        buff << _(" (around neck)");
+                        buff << gettext_noop(" (around neck)");
                     break;
                 case EQ_RING_THREE:
                 case EQ_RING_FOUR:
@@ -291,10 +291,10 @@ string item_def::name(description_level_type descrip, bool terse, bool ident,
                 case EQ_RING_SIX:
                 case EQ_RING_SEVEN:
                 case EQ_RING_EIGHT:
-                    buff << _(" (on tentacle)");
+                    buff << gettext_noop(" (on tentacle)");
                     break;
                 case EQ_RING_AMULET:
-                    buff << _(" (on amulet)");
+                    buff << gettext_noop(" (on amulet)");
                     break;
                 default:
                     die("Item in an invalid slot");
@@ -302,9 +302,9 @@ string item_def::name(description_level_type descrip, bool terse, bool ident,
             }
         }
         else if (you.launcher_action.item_is_quivered(*this))
-            buff << _(" (quivered ammo)");
+            buff << gettext_noop(" (quivered ammo)");
         else if (you.quiver_action.item_is_quivered(*this))
-            buff << _(" (quivered)");
+            buff << gettext_noop(" (quivered)");
     }
 
     if (descrip != DESC_BASENAME && descrip != DESC_DBNAME && with_inscription)
@@ -316,7 +316,7 @@ string item_def::name(description_level_type descrip, bool terse, bool ident,
         && !qualname
         && is_artefact(*this) && cursed())
     {
-        buff << _(" (curse)");
+        buff << gettext_noop(" (curse)");
     }
 
     return buff.str();
@@ -354,50 +354,50 @@ const char* missile_brand_name(const item_def &item, mbn_type t)
     {
 #if TAG_MAJOR_VERSION == 34
     case SPMSL_FLAME:
-        return _("flame");
+        return gettext_noop("flame");
     case SPMSL_FROST:
-        return _("frost");
+        return gettext_noop("frost");
 #endif
     case SPMSL_POISONED:
-        return t == MBN_NAME ? _("poisoned") : _("poison");
+        return t == MBN_NAME ? gettext_noop("poisoned") : gettext_noop("poison");
     case SPMSL_CURARE:
-        return t == MBN_NAME ? _("curare-tipped") : _("curare");
+        return t == MBN_NAME ? gettext_noop("curare-tipped") : gettext_noop("curare");
 #if TAG_MAJOR_VERSION == 34
     case SPMSL_EXPLODING:
-        return t == MBN_TERSE ? _("explode") : _("exploding");
+        return t == MBN_TERSE ? gettext_noop("explode") : gettext_noop("exploding");
     case SPMSL_STEEL:
-        return _("steel");
+        return gettext_noop("steel");
     case SPMSL_RETURNING:
-        return t == MBN_TERSE ? _("return") : _("returning");
+        return t == MBN_TERSE ? gettext_noop("return") : gettext_noop("returning");
     case SPMSL_PENETRATION:
-        return t == MBN_TERSE ? _("penet") : _("penetration");
+        return t == MBN_TERSE ? gettext_noop("penet") : gettext_noop("penetration");
 #endif
     case SPMSL_SILVER:
-        return _("silver");
+        return gettext_noop("silver");
 #if TAG_MAJOR_VERSION == 34
     case SPMSL_PARALYSIS:
-        return _("paralysis");
+        return gettext_noop("paralysis");
     case SPMSL_SLOW:
-        return t == MBN_TERSE ? _("slow") : _("slowing");
+        return t == MBN_TERSE ? gettext_noop("slow") : gettext_noop("slowing");
     case SPMSL_SLEEP:
-        return t == MBN_TERSE ? _("sleep") : _("sleeping");
+        return t == MBN_TERSE ? gettext_noop("sleep") : gettext_noop("sleeping");
     case SPMSL_CONFUSION:
-        return t == MBN_TERSE ? _("conf") : _("confusion");
+        return t == MBN_TERSE ? gettext_noop("conf") : gettext_noop("confusion");
     case SPMSL_SICKNESS:
-        return t == MBN_TERSE ? _("sick") : _("sickness");
+        return t == MBN_TERSE ? gettext_noop("sick") : gettext_noop("sickness");
 #endif
     case SPMSL_FRENZY:
-        return t == MBN_NAME ? _("datura-tipped") : _("datura");
+        return t == MBN_NAME ? gettext_noop("datura-tipped") : gettext_noop("datura");
     case SPMSL_CHAOS:
-        return _("chaos");
+        return gettext_noop("chaos");
     case SPMSL_DISPERSAL:
-        return t == MBN_TERSE ? _("disperse") : _("dispersal");
+        return t == MBN_TERSE ? gettext_noop("disperse") : gettext_noop("dispersal");
     case SPMSL_BLINDING:
-        return t == MBN_NAME ? _("atropa-tipped") : _("atropa");
+        return t == MBN_NAME ? gettext_noop("atropa-tipped") : gettext_noop("atropa");
     case SPMSL_NORMAL:
         return "";
     default:
-        return t == MBN_TERSE ? _("buggy") : _("bugginess");
+        return t == MBN_TERSE ? gettext_noop("buggy") : gettext_noop("bugginess");
     }
 }
 
@@ -492,7 +492,7 @@ const char* brand_type_name(brand_type brand, bool terse)
     COMPILE_CHECK(ARRAYSZ(weapon_brands_verbose) == NUM_SPECIAL_WEAPONS);
 
     if (brand < 0 || brand >= NUM_SPECIAL_WEAPONS)
-        return terse ? _("buggy") : _("bugginess");
+        return terse ? gettext_noop("buggy") : gettext_noop("bugginess");
 
     return (terse ? weapon_brands_terse : weapon_brands_verbose)[brand];
 }
@@ -503,7 +503,7 @@ const char* brand_type_adj(brand_type brand)
     COMPILE_CHECK(ARRAYSZ(weapon_brands_verbose) == NUM_SPECIAL_WEAPONS);
 
     if (brand < 0 || brand >= NUM_SPECIAL_WEAPONS)
-        return _("buggy");
+        return gettext_noop("buggy");
 
     return weapon_brands_adj[brand];
 }
@@ -531,40 +531,40 @@ const char* armour_ego_name(const item_def& item, bool terse)
         {
         case SPARM_NORMAL:            return "";
 #if TAG_MAJOR_VERSION == 34
-        case SPARM_RUNNING:           return _("running");
+        case SPARM_RUNNING:           return gettext_noop("running");
 #endif
-        case SPARM_FIRE_RESISTANCE:   return _("fire resistance");
-        case SPARM_COLD_RESISTANCE:   return _("cold resistance");
-        case SPARM_POISON_RESISTANCE: return _("poison resistance");
-        case SPARM_SEE_INVISIBLE:     return _("see invisible");
-        case SPARM_INVISIBILITY:      return _("invisibility");
-        case SPARM_STRENGTH:          return _("strength");
-        case SPARM_DEXTERITY:         return _("dexterity");
-        case SPARM_INTELLIGENCE:      return _("intelligence");
-        case SPARM_PONDEROUSNESS:     return _("ponderousness");
-        case SPARM_FLYING:            return _("flying");
+        case SPARM_FIRE_RESISTANCE:   return gettext_noop("fire resistance");
+        case SPARM_COLD_RESISTANCE:   return gettext_noop("cold resistance");
+        case SPARM_POISON_RESISTANCE: return gettext_noop("poison resistance");
+        case SPARM_SEE_INVISIBLE:     return gettext_noop("see invisible");
+        case SPARM_INVISIBILITY:      return gettext_noop("invisibility");
+        case SPARM_STRENGTH:          return gettext_noop("strength");
+        case SPARM_DEXTERITY:         return gettext_noop("dexterity");
+        case SPARM_INTELLIGENCE:      return gettext_noop("intelligence");
+        case SPARM_PONDEROUSNESS:     return gettext_noop("ponderousness");
+        case SPARM_FLYING:            return gettext_noop("flying");
 
-        case SPARM_WILLPOWER:         return _("willpower");
-        case SPARM_PROTECTION:        return _("protection");
-        case SPARM_STEALTH:           return _("stealth");
-        case SPARM_RESISTANCE:        return _("resistance");
-        case SPARM_POSITIVE_ENERGY:   return _("positive energy");
-        case SPARM_ARCHMAGI:          return _("the Archmagi");
+        case SPARM_WILLPOWER:         return gettext_noop("willpower");
+        case SPARM_PROTECTION:        return gettext_noop("protection");
+        case SPARM_STEALTH:           return gettext_noop("stealth");
+        case SPARM_RESISTANCE:        return gettext_noop("resistance");
+        case SPARM_POSITIVE_ENERGY:   return gettext_noop("positive energy");
+        case SPARM_ARCHMAGI:          return gettext_noop("the Archmagi");
 #if TAG_MAJOR_VERSION == 34
-        case SPARM_JUMPING:           return _("jumping");
+        case SPARM_JUMPING:           return gettext_noop("jumping");
 #endif
-        case SPARM_PRESERVATION:      return _("preservation");
-        case SPARM_REFLECTION:        return _("reflection");
-        case SPARM_SPIRIT_SHIELD:     return _("spirit shield");
-        case SPARM_ARCHERY:           return _("archery");
-        case SPARM_REPULSION:         return _("repulsion");
+        case SPARM_PRESERVATION:      return gettext_noop("preservation");
+        case SPARM_REFLECTION:        return gettext_noop("reflection");
+        case SPARM_SPIRIT_SHIELD:     return gettext_noop("spirit shield");
+        case SPARM_ARCHERY:           return gettext_noop("archery");
+        case SPARM_REPULSION:         return gettext_noop("repulsion");
 #if TAG_MAJOR_VERSION == 34
-        case SPARM_CLOUD_IMMUNE:      return _("cloud immunity");
+        case SPARM_CLOUD_IMMUNE:      return gettext_noop("cloud immunity");
 #endif
-        case SPARM_HARM:              return _("harm");
-        case SPARM_SHADOWS:           return _("shadows");
-        case SPARM_RAMPAGING:         return _("rampaging");
-        default:                      return _("bugginess");
+        case SPARM_HARM:              return gettext_noop("harm");
+        case SPARM_SHADOWS:           return gettext_noop("shadows");
+        case SPARM_RAMPAGING:         return gettext_noop("rampaging");
+        default:                      return gettext_noop("bugginess");
         }
     }
     else
@@ -573,39 +573,39 @@ const char* armour_ego_name(const item_def& item, bool terse)
         {
         case SPARM_NORMAL:            return "";
 #if TAG_MAJOR_VERSION == 34
-        case SPARM_RUNNING:           return _("obsolete");
+        case SPARM_RUNNING:           return gettext_noop("obsolete");
 #endif
-        case SPARM_FIRE_RESISTANCE:   return _("rF+");
-        case SPARM_COLD_RESISTANCE:   return _("rC+");
-        case SPARM_POISON_RESISTANCE: return _("rPois");
-        case SPARM_SEE_INVISIBLE:     return _("SInv");
-        case SPARM_INVISIBILITY:      return _("+Inv");
-        case SPARM_STRENGTH:          return _("Str+3");
-        case SPARM_DEXTERITY:         return _("Dex+3");
-        case SPARM_INTELLIGENCE:      return _("Int+3");
-        case SPARM_PONDEROUSNESS:     return _("ponderous");
-        case SPARM_FLYING:            return _("Fly");
-        case SPARM_WILLPOWER:         return _("Will+");
-        case SPARM_PROTECTION:        return _("AC+3");
-        case SPARM_STEALTH:           return _("Stlth+");
-        case SPARM_RESISTANCE:        return _("rC+ rF+");
-        case SPARM_POSITIVE_ENERGY:   return _("rN+");
-        case SPARM_ARCHMAGI:          return _("Archmagi");
+        case SPARM_FIRE_RESISTANCE:   return gettext_noop("rF+");
+        case SPARM_COLD_RESISTANCE:   return gettext_noop("rC+");
+        case SPARM_POISON_RESISTANCE: return gettext_noop("rPois");
+        case SPARM_SEE_INVISIBLE:     return gettext_noop("SInv");
+        case SPARM_INVISIBILITY:      return gettext_noop("+Inv");
+        case SPARM_STRENGTH:          return gettext_noop("Str+3");
+        case SPARM_DEXTERITY:         return gettext_noop("Dex+3");
+        case SPARM_INTELLIGENCE:      return gettext_noop("Int+3");
+        case SPARM_PONDEROUSNESS:     return gettext_noop("ponderous");
+        case SPARM_FLYING:            return gettext_noop("Fly");
+        case SPARM_WILLPOWER:         return gettext_noop("Will+");
+        case SPARM_PROTECTION:        return gettext_noop("AC+3");
+        case SPARM_STEALTH:           return gettext_noop("Stlth+");
+        case SPARM_RESISTANCE:        return gettext_noop("rC+ rF+");
+        case SPARM_POSITIVE_ENERGY:   return gettext_noop("rN+");
+        case SPARM_ARCHMAGI:          return gettext_noop("Archmagi");
 #if TAG_MAJOR_VERSION == 34
-        case SPARM_JUMPING:           return _("obsolete");
+        case SPARM_JUMPING:           return gettext_noop("obsolete");
 #endif
-        case SPARM_PRESERVATION:      return _("rCorr");
-        case SPARM_REFLECTION:        return _("reflect");
-        case SPARM_SPIRIT_SHIELD:     return _("Spirit");
-        case SPARM_ARCHERY:           return _("archery");
-        case SPARM_REPULSION:         return _("repulsion");
+        case SPARM_PRESERVATION:      return gettext_noop("rCorr");
+        case SPARM_REFLECTION:        return gettext_noop("reflect");
+        case SPARM_SPIRIT_SHIELD:     return gettext_noop("Spirit");
+        case SPARM_ARCHERY:           return gettext_noop("archery");
+        case SPARM_REPULSION:         return gettext_noop("repulsion");
 #if TAG_MAJOR_VERSION == 34
-        case SPARM_CLOUD_IMMUNE:      return _("obsolete");
+        case SPARM_CLOUD_IMMUNE:      return gettext_noop("obsolete");
 #endif
-        case SPARM_HARM:              return _("harm");
-        case SPARM_SHADOWS:           return _("shadows");
-        case SPARM_RAMPAGING:         return _("rampage");
-        default:                      return _("buggy");
+        case SPARM_HARM:              return gettext_noop("harm");
+        case SPARM_SHADOWS:           return gettext_noop("shadows");
+        case SPARM_RAMPAGING:         return gettext_noop("rampage");
+        default:                      return gettext_noop("buggy");
         }
     }
 }
@@ -614,26 +614,26 @@ static const char* _wand_type_name(int wandtype)
 {
     switch (wandtype)
     {
-    case WAND_FLAME:           return _("flame");
-    case WAND_PARALYSIS:       return _("paralysis");
-    case WAND_DIGGING:         return _("digging");
-    case WAND_ICEBLAST:        return _("iceblast");
-    case WAND_POLYMORPH:       return _("polymorph");
-    case WAND_CHARMING:     return _("charming");
-    case WAND_ACID:            return _("acid");
-    case WAND_MINDBURST:       return _("mindburst");
+    case WAND_FLAME:           return gettext_noop("flame");
+    case WAND_PARALYSIS:       return gettext_noop("paralysis");
+    case WAND_DIGGING:         return gettext_noop("digging");
+    case WAND_ICEBLAST:        return gettext_noop("iceblast");
+    case WAND_POLYMORPH:       return gettext_noop("polymorph");
+    case WAND_CHARMING:     return gettext_noop("charming");
+    case WAND_ACID:            return gettext_noop("acid");
+    case WAND_MINDBURST:       return gettext_noop("mindburst");
     default:                   return item_type_removed(OBJ_WANDS, wandtype)
-                                    ? _("removedness")
-                                    : _("bugginess");
+                                    ? gettext_noop("removedness")
+                                    : gettext_noop("bugginess");
     }
 }
 
 static const char* wand_secondary_string(uint32_t s)
 {
     static const char* const secondary_strings[] = {
-        "", _("jewelled "), _("curved "), _("long "), _("short "), _("twisted "), _("crooked "),
-        _("forked "), _("shiny "), _("blackened "), _("tapered "), _("glowing "), _("worn "),
-        _("encrusted "), _("runed "), _("sharpened ")
+        "", gettext_noop("jewelled "), gettext_noop("curved "), gettext_noop("long "), gettext_noop("short "), gettext_noop("twisted "), gettext_noop("crooked "),
+        gettext_noop("forked "), gettext_noop("shiny "), gettext_noop("blackened "), gettext_noop("tapered "), gettext_noop("glowing "), gettext_noop("worn "),
+        gettext_noop("encrusted "), gettext_noop("runed "), gettext_noop("sharpened ")
     };
     COMPILE_CHECK(ARRAYSZ(secondary_strings) == NDSC_WAND_SEC);
     return secondary_strings[s % NDSC_WAND_SEC];
@@ -642,8 +642,8 @@ static const char* wand_secondary_string(uint32_t s)
 static const char* wand_primary_string(uint32_t p)
 {
     static const char* const primary_strings[] = {
-        _("iron"), _("brass"), _("bone"), _("wooden"), _("copper"), _("gold"), _("silver"),
-        _("bronze"), _("ivory"), _("glass"), _("lead"), _("fluorescent")
+        gettext_noop("iron"), gettext_noop("brass"), gettext_noop("bone"), gettext_noop("wooden"), gettext_noop("copper"), gettext_noop("gold"), gettext_noop("silver"),
+        gettext_noop("bronze"), gettext_noop("ivory"), gettext_noop("glass"), gettext_noop("lead"), gettext_noop("fluorescent")
     };
     COMPILE_CHECK(ARRAYSZ(primary_strings) == NDSC_WAND_PRI);
     return primary_strings[p % NDSC_WAND_PRI];
@@ -653,27 +653,27 @@ const char* potion_type_name(int potiontype)
 {
     switch (static_cast<potion_type>(potiontype))
     {
-    case POT_CURING:            return _("curing");
-    case POT_HEAL_WOUNDS:       return _("heal wounds");
-    case POT_HASTE:             return _("haste");
-    case POT_MIGHT:             return _("might");
-    case POT_ATTRACTION:        return _("attraction");
-    case POT_BRILLIANCE:        return _("brilliance");
-    case POT_FLIGHT:            return _("flight");
-    case POT_CANCELLATION:      return _("cancellation");
-    case POT_AMBROSIA:          return _("ambrosia");
-    case POT_INVISIBILITY:      return _("invisibility");
-    case POT_DEGENERATION:      return _("degeneration");
-    case POT_EXPERIENCE:        return _("experience");
-    case POT_MAGIC:             return _("magic");
-    case POT_BERSERK_RAGE:      return _("berserk rage");
-    case POT_MUTATION:          return _("mutation");
-    case POT_RESISTANCE:        return _("resistance");
-    case POT_LIGNIFY:           return _("lignification");
+    case POT_CURING:            return gettext_noop("curing");
+    case POT_HEAL_WOUNDS:       return gettext_noop("heal wounds");
+    case POT_HASTE:             return gettext_noop("haste");
+    case POT_MIGHT:             return gettext_noop("might");
+    case POT_ATTRACTION:        return gettext_noop("attraction");
+    case POT_BRILLIANCE:        return gettext_noop("brilliance");
+    case POT_FLIGHT:            return gettext_noop("flight");
+    case POT_CANCELLATION:      return gettext_noop("cancellation");
+    case POT_AMBROSIA:          return gettext_noop("ambrosia");
+    case POT_INVISIBILITY:      return gettext_noop("invisibility");
+    case POT_DEGENERATION:      return gettext_noop("degeneration");
+    case POT_EXPERIENCE:        return gettext_noop("experience");
+    case POT_MAGIC:             return gettext_noop("magic");
+    case POT_BERSERK_RAGE:      return gettext_noop("berserk rage");
+    case POT_MUTATION:          return gettext_noop("mutation");
+    case POT_RESISTANCE:        return gettext_noop("resistance");
+    case POT_LIGNIFY:           return gettext_noop("lignification");
 
     // FIXME: Remove this once known-items no longer uses this as a sentinel.
     default:
-                                return _("bugginess");
+                                return gettext_noop("bugginess");
     CASE_REMOVED_POTIONS(potiontype); // TODO: this will crash, is that correct??
     }
 }
@@ -682,33 +682,33 @@ static const char* scroll_type_name(int scrolltype)
 {
     switch (static_cast<scroll_type>(scrolltype))
     {
-    case SCR_IDENTIFY:           return _("identify");
-    case SCR_TELEPORTATION:      return _("teleportation");
-    case SCR_FEAR:               return _("fear");
-    case SCR_NOISE:              return _("noise");
-    case SCR_SUMMONING:          return _("summoning");
-    case SCR_ENCHANT_WEAPON:     return _("enchant weapon");
-    case SCR_ENCHANT_ARMOUR:     return _("enchant armour");
-    case SCR_TORMENT:            return _("torment");
-    case SCR_IMMOLATION:         return _("immolation");
-    case SCR_BLINKING:           return _("blinking");
-    case SCR_MAGIC_MAPPING:      return _("magic mapping");
-    case SCR_FOG:                return _("fog");
-    case SCR_ACQUIREMENT:        return _("acquirement");
-    case SCR_BRAND_WEAPON:       return _("brand weapon");
-    case SCR_HOLY_WORD:          return _("holy word");
-    case SCR_VULNERABILITY:      return _("vulnerability");
-    case SCR_SILENCE:            return _("silence");
-    case SCR_AMNESIA:            return _("amnesia");
+    case SCR_IDENTIFY:           return gettext_noop("identify");
+    case SCR_TELEPORTATION:      return gettext_noop("teleportation");
+    case SCR_FEAR:               return gettext_noop("fear");
+    case SCR_NOISE:              return gettext_noop("noise");
+    case SCR_SUMMONING:          return gettext_noop("summoning");
+    case SCR_ENCHANT_WEAPON:     return gettext_noop("enchant weapon");
+    case SCR_ENCHANT_ARMOUR:     return gettext_noop("enchant armour");
+    case SCR_TORMENT:            return gettext_noop("torment");
+    case SCR_IMMOLATION:         return gettext_noop("immolation");
+    case SCR_BLINKING:           return gettext_noop("blinking");
+    case SCR_MAGIC_MAPPING:      return gettext_noop("magic mapping");
+    case SCR_FOG:                return gettext_noop("fog");
+    case SCR_ACQUIREMENT:        return gettext_noop("acquirement");
+    case SCR_BRAND_WEAPON:       return gettext_noop("brand weapon");
+    case SCR_HOLY_WORD:          return gettext_noop("holy word");
+    case SCR_VULNERABILITY:      return gettext_noop("vulnerability");
+    case SCR_SILENCE:            return gettext_noop("silence");
+    case SCR_AMNESIA:            return gettext_noop("amnesia");
 #if TAG_MAJOR_VERSION == 34
-    case SCR_CURSE_WEAPON:       return _("curse weapon");
-    case SCR_CURSE_ARMOUR:       return _("curse armour");
-    case SCR_CURSE_JEWELLERY:    return _("curse jewellery");
+    case SCR_CURSE_WEAPON:       return gettext_noop("curse weapon");
+    case SCR_CURSE_ARMOUR:       return gettext_noop("curse armour");
+    case SCR_CURSE_JEWELLERY:    return gettext_noop("curse jewellery");
 #endif
     default:                     return item_type_removed(OBJ_SCROLLS,
                                                           scrolltype)
-                                     ? _("removedness")
-                                     : _("bugginess");
+                                     ? gettext_noop("removedness")
+                                     : gettext_noop("bugginess");
     }
 }
 
@@ -726,51 +726,51 @@ const char* jewellery_effect_name(int jeweltype, bool terse)
         switch (static_cast<jewellery_type>(jeweltype))
         {
 #if TAG_MAJOR_VERSION == 34
-        case RING_REGENERATION:          return _("obsoleteness");
-        case RING_ATTENTION:             return _("obsoleteness");
+        case RING_REGENERATION:          return gettext_noop("obsoleteness");
+        case RING_ATTENTION:             return gettext_noop("obsoleteness");
 #endif
-        case RING_PROTECTION:            return _("protection");
-        case RING_PROTECTION_FROM_FIRE:  return _("protection from fire");
-        case RING_POISON_RESISTANCE:     return _("poison resistance");
-        case RING_PROTECTION_FROM_COLD:  return _("protection from cold");
-        case RING_STRENGTH:              return _("strength");
-        case RING_SLAYING:               return _("slaying");
-        case RING_SEE_INVISIBLE:         return _("see invisible");
-        case RING_RESIST_CORROSION:      return _("resist corrosion");
-        case RING_EVASION:               return _("evasion");
+        case RING_PROTECTION:            return gettext_noop("protection");
+        case RING_PROTECTION_FROM_FIRE:  return gettext_noop("protection from fire");
+        case RING_POISON_RESISTANCE:     return gettext_noop("poison resistance");
+        case RING_PROTECTION_FROM_COLD:  return gettext_noop("protection from cold");
+        case RING_STRENGTH:              return gettext_noop("strength");
+        case RING_SLAYING:               return gettext_noop("slaying");
+        case RING_SEE_INVISIBLE:         return gettext_noop("see invisible");
+        case RING_RESIST_CORROSION:      return gettext_noop("resist corrosion");
+        case RING_EVASION:               return gettext_noop("evasion");
 #if TAG_MAJOR_VERSION == 34
-        case RING_SUSTAIN_ATTRIBUTES:    return _("sustain attributes");
+        case RING_SUSTAIN_ATTRIBUTES:    return gettext_noop("sustain attributes");
 #endif
-        case RING_STEALTH:               return _("stealth");
-        case RING_DEXTERITY:             return _("dexterity");
-        case RING_INTELLIGENCE:          return _("intelligence");
-        case RING_WIZARDRY:              return _("wizardry");
-        case RING_MAGICAL_POWER:         return _("magical power");
-        case RING_FLIGHT:                return _("flight");
-        case RING_LIFE_PROTECTION:       return _("positive energy");
-        case RING_WILLPOWER: return _("willpower");
-        case RING_FIRE:                  return _("fire");
-        case RING_ICE:                   return _("ice");
+        case RING_STEALTH:               return gettext_noop("stealth");
+        case RING_DEXTERITY:             return gettext_noop("dexterity");
+        case RING_INTELLIGENCE:          return gettext_noop("intelligence");
+        case RING_WIZARDRY:              return gettext_noop("wizardry");
+        case RING_MAGICAL_POWER:         return gettext_noop("magical power");
+        case RING_FLIGHT:                return gettext_noop("flight");
+        case RING_LIFE_PROTECTION:       return gettext_noop("positive energy");
+        case RING_WILLPOWER: return gettext_noop("willpower");
+        case RING_FIRE:                  return gettext_noop("fire");
+        case RING_ICE:                   return gettext_noop("ice");
 #if TAG_MAJOR_VERSION == 34
-        case RING_TELEPORTATION:         return _("teleportation");
-        case RING_TELEPORT_CONTROL:      return _("teleport control");
+        case RING_TELEPORTATION:         return gettext_noop("teleportation");
+        case RING_TELEPORT_CONTROL:      return gettext_noop("teleport control");
 #endif
-        case AMU_MANA_REGENERATION: return _("magic regeneration");
-        case AMU_ACROBAT:           return _("the acrobat");
+        case AMU_MANA_REGENERATION: return gettext_noop("magic regeneration");
+        case AMU_ACROBAT:           return gettext_noop("the acrobat");
 #if TAG_MAJOR_VERSION == 34
-        case AMU_RAGE:              return _("rage");
-        case AMU_THE_GOURMAND:      return _("gourmand");
-        case AMU_HARM:              return _("harm");
-        case AMU_CONSERVATION:      return _("conservation");
-        case AMU_CONTROLLED_FLIGHT: return _("controlled flight");
-        case AMU_INACCURACY:        return _("inaccuracy");
+        case AMU_RAGE:              return gettext_noop("rage");
+        case AMU_THE_GOURMAND:      return gettext_noop("gourmand");
+        case AMU_HARM:              return gettext_noop("harm");
+        case AMU_CONSERVATION:      return gettext_noop("conservation");
+        case AMU_CONTROLLED_FLIGHT: return gettext_noop("controlled flight");
+        case AMU_INACCURACY:        return gettext_noop("inaccuracy");
 #endif
-        case AMU_NOTHING:           return _("nothing");
-        case AMU_GUARDIAN_SPIRIT:   return _("guardian spirit");
-        case AMU_FAITH:             return _("faith");
-        case AMU_REFLECTION:        return _("reflection");
-        case AMU_REGENERATION:      return _("regeneration");
-        default: return _("buggy jewellery");
+        case AMU_NOTHING:           return gettext_noop("nothing");
+        case AMU_GUARDIAN_SPIRIT:   return gettext_noop("guardian spirit");
+        case AMU_FAITH:             return gettext_noop("faith");
+        case AMU_REFLECTION:        return gettext_noop("reflection");
+        case AMU_REGENERATION:      return gettext_noop("regeneration");
+        default: return gettext_noop("buggy jewellery");
         }
     }
     else
@@ -780,32 +780,32 @@ const char* jewellery_effect_name(int jeweltype, bool terse)
         switch (static_cast<jewellery_type>(jeweltype))
         {
 #if TAG_MAJOR_VERSION == 34
-        case RING_REGENERATION:          return _("obsoleteness");
-        case RING_ATTENTION:             return _("obsoleteness");
+        case RING_REGENERATION:          return gettext_noop("obsoleteness");
+        case RING_ATTENTION:             return gettext_noop("obsoleteness");
 #endif
-        case RING_PROTECTION:            return _("AC");
-        case RING_PROTECTION_FROM_FIRE:  return _("rF+");
-        case RING_POISON_RESISTANCE:     return _("rPois");
-        case RING_PROTECTION_FROM_COLD:  return _("rC+");
-        case RING_STRENGTH:              return _("Str");
-        case RING_SLAYING:               return _("Slay");
-        case RING_SEE_INVISIBLE:         return _("sInv");
-        case RING_RESIST_CORROSION:      return _("rCorr");
-        case RING_EVASION:               return _("EV");
-        case RING_STEALTH:               return _("Stlth+");
-        case RING_DEXTERITY:             return _("Dex");
-        case RING_INTELLIGENCE:          return _("Int");
-        case RING_MAGICAL_POWER:         return _("MP+9");
-        case RING_FLIGHT:                return _("Fly");
-        case RING_LIFE_PROTECTION:       return _("rN+");
-        case RING_WILLPOWER:             return _("Will+");
-        case AMU_REGENERATION:           return _("Regen");
+        case RING_PROTECTION:            return gettext_noop("AC");
+        case RING_PROTECTION_FROM_FIRE:  return gettext_noop("rF+");
+        case RING_POISON_RESISTANCE:     return gettext_noop("rPois");
+        case RING_PROTECTION_FROM_COLD:  return gettext_noop("rC+");
+        case RING_STRENGTH:              return gettext_noop("Str");
+        case RING_SLAYING:               return gettext_noop("Slay");
+        case RING_SEE_INVISIBLE:         return gettext_noop("sInv");
+        case RING_RESIST_CORROSION:      return gettext_noop("rCorr");
+        case RING_EVASION:               return gettext_noop("EV");
+        case RING_STEALTH:               return gettext_noop("Stlth+");
+        case RING_DEXTERITY:             return gettext_noop("Dex");
+        case RING_INTELLIGENCE:          return gettext_noop("Int");
+        case RING_MAGICAL_POWER:         return gettext_noop("MP+9");
+        case RING_FLIGHT:                return gettext_noop("Fly");
+        case RING_LIFE_PROTECTION:       return gettext_noop("rN+");
+        case RING_WILLPOWER:             return gettext_noop("Will+");
+        case AMU_REGENERATION:           return gettext_noop("Regen");
 #if TAG_MAJOR_VERSION == 34
-        case AMU_RAGE:                   return _("+Rage");
+        case AMU_RAGE:                   return gettext_noop("+Rage");
 #endif
-        case AMU_ACROBAT:                return _("Acrobat");
+        case AMU_ACROBAT:                return gettext_noop("Acrobat");
         case AMU_NOTHING:                return "";
-        default: return _("buggy");
+        default: return gettext_noop("buggy");
         }
     }
 }
@@ -820,18 +820,18 @@ static const char* _jewellery_class_name(int jeweltype)
 {
 #if TAG_MAJOR_VERSION == 34
     if (jeweltype == RING_REGENERATION)
-        return _("ring of");
+        return gettext_noop("ring of");
 #endif
 
     if (jeweltype < RING_FIRST_RING || jeweltype >= NUM_JEWELLERY
         || jeweltype >= NUM_RINGS && jeweltype < AMU_FIRST_AMULET)
     {
-        return _("buggy"); // "buggy buggy jewellery"
+        return gettext_noop("buggy"); // "buggy buggy jewellery"
     }
 
     if (jeweltype < NUM_RINGS)
-        return _("ring of");
-    return _("amulet of");
+        return gettext_noop("ring of");
+    return gettext_noop("amulet of");
 }
 
 /**
@@ -842,7 +842,7 @@ static const char* _jewellery_class_name(int jeweltype)
  */
 static string jewellery_type_name(int jeweltype)
 {
-    return make_stringf(_("%s %s"), _jewellery_class_name(jeweltype),
+    return make_stringf(gettext_noop("%s %s"), _jewellery_class_name(jeweltype),
                                  jewellery_effect_name(jeweltype));
 }
 
@@ -850,9 +850,9 @@ static string jewellery_type_name(int jeweltype)
 static const char* ring_secondary_string(uint32_t s)
 {
     static const char* const secondary_strings[] = {
-        "", _("encrusted "), _("glowing "), _("tubular "), _("runed "), _("blackened "),
-        _("scratched "), _("small "), _("large "), _("twisted "), _("shiny "), _("notched "),
-        _("knobbly ")
+        "", gettext_noop("encrusted "), gettext_noop("glowing "), gettext_noop("tubular "), gettext_noop("runed "), gettext_noop("blackened "),
+        gettext_noop("scratched "), gettext_noop("small "), gettext_noop("large "), gettext_noop("twisted "), gettext_noop("shiny "), gettext_noop("notched "),
+        gettext_noop("knobbly ")
     };
     COMPILE_CHECK(ARRAYSZ(secondary_strings) == NDSC_JEWEL_SEC);
     return secondary_strings[s % NDSC_JEWEL_SEC];
@@ -861,11 +861,11 @@ static const char* ring_secondary_string(uint32_t s)
 static const char* ring_primary_string(uint32_t p)
 {
     static const char* const primary_strings[] = {
-        _("wooden"), _("silver"), _("golden"), _("iron"), _("steel"), _("tourmaline"), _("brass"),
-        _("copper"), _("granite"), _("ivory"), _("ruby"), _("marble"), _("jade"), _("glass"),
-        _("agate"), _("bone"), _("diamond"), _("emerald"), _("peridot"), _("garnet"), _("opal"),
-        _("pearl"), _("coral"), _("sapphire"), _("cabochon"), _("gilded"), _("onyx"), _("bronze"),
-        _("moonstone")
+        gettext_noop("wooden"), gettext_noop("silver"), gettext_noop("golden"), gettext_noop("iron"), gettext_noop("steel"), gettext_noop("tourmaline"), gettext_noop("brass"),
+        gettext_noop("copper"), gettext_noop("granite"), gettext_noop("ivory"), gettext_noop("ruby"), gettext_noop("marble"), gettext_noop("jade"), gettext_noop("glass"),
+        gettext_noop("agate"), gettext_noop("bone"), gettext_noop("diamond"), gettext_noop("emerald"), gettext_noop("peridot"), gettext_noop("garnet"), gettext_noop("opal"),
+        gettext_noop("pearl"), gettext_noop("coral"), gettext_noop("sapphire"), gettext_noop("cabochon"), gettext_noop("gilded"), gettext_noop("onyx"), gettext_noop("bronze"),
+        gettext_noop("moonstone")
     };
     COMPILE_CHECK(ARRAYSZ(primary_strings) == NDSC_JEWEL_PRI);
     return primary_strings[p % NDSC_JEWEL_PRI];
@@ -874,9 +874,9 @@ static const char* ring_primary_string(uint32_t p)
 static const char* amulet_secondary_string(uint32_t s)
 {
     static const char* const secondary_strings[] = {
-        _("dented "), _("square "), _("thick "), _("thin "), _("runed "), _("blackened "),
-        _("glowing "), _("small "), _("large "), _("twisted "), _("tiny "), _("triangular "),
-        _("lumpy ")
+        gettext_noop("dented "), gettext_noop("square "), gettext_noop("thick "), gettext_noop("thin "), gettext_noop("runed "), gettext_noop("blackened "),
+        gettext_noop("glowing "), gettext_noop("small "), gettext_noop("large "), gettext_noop("twisted "), gettext_noop("tiny "), gettext_noop("triangular "),
+        gettext_noop("lumpy ")
     };
     COMPILE_CHECK(ARRAYSZ(secondary_strings) == NDSC_JEWEL_SEC);
     return secondary_strings[s % NDSC_JEWEL_SEC];
@@ -885,11 +885,11 @@ static const char* amulet_secondary_string(uint32_t s)
 static const char* amulet_primary_string(uint32_t p)
 {
     static const char* const primary_strings[] = {
-        _("sapphire"), _("zirconium"), _("golden"), _("emerald"), _("garnet"), _("bronze"),
-        _("brass"), _("copper"), _("ruby"), _("citrine"), _("bone"), _("platinum"), _("jade"),
-        _("fluorescent"), _("amethyst"), _("cameo"), _("pearl"), _("blue"), _("peridot"),
-        _("jasper"), _("diamond"), _("malachite"), _("steel"), _("cabochon"), _("silver"),
-        _("soapstone"), _("lapis lazuli"), _("filigree"), _("beryl")
+        gettext_noop("sapphire"), gettext_noop("zirconium"), gettext_noop("golden"), gettext_noop("emerald"), gettext_noop("garnet"), gettext_noop("bronze"),
+        gettext_noop("brass"), gettext_noop("copper"), gettext_noop("ruby"), gettext_noop("citrine"), gettext_noop("bone"), gettext_noop("platinum"), gettext_noop("jade"),
+        gettext_noop("fluorescent"), gettext_noop("amethyst"), gettext_noop("cameo"), gettext_noop("pearl"), gettext_noop("blue"), gettext_noop("peridot"),
+        gettext_noop("jasper"), gettext_noop("diamond"), gettext_noop("malachite"), gettext_noop("steel"), gettext_noop("cabochon"), gettext_noop("silver"),
+        gettext_noop("soapstone"), gettext_noop("lapis lazuli"), gettext_noop("filigree"), gettext_noop("beryl")
     };
     COMPILE_CHECK(ARRAYSZ(primary_strings) == NDSC_JEWEL_PRI);
     return primary_strings[p % NDSC_JEWEL_PRI];
@@ -899,30 +899,30 @@ const char* rune_type_name(short p)
 {
     switch (static_cast<rune_type>(p))
     {
-    case RUNE_DIS:         return _("iron");
-    case RUNE_GEHENNA:     return _("obsidian");
-    case RUNE_COCYTUS:     return _("icy");
-    case RUNE_TARTARUS:    return _("bone");
-    case RUNE_SLIME:       return _("slimy");
-    case RUNE_VAULTS:      return _("silver");
-    case RUNE_SNAKE:       return _("serpentine");
-    case RUNE_ELF:         return _("elven");
-    case RUNE_TOMB:        return _("golden");
-    case RUNE_SWAMP:       return _("decaying");
-    case RUNE_SHOALS:      return _("barnacled");
-    case RUNE_SPIDER:      return _("gossamer");
-    case RUNE_FOREST:      return _("mossy");
+    case RUNE_DIS:         return gettext_noop("iron");
+    case RUNE_GEHENNA:     return gettext_noop("obsidian");
+    case RUNE_COCYTUS:     return gettext_noop("icy");
+    case RUNE_TARTARUS:    return gettext_noop("bone");
+    case RUNE_SLIME:       return gettext_noop("slimy");
+    case RUNE_VAULTS:      return gettext_noop("silver");
+    case RUNE_SNAKE:       return gettext_noop("serpentine");
+    case RUNE_ELF:         return gettext_noop("elven");
+    case RUNE_TOMB:        return gettext_noop("golden");
+    case RUNE_SWAMP:       return gettext_noop("decaying");
+    case RUNE_SHOALS:      return gettext_noop("barnacled");
+    case RUNE_SPIDER:      return gettext_noop("gossamer");
+    case RUNE_FOREST:      return gettext_noop("mossy");
 
     // pandemonium and abyss runes:
-    case RUNE_DEMONIC:     return _("demonic");
-    case RUNE_ABYSSAL:     return _("abyssal");
+    case RUNE_DEMONIC:     return gettext_noop("demonic");
+    case RUNE_ABYSSAL:     return gettext_noop("abyssal");
 
     // special pandemonium runes:
-    case RUNE_MNOLEG:      return _("glowing");
-    case RUNE_LOM_LOBON:   return _("magical");
-    case RUNE_CEREBOV:     return _("fiery");
-    case RUNE_GLOORX_VLOQ: return _("dark");
-    default:               return _("buggy");
+    case RUNE_MNOLEG:      return gettext_noop("glowing");
+    case RUNE_LOM_LOBON:   return gettext_noop("magical");
+    case RUNE_CEREBOV:     return gettext_noop("fiery");
+    case RUNE_GLOORX_VLOQ: return gettext_noop("dark");
+    default:               return gettext_noop("buggy");
     }
 }
 
@@ -930,41 +930,41 @@ static string misc_type_name(int type)
 {
 #if TAG_MAJOR_VERSION == 34
     if (is_deck_type(type))
-        return _("removed deck");
+        return gettext_noop("removed deck");
 #endif
 
     switch (static_cast<misc_item_type>(type))
     {
 #if TAG_MAJOR_VERSION == 34
-    case MISC_CRYSTAL_BALL_OF_ENERGY:    return _("removed crystal ball");
+    case MISC_CRYSTAL_BALL_OF_ENERGY:    return gettext_noop("removed crystal ball");
 #endif
-    case MISC_BOX_OF_BEASTS:             return _("box of beasts");
+    case MISC_BOX_OF_BEASTS:             return gettext_noop("box of beasts");
 #if TAG_MAJOR_VERSION == 34
-    case MISC_BUGGY_EBONY_CASKET:        return _("removed ebony casket");
-    case MISC_FAN_OF_GALES:              return _("removed fan of gales");
-    case MISC_LAMP_OF_FIRE:              return _("removed lamp of fire");
-    case MISC_BUGGY_LANTERN_OF_SHADOWS:  return _("removed lantern of shadows");
+    case MISC_BUGGY_EBONY_CASKET:        return gettext_noop("removed ebony casket");
+    case MISC_FAN_OF_GALES:              return gettext_noop("removed fan of gales");
+    case MISC_LAMP_OF_FIRE:              return gettext_noop("removed lamp of fire");
+    case MISC_BUGGY_LANTERN_OF_SHADOWS:  return gettext_noop("removed lantern of shadows");
 #endif
-    case MISC_HORN_OF_GERYON:            return _("horn of Geryon");
-    case MISC_LIGHTNING_ROD:             return _("lightning rod");
+    case MISC_HORN_OF_GERYON:            return gettext_noop("horn of Geryon");
+    case MISC_LIGHTNING_ROD:             return gettext_noop("lightning rod");
 #if TAG_MAJOR_VERSION == 34
-    case MISC_BOTTLED_EFREET:            return _("empty flask");
-    case MISC_RUNE_OF_ZOT:               return _("obsolete rune of zot");
-    case MISC_STONE_OF_TREMORS:          return _("removed stone of tremors");
+    case MISC_BOTTLED_EFREET:            return gettext_noop("empty flask");
+    case MISC_RUNE_OF_ZOT:               return gettext_noop("obsolete rune of zot");
+    case MISC_STONE_OF_TREMORS:          return gettext_noop("removed stone of tremors");
 #endif
-    case MISC_QUAD_DAMAGE:               return _("quad damage");
-    case MISC_PHIAL_OF_FLOODS:           return _("phial of floods");
+    case MISC_QUAD_DAMAGE:               return gettext_noop("quad damage");
+    case MISC_PHIAL_OF_FLOODS:           return gettext_noop("phial of floods");
 #if TAG_MAJOR_VERSION == 34
-    case MISC_SACK_OF_SPIDERS:           return _("removed sack of spiders");
+    case MISC_SACK_OF_SPIDERS:           return gettext_noop("removed sack of spiders");
 #endif
-    case MISC_PHANTOM_MIRROR:            return _("phantom mirror");
-    case MISC_ZIGGURAT:                  return _("figurine of a ziggurat");
-    case MISC_XOMS_CHESSBOARD:           return _("piece from Xom's chessboard");
-    case MISC_TIN_OF_TREMORSTONES:       return _("tin of tremorstones");
-    case MISC_CONDENSER_VANE:            return _("condenser vane");
+    case MISC_PHANTOM_MIRROR:            return gettext_noop("phantom mirror");
+    case MISC_ZIGGURAT:                  return gettext_noop("figurine of a ziggurat");
+    case MISC_XOMS_CHESSBOARD:           return gettext_noop("piece from Xom's chessboard");
+    case MISC_TIN_OF_TREMORSTONES:       return gettext_noop("tin of tremorstones");
+    case MISC_CONDENSER_VANE:            return gettext_noop("condenser vane");
 
     default:
-        return _("buggy miscellaneous item");
+        return gettext_noop("buggy miscellaneous item");
     }
 }
 
@@ -979,8 +979,8 @@ static const char* book_secondary_string(uint32_t s)
         return "";
 
     static const char* const secondary_strings[] = {
-        "", _("chunky "), _("thick "), _("thin "), _("wide "), _("glowing "),
-        _("dog-eared "), _("oblong "), _("runed "), "", "", ""
+        "", gettext_noop("chunky "), gettext_noop("thick "), gettext_noop("thin "), gettext_noop("wide "), gettext_noop("glowing "),
+        gettext_noop("dog-eared "), gettext_noop("oblong "), gettext_noop("runed "), "", "", ""
     };
     return secondary_strings[(s / NDSC_BOOK_PRI) % ARRAYSZ(secondary_strings)];
 }
@@ -988,7 +988,7 @@ static const char* book_secondary_string(uint32_t s)
 static const char* book_primary_string(uint32_t p)
 {
     static const char* const primary_strings[] = {
-        _("paperback"), _("hardcover"), _("leatherbound"), _("metal-bound"), _("papyrus"),
+        gettext_noop("paperback"), gettext_noop("hardcover"), gettext_noop("leatherbound"), gettext_noop("metal-bound"), gettext_noop("papyrus"),
     };
     COMPILE_CHECK(NDSC_BOOK_PRI == ARRAYSZ(primary_strings));
 
@@ -999,65 +999,65 @@ static const char* _book_type_name(int booktype)
 {
     switch (static_cast<book_type>(booktype))
     {
-    case BOOK_MINOR_MAGIC:            return _("Minor Magic");
-    case BOOK_CONJURATIONS:           return _("Conjurations");
-    case BOOK_FLAMES:                 return _("Flames");
-    case BOOK_FROST:                  return _("Frost");
-    case BOOK_SUMMONINGS:             return _("Summonings");
-    case BOOK_FIRE:                   return _("Fire");
-    case BOOK_ICE:                    return _("Ice");
-    case BOOK_SPATIAL_TRANSLOCATIONS: return _("Spatial Translocations");
-    case BOOK_HEXES:                  return _("Hexes");
-    case BOOK_TEMPESTS:               return _("the Tempests");
-    case BOOK_DEATH:                  return _("Death");
-    case BOOK_MISFORTUNE:             return _("Misfortune");
-    case BOOK_CHANGES:                return _("Changes");
-    case BOOK_TRANSFIGURATIONS:       return _("Transfigurations");
+    case BOOK_MINOR_MAGIC:            return gettext_noop("Minor Magic");
+    case BOOK_CONJURATIONS:           return gettext_noop("Conjurations");
+    case BOOK_FLAMES:                 return gettext_noop("Flames");
+    case BOOK_FROST:                  return gettext_noop("Frost");
+    case BOOK_SUMMONINGS:             return gettext_noop("Summonings");
+    case BOOK_FIRE:                   return gettext_noop("Fire");
+    case BOOK_ICE:                    return gettext_noop("Ice");
+    case BOOK_SPATIAL_TRANSLOCATIONS: return gettext_noop("Spatial Translocations");
+    case BOOK_HEXES:                  return gettext_noop("Hexes");
+    case BOOK_TEMPESTS:               return gettext_noop("the Tempests");
+    case BOOK_DEATH:                  return gettext_noop("Death");
+    case BOOK_MISFORTUNE:             return gettext_noop("Misfortune");
+    case BOOK_CHANGES:                return gettext_noop("Changes");
+    case BOOK_TRANSFIGURATIONS:       return gettext_noop("Transfigurations");
 #if TAG_MAJOR_VERSION == 34
-    case BOOK_BATTLE:                 return _("Battle");
+    case BOOK_BATTLE:                 return gettext_noop("Battle");
 #endif
-    case BOOK_CLOUDS:                 return _("Clouds");
-    case BOOK_NECROMANCY:             return _("Necromancy");
-    case BOOK_CALLINGS:               return _("Callings");
-    case BOOK_MALEDICT:               return _("Maledictions");
-    case BOOK_AIR:                    return _("Air");
-    case BOOK_SKY:                    return _("the Sky");
-    case BOOK_WARP:                   return _("the Warp");
+    case BOOK_CLOUDS:                 return gettext_noop("Clouds");
+    case BOOK_NECROMANCY:             return gettext_noop("Necromancy");
+    case BOOK_CALLINGS:               return gettext_noop("Callings");
+    case BOOK_MALEDICT:               return gettext_noop("Maledictions");
+    case BOOK_AIR:                    return gettext_noop("Air");
+    case BOOK_SKY:                    return gettext_noop("the Sky");
+    case BOOK_WARP:                   return gettext_noop("the Warp");
 #if TAG_MAJOR_VERSION == 34
-    case BOOK_ENVENOMATIONS:          return _("Envenomations");
+    case BOOK_ENVENOMATIONS:          return gettext_noop("Envenomations");
 #endif
-    case BOOK_ANNIHILATIONS:          return _("Annihilations");
-    case BOOK_UNLIFE:                 return _("Unlife");
+    case BOOK_ANNIHILATIONS:          return gettext_noop("Annihilations");
+    case BOOK_UNLIFE:                 return gettext_noop("Unlife");
 #if TAG_MAJOR_VERSION == 34
-    case BOOK_CONTROL:                return _("Control");
+    case BOOK_CONTROL:                return gettext_noop("Control");
 #endif
-    case BOOK_GEOMANCY:               return _("Geomancy");
-    case BOOK_EARTH:                  return _("the Earth");
+    case BOOK_GEOMANCY:               return gettext_noop("Geomancy");
+    case BOOK_EARTH:                  return gettext_noop("the Earth");
 #if TAG_MAJOR_VERSION == 34
-    case BOOK_WIZARDRY:               return _("Wizardry");
+    case BOOK_WIZARDRY:               return gettext_noop("Wizardry");
 #endif
-    case BOOK_POWER:                  return _("Power");
-    case BOOK_CANTRIPS:               return _("Cantrips");
-    case BOOK_PARTY_TRICKS:           return _("Party Tricks");
-    case BOOK_DEBILITATION:           return _("Debilitation");
-    case BOOK_DRAGON:                 return _("the Dragon");
-    case BOOK_BURGLARY:               return _("Burglary");
-    case BOOK_DREAMS:                 return _("Dreams");
-    case BOOK_ALCHEMY:                return _("Alchemy");
+    case BOOK_POWER:                  return gettext_noop("Power");
+    case BOOK_CANTRIPS:               return gettext_noop("Cantrips");
+    case BOOK_PARTY_TRICKS:           return gettext_noop("Party Tricks");
+    case BOOK_DEBILITATION:           return gettext_noop("Debilitation");
+    case BOOK_DRAGON:                 return gettext_noop("the Dragon");
+    case BOOK_BURGLARY:               return gettext_noop("Burglary");
+    case BOOK_DREAMS:                 return gettext_noop("Dreams");
+    case BOOK_ALCHEMY:                return gettext_noop("Alchemy");
 #if TAG_MAJOR_VERSION == 34
-    case BOOK_BEASTS:                 return _("Beasts");
+    case BOOK_BEASTS:                 return gettext_noop("Beasts");
 #endif
-    case BOOK_RANDART_LEVEL:          return _("Fixed Level");
-    case BOOK_RANDART_THEME:          return _("Fixed Theme");
-    default:                          return _("Bugginess");
+    case BOOK_RANDART_LEVEL:          return gettext_noop("Fixed Level");
+    case BOOK_RANDART_THEME:          return gettext_noop("Fixed Theme");
+    default:                          return gettext_noop("Bugginess");
     }
 }
 
 static const char* staff_secondary_string(uint32_t s)
 {
     static const char* const secondary_strings[] = {
-        _("crooked "), _("knobbly "), _("weird "), _("gnarled "), _("thin "), _("curved "),
-        _("twisted "), _("thick "), _("long "), _("short "),
+        gettext_noop("crooked "), gettext_noop("knobbly "), gettext_noop("weird "), gettext_noop("gnarled "), gettext_noop("thin "), gettext_noop("curved "),
+        gettext_noop("twisted "), gettext_noop("thick "), gettext_noop("long "), gettext_noop("short "),
     };
     COMPILE_CHECK(NDSC_STAVE_SEC == ARRAYSZ(secondary_strings));
     return secondary_strings[s % ARRAYSZ(secondary_strings)];
@@ -1066,7 +1066,7 @@ static const char* staff_secondary_string(uint32_t s)
 static const char* staff_primary_string(uint32_t p)
 {
     static const char* const primary_strings[] = {
-        _("glowing "), _("jewelled "), _("runed "), _("smoking ")
+        gettext_noop("glowing "), gettext_noop("jewelled "), gettext_noop("runed "), gettext_noop("smoking ")
     };
     COMPILE_CHECK(NDSC_STAVE_PRI == ARRAYSZ(primary_strings));
     return primary_strings[p % ARRAYSZ(primary_strings)];
@@ -1076,16 +1076,16 @@ static const char* staff_type_name(int stafftype)
 {
     switch ((stave_type)stafftype)
     {
-    case STAFF_FIRE:        return _("fire");
-    case STAFF_COLD:        return _("cold");
-    case STAFF_POISON:      return _("poison");
-    case STAFF_DEATH:       return _("death");
-    case STAFF_CONJURATION: return _("conjuration");
-    case STAFF_AIR:         return _("air");
-    case STAFF_EARTH:       return _("earth");
+    case STAFF_FIRE:        return gettext_noop("fire");
+    case STAFF_COLD:        return gettext_noop("cold");
+    case STAFF_POISON:      return gettext_noop("poison");
+    case STAFF_DEATH:       return gettext_noop("death");
+    case STAFF_CONJURATION: return gettext_noop("conjuration");
+    case STAFF_AIR:         return gettext_noop("air");
+    case STAFF_EARTH:       return gettext_noop("earth");
     default:                return item_type_removed(OBJ_STAVES, stafftype)
-                                ? _("removedness")
-                                : _("bugginess");
+                                ? gettext_noop("removedness")
+                                : gettext_noop("bugginess");
     }
 }
 
@@ -1098,23 +1098,23 @@ const char *base_type_string(object_class_type type)
 {
     switch (type)
     {
-    case OBJ_WEAPONS: return _("weapon");
-    case OBJ_MISSILES: return _("missile");
-    case OBJ_ARMOUR: return _("armour");
-    case OBJ_WANDS: return _("wand");
-    case OBJ_SCROLLS: return _("scroll");
-    case OBJ_JEWELLERY: return _("jewellery");
-    case OBJ_POTIONS: return _("potion");
-    case OBJ_BOOKS: return _("book");
-    case OBJ_STAVES: return _("staff");
+    case OBJ_WEAPONS: return gettext_noop("weapon");
+    case OBJ_MISSILES: return gettext_noop("missile");
+    case OBJ_ARMOUR: return gettext_noop("armour");
+    case OBJ_WANDS: return gettext_noop("wand");
+    case OBJ_SCROLLS: return gettext_noop("scroll");
+    case OBJ_JEWELLERY: return gettext_noop("jewellery");
+    case OBJ_POTIONS: return gettext_noop("potion");
+    case OBJ_BOOKS: return gettext_noop("book");
+    case OBJ_STAVES: return gettext_noop("staff");
 #if TAG_MAJOR_VERSION == 34
-    case OBJ_RODS: return _("removed rod");
+    case OBJ_RODS: return gettext_noop("removed rod");
 #endif
-    case OBJ_ORBS: return _("orb");
-    case OBJ_MISCELLANY: return _("miscellaneous");
-    case OBJ_CORPSES: return _("corpse");
-    case OBJ_GOLD: return _("gold");
-    case OBJ_RUNES: return _("rune");
+    case OBJ_ORBS: return gettext_noop("orb");
+    case OBJ_MISCELLANY: return gettext_noop("miscellaneous");
+    case OBJ_CORPSES: return gettext_noop("corpse");
+    case OBJ_GOLD: return gettext_noop("gold");
+    case OBJ_RUNES: return gettext_noop("rune");
     default: return "";
     }
 }
@@ -1139,40 +1139,40 @@ string sub_type_string(const item_def &item, bool known)
         if (sub_type == BOOK_MANUAL)
         {
             if (!known)
-                return _("manual");
-            string bookname = _("manual of ");
+                return gettext_noop("manual");
+            string bookname = gettext_noop("manual of ");
             bookname += skill_name(static_cast<skill_type>(item.plus));
             return bookname;
         }
         else if (sub_type == BOOK_NECRONOMICON)
-            return _("Necronomicon");
+            return gettext_noop("Necronomicon");
         else if (sub_type == BOOK_GRAND_GRIMOIRE)
-            return _("Grand Grimoire");
+            return gettext_noop("Grand Grimoire");
 #if TAG_MAJOR_VERSION == 34
         else if (sub_type == BOOK_BUGGY_DESTRUCTION)
-            return _("tome of obsoleteness");
+            return gettext_noop("tome of obsoleteness");
 #endif
         else if (sub_type == BOOK_YOUNG_POISONERS)
-            return _("Young Poisoner's Handbook");
+            return gettext_noop("Young Poisoner's Handbook");
         else if (sub_type == BOOK_FEN)
-            return _("Fen Folio");
+            return gettext_noop("Fen Folio");
 #if TAG_MAJOR_VERSION == 34
         else if (sub_type == BOOK_AKASHIC_RECORD)
-            return _("Akashic Record");
+            return gettext_noop("Akashic Record");
 #endif
 
-        return string(_("book of ")) + _book_type_name(sub_type);
+        return string(gettext_noop("book of ")) + _book_type_name(sub_type);
     }
     case OBJ_STAVES: return staff_type_name(static_cast<stave_type>(sub_type));
 #if TAG_MAJOR_VERSION == 34
-    case OBJ_RODS:   return _("removed rod");
+    case OBJ_RODS:   return gettext_noop("removed rod");
 #endif
     case OBJ_MISCELLANY: return misc_type_name(sub_type);
     // these repeat as base_type_string
-    case OBJ_ORBS: return _("orb of Zot");
-    case OBJ_CORPSES: return _("corpse");
-    case OBJ_GOLD: return _("gold");
-    case OBJ_RUNES: return _("rune of Zot");
+    case OBJ_ORBS: return gettext_noop("orb of Zot");
+    case OBJ_CORPSES: return gettext_noop("corpse");
+    case OBJ_GOLD: return gettext_noop("gold");
+    case OBJ_RUNES: return gettext_noop("rune of Zot");
     default: return "";
     }
 }
@@ -1197,12 +1197,12 @@ string ghost_brand_name(brand_type brand, monster_type mtype)
     {
         // n.b. vorpal only works if it is adjectival
         if (brand_prefers_adj.count(brand))
-            return make_stringf(_("%s weapon"), brand_type_adj(brand));
+            return make_stringf(gettext_noop("%s weapon"), brand_type_adj(brand));
         else
-            return make_stringf(_("weapon of %s"), brand_type_name(brand, false));
+            return make_stringf(gettext_noop("weapon of %s"), brand_type_name(brand, false));
     }
     else
-        return make_stringf(_("%s touch"), brand_type_adj(brand));
+        return make_stringf(gettext_noop("%s touch"), brand_type_adj(brand));
 }
 
 string ego_type_string(const item_def &item, bool terse)
@@ -1219,7 +1219,7 @@ string ego_type_string(const item_def &item, bool terse)
     case OBJ_MISSILES:
         // HACKHACKHACK
         if (item.props.exists(DAMNATION_BOLT_KEY))
-            return _("damnation");
+            return gettext_noop("damnation");
         return missile_brand_name(item, terse ? MBN_TERSE : MBN_BRAND);
     case OBJ_JEWELLERY:
         return jewellery_effect_name(item.sub_type, terse);
@@ -1306,9 +1306,9 @@ static string _cosmetic_text(const item_def &weap, iflags_t ignore_flags)
     switch (desc)
     {
         case ISFLAG_RUNED:
-            return _("runed ");
+            return gettext_noop("runed ");
         case ISFLAG_GLOWING:
-            return _("glowing ");
+            return gettext_noop("glowing ");
         default:
             return "";
     }
@@ -1328,22 +1328,22 @@ string weapon_brand_desc(const char *body, const item_def &weap,
         return body;
 
     if (terse)
-        return make_stringf(_("%s (%s)"), body, brand_name.c_str());
+        return make_stringf(gettext_noop("%s (%s)"), body, brand_name.c_str());
 
     const brand_type brand = override_brand ? override_brand :
                              get_weapon_brand(weap);
 
     if (brand_prefers_adj.count(brand))
-        return make_stringf(_("%s %s"), brand_type_adj(brand), body);
+        return make_stringf(gettext_noop("%s %s"), brand_type_adj(brand), body);
     else if (brand == SPWPN_NORMAL)
     {
         if (get_equip_desc(weap))
-            return make_stringf(_("enchanted %s"), body);
+            return make_stringf(gettext_noop("enchanted %s"), body);
         else
             return body;
     }
     else
-        return make_stringf(_("%s of %s"), body, brand_name.c_str());
+        return make_stringf(gettext_noop("%s of %s"), body, brand_name.c_str());
 }
 
 /**
@@ -1373,7 +1373,7 @@ static string _name_weapon(const item_def &weap, description_level_type desc,
     const bool know_pluses = _know_pluses(weap, desc, ident, ignore_flags);
     const bool know_ego =    _know_ego(weap, desc, ident, ignore_flags);
 
-    const string curse_prefix = !dbname && !terse && weap.cursed() ? _("cursed ") : "";
+    const string curse_prefix = !dbname && !terse && weap.cursed() ? gettext_noop("cursed ") : "";
     const string plus_text = know_pluses ? _plus_prefix(weap) : "";
 
     if (is_artefact(weap) && !dbname)
@@ -1431,7 +1431,7 @@ static string _name_weapon(const item_def &weap, description_level_type desc,
         = know_ego ? weapon_brand_desc(base_name.c_str(), weap, terse)
         : base_name;
     const string curse_suffix
-        = weap.cursed() && terse && !dbname && !qualname ? _(" (curse)") :  "";
+        = weap.cursed() && terse && !dbname && !qualname ? gettext_noop(" (curse)") :  "";
     return curse_prefix + plus_text + cosmetic_text
            + name_with_ego + curse_suffix;
 }
@@ -1480,7 +1480,7 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         if (!terse && !dbname && !basename)
         {
             if (props.exists(DAMNATION_BOLT_KEY)) // hack alert
-                buff << _("damnation ");
+                buff << gettext_noop("damnation ");
             else if (_missile_brand_is_prefix(msl_brand)) // see below for postfix brands
                 buff << missile_brand_name(*this, MBN_NAME) << ' ';
         }
@@ -1493,7 +1493,7 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
             if (terse)
             {
                 if (props.exists(DAMNATION_BOLT_KEY)) // still a hack
-                    buff << _(" (damnation)");
+                    buff << gettext_noop(" (damnation)");
                 else
                     buff << " (" <<  missile_brand_name(*this, MBN_TERSE) << ")";
             }
@@ -1505,7 +1505,7 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
     }
     case OBJ_ARMOUR:
         if (!terse && cursed())
-            buff << _("cursed ");
+            buff << gettext_noop("cursed ");
 
         // If we know enough to know it has *something* ('shiny' etc),
         // but we know it has no ego, it must have a plus. (or maybe a curse.)
@@ -1513,7 +1513,7 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         if (!terse && know_ego && get_armour_ego_type(*this) == SPARM_NORMAL &&
             !know_pluses && !is_artefact(*this) && get_equip_desc(*this))
         {
-            buff << _("enchanted ");
+            buff << gettext_noop("enchanted ");
         }
 
         // Don't list unenchantable armor as +0.
@@ -1521,7 +1521,7 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
             buff << make_stringf("%+d ", plus);
 
         if (item_typ == ARM_GLOVES || item_typ == ARM_BOOTS)
-            buff << _("pair of ");
+            buff << gettext_noop("pair of ");
 
         if (is_artefact(*this) && !dbname)
         {
@@ -1542,25 +1542,25 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
                     || get_armour_slot(*this) == EQ_HELMET
                        && !is_hard_helmet(*this))
                 {
-                    buff << _("embroidered ");
+                    buff << gettext_noop("embroidered ");
                 }
                 else if (item_typ != ARM_LEATHER_ARMOUR
                          && item_typ != ARM_ANIMAL_SKIN)
                 {
-                    buff << _("shiny ");
+                    buff << gettext_noop("shiny ");
                 }
                 else
-                    buff << _("dyed ");
+                    buff << gettext_noop("dyed ");
                 break;
 
             case ISFLAG_RUNED:
                 if (!testbits(ignore_flags, ISFLAG_RUNED))
-                    buff << _("runed ");
+                    buff << gettext_noop("runed ");
                 break;
 
             case ISFLAG_GLOWING:
                 if (!testbits(ignore_flags, ISFLAG_GLOWING))
-                    buff << _("glowing ");
+                    buff << gettext_noop("glowing ");
                 break;
             }
         }
@@ -1584,23 +1584,23 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         }
 
         if (cursed() && terse && !dbname && !qualname)
-            buff << _(" (curse)");
+            buff << gettext_noop(" (curse)");
         break;
 
     case OBJ_WANDS:
         if (basename)
         {
-            buff << _("wand");
+            buff << gettext_noop("wand");
             break;
         }
 
         if (know_type)
-            buff << _("wand of ") << _wand_type_name(item_typ);
+            buff << gettext_noop("wand of ") << _wand_type_name(item_typ);
         else
         {
             buff << wand_secondary_string(subtype_rnd / NDSC_WAND_PRI)
                  << wand_primary_string(subtype_rnd % NDSC_WAND_PRI)
-                 << _(" wand");
+                 << gettext_noop(" wand");
         }
 
         if (dbname)
@@ -1614,12 +1614,12 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
     case OBJ_POTIONS:
         if (basename)
         {
-            buff << _("potion");
+            buff << gettext_noop("potion");
             break;
         }
 
         if (know_type)
-            buff << _("potion of ") << potion_type_name(item_typ);
+            buff << gettext_noop("potion of ") << potion_type_name(item_typ);
         else
         {
             const int pqual   = PQUAL(subtype_rnd);
@@ -1627,43 +1627,43 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
 
             static const char *potion_qualifiers[] =
             {
-                "",  _("bubbling "), _("fuming "), _("fizzy "), _("viscous "), _("lumpy "),
-                _("smoky "), _("glowing "), _("sedimented "), _("metallic "), _("murky "),
-                _("gluggy "), _("oily "), _("slimy "), _("emulsified "),
+                "",  gettext_noop("bubbling "), gettext_noop("fuming "), gettext_noop("fizzy "), gettext_noop("viscous "), gettext_noop("lumpy "),
+                gettext_noop("smoky "), gettext_noop("glowing "), gettext_noop("sedimented "), gettext_noop("metallic "), gettext_noop("murky "),
+                gettext_noop("gluggy "), gettext_noop("oily "), gettext_noop("slimy "), gettext_noop("emulsified "),
             };
             COMPILE_CHECK(ARRAYSZ(potion_qualifiers) == PDQ_NQUALS);
 
             static const char *potion_colours[] =
             {
 #if TAG_MAJOR_VERSION == 34
-                _("clear"),
+                gettext_noop("clear"),
 #endif
-                _("blue"), _("black"), _("silvery"), _("cyan"), _("purple"), _("orange"),
-                _("inky"), _("red"), _("yellow"), _("green"), _("brown"), _("ruby"), _("white"),
-                _("emerald"), _("grey"), _("pink"), _("coppery"), _("golden"), _("dark"), _("puce"),
-                _("amethyst"), _("sapphire"),
+                gettext_noop("blue"), gettext_noop("black"), gettext_noop("silvery"), gettext_noop("cyan"), gettext_noop("purple"), gettext_noop("orange"),
+                gettext_noop("inky"), gettext_noop("red"), gettext_noop("yellow"), gettext_noop("green"), gettext_noop("brown"), gettext_noop("ruby"), gettext_noop("white"),
+                gettext_noop("emerald"), gettext_noop("grey"), gettext_noop("pink"), gettext_noop("coppery"), gettext_noop("golden"), gettext_noop("dark"), gettext_noop("puce"),
+                gettext_noop("amethyst"), gettext_noop("sapphire"),
             };
             COMPILE_CHECK(ARRAYSZ(potion_colours) == PDC_NCOLOURS);
 
             const char *qualifier =
-                (pqual < 0 || pqual >= PDQ_NQUALS) ? _("bug-filled ")
+                (pqual < 0 || pqual >= PDQ_NQUALS) ? gettext_noop("bug-filled ")
                                     : potion_qualifiers[pqual];
 
             const char *clr =  (pcolour < 0 || pcolour >= PDC_NCOLOURS) ?
-                                   _("bogus") : potion_colours[pcolour];
+                                   gettext_noop("bogus") : potion_colours[pcolour];
 
-            buff << qualifier << clr << _(" potion");
+            buff << qualifier << clr << gettext_noop(" potion");
         }
         break;
 
 #if TAG_MAJOR_VERSION == 34
     case OBJ_FOOD:
-        buff << _("removed food"); break;
+        buff << gettext_noop("removed food"); break;
         break;
 #endif
 
     case OBJ_SCROLLS:
-        buff << _("scroll");
+        buff << gettext_noop("scroll");
         if (basename)
             break;
         else
@@ -1672,7 +1672,7 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         if (know_type)
             buff << "of " << scroll_type_name(item_typ);
         else
-            buff << _("labelled ") << make_name(subtype_rnd, MNAME_SCROLL);
+            buff << gettext_noop("labelled ") << make_name(subtype_rnd, MNAME_SCROLL);
         break;
 
     case OBJ_JEWELLERY:
@@ -1680,9 +1680,9 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         if (basename)
         {
             if (jewellery_is_amulet(*this))
-                buff << _("amulet");
+                buff << gettext_noop("amulet");
             else
-                buff << _("ring");
+                buff << gettext_noop("ring");
 
             break;
         }
@@ -1690,7 +1690,7 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         const bool is_randart = is_artefact(*this);
 
         if (!terse && cursed())
-            buff << _("cursed ");
+            buff << gettext_noop("cursed ");
 
         if (is_randart && !dbname)
         {
@@ -1711,17 +1711,17 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
             {
                 buff << amulet_secondary_string(subtype_rnd / NDSC_JEWEL_PRI)
                      << amulet_primary_string(subtype_rnd % NDSC_JEWEL_PRI)
-                     << _(" amulet");
+                     << gettext_noop(" amulet");
             }
             else  // i.e., a ring
             {
                 buff << ring_secondary_string(subtype_rnd / NDSC_JEWEL_PRI)
                      << ring_primary_string(subtype_rnd % NDSC_JEWEL_PRI)
-                     << _(" ring");
+                     << gettext_noop(" ring");
             }
         }
         if (cursed() && terse && !dbname && !qualname)
-            buff << _(" (curse)");
+            buff << gettext_noop(" (curse)");
         break;
     }
     case OBJ_MISCELLANY:
@@ -1732,7 +1732,7 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         buff << misc_type_name(item_typ);
 
         if (is_xp_evoker(*this) && !dbname && !evoker_charges(sub_type))
-            buff << _(" (inert)");
+            buff << gettext_noop(" (inert)");
         else if (is_xp_evoker(*this) &&
                  !dbname && evoker_max_charges(sub_type) > 1)
         {
@@ -1748,16 +1748,16 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         {
             buff << get_artefact_name(*this, ident);
             if (!know_type)
-                buff << _("book");
+                buff << gettext_noop("book");
             break;
         }
         if (basename)
-            buff << (item_typ == BOOK_MANUAL ? _("manual") : _("book"));
+            buff << (item_typ == BOOK_MANUAL ? gettext_noop("manual") : gettext_noop("book"));
         else if (!know_type)
         {
             buff << book_secondary_string(rnd)
                  << book_primary_string(rnd) << " "
-                 << (item_typ == BOOK_MANUAL ? _("manual") : _("book"));
+                 << (item_typ == BOOK_MANUAL ? gettext_noop("manual") : gettext_noop("book"));
         }
         else
             buff << sub_type_string(*this, !dbname);
@@ -1765,13 +1765,13 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
 
 #if TAG_MAJOR_VERSION == 34
     case OBJ_RODS:
-        buff << _("removed rod");
+        buff << gettext_noop("removed rod");
         break;
 #endif
 
     case OBJ_STAVES:
         if (!terse && cursed())
-            buff << _("cursed ");
+            buff << gettext_noop("cursed ");
 
         if (!know_type)
         {
@@ -1781,40 +1781,40 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
                      << staff_primary_string(subtype_rnd % NDSC_STAVE_PRI);
             }
 
-            buff << _("staff");
+            buff << gettext_noop("staff");
         }
         else
-            buff << _("staff of ") << staff_type_name(item_typ);
+            buff << gettext_noop("staff of ") << staff_type_name(item_typ);
 
         if (cursed() && terse && !dbname && !qualname)
-            buff << _(" (curse)");
+            buff << gettext_noop(" (curse)");
         break;
 
     // rearranged 15 Apr 2000 {dlb}:
     case OBJ_ORBS:
-        buff.str(_("Orb of Zot"));
+        buff.str(gettext_noop("Orb of Zot"));
         break;
 
     case OBJ_RUNES:
         if (!dbname)
             buff << rune_type_name(sub_type) << " ";
-        buff << _("rune of Zot");
+        buff << gettext_noop("rune of Zot");
         break;
 
     case OBJ_GOLD:
-        buff << _("gold piece");
+        buff << gettext_noop("gold piece");
         break;
 
     case OBJ_CORPSES:
     {
         if (dbname && item_typ == CORPSE_SKELETON)
-            return _("decaying skeleton");
+            return gettext_noop("decaying skeleton");
 
         monster_flags_t name_flags;
         const string _name = get_corpse_name(*this, &name_flags);
         const monster_flags_t name_type = name_flags & MF_NAME_MASK;
 
-        const bool shaped = starts_with(_name, _("shaped "));
+        const bool shaped = starts_with(_name, gettext_noop("shaped "));
 
         if (!_name.empty() && name_type == MF_NAME_ADJECTIVE)
             buff << _name << " ";
@@ -1832,11 +1832,11 @@ string item_def::name_aux(description_level_type desc, bool terse, bool ident,
         }
 
         if (item_typ == CORPSE_BODY)
-            buff << _("corpse");
+            buff << gettext_noop("corpse");
         else if (item_typ == CORPSE_SKELETON)
-            buff << _("skeleton");
+            buff << gettext_noop("skeleton");
         else
-            buff << _("corpse bug");
+            buff << gettext_noop("corpse bug");
 
         if (!_name.empty() && !shaped && name_type != MF_NAME_ADJECTIVE
             && !(name_flags & MF_NAME_SPECIES) && name_type != MF_NAME_SUFFIX
@@ -2059,10 +2059,10 @@ static MenuEntry* _fixup_runeorb_entry(MenuEntry* me)
     else if (entry->item->is_type(OBJ_ORBS, ORB_ZOT))
     {
         if (player_has_orb())
-            entry->text = _("<magenta>The Orb of Zot</magenta>");
+            entry->text = gettext_noop("<magenta>The Orb of Zot</magenta>");
         else
         {
-            entry->text = _("<darkgrey>The Orb of Zot"
+            entry->text = gettext_noop("<darkgrey>The Orb of Zot"
                           " (the Realm of Zot)</darkgrey>");
         }
     }
@@ -2072,11 +2072,11 @@ static MenuEntry* _fixup_runeorb_entry(MenuEntry* me)
 
 void display_runes()
 {
-    auto col = runes_in_pack() < ZOT_ENTRY_RUNES ?  _("lightgrey") :
-               runes_in_pack() < you.obtainable_runes ? _("green") :
-                                                   _("lightgreen");
+    auto col = runes_in_pack() < ZOT_ENTRY_RUNES ?  gettext_noop("lightgrey") :
+               runes_in_pack() < you.obtainable_runes ? gettext_noop("green") :
+                                                   gettext_noop("lightgreen");
 
-    auto title = make_stringf(_("<white>Runes of Zot (</white>"
+    auto title = make_stringf(gettext_noop("<white>Runes of Zot (</white>"
                               "<%s>%d</%s><white> collected) & Orbs of Power</white>"),
                               col, runes_in_pack(), col);
 
@@ -2319,7 +2319,7 @@ string make_name(uint32_t seed, makename_type name_type)
         if (name_type == MNAME_JIYVA)
             return make_name(rng::get_uint32(), MNAME_JIYVA);
 
-        name = _("plog");
+        name = gettext_noop("plog");
     }
 
     string uppercased_name;
@@ -3103,42 +3103,42 @@ string item_prefix(const item_def &item, bool temp)
         return "";
 
     if (fully_identified(item))
-        prefixes.push_back(_("identified"));
+        prefixes.push_back(gettext_noop("identified"));
     else if (item_ident(item, ISFLAG_KNOW_TYPE)
              || get_ident_type(item))
     {
-        prefixes.push_back(_("known"));
+        prefixes.push_back(gettext_noop("known"));
     }
     else
-        prefixes.push_back(_("unidentified"));
+        prefixes.push_back(gettext_noop("unidentified"));
 
     if (god_hates_item(item))
     {
-        prefixes.push_back(_("evil_item"));
-        prefixes.push_back(_("forbidden"));
+        prefixes.push_back(gettext_noop("evil_item"));
+        prefixes.push_back(gettext_noop("forbidden"));
     }
 
     if (is_emergency_item(item))
-        prefixes.push_back(_("emergency_item"));
+        prefixes.push_back(gettext_noop("emergency_item"));
     if (is_good_item(item))
-        prefixes.push_back(_("good_item"));
+        prefixes.push_back(gettext_noop("good_item"));
     if (is_dangerous_item(item, temp))
-        prefixes.push_back(_("dangerous_item"));
+        prefixes.push_back(gettext_noop("dangerous_item"));
     if (is_bad_item(item))
-        prefixes.push_back(_("bad_item"));
+        prefixes.push_back(gettext_noop("bad_item"));
     if (is_useless_item(item, temp))
-        prefixes.push_back(_("useless_item"));
+        prefixes.push_back(gettext_noop("useless_item"));
 
     if (item_is_stationary(item))
-        prefixes.push_back(_("stationary"));
+        prefixes.push_back(gettext_noop("stationary"));
 
     if (!is_artefact(item) && (item.base_type == OBJ_WEAPONS
                                || item.base_type == OBJ_ARMOUR))
     {
         if (item_ident(item, ISFLAG_KNOW_PLUSES) && item.plus > 0)
-            prefixes.push_back(_("enchanted"));
+            prefixes.push_back(gettext_noop("enchanted"));
         if (item_ident(item, ISFLAG_KNOW_TYPE) && item.brand)
-            prefixes.push_back(_("ego"));
+            prefixes.push_back(gettext_noop("ego"));
     }
 
     switch (item.base_type)
@@ -3146,25 +3146,25 @@ string item_prefix(const item_def &item, bool temp)
     case OBJ_STAVES:
     case OBJ_WEAPONS:
         if (is_range_weapon(item))
-            prefixes.push_back(_("ranged"));
+            prefixes.push_back(gettext_noop("ranged"));
         else if (is_melee_weapon(item)) // currently redundant
-            prefixes.push_back(_("melee"));
+            prefixes.push_back(gettext_noop("melee"));
         // fall through
 
     case OBJ_ARMOUR:
     case OBJ_JEWELLERY:
         if (is_artefact(item))
-            prefixes.push_back(_("artefact"));
+            prefixes.push_back(gettext_noop("artefact"));
         // fall through
 
     case OBJ_MISSILES:
         if (item_is_equipped(item, true))
-            prefixes.push_back(_("equipped"));
+            prefixes.push_back(gettext_noop("equipped"));
         break;
 
     case OBJ_BOOKS:
         if (item.sub_type != BOOK_MANUAL && item.sub_type != NUM_BOOKS)
-            prefixes.push_back(_("spellbook"));
+            prefixes.push_back(gettext_noop("spellbook"));
         break;
 
     default:
@@ -3191,13 +3191,13 @@ string menu_colour_item_name(const item_def &item, description_level_type desc)
     const string cprf      = item_prefix(item);
     const string item_name = item.name(desc);
 
-    const int col = menu_colour(item_name, cprf, _("pickup"));
+    const int col = menu_colour(item_name, cprf, gettext_noop("pickup"));
     if (col == -1)
         return item_name;
 
     const string colour = colour_to_str(col);
     const char * const colour_z = colour.c_str();
-    return make_stringf(_("<%s>%s</%s>"), colour_z, item_name.c_str(), colour_z);
+    return make_stringf(gettext_noop("<%s>%s</%s>"), colour_z, item_name.c_str(), colour_z);
 }
 
 typedef map<string, item_kind> item_names_map;
@@ -3248,9 +3248,9 @@ void init_item_name_cache()
                 {
                     continue;
                 }
-                else if (name.find(_("buggy")) != string::npos)
+                else if (name.find(gettext_noop("buggy")) != string::npos)
                 {
-                    mprf(MSGCH_ERROR, _("Bad name for item name cache: %s"),
+                    mprf(MSGCH_ERROR, gettext_noop("Bad name for item name cache: %s"),
                                                                 name.c_str());
                     continue;
                 }
