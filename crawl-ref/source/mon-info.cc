@@ -935,14 +935,16 @@ string monster_info::_core_name(i18n_context_type i18n_context) const
 
         switch (type)
         {
-        case MONS_SLIME_CREATURE:
+        case MONS_SLIME_CREATURE: {
             ASSERT((size_t) slime_size <= ARRAYSZ(_slime_sizes));
+            auto slime_size_string = _slime_sizes[slime_size];
             s = make_stringf(
-                    __("%(huge)s %(slime)s", "%s %s"),
-                    __(i18n_cname, _slime_sizes[slime_size]),
+                    __("%(huge )s%(slime)s", "%s%s"),
+                    strlen(slime_size_string) ? __(i18n_cname, _slime_sizes[slime_size]) : "",
                     s.c_str()
             );
             break;
+        }
         case MONS_UGLY_THING:
         case MONS_VERY_UGLY_THING:
             s = make_stringf(
