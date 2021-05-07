@@ -325,7 +325,7 @@ public:
 
     string name(description_level_type type, bool force_visible = false,
                 bool force_article = false) const override;
-    string name(i18n_context i18n_context,
+    string name(i18n_context_type i18n_context,
                 bool force_visible = false) const override;
 
     // Base name of the monster, bypassing any mname setting. For an orc priest
@@ -337,6 +337,7 @@ public:
     // will return "Arbolt the orc priest".
     string full_name(description_level_type type) const;
     string pronoun(pronoun_type pro, bool force_visible = false) const override;
+    string pronoun(i18n_context_type i18n_context, bool force_visible = false) const override;
     bool pronoun_plurality(bool force_visible = false) const;
     string conj_verb(const string &verb) const override;
     string hand_name(bool plural, bool *can_plural = nullptr) const override;

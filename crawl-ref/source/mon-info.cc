@@ -885,7 +885,7 @@ string monster_info::db_name() const
 
 const char* _slime_sizes[] = {"buggy ", "", "large ", "very large ", "enormous ", "titanic "};
 
-string monster_info::_core_name(i18n_context i18n_context) const
+string monster_info::_core_name(i18n_context_type i18n_context) const
 {
     I18N_CONTEXT_NAME;
     monster_type nametype = type;
@@ -1127,7 +1127,7 @@ string monster_info::common_name(description_level_type desc) const
     return s;
 }
 
-string monster_info::common_name(i18n_context i18n_context) const
+string monster_info::common_name(i18n_context_type i18n_context) const
 {
     // TODO: @apollov: refactor into single template with positional parameters
     const string core = _core_name(i18n_context);
@@ -1262,7 +1262,7 @@ string monster_info::proper_name(description_level_type desc) const
         return common_name(desc);
 }
 
-string monster_info::proper_name(i18n_context i18n_context) const
+string monster_info::proper_name(i18n_context_type i18n_context) const
 {
     if (has_proper_name())
         return I18(i18n_context, mname.c_str());

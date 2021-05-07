@@ -9,20 +9,34 @@
 
 #define _(Msgid) gettext (Msgid)
 #define __(Msgctxt, Msgid) strlen(Msgctxt) ? pgettext_expr (Msgctxt, Msgid) : gettext(Msgid)
-#define I18N_CONTEXT_NAME const char* i18n_cname = i18n_cnames[i18n_context].c_str()
-#define I18(Mcontext, Msgid) __(i18n_cnames[Mcontext].c_str(), Msgid)
+#define I18N_CONTEXT_NAME const char* i18n_cname = i18n_cnames[i18n_context]
+#define I18(Mcontext, Msgid) __(i18n_cnames[Mcontext], Msgid)
 
-enum i18n_context {
+enum i18n_context_type {
     I18NC_EMPTY,
-    I18NC_MELEE_ATTACKER,
-    I18NC_MELEE_ATTACK_VERB
+
+    I18NC_MONSTER_MELEE_ATTACKER,
+    I18NC_MONSTER_MELEE_ATTACK_VERB,
+    I18NC_MONSTER_MELEE_DEFENDER,
+    I18NC_MONSTER_ATTACK_DESC,
+
+    I18NC_PLAYER_ATTACK_VERB,
+    I18NC_PLAYER_ATTACK_DEGREE,
+
+    I18NC_COUNT
 };
 
 // Changing these strings requires changing them in all the .po files' contexts
-static string i18n_cnames[] = {
+static const char* const i18n_cnames[I18NC_COUNT] = {
     "",
+
     "%s bites you for 10 damage with +3 dagger!!!",
-    "The jackal %s you for 10 damage with +3 dagger!!!"
+    "The jackal %s you for 10 damage with +3 dagger!!!",
+    "The jackal bites %s for 10 damage with +3 dagger!!!",
+    "The jackal bites you for 10 damage%s!!!",
+
+    "You %s the jackal like an onion for 10 damage!!!!!",
+    "You slice the jackal%s for 10 damage!!!!!"
 };
 
 #endif //SOURCE_CRAWL_LOCALE_H

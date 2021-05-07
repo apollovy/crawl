@@ -6818,3 +6818,19 @@ msgstr "шакал"
 msgctxt "The jackal %s you for 10 damage with +3 dagger!!!"
 msgid "bite"
 msgstr "кусает"
+
+msgctxt "The jackal bites %s for 10 damage with +3 dagger!!!"
+msgid "you"
+msgstr "вас"
+
+msgctxt "The jackal bites %s for 10 damage with +3 dagger!!!"
+msgid "jackal"
+msgstr "шакала"
+
+msgctxt "You %s the jackal like an onion for 10 damage!!!!!"
+msgid "hit"
+msgstr "бьёте"
+
+msgctxt "You %(slice)s %(the jackal)s%( like an onion)s%( for 10 damage)s%(!!!!!)s"
+msgid "You %s %s%s%s%s"
+msgstr "Вы %s %s%s%s%s"

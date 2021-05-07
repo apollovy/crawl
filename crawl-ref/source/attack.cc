@@ -339,7 +339,7 @@ string attack::actor_name(const actor *a, description_level_type desc,
     return actor_visible ? a->name(desc) : anon_name(desc);
 }
 
-string attack::actor_name(const actor *a, bool actor_visible, i18n_context i18n_context)
+string attack::actor_name(const actor *a, bool actor_visible, i18n_context_type i18n_context)
 {
     return actor_visible ? a->name(i18n_context) : anon_name(i18n_context);
 }
@@ -352,6 +352,11 @@ string attack::actor_pronoun(const actor *a, pronoun_type pron,
                              bool actor_visible)
 {
     return actor_visible ? a->pronoun(pron) : anon_pronoun(pron);
+}
+
+string attack::actor_pronoun(const actor *a, bool actor_visible, i18n_context_type i18n_context)
+{
+    return actor_visible ? a->pronoun(i18n_context) : anon_pronoun(i18n_context);
 }
 
 /* Returns an anonymous actor's name
@@ -376,7 +381,7 @@ string attack::anon_name(description_level_type desc)
     }
 }
 
-string attack::anon_name(i18n_context i18n_context)
+string attack::anon_name(i18n_context_type i18n_context)
 {
     return I18(i18n_context, "something");
 }
@@ -389,6 +394,11 @@ string attack::anon_name(i18n_context i18n_context)
 string attack::anon_pronoun(pronoun_type pron)
 {
     return decline_pronoun(GENDER_NEUTER, pron);
+}
+
+string attack::anon_pronoun(i18n_context_type i18n_context)
+{
+    return decline_pronoun(GENDER_NEUTER, i18n_context);
 }
 
 /* Initializes an attack, setting up base variables and values
@@ -1025,7 +1035,7 @@ string attack::atk_name(description_level_type desc)
     return actor_name(attacker, desc, attacker_visible);
 }
 
-string attack::atk_name(i18n_context i18n_context)
+string attack::atk_name(i18n_context_type i18n_context)
 {
     return actor_name(attacker, attacker_visible, i18n_context);
 }
@@ -1038,6 +1048,11 @@ string attack::atk_name(i18n_context i18n_context)
 string attack::def_name(description_level_type desc)
 {
     return actor_name(defender, desc, defender_visible);
+}
+
+string attack::def_name(i18n_context_type i18n_context)
+{
+    return actor_name(defender, defender_visible, i18n_context);
 }
 
 /* Returns the attacking weapon's name
@@ -1080,6 +1095,14 @@ string attack::defender_name(bool allow_reflexive)
         return actor_pronoun(attacker, PRONOUN_REFLEXIVE, attacker_visible);
     else
         return def_name(DESC_THE);
+}
+
+string attack::defender_name(i18n_context_type i18n_context)
+{
+    if (attacker == defender)
+        return actor_pronoun(attacker, attacker_visible, i18n_context);
+    else
+        return def_name(i18n_context);
 }
 
 int attack::player_stat_modify_damage(int damage)

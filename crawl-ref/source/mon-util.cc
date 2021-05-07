@@ -2144,7 +2144,7 @@ string mon_attack_name(attack_type attack, bool with_object)
     }
 }
 
-string mon_attack_name(attack_type attack, i18n_context i18n_context, bool with_object)
+string mon_attack_name(attack_type attack, i18n_context_type i18n_context, bool with_object)
 {
     static const char *attack_types[] =
     {
@@ -3247,7 +3247,7 @@ string mons_type_name(monster_type mc, description_level_type desc)
     return result;
 }
 
-string mons_type_name(monster_type mc, i18n_context i18n_context)
+string mons_type_name(monster_type mc, i18n_context_type i18n_context)
 {
     string monster;
     I18N_CONTEXT_NAME;
@@ -4048,6 +4048,14 @@ const char *mons_pronoun(monster_type mon_type, pronoun_type variant,
     const gender_type gender = !visible ? GENDER_NEUTER
                                         : mons_class_gender(mon_type);
     return decline_pronoun(gender, variant);
+}
+
+const char *mons_pronoun(monster_type mon_type, i18n_context_type i18n_context,
+                         bool visible)
+{
+    const gender_type gender = !visible ? GENDER_NEUTER
+                                        : mons_class_gender(mon_type);
+    return decline_pronoun(gender, i18n_context);
 }
 
 // XXX: this is awful and should not exist

@@ -2248,7 +2248,7 @@ static string _invalid_monster_str(monster_type type)
     return str;
 }
 
-static string _invalid_monster_str(monster_type type, i18n_context i18n_context)
+static string _invalid_monster_str(monster_type type, i18n_context_type i18n_context)
 {
     string type_string;
     I18N_CONTEXT_NAME;
@@ -2345,7 +2345,7 @@ static string _mon_special_name(const monster& mon, description_level_type desc,
     return "";
 }
 
-static string _mon_special_name(const monster& mon, i18n_context i18n_context,
+static string _mon_special_name(const monster& mon, i18n_context_type i18n_context,
                                 bool force_seen)
 {
     if (i18n_context == I18NC_EMPTY)
@@ -2369,7 +2369,7 @@ static string _mon_special_name(const monster& mon, i18n_context i18n_context,
     return "";
 }
 
-string monster::name(i18n_context i18n_context, bool force_vis) const
+string monster::name(i18n_context_type i18n_context, bool force_vis) const
 {
     string s = _mon_special_name(*this, i18n_context, force_vis);
     if (!s.empty() || i18n_context == I18NC_EMPTY)
@@ -2439,6 +2439,17 @@ string monster::pronoun(pronoun_type pro, bool force_visible) const
                                pro);
     }
     return mons_pronoun(type, pro, seen);
+}
+
+string monster::pronoun(i18n_context_type i18n_context, bool force_visible) const
+{
+    const bool seen = force_visible || you.can_see(*this);
+    if (seen && props.exists(MON_GENDER_KEY))
+    {
+        return decline_pronoun((gender_type)props[MON_GENDER_KEY].get_int(),
+                               i18n_context);
+    }
+    return mons_pronoun(type, i18n_context, seen);
 }
 
 bool monster::pronoun_plurality(bool force_visible) const

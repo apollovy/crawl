@@ -208,7 +208,7 @@ monster *monster_at(const coord_def &pos);
 
 // this is the old moname()
 string mons_type_name(monster_type type, description_level_type desc);
-string mons_type_name(monster_type type, i18n_context i18n_context);
+string mons_type_name(monster_type type, i18n_context_type i18n_context);
 
 bool give_monster_proper_name(monster& mon, bool orcs_only = true);
 
@@ -251,7 +251,7 @@ bool mons_invuln_will(const monster& mon);
 
 mon_attack_def mons_attack_spec(const monster& mon, int attk_number, bool base_flavour = true);
 string mon_attack_name(attack_type attack, bool with_object = true);
-string mon_attack_name(attack_type attack, i18n_context i18n_context, bool with_object = true);
+string mon_attack_name(attack_type attack, i18n_context_type i18n_context, bool with_object = true);
 bool is_plain_attack_type(attack_type attack);
 bool flavour_triggers_damageless(attack_flavour flavour);
 int flavour_damage(attack_flavour flavour, int HD, bool random = true);
@@ -365,6 +365,8 @@ bool mons_has_incapacitating_ranged_attack(const monster& mon, const actor& foe)
 
 gender_type mons_class_gender(monster_type mc);
 const char *mons_pronoun(monster_type mon_type, pronoun_type variant,
+                         bool visible = true);
+const char *mons_pronoun(monster_type mon_type, i18n_context_type i18n_context,
                          bool visible = true);
 
 bool mons_aligned(const actor *m1, const actor *m2);
