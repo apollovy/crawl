@@ -200,14 +200,6 @@ enum monster_info_flags
     NUM_MB_FLAGS
 };
 
-enum i18n_monster_context {
-    I18N_M_NO_CONTEXT,
-};
-
-static string i18n_monster_context_names[] = {
-    "",
-};
-
 struct monster_info_base
 {
     coord_def pos;
@@ -331,7 +323,9 @@ struct monster_info : public monster_info_base
     bool has_proper_name() const;
     string pluralised_name(bool fullname = true) const;
     string common_name(description_level_type desc = DESC_PLAIN) const;
+    string common_name(i18n_context i18n_context) const;
     string proper_name(description_level_type desc = DESC_PLAIN) const;
+    string proper_name(i18n_context i18n_context) const;
     string full_name(description_level_type desc = DESC_PLAIN) const;
 
     vector<string> attributes() const;
@@ -410,8 +404,7 @@ struct monster_info : public monster_info_base
     bool debuffable() const;
 
 protected:
-    string _core_name(i18n_monster_context i18n_context=I18N_M_NO_CONTEXT) const;
-    string _base_name() const;
+    string _core_name(i18n_context i18n_context) const;
     string _apply_adjusted_description(description_level_type desc, const string& s) const;
 };
 

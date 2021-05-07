@@ -42,6 +42,7 @@
 #include "tag-version.h"
 #include "transform.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 /*
  **************************************************
@@ -338,6 +339,11 @@ string attack::actor_name(const actor *a, description_level_type desc,
     return actor_visible ? a->name(desc) : anon_name(desc);
 }
 
+string attack::actor_name(const actor *a, bool actor_visible, i18n_context i18n_context)
+{
+    return actor_visible ? a->name(i18n_context) : anon_name(i18n_context);
+}
+
 /* Returns an actor's pronoun
  *
  * Takes into account actor visibility
@@ -368,6 +374,11 @@ string attack::anon_name(description_level_type desc)
     default:
         return "something";
     }
+}
+
+string attack::anon_name(i18n_context i18n_context)
+{
+    return I18(i18n_context, "something");
 }
 
 /* Returns an anonymous actor's pronoun
@@ -1013,6 +1024,12 @@ string attack::atk_name(description_level_type desc)
 {
     return actor_name(attacker, desc, attacker_visible);
 }
+
+string attack::atk_name(i18n_context i18n_context)
+{
+    return actor_name(attacker, attacker_visible, i18n_context);
+}
+
 
 /* Returns the defender's name
  *

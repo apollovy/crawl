@@ -340,14 +340,49 @@ static string _number_in_words(unsigned num, unsigned period)
                                   : ""));
 }
 
+// FIXME: this is a copy-paste, but I bet it's not i18n-friendly
+static string _number_in_words(unsigned num, unsigned period, i18n_context i18n_context)
+{
+    I18N_CONTEXT_NAME;
+    static const char * const periods[] = {
+        "", __(i18n_cname, " thousand"), __(i18n_cname, " million"),
+        __(i18n_cname, " billion"), __(i18n_cname, " trillion")
+    };
+
+    ASSERT(period < ARRAYSZ(periods));
+
+    // Handle "eighteen million trillion", should unsigned go that high.
+    if (period == ARRAYSZ(periods) - 1)
+        return _number_in_words(num, 0) + periods[period];
+
+    unsigned thousands = num % 1000, rest = num / 1000;
+    if (!rest && !thousands)
+        return __(i18n_cname, "zero");
+
+    return _join_strings((rest? _number_in_words(rest, period + 1) : ""),
+                        (thousands? _hundreds_in_words(thousands)
+                                    + periods[period]
+                                  : ""));
+}
+
 string number_in_words(unsigned num)
 {
     return _number_in_words(num, 0);
 }
 
+string number_in_words(unsigned num, i18n_context i18n_context)
+{
+    return _number_in_words(num, 0, i18n_context);
+}
+
 static string _number_to_string(unsigned number, bool in_words)
 {
     return in_words ? number_in_words(number) : to_string(number);
+}
+
+static string _number_to_string(unsigned number, bool in_words, i18n_context i18n_context)
+{
+    return in_words ? number_in_words(number, i18n_context) : to_string(number);
 }
 
 // Naively prefix A/an to a noun.
@@ -396,6 +431,16 @@ string apply_description(description_level_type desc, const string &name,
     default:
         return name;
     }
+}
+
+string apply_description(i18n_context i18n_context, const string &name,
+                         int quantity, bool in_words)
+{
+    return quantity > 1 ? make_stringf(
+            I18(i18n_context, "%s%s"),
+            _number_to_string(quantity, in_words, i18n_context).c_str(),
+            name.c_str()
+    ) : name;
 }
 
 string thing_do_grammar(description_level_type dtype, string desc,

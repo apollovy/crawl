@@ -456,6 +456,11 @@ string player::name(description_level_type dt, bool, bool) const
     }
 }
 
+string player::name(i18n_context i18n_context, bool) const
+{
+    return I18(i18n_context, "you");
+}
+
 string player::pronoun(pronoun_type pro, bool /*force_visible*/) const
 {
     return decline_pronoun(GENDER_YOU, pro);

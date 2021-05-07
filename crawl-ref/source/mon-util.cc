@@ -2144,6 +2144,59 @@ string mon_attack_name(attack_type attack, bool with_object)
     }
 }
 
+string mon_attack_name(attack_type attack, i18n_context i18n_context, bool with_object)
+{
+    static const char *attack_types[] =
+    {
+        "hit",         // including weapon attacks
+        "bite",
+        "sting",
+
+        // spore
+        "release spores at",
+
+        "touch",
+        "engulf",
+        "claw",
+        "peck",
+        "headbutt",
+        "punch",
+        "kick",
+        "tentacle-slap",
+        "tail-slap",
+        "gore",
+        "constrict",
+        "trample",
+        "trunk-slap",
+#if TAG_MAJOR_VERSION == 34
+        "snap closed at",
+        "splash",
+#endif
+        "pounce on",
+#if TAG_MAJOR_VERSION == 34
+        "sting",
+#endif
+        "hit, bite, peck, or gore", // AT_CHERUB
+#if TAG_MAJOR_VERSION == 34
+        "hit", // AT_SHOOT
+#endif
+        "hit", // AT_WEAP_ONLY,
+        "hit or gore", // AT_RANDOM
+    };
+    COMPILE_CHECK(ARRAYSZ(attack_types) == NUM_ATTACK_TYPES - AT_FIRST_ATTACK);
+
+    const int verb_index = attack - AT_FIRST_ATTACK;
+    ASSERT(verb_index < (int)ARRAYSZ(attack_types));
+
+    if (with_object)
+        return I18(i18n_context, attack_types[verb_index]);
+    else
+    {
+        return I18(i18n_context, replace_all(replace_all(attack_types[verb_index], " at", ""),
+                                             " on", "").c_str());
+    }
+}
+
 /**
  * Is this attack flavour 'plain'? A plain attack flavour doesn't imply the
  * target will be affected in any particular way beyond damage.
@@ -3192,6 +3245,46 @@ string mons_type_name(monster_type mc, description_level_type desc)
     }
 
     return result;
+}
+
+string mons_type_name(monster_type mc, i18n_context i18n_context)
+{
+    string monster;
+    I18N_CONTEXT_NAME;
+
+    switch (mc)
+    {
+    case RANDOM_MONSTER:
+        monster = __(i18n_cname, "random monster");
+    case RANDOM_DRACONIAN:
+        monster = __(i18n_cname, "random draconian");
+    case RANDOM_BASE_DRACONIAN:
+        monster = __(i18n_cname, "random base draconian");
+    case RANDOM_NONBASE_DRACONIAN:
+        monster = __(i18n_cname, "random nonbase draconian");
+    case RANDOM_DEMONSPAWN:
+        monster = __(i18n_cname, "random demonspawn");
+    case RANDOM_BASE_DEMONSPAWN:
+        monster = __(i18n_cname, "random base demonspawn");
+    case RANDOM_NONBASE_DEMONSPAWN:
+        monster = __(i18n_cname, "random nonbase demonspawn");
+    case WANDERING_MONSTER:
+        monster = __(i18n_cname, "wandering monster");
+    default:
+        monster = "";
+    }
+
+    const monsterentry *me = get_monster_data(mc);
+    string invalid;
+    if (me == nullptr)
+        invalid = make_stringf(
+                __(i18n_cname, "invalid monster_type %d"),
+                mc
+        );
+    else
+        invalid = __(i18n_cname, me->name);
+
+    return make_stringf("%s%s", monster.c_str(), invalid.c_str());
 }
 
 static string _get_proper_monster_name(const monster& mon)

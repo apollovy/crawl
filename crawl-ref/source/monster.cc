@@ -2248,6 +2248,64 @@ static string _invalid_monster_str(monster_type type)
     return str;
 }
 
+static string _invalid_monster_str(monster_type type, i18n_context i18n_context)
+{
+    string type_string;
+    I18N_CONTEXT_NAME;
+
+    switch (type)
+    {
+    case NUM_MONSTERS:
+        type_string = __(i18n_cname, "NUM_MONSTERS");
+    case MONS_NO_MONSTER:
+        type_string = __(i18n_cname, "MONS_NO_MONSTER");
+    case MONS_PLAYER:
+        type_string = __(i18n_cname, "MONS_PLAYER");
+    case RANDOM_DRACONIAN:
+        type_string = __(i18n_cname, "RANDOM_DRACONIAN");
+    case RANDOM_BASE_DRACONIAN:
+        type_string = __(i18n_cname, "RANDOM_BASE_DRACONIAN");
+    case RANDOM_NONBASE_DRACONIAN:
+        type_string = __(i18n_cname, "RANDOM_NONBASE_DRACONIAN");
+    case WANDERING_MONSTER:
+        type_string = __(i18n_cname, "WANDERING_MONSTER");
+    default:
+        type_string = "";
+    }
+
+    string num_monsters_overhead;
+    if (type < 0)
+        num_monsters_overhead = "";
+    else if (type > NUM_MONSTERS)
+        num_monsters_overhead = make_stringf(
+                __(i18n_cname, " (NUM_MONSTERS + %d)"),
+                int (NUM_MONSTERS - type)
+        );
+    else {
+        int i;
+        monster_type new_type;
+        for (i = 0; true; i++) {
+            new_type = (monster_type) (((int) type) - i);
+
+            if (invalid_monster_type(new_type))
+                continue;
+            break;
+        }
+        num_monsters_overhead = make_stringf(
+                " (%s + %d)",
+                mons_type_name(new_type, i18n_context).c_str(),
+                i
+        );
+    }
+    return make_stringf(
+            __(i18n_cname, "%s %s#%d%s"),
+            __(i18n_cname, "INVALID MONSTER"),
+            type_string.c_str(),
+            (int) type,
+            num_monsters_overhead.c_str()
+    );
+}
+
 static string _mon_special_name(const monster& mon, description_level_type desc,
                                 bool force_seen)
 {
@@ -2285,6 +2343,49 @@ static string _mon_special_name(const monster& mon, description_level_type desc,
     }
 
     return "";
+}
+
+static string _mon_special_name(const monster& mon, i18n_context i18n_context,
+                                bool force_seen)
+{
+    if (i18n_context == I18NC_EMPTY)
+        return "";
+
+    I18N_CONTEXT_NAME;
+    const bool arena_submerged = crawl_state.game_is_arena() && !force_seen
+                                     && mon.submerged();
+
+    if (mon.type == MONS_NO_MONSTER)
+        return __(i18n_cname, "DEAD MONSTER");
+    else if (mon.mid == MID_YOU_FAULTLESS)
+        return __(i18n_cname, "INVALID YOU_FAULTLESS");
+    else if (invalid_monster_type(mon.type) && mon.type != MONS_PROGRAM_BUG)
+        return _invalid_monster_str(mon.type, i18n_context);
+
+    // Handle non-visible case first.
+    if (!force_seen && !mon.observable() && !arena_submerged)
+        return __(i18n_cname, "something");
+
+    return "";
+}
+
+string monster::name(i18n_context i18n_context, bool force_vis) const
+{
+    string s = _mon_special_name(*this, i18n_context, force_vis);
+    if (!s.empty() || i18n_context == I18NC_EMPTY)
+        return s;
+
+    monster_info mi(this, MILEV_NAME);
+    // i.e. to produce "the Maras" instead of just "Maras"
+    return mi.proper_name(i18n_context)
+#ifdef DEBUG_MONINDEX
+        // This is incredibly spammy, too bad for regular debug builds, but
+    // I keep re-adding this over and over during debugging.
+           + (Options.quiet_debug_messages[DIAG_MONINDEX]
+              ? string()
+              : make_stringf("«%d:%d»", mindex(), mid))
+#endif
+            ;
 }
 
 string monster::name(description_level_type desc, bool force_vis,

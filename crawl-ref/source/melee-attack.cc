@@ -2372,6 +2372,43 @@ string melee_attack::mons_attack_verb()
     return mon_attack_name(attk_type);
 }
 
+string melee_attack::mons_attack_verb(i18n_context i18n_context)
+{
+    I18N_CONTEXT_NAME;
+    static const char *klown_attack[] =
+    {
+        __(i18n_cname, "hit"),
+        __(i18n_cname, "poke"),
+        __(i18n_cname, "prod"),
+        __(i18n_cname, "flog"),
+        __(i18n_cname, "pound"),
+        __(i18n_cname, "slap"),
+        __(i18n_cname, "tickle"),
+        __(i18n_cname, "defenestrate"),
+        __(i18n_cname, "sucker-punch"),
+        __(i18n_cname, "elbow"),
+        __(i18n_cname, "pinch"),
+        __(i18n_cname, "strangle-hug"),
+        __(i18n_cname, "squeeze"),
+        __(i18n_cname, "tease"),
+        __(i18n_cname, "eye-gouge"),
+        __(i18n_cname, "karate-kick"),
+        __(i18n_cname, "headlock"),
+        __(i18n_cname, "wrestle"),
+        __(i18n_cname, "trip-wire"),
+        __(i18n_cname, "kneecap")
+    };
+
+    if (attacker->type == MONS_KILLER_KLOWN && attk_type == AT_HIT)
+        return RANDOM_ELEMENT(klown_attack);
+
+    //XXX: then why give them it in the first place?
+    if (attk_type == AT_TENTACLE_SLAP && mons_is_tentacle(attacker->type))
+        return __(i18n_cname, "slap");
+
+    return mon_attack_name(attk_type, i18n_context);
+}
+
 string melee_attack::mons_attack_desc()
 {
     if (!you.can_see(*attacker))
@@ -2398,9 +2435,9 @@ void melee_attack::announce_hit()
 
     if (attacker->is_monster())
     {
-        mprf("%s %s %s%s%s%s",
-             atk_name(DESC_THE).c_str(),
-             attacker->conj_verb(mons_attack_verb()).c_str(),
+        mprf(__("%(The jackal)s %(bites)s %(you)s%( for 10 damage)s%( with +3 dagger)s%(!!!)s", "%s %s %s%s%s%s"),
+             atk_name(I18NC_MELEE_ATTACKER).c_str(),
+             mons_attack_verb(I18NC_MELEE_ATTACK_VERB).c_str(),
              defender_name(true).c_str(),
              debug_damage_number().c_str(),
              mons_attack_desc().c_str(),

@@ -7,6 +7,7 @@
 #include "kill-method-type.h"
 #include "pronoun-type.h"
 #include "spl-util.h" // spschool type definition
+#include "crawl_locale.h"
 
 // Used throughout inheriting classes, define them here for universal access
 const int HIT_WEAK   = 7;
@@ -105,8 +106,10 @@ public:
     // Exact copies of their melee_attack predecessors
     string actor_name(const actor *a, description_level_type desc,
                       bool actor_visible);
+    string actor_name(const actor *a, bool actor_visible, i18n_context i18n_context);
     string actor_pronoun(const actor *a, pronoun_type ptyp, bool actor_visible);
     string anon_name(description_level_type desc);
+    string anon_name(i18n_context i18n_context);
     string anon_pronoun(pronoun_type ptyp);
 
     // TODO: Definitely want to get rid of this, which we can't really do
@@ -183,6 +186,7 @@ protected:
     void stab_message();
 
     string atk_name(description_level_type desc);
+    string atk_name(i18n_context i18n_context);
     string def_name(description_level_type desc);
     string wep_name(description_level_type desc = DESC_YOUR,
                     iflags_t ignore_flags = ISFLAG_KNOW_PLUSES);

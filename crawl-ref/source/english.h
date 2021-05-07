@@ -11,6 +11,7 @@
 #include "enum.h"
 #include "gender-type.h"
 #include "pronoun-type.h"
+#include "crawl_locale.h"
 
 extern const char * const standard_plural_qualifiers[];
 
@@ -33,6 +34,8 @@ string article_a(const string &name, bool lowercase = true);
 // must pluralise the name if needed. The quantity is used to prefix the
 // name with a quantity if appropriate.
 string apply_description(description_level_type desc, const string &name,
+                         int quantity = 1, bool num_in_words = false);
+string apply_description(i18n_context i18n_context, const string &name,
                          int quantity = 1, bool num_in_words = false);
 
 string thing_do_grammar(description_level_type dtype, string desc,

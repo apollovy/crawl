@@ -6810,3 +6810,11 @@ msgstr "шакалу"
 msgctxt "The arrow%s misses goblin chief."
 msgid " barely"
 msgstr " едва"
+
+msgctxt "%s bites you for 10 damage with +3 dagger!!!"
+msgid "jackal"
+msgstr "шакал"
+
+msgctxt "The jackal %s you for 10 damage with +3 dagger!!!"
+msgid "bite"
+msgstr "кусает"

@@ -99,3 +99,7 @@ CRAWL_I18N_TEST_CASE_START("Test descriptions work")
         }
     }
 CRAWL_I18N_TEST_CASE_END("Test various i18n contexts")
+
+CRAWL_I18N_TEST_CASE_START("Test i18n context macros works as expected")
+    REQUIRE(i18n_cnames[I18NC_MELEE_ATTACKER] == "%s bites you for 10 damage with +3 dagger!!!");
+CRAWL_I18N_TEST_CASE_END("Test i18n context macros works as expected")
