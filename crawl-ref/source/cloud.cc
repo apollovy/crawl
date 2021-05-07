@@ -291,7 +291,7 @@ static const cloud_data clouds[] = {
       true,                                       // opacity
     },
     // CLOUD_EMBERS,
-    { "smoldering embers", "embers",
+    { "smouldering embers", "embers",
         ETC_SMOKE,
         { TILE_CLOUD_BLACK_SMOKE, CTVARY_NONE },
     },
@@ -958,7 +958,7 @@ bool actor_cloud_immune(const actor &act, cloud_type type)
         case CLOUD_MEPHITIC:
             return act.res_poison() > 0 || act.is_unbreathing();
         case CLOUD_POISON:
-            return act.res_poison() > 0 || act.is_unbreathing();
+            return act.res_poison() > 0;
         case CLOUD_STEAM:
             return act.res_steam() > 0;
         case CLOUD_MIASMA:
