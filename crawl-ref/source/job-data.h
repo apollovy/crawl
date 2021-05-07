@@ -3,8 +3,7 @@
 #include <vector>
 
 #include "tag-version.h"
-
-#define _(String) String
+#include "crawl_locale.h"
 
 using std::vector;
 
@@ -35,7 +34,7 @@ static const map<job_type, job_def> job_data =
 {
 
 { JOB_ABYSSAL_KNIGHT, {
-    "AK", _("Abyssal Knight"),
+    "AK", gettext_noop("Abyssal Knight"),
     4, 4, 4,
     { SP_HILL_ORC, SP_PALENTONGA, SP_TROLL, SP_MERFOLK, SP_BASE_DRACONIAN,
       SP_DEMONSPAWN, },
@@ -46,7 +45,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_AIR_ELEMENTALIST, {
-    "AE", _("Air Elementalist"),
+    "AE", gettext_noop("Air Elementalist"),
     0, 7, 5,
     { SP_DEEP_ELF, SP_TENGU, SP_BASE_DRACONIAN, SP_NAGA, SP_VINE_STALKER,
       SP_DJINNI, },
@@ -57,7 +56,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_ARCANE_MARKSMAN, {
-    "AM", _("Arcane Marksman"),
+    "AM", gettext_noop("Arcane Marksman"),
     2, 5, 5,
     { SP_FORMICID, SP_DEEP_ELF, SP_KOBOLD, SP_SPRIGGAN, SP_TROLL, },
     { "robe", "book of Debilitation" },
@@ -67,7 +66,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_ARTIFICER, {
-    "Ar", _("Artificer"),
+    "Ar", gettext_noop("Artificer"),
     4, 3, 5,
     { SP_DEEP_DWARF, SP_KOBOLD, SP_SPRIGGAN, SP_BASE_DRACONIAN, SP_DEMONSPAWN, },
     { "club", "leather armour", "wand of flame charges:15",
@@ -78,7 +77,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_BERSERKER, {
-    "Be", _("Berserker"),
+    "Be", gettext_noop("Berserker"),
     9, -1, 4,
     { SP_HILL_ORC, SP_OGRE, SP_MERFOLK, SP_MINOTAUR, SP_GARGOYLE, SP_PALENTONGA, },
     { "animal skin" },
@@ -87,7 +86,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_BRIGAND, {
-    "Br", _("Brigand"),
+    "Br", gettext_noop("Brigand"),
     3, 3, 6,
     { SP_TROLL, SP_SPRIGGAN, SP_DEMONSPAWN, SP_VAMPIRE, SP_VINE_STALKER, },
     { "dagger plus:2", "robe", "cloak", "dart ego:poisoned q:8",
@@ -98,7 +97,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_CHAOS_KNIGHT, {
-    "CK", _("Chaos Knight"),
+    "CK", gettext_noop("Chaos Knight"),
     4, 4, 4,
     { SP_HILL_ORC, SP_TROLL, SP_GNOLL, SP_MERFOLK, SP_MINOTAUR,
       SP_BASE_DRACONIAN, SP_DEMONSPAWN, },
@@ -109,7 +108,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_CONJURER, {
-    "Cj", _("Conjurer"),
+    "Cj", gettext_noop("Conjurer"),
     -1, 10, 3,
     { SP_DEEP_ELF, SP_NAGA, SP_TENGU, SP_BASE_DRACONIAN, SP_DEMIGOD, SP_DJINNI, },
     { "robe", "book of Conjurations" },
@@ -119,7 +118,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_EARTH_ELEMENTALIST, {
-    "EE", _("Earth Elementalist"),
+    "EE", gettext_noop("Earth Elementalist"),
     0, 7, 5,
     { SP_DEEP_ELF, SP_DEEP_DWARF, SP_SPRIGGAN, SP_GARGOYLE, SP_DEMIGOD,
       SP_GHOUL, SP_OCTOPODE, },
@@ -130,7 +129,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_ENCHANTER, {
-    "En", _("Enchanter"),
+    "En", gettext_noop("Enchanter"),
     0, 7, 5,
     { SP_DEEP_ELF, SP_FELID, SP_KOBOLD, SP_SPRIGGAN, SP_NAGA, SP_VAMPIRE, },
     { "dagger plus:1", "robe", "book of Maledictions" },
@@ -140,7 +139,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_FIGHTER, {
-    "Fi", _("Fighter"),
+    "Fi", gettext_noop("Fighter"),
     8, 0, 4,
     { SP_DEEP_DWARF, SP_HILL_ORC, SP_TROLL, SP_MINOTAUR, SP_GARGOYLE,
       SP_PALENTONGA, },
@@ -151,7 +150,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_FIRE_ELEMENTALIST, {
-    "FE", _("Fire Elementalist"),
+    "FE", gettext_noop("Fire Elementalist"),
     0, 7, 5,
     { SP_DEEP_ELF, SP_HILL_ORC, SP_NAGA, SP_TENGU, SP_DEMIGOD, SP_GARGOYLE,
       SP_DJINNI, },
@@ -162,7 +161,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_GLADIATOR, {
-    "Gl", _("Gladiator"),
+    "Gl", gettext_noop("Gladiator"),
     6, 0, 6,
     { SP_DEEP_DWARF, SP_HILL_ORC, SP_MERFOLK, SP_MINOTAUR, SP_GARGOYLE,
       SP_GNOLL, },
@@ -173,7 +172,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_HUNTER, {
-    "Hu", _("Hunter"),
+    "Hu", gettext_noop("Hunter"),
     4, 3, 5,
     { SP_HILL_ORC, SP_MINOTAUR, SP_GNOLL, SP_KOBOLD, SP_OGRE, SP_TROLL, },
     { "short sword", "leather armour" },
@@ -183,7 +182,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_ICE_ELEMENTALIST, {
-    "IE", _("Ice Elementalist"),
+    "IE", gettext_noop("Ice Elementalist"),
     0, 7, 5,
     { SP_MERFOLK, SP_NAGA, SP_BASE_DRACONIAN, SP_DEMIGOD,
       SP_GARGOYLE, SP_DJINNI, },
@@ -194,7 +193,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_DELVER, {
-    "De", _("Delver"),
+    "De", gettext_noop("Delver"),
     4, 2, 6,
     { SP_FELID, SP_SPRIGGAN, SP_KOBOLD, SP_VAMPIRE, SP_GNOLL },
     { "leather armour", "scroll of fog", "scroll of magic mapping",
@@ -204,7 +203,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_MONK, {
-    "Mo", _("Monk"),
+    "Mo", gettext_noop("Monk"),
     3, 2, 7,
     { SP_DEEP_DWARF, SP_HILL_ORC, SP_TROLL, SP_PALENTONGA, SP_MERFOLK,
       SP_GARGOYLE, SP_DEMONSPAWN, },
@@ -215,7 +214,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_NECROMANCER, {
-    "Ne", _("Necromancer"),
+    "Ne", gettext_noop("Necromancer"),
     0, 7, 5,
     { SP_DEEP_ELF, SP_DEEP_DWARF, SP_HILL_ORC, SP_DEMONSPAWN, SP_MUMMY,
       SP_VAMPIRE, },
@@ -226,7 +225,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_SUMMONER, {
-    "Su", _("Summoner"),
+    "Su", gettext_noop("Summoner"),
     0, 7, 5,
     { SP_DEEP_ELF, SP_HILL_ORC, SP_VINE_STALKER, SP_MERFOLK, SP_TENGU,
       SP_VAMPIRE, },
@@ -237,7 +236,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_TRANSMUTER, {
-    "Tm", _("Transmuter"),
+    "Tm", gettext_noop("Transmuter"),
     2, 5, 5,
     { SP_NAGA, SP_MERFOLK, SP_BASE_DRACONIAN, SP_DEMIGOD, SP_DEMONSPAWN,
       SP_TROLL, },
@@ -248,7 +247,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_VENOM_MAGE, {
-    "VM", _("Venom Mage"),
+    "VM", gettext_noop("Venom Mage"),
     0, 7, 5,
     { SP_DEEP_ELF, SP_SPRIGGAN, SP_NAGA, SP_MERFOLK, SP_TENGU, SP_DJINNI,
       SP_DEMONSPAWN, },
@@ -259,7 +258,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_WANDERER, {
-    "Wn", _("Wanderer"),
+    "Wn", gettext_noop("Wanderer"),
     0, 0, 0, // Randomised
     { SP_HILL_ORC, SP_SPRIGGAN, SP_GNOLL, SP_MERFOLK, SP_BASE_DRACONIAN,
       SP_HUMAN, SP_DEMONSPAWN, },
@@ -269,7 +268,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_WARPER, {
-    "Wr", _("Warper"),
+    "Wr", gettext_noop("Warper"),
     3, 5, 4,
     { SP_FELID, SP_DEEP_DWARF, SP_SPRIGGAN, SP_PALENTONGA, SP_BASE_DRACONIAN, },
     { "leather armour", "book of Spatial Translocations", "scroll of blinking",
@@ -281,7 +280,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_WIZARD, {
-    "Wz", _("Hedge Wizard"),
+    "Wz", gettext_noop("Hedge Wizard"),
     2, 6, 4,
     { SP_DEEP_ELF, SP_NAGA, SP_BASE_DRACONIAN, SP_OCTOPODE, SP_HUMAN,
       SP_DJINNI, },
@@ -292,7 +291,7 @@ static const map<job_type, job_def> job_data =
 } },
 #if TAG_MAJOR_VERSION == 34
 { JOB_SKALD, {
-    "Sk", _("Skald"),
+    "Sk", gettext_noop("Skald"),
     0, 0, 0,
     { },
     { },
@@ -301,7 +300,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_DEATH_KNIGHT, {
-    "DK", _("Death Knight"),
+    "DK", gettext_noop("Death Knight"),
     0, 0, 0,
     { },
     { },
@@ -310,7 +309,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_HEALER, {
-    "He", _("Healer"),
+    "He", gettext_noop("Healer"),
     0, 0, 0,
     { },
     { },
@@ -319,7 +318,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_JESTER, {
-    "Jr", _("Jester"),
+    "Jr", gettext_noop("Jester"),
     0, 0, 0,
     { },
     { },
@@ -328,7 +327,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_PRIEST, {
-    "Pr", _("Priest"),
+    "Pr", gettext_noop("Priest"),
     0, 0, 0,
     { },
     { },
@@ -337,7 +336,7 @@ static const map<job_type, job_def> job_data =
 } },
 
 { JOB_STALKER, {
-    "St", _("Stalker"),
+    "St", gettext_noop("Stalker"),
     0, 0, 0,
     { },
     { },

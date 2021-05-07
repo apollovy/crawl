@@ -53,8 +53,7 @@
 #include "unicode.h"
 #include "unwind.h"
 #include "viewgeom.h"
-
-#define _(String) String
+#include "crawl_locale.h"
 
 static bool _is_consonant(char let);
 static char _random_vowel();
@@ -404,77 +403,77 @@ const char* missile_brand_name(const item_def &item, mbn_type t)
 
 static const char *weapon_brands_terse[] =
 {
-    "", _("flame"), _("freeze"), _("holy"), _("elec"),
+    "", gettext_noop("flame"), gettext_noop("freeze"), gettext_noop("holy"), gettext_noop("elec"),
 #if TAG_MAJOR_VERSION == 34
-    _("obsolete"), _("obsolete"),
+    gettext_noop("obsolete"), gettext_noop("obsolete"),
 #endif
-    _("venom"), _("protect"), _("drain"), _("speed"), _("vorpal"),
+    gettext_noop("venom"), gettext_noop("protect"), gettext_noop("drain"), gettext_noop("speed"), gettext_noop("vorpal"),
 #if TAG_MAJOR_VERSION == 34
-    _("obsolete"), _("obsolete"),
+    gettext_noop("obsolete"), gettext_noop("obsolete"),
 #endif
-    _("vamp"), _("pain"), _("antimagic"), _("distort"),
+    gettext_noop("vamp"), gettext_noop("pain"), gettext_noop("antimagic"), gettext_noop("distort"),
 #if TAG_MAJOR_VERSION == 34
-    _("obsolete"), _("obsolete"),
+    gettext_noop("obsolete"), gettext_noop("obsolete"),
 #endif
-    _("chaos"),
+    gettext_noop("chaos"),
 #if TAG_MAJOR_VERSION == 34
-    _("evade"), _("confuse"),
+    gettext_noop("evade"), gettext_noop("confuse"),
 #endif
-    _("penet"), _("reap"), _("spect"), _("vorpal"), _("acid"),
+    gettext_noop("penet"), gettext_noop("reap"), gettext_noop("spect"), gettext_noop("vorpal"), gettext_noop("acid"),
 #if TAG_MAJOR_VERSION > 34
-    _("confuse"),
+    gettext_noop("confuse"),
 #endif
-    _("debug"),
+    gettext_noop("debug"),
 };
 
 static const char *weapon_brands_verbose[] =
 {
-    "", _("flaming"), _("freezing"), _("holy wrath"), _("electrocution"),
+    "", gettext_noop("flaming"), gettext_noop("freezing"), gettext_noop("holy wrath"), gettext_noop("electrocution"),
 #if TAG_MAJOR_VERSION == 34
-    _("orc slaying"), _("dragon slaying"),
+    gettext_noop("orc slaying"), gettext_noop("dragon slaying"),
 #endif
-    _("venom"), _("protection"), _("draining"), _("speed"), _("vorpality"),
+    gettext_noop("venom"), gettext_noop("protection"), gettext_noop("draining"), gettext_noop("speed"), gettext_noop("vorpality"),
 #if TAG_MAJOR_VERSION == 34
-    _("flame"), _("frost"),
+    gettext_noop("flame"), gettext_noop("frost"),
 #endif
-    _("vampirism"), _("pain"), _("antimagic"), _("distortion"),
+    gettext_noop("vampirism"), gettext_noop("pain"), gettext_noop("antimagic"), gettext_noop("distortion"),
 #if TAG_MAJOR_VERSION == 34
-    _("reaching"), _("returning"),
+    gettext_noop("reaching"), gettext_noop("returning"),
 #endif
-    _("chaos"),
+    gettext_noop("chaos"),
 #if TAG_MAJOR_VERSION == 34
-    _("evasion"), _("confusion"),
+    gettext_noop("evasion"), gettext_noop("confusion"),
 #endif
-    _("penetration"), _("reaping"), _("spectralizing"), _("vorpal"), _("acid"),
+    gettext_noop("penetration"), gettext_noop("reaping"), gettext_noop("spectralizing"), gettext_noop("vorpal"), gettext_noop("acid"),
 #if TAG_MAJOR_VERSION > 34
-    _("confusion"),
+    gettext_noop("confusion"),
 #endif
-    _("debug"),
+    gettext_noop("debug"),
 };
 
 static const char *weapon_brands_adj[] =
 {
-    "", _("flaming"), _("freezing"), _("holy"), _("electric"),
+    "", gettext_noop("flaming"), gettext_noop("freezing"), gettext_noop("holy"), gettext_noop("electric"),
 #if TAG_MAJOR_VERSION == 34
-    _("orc-killing"), _("dragon-slaying"),
+    gettext_noop("orc-killing"), gettext_noop("dragon-slaying"),
 #endif
-    _("venomous"), _("protective"), _("draining"), _("fast"), _("vorpal"),
+    gettext_noop("venomous"), gettext_noop("protective"), gettext_noop("draining"), gettext_noop("fast"), gettext_noop("vorpal"),
 #if TAG_MAJOR_VERSION == 34
-    _("flaming"), _("freezing"),
+    gettext_noop("flaming"), gettext_noop("freezing"),
 #endif
-    _("vampiric"), _("painful"), _("antimagic"), _("distorting"),
+    gettext_noop("vampiric"), gettext_noop("painful"), gettext_noop("antimagic"), gettext_noop("distorting"),
 #if TAG_MAJOR_VERSION == 34
-    _("reaching"), _("returning"),
+    gettext_noop("reaching"), gettext_noop("returning"),
 #endif
-    _("chaotic"),
+    gettext_noop("chaotic"),
 #if TAG_MAJOR_VERSION == 34
-    _("evasive"), _("confusing"),
+    gettext_noop("evasive"), gettext_noop("confusing"),
 #endif
-    _("penetrating"), _("reaping"), _("spectral"), _("vorpal"), _("acidic"),
+    gettext_noop("penetrating"), gettext_noop("reaping"), gettext_noop("spectral"), gettext_noop("vorpal"), gettext_noop("acidic"),
 #if TAG_MAJOR_VERSION > 34
-    _("confusing"),
+    gettext_noop("confusing"),
 #endif
-    _("debug"),
+    gettext_noop("debug"),
 };
 
 static const set<brand_type> brand_prefers_adj =

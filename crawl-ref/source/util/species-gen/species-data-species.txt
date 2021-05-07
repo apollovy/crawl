@@ -1,7 +1,7 @@
 {tag_major_version_opener}
 {{ {enum}, {{
     "{short_name}",
-    _("{name}"), _({adjective}), _({genus}),
+    gettext_noop("{name}"), gettext_noop({adjective}), gettext_noop({genus}),
     {species_flags},
     {xp}, {hp}, {mp}, {mr},
     {monster_name},

@@ -6,10 +6,10 @@
 #pragma once
 
 #include "god-type.h"
+#include "crawl_locale.h"
 
 #define MUTANT_BEAST_TIER "mutant_beast_tier"
 #define MUTANT_BEAST_FACETS "mutant_beast_facets"
-#define _(String) String
 
 /// types of mutant beast (MONS_MUTANT_BEAST)
 enum beast_facet
@@ -45,12 +45,12 @@ COMPILE_CHECK(ARRAYSZ(beast_tiers) == NUM_BEAST_TIERS);
 
 /// names of beast facets
 const string mutant_beast_facet_names[] = {
-    _("buggy"), _("sting"), _("bat"), _("fire"), _("weird"), _("shock"), _("ox"),
+    gettext_noop("buggy"), gettext_noop("sting"), gettext_noop("bat"), gettext_noop("fire"), gettext_noop("weird"), gettext_noop("shock"), gettext_noop("ox"),
 };
 COMPILE_CHECK(ARRAYSZ(mutant_beast_facet_names) == NUM_BEAST_FACETS);
 
 /// names of beast tiers
 const char* const mutant_beast_tier_names[] = {
-    _("buggy"), _("larval"), _("juvenile"), _("mature"), _("elder"), _("primal"),
+    gettext_noop("buggy"), gettext_noop("larval"), gettext_noop("juvenile"), gettext_noop("mature"), gettext_noop("elder"), gettext_noop("primal"),
 };
 COMPILE_CHECK(ARRAYSZ(mutant_beast_tier_names) == NUM_BEAST_TIERS);

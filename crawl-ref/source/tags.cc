@@ -91,8 +91,7 @@
 #include "transform.h"
 #include "unwind.h"
 #include "version.h"
-
-#define _(String) String
+#include "crawl_locale.h"
 
 vector<ghost_demon> global_ghosts; // only for reading/writing
 
@@ -2230,21 +2229,21 @@ static void _tag_construct_companions(writer &th)
 // Save versions 30-32.26 are readable but don't store the names.
 static const char* old_species[]=
 {
-    _("Human"), _("High Elf"), _("Deep Elf"), _("Sludge Elf"), _("Mountain Dwarf"), _("Halfling"),
-    _("Hill Orc"), _("Kobold"), _("Mummy"), _("Naga"), _("Ogre"), _("Troll"),
-    _("Red Draconian"), _("White Draconian"), _("Green Draconian"), _("Yellow Draconian"),
-    _("Grey Draconian"), _("Black Draconian"), _("Purple Draconian"), _("Mottled Draconian"),
-    _("Pale Draconian"), _("Draconian"), _("Centaur"), _("Demigod"), _("Spriggan"), _("Minotaur"),
-    _("Demonspawn"), _("Ghoul"), _("Tengu"), _("Merfolk"), _("Vampire"), _("Deep Dwarf"), _("Felid"),
-    _("Octopode"),
+    gettext_noop("Human"), gettext_noop("High Elf"), gettext_noop("Deep Elf"), gettext_noop("Sludge Elf"), gettext_noop("Mountain Dwarf"), gettext_noop("Halfling"),
+    gettext_noop("Hill Orc"), gettext_noop("Kobold"), gettext_noop("Mummy"), gettext_noop("Naga"), gettext_noop("Ogre"), gettext_noop("Troll"),
+    gettext_noop("Red Draconian"), gettext_noop("White Draconian"), gettext_noop("Green Draconian"), gettext_noop("Yellow Draconian"),
+    gettext_noop("Grey Draconian"), gettext_noop("Black Draconian"), gettext_noop("Purple Draconian"), gettext_noop("Mottled Draconian"),
+    gettext_noop("Pale Draconian"), gettext_noop("Draconian"), gettext_noop("Centaur"), gettext_noop("Demigod"), gettext_noop("Spriggan"), gettext_noop("Minotaur"),
+    gettext_noop("Demonspawn"), gettext_noop("Ghoul"), gettext_noop("Tengu"), gettext_noop("Merfolk"), gettext_noop("Vampire"), gettext_noop("Deep Dwarf"), gettext_noop("Felid"),
+    gettext_noop("Octopode"),
 };
 
 static const char* old_gods[]=
 {
-    "", _("Zin"), _("The Shining One"), _("Kikubaaqudgha"), _("Yredelemnul"), _("Xom"),
-    _("Vehumet"), _("Okawaru"), _("Makhleb"), _("Sif Muna"), _("Trog"), _("Nemelex Xobeh"),
-    _("Elyvilon"), _("Lugonu"), _("Beogh"), _("Jiyva"), _("Fedhas"), _("Cheibriados"),
-    _("Ashenzari"),
+    "", gettext_noop("Zin"), gettext_noop("The Shining One"), gettext_noop("Kikubaaqudgha"), gettext_noop("Yredelemnul"), gettext_noop("Xom"),
+    gettext_noop("Vehumet"), gettext_noop("Okawaru"), gettext_noop("Makhleb"), gettext_noop("Sif Muna"), gettext_noop("Trog"), gettext_noop("Nemelex Xobeh"),
+    gettext_noop("Elyvilon"), gettext_noop("Lugonu"), gettext_noop("Beogh"), gettext_noop("Jiyva"), gettext_noop("Fedhas"), gettext_noop("Cheibriados"),
+    gettext_noop("Ashenzari"),
 };
 
 void tag_read_char(reader &th, uint8_t /*format*/, uint8_t major, uint8_t minor)
