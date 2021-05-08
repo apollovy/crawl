@@ -281,10 +281,10 @@ const char *decline_pronoun(gender_type gender, pronoun_type variant)
     return _pronoun_declension[gender][variant];
 }
 
-const char *decline_pronoun(gender_type gender, i18n_context_type i18n_context)
+const char *decline_pronoun(gender_type gender, actor_i18n_context_type i18n_context)
 {
     // TODO: remove all but the first entries in that array after i18n finishes
-    return I18(i18n_context, _pronoun_declension[gender][0]);
+    return translate_actor(i18n_context, _pronoun_declension[gender][0]);
 }
 
 static string _tens_in_words(unsigned num)
@@ -347,9 +347,9 @@ static string _number_in_words(unsigned num, unsigned period)
 }
 
 // FIXME: this is a copy-paste, but I bet it's not i18n-friendly
-static string _number_in_words(unsigned num, unsigned period, i18n_context_type i18n_context)
+static string _number_in_words(unsigned num, unsigned period, actor_i18n_context_type i18n_context)
 {
-    I18N_CONTEXT_NAME;
+    ACTOR_I18N_CNAME;
     static const char * const periods[] = {
         "", __(i18n_cname, " thousand"), __(i18n_cname, " million"),
         __(i18n_cname, " billion"), __(i18n_cname, " trillion")
@@ -376,7 +376,7 @@ string number_in_words(unsigned num)
     return _number_in_words(num, 0);
 }
 
-string number_in_words(unsigned num, i18n_context_type i18n_context)
+string number_in_words(unsigned num, actor_i18n_context_type i18n_context)
 {
     return _number_in_words(num, 0, i18n_context);
 }
@@ -386,7 +386,7 @@ static string _number_to_string(unsigned number, bool in_words)
     return in_words ? number_in_words(number) : to_string(number);
 }
 
-static string _number_to_string(unsigned number, bool in_words, i18n_context_type i18n_context)
+static string _number_to_string(unsigned number, bool in_words, actor_i18n_context_type i18n_context)
 {
     return in_words ? number_in_words(number, i18n_context) : to_string(number);
 }
@@ -439,11 +439,11 @@ string apply_description(description_level_type desc, const string &name,
     }
 }
 
-string apply_description(i18n_context_type i18n_context, const string &name,
+string apply_description(actor_i18n_context_type i18n_context, const string &name,
                          int quantity, bool in_words)
 {
     return quantity > 1 ? make_stringf(
-            I18(i18n_context, "%s%s"),
+            translate_actor(i18n_context, "%s%s"),
             _number_to_string(quantity, in_words, i18n_context).c_str(),
             name.c_str()
     ) : name;

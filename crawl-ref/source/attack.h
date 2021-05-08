@@ -106,19 +106,19 @@ public:
     // Exact copies of their melee_attack predecessors
     string actor_name(const actor *a, description_level_type desc,
                       bool actor_visible);
-    string actor_name(const actor *a, bool actor_visible, i18n_context_type i18n_context);
+    string actor_name(const actor *a, bool actor_visible, actor_i18n_context_type i18n_context);
     string actor_pronoun(const actor *a, pronoun_type ptyp, bool actor_visible);
-    string actor_pronoun(const actor *a, bool actor_visible, i18n_context_type i18n_context);
+    string actor_pronoun(const actor *a, bool actor_visible, actor_i18n_context_type i18n_context);
     string anon_name(description_level_type desc);
-    string anon_name(i18n_context_type i18n_context);
+    string anon_name(actor_i18n_context_type i18n_context);
     string anon_pronoun(pronoun_type ptyp);
-    string anon_pronoun(i18n_context_type i18n_context);
+    string anon_pronoun(actor_i18n_context_type i18n_context);
 
     // TODO: Definitely want to get rid of this, which we can't really do
     // until we refactor the whole pronoun / desc usage from these lowly
     // classes all the way up to monster/player (and actor) classes.
     string defender_name(bool allow_reflexive);
-    string defender_name(i18n_context_type i18n_context);
+    string defender_name(actor_i18n_context_type i18n_context);
 
 // Private Properties
     string aux_source;
@@ -189,9 +189,9 @@ protected:
     void stab_message();
 
     string atk_name(description_level_type desc);
-    string atk_name(i18n_context_type i18n_context);
+    string atk_name(actor_i18n_context_type i18n_context);
     string def_name(description_level_type desc);
-    string def_name(i18n_context_type i18n_context);
+    string def_name(actor_i18n_context_type i18n_context);
     string wep_name(description_level_type desc = DESC_YOUR,
                     iflags_t ignore_flags = ISFLAG_KNOW_PLUSES);
 

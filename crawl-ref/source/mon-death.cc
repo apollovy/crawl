@@ -1820,17 +1820,17 @@ item_def* monster_die(monster& mons, killer_type killer,
                     mprf(MSGCH_MONSTER_DAMAGE, MDAM_DEAD,
                          __("%(The jackal)s is %(blown up)s!", "%s is %s!"),
                          mons.name(I18NC_PLAYER_CONF_KILL_VICTIM).c_str(),
-                         exploded                        ? I18(I18NC_PLAYER_CONF_KILL_TYPE, "blown up") :
-                         wounded_damaged(targ_holy)      ? I18(I18NC_PLAYER_CONF_KILL_TYPE, "destroyed")
-                                                         : I18(I18NC_PLAYER_CONF_KILL_TYPE, "killed"));
+                         exploded ? translate_other(I18NC_PLAYER_CONF_KILL_TYPE, "blown up") :
+                         wounded_damaged(targ_holy)      ? translate_other(I18NC_PLAYER_CONF_KILL_TYPE, "destroyed")
+                                                         : translate_other(I18NC_PLAYER_CONF_KILL_TYPE, "killed"));
                 }
                 else
                 {
                     mprf(MSGCH_MONSTER_DAMAGE, MDAM_DEAD,
                          __("You %(kill)s %(a jackal)s", "You %s %s!"),
-                         exploded                        ? I18(I18NC_PLAYER_KILL_TYPE, "blow up") :
-                         wounded_damaged(targ_holy)      ? I18(I18NC_PLAYER_KILL_TYPE, "destroy")
-                                                         : I18(I18NC_PLAYER_KILL_TYPE, "kill"),
+                         exploded ? translate_other(I18NC_PLAYER_KILL_TYPE, "blow up") :
+                         wounded_damaged(targ_holy)      ? translate_other(I18NC_PLAYER_KILL_TYPE, "destroy")
+                                                         : translate_other(I18NC_PLAYER_KILL_TYPE, "kill"),
                          mons.name(I18NC_PLAYER_KILL_VICTIM).c_str());
                 }
                 // If this monster would otherwise give xp but didn't because

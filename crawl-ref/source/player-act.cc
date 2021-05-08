@@ -456,9 +456,9 @@ string player::name(description_level_type dt, bool, bool) const
     }
 }
 
-string player::name(i18n_context_type i18n_context, bool) const
+string player::name(actor_i18n_context_type i18n_context, bool) const
 {
-    return I18(i18n_context, "you");
+    return translate_actor(i18n_context, "you");
 }
 
 string player::pronoun(pronoun_type pro, bool /*force_visible*/) const
@@ -466,7 +466,7 @@ string player::pronoun(pronoun_type pro, bool /*force_visible*/) const
     return decline_pronoun(GENDER_YOU, pro);
 }
 
-string player::pronoun(i18n_context_type i18n_context, bool /*force_visible*/) const
+string player::pronoun(actor_i18n_context_type i18n_context, bool /*force_visible*/) const
 {
     return decline_pronoun(GENDER_YOU, i18n_context);
 }

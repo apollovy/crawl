@@ -715,12 +715,12 @@ string trap_name(trap_type trap)
     return "";
 }
 
-string trap_name(trap_type trap, i18n_context_type i18n_context)
+string trap_name(trap_type trap, other_i18n_context_type i18n_context)
 {
     COMPILE_CHECK(ARRAYSZ(trap_names) == NUM_TRAPS);
 
     if (trap >= 0 && trap < NUM_TRAPS)
-        return I18(i18n_context, trap_names[trap]);
+        return translate_other(i18n_context, trap_names[trap]);
     return "";
 }
 
@@ -740,9 +740,9 @@ string full_trap_name(trap_type trap)
     }
 }
 
-string full_trap_name(trap_type trap, i18n_context_type i18n_context)
+string full_trap_name(trap_type trap, other_i18n_context_type i18n_context)
 {
-    I18N_CONTEXT_NAME;
+    OTHER_I18N_CNAME;
     string basename = trap_name(trap, i18n_context);
 
     string suffix;

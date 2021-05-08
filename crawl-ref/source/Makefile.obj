@@ -29,6 +29,7 @@ coord-circle.o \
 coordit.o \
 corpse.o \
 crash.o \
+crawl_locale.o \
 ctest.o \
 dactions.o \
 database.o \

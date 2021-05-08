@@ -3154,9 +3154,9 @@ static string _base_feature_desc(dungeon_feature_type grid, trap_type trap)
 }
 
 static string _base_feature_desc(dungeon_feature_type grid, trap_type trap,
-                                 i18n_context_type i18n_context)
+                                 other_i18n_context_type i18n_context)
 {
-    I18N_CONTEXT_NAME;
+    ACTOR_I18N_CNAME;
     if (feat_is_trap(grid) && trap != NUM_TRAPS)
         return full_trap_name(trap, i18n_context);
 
@@ -3186,7 +3186,7 @@ string feature_description(dungeon_feature_type grid, trap_type trap,
     return thing_do_grammar(dtype, desc, ignore_case);
 }
 
-string feature_description(dungeon_feature_type grid, i18n_context_type i18n_context, trap_type trap,
+string feature_description(dungeon_feature_type grid, other_i18n_context_type i18n_context, trap_type trap,
                            const string & cover_desc)
 {
     string desc = _base_feature_desc(grid, trap, i18n_context);
@@ -3210,7 +3210,7 @@ string raw_feature_description(const coord_def &where)
     return _base_feature_desc(feat, get_trap_type(where));
 }
 
-string raw_feature_description(const coord_def &where, i18n_context_type i18n_context)
+string raw_feature_description(const coord_def &where, other_i18n_context_type i18n_context)
 {
     dungeon_feature_type feat = env.grid(where);
 
@@ -3219,7 +3219,7 @@ string raw_feature_description(const coord_def &where, i18n_context_type i18n_co
     {
         const auto &renames = env.level_vaults[mapi]->map.feat_renames;
         if (const string *rename = map_find(renames, feat))
-            return I18(i18n_context, (*rename).c_str());
+            return translate_other(i18n_context, (*rename).c_str());
     }
 
     return _base_feature_desc(feat, get_trap_type(where), i18n_context);
@@ -3366,9 +3366,9 @@ string feature_description_at(const coord_def& where, bool covering,
     }
 }
 
-string feature_description_at(const coord_def& where, i18n_context_type i18n_context, bool covering)
+string feature_description_at(const coord_def& where, other_i18n_context_type i18n_context, bool covering)
 {
-    I18N_CONTEXT_NAME;
+    OTHER_I18N_CNAME;
     dungeon_feature_type grid = env.map_knowledge(where).feat();
     trap_type trap = env.map_knowledge(where).trap();
 

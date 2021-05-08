@@ -2144,7 +2144,7 @@ string mon_attack_name(attack_type attack, bool with_object)
     }
 }
 
-string mon_attack_name(attack_type attack, i18n_context_type i18n_context, bool with_object)
+string mon_attack_name(attack_type attack, other_i18n_context_type i18n_context, bool with_object)
 {
     static const char *attack_types[] =
     {
@@ -2189,11 +2189,11 @@ string mon_attack_name(attack_type attack, i18n_context_type i18n_context, bool 
     ASSERT(verb_index < (int)ARRAYSZ(attack_types));
 
     if (with_object)
-        return I18(i18n_context, attack_types[verb_index]);
+        return translate_other(i18n_context, attack_types[verb_index]);
     else
     {
-        return I18(i18n_context, replace_all(replace_all(attack_types[verb_index], " at", ""),
-                                             " on", "").c_str());
+        return translate_other(i18n_context, replace_all(replace_all(attack_types[verb_index], " at", ""),
+                                                         " on", "").c_str());
     }
 }
 
@@ -3247,10 +3247,10 @@ string mons_type_name(monster_type mc, description_level_type desc)
     return result;
 }
 
-string mons_type_name(monster_type mc, i18n_context_type i18n_context)
+string mons_type_name(monster_type mc, actor_i18n_context_type i18n_context)
 {
     string monster;
-    I18N_CONTEXT_NAME;
+    ACTOR_I18N_CNAME;
 
     switch (mc)
     {
@@ -4050,7 +4050,7 @@ const char *mons_pronoun(monster_type mon_type, pronoun_type variant,
     return decline_pronoun(gender, variant);
 }
 
-const char *mons_pronoun(monster_type mon_type, i18n_context_type i18n_context,
+const char *mons_pronoun(monster_type mon_type, actor_i18n_context_type i18n_context,
                          bool visible)
 {
     const gender_type gender = !visible ? GENDER_NEUTER

@@ -2372,9 +2372,9 @@ string melee_attack::mons_attack_verb()
     return mon_attack_name(attk_type);
 }
 
-string melee_attack::mons_attack_verb(i18n_context_type i18n_context)
+string melee_attack::mons_attack_verb(other_i18n_context_type i18n_context)
 {
-    I18N_CONTEXT_NAME;
+    OTHER_I18N_CNAME;
     static const char *klown_attack[] =
     {
         __(i18n_cname, "hit"),
@@ -2428,7 +2428,7 @@ string melee_attack::mons_attack_desc()
     return ret;
 }
 
-string melee_attack::mons_attack_desc(i18n_context_type i18n_context)
+string melee_attack::mons_attack_desc(other_i18n_context_type i18n_context)
 {
     if (!you.can_see(*attacker))
         return "";
@@ -2438,15 +2438,15 @@ string melee_attack::mons_attack_desc(i18n_context_type i18n_context)
     if (dist > 1)
     {
         ASSERT(can_reach());
-        from_afar = I18(i18n_context, " from afar");
+        from_afar = translate_other(i18n_context, " from afar");
     }
 
     string with_weapon;
     if (weapon && attacker->type != MONS_DANCING_WEAPON && attacker->type != MONS_SPECTRAL_WEAPON)
         // FIXME: @apollov: i18n: deal with `weapon->name(DESC_A)`. It's rather long.
-        with_weapon = make_stringf(I18(i18n_context, " with %s"), weapon->name(DESC_A).c_str());
+        with_weapon = make_stringf(translate_other(i18n_context, " with %s"), weapon->name(DESC_A).c_str());
 
-    return make_stringf(I18(i18n_context, "%s%s"), from_afar.c_str(), with_weapon.c_str());
+    return make_stringf(translate_other(i18n_context, "%s%s"), from_afar.c_str(), with_weapon.c_str());
 }
 
 void melee_attack::announce_hit()
@@ -2467,9 +2467,9 @@ void melee_attack::announce_hit()
     else
     {
         mprf(__("You %(slice)s %(the jackal)s%( like an onion)s%( for 10 damage)s%(!!!!!)s", "You %s %s%s%s%s"),
-             I18(I18NC_PLAYER_ATTACK_VERB, attack_verb.c_str()),
+             translate_other(I18NC_PLAYER_ATTACK_VERB, attack_verb.c_str()),
              defender->name(I18NC_PLAYER_MELEE_DEFENDER).c_str(),
-             I18(I18NC_PLAYER_ATTACK_DEGREE, verb_degree.c_str()),
+             translate_other(I18NC_PLAYER_ATTACK_DEGREE, verb_degree.c_str()),
              debug_damage_number().c_str(),
              attack_strength_punctuation(damage_done).c_str());
     }

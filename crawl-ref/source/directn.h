@@ -316,15 +316,15 @@ string get_monster_equipment_desc(const monster_info& mi,
 
 string feature_description_at(const coord_def& where, bool covering = false,
                               description_level_type dtype = DESC_A);
-string feature_description_at(const coord_def& where, i18n_context_type i18n_context, bool covering = false);
+string feature_description_at(const coord_def& where, other_i18n_context_type i18n_context, bool covering = false);
 string raw_feature_description(const coord_def& where);
-string raw_feature_description(const coord_def& where, i18n_context_type i18n_context);
+string raw_feature_description(const coord_def& where, other_i18n_context_type i18n_context);
 string feature_description(dungeon_feature_type grid,
                            trap_type trap = NUM_TRAPS,
                            const string & cover_desc = "",
                            description_level_type dtype = DESC_A);
 string feature_description(dungeon_feature_type grid,
-                           i18n_context_type i18n_context,
+                           other_i18n_context_type i18n_context,
                            trap_type trap = NUM_TRAPS,
                            const string & cover_desc = "");
 

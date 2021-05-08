@@ -323,9 +323,9 @@ struct monster_info : public monster_info_base
     bool has_proper_name() const;
     string pluralised_name(bool fullname = true) const;
     string common_name(description_level_type desc = DESC_PLAIN) const;
-    string common_name(i18n_context_type i18n_context) const;
+    string common_name(actor_i18n_context_type i18n_context) const;
     string proper_name(description_level_type desc = DESC_PLAIN) const;
-    string proper_name(i18n_context_type i18n_context) const;
+    string proper_name(actor_i18n_context_type i18n_context) const;
     string full_name(description_level_type desc = DESC_PLAIN) const;
 
     vector<string> attributes() const;
@@ -404,7 +404,7 @@ struct monster_info : public monster_info_base
     bool debuffable() const;
 
 protected:
-    string _core_name(i18n_context_type i18n_context) const;
+    string _core_name(actor_i18n_context_type i18n_context) const;
     string _apply_adjusted_description(description_level_type desc, const string& s) const;
 };
 
