@@ -3153,6 +3153,22 @@ static string _base_feature_desc(dungeon_feature_type grid, trap_type trap)
 
 }
 
+static string _base_feature_desc(dungeon_feature_type grid, trap_type trap,
+                                 i18n_context_type i18n_context)
+{
+    I18N_CONTEXT_NAME;
+    if (feat_is_trap(grid) && trap != NUM_TRAPS)
+        return full_trap_name(trap, i18n_context);
+
+    if (grid == DNGN_ROCK_WALL && player_in_branch(BRANCH_PANDEMONIUM))
+        return  __(i18n_cname, "wall of the weird stuff which makes up Pandemonium");
+    else if (!is_valid_feature_type(grid))
+        return "";
+    else
+        return  __(i18n_cname, get_feature_def(grid).name);
+
+}
+
 string feature_description(dungeon_feature_type grid, trap_type trap,
                            const string & cover_desc,
                            description_level_type dtype)
@@ -3170,6 +3186,15 @@ string feature_description(dungeon_feature_type grid, trap_type trap,
     return thing_do_grammar(dtype, desc, ignore_case);
 }
 
+string feature_description(dungeon_feature_type grid, i18n_context_type i18n_context, trap_type trap,
+                           const string & cover_desc)
+{
+    string desc = _base_feature_desc(grid, trap, i18n_context);
+    desc += cover_desc;
+
+    return desc;
+}
+
 string raw_feature_description(const coord_def &where)
 {
     dungeon_feature_type feat = env.grid(where);
@@ -3183,6 +3208,21 @@ string raw_feature_description(const coord_def &where)
     }
 
     return _base_feature_desc(feat, get_trap_type(where));
+}
+
+string raw_feature_description(const coord_def &where, i18n_context_type i18n_context)
+{
+    dungeon_feature_type feat = env.grid(where);
+
+    int mapi = env.level_map_ids(where);
+    if (mapi != INVALID_MAP_INDEX)
+    {
+        const auto &renames = env.level_vaults[mapi]->map.feat_renames;
+        if (const string *rename = map_find(renames, feat))
+            return I18(i18n_context, (*rename).c_str());
+    }
+
+    return _base_feature_desc(feat, get_trap_type(where), i18n_context);
 }
 
 #ifndef DEBUG_DIAGNOSTICS
@@ -3323,6 +3363,123 @@ string feature_description_at(const coord_def& where, bool covering,
                               ? raw_feature_description(where)
                               : _base_feature_desc(grid, trap);
         return thing_do_grammar(dtype, featdesc + covering_description, ignore_case);
+    }
+}
+
+string feature_description_at(const coord_def& where, i18n_context_type i18n_context, bool covering)
+{
+    I18N_CONTEXT_NAME;
+    dungeon_feature_type grid = env.map_knowledge(where).feat();
+    trap_type trap = env.map_knowledge(where).trap();
+
+    // FIXME: @apollov #i18n: don't know how to i18n this stuff yet.
+    string marker_desc = env.markers.property_at(where, MAT_ANY,
+                                                 "feature_description");
+
+    string covering_description;
+
+    if (covering && you.see_cell(where))
+    {
+        if (feat_is_tree(grid) && env.forest_awoken_until)
+            covering_description += __(i18n_cname, ", awoken");
+
+        if (is_icecovered(where))
+            covering_description = __(i18n_cname, ", covered with ice");
+
+        if (is_temp_terrain(where))
+            covering_description = __(i18n_cname, ", summoned");
+
+        if (is_bloodcovered(where))
+            covering_description += __(i18n_cname, ", spattered with blood");
+    }
+
+    // FIXME: remove desc markers completely; only Zin walls are left.
+    // They suffer, among other problems, from an information leak.
+    if (!marker_desc.empty())
+    {
+        marker_desc += covering_description;
+
+        return marker_desc;
+    }
+
+    if (feat_is_door(grid))
+    {
+        const string door_desc_prefix =
+                env.markers.property_at(where, MAT_ANY,
+                                        "door_description_prefix");
+        const string door_desc_suffix =
+                env.markers.property_at(where, MAT_ANY,
+                                        "door_description_suffix");
+        const string door_desc_noun =
+                env.markers.property_at(where, MAT_ANY,
+                                        "door_description_noun");
+        const string door_desc_adj  =
+                env.markers.property_at(where, MAT_ANY,
+                                        "door_description_adjective");
+        const string door_desc_veto =
+                env.markers.property_at(where, MAT_ANY,
+                                        "door_description_veto");
+
+        set<coord_def> all_door;
+        find_connected_identical(where, all_door);
+        const char *adj, *noun;
+        get_door_description(all_door.size(), &adj, &noun);
+
+        string open_status;
+        if (door_desc_veto.empty() || door_desc_veto != "veto")
+        {
+            if (grid == DNGN_OPEN_DOOR)
+                open_status = __(i18n_cname, "open ");
+            else if (grid == DNGN_CLOSED_CLEAR_DOOR)
+                open_status = __(i18n_cname, "closed translucent ");
+            else if (grid == DNGN_OPEN_CLEAR_DOOR)
+                open_status = __(i18n_cname, "open translucent ");
+            else if (grid == DNGN_RUNED_DOOR)
+                open_status = __(i18n_cname, "runed ");
+            else if (grid == DNGN_RUNED_CLEAR_DOOR)
+                open_status = __(i18n_cname, "runed translucent ");
+            else if (grid == DNGN_SEALED_DOOR)
+                open_status = __(i18n_cname, "sealed ");
+            else if (grid == DNGN_SEALED_CLEAR_DOOR)
+                open_status = __(i18n_cname, "sealed translucent ");
+            else
+                open_status = __(i18n_cname, "closed ");
+        }
+
+        string desc = make_stringf(
+                __(i18n_cname, "%s%s%s%s%s%s"),
+                door_desc_adj.empty() ? __(i18n_cname, adj) : __(i18n_cname, door_desc_adj.c_str()),
+                open_status.c_str(),
+                __(i18n_cname, door_desc_prefix.c_str()),
+                door_desc_noun.empty() ?  __(i18n_cname, noun) :  __(i18n_cname, door_desc_noun.c_str()),
+                __(i18n_cname, door_desc_suffix.c_str()),
+                covering_description.c_str()
+        );
+
+        return desc;
+    }
+
+    switch (grid)
+    {
+#if TAG_MAJOR_VERSION == 34
+        case DNGN_TRAP_MECHANICAL:
+            return feature_description(grid, i18n_context, trap, covering_description);
+
+        case DNGN_ENTER_PORTAL_VAULT:
+            // Should have been handled at the top of the function.
+            return  __(i18n_cname, "UNAMED PORTAL VAULT ENTRY");
+#endif
+        case DNGN_ENTER_SHOP:
+            return shop_name(*shop_at(where));
+
+        default:
+            const string featdesc = grid == env.grid(where)
+                                    ? raw_feature_description(where, i18n_context)
+                                    : _base_feature_desc(grid, trap, i18n_context);
+            return make_stringf(
+                    __("%(A staircase down)s%(, covered with ice)s", "%s%s"),
+                    featdesc.c_str(), covering_description.c_str()
+            );
     }
 }
 

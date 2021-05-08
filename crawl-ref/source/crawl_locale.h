@@ -21,7 +21,17 @@ enum i18n_context_type {
     I18NC_MONSTER_ATTACK_DESC,
 
     I18NC_PLAYER_ATTACK_VERB,
+    I18NC_PLAYER_MELEE_DEFENDER,
     I18NC_PLAYER_ATTACK_DEGREE,
+
+    I18NC_PLAYER_CONF_KILL_VICTIM,
+    I18NC_PLAYER_CONF_KILL_TYPE,
+
+    I18NC_PLAYER_KILL_TYPE,
+    I18NC_PLAYER_KILL_VICTIM,
+
+    I18NC_IOOD_ACT_ATTACKER,
+    I18NC_IOOD_ACT_DEFENDER,
 
     I18NC_COUNT
 };
@@ -36,7 +46,17 @@ static const char* const i18n_cnames[I18NC_COUNT] = {
     "The jackal bites you for 10 damage%s!!!",
 
     "You %s the jackal like an onion for 10 damage!!!!!",
-    "You slice the jackal%s for 10 damage!!!!!"
+    "You slice %s like an onion for 10 damage!!!!!",
+    "You slice the jackal%s for 10 damage!!!!!",
+
+    "%s is %(blown up)s!",
+    "The jackal is %s!",
+
+    "You %s %(a jackal)s!",
+    "You kill %(a jackal)s!",
+
+    "%s hits a closed door." ,
+    "The orb of death hits %s.",
 };
 
 #endif //SOURCE_CRAWL_LOCALE_H

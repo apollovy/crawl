@@ -715,6 +715,15 @@ string trap_name(trap_type trap)
     return "";
 }
 
+string trap_name(trap_type trap, i18n_context_type i18n_context)
+{
+    COMPILE_CHECK(ARRAYSZ(trap_names) == NUM_TRAPS);
+
+    if (trap >= 0 && trap < NUM_TRAPS)
+        return I18(i18n_context, trap_names[trap]);
+    return "";
+}
+
 string full_trap_name(trap_type trap)
 {
     string basename = trap_name(trap);
@@ -729,6 +738,31 @@ string full_trap_name(trap_type trap)
     default:
         return basename + " trap";
     }
+}
+
+string full_trap_name(trap_type trap, i18n_context_type i18n_context)
+{
+    I18N_CONTEXT_NAME;
+    string basename = trap_name(trap, i18n_context);
+
+    string suffix;
+    switch (trap)
+    {
+        case TRAP_GOLUBRIA:
+            suffix = __(i18n_cname, " of Golubria");
+        case TRAP_PLATE:
+        case TRAP_WEB:
+        case TRAP_SHAFT:
+            suffix = "";
+        default:
+            suffix = __(i18n_cname, " trap");
+    }
+
+    return make_stringf(
+            __("%(The dart)s%( trap)s", "%s%s"),
+            basename.c_str(),
+            strlen(suffix.c_str()) ? suffix.c_str() : ""
+    );
 }
 
 int str_to_trap(const string &s)

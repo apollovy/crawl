@@ -2468,7 +2468,7 @@ void melee_attack::announce_hit()
     {
         mprf(__("You %(slice)s %(the jackal)s%( like an onion)s%( for 10 damage)s%(!!!!!)s", "You %s %s%s%s%s"),
              I18(I18NC_PLAYER_ATTACK_VERB, attack_verb.c_str()),
-             defender->name(I18NC_MONSTER_MELEE_DEFENDER).c_str(),
+             defender->name(I18NC_PLAYER_MELEE_DEFENDER).c_str(),
              I18(I18NC_PLAYER_ATTACK_DEGREE, verb_degree.c_str()),
              debug_damage_number().c_str(),
              attack_strength_punctuation(damage_done).c_str());

@@ -1817,19 +1817,21 @@ item_def* monster_die(monster& mons, killer_type killer,
                 if (killer == KILL_YOU_CONF
                     && (anon || !invalid_monster_index(killer_index)))
                 {
-                    mprf(MSGCH_MONSTER_DAMAGE, MDAM_DEAD, "%s is %s!",
-                         mons.name(DESC_THE).c_str(),
-                         exploded                        ? "blown up" :
-                         wounded_damaged(targ_holy)      ? "destroyed"
-                                                         : "killed");
+                    mprf(MSGCH_MONSTER_DAMAGE, MDAM_DEAD,
+                         __("%(The jackal)s is %(blown up)s!", "%s is %s!"),
+                         mons.name(I18NC_PLAYER_CONF_KILL_VICTIM).c_str(),
+                         exploded                        ? I18(I18NC_PLAYER_CONF_KILL_TYPE, "blown up") :
+                         wounded_damaged(targ_holy)      ? I18(I18NC_PLAYER_CONF_KILL_TYPE, "destroyed")
+                                                         : I18(I18NC_PLAYER_CONF_KILL_TYPE, "killed"));
                 }
                 else
                 {
-                    mprf(MSGCH_MONSTER_DAMAGE, MDAM_DEAD, "You %s %s!",
-                         exploded                        ? "blow up" :
-                         wounded_damaged(targ_holy)      ? "destroy"
-                                                         : "kill",
-                         mons.name(DESC_THE).c_str());
+                    mprf(MSGCH_MONSTER_DAMAGE, MDAM_DEAD,
+                         __("You %(kill)s %(a jackal)s", "You %s %s!"),
+                         exploded                        ? I18(I18NC_PLAYER_KILL_TYPE, "blow up") :
+                         wounded_damaged(targ_holy)      ? I18(I18NC_PLAYER_KILL_TYPE, "destroy")
+                                                         : I18(I18NC_PLAYER_KILL_TYPE, "kill"),
+                         mons.name(I18NC_PLAYER_KILL_VICTIM).c_str());
                 }
                 // If this monster would otherwise give xp but didn't because
                 // it grants no reward or was neutral, give a message.
@@ -1839,7 +1841,7 @@ item_def* monster_die(monster& mons, killer_type killer,
                     && !fake_abjure
                     && !mons.friendly())
                 {
-                    mpr("That felt strangely unrewarding.");
+                    mpr(_("That felt strangely unrewarding."));
                 }
             }
 
