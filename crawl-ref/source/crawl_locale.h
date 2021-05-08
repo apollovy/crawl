@@ -45,15 +45,15 @@ static const char* const i18n_cnames[I18NC_COUNT] = {
     "The jackal bites %s for 10 damage with +3 dagger!!!",
     "The jackal bites you for 10 damage%s!!!",
 
-    "You %s the jackal like an onion for 10 damage!!!!!",
-    "You slice %s like an onion for 10 damage!!!!!",
-    "You slice the jackal%s for 10 damage!!!!!",
+    "You %s the jackal like an onion for 10 damage!!",
+    "You slice %s like an onion for 10 damage!!",
+    "You slice the jackal%s for 10 damage!!",
 
-    "%s is %(blown up)s!",
+    "%s is blown up!",
     "The jackal is %s!",
 
-    "You %s %(a jackal)s!",
-    "You kill %(a jackal)s!",
+    "You %s a jackal!",
+    "You kill %s!",
 
     "%s hits a closed door." ,
     "The orb of death hits %s.",
