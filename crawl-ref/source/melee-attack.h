@@ -119,8 +119,6 @@ private:
     bool mons_attack_effects() override;
     void mons_apply_attack_flavour();
     string mons_attack_verb();
-    string mons_attack_verb(other_i18n_context_type i18n_context);
-    string mons_attack_desc();
     string mons_attack_desc(other_i18n_context_type i18n_context);
     // TODO: Unify do_poison and poison_monster
     bool mons_do_poison();

@@ -2882,9 +2882,18 @@ msgstr "взорваться"
 msgid "steel"
 msgstr "сталь"
 
+#: item-name.cc:377 item-name.cc:646 item-name.cc:865 item-name.cc:892
+#: item-name.cc:908
+msgid "silver"
+msgstr "серебряный"
+
 #: item-name.cc:388
 msgid "sickness"
 msgstr "болезнь"
+
+#: item-name.cc:407 item-name.cc:457
+msgid "holy"
+msgstr "святой"
 
 #: item-name.cc:411 item-name.cc:436
 msgid "venom"
@@ -3186,6 +3195,10 @@ msgstr "акробат"
 msgid "rage"
 msgstr "ярость"
 
+#: item-name.cc:763
+msgid "gourmand"
+msgstr "гурман"
+
 #: item-name.cc:769
 msgid "nothing"
 msgstr "ничего"
@@ -3226,17 +3239,137 @@ msgstr "амулет"
 msgid "golden"
 msgstr "золотой"
 
+#: item-name.cc:866
+msgid "granite"
+msgstr "гранит"
+
+#: item-name.cc:866 item-name.cc:890 item-name.cc:1643
+msgid "ruby"
+msgstr "рубин"
+
+#: item-name.cc:866
+msgid "marble"
+msgstr "мрамор"
+
+#: item-name.cc:866 item-name.cc:890
+msgid "jade"
+msgstr "нефрит"
+
+#: item-name.cc:867
+msgid "agate"
+msgstr "агат"
+
 #: item-name.cc:867 item-name.cc:892
 msgid "diamond"
 msgstr "алмазный"
+
+#: item-name.cc:867 item-name.cc:889 item-name.cc:1644
+msgid "emerald"
+msgstr "изумруд"
+
+#: item-name.cc:867 item-name.cc:891
+msgid "peridot"
+msgstr "перидот"
+
+#: item-name.cc:867 item-name.cc:889
+msgid "garnet"
+msgstr "гранат"
+
+#: item-name.cc:867
+msgid "opal"
+msgstr "опал"
 
 #: item-name.cc:868 item-name.cc:891 item-prop.cc:172
 msgid "pearl"
 msgstr "жемчужный"
 
+#: item-name.cc:868
+msgid "coral"
+msgstr "коралл"
+
+#: item-name.cc:868 item-name.cc:889 item-name.cc:1645
+msgid "sapphire"
+msgstr "сапфир"
+
+#: item-name.cc:868 item-name.cc:892
+msgid "cabochon"
+msgstr "кабошон"
+
+#: item-name.cc:868
+msgid "gilded"
+msgstr "позолоченный"
+
+#: item-name.cc:868
+msgid "onyx"
+msgstr "оникс"
+
+#: item-name.cc:869
+msgid "moonstone"
+msgstr "лунный камень"
+
+#: item-name.cc:890
+msgid "citrine"
+msgstr "цитрин"
+
+#: item-name.cc:890
+msgid "platinum"
+msgstr "платина"
+
+#: item-name.cc:891 item-name.cc:1645
+msgid "amethyst"
+msgstr "аметист"
+
 #: item-name.cc:891 item-name.cc:1642
 msgid "blue"
 msgstr "голубой"
+
+#: item-name.cc:892
+msgid "malachite"
+msgstr "малахит"
+
+#: item-name.cc:893
+msgid "soapstone"
+msgstr "мыльный камень"
+
+#: item-name.cc:893
+msgid "lapis lazuli"
+msgstr "лазурит"
+
+#: item-name.cc:893
+msgid "filigree"
+msgstr "филигранный"
+
+#: item-name.cc:893
+msgid "beryl"
+msgstr "Берил"
+
+#: item-name.cc:904
+msgid "obsidian"
+msgstr "обсидиан"
+
+#: item-name.cc:909
+msgid "serpentine"
+msgstr "змеевик"
+
+#: item-name.cc:910
+msgid "elven"
+msgstr "эльфийский"
+
+#: item-name.cc:915
+msgid "mossy"
+msgstr "мшистый"
+
+#: item-name.cc:918
+msgid "demonic"
+msgstr "демонический"
+
+#: item-name.cc:923
+msgid "magical"
+msgstr "магический"
+
+#: item-name.cc:924
+msgid "fiery"
+msgstr "огненный"
 
 #: item-name.cc:925 item-name.cc:1644
 msgid "dark"
@@ -3246,9 +3379,17 @@ msgstr "темный"
 msgid "box of beasts"
 msgstr "ящик со зверями"
 
+#: item-name.cc:949
+msgid "horn of Geryon"
+msgstr "рог Гериона"
+
 #: item-name.cc:950
 msgid "lightning rod"
 msgstr "жезл молний"
+
+#: item-name.cc:952
+msgid "empty flask"
+msgstr "пустая фляжка"
 
 #: item-name.cc:961
 msgid "phantom mirror"
@@ -3281,6 +3422,14 @@ msgstr "Огонь"
 #: item-name.cc:1009
 msgid "Ice"
 msgstr "Лёд"
+
+#: item-name.cc:1011
+msgid "Hexes"
+msgstr "Шестиугольники"
+
+#: item-name.cc:1012
+msgid "the Tempests"
+msgstr "Бури"
 
 #: item-name.cc:1013
 msgid "Death"
@@ -3434,9 +3583,21 @@ msgstr "проклятый "
 msgid "enchanted "
 msgstr "зачарованный "
 
+#: item-name.cc:1599
+msgid "wand of "
+msgstr "жезл "
+
+#: item-name.cc:1604
+msgid " wand"
+msgstr " жезл"
+
 #: item-name.cc:1623
 msgid "potion of "
 msgstr "зелье "
+
+#: item-name.cc:1632
+msgid "metallic "
+msgstr "металлический "
 
 #: item-name.cc:1640
 msgid "clear"
@@ -3501,6 +3662,10 @@ msgstr "медный"
 #: item-name.cc:1644
 msgid "puce"
 msgstr "красновато-коричневый"
+
+#: item-name.cc:1662
+msgid "removed food"
+msgstr "удаленная еда"
 
 #: item-name.cc:1684
 msgid "amulet"
@@ -3617,6 +3782,18 @@ msgstr "Декабря"
 #: hiscores.cc:1820
 msgid "Slain"
 msgstr "Убит"
+
+#: hiscores.cc:1822
+msgid "Demolished"
+msgstr "Снесен"
+
+#: hiscores.cc:1823
+msgid "Annihilated"
+msgstr "Уничтожен"
+
+#: hiscores.cc:2002
+msgid "Favourite "
+msgstr "Любимый "
 
 #: hiscores.cc:2012
 msgctxt "Was %s of %s%s"
@@ -3864,6 +4041,10 @@ msgstr "тень"
 msgid "club"
 msgstr "дубинка"
 
+#: item-prop.cc:380
+msgid "whip"
+msgstr "хлыст"
+
 #: item-prop.cc:400
 msgid "mace"
 msgstr "булава"
@@ -3875,6 +4056,14 @@ msgstr "цеп"
 #: item-prop.cc:406
 msgid "morningstar"
 msgstr "утренняя звезда"
+
+#: item-prop.cc:422
+msgid "demon whip"
+msgstr "демонический хлыст"
+
+#: item-prop.cc:425
+msgid "sacred scourge"
+msgstr "священное бедствие"
 
 #: item-prop.cc:458
 msgid "dagger"
@@ -3912,6 +4101,14 @@ msgstr "ятаган"
 msgid "demon blade"
 msgstr "демонический меч"
 
+#: item-prop.cc:507
+msgid "double sword"
+msgstr "двойной меч"
+
+#: item-prop.cc:513
+msgid "triple sword"
+msgstr "тройной меч"
+
 #: item-prop.cc:517
 msgid "old falchion"
 msgstr "старый фальшион"
@@ -3923,6 +4120,14 @@ msgstr "старый длинный меч"
 #: item-prop.cc:523
 msgid "old scimitar"
 msgstr "старый ятаган"
+
+#: item-prop.cc:526
+msgid "old double sword"
+msgstr "старый двойной меч"
+
+#: item-prop.cc:532
+msgid "old triple sword"
+msgstr "старый тройной меч"
 
 #: item-prop.cc:538
 msgid "hand axe"
@@ -3963,6 +4168,18 @@ msgstr "коса"
 #: item-prop.cc:577
 msgid "demon trident"
 msgstr "демонический трезубец"
+
+#: item-prop.cc:580
+msgid "trishula"
+msgstr "Тришула"
+
+#: item-prop.cc:583
+msgid "glaive"
+msgstr "глефа"
+
+#: item-prop.cc:586
+msgid "bardiche"
+msgstr "бардиш"
 
 #: item-prop.cc:632
 msgid "fustibalus"
@@ -4028,6 +4245,14 @@ msgstr "Лягушка"
 msgid "Deep Dwarf"
 msgstr "Глубинный Дварф"
 
+#: species-data.h:49
+msgid "Dwarf"
+msgstr "Дварф"
+
+#: species-data.h:68 species-data.h:752 species-data.h:788
+msgid "Elven"
+msgstr "Эльфийский"
+
 #: species-data.h:68 species-data.h:752 species-data.h:788
 msgid "Elf"
 msgstr "Эльф"
@@ -4036,9 +4261,63 @@ msgstr "Эльф"
 msgid "Demigod"
 msgstr "Полубог"
 
+#: species-data.h:87
+msgid "Divine"
+msgstr "Божественный"
+
 #: species-data.h:106 tags.cc:2238
 msgid "Demonspawn"
 msgstr "Демонорождённый"
+
+#: species-data.h:106
+msgid "Demonic"
+msgstr "Демонический"
+
+#: species-data.h:125 tags.cc:2237
+msgid "Centaur"
+msgstr "Кентавр"
+
+#: species-data.h:144 species-data.h:182 species-data.h:201 species-data.h:220
+#: species-data.h:239 species-data.h:258 species-data.h:277 species-data.h:296
+#: species-data.h:315 species-data.h:334 tags.cc:2237
+msgid "Draconian"
+msgstr "Драконид"
+
+#: species-data.h:163
+msgid "Djinni"
+msgstr "Джинни"
+
+#: species-data.h:201 tags.cc:2236
+msgid "Black Draconian"
+msgstr "Чёрный Драконид"
+
+#: species-data.h:220 tags.cc:2235
+msgid "Green Draconian"
+msgstr "Зелёный Драконид"
+
+#: species-data.h:239 tags.cc:2236
+msgid "Grey Draconian"
+msgstr "Серый Драконид"
+
+#: species-data.h:258 tags.cc:2237
+msgid "Pale Draconian"
+msgstr "Бледный Драконид"
+
+#: species-data.h:277 tags.cc:2236
+msgid "Purple Draconian"
+msgstr "Фиолетовый Драконид"
+
+#: species-data.h:296 tags.cc:2235
+msgid "Red Draconian"
+msgstr "Красный Драконид"
+
+#: species-data.h:315 tags.cc:2235
+msgid "White Draconian"
+msgstr "Белый Драконид"
+
+#: species-data.h:334 tags.cc:2235
+msgid "Yellow Draconian"
+msgstr "Жёлтый Драконид"
 
 #: species-data.h:343
 msgid "You can spit globs of acid."
@@ -4063,6 +4342,10 @@ msgstr "Гуль"
 #: species-data.h:429
 msgid "Gnoll"
 msgstr "Гнолл"
+
+#: species-data.h:448 tags.cc:2233
+msgid "Halfling"
+msgstr "Халфлинг"
 
 #: species-data.h:486 tags.cc:2233
 msgid "Human"
@@ -4124,6 +4407,14 @@ msgstr "Высший эльф"
 msgid "wood golem"
 msgstr "деревянный голем"
 
+#: mon-data.h:182
+msgid "laboratory rat"
+msgstr "лабораторная крыса"
+
+#: mon-data.h:183
+msgid "war dog"
+msgstr "военная собака"
+
 #: mon-data.h:184
 msgid "spirit"
 msgstr "дух"
@@ -4140,6 +4431,10 @@ msgstr "ламия"
 msgid "rock worm"
 msgstr "каменный червь"
 
+#: mon-data.h:197
+msgid "spirit wolf"
+msgstr "призрачный волк"
+
 #: mon-data.h:198
 msgid "lava fish"
 msgstr "лавовая рыба"
@@ -4152,17 +4447,41 @@ msgstr "медуза"
 msgid "grey rat"
 msgstr "серая крыса"
 
+#: mon-data.h:201
+msgid "spiny worm"
+msgstr "колючий червь"
+
 #: mon-data.h:202
 msgid "rock troll"
 msgstr "каменный троль"
+
+#: mon-data.h:204
+msgid "giant amoeba"
+msgstr "гигантская амёба"
+
+#: mon-data.h:206
+msgid "agate snail"
+msgstr "агатовая улитка"
 
 #: mon-data.h:208
 msgid "ancient bear"
 msgstr "древний медведь"
 
+#: mon-data.h:210
+msgid "ignis"
+msgstr "игнис"
+
 #: mon-data.h:211
 msgid "djinni"
 msgstr "джинн"
+
+#: mon-data.h:212
+msgid "rakshasa fake"
+msgstr "фальшивый ракшаса"
+
+#: mon-data.h:213
+msgid "mara fake"
+msgstr "фальшивый мара"
 
 #: mon-data.h:215
 msgid "gnome"
@@ -4176,9 +4495,29 @@ msgstr "глиняный голем"
 msgid "stone golem"
 msgstr "каменный голем"
 
+#: mon-data.h:220
+msgid "spriggan assassin"
+msgstr "спригган-убийца"
+
+#: mon-data.h:223
+msgid "giant goldfish"
+msgstr "гигантская золотая рыбка"
+
+#: mon-data.h:224
+msgid "silver star"
+msgstr "серебренная звезда"
+
+#: mon-data.h:225
+msgid "flaming corpse"
+msgstr "пылающий труп"
+
 #: mon-data.h:228
 msgid "phoenix"
 msgstr "феникс"
+
+#: mon-data.h:229
+msgid "shedu"
+msgstr "шеду"
 
 #: mon-data.h:232
 msgid "firefly"
@@ -4204,6 +4543,10 @@ msgstr "нерожденный"
 msgid "giant mite"
 msgstr "гигантский клещ"
 
+#: mon-data.h:248
+msgid "baby alligator"
+msgstr "детёныш аллигатора"
+
 #: mon-data.h:250
 msgid "chimera"
 msgstr "химера"
@@ -4211,6 +4554,18 @@ msgstr "химера"
 #: mon-data.h:251
 msgid "raven"
 msgstr "ворон"
+
+#: mon-data.h:252
+msgid "singularity"
+msgstr "сингулярность"
+
+#: mon-data.h:253
+msgid "grand avatar"
+msgstr "великий аватар"
+
+#: mon-data.h:256
+msgid "blue devil"
+msgstr "синий дьявол"
 
 #: mon-data.h:257
 msgid "brain worm"
@@ -4240,6 +4595,10 @@ msgstr "мерзкий демонорождённый"
 msgid "chaos champion"
 msgstr "чемпион хаоса"
 
+#: mon-data.h:273
+msgid "wasp"
+msgstr "оса"
+
 #: mon-data.h:279
 msgid "homunculus"
 msgstr "гомункул"
@@ -4263,6 +4622,10 @@ msgstr "крокодил"
 #: mon-data.h:287
 msgid "hippogriff"
 msgstr "гиппокриф"
+
+#: mon-data.h:291
+msgid "eye of draining"
+msgstr "око осушения"
 
 #: mon-data.h:294
 msgid "worker ant"
@@ -4312,6 +4675,50 @@ msgstr "фавн"
 msgid "satyr"
 msgstr "сатир"
 
+#: mon-data.h:536
+msgid "draconian"
+msgstr "драконид"
+
+#: mon-data.h:549
+msgid "black draconian"
+msgstr "чёрный драконид"
+
+#: mon-data.h:563
+msgid "yellow draconian"
+msgstr "жёлтый драконид"
+
+#: mon-data.h:579
+msgid "pale draconian"
+msgstr "бледный драконид"
+
+#: mon-data.h:593
+msgid "green draconian"
+msgstr "зелёный драконид"
+
+#: mon-data.h:608
+msgid "purple draconian"
+msgstr "фиолетовый драконид"
+
+#: mon-data.h:622
+msgid "red draconian"
+msgstr "красный драконид"
+
+#: mon-data.h:636
+msgid "white draconian"
+msgstr "белый драконид"
+
+#: mon-data.h:650
+msgid "grey draconian"
+msgstr "серый драконид"
+
+#: mon-data.h:681
+msgid "draconian monk"
+msgstr "драконий-монах"
+
+#: mon-data.h:724
+msgid "draconian knight"
+msgstr "драконид-рыцарь"
+
 #: mon-data.h:753
 msgid "elf"
 msgstr "эльф"
@@ -4356,6 +4763,10 @@ msgstr "шакал"
 msgid "hound"
 msgstr "гончая"
 
+#: mon-data.h:1136
+msgid "warg"
+msgstr "варг"
+
 #: mon-data.h:1162
 msgid "hog"
 msgstr "боров"
@@ -4379,6 +4790,10 @@ msgstr "чёрный медведь"
 #: mon-data.h:1284
 msgid "spriggan"
 msgstr "спригган"
+
+#: mon-data.h:1362
+msgid "drake"
+msgstr "дрейк"
 
 #: mon-data.h:1431
 msgid "giant lizard"
@@ -4510,7 +4925,7 @@ msgstr "королева пчёл"
 
 #: mon-data.h:2508
 msgid "hornet"
-msgstr "оса"
+msgstr "шершень"
 
 #: mon-data.h:2616
 msgid "flying skull"
@@ -4668,6 +5083,10 @@ msgstr "минотавр"
 msgid "sphinx"
 msgstr "сфинкс"
 
+#: mon-data.h:3432
+msgid "ancestor"
+msgstr "предок"
+
 #: mon-data.h:3445
 msgid "knight"
 msgstr "рыцарь"
@@ -4712,17 +5131,45 @@ msgstr "нага"
 msgid "ogre"
 msgstr "огр"
 
+#: mon-data.h:3851
+msgid "ogre mage"
+msgstr "огр-маг"
+
 #: mon-data.h:3878
 msgid "plant"
 msgstr "растение"
+
+#: mon-data.h:3891
+msgid "demonic plant"
+msgstr "демоническое растение"
 
 #: mon-data.h:3943
 msgid "bush"
 msgstr "куст"
 
+#: mon-data.h:4022
+msgid "tengu"
+msgstr "тенгу"
+
+#: mon-data.h:4079
+msgid "efreet"
+msgstr "ифрит"
+
+#: mon-data.h:4092
+msgid "rakshasa"
+msgstr "ракшаса"
+
+#: mon-data.h:4105
+msgid "dryad"
+msgstr "дриада"
+
 #: mon-data.h:4157
 msgid "snake"
 msgstr "змея"
+
+#: mon-data.h:4174
+msgid "adder"
+msgstr "гадюка"
 
 #: mon-data.h:4200
 msgid "black mamba"
@@ -4740,6 +5187,14 @@ msgstr "анаконда"
 msgid "troll"
 msgstr "тролль"
 
+#: mon-data.h:4294
+msgid "iron troll"
+msgstr "железный тролль"
+
+#: mon-data.h:4308
+msgid "deep troll"
+msgstr "глубинный тролль"
+
 #: mon-data.h:4352
 msgid "vampire"
 msgstr "вампир"
@@ -4747,6 +5202,10 @@ msgstr "вампир"
 #: mon-data.h:4366
 msgid "vampire knight"
 msgstr "рыцарь-вампир"
+
+#: mon-data.h:4394
+msgid "jiangshi"
+msgstr "Цзянши"
 
 #: mon-data.h:4409
 msgid "ghost"
@@ -4860,6 +5319,10 @@ msgstr "инфернальный демонорождённый"
 msgid "torturous demonspawn"
 msgstr "мучительный демонорождённый"
 
+#: mon-data.h:5328
+msgid "black sun"
+msgstr "чёрное солнце"
+
 #: mon-data.h:5397
 msgid "iron imp"
 msgstr "железный бес"
@@ -4888,9 +5351,21 @@ msgstr "красный дьявол"
 msgid "ice devil"
 msgstr "ледяной дьявол"
 
+#: mon-data.h:5532
+msgid "soul eater"
+msgstr "пожиратель душ"
+
 #: mon-data.h:5692
 msgid "reaper"
 msgstr "жнец"
+
+#: mon-data.h:5774
+msgid "Hell Sentinel"
+msgstr "Страж Ада"
+
+#: mon-data.h:5788
+msgid "Executioner"
+msgstr "Палач"
 
 #: mon-data.h:5835
 msgid "iron golem"
@@ -5028,6 +5503,10 @@ msgstr "Пикель"
 msgid "Boris"
 msgstr "Борис"
 
+#: mon-data.h:6737
+msgid "Khufu"
+msgstr "Хуфу"
+
 #: mon-data.h:6863
 msgid "Azrael"
 msgstr "Азраэль"
@@ -5035,6 +5514,10 @@ msgstr "Азраэль"
 #: mon-data.h:6877
 msgid "Mara"
 msgstr "Мара"
+
+#: mon-data.h:6935
+msgid "moon troll"
+msgstr "лунный тролль"
 
 #: mon-data.h:7054
 msgid "Terence"
@@ -5115,6 +5598,10 @@ msgstr "Лом Лобон"
 #: mon-data.h:7344
 msgid "Cerebov"
 msgstr "Церебов"
+
+#: mon-data.h:7372
+msgid "Geryon"
+msgstr "Герион"
 
 #: mon-data.h:7402
 msgid "Asmodeus"
@@ -5246,6 +5733,11 @@ msgstr "орком высшим жрецом"
 msgctxt "slain by"
 msgid "a wolf spider"
 msgstr "пауком-волком"
+
+#: mon-data.h:2508
+msgctxt "slain by"
+msgid "a hornet"
+msgstr "шершнем"
 
 #: mon-data.h:2733
 msgctxt "slain by"
@@ -6697,6 +7189,10 @@ msgstr "покрытый улитками алтарь Кайбриадоса"
 msgid "a stormy altar of Qazlal"
 msgstr "бурный алтарь Кацлаля"
 
+#: feature-data.h:587
+msgid "a sacrificial altar of Ru"
+msgstr "жертвенный алтарь Ру"
+
 #: feature-data.h:594
 msgid "an ornate altar of the Wu Jian Council"
 msgstr "богато украшенный алтарь Совета У Цзянь"
@@ -6829,6 +7325,30 @@ msgstr "Его внешний вид на мгновение искажаетс�
 msgid "It begins to drip corrosive slime!"
 msgstr "Начинает капать едкая слизь!"
 
+#: monster.cc:912
+msgid " wears %s."
+msgstr " носит %s."
+
+#: monster.cc:920
+msgid " puts on %s."
+msgstr " надевает %s."
+
+#: monster.cc:962
+msgid "It stops flaming."
+msgstr "перестаёт гореть."
+
+#: monster.cc:966
+msgid "It stops glowing."
+msgstr "Перестаёт светиться."
+
+#: monster.cc:970
+msgid "It stops crackling."
+msgstr "перестаёт трескать."
+
+#: monster.cc:1002 monster.cc:1013
+msgid " takes off %s."
+msgstr " снимает %s."
+
 #: monster.cc:1076
 msgid "some gold"
 msgstr "немного золота"
@@ -6845,6 +7365,10 @@ msgstr "что-то"
 #: monster.cc:2390
 msgid "pincer"
 msgstr "клешня"
+
+#: monster.cc:2393
+msgid "front %s"
+msgstr "перед %s"
 
 #: monster.cc:2404
 msgid "wing"
@@ -6914,13 +7438,25 @@ msgstr "пернатый"
 msgid "You hear a splashing noise."
 msgstr "Вы слышите брызг."
 
+#: monster.cc:2797
+msgid " goes berserk!"
+msgstr " становится берсерком!"
+
 #: monster.cc:4300
 msgid "%s is splashed with acid%s"
 msgstr "%s забрызган кислотой%s"
 
+#: monster.cc:4465
+msgid "%s begins to die."
+msgstr "%s начинает умирать."
+
 #: monster.cc:4503
 msgid " turns to stone!"
 msgstr " превращается в камень!"
+
+#: monster.cc:4984
+msgid "%s looks sick."
+msgstr "% s выглядит больным."
 
 #: monster.cc:5612
 msgid "is sucked into"
@@ -7407,6 +7943,11 @@ msgctxt "%(The arrow)s%( barely)s misses %(goblin chief)s%(.)s"
 msgid "%s%s misses %s%s"
 msgstr "%s%s не попадает по %s%s"
 
+#: mon-data.h:2508
+msgctxt "The giant cockroach hits %s"
+msgid "a hornet"
+msgstr "шершня"
+
 #: mon-data.h:2733
 msgctxt "The mighty blow completely misses %s!"
 msgid "giant cockroach"
@@ -7426,6 +7967,294 @@ msgstr "гигантский таракан"
 msgctxt "The giant cockroach hits %s"
 msgid "a giant cockroach"
 msgstr "гигантскому таракану"
+
+#: mon-data.h:179
+msgid "a bumblebee"
+msgstr "шмель"
+
+#: mon-data.h:180
+msgid "a wood golem"
+msgstr "деревянный голем"
+
+#: mon-data.h:181
+msgid "an ant larva"
+msgstr "личинка муравья"
+
+#: mon-data.h:182
+msgid "a laboratory rat"
+msgstr "лабораторная крыса"
+
+#: mon-data.h:183
+msgid "a war dog"
+msgstr "военная собака"
+
+#: mon-data.h:184
+msgid "a spirit"
+msgstr "дух"
+
+#: mon-data.h:185
+msgid "a paladin"
+msgstr "паладин"
+
+#: mon-data.h:188
+msgid "a lamia"
+msgstr "ламия"
+
+#: mon-data.h:195
+msgid "a rock worm"
+msgstr "каменный червь"
+
+#: mon-data.h:198
+msgid "a lava fish"
+msgstr "лавовая рыба"
+
+#: mon-data.h:199
+msgid "a jellyfish"
+msgstr "медуза"
+
+#: mon-data.h:200
+msgid "a grey rat"
+msgstr "серая крыса"
+
+#: mon-data.h:202
+msgid "a rock troll"
+msgstr "каменный тролль"
+
+#: mon-data.h:204
+msgid "a giant amoeba"
+msgstr "гигантская амёба"
+
+#: mon-data.h:206
+msgid "an agate snail"
+msgstr "агатовая улитка"
+
+#: mon-data.h:207
+msgid "a giant centipede"
+msgstr "гигантская сороконожка"
+
+#: mon-data.h:208
+msgid "an ancient bear"
+msgstr "древний медведь"
+
+#: mon-data.h:210
+msgid "an ignis"
+msgstr "игнис"
+
+#: mon-data.h:211
+msgid "a djinni"
+msgstr "джинн"
+
+#: mon-data.h:212
+msgid "a rakshasa fake"
+msgstr "фальшивый ракшаса"
+
+#: mon-data.h:213
+msgid "a mara fake"
+msgstr "фальшивый мара"
+
+#: mon-data.h:215
+msgid "a gnome"
+msgstr "гном"
+
+#: mon-data.h:217
+msgid "a clay golem"
+msgstr "глиняный голем"
+
+#: mon-data.h:218
+msgid "a stone golem"
+msgstr "каменный голем"
+
+#: mon-data.h:220
+msgid "a spriggan assassin"
+msgstr "спригган-убийца"
+
+#: mon-data.h:223
+msgid "a giant goldfish"
+msgstr "гигантская золотая рыбка"
+
+#: mon-data.h:224
+msgid "a silver star"
+msgstr "серебряная звезда"
+
+#: mon-data.h:225
+msgid "a flaming corpse"
+msgstr "пылающий труп"
+
+#: mon-data.h:226
+msgid "a grizzly bear"
+msgstr "медведь гризли"
+
+#: mon-data.h:228
+msgid "a phoenix"
+msgstr "феникс"
+
+#: mon-data.h:229
+msgid "a shedu"
+msgstr "шеду"
+
+#: mon-data.h:232
+msgid "a firefly"
+msgstr "светлячок"
+
+#: mon-data.h:235
+msgid "a big fish"
+msgstr "большая рыба"
+
+#: mon-data.h:236
+msgid "a lava worm"
+msgstr "лавовый червь"
+
+#: mon-data.h:237
+msgid "a shark"
+msgstr "акула"
+
+#: mon-data.h:250
+msgid "a chimera"
+msgstr "химера"
+
+#: mon-data.h:251
+msgid "a raven"
+msgstr "ворон"
+
+#: mon-data.h:256
+msgid "a blue devil"
+msgstr "синий дьявол"
+
+#: mon-data.h:257
+msgid "a brain worm"
+msgstr "мозговой червь"
+
+#: mon-data.h:273
+msgid "a wasp"
+msgstr "оса"
+
+#: mon-data.h:279
+msgid "a homunculus"
+msgstr "гомункул"
+
+#: mon-data.h:284
+msgid "a slave"
+msgstr "раб"
+
+#: mon-data.h:753
+msgid "an elf"
+msgstr "эльф"
+
+#: mon-data.h:992
+msgid "a goblin"
+msgstr "гоблин"
+
+#: mon-data.h:1005
+msgid "a hobgoblin"
+msgstr "хобгоблин"
+
+#: mon-data.h:1018
+msgid "a gnoll"
+msgstr "гнолл"
+
+#: mon-data.h:1070
+msgid "a dwarf"
+msgstr "дворф"
+
+#: mon-data.h:1097
+msgid "a jackal"
+msgstr "шакал"
+
+#: mon-data.h:1110
+msgid "a hound"
+msgstr "гончая"
+
+#: mon-data.h:1136
+msgid "a warg"
+msgstr "варг"
+
+#: mon-data.h:1149
+msgid "a wolf"
+msgstr "волк"
+
+#: mon-data.h:1162
+msgid "a hog"
+msgstr "свинья"
+
+#: mon-data.h:1175
+msgid "a hell hound"
+msgstr "адская гончая"
+
+#: mon-data.h:1201
+msgid "a raiju"
+msgstr "райджу"
+
+#: mon-data.h:1227
+msgid "a holy swine"
+msgstr "священная свинья"
+
+#: mon-data.h:1252
+msgid "a bear"
+msgstr "медведь"
+
+#: mon-data.h:1255
+msgid "a polar bear"
+msgstr "полярный медведь"
+
+#: mon-data.h:1269
+msgid "a black bear"
+msgstr "чёрный медведь"
+
+#: mon-data.h:1284
+msgid "a spriggan"
+msgstr "спригган"
+
+#: mon-data.h:1297
+msgid "a spriggan rider"
+msgstr "спригган-наездник"
+
+#: mon-data.h:1310
+msgid "a spriggan druid"
+msgstr "спригган-друид"
+
+#: mon-data.h:1323
+msgid "a spriggan berserker"
+msgstr "спригган-берсерк"
+
+#: mon-data.h:1431
+msgid "a giant lizard"
+msgstr "гигантская ящерица"
+
+#: mon-data.h:1447
+msgid "an iguana"
+msgstr "игуана"
+
+#: mon-data.h:1460
+msgid "a basilisk"
+msgstr "василиск"
+
+#: mon-data.h:1473
+msgid "a wyvern"
+msgstr "виверна"
+
+#: mon-data.h:1646
+msgid "an orc"
+msgstr "орк"
+
+#: mon-data.h:1659
+msgid "an orc wizard"
+msgstr "орк-волшебник"
+
+#: mon-data.h:1672
+msgid "an orc priest"
+msgstr "орк-жрец"
+
+#: mon-data.h:1685
+msgid "an orc warrior"
+msgstr "орк-воин"
+
+#: mon-data.h:1698
+msgid "an orc knight"
+msgstr "орк-рыцарь"
+
+#: mon-data.h:1751
+msgid "a human"
+msgstr "человек"
 
 #: mon-data.h:1764
 msgid "a hell knight"
@@ -7507,6 +8336,14 @@ msgstr "краб"
 msgid "a ghost crab"
 msgstr "призрачный краб"
 
+#: mon-data.h:2222
+msgid "an ugly thing"
+msgstr "уродливое нечто"
+
+#: mon-data.h:2307
+msgid "a twister"
+msgstr "обманщик"
+
 #: mon-data.h:2322
 msgid "a worm"
 msgstr "червь"
@@ -7515,9 +8352,17 @@ msgstr "червь"
 msgid "a swamp worm"
 msgstr "болотный червь"
 
+#: mon-data.h:2348
+msgid "a tyrant leech"
+msgstr "пиявка-тиран"
+
 #: mon-data.h:2402
 msgid "an unseen horror"
 msgstr "невидимый ужас"
+
+#: mon-data.h:2469
+msgid "a killer bee"
+msgstr "пчела-убийца"
 
 #: mon-data.h:2482
 msgid "a queen bee"
@@ -7526,6 +8371,30 @@ msgstr "пчелиная матка"
 #: mon-data.h:2508
 msgid "a hornet"
 msgstr "шершень"
+
+#: mon-data.h:2590
+msgid "a skeletal warrior"
+msgstr "воин-скелет"
+
+#: mon-data.h:2603
+msgid "an ancient champion"
+msgstr "древний чемпион"
+
+#: mon-data.h:2616
+msgid "a flying skull"
+msgstr "летающий череп"
+
+#: mon-data.h:2629
+msgid "a curse skull"
+msgstr "проклятый череп"
+
+#: mon-data.h:2642
+msgid "a curse toe"
+msgstr "проклятый палец"
+
+#: mon-data.h:2656
+msgid "an angel"
+msgstr "ангел"
 
 #: mon-data.h:2733
 msgid "a giant cockroach"
@@ -7543,21 +8412,89 @@ msgstr "циклоп"
 msgid "an ettin"
 msgstr "эттин"
 
+#: mon-data.h:2829
+msgid "a fire giant"
+msgstr "огненный гигант"
+
+#: mon-data.h:2842
+msgid "a frost giant"
+msgstr "морозный гигант"
+
+#: mon-data.h:2855
+msgid "a stone giant"
+msgstr "каменный гигант"
+
 #: mon-data.h:2868
 msgid "a titan"
 msgstr "титан"
+
+#: mon-data.h:2881
+msgid "a juggernaut"
+msgstr "джаггернаут"
+
+#: mon-data.h:2894
+msgid "an iron giant"
+msgstr "железный гигант"
 
 #: mon-data.h:2907
 msgid "a dragon"
 msgstr "дракон"
 
+#: mon-data.h:2910
+msgid "a fire dragon"
+msgstr "огненный дракон"
+
 #: mon-data.h:2924
 msgid "a hydra"
 msgstr "гидра"
 
+#: mon-data.h:2937
+msgid "an ice dragon"
+msgstr "ледяной дракон"
+
+#: mon-data.h:2978
+msgid "an acid dragon"
+msgstr "кислотный дракон"
+
+#: mon-data.h:3004
+msgid "an iron dragon"
+msgstr "железный дракон"
+
+#: mon-data.h:3018
+msgid "a storm dragon"
+msgstr "штормовой дракон"
+
+#: mon-data.h:3032
+msgid "a golden dragon"
+msgstr "золотой дракон"
+
+#: mon-data.h:3046
+msgid "a shadow dragon"
+msgstr "дракон тени"
+
+#: mon-data.h:3060
+msgid "a bone dragon"
+msgstr "костяной дракон"
+
+#: mon-data.h:3074
+msgid "a pearl dragon"
+msgstr "жемчужный дракон"
+
+#: mon-data.h:3087
+msgid "an elemental"
+msgstr "элементаль"
+
 #: mon-data.h:3170
 msgid "a giant frog"
 msgstr "гигантская лягушка"
+
+#: mon-data.h:3279
+msgid "a shining eye"
+msgstr "сияющее око"
+
+#: mon-data.h:3306
+msgid "a golden eye"
+msgstr "золотое око"
 
 #: mon-data.h:3333
 msgid "a manticore"
@@ -7739,9 +8676,25 @@ msgstr "демон тени"
 msgid "a reaper"
 msgstr "жнец"
 
+#: mon-data.h:5874
+msgid "an electric golem"
+msgstr "электрический голем"
+
+#: mon-data.h:5928
+msgid "an ice statue"
+msgstr "ледяная статуя"
+
+#: mon-data.h:5941
+msgid "an obsidian statue"
+msgstr "обсидиановая статуя"
+
 #: mon-data.h:5968
 msgid "a statue"
 msgstr "статуя"
+
+#: mon-data.h:5981
+msgid "a training dummy"
+msgstr "манекен"
 
 #: mon-data.h:5994
 msgid "a pillar of salt"
@@ -7759,6 +8712,10 @@ msgstr "алмазный обелиск"
 msgid "a gargoyle"
 msgstr "гаргулия"
 
+#: mon-data.h:6091
+msgid "a pandemonium lord"
+msgstr "лорд пандемониума"
+
 #: mon-data.h:6104
 msgid "a hell lord"
 msgstr "лорд ада"
@@ -7775,6 +8732,10 @@ msgstr "сфера огня"
 msgid "an orb of destruction"
 msgstr "сфера разрушения"
 
+#: mon-data.h:6188
+msgid "a foxfire"
+msgstr "лисий огонь"
+
 #: mon-data.h:6229
 msgid "a battlesphere"
 msgstr "боевая сфера"
@@ -7790,6 +8751,14 @@ msgstr "Нессос"
 #: mon-data.h:6290
 msgid "a Chuck"
 msgstr "Чак"
+
+#: mon-data.h:6303
+msgid "a Polyphemus"
+msgstr "Полифем"
+
+#: mon-data.h:6316
+msgid "a Antaeus"
+msgstr "Антей"
 
 #: mon-data.h:6331
 msgid "a Tiamat"
@@ -7819,6 +8788,10 @@ msgstr "Наташа"
 msgid "a Arachne"
 msgstr "Арахна"
 
+#: mon-data.h:6609
+msgid "a Asterion"
+msgstr "Астерион"
+
 #: mon-data.h:6623
 msgid "a Agnes"
 msgstr "Агнес"
@@ -7830,6 +8803,10 @@ msgstr "Соня"
 #: mon-data.h:6709
 msgid "a Boris"
 msgstr "Борис"
+
+#: mon-data.h:6737
+msgid "a Khufu"
+msgstr "Хуфу"
 
 #: mon-data.h:6863
 msgid "a Azrael"
@@ -7926,4 +8903,29 @@ msgstr "бьёте"
 msgctxt "You %(slice)s %(the jackal)s%( like an onion)s%( for 10 damage)s%(!!!!!)s"
 msgid "You %s %s%s%s%s"
 msgstr "Вы %s %s%s%s%s"
+
+#: 
+msgctxt "blasted by %s"
+msgid "a yaktaur"
+msgstr "яктавром"
+
+#: 
+msgctxt "blasted by %s"
+msgid "smoke demon (illusionary)"
+msgstr "дымным демоном (иллюзорным)"
+
+#: 
+msgctxt "%(blasted)s by %(yaktaur captain)s"
+msgid "%s by %s"
+msgstr "%s %s"
+
+#: 
+msgctxt "%s by a yaktaur."
+msgid "blasted"
+msgstr "взорван"
+
+#: 
+msgctxt "%s by a yaktaur."
+msgid "shot"
+msgstr "застрелен"
 

@@ -8,11 +8,15 @@
 #include "crawl_locale.h"
 
 const char* translate_actor(actor_i18n_context_type i18n_context, const char* msgid) {
-    return __(actor_i18n_cnames[i18n_context], msgid);
+    return __(__actor_i18n_cnames[i18n_context], msgid);
 }
 
 const char* translate_other(other_i18n_context_type i18n_context, const char *msgid) {
-    return __(other_i18n_cnames[i18n_context], msgid);
+    return __(__other_i18n_cnames[i18n_context], msgid);
+}
+
+const char* translate_mon_attack_name(mon_attack_name_i18n_ctype i18n_context, const char* msgid) {
+    return __(__mon_attack_name_i18n_cnames[static_cast<int>(i18n_context)], msgid);
 }
 
 #endif //SOURCE_CRAWL_LOCALE_CC

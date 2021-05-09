@@ -503,7 +503,7 @@ bool melee_attack::handle_phase_hit()
     {
         attack_verb = attacker->is_player()
                       ? attack_verb
-                      : attacker->conj_verb(mons_attack_verb());
+                      : mons_attack_verb();
 
         // TODO: Clean this up if possible, checking atype for do / does is ugly
         mprf("%s %s %s but %s no damage.",
@@ -2328,6 +2328,28 @@ bool melee_attack::player_good_stab()
               && (!weapon || is_melee_weapon(*weapon));
 }
 
+static const char *klown_attack[] = {
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "hit"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "poke"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "prod"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "flog"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "pound"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "slap"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "tickle"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "defenestrate"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "sucker-punch"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "elbow"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "pinch"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "strangle-hug"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "squeeze"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "tease"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "eye-gouge"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "karate-kick"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "headlock"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "wrestle"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "trip-wire"),
+    pgettext_noop("The jackal %s you for 10 damage with +3 dagger!!!", "kneecap")
+};
 /* Select the attack verb for attacker
  *
  * If klown, select randomly from klown_attack, otherwise check for any special
@@ -2338,94 +2360,15 @@ bool melee_attack::player_good_stab()
  */
 string melee_attack::mons_attack_verb()
 {
-    static const char *klown_attack[] =
-    {
-        "hit",
-        "poke",
-        "prod",
-        "flog",
-        "pound",
-        "slap",
-        "tickle",
-        "defenestrate",
-        "sucker-punch",
-        "elbow",
-        "pinch",
-        "strangle-hug",
-        "squeeze",
-        "tease",
-        "eye-gouge",
-        "karate-kick",
-        "headlock",
-        "wrestle",
-        "trip-wire",
-        "kneecap"
-    };
-
     if (attacker->type == MONS_KILLER_KLOWN && attk_type == AT_HIT)
-        return RANDOM_ELEMENT(klown_attack);
+        // i18n: all these will be collected by xgettext invocation in l10n make target
+        return __("The jackal %s you for 10 damage with +3 dagger!!!", RANDOM_ELEMENT(klown_attack));
 
     //XXX: then why give them it in the first place?
     if (attk_type == AT_TENTACLE_SLAP && mons_is_tentacle(attacker->type))
-        return "slap";
+        return __("The jackal %s you for 10 damage with +3 dagger!!!", "slap");
 
-    return mon_attack_name(attk_type);
-}
-
-string melee_attack::mons_attack_verb(other_i18n_context_type i18n_context)
-{
-    OTHER_I18N_CNAME;
-    static const char *klown_attack[] =
-    {
-        __(i18n_cname, "hit"),
-        __(i18n_cname, "poke"),
-        __(i18n_cname, "prod"),
-        __(i18n_cname, "flog"),
-        __(i18n_cname, "pound"),
-        __(i18n_cname, "slap"),
-        __(i18n_cname, "tickle"),
-        __(i18n_cname, "defenestrate"),
-        __(i18n_cname, "sucker-punch"),
-        __(i18n_cname, "elbow"),
-        __(i18n_cname, "pinch"),
-        __(i18n_cname, "strangle-hug"),
-        __(i18n_cname, "squeeze"),
-        __(i18n_cname, "tease"),
-        __(i18n_cname, "eye-gouge"),
-        __(i18n_cname, "karate-kick"),
-        __(i18n_cname, "headlock"),
-        __(i18n_cname, "wrestle"),
-        __(i18n_cname, "trip-wire"),
-        __(i18n_cname, "kneecap")
-    };
-
-    if (attacker->type == MONS_KILLER_KLOWN && attk_type == AT_HIT)
-        return RANDOM_ELEMENT(klown_attack);
-
-    //XXX: then why give them it in the first place?
-    if (attk_type == AT_TENTACLE_SLAP && mons_is_tentacle(attacker->type))
-        return __(i18n_cname, "slap");
-
-    return mon_attack_name(attk_type, i18n_context);
-}
-
-string melee_attack::mons_attack_desc()
-{
-    if (!you.can_see(*attacker))
-        return "";
-
-    string ret;
-    int dist = (attack_position - defender->pos()).rdist();
-    if (dist > 1)
-    {
-        ASSERT(can_reach());
-        ret = " from afar";
-    }
-
-    if (weapon && attacker->type != MONS_DANCING_WEAPON && attacker->type != MONS_SPECTRAL_WEAPON)
-        ret += " with " + weapon->name(DESC_A);
-
-    return ret;
+    return mon_attack_name(attk_type, mon_attack_name_i18n_ctype::mons_attack_verb);
 }
 
 string melee_attack::mons_attack_desc(other_i18n_context_type i18n_context)
@@ -2458,7 +2401,7 @@ void melee_attack::announce_hit()
     {
         mprf(__("%(The jackal)s %(bites)s %(you)s%( for 10 damage)s%( with +3 dagger)s%(!!!)s", "%s %s %s%s%s%s"),
              atk_name(I18NC_MONSTER_MELEE_ATTACKER).c_str(),
-             mons_attack_verb(I18NC_MONSTER_MELEE_ATTACK_VERB).c_str(),
+             mons_attack_verb().c_str(),
              defender_name(I18NC_MONSTER_MELEE_DEFENDER).c_str(),
              debug_damage_number().c_str(),
              mons_attack_desc(I18NC_MONSTER_ATTACK_DESC).c_str(),

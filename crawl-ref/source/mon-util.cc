@@ -2082,6 +2082,42 @@ static int _mons_damage(monster_type mc, int rt)
     return smc->attack[rt].damage;
 }
 
+static const char *attack_types[] = {
+    "hit",         // including weapon attacks
+    "bite",
+    "sting",
+
+    // spore
+    "release spores at",
+
+    "touch",
+    "engulf",
+    "claw",
+    "peck",
+    "headbutt",
+    "punch",
+    "kick",
+    "tentacle-slap",
+    "tail-slap",
+    "gore",
+    "constrict",
+    "trample",
+    "trunk-slap",
+#if TAG_MAJOR_VERSION == 34
+    "snap closed at",
+    "splash",
+#endif
+    "pounce on",
+#if TAG_MAJOR_VERSION == 34
+    "sting",
+#endif
+    "hit, bite, peck, or gore", // AT_CHERUB
+#if TAG_MAJOR_VERSION == 34
+    "hit", // AT_SHOOT
+#endif
+    "hit", // AT_WEAP_ONLY,
+    "hit or gore", // AT_RANDOM
+};
 /**
  * A short description of the given monster attack type.
  *
@@ -2093,43 +2129,6 @@ static int _mons_damage(monster_type mc, int rt)
  */
 string mon_attack_name(attack_type attack, bool with_object)
 {
-    static const char *attack_types[] =
-    {
-        "hit",         // including weapon attacks
-        "bite",
-        "sting",
-
-        // spore
-        "release spores at",
-
-        "touch",
-        "engulf",
-        "claw",
-        "peck",
-        "headbutt",
-        "punch",
-        "kick",
-        "tentacle-slap",
-        "tail-slap",
-        "gore",
-        "constrict",
-        "trample",
-        "trunk-slap",
-#if TAG_MAJOR_VERSION == 34
-        "snap closed at",
-        "splash",
-#endif
-        "pounce on",
-#if TAG_MAJOR_VERSION == 34
-        "sting",
-#endif
-        "hit, bite, peck, or gore", // AT_CHERUB
-#if TAG_MAJOR_VERSION == 34
-        "hit", // AT_SHOOT
-#endif
-        "hit", // AT_WEAP_ONLY,
-        "hit or gore", // AT_RANDOM
-    };
     COMPILE_CHECK(ARRAYSZ(attack_types) == NUM_ATTACK_TYPES - AT_FIRST_ATTACK);
 
     const int verb_index = attack - AT_FIRST_ATTACK;
@@ -2144,56 +2143,23 @@ string mon_attack_name(attack_type attack, bool with_object)
     }
 }
 
-string mon_attack_name(attack_type attack, other_i18n_context_type i18n_context, bool with_object)
+string mon_attack_name(attack_type attack, mon_attack_name_i18n_ctype i18n_context, bool with_object)
 {
-    static const char *attack_types[] =
-    {
-        "hit",         // including weapon attacks
-        "bite",
-        "sting",
-
-        // spore
-        "release spores at",
-
-        "touch",
-        "engulf",
-        "claw",
-        "peck",
-        "headbutt",
-        "punch",
-        "kick",
-        "tentacle-slap",
-        "tail-slap",
-        "gore",
-        "constrict",
-        "trample",
-        "trunk-slap",
-#if TAG_MAJOR_VERSION == 34
-        "snap closed at",
-        "splash",
-#endif
-        "pounce on",
-#if TAG_MAJOR_VERSION == 34
-        "sting",
-#endif
-        "hit, bite, peck, or gore", // AT_CHERUB
-#if TAG_MAJOR_VERSION == 34
-        "hit", // AT_SHOOT
-#endif
-        "hit", // AT_WEAP_ONLY,
-        "hit or gore", // AT_RANDOM
-    };
     COMPILE_CHECK(ARRAYSZ(attack_types) == NUM_ATTACK_TYPES - AT_FIRST_ATTACK);
 
     const int verb_index = attack - AT_FIRST_ATTACK;
     ASSERT(verb_index < (int)ARRAYSZ(attack_types));
+    const char* attack_verb = attack_types[verb_index];
 
     if (with_object)
-        return translate_other(i18n_context, attack_types[verb_index]);
+        return translate_mon_attack_name(i18n_context, attack_verb);
     else
     {
-        return translate_other(i18n_context, replace_all(replace_all(attack_types[verb_index], " at", ""),
-                                                         " on", "").c_str());
+        return translate_mon_attack_name(
+            i18n_context,
+            replace_all(replace_all(attack_verb, " at", ""),
+                        " on", "").c_str()
+        );
     }
 }
 

@@ -538,15 +538,15 @@ void show_hiscore_table()
 static const char *_range_type_verb(const char *const aux)
 {
     if (strncmp(aux, "Shot ", 5) == 0)                // launched
-        return "shot";
+        return __("%s by a yaktaur.", "shot");
     else if (aux[0] == 0                                // unknown
              || strncmp(aux, "Hit ", 4) == 0          // thrown
              || strncmp(aux, "volley ", 7) == 0)      // manticore spikes
     {
-        return "hit from afar";
+        return __("%s by a yaktaur.", "hit from afar");
     }
 
-    return "blasted";                                 // spells, wands
+    return __("%s by a yaktaur.", "blasted");   // spells, wands
 }
 
 string hiscores_format_single(const scorefile_entry &se)
@@ -2180,10 +2180,11 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
         if (oneline || semiverbose)
         {
             // keeping this short to leave room for the deep elf spellcasters:
-            desc += make_stringf("%s by ",
-                      _range_type_verb(auxkilldata.c_str()));
-            desc += (death_source_name == "you") ? "themself"
-                                                 : death_source_desc();
+            desc += make_stringf(
+                __("%(blasted)s by %(yaktaur captain)s", "%s by %s"),
+                _range_type_verb(auxkilldata.c_str()),
+                translate_actor(I18NCA_KILLED_BY_BEAM, death_source_desc().c_str())
+            );
 
             if (semiverbose)
             {
@@ -2223,15 +2224,11 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
         {
             // Note: This is also used for the "by" cases in non-verbose
             //       mode since listing the monster is more imporatant.
-            if (semiverbose)
-                desc += "Killed by ";
-            else if (!terse)
-                desc += "Killed from afar by ";
-
-            if (death_source_name == "you")
-                desc += "themself";
-            else
-                desc += death_source_desc();
+            desc += make_stringf(
+                __("Killed%( from afar)s by %(goblin zombie)s", "Killed%s by %s"),
+                (!(semiverbose || terse)) ? __("Killed%s by goblin zombie", " from afar") : "",
+                translate_actor(I18NCA_KILLED_BY_BEAM, death_source_desc().c_str())
+            );
 
             if (!auxkilldata.empty())
                 needs_beam_cause_line = true;
