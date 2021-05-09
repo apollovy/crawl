@@ -1,14 +1,14 @@
 %%%%
-the Stairs card
+Stairs card
 
 Questa carta fa avvicinare o allontanare le scale. (se vedete questo messaggio
 si tratta di un bug)
 %%%%
-a buggy card
+buggy card
 
 Bacato (se vedete questo messaggio si tratta di un bug).
 %%%%
-a very buggy card
+very buggy card
 
 Bacato (se vedete questo messaggio si tratta di un bug).
 %%%%

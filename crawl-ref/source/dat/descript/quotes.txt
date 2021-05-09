@@ -111,14 +111,14 @@ __cap-T_suffix
  A laidly Trold has dragged it there.”
     -George Borrow, _Lavengro: The Scholar, the Gypsy, the Priest_. 1851.
 %%%%
-A broken pillar
+broken pillar
 
 “Now Absalom in his lifetime had taken and reared up for himself a pillar,
  which is in the king's dale: for he said, I have no son to keep my name in
  remembrance...”
     -KJV Bible, 2 Samuel 18:18.
 %%%%
-A faded altar of an unknown god
+faded altar of an unknown god
 
 “Then Paul stood in the midst of Mars' hill, and said, Ye men of Athens, I
  perceive that in all things ye are too superstitious. For as I passed by, and
@@ -126,7 +126,7 @@ A faded altar of an unknown god
  GOD.”
     -KJV Bible, Acts 17:22-23.
 %%%%
-A flagged portal
+flagged portal
 
 “We made an expedition;
  We met a host and quelled it;
@@ -139,7 +139,7 @@ A flagged portal
  But we conquered them, and slew them.”
     -Thomas Love Peacock, “The War Song of Dinas Vawr”. 1829.
 %%%%
-A gateway to Hell
+gateway to Hell
 
 “I am the way into the city of woe.
  I am the way to a forsaken people.
@@ -155,17 +155,17 @@ A gateway to Hell
     -Dante Alighieri, _The Divine Comedy_, “Inferno”, Canto III. ca. 1315.
      trans. John Ciardi, 1954.
 %%%%
-A gateway to a ziggurat
+gateway to a ziggurat
 
 “Captain: Take off every ‘zig’!!
  Captain: For great justice.”
     -Zero Wing
 %%%%
-A gateway to the decaying netherworld of Tartarus
+gateway to the decaying netherworld of Tartarus
 
 <Tartarus>
 %%%%
-A granite statue
+granite statue
 
 “I met a traveller from an antique land
  Who said: Two vast and trunkless legs of stone
@@ -183,7 +183,7 @@ A granite statue
  The lone and level sands stretch far away.”
     -Percy Bysshe Shelley, “Ozymandias”. 1818.
 %%%%
-A one-way gate to the infinite horrors of the Abyss
+one-way gate to the infinite horrors of the Abyss
 
 “And if you gaze for long into an abyss, the abyss gazes also into you.”
     -Friedrich Nietzsche, _Beyond Good and Evil_ , Aphorism 146. 1886.
@@ -196,7 +196,7 @@ A one-way gate to the infinite horrors of the Abyss
     -Lewis Carroll, _Through the Looking-Glass, and What Alice Found There_,
 ch. 2 “The Garden of Live Flowers”. 1871.
 %%%%
-A portal to a secret trove of treasure
+portal to a secret trove of treasure
 
 “He saw a large cavern and a vaulted [roof], in height equalling the stature
  of a full-grown man and it was hewn in the live stone and lighted up with
@@ -212,7 +212,7 @@ A portal to a secret trove of treasure
  generations thieves must have stored their gains and spoils in this place.”
     -_The Arabian Nights_. trans. Sir Richard F. Burton, 1885.
 %%%%
-A rock wall
+rock wall
 
 “I know not whether Laws be right,
    Or whether Laws be wrong;
@@ -222,24 +222,24 @@ A rock wall
    A year whose days are long.”
     -Oscar Wilde, “The Ballad of Reading Gaol”. 1898.
 %%%%
-A staircase to the Ecumenical Temple
+staircase to the Ecumenical Temple
 
 <Temple>
 %%%%
-A staircase to the Orcish Mines
+staircase to the Orcish Mines
 
 <Orcish Mines>
 %%%%
-A staircase to the Shoals
+staircase to the Shoals
 
 <Shoals>
 %%%%
-A staircase to the Tomb
+staircase to the Tomb
 
 “A tomb now suffices him for whom the world was not enough.”
     -Alexander the Great's epitaph
 %%%%
-A stormy altar of Qazlal
+stormy altar of Qazlal
 
 “The storm irresistibly propels him into the future to which his back is
  turned, while the pile of debris before him grows skyward. This storm is what
@@ -247,7 +247,7 @@ A stormy altar of Qazlal
     -Walter Benjamin, “Theses on the Philosophy of History”. 1940.
    trans. Harry Zohn, 1969.
 %%%%
-A tree
+tree
 
 “I like trees because they seem more resigned to the way they have to live than
  other things do.”
@@ -1972,7 +1972,7 @@ ophan
  high and awesome, and all four rims were full of eyes all around.”
     -Ezekiel 1:15-18 (New International Version)
 %%%%
-The open sea
+open sea
 
 “I mused upon the mystery of fish, their strange and mindless beauty, how—
  innocently evil—they prey upon each other, devouring the weaker and smaller
@@ -2884,7 +2884,7 @@ tentacled monstrosity
     -H.P. Lovecraft and Hazel Heald, “Out of the Aeons”, _Weird Tales_, 25, No.
      4, pp. 478-96. April 1935.
 %%%%
-the Lernaean hydra
+Lernaean hydra
 
 “The second Labour which he undertook was the slaying of the Lernaian Hydra,
  springing from whose single body were fashioned a hundred necks, each bearing

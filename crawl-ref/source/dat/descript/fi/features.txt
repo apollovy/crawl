@@ -1,22 +1,22 @@
 %%%%
-A gate leading back out of this place
+gate leading back out of this place
 
 :name Portti ulos tästä paikasta
 Tämä portti johtaa takaisin luolastoon.
 %%%%
-A gateway to Hell
+gateway to Hell
 
 Tämä portti vie Helvetin eteiseen. Harvat menisivät sinne vapaaehtoisesti.
 %%%%
-A dead tree
+dead tree
 
 Tämä puu on yhtä kuollut kuin kaikki muukin täällä.
 %%%%
-A golden statue
+golden statue
 
 Sulaa kultaa oleva patsas pyhimyksestä.
 %%%%
-A glass window
+glass window
 
 Ultravahva lasi-ikkuna, jossa on rokonarpi.
 %%%%

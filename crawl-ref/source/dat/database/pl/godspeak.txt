@@ -444,7 +444,7 @@ end
 # The Shining One rants on killing a holy being #
 #################################################
 # an evil worshipper has killed a holy being
-the Shining One holy evil
+Shining One holy evil
 
 Świetlisty grzmi: „Zaprzestań tych podłych ataków na boskość!”
 
@@ -455,7 +455,7 @@ the Shining One holy evil
 Świetlisty szepcze: „Siły światła spalą cię na popiół.”
 %%%%
 # a non-good worshipper or atheist has killed a holy being
-the Shining One holy other
+Shining One holy other
 
 Świetlisty mówi: „Tak jak święte życia się kończą, tak skończy się twoje.”
 
@@ -601,11 +601,11 @@ Sif Muna welcome
 
 Sif Muna szepcze: Znam wiele sekretów...
 %%%%
-the Shining One penance
+Shining One penance
 
 Świetlisty rzecze: Możesz jeszcze zmyć swój grzech jako męczennik!
 %%%%
-the Shining One welcome
+Shining One welcome
 
 Świetlisty rzecze: Poprowadź siły światła ku zwycięstwu!
 %%%%

@@ -13,7 +13,7 @@ __r_suffix
 “이건 뭐야! 쥐새끼냐? 뒈져라, 콱 뒈져 버려!”
     -윌리엄 셰익스피어- 햄릿, 3막 4장
 %%%%
-A broken pillar
+broken pillar
 
 “압살롱이 살았을 때에 자기를 위하여 한 비석을 마련하여 세웠으니 이는 그가 자기
 이름을 전한 아들이 내게 없다고 말할였음이라. 그러므로 자기 이름을 기념하여 그
@@ -21,7 +21,7 @@ A broken pillar
 기념비라 일컫더라...”
     — 2 사무엘하 18:18
 %%%%
-A gateway to Hell
+gateway to Hell
 
 “나를 지나는 사람은 슬픔의 도시로,
  나를 지나는 사람은 영원한 비탄으로,
@@ -36,13 +36,13 @@ A gateway to Hell
  여기 들어오는 그대, 모든 희망을 버려라.”
     -단테 알리기에리,_신곡_, “지옥 편”, 장편시 3. 1315년 경.
 %%%%
-A gateway to a ziggurat
+gateway to a ziggurat
 
 “함장: 모든 ‘지그’를 벗어라!!
  함장: 위대한 정의를 위해.”
     -제로 윙
 %%%%
-A granite statue
+granite statue
 
 “나는 고대의 땅에서 온 나그네를 만났다네.
  그는 이렇게 말했었지. ‘몸뚱이도 없는 거대한 돌다리 두개가
@@ -60,7 +60,7 @@ A granite statue
  사막이 저 멀리까지 끝없이 뻗어 있을 뿐이었다”
     -퍼시 비시 셸리, “오지만디아스” 1818년.
 %%%%
-A portal to a secret trove of treasure
+portal to a secret trove of treasure
 
 “‘거기 서라! 도둑놈아!’ 마법의 소리. 상인은 계산대를 뛰쳐나오고, 마부는
 마차를; 정육점 주인은 쟁반을 던지고; 제빵사는 바구니를; 우유 배달부는 우유통을;
@@ -70,14 +70,14 @@ A portal to a secret trove of treasure
 메아리친다.”
     -찰스 디킨스, “올리버 트위스트”
 %%%%
-A rock wall
+rock wall
 
 나는 법이 맞는지도 틀린지도 모른다. 다만 구치소에 감금되어있는 자들은 벽이
 튼튼하다는 것만을 알고있고, 하루는 일년과도 같고 일년내내 매일매일 하루가 길게
 느껴진다는 것을 알고 있다.
     — Oscar Wilde, “레딩옥사의 노래” -
 %%%%
-A tree
+tree
 
 “오직 ‘당신’ 만이 산불을 막을 수 있습니다!”
     -스모키 곰

@@ -351,7 +351,7 @@ Xtahua
 
 Un ancien dragon puissant.
 %%%%
-the Serpent of Hell gehenna
+Serpent of Hell gehenna
 
 Un gros dragon rouge brillant, brulant des flammes de l'enfer. Il semble être
 possédé par l'essence même de Gehenna et ses feux éternels.
@@ -1169,7 +1169,7 @@ iron elemental
 Un esprit rare et puissant du plan élémentaire de la terre, il existe en ce
 monde sous la forme d'une immense masse de fer.
 %%%%
-the iron giant
+iron giant
 
 Gigantesque, maladroit et particulièrement lourd, ce monolithe rouillé peut
 délivrer de sacrés coups de poings. C'est très possiblement le plus grand géant
@@ -2363,19 +2363,19 @@ vile
 Une figure émaciée débordant de feux de l'enfer et de la peste. Son apparence
 signifie la fin des jours.
 %%%%
-The Servant
+Servant
 
 Son glaive est illuminé par les flammes de l'enfer.
 %%%%
-The Captor
+Captor
 
 Ceux qui entrent ne s'échapperont pas.
 %%%%
-The Defiler
+Defiler
 
 Son bouclier est décoré avec des images de flammes infernales.
 %%%%
-The Meatlord
+Meatlord
 
 Vous voyez l'incarnation de la saleté, la corruption et la dépravation, le
 Meatlord. Son corps fétide est gonflé à l'extrême, fuit d'un liquide visqueux
@@ -2390,7 +2390,7 @@ lancinant. Votre esprit vacille à la vue de cette forme hideuse et vos sens
 commencent à se fermer dans une tentative de préserver votre santé mentale
 tandis que son odeur oppressante vous étouffe.
 %%%%
-The Unspeakable
+Unspeakable
 
 A son approche, vous entendez l’écho des planètes derrière le rugissement
 assourdissant des étoiles. Il est la mâchoires des Abysses. Il apporte

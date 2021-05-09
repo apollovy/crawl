@@ -10,7 +10,7 @@ l'altruisme, exige une dîme (un dixième) de tout l'or gagné, préférant les 
 plus élevés. Les disciples de Zin peuvent se convertir à Elyvilon ou à
 L’Étincelant tout en gardant une partie de leur Piété.
 %%%%
-the Shining One
+Shining One
 
 L’Étincelant est une puissante divinité en croisade contre le mal. Ses fidèles
 et leurs alliés peuvent recevoir diverses bénédictions quand ils éradiquent
@@ -175,7 +175,7 @@ peuvent finalement trouver une sécurité temporaire au travers un refuge divin.
 Alors que leur piété grandit, les disciples sont protégés des mutations et, Zin
 peut même intervenir pour sauver directement la vie de ses disciples.
 %%%%
-the Shining One powers
+Shining One powers
 
 Les disciples de L’Étincelant sont entourés par un halo qui révèle leurs
 ennemis. Ils gagnent du pouvoir en tuant les êtres maléfiques, et la piété

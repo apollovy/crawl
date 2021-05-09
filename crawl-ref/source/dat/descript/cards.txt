@@ -7,7 +7,7 @@ coat the boots' soles.
 
 Drawing this card can grant great speed to allies or terrible slowness to foes.
 %%%%
-the Tomb card
+Tomb card
 
 The card depicts a royal crypt, its entrance sealed by a heavy stone slab.
 
@@ -25,7 +25,7 @@ figure.
 Drawing this card can banish nearby creatures to the abyss, with more being banished
 at higher power levels. It will never banish the user.
 %%%%
-the Shaft card
+Shaft card
 
 The card depicts a traveller plummeting into a chasm that has opened beneath
 them.
@@ -33,13 +33,13 @@ them.
 Drawing this card will create a shaft beneath the user, and possibly beneath
 their enemies.
 %%%%
-the Elixir card
+Elixir card
 
 The card depicts a smug smile formed out of nine chalices.
 
 Drawing this card rapidly restores the user's health and magic.
 %%%%
-the Cloud card
+Cloud card
 
 The card depicts an iron gate enshrouded in mist.
 
@@ -53,7 +53,7 @@ The card depicts an oklob plant, dripping with its distinctive corrosive sap.
 
 Drawing this card will unleash a corrosive attack spell.
 %%%%
-the Storm card
+Storm card
 
 The card depicts a ship at sea sinking in a thunderstorm.
 
@@ -67,7 +67,7 @@ The card depicts an iron wheel, menacing with spikes and rusted with blood.
 
 Drawing this card unleashes a necromantic attack spell.
 %%%%
-the Orb card
+Orb card
 
 The card depicts a figure surrounded by floating, glowing orbs of energy.
 
@@ -90,19 +90,19 @@ its user's enemies. Each creature affected will restore some of the user's
 magic.
 # Summoning
 %%%%
-the Elements card
+Elements card
 
 The card depicts the figures of great beasts lurking in a sandstorm.
 
 Drawing this card will summon three beasts of the four elements.
 %%%%
-the Pentagram card
+Pentagram card
 
 The card depicts cultists marking out a ritual pentagram on the floor.
 
 Drawing this card will summon a pair of demons to the user's aid.
 %%%%
-the Dance card
+Dance card
 
 The card depicts an extravagantly-dressed, masked figure dancing alone in a
 vast room.
@@ -110,20 +110,20 @@ vast room.
 Drawing this card will summon a dancing weapon. Its quality, brand, and
 friendliness are all affected by card power.
 %%%%
-the Swarm card
+Swarm card
 
 The card depicts a bear surrounded by a swarm of bees. It hums ominously.
 
 Drawing this card will summon bees.
 %%%%
-the Rangers card
+Rangers card
 
 The card depicts an arrow in a bull's-eye, which has been split by a second
 arrow.
 
 Drawing this card will summon several archers.
 %%%%
-the Illusion card
+Illusion card
 
 The card depicts someone standing in a hall of mirrors, surrounded by their own
 reflections.
@@ -146,13 +146,13 @@ earth.
 
 Drawing this card will leave its user on the brink of starvation.
 %%%%
-the Wraith card
+Wraith card
 
 The card depicts absolutely nothing.
 
 Drawing this card will drain the user.
 %%%%
-the Swine card
+Swine card
 
 The card depicts several feral hogs wallowing in a mud pit.
 
@@ -165,7 +165,7 @@ The card depicts a screaming figure being tortured on the rack.
 Drawing this card will cause agonising injury to the user.
 %%%%
 # cards for wizmode testing (&c)
-the Stairs card
+Stairs card
 
 The card depicts water flowing down a set of stairs.
 
@@ -173,13 +173,13 @@ Drawing this card makes staircases slide towards or away from the user. It is a
 bug if one ever finds it in a deck.
 %%%%
 # buggy cards
-a buggy card
+buggy card
 
 The card depicts a Crawl player filing a bug report on Mantis.
 
 Drawing this card is a bug, if one ever encounters it as such.
 %%%%
-a very buggy card
+very buggy card
 
 The card depicts several Crawl players angrily filing several bug reports on
 Mantis.

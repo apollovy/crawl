@@ -1,13 +1,13 @@
 %%%%
-the Stairs card
+Stairs card
 
 (まだこのカードが出たらバグである)
 %%%%
-a buggy card
+buggy card
 
 (もしこの文章が見えたらバグである。)
 %%%%
-a very buggy card
+very buggy card
 
 (もしこの文章が見えたらバグである。)
 %%%%
