@@ -1131,7 +1131,7 @@ string monster_info::common_name(description_level_type desc) const
 
 string monster_info::common_name(actor_i18n_context_type i18n_context) const
 {
-    // TODO: @apollov: refactor into single template with positional parameters
+    // TODO: @apollov: refactor into single template with positional parameters. Streams + const char* == fffuuu.
     const string core = _core_name(i18n_context);
     const bool nocore = mons_class_is_zombified(type)
                           && mons_is_unique(base_type)
@@ -1195,7 +1195,7 @@ string monster_info::common_name(actor_i18n_context_type i18n_context) const
     case MONS_ZOMBIE_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << __(i18n_cname, "zombie");
+            ss << make_stringf("%s%s", nocore ? "" : " ", __(i18n_cname, "zombie"));
         break;
     case MONS_SKELETON:
 #if TAG_MAJOR_VERSION == 34
