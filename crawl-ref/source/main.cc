@@ -238,8 +238,6 @@ __attribute__((externally_visible))
 #endif
 int main(int argc, char *argv[])
 {
-    bindtextdomain("crawl", "./lang/mo");
-    textdomain("crawl");
 #ifndef __ANDROID__
 # ifdef DGAMELAUNCH
     // avoid commas instead of dots, etc, on CDO
@@ -338,6 +336,8 @@ int main(int argc, char *argv[])
         return -1;
 #endif
 
+    bindtextdomain("crawl", datafile_path("lang/mo", false, true, dir_exists).c_str());
+    textdomain("crawl");
     _launch_game_loop();
     if (crawl_state.last_game_exit.message.size())
         end(0, false, "%s\n", crawl_state.last_game_exit.message.c_str());

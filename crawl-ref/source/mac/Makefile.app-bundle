@@ -95,6 +95,8 @@ endif
 	cp -r $(CRAWL_BASE)/docs $(RESOURCES)
 	cp $(CRAWL_BASE)/../LICENSE $(RESOURCES)/LICENSE.txt
 	cp $(CRAWL_BASE)/CREDITS.txt $(RESOURCES)
+	mkdir -p $(RESOURCES)/lang
+	cp -r $(CRAWL_SRC)/lang/mo $(RESOURCES)/lang
 	rm -rf $(RESOURCES)/docs/obsolete
 	rm -rf $(RESOURCES)/docs/template
 	rm -f $(RESOURCES)/docs/*.html
