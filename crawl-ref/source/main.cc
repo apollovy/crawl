@@ -285,6 +285,9 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    bindtextdomain("crawl", datafile_path("lang/mo", false, true, dir_exists).c_str());
+    textdomain("crawl");
+
     // Init monsters up front - needed to handle the mon_glyph option right.
     init_char_table(CSET_ASCII);
     init_monsters();
@@ -336,8 +339,6 @@ int main(int argc, char *argv[])
         return -1;
 #endif
 
-    bindtextdomain("crawl", datafile_path("lang/mo", false, true, dir_exists).c_str());
-    textdomain("crawl");
     _launch_game_loop();
     if (crawl_state.last_game_exit.message.size())
         end(0, false, "%s\n", crawl_state.last_game_exit.message.c_str());
