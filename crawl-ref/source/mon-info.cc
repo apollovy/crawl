@@ -1015,113 +1015,11 @@ string monster_info::_apply_adjusted_description(description_level_type desc,
 string monster_info::common_name(description_level_type desc) const
 {
     const string core = _core_name(I18NC_EMPTY);
-    const bool nocore = mons_class_is_zombified(type)
-                        && mons_is_unique(base_type)
-                        && base_type == mons_species(base_type)
-                        || type == MONS_MUTANT_BEAST && !is(MB_NAME_REPLACE);
+    string s = common_name(I18NC_EMPTY);
 
-    ostringstream ss;
-
-    if (props.exists("helpless"))
-        ss << _("helpless ");
-
-    if (is(MB_SUBMERGED))
-        ss << _("submerged ");
-
-    if (type == MONS_SPECTRAL_THING && !is(MB_NAME_ZOMBIE) && !nocore)
-        ss << _("spectral ");
-
-    if (is(MB_SPECTRALISED))
-        ss << _("ghostly ");
-
-    if (type == MONS_SENSED && !mons_is_sensed(base_type))
-        ss << _("sensed ");
-
-    if (type == MONS_BALLISTOMYCETE)
-        ss << (is_active ? _("active ") : "");
-
-    if (_is_hydra(*this)
-        && type != MONS_SENSED
-        && type != MONS_BLOCK_OF_ICE
-        && type != MONS_PILLAR_OF_SALT)
-    {
-        ASSERT(num_heads > 0);
-        if (num_heads < 11)
-            ss << number_in_words(num_heads);
-        else
-            ss << std::to_string(num_heads);
-
-        ss << _("-headed ");
-    }
-
-    if (type == MONS_MUTANT_BEAST && !is(MB_NAME_REPLACE))
-    {
-        const int xl = props[MUTANT_BEAST_TIER].get_short();
-        const int tier = mutant_beast_tier(xl);
-        ss << _(_mutant_beast_tier_name(tier).c_str()) << " ";
-        for (auto facet : props[MUTANT_BEAST_FACETS].get_vector())
-            ss << _(_mutant_beast_facet(facet.get_int()).c_str()); // no space between
-        ss << _(" beast");
-    }
-
-    if (!nocore)
-        ss << core;
-
-    // Add suffixes.
-    switch (type)
-    {
-    case MONS_ZOMBIE:
-#if TAG_MAJOR_VERSION == 34
-    case MONS_ZOMBIE_SMALL:
-    case MONS_ZOMBIE_LARGE:
-#endif
-        if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << _("zombie");
-        break;
-    case MONS_SKELETON:
-#if TAG_MAJOR_VERSION == 34
-    case MONS_SKELETON_SMALL:
-    case MONS_SKELETON_LARGE:
-#endif
-        if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << _("skeleton");
-        break;
-    case MONS_SIMULACRUM:
-#if TAG_MAJOR_VERSION == 34
-    case MONS_SIMULACRUM_SMALL:
-    case MONS_SIMULACRUM_LARGE:
-#endif
-        if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << _("simulacrum");
-        break;
-    case MONS_SPECTRAL_THING:
-        if (nocore)
-            ss << _("spectre");
-        break;
-    case MONS_PILLAR_OF_SALT:
-        ss << (nocore ? "" : " ") << _("shaped pillar of salt");
-        break;
-    case MONS_BLOCK_OF_ICE:
-        ss << (nocore ? "" : " ") << _("shaped block of ice");
-        break;
-    default:
-        break;
-    }
-
-    if (is(MB_SHAPESHIFTER))
-    {
-        // If momentarily in original form, don't display "shaped
-        // shifter".
-        if (mons_genus(type) != MONS_SHAPESHIFTER)
-            ss << _(" shaped shifter");
-    }
-
-    string s;
     // only respect unqualified if nothing was added ("Sigmund" or "The spectral Sigmund")
-    if (!is(MB_NAME_UNQUALIFIED) || has_proper_name() || ss.str() != core)
-        s = _apply_adjusted_description(desc, ss.str());
-    else
-        s = ss.str();
+    if (!is(MB_NAME_UNQUALIFIED) || has_proper_name() || s != core)
+        s = _apply_adjusted_description(desc, s);
 
     if (desc == DESC_ITS)
         s = apostrophise(s);
@@ -1132,117 +1030,129 @@ string monster_info::common_name(description_level_type desc) const
 string monster_info::common_name(actor_i18n_context_type i18n_context) const
 {
     // TODO: @apollov: refactor into single template with positional parameters. Streams + const char* == fffuuu.
-    const string core = _core_name(i18n_context);
     const bool nocore = mons_class_is_zombified(type)
                           && mons_is_unique(base_type)
                           && base_type == mons_species(base_type)
                         || type == MONS_MUTANT_BEAST && !is(MB_NAME_REPLACE);
 
-    ostringstream ss;
-
     ACTOR_I18N_CNAME;
+    const char*  helpless = "";
     if (props.exists("helpless"))
-        ss << __(i18n_cname, "helpless ");
+        helpless = __(i18n_cname, "helpless ");
 
+    const char* submerged = "";
     if (is(MB_SUBMERGED))
-        ss <<__(i18n_cname, "submerged ");
+        submerged = __(i18n_cname, "submerged ");
 
+    const char* spectral = "";
     if (type == MONS_SPECTRAL_THING && !is(MB_NAME_ZOMBIE) && !nocore)
-        ss << __(i18n_cname, "spectral ");
+        spectral = __(i18n_cname, "spectral ");
 
+    const char* ghostly = "";
     if (is(MB_SPECTRALISED))
-        ss << __(i18n_cname, "ghostly ");
+        ghostly = __(i18n_cname, "ghostly ");
 
+    const char* sensed = "";
     if (type == MONS_SENSED && !mons_is_sensed(base_type))
-        ss << __(i18n_cname, "sensed ");
+        sensed = __(i18n_cname, "sensed ");
 
+    const char* active = "";
     if (type == MONS_BALLISTOMYCETE)
-        ss << (is_active ? __(i18n_cname, "active ") : "");
+        active = (is_active ? __(i18n_cname, "active ") : "");
 
+    const char* n_headed = "";
     if (_is_hydra(*this)
         && type != MONS_SENSED
         && type != MONS_BLOCK_OF_ICE
         && type != MONS_PILLAR_OF_SALT)
     {
         ASSERT(num_heads > 0);
+        stringstream _ss;
         if (num_heads < 11)
-            ss << number_in_words(num_heads);
+            _ss << number_in_words(num_heads);
         else
-            ss << std::to_string(num_heads);
+            _ss << std::to_string(num_heads);
 
-        ss << __(i18n_cname, "-headed ");
+        _ss << __(i18n_cname, "-headed ");
+        n_headed = _ss.str().c_str();
     }
 
+    const char* mutant_tier = "";
+    const char* mutant_facets = "";
+    const char* mutant_beast = "";
     if (type == MONS_MUTANT_BEAST && !is(MB_NAME_REPLACE))
     {
         const int xl = props[MUTANT_BEAST_TIER].get_short();
         const int tier = mutant_beast_tier(xl);
-        ss << string(__(i18n_cname, _mutant_beast_tier_name(tier).c_str())) << " ";
+        mutant_tier = make_stringf("%s ", __(i18n_cname, _mutant_beast_tier_name(tier).c_str())).c_str();
+        stringstream _ss;
         for (auto facet : props[MUTANT_BEAST_FACETS].get_vector())
-            ss << __(i18n_cname, _mutant_beast_facet(facet.get_int()).c_str()); // no space between
-        ss << __(i18n_cname, " beast");
+            _ss << __(i18n_cname, _mutant_beast_facet(facet.get_int()).c_str()); // no space between
+        mutant_facets = _ss.str().c_str();
+        mutant_beast = __(i18n_cname, " beast");
     }
-
-    if (!nocore)
-        ss << core;
 
     // Add suffixes.
+    const char* suffix = "";
     switch (type)
     {
-    case MONS_ZOMBIE:
+        case MONS_ZOMBIE:
 #if TAG_MAJOR_VERSION == 34
-    case MONS_ZOMBIE_SMALL:
-    case MONS_ZOMBIE_LARGE:
+        case MONS_ZOMBIE_SMALL:
+        case MONS_ZOMBIE_LARGE:
 #endif
-        if (!is(MB_NAME_ZOMBIE))
-            ss << make_stringf("%s%s", nocore ? "" : " ", __(i18n_cname, "zombie"));
-        break;
-    case MONS_SKELETON:
+            if (!is(MB_NAME_ZOMBIE))
+                suffix = _("zombie");
+            break;
+        case MONS_SKELETON:
 #if TAG_MAJOR_VERSION == 34
-    case MONS_SKELETON_SMALL:
-    case MONS_SKELETON_LARGE:
+        case MONS_SKELETON_SMALL:
+        case MONS_SKELETON_LARGE:
 #endif
-        if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << __(i18n_cname, "skeleton");
-        break;
-    case MONS_SIMULACRUM:
+            if (!is(MB_NAME_ZOMBIE))
+                suffix = _("skeleton");
+            break;
+        case MONS_SIMULACRUM:
 #if TAG_MAJOR_VERSION == 34
-    case MONS_SIMULACRUM_SMALL:
-    case MONS_SIMULACRUM_LARGE:
+        case MONS_SIMULACRUM_SMALL:
+        case MONS_SIMULACRUM_LARGE:
 #endif
-        if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << __(i18n_cname, "simulacrum");
-        break;
-    case MONS_SPECTRAL_THING:
-        if (nocore)
-            ss << __(i18n_cname, "spectre");
-        break;
-    case MONS_PILLAR_OF_SALT:
-        ss << (nocore ? "" : " ") << __(i18n_cname, "shaped pillar of salt");
-        break;
-    case MONS_BLOCK_OF_ICE:
-        ss << (nocore ? "" : " ") << __(i18n_cname, "shaped block of ice");
-        break;
-    default:
-        break;
+            if (!is(MB_NAME_ZOMBIE))
+                suffix = _("simulacrum");
+            break;
+        case MONS_SPECTRAL_THING:
+            if (nocore)
+                suffix = _("spectre");
+            break;
+        case MONS_PILLAR_OF_SALT:
+            suffix = _("shaped pillar of salt");
+            break;
+        case MONS_BLOCK_OF_ICE:
+            suffix = _("shaped block of ice");
+            break;
+        default:
+            break;
     }
+    const char* real_suffix = "";
+    if (strnlen(suffix, 1) == 1)
+        real_suffix = make_stringf("%s%s", nocore ? "" : " ", suffix).c_str();
 
+    const char* shapeshifter = "";
     if (is(MB_SHAPESHIFTER))
     {
         // If momentarily in original form, don't display "shaped
         // shifter".
         if (mons_genus(type) != MONS_SHAPESHIFTER)
-            ss << __(i18n_cname, " shaped shifter");
+            shapeshifter = __(i18n_cname, " shaped shifter");
     }
-
-    string s;
-    // only respect unqualified if nothing was added ("Sigmund" or "The spectral Sigmund")
-    if (!is(MB_NAME_UNQUALIFIED) || has_proper_name() || ss.str() != core)
-        s = apply_description(i18n_context, ss.str());
-    else
-        s = ss.str();
-
-    return s;
+    string core_name = _core_name(i18n_context);
+    return make_stringf(
+        __(
+           "%(helpless )s%(submerged )s%(spectral )s%(ghostly )s%(sensed )s%(active )s%(six-headed)s%(juvenile)s%(weird fire ox)s%( beast)s%(jackal)%( skeleton)%( shaped shifter)s",
+           "%s%s%s%s%s%s%s%s%s%s%s%s%s"
+        ),
+        helpless, submerged, spectral, ghostly, sensed, active, n_headed, mutant_tier, mutant_facets, mutant_beast, core_name.c_str(), real_suffix, shapeshifter
+    );
 }
 
 bool monster_info::has_proper_name() const

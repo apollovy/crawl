@@ -34,10 +34,8 @@ string article_a(const string &name, bool lowercase = true);
 // Applies a description type to a name, but does not pluralise! You
 // must pluralise the name if needed. The quantity is used to prefix the
 // name with a quantity if appropriate.
-string apply_description(description_level_type desc, const string &name,
-                         int quantity = 1, bool num_in_words = false);
-string apply_description(actor_i18n_context_type i18n_context, const string &name,
-                         int quantity = 1, bool num_in_words = false);
+string apply_description(description_level_type desc, const string &name);
+string apply_description(actor_i18n_context_type i18n_context, const string &name);
 
 string thing_do_grammar(description_level_type dtype, string desc,
                         bool ignore_case = false);

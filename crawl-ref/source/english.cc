@@ -421,16 +421,14 @@ string article_a(const string &name, bool lowercase)
     }
 }
 
-string apply_description(description_level_type desc, const string &name,
-                         int quantity, bool in_words)
+string apply_description(description_level_type desc, const string &name)
 {
     switch (desc)
     {
     case DESC_THE:
         return make_stringf(_("the %s"), name.c_str());
     case DESC_A:
-        return quantity > 1 ? _number_to_string(quantity, in_words) + name
-                            : article_a(name, true);
+        return article_a(name, true);
     case DESC_YOUR:
         return "your " + name;
     case DESC_PLAIN:
@@ -439,14 +437,9 @@ string apply_description(description_level_type desc, const string &name,
     }
 }
 
-string apply_description(actor_i18n_context_type i18n_context, const string &name,
-                         int quantity, bool in_words)
+string apply_description(actor_i18n_context_type i18n_context, const string &name)
 {
-    return quantity > 1 ? make_stringf(
-            translate_actor(i18n_context, "%s%s"),
-            _number_to_string(quantity, in_words, i18n_context).c_str(),
-            name.c_str()
-    ) : name;
+    return name;
 }
 
 string thing_do_grammar(description_level_type dtype, string desc,
