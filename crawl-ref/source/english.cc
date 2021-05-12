@@ -381,16 +381,6 @@ string number_in_words(unsigned num, actor_i18n_context_type i18n_context)
     return _number_in_words(num, 0, i18n_context);
 }
 
-static string _number_to_string(unsigned number, bool in_words)
-{
-    return in_words ? number_in_words(number) : to_string(number);
-}
-
-static string _number_to_string(unsigned number, bool in_words, actor_i18n_context_type i18n_context)
-{
-    return in_words ? number_in_words(number, i18n_context) : to_string(number);
-}
-
 // Naively prefix A/an to a noun.
 // TODO: i18n: completely get rid of it, since it makes i18n harder.
 string article_a(const string &name, bool lowercase)
@@ -437,11 +427,6 @@ string apply_description(description_level_type desc, const string &name)
     }
 }
 
-string apply_description(actor_i18n_context_type i18n_context, const string &name)
-{
-    return name;
-}
-
 string thing_do_grammar(description_level_type dtype, string desc,
                         bool ignore_case)
 {
@@ -469,18 +454,4 @@ string thing_do_grammar(description_level_type dtype, string desc,
     default:
         return desc;
     }
-}
-
-string get_desc_quantity(const int quant, const int total, const string &whose)
-{
-    if (total == quant)
-        return uppercase_first(whose);
-    else if (quant == 1)
-        return "One of " + whose;
-    else if (quant == 2)
-        return "Two of " + whose;
-    else if (quant >= total * 3 / 4)
-        return "Most of " + whose;
-    else
-        return "Some of " + whose;
 }
