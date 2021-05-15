@@ -975,10 +975,10 @@ string monster_info::_core_name(actor_i18n_context_type i18n_context) const
             break;
 
         case MONS_PLAYER_GHOST:
-            s = make_stringf(__("$(player)s%('s)s ghost", "%s%s ghost"), mname.c_str(), "'s");
+            s = make_stringf(__("$(player)s ghost", "%s ghost"), __(i18n_cname, mname.c_str()));
             break;
         case MONS_PLAYER_ILLUSION:
-            s = make_stringf(__("$(player)s%('s)s illusion", "%s%s illusion"), mname.c_str(), "'s");
+            s = make_stringf(__("$(player)s illusion", "%s illusion"), __(i18n_cname, mname.c_str()));
             break;
         case MONS_PANDEMONIUM_LORD:
             s = mname;
