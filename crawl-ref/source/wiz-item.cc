@@ -1598,7 +1598,7 @@ void wizard_draw_card()
     for (int i = 0; i < NUM_CARDS; ++i)
     {
         const card_type c = static_cast<card_type>(i);
-        string card = card_name(c);
+        string card = _(card_name(c));
         lowercase(card);
         if (card.find(wanted) != string::npos)
         {
@@ -1608,7 +1608,7 @@ void wizard_draw_card()
         }
     }
     if (!found_card)
-        mpr("Unknown card.");
+        mpr(_("Unknown card."));
 }
 
 void wizard_identify_all_items()

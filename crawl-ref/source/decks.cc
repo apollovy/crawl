@@ -64,6 +64,7 @@
 #include "view.h"
 #include "viewchar.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 using namespace ui;
 
@@ -118,23 +119,22 @@ struct deck_type_data
 static map<deck_type, deck_type_data> all_decks =
 {
     { DECK_OF_ESCAPE, {
-        "escape", "mainly dealing with various forms of escape.",
+        gettext_noop("escape"), gettext_noop("mainly dealing with various forms of escape."),
         deck_of_escape,
         13,
     } },
     { DECK_OF_DESTRUCTION, {
-        "destruction", "most of which hurl death and destruction "
-            "at one's foes (or, if unlucky, at oneself).",
+        gettext_noop("destruction"), gettext_noop("most of which hurl death and destruction at one's foes (or, if unlucky, at oneself)."),
         deck_of_destruction,
         26,
     } },
     { DECK_OF_SUMMONING, {
-        "summoning", "depicting a range of weird and wonderful creatures.",
+        gettext_noop("summoning"), gettext_noop("depicting a range of weird and wonderful creatures."),
         deck_of_summoning,
         13,
     } },
     { DECK_OF_PUNISHMENT, {
-        "punishment", "which wreak havoc on the user.", deck_of_punishment,
+        gettext_noop("punishment"), gettext_noop("which wreak havoc on the user."), deck_of_punishment,
         0, // Not a user deck
     } },
 };
@@ -151,43 +151,43 @@ const char* card_name(card_type card)
 {
     switch (card)
     {
-    case CARD_VELOCITY:        return "Velocity";
-    case CARD_EXILE:           return "Exile";
-    case CARD_ELIXIR:          return "the Elixir";
-    case CARD_STAIRS:          return "the Stairs";
-    case CARD_TOMB:            return "the Tomb";
-    case CARD_WILD_MAGIC:      return "Wild Magic";
-    case CARD_ELEMENTS:        return "the Elements";
-    case CARD_SUMMON_DEMON:    return "the Pentagram";
-    case CARD_SUMMON_WEAPON:   return "the Dance";
-    case CARD_SUMMON_BEE:      return "the Swarm";
-    case CARD_RANGERS:         return "the Rangers";
-    case CARD_VITRIOL:         return "Vitriol";
-    case CARD_CLOUD:           return "the Cloud";
-    case CARD_STORM:           return "the Storm";
-    case CARD_PAIN:            return "Pain";
-    case CARD_TORMENT:         return "Torment";
-    case CARD_WRATH:           return "Wrath";
-    case CARD_WRAITH:          return "the Wraith";
-    case CARD_SWINE:           return "the Swine";
-    case CARD_ORB:             return "the Orb";
-    case CARD_ILLUSION:        return "the Illusion";
-    case CARD_DEGEN:           return "Degeneration";
+    case CARD_VELOCITY:        return gettext_noop("Velocity");
+    case CARD_EXILE:           return gettext_noop("Exile");
+    case CARD_ELIXIR:          return gettext_noop("the Elixir");
+    case CARD_STAIRS:          return gettext_noop("the Stairs");
+    case CARD_TOMB:            return gettext_noop("the Tomb");
+    case CARD_WILD_MAGIC:      return gettext_noop("Wild Magic");
+    case CARD_ELEMENTS:        return gettext_noop("the Elements");
+    case CARD_SUMMON_DEMON:    return gettext_noop("the Pentagram");
+    case CARD_SUMMON_WEAPON:   return gettext_noop("the Dance");
+    case CARD_SUMMON_BEE:      return gettext_noop("the Swarm");
+    case CARD_RANGERS:         return gettext_noop("the Rangers");
+    case CARD_VITRIOL:         return gettext_noop("Vitriol");
+    case CARD_CLOUD:           return gettext_noop("the Cloud");
+    case CARD_STORM:           return gettext_noop("the Storm");
+    case CARD_PAIN:            return gettext_noop("Pain");
+    case CARD_TORMENT:         return gettext_noop("Torment");
+    case CARD_WRATH:           return gettext_noop("Wrath");
+    case CARD_WRAITH:          return gettext_noop("the Wraith");
+    case CARD_SWINE:           return gettext_noop("the Swine");
+    case CARD_ORB:             return gettext_noop("the Orb");
+    case CARD_ILLUSION:        return gettext_noop("the Illusion");
+    case CARD_DEGEN:           return gettext_noop("Degeneration");
 
 #if TAG_MAJOR_VERSION == 34
     case CARD_FAMINE_REMOVED:
     case CARD_SHAFT_REMOVED:
 #endif
-    case NUM_CARDS:            return "a buggy card";
+    case NUM_CARDS:            return gettext_noop("a buggy card");
     }
-    return "a very buggy card";
+    return gettext_noop("a very buggy card");
 }
 
 card_type name_to_card(string name)
 {
     for (int i = 0; i < NUM_CARDS; i++)
     {
-        if (card_name(static_cast<card_type>(i)) == name)
+        if (_(card_name(static_cast<card_type>(i))) == name)
             return static_cast<card_type>(i);
     }
     return NUM_CARDS;
@@ -201,7 +201,7 @@ static const deck_archetype _cards_in_deck(deck_type deck)
         return deck_data->cards;
 
 #ifdef ASSERTS
-    die("No cards found for %u", unsigned(deck));
+    die(_("No cards found for %u"), unsigned(deck));
 #endif
     return {};
 }
@@ -214,7 +214,7 @@ const string stack_contents()
     output += comma_separated_fn(
                 reverse_iterator<CrawlVector::const_iterator>(stack.end()),
                 reverse_iterator<CrawlVector::const_iterator>(stack.begin()),
-              [](const CrawlStoreValue& card) { return card_name((card_type)card.get_int()); });
+              [](const CrawlStoreValue& card) { return _(card_name((card_type)card.get_int())); });
     if (!stack.empty())
         output += ".";
 
@@ -225,17 +225,17 @@ const string stack_top()
 {
     const auto& stack = you.props[NEMELEX_STACK_KEY].get_vector();
     if (stack.empty())
-        return "none";
+        return __("stack top card", "none");
     else
-        return card_name((card_type) stack[stack.size() - 1].get_int());
+        return _(card_name((card_type) stack[stack.size() - 1].get_int()));
 }
 
 const string deck_contents(deck_type deck)
 {
     if (deck == DECK_STACK)
-        return "Remaining cards: " + stack_contents();
+        return make_stringf(_("Remaining cards: %s"), stack_contents().c_str());
 
-    string output = "It may contain the following cards: ";
+    string output = _("It may contain the following cards: ");
 
     // This way of doing things is intended to prevent a card
     // that appears in multiple subdecks from showing up twice in the
@@ -245,7 +245,7 @@ const string deck_contents(deck_type deck)
     for (const auto& cww : pdeck)
         cards.insert(cww.first);
 
-    output += comma_separated_fn(cards.begin(), cards.end(), card_name);
+    output += comma_separated_fn(cards.begin(), cards.end(), [](card_type cn){return _(card_name(cn));});
     output += ".";
 
     return output;
@@ -254,12 +254,12 @@ const string deck_contents(deck_type deck)
 const string deck_flavour(deck_type deck)
 {
     if (deck == DECK_STACK)
-        return "set aside for later.";
+        return _("set aside for later.");
 
     deck_type_data* deck_data = map_find(all_decks, deck);
 
     if (deck_data)
-        return deck_data->flavour;
+        return _(deck_data->flavour.c_str());
 
     return "";
 }
@@ -311,11 +311,11 @@ string deck_summary()
     {
         int cards = deck_cards((deck_type) i);
         const deck_type_data *deck_data = map_find(all_decks, (deck_type) i);
-        const string name = deck_data ? deck_data->name : "bugginess";
+        const string name = deck_data ? _(deck_data->name.c_str()) : _("bugginess");
         if (cards)
         {
-            stats.push_back(make_stringf("%d %s card%s", cards,
-               name.c_str(), cards == 1 ? "" : "s"));
+            stats.push_back(make_stringf(ngettext("%d %s card", "%d %s cards", cards), cards,
+               name.c_str()));
         }
     }
     return comma_separated_line(stats.begin(), stats.end());
@@ -334,24 +334,23 @@ string which_decks(card_type card)
         if (deck_data.first == DECK_OF_PUNISHMENT)
             punishment = true;
         else
-            decks.push_back(deck_data.second.name);
+            decks.push_back(_(deck_data.second.name.c_str()));
     }
 
     if (!decks.empty())
     {
-        output += "It is found in decks of "
-               +  comma_separated_line(decks.begin(), decks.end());
-        if (punishment)
-            output += ", or in Nemelex Xobeh's deck of punishment";
-        output += ".";
+        output += make_stringf(
+            __("It is found in decks of %(escape, destruction, summoning)s%(, or in Nemelex Xobeh's deck of punishment)s.", "It is found in decks of %s%s."),
+            comma_separated_line(decks.begin(), decks.end()).c_str(),
+            punishment ? _(", or in Nemelex Xobeh's deck of punishment") : ""
+        );
     }
     else if (punishment)
     {
-        output += "It is only found in Nemelex Xobeh's deck of "
-                  "punishment.";
+        output += _("It is only found in Nemelex Xobeh's deck of punishment.");
     }
     else
-        output += "It is normally not part of any deck.";
+        output += _("It is normally not part of any deck.");
 
     return output;
 }
@@ -381,11 +380,11 @@ static void _describe_cards(CrawlVector& cards)
         string name = card_name(card);
         string desc = getLongDescription(name + " card");
         if (desc.empty())
-            desc = "No description found.\n";
+            desc = _("No description found.\n");
         string decks = which_decks(card);
 
-        name = uppercase_first(name);
-        desc = desc + decks;
+        name = uppercase_first(_(name.c_str()));
+        desc += decks;
 
     auto title_hbox = make_shared<Box>(Widget::HORZ);
 #ifdef USE_TILE
@@ -451,30 +450,29 @@ string deck_status(deck_type deck)
 
 string deck_description(deck_type deck)
 {
-    ostringstream desc;
-
-    desc << "A deck of magical cards, ";
-    desc << deck_flavour(deck) << "\n\n";
-    desc << deck_contents(deck) << "\n";
-
+    string fullness;
     if (deck != DECK_STACK)
     {
+        string current_count;
         const int cards = deck_cards(deck);
-        desc << "\n";
 
-        if (cards > 1)
-            desc << make_stringf("It currently has %d cards ", cards);
-        else if (cards == 1)
-            desc << "It currently has 1 card ";
+        if (cards >= 1)
+            current_count = make_stringf(ngettext("It currently has 1 card", "It currently has %d cards", cards), cards);
         else
-            desc << "It is currently empty ";
+            current_count = _("It is currently empty");
 
-        desc << make_stringf("and can contain up to %d cards.",
-                             all_decks[deck].deck_max);
-        desc << "\n";
+        fullness = make_stringf(
+            __("\n%(It currently has 1 card)s and can contain up to %(10)d cards.\n", "\n%s and can contain up to %d cards.\n"),
+            current_count.c_str(), all_decks[deck].deck_max
+        );
     }
-
-    return desc.str();
+    return make_stringf(
+        __(
+            "A deck of magical cards, %(mainly dealing with ... .)s\n\n%(It may contain the following cards: ...)s\n%(It is currently empty ...)s",
+           "A deck of magical cards, %s\n\n%s\n%s"
+           ),
+        deck_flavour(deck).c_str(), deck_contents(deck).c_str(), fullness.c_str()
+    );
 }
 
 /**
@@ -500,17 +498,19 @@ static char _deck_hotkey(deck_type deck)
     return get_talent(deck_ability[deck], false).hotkey;
 }
 
-static deck_type _choose_deck(const string title = "Draw")
+static deck_type _choose_deck(const string title)
 {
     ToggleableMenu deck_menu(MF_SINGLESELECT
             | MF_NO_WRAP_ROWS | MF_TOGGLE_ACTION | MF_ALWAYS_SHOW_MORE);
     {
-        ToggleableMenuEntry* me =
-            new ToggleableMenuEntry(make_stringf("%s which deck?        "
-                                    "Cards available", title.c_str()),
-                                    "Describe which deck?    "
-                                    "Cards available",
-                                    MEL_TITLE);
+        auto me = new ToggleableMenuEntry(
+            make_stringf(
+                __("%(Draw) which deck? ...", "%s which deck?        Cards available"),
+                title.c_str()
+            ),
+            _("Describe which deck?    Cards available"),
+            MEL_TITLE
+        );
         deck_menu.set_title(me, true, true);
     }
     deck_menu.set_tag("deck");
@@ -519,8 +519,7 @@ static deck_type _choose_deck(const string title = "Draw")
     deck_menu.menu_action = Menu::ACT_EXECUTE;
 
     deck_menu.set_more(formatted_string::parse_string(
-                       "Press '<w>!</w>' or '<w>?</w>' to toggle "
-                       "between deck selection and description."));
+                       _("Press '<w>!</w>' or '<w>?</w>' to toggle between deck selection and description.")));
 
     int numbers[NUM_DECKS];
 
@@ -568,17 +567,21 @@ static deck_type _choose_deck(const string title = "Draw")
  */
 static string _empty_deck_msg()
 {
-    string message = random_choose("disappears without a trace.",
-        "glows slightly and disappears.",
-        "glows with a rainbow of weird colours and disappears.");
-    return "The deck of cards " + message;
+    string message = random_choose(__("The deck of cards %s", "disappears without a trace."),
+                                   __("The deck of cards %s", "glows slightly and disappears."),
+                                   __("The deck of cards %s", "glows with a rainbow of weird colours and disappears."));
+    return make_stringf(
+        __("The deck of cards %(disappears ...)s", "The deck of cards %s"), message.c_str()
+    );
 }
+
+static void _you_draw_a_card_message(bool dealt) { mprf(__("You %(draw)s a card...", "You %s a card..."), dealt ? _("deal") : _("draw")); }
 
 static void _evoke_deck(deck_type deck, bool dealt = false)
 {
     ASSERT(deck_cards(deck) > 0);
 
-    mprf("You %s a card...", dealt ? "deal" : "draw");
+    _you_draw_a_card_message(dealt);
 
     if (deck == DECK_STACK)
     {
@@ -602,7 +605,7 @@ bool deck_draw(deck_type deck)
 {
     if (!deck_cards(deck))
     {
-        mpr("That deck is empty!");
+        mpr(_("That deck is empty!"));
         return false;
     }
 
@@ -617,7 +620,7 @@ bool deck_stack()
     for (int i = FIRST_PLAYER_DECK; i <= LAST_PLAYER_DECK; ++i)
         total_cards += deck_cards((deck_type) i);
 
-    if (deck_cards(DECK_STACK) && !yesno("Replace your current stack?",
+    if (deck_cards(DECK_STACK) && !yesno(_("Replace your current stack?"),
                                           false, 0))
     {
         return false;
@@ -625,12 +628,11 @@ bool deck_stack()
 
     if (!total_cards)
     {
-        mpr("You are out of cards!");
+        mpr(_("You are out of cards!"));
         return false;
     }
 
-    if (total_cards < 5 && !yesno("You have fewer than five cards, "
-                                  "stack them anyway?", false, 0))
+    if (total_cards < 5 && !yesno(_("You have fewer than five cards, stack them anyway?"), false, 0))
     {
         canned_msg(MSG_OK);
         return false;
@@ -650,13 +652,20 @@ public:
         : Menu(MF_NOSELECT | MF_UNCANCEL | MF_ALWAYS_SHOW_MORE), draws(d) {};
 };
 
+static string _get_card_dealt_string(card_type &card, bool dealt) {
+    const char* participle = dealt ? __("You have %s the Elixir", "dealt") : __("You have %s the Elixir", "drawn");
+    string prompt = make_stringf(__("You have %(dealt)s %(the Elixir)s", "You have %s %s."), participle,
+                                 _(card_name(card)));
+    return prompt;
+}
+
 bool StackFiveMenu::process_key(int keyin)
 {
     if (keyin == CK_ENTER)
     {
         formatted_string old_more = more;
         set_more(formatted_string::parse_string(
-                "Are you done? (press y or Y to confirm)"));
+                _("Are you done? (press y or Y to confirm)")));
         if (yesno(nullptr, true, 'n', false, false, true))
             return false;
         set_more(old_more);
@@ -690,10 +699,8 @@ static void _draw_stack(int to_stack)
             | MF_NO_WRAP_ROWS | MF_TOGGLE_ACTION | MF_ALWAYS_SHOW_MORE);
     {
         ToggleableMenuEntry* me =
-            new ToggleableMenuEntry("Draw which deck?        "
-                                    "Cards available",
-                                    "Describe which deck?    "
-                                    "Cards available",
+            new ToggleableMenuEntry(_("Draw which deck?        Cards available"),
+                                    _("Describe which deck?    Cards available"),
                                     MEL_TITLE);
         deck_menu.set_title(me, true, true);
     }
@@ -706,17 +713,15 @@ static void _draw_stack(int to_stack)
 
     if (!stack.empty())
     {
-            string status = "Drawn so far: " + stack_contents();
+            string status = _("Drawn so far: ") + stack_contents();
             deck_menu.set_more(formatted_string::parse_string(
                        status + "\n" +
-                       "Press '<w>!</w>' or '<w>?</w>' to toggle "
-                       "between deck selection and description."));
+                       _("Press '<w>!</w>' or '<w>?</w>' to toggle between deck selection and description.")));
     }
     else
     {
         deck_menu.set_more(formatted_string::parse_string(
-                           "Press '<w>!</w>' or '<w>?</w>' to toggle "
-                           "between deck selection and description."));
+                           _("Press '<w>!</w>' or '<w>?</w>' to toggle between deck selection and description.")));
     }
 
     int numbers[NUM_DECKS];
@@ -759,14 +764,13 @@ static void _draw_stack(int to_stack)
                 stack.push_back(draw);
             }
             else
-                status = "<lightred>That deck is empty!</lightred> ";
+                status = _("<lightred>That deck is empty!</lightred> ");
 
             if (stack.size() > 0)
-                status += "Drawn so far: " + stack_contents();
+                status += _("Drawn so far: ") + stack_contents();
             deck_menu.set_more(formatted_string::parse_string(
                        status + "\n" +
-                       "Press '<w>!</w>' or '<w>?</w>' to toggle "
-                       "between deck selection and description."));
+                       _("Press '<w>!</w>' or '<w>?</w>' to toggle between deck selection and description.")));
         }
         return stack.size() < to_stack
                || deck_menu.menu_action == Menu::ACT_EXAMINE;
@@ -787,19 +791,18 @@ bool stack_five(int to_stack)
     }
 
     StackFiveMenu menu(stack);
-    MenuEntry *const title = new MenuEntry("Select two cards to swap them:", MEL_TITLE);
+    MenuEntry *const title = new MenuEntry(_("Select two cards to swap them:"), MEL_TITLE);
     menu.set_title(title);
     for (unsigned int i = 0; i < stack.size(); i++)
     {
         MenuEntry * const entry =
-            new MenuEntry(card_name((card_type)stack[i].get_int()),
+            new MenuEntry(_(card_name((card_type)stack[i].get_int())),
                           MEL_ITEM, 1, '1'+i);
         entry->add_tile(tile_def(TILEG_NEMELEX_CARD));
         menu.add_entry(entry);
     }
     menu.set_more(formatted_string::parse_string(
-                "<lightgrey>Press <w>?</w> for the card descriptions"
-                " or <w>Enter</w> to accept."));
+                _("<lightgrey>Press <w>?</w> for the card descriptions or <w>Enter</w> to accept.")));
     menu.show();
 
     if (crawl_state.seen_hups)
@@ -815,7 +818,7 @@ bool stack_five(int to_stack)
 // Return false if the operation was failed/aborted along the way.
 bool deck_deal()
 {
-    deck_type choice = _choose_deck("Deal");
+    deck_type choice = _choose_deck(_("Deal"));
 
     if (choice == NUM_DECKS)
         return false;
@@ -824,7 +827,7 @@ bool deck_deal()
 
     if (!num_cards)
     {
-        mpr("That deck is empty!");
+        mpr(_("That deck is empty!"));
         return false;
     }
 
@@ -839,7 +842,7 @@ bool deck_deal()
 // Draw the next three cards, discard two and pick one.
 bool deck_triple_draw()
 {
-    deck_type choice = _choose_deck();
+    deck_type choice = _choose_deck(_("Draw"));
 
     if (choice == NUM_DECKS)
         return false;
@@ -848,12 +851,11 @@ bool deck_triple_draw()
 
     if (!num_cards)
     {
-        mpr("That deck is empty!");
+        mpr(_("That deck is empty!"));
         return false;
     }
 
-    if (num_cards < 3 && !yesno("There's fewer than three cards, "
-                                "still triple draw?", false, 0))
+    if (num_cards < 3 && !yesno(_("There's fewer than three cards, still triple draw?"), false, 0))
     {
         canned_msg(MSG_OK);
         return false;
@@ -862,7 +864,7 @@ bool deck_triple_draw()
     if (num_cards == 1)
     {
         // Only one card to draw, so just draw it.
-        mpr("There's only one card left!");
+        mpr(_("There's only one card left!"));
         _evoke_deck(choice);
         return true;
     }
@@ -891,12 +893,12 @@ bool draw_three()
     {
         if (need_prompt_redraw)
         {
-            mpr("You draw... (choose one card, ? for their descriptions)");
+            mpr(_("You draw... (choose one card, ? for their descriptions)"));
             for (int i = 0; i < draws.size(); ++i)
             {
                 msg::streams(MSGCH_PROMPT)
                     << msg::nocap << (static_cast<char>(i + 'a')) << " - "
-                    << card_name((card_type)draws[i].get_int()) << endl;
+                    << string(_(card_name((card_type)draws[i].get_int()))) << endl;
             }
             need_prompt_redraw = false;
         }
@@ -932,7 +934,7 @@ void draw_from_deck_of_punishment(bool deal)
 {
     card_type card = _random_card(DECK_OF_PUNISHMENT);
 
-    mprf("You %s a card...", deal ? "deal" : "draw");
+    _you_draw_a_card_message(deal);
     card_effect(card, deal, true);
 }
 
@@ -942,7 +944,7 @@ static int _get_power_level(int power)
 
     // other functions in this file will break if this assertion is violated
     ASSERT(power_level >= 0 && power_level <= 2);
-    dprf("power level: %d", power_level);
+    dprf(_("power level: %d"), power_level);
     return power_level;
 }
 
@@ -990,7 +992,7 @@ static void _velocity_card(int power)
                   }
 
                   if (did_haste)
-                      simple_monster_message(mon, " seems to speed up.");
+                      simple_monster_message(mon, _(" seems to speed up."));
               }
               return affected;
           })
@@ -1056,7 +1058,7 @@ static void _stairs_card(int /*power*/)
 
     if (stairs_avail.empty())
     {
-        mpr("No stairs available to move.");
+        mpr(_("No stairs available to move."));
         return;
     }
 
@@ -1079,11 +1081,9 @@ static void _damaging_card(card_type card, int power,
                            bool dealt = false)
 {
     const int power_level = _get_power_level(power);
-    const char *participle = dealt ? "dealt" : "drawn";
 
     bool done_prompt = false;
-    string prompt = make_stringf("You have %s %s.", participle,
-                                 card_name(card));
+    string prompt = _get_card_dealt_string(card, dealt);
 
     dist target;
     zap_type ztype = ZAP_DEBUGGING_RAY;
@@ -1098,7 +1098,7 @@ static void _damaging_card(card_type card, int power,
         {
             done_prompt = true;
             mpr(prompt);
-            mpr("You radiate a wave of entropy!");
+            mpr(_("You radiate a wave of entropy!"));
             apply_visible_monsters([](monster& mons)
             {
                 return !mons.wont_attack()
@@ -1117,7 +1117,7 @@ static void _damaging_card(card_type card, int power,
     case CARD_PAIN:
         if (power_level == 2)
         {
-            mpr("You reveal a symbol of torment!");
+            mpr(_("You reveal a symbol of torment!"));
             torment(&you, TORMENT_CARD_PAIN, you.pos());
         }
 
@@ -1137,12 +1137,12 @@ static void _damaging_card(card_type card, int power,
         args.top_prompt = prompt;
 
     // Confirm aborts as they waste the card.
-    prompt = make_stringf("Aiming: %s", card_name(card));
+    prompt = make_stringf(__("Aiming: %(Degeneration)s", "Aiming: %s"), _(card_name(card)));
     while (!(spell_direction(target, beam, &args)
             && player_tracer(ZAP_DEBUGGING_RAY, power/6, beam)))
     {
         if (crawl_state.seen_hups
-            || yesno("Really abort (and waste the card)?", false, 0))
+            || yesno(_("Really abort (and waste the card)?"), false, 0))
         {
             canned_msg(MSG_OK);
             return;
@@ -1169,7 +1169,7 @@ static void _elixir_card(int power)
     int power_level = _get_power_level(power);
 
     you.set_duration(DUR_ELIXIR, 1 + 3 * power_level + random2(3));
-    mpr("You begin rapidly regenerating health and magic.");
+    mpr(_("You begin rapidly regenerating health and magic."));
 }
 
 // Special case for *your* god, maybe?
@@ -1184,7 +1184,7 @@ static void _godly_wrath()
             return; // Stop once we find a god willing to punish the player.
     }
 
-    mpr("You somehow manage to escape divine attention...");
+    mpr(_("You somehow manage to escape divine attention..."));
 }
 
 static void _summon_demon_card(int power)
@@ -1221,13 +1221,13 @@ static void _summon_demon_card(int power)
                                   you.pos(), MHITYOU, MG_AUTOFOE)
                         .set_summoned(&you, 5 - power_level, 0)))
     {
-        mpr("You see a puff of smoke.");
+        mpr(_("You see a puff of smoke."));
     }
     else if (hostile
              && mons_class_flag(dct, M_INVIS)
              && !you.can_see_invisible())
     {
-        mpr("You sense the presence of something unfriendly.");
+        mpr(_("You sense the presence of something unfriendly."));
     }
 
     _friendly(dct2, 5 - power_level);
@@ -1267,7 +1267,7 @@ static void _summon_dancing_weapon(int power)
 
     if (!mon)
     {
-        mpr("You see a puff of smoke.");
+        mpr(_("You see a puff of smoke."));
         return;
     }
 
@@ -1390,7 +1390,7 @@ static void _cloud_card(int power)
     }
 
     if (something_happened)
-        mpr("Clouds appear around you!");
+        mpr(_("Clouds appear around you!"));
     else
         canned_msg(MSG_NOTHING_HAPPENS);
 }
@@ -1436,9 +1436,9 @@ static void _storm_card(int power)
         beam.is_tracer         = false;
         beam.is_explosion      = true;
         beam.glyph             = dchar_glyph(DCHAR_FIRED_BURST);
-        beam.name              = "electrical discharge";
-        beam.aux_source        = "the storm";
-        beam.explode_noise_msg = "You hear a clap of thunder!";
+        beam.name              = _("electrical discharge");
+        beam.aux_source        = _("the storm");
+        beam.explode_noise_msg = _("You hear a clap of thunder!");
         beam.real_flavour      = beam.flavour;
         beam.colour            = LIGHTCYAN;
         beam.source_id         = MID_PLAYER;
@@ -1453,16 +1453,26 @@ static void _storm_card(int power)
     }
     // Lots of loud bangs, even if everything is silenced get a message.
     // Thunder comes after the animation runs.
-    if (targets.size() > 0)
+    unsigned long targets_count = targets.size();
+    if (targets_count > 0)
     {
-        vector<string> thunder_adjectives = { "mighty",
-                                              "violent",
-                                              "cataclysmic" };
-        mprf("You %s %s%s peal%s of thunder!",
-              heard ? "hear" : "feel",
-              targets.size() > 1 ? "" : "a ",
-              thunder_adjectives[power_level].c_str(),
-              targets.size() > 1 ? "s" : "");
+        vector<string> thunder_adjectives = {
+            npgettext("You hear %s peal of thunder!", "mighty", "mighty", targets_count),
+            npgettext("You hear %s peal of thunder!", "violent", "violent", targets_count),
+            npgettext("You hear %s peal of thunder!", "cataclysmic", "cataclysmic", targets_count)
+        };
+        mprf(
+            npgettext(
+                "You %(hear)s %(mighty)s peal of thunder!",
+                "You %s %s peal of thunder!",
+                "You %s %s peals of thunder!",
+                targets_count
+            ),
+            heard
+                ? npgettext("You %s mighty peal of thunder!", "hear", "hear", targets_count)
+                : npgettext("You %s mighty peal of thunder!", "feel", "feel", targets_count),
+            thunder_adjectives[power_level].c_str()
+        );
     }
 }
 
@@ -1510,7 +1520,7 @@ static void _degeneration_card(int power)
                    const int daze_time = (5 + 5 * power_level) * BASELINE_DELAY;
                    mons.add_ench(mon_enchant(ENCH_DAZED, 0, &you, daze_time));
                    simple_monster_message(mons,
-                                          " is dazed by the mutagenic energy.");
+                                          _(" is dazed by the mutagenic energy."));
                }
                return true;
            }))
@@ -1548,7 +1558,7 @@ static void _wild_magic_card(int power)
             miscast_effect(*mons, &you,
                            {miscast_source::deck}, type,
                            3 * (power_level + 1), random2(70),
-                           "a card of wild magic");
+                           _("a card of wild magic"));
 
             num_affected++;
         }
@@ -1561,7 +1571,7 @@ static void _wild_magic_card(int power)
         for (int i = 0; i < num_affected; ++i)
             mp += random2(5);
 
-        mpr("You feel a surge of magic.");
+        mpr(_("You feel a surge of magic."));
         if (mp && you.magic_points < you.max_magic_points)
         {
             inc_mp(mp);
@@ -1602,10 +1612,9 @@ void card_effect(card_type which_card,
                  bool dealt,
                  bool punishment, bool tell_card)
 {
-    const char *participle = dealt ? "dealt" : "drawn";
     const int power = _card_power(punishment);
 
-    dprf("Card power: %d", power);
+    dprf(_("Card power: %d"), power);
 
     if (tell_card)
     {
@@ -1615,7 +1624,7 @@ void card_effect(card_type which_card,
             && which_card != CARD_PAIN
             && which_card != CARD_ORB)
         {
-            mprf("You have %s %s.", participle, card_name(which_card));
+            mpr(_get_card_dealt_string(which_card, dealt));
         }
     }
 
@@ -1650,7 +1659,7 @@ void card_effect(card_type which_card,
         if (transform(5 + power/10 + random2(power/10), transformation::pig, true))
             you.transform_uncancellable = true;
         else
-            mpr("You feel a momentary urge to oink.");
+            mpr(_("You feel a momentary urge to oink."));
         break;
 
 #if TAG_MAJOR_VERSION == 34
@@ -1659,7 +1668,7 @@ void card_effect(card_type which_card,
 #endif
     case NUM_CARDS:
         // The compiler will complain if any card remains unhandled.
-        mprf("You have %s a buggy card!", participle);
+        mprf(_("You have got a buggy card!"));
         break;
     }
 }

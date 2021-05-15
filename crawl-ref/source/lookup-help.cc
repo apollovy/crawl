@@ -452,7 +452,7 @@ static bool _card_filter(string key, string /*body*/)
 
     for (int i = 0; i < NUM_CARDS; ++i)
     {
-        if (key == lowercase_string(card_name(static_cast<card_type>(i))))
+        if (key == lowercase_string(_(card_name(static_cast<card_type>(i)))))
             return false;
     }
     return true;

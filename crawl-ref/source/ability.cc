@@ -749,7 +749,7 @@ static string _nemelex_card_text(ability_type ability)
     int cards = deck_cards(ability_deck(ability));
 
     if (ability == ABIL_NEMELEX_DRAW_STACK)
-        return make_stringf(_("(next: %s)"), stack_top().c_str());
+        return make_stringf(__("next: Degeneration", "(next: %s)"), stack_top().c_str());
     else
         return make_stringf(_("(%d in deck)"), cards);
 }
