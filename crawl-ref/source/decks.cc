@@ -119,22 +119,22 @@ struct deck_type_data
 static map<deck_type, deck_type_data> all_decks =
 {
     { DECK_OF_ESCAPE, {
-        gettext_noop("escape"), gettext_noop("mainly dealing with various forms of escape."),
+        "escape", gettext_noop("mainly dealing with various forms of escape."),
         deck_of_escape,
         13,
     } },
     { DECK_OF_DESTRUCTION, {
-        gettext_noop("destruction"), gettext_noop("most of which hurl death and destruction at one's foes (or, if unlucky, at oneself)."),
+        "destruction", gettext_noop("most of which hurl death and destruction at one's foes (or, if unlucky, at oneself)."),
         deck_of_destruction,
         26,
     } },
     { DECK_OF_SUMMONING, {
-        gettext_noop("summoning"), gettext_noop("depicting a range of weird and wonderful creatures."),
+        "summoning", gettext_noop("depicting a range of weird and wonderful creatures."),
         deck_of_summoning,
         13,
     } },
     { DECK_OF_PUNISHMENT, {
-        gettext_noop("punishment"), gettext_noop("which wreak havoc on the user."), deck_of_punishment,
+        "punishment", gettext_noop("which wreak havoc on the user."), deck_of_punishment,
         0, // Not a user deck
     } },
 };
@@ -437,12 +437,12 @@ static void _describe_cards(CrawlVector& cards)
 
 string deck_status(deck_type deck)
 {
-    const string name = deck_name(deck);
+    const string name = _(deck_name(deck).c_str());
     const int cards   = deck_cards(deck);
 
     ostringstream desc;
 
-    desc << chop_string(deck_name(deck), 24)
+    desc << chop_string(name, 24)
          << to_string(cards);
 
     return trimmed_string(desc.str());
@@ -457,7 +457,7 @@ string deck_description(deck_type deck)
         const int cards = deck_cards(deck);
 
         if (cards >= 1)
-            current_count = make_stringf(ngettext("It currently has 1 card", "It currently has %d cards", cards), cards);
+            current_count = make_stringf(ngettext("It currently has %d card", "It currently has %d cards", cards), cards);
         else
             current_count = _("It is currently empty");
 
@@ -1456,21 +1456,28 @@ static void _storm_card(int power)
     unsigned long targets_count = targets.size();
     if (targets_count > 0)
     {
-        vector<string> thunder_adjectives = {
-            npgettext("You hear %s peal of thunder!", "mighty", "mighty", targets_count),
-            npgettext("You hear %s peal of thunder!", "violent", "violent", targets_count),
-            npgettext("You hear %s peal of thunder!", "cataclysmic", "cataclysmic", targets_count)
-        };
+        vector<string> thunder_adjectives;
+        const char* phrase_template;
+        if (targets_count == 1) {
+            thunder_adjectives = {
+                __("You hear %s peal of thunder!", "mighty"),
+                __("You hear %s peal of thunder!", "violent"),
+                __("You hear %s peal of thunder!", "cataclysmic")
+            };
+            phrase_template = __("You %(hear)s %(mighty)s peal of thunder!", "You %s %s peal of thunder!");
+        } else {
+            thunder_adjectives = {
+                __("You hear %s peals of thunder!", "mighty"),
+                __("You hear %s peals of thunder!", "violent"),
+                __("You hear %s peals of thunder!", "cataclysmic")
+            };
+            phrase_template =  __("You %(hear)s %(mighty)s peals of thunder!", "You %s %s peals of thunder!");
+        }
         mprf(
-            npgettext(
-                "You %(hear)s %(mighty)s peal of thunder!",
-                "You %s %s peal of thunder!",
-                "You %s %s peals of thunder!",
-                targets_count
-            ),
+            phrase_template,
             heard
-                ? npgettext("You %s mighty peal of thunder!", "hear", "hear", targets_count)
-                : npgettext("You %s mighty peal of thunder!", "feel", "feel", targets_count),
+            ? __("You %s mighty peal of thunder!", "hear")
+            : __("You %s mighty peal of thunder!", "feel"),
             thunder_adjectives[power_level].c_str()
         );
     }
@@ -1679,6 +1686,8 @@ void card_effect(card_type which_card,
  * @param sub_type  The type of deck in question.
  * @return          A name, e.g. "deck of destruction".
  *                  If the given type isn't a deck, return "deck of bugginess".
+ *
+ * i18n: don't translate, it's used for system needs.
  */
 string deck_name(deck_type deck)
 {

@@ -3583,9 +3583,9 @@ void describe_deck(deck_type deck)
     describe_info inf;
 
     if (deck == DECK_STACK)
-        inf.title = "A stacked deck";
+        inf.title = _("A stacked deck");
     else
-        inf.title = "The " + deck_name(deck);
+        inf.title = _(deck_name(deck).c_str());
 
     inf.body << deck_description(deck);
 

@@ -1150,8 +1150,10 @@ static string _nemelex_desc(ability_type ability)
     deck_type deck = ability_deck(ability);
 
     string desc = make_stringf(
-            deck == DECK_STACK ? _("Draw a card from your %s; %s") : _("Draw a card from the %s; %s"),
-            deck_name(deck).c_str(), lowercase_first(deck_description(deck)).c_str());
+            deck == DECK_STACK
+                ? __("Draw a card from your %(deck of Destruction)s; %(a deck of magical cards...)s", "Draw a card from your %s; %s")
+                : _("Draw a card from the %s; %s"),
+            __("Draw a card from your %s; A deck of magical cards...", deck_name(deck).c_str()), lowercase_first(deck_description(deck)).c_str());
 
     return desc;
 }
@@ -3244,20 +3246,16 @@ int choose_ability_menu(const vector<talent>& talents)
     {
         // Hack like the one in spl-cast.cc:list_spells() to align the title.
         ToggleableMenuEntry* me =
-            new ToggleableMenuEntry("Ability - do what?                  "
-                                    "Cost                            Failure",
-                                    "Ability - describe what?            "
-                                    "Cost                            Failure",
+            new ToggleableMenuEntry(_("Ability - do what?                  Cost                            Failure"),
+                                    _("Ability - describe what?            Cost                            Failure"),
                                     MEL_ITEM);
         me->colour = BLUE;
         abil_menu.set_title(me, true, true);
     }
 #else
     abil_menu.set_title(
-        new ToggleableMenuEntry(_("Ability - do what?                  "
-                                "Cost                            Failure"),
-                                _("Ability - describe what?            "
-                                "Cost                            Failure"),
+        new ToggleableMenuEntry(_("Ability - do what?                  Cost                            Failure"),
+                                _("Ability - describe what?            Cost                            Failure"),
                                 MEL_TITLE), true, true);
 #endif
     abil_menu.set_tag("ability");
