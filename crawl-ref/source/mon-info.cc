@@ -1073,7 +1073,7 @@ string monster_info::common_name(actor_i18n_context_type i18n_context) const
         else
             _ss << std::to_string(num_heads);
 
-        _ss << __(i18n_cname, "-headed ");
+        _ss << string(__(i18n_cname, "-headed "));
         n_headed = _ss.str().c_str();
     }
 
@@ -1087,7 +1087,7 @@ string monster_info::common_name(actor_i18n_context_type i18n_context) const
         mutant_tier = make_stringf("%s ", __(i18n_cname, _mutant_beast_tier_name(tier).c_str())).c_str();
         stringstream _ss;
         for (auto facet : props[MUTANT_BEAST_FACETS].get_vector())
-            _ss << __(i18n_cname, _mutant_beast_facet(facet.get_int()).c_str()); // no space between
+            _ss << string(__(i18n_cname, _mutant_beast_facet(facet.get_int()).c_str())); // no space between
         mutant_facets = _ss.str().c_str();
         mutant_beast = __(i18n_cname, " beast");
     }
