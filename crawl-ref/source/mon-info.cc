@@ -1060,36 +1060,32 @@ string monster_info::common_name(actor_i18n_context_type i18n_context) const
     if (type == MONS_BALLISTOMYCETE)
         active = (is_active ? __(i18n_cname, "active ") : "");
 
-    const char* n_headed = "";
+    string n_headed;
     if (_is_hydra(*this)
         && type != MONS_SENSED
         && type != MONS_BLOCK_OF_ICE
         && type != MONS_PILLAR_OF_SALT)
     {
         ASSERT(num_heads > 0);
-        stringstream _ss;
         if (num_heads < 11)
-            _ss << number_in_words(num_heads);
+            n_headed += number_in_words(num_heads);
         else
-            _ss << std::to_string(num_heads);
+            n_headed += std::to_string(num_heads);
 
-        _ss << string(__(i18n_cname, "-headed "));
-        n_headed = _ss.str().c_str();
+        n_headed += string(__(i18n_cname, "-headed "));
     }
 
-    const char* mutant_tier = "";
-    const char* mutant_facets = "";
-    const char* mutant_beast = "";
+    string mutant_tier;
+    string mutant_facets;
+    string mutant_beast;
     if (type == MONS_MUTANT_BEAST && !is(MB_NAME_REPLACE))
     {
         const int xl = props[MUTANT_BEAST_TIER].get_short();
         const int tier = mutant_beast_tier(xl);
-        mutant_tier = make_stringf("%s ", __(i18n_cname, _mutant_beast_tier_name(tier).c_str())).c_str();
-        stringstream _ss;
+        mutant_tier = make_stringf("%s ", __(i18n_cname, _mutant_beast_tier_name(tier).c_str()));
         for (auto facet : props[MUTANT_BEAST_FACETS].get_vector())
-            _ss << string(__(i18n_cname, _mutant_beast_facet(facet.get_int()).c_str())); // no space between
-        mutant_facets = _ss.str().c_str();
-        mutant_beast = __(i18n_cname, " beast");
+            mutant_facets += make_stringf("%s ", __(i18n_cname, _mutant_beast_facet(facet.get_int()).c_str()));
+        mutant_beast = string(__(i18n_cname, "beast"));
     }
 
     // Add suffixes.
@@ -1145,13 +1141,13 @@ string monster_info::common_name(actor_i18n_context_type i18n_context) const
         if (mons_genus(type) != MONS_SHAPESHIFTER)
             shapeshifter = __(i18n_cname, " shaped shifter");
     }
-    string core_name = _core_name(i18n_context);
+    string core_name = nocore ? "" : _core_name(i18n_context);
     return make_stringf(
         __(
            "%(helpless )s%(submerged )s%(spectral )s%(ghostly )s%(sensed )s%(active )s%(six-headed)s%(juvenile)s%(weird fire ox)s%( beast)s%(jackal)%( skeleton)%( shaped shifter)s",
            "%s%s%s%s%s%s%s%s%s%s%s%s%s"
         ),
-        helpless, submerged, spectral, ghostly, sensed, active, n_headed, mutant_tier, mutant_facets, mutant_beast, core_name.c_str(), real_suffix, shapeshifter
+        helpless, submerged, spectral, ghostly, sensed, active, n_headed.c_str(), mutant_tier.c_str(), mutant_facets.c_str(), mutant_beast.c_str(), core_name.c_str(), real_suffix, shapeshifter
     );
 }
 
