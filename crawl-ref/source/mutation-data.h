@@ -606,6 +606,7 @@ static const mutation_def mut_data[] =
    "You feel frail."},
 },
 
+#if TAG_MAJOR_VERSION == 34
 { MUT_UNBREATHING, 0, 2, mutflag::good, true,
   "unbreathing",
 
@@ -614,6 +615,7 @@ static const mutation_def mut_data[] =
   {"You feel breathless.", "", ""},
   {"", "", ""},
 },
+#endif
 
 { MUT_TORMENT_RESISTANCE, 0, 2, mutflag::good, false,
   "torment resistance",
@@ -1729,6 +1731,7 @@ static const mutation_def mut_data[] =
   {"You feel warm-blooded.", "", ""},
 },
 
+#if TAG_MAJOR_VERSION == 34
 { MUT_FLAME_CLOUD_IMMUNITY, 0, 1, mutflag::good, false,
   "flame cloud immunity",
 
@@ -1744,7 +1747,6 @@ static const mutation_def mut_data[] =
   {"You feel less concerned about cold.", "", ""},
   {"", "", ""},
 },
-#if TAG_MAJOR_VERSION == 34
 
 { MUT_SUSTAIN_ATTRIBUTES, 0, 1, mutflag::good, false,
     "sustain attributes",

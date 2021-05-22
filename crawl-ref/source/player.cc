@@ -3257,6 +3257,13 @@ bool player::cloud_immune(bool calc_unid, bool items) const
         || actor::cloud_immune(calc_unid, items);
 }
 
+/**
+ * How much XP does it take to reach the given XL from 0?
+ *
+ *  @param lev          The XL to reach.
+ *  @param exp_apt      The XP aptitude to use. If -99, use the current species'.
+ *  @return     The total number of XP points needed to get to the given XL.
+ */
 unsigned int exp_needed(int lev, int exp_apt)
 {
     unsigned int level = 0;
@@ -3300,6 +3307,11 @@ unsigned int exp_needed(int lev, int exp_apt)
     //  25      810195    111860   8470
     //  26      930525    120330   8470
     //  27     1059325    128800   8470
+
+    // If you've sacrificed experience, XP costs are adjusted as if
+    // you were still your original (higher) level.
+    if (exp_apt == -99)
+        lev += RU_SAC_XP_LEVELS * you.get_mutation_level(MUT_INEXPERIENCED);
 
     switch (lev)
     {
@@ -5216,7 +5228,6 @@ bool player::can_swim(bool permanently) const
 {
     return (species::can_swim(species)
             || body_size(PSIZE_BODY) >= SIZE_GIANT
-            || get_mutation_level(MUT_UNBREATHING) >= 2
             || !permanently)
                 && form_can_swim();
 }
@@ -5937,36 +5948,13 @@ int player::armour_class_with_specific_items(vector<const item_def *> items) con
   * useful when the AC roll is inferior to it. Therefore a higher GDR means
   * more damage reduced, but also more often.
   *
-  * \f[ GDR = 14 \times (base\_AC - 2)^\frac{1}{2} \f]
+  * \f[ GDR = 16 \times (AC)^\frac{1}{4} \f]
   *
   * \return GDR as a percentage.
   **/
 int player::gdr_perc() const
 {
-    switch (form)
-    {
-    case transformation::dragon:
-        return 34; // base AC 8
-    case transformation::statue:
-        return 39; // like plate (AC 10)
-    case transformation::tree:
-        return 48;
-    default:
-        break;
-    }
-
-    const item_def *body_armour = slot_item(EQ_BODY_ARMOUR, false);
-
-    int body_base_AC = (species == SP_GARGOYLE ? 5 : 0);
-    if (body_armour)
-        body_base_AC += property(*body_armour, PARM_AC);
-
-    // We take a sqrt here because damage prevented by GDR is
-    // actually proportional to the square of the GDR percentage
-    // (assuming you have enough AC).
-    int gdr = 14 * sqrt(max(body_base_AC - 2, 0));
-
-    return gdr;
+    return 16 * sqrt(sqrt(you.armour_class()));
 }
 
 /**
@@ -6014,7 +6002,7 @@ mon_holy_type player::holiness(bool temp) const
     // Alive Vampires are MH_NATURAL
     if (is_lifeless_undead(temp))
         holi = MH_UNDEAD;
-    else if (species == SP_GARGOYLE || species == SP_DJINNI)
+    else if (species::is_nonliving(you.species))
         holi = MH_NONLIVING;
     else
         holi = MH_NATURAL;
@@ -6069,14 +6057,14 @@ int player::how_chaotic(bool /*check_spells_god*/) const
 /**
  * Does the player need to breathe?
  *
- * Pretty much only matters for mephitic clouds, & confusing spores, & curare.
+ * Pretty much only matters for confusing spores and drowning damage.
  *
  * @return  Whether the player has no need to breathe.
  */
 bool player::is_unbreathing() const
 {
-    return !get_form()->breathes || petrified()
-        || get_mutation_level(MUT_UNBREATHING);
+    return is_nonliving() || is_lifeless_undead()
+           || form == transformation::tree;
 }
 
 bool player::is_insubstantial() const

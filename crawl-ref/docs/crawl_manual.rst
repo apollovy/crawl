@@ -1912,9 +1912,9 @@ Yellow Draconians
   attack. They are acid resistant, too.
 
 Grey Draconians
-  have no breath weapon, but also no need to breathe in order to live, which
-  helps them survive in deep water. They are proficient with earth magic but bad
-  with air magic, and also have harder scales than other Draconians.
+  have no breath weapon, but their bodies are adapted to the water, allowing
+  them to swim. They are proficient with earth magic but bad with air magic, and
+  they also have harder scales than other Draconians.
 
 Black Draconians
   can unleash huge electrical discharges, and are naturally insulated. They are
@@ -2909,7 +2909,8 @@ commands:
 !a
   Prompt before attacking when wielding this item. Non-weapons and ranged
   weapons prompt automatically. Also, if you answer 'y', you won't be prompted
-  again until you switch weapons.
+  again until you switch weapons. To reset this prompt while keeping the
+  current weapon wielded, use 'w' and select the current weapon.
 
 !d
   Prompt before dropping this item.

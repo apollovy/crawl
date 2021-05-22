@@ -314,10 +314,8 @@ A double-edged fighting knife with a sharp point.
 %%%%
 dart
 
-A thin piece of metal, typically coated in some harmful substance. When
-thrown with skill it can deliver its toxins into the bloodstream of a
-living or demonic being. In addition to throwing skill, stealth skill improves
-the chance for a dart to affect its target.
+A thin piece of metal, typically coated in some harmful substance. When thrown
+it can deliver its toxins into the bloodstream of a living or demonic being.
 %%%%
 decaying skeleton
 
