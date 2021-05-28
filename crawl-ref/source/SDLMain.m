@@ -9,6 +9,7 @@
 #import "SDLMain.h"
 #import <sys/param.h> /* for MAXPATHLEN */
 #import <unistd.h>
+#include "crawl_locale.h"
 
 /* For some reaon, Apple removed setAppleMenu from the headers in 10.4,
  but the method still is there and works. To avoid warnings, we declare
@@ -138,22 +139,22 @@ static void setApplicationMenu(void)
     appleMenu = [[NSMenu alloc] initWithTitle:@""];
 
     /* Add menu items */
-    title = [@"About " stringByAppendingString:appName];
+    title = [[NSString stringWithUTF8String:_("About ")] stringByAppendingString:appName];
     [appleMenu addItemWithTitle:title action:@selector(orderFrontStandardAboutPanel:) keyEquivalent:@""];
 
     [appleMenu addItem:[NSMenuItem separatorItem]];
 
-    title = [@"Hide " stringByAppendingString:appName];
+    title = [[NSString stringWithUTF8String:_("Hide ")] stringByAppendingString:appName];
     [appleMenu addItemWithTitle:title action:@selector(hide:) keyEquivalent:@"h"];
 
-    menuItem = (NSMenuItem *)[appleMenu addItemWithTitle:@"Hide Others" action:@selector(hideOtherApplications:) keyEquivalent:@"h"];
+    menuItem = (NSMenuItem *)[appleMenu addItemWithTitle:[NSString stringWithUTF8String:_("Hide Others")] action:@selector(hideOtherApplications:) keyEquivalent:@"h"];
     [menuItem setKeyEquivalentModifierMask:(NSAlternateKeyMask|NSCommandKeyMask)];
 
-    [appleMenu addItemWithTitle:@"Show All" action:@selector(unhideAllApplications:) keyEquivalent:@""];
+    [appleMenu addItemWithTitle:[NSString stringWithUTF8String:_("Show All")] action:@selector(unhideAllApplications:) keyEquivalent:@""];
 
     [appleMenu addItem:[NSMenuItem separatorItem]];
 
-    title = [@"Quit " stringByAppendingString:appName];
+    title = [[NSString stringWithUTF8String:_("Quit ")] stringByAppendingString:appName];
     [appleMenu addItemWithTitle:title action:@selector(terminate:) keyEquivalent:@"q"];
 
 
@@ -177,15 +178,15 @@ static void setupWindowMenu(void)
     NSMenuItem  *windowMenuItem;
     NSMenuItem  *menuItem;
 
-    windowMenu = [[NSMenu alloc] initWithTitle:@"Window"];
+    windowMenu = [[NSMenu alloc] initWithTitle:[NSString stringWithUTF8String:_("Window")]];
 
     /* "Minimize" item */
-    menuItem = [[NSMenuItem alloc] initWithTitle:@"Minimize" action:@selector(performMiniaturize:) keyEquivalent:@"m"];
+    menuItem = [[NSMenuItem alloc] initWithTitle:[NSString stringWithUTF8String:_("Minimize")] action:@selector(performMiniaturize:) keyEquivalent:@"m"];
     [windowMenu addItem:menuItem];
     [menuItem release];
 
     /* Put menu into the menubar */
-    windowMenuItem = [[NSMenuItem alloc] initWithTitle:@"Window" action:nil keyEquivalent:@""];
+    windowMenuItem = [[NSMenuItem alloc] initWithTitle:[NSString stringWithUTF8String:_("Window")] action:nil keyEquivalent:@""];
     [windowMenuItem setSubmenu:windowMenu];
     [[NSApp mainMenu] addItem:windowMenuItem];
 

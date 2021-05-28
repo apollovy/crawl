@@ -3312,7 +3312,7 @@ int choose_ability_menu(const vector<talent>& talents)
     if (found_invocations)
     {
 #ifdef USE_TILE_LOCAL
-        MenuEntry* subtitle = new MenuEntry(" Invocations -    ", MEL_ITEM);
+        MenuEntry* subtitle = new MenuEntry(_(" Invocations -    "), MEL_ITEM);
         subtitle->colour = BLUE;
         abil_menu.add_entry(subtitle);
 #else

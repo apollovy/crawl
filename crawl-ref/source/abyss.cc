@@ -58,6 +58,7 @@
 #include "travel.h"
 #include "view.h"
 #include "xom.h"
+#include "crawl_locale.h"
 
 const coord_def ABYSS_CENTRE(GXM / 2, GYM / 2);
 
@@ -406,14 +407,14 @@ void banished(const string &who, const int power)
         else
         {
             // On Abyss:5 we can't go deeper; cause a shift to a new area
-            mprf(MSGCH_BANISHMENT, "You are banished to a different region of the Abyss.");
+            mprf(MSGCH_BANISHMENT, _("You are banished to a different region of the Abyss."));
             abyss_teleport();
         }
         return;
     }
 
     const int depth = _banished_depth(power);
-    const string what = make_stringf("Cast into level %d of the Abyss", depth)
+    const string what = make_stringf(_("Cast into level %d of the Abyss"), depth)
                       + _who_banished(who);
     take_note(Note(NOTE_MESSAGE, 0, 0, what), true);
 
@@ -424,7 +425,7 @@ void banished(const string &who, const int power)
                      level_id(BRANCH_ABYSS, depth), true);
     // This is an honest abyss entry, mark milestone
     mark_milestone("abyss.enter",
-        "was cast into the Abyss!" + _who_banished(who), "parent");
+        _("was cast into the Abyss!") + _who_banished(who), "parent");
 
     // Xom just might decide to interfere.
     if (you_worship(GOD_XOM) && who != "Xom" && who != "wizard command"
@@ -578,7 +579,7 @@ public:
         const bool rune_is_near = abyss_rune_nearness();
 
         if (exit_was_near && !exit_is_near || rune_was_near && !rune_is_near)
-            xom_is_stimulated(200, "Xom snickers loudly.", true);
+            xom_is_stimulated(200, _("Xom snickers loudly."), true);
 
         if (!rune_was_near && rune_is_near || !exit_was_near && exit_is_near)
             xom_is_stimulated(200);
@@ -592,7 +593,7 @@ static void _abyss_lose_monster(monster& mons)
     // make sure we don't end up with an invalid hep ancestor
     else if (hepliaklqana_ancestor() == mons.mid)
     {
-        simple_monster_message(mons, " is pulled into the Abyss.",
+        simple_monster_message(mons, _(" is pulled into the Abyss."),
                 MSGCH_BANISHMENT);
         remove_companion(&mons);
         you.duration[DUR_ANCESTOR_DELAY] = random_range(50, 150); //~5-15 turns
@@ -635,7 +636,7 @@ static void _place_displaced_monsters()
             // hep messaging is done in _abyss_lose_monster
             if (you.can_see(*mon) && hepliaklqana_ancestor() != mon->mid)
             {
-                simple_monster_message(*mon, " is pulled into the Abyss.",
+                simple_monster_message(*mon, _(" is pulled into the Abyss."),
                         MSGCH_BANISHMENT);
             }
             _abyss_lose_monster(*mon);
@@ -1744,8 +1745,7 @@ void abyss_teleport()
         return;
     }
 
-    mprf(MSGCH_BANISHMENT, "You are suddenly pulled into a different region of"
-        " the Abyss!");
+    mprf(MSGCH_BANISHMENT, _("You are suddenly pulled into a different region of the Abyss!"));
     _abyss_generate_new_area();
     _write_abyssal_features();
     env.grid(you.pos()) = _veto_dangerous_terrain(env.grid(you.pos()));
@@ -1851,7 +1851,7 @@ static bool _spawn_corrupted_servant_near(const coord_def &pos)
         if (!monster_habitable_grid(mons, env.grid(p)))
             continue;
         mgen_data mg(mons, BEH_NEUTRAL, p);
-        mg.set_summoned(0, 5, 0).set_non_actor_summoner("Lugonu's corruption");
+        mg.set_summoned(0, 5, 0).set_non_actor_summoner(__("Summoned by %s", "Lugonu's corruption"));
         mg.place = BRANCH_ABYSS;
         return create_monster(mg);
     }
@@ -2127,7 +2127,7 @@ bool is_level_incorruptible(bool quiet)
     if (_is_level_corrupted())
     {
         if (!quiet)
-            mpr("This place is already infused with evil and corruption.");
+            mpr(_("This place is already infused with evil and corruption."));
         return true;
     }
 
@@ -2158,8 +2158,8 @@ bool lugonu_corrupt_level(int power)
     if (is_level_incorruptible())
         return false;
 
-    simple_god_message("'s Hand of Corruption reaches out!");
-    take_note(Note(NOTE_MESSAGE, 0, 0, make_stringf("Corrupted %s",
+    simple_god_message(_("'s Hand of Corruption reaches out!"));
+    take_note(Note(NOTE_MESSAGE, 0, 0, make_stringf(__("Corrupted %(Lair:1)", "Corrupted %s"),
               level_id::current().describe().c_str()).c_str()));
     mark_corrupted_level(level_id::current());
 
@@ -2202,8 +2202,8 @@ void abyss_maybe_spawn_xp_exit()
     redraw_screen(); // before the force-more
     update_screen();
     mprf(MSGCH_BANISHMENT,
-         "The substance of the Abyss twists violently,"
-         " and a gateway leading %s appears!", stairs ? "down" : "out");
+         __("The substance of the Abyss... %(down|out)s...", "The substance of the Abyss twists violently, and a gateway leading %s appears!"),
+         stairs ? __("The substance of the Abyss... %s...", "down") : __("The substance of the Abyss... %s...", "out"));
 
     you.props[ABYSS_STAIR_XP_KEY] = EXIT_XP_COST;
     you.props[ABYSS_SPAWNED_XP_EXIT_KEY] = true;
