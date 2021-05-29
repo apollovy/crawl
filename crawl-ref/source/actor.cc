@@ -424,28 +424,32 @@ void actor::end_constriction(mid_t whom, bool intentional, bool quiet)
         && (you.see_cell(pos()) || you.see_cell(constrictee->pos())))
     {
         string attacker_desc;
-        const string verb = intentional ? "release" : "lose";
         bool force_plural = false;
 
         if (vile_clutch)
         {
-            attacker_desc = "The zombie hands";
+            attacker_desc = _("The zombie hands");
             force_plural = true;
         }
         else if (roots)
         {
-            attacker_desc = "The roots";
+            attacker_desc = _("The roots");
             force_plural = true;
         }
         else
-            attacker_desc = name(DESC_THE);
+            attacker_desc = name(I18NCA_END_CONSTRICTION_ATTACKER);
 
-        mprf("%s %s %s grip on %s.",
+        const string verb = intentional
+                            ? npgettext("Octopode %s its grip on you.", "releases", "release", force_plural ? 2 : 1)
+                            : npgettext("Octopode %s its grip on you.", "loses", "lose", force_plural ? 2 : 1);
+        mprf(
+            __("%(Octopode)s %(loses)s %(its)s grip on %(you)s.", "%s %s %s grip on %s."),
              attacker_desc.c_str(),
-             force_plural ? verb.c_str()
-                          : conj_verb(verb).c_str(),
-             force_plural ? "their" : pronoun(PRONOUN_POSSESSIVE).c_str(),
-             constrictee->name(DESC_THE).c_str());
+             verb.c_str(),
+             force_plural
+                 ? __("The zombie hands lose %s grip on you.", "their")
+                 : pronoun(I18NCA_END_CONSTRICTION_ATTACKER).c_str(),
+             constrictee->name(I18NCA_END_CONSTRICTION_DEFENDER).c_str());
     }
 
     if (vile_clutch)
@@ -735,7 +739,7 @@ void actor::constriction_damage_defender(actor &defender, int duration)
     if (damage <= 0 && is_player()
         && you.can_see(defender))
     {
-        exclamations = ", but do no damage.";
+        exclamations = _(", but do no damage.");
     }
     else
         exclamations = attack_strength_punctuation(damage);
@@ -746,41 +750,55 @@ void actor::constriction_damage_defender(actor &defender, int duration)
         bool force_plural = false;
         if (vile_clutch)
         {
-            attacker_desc = "The zombie hands";
+            attacker_desc = _("The zombie hands");
             force_plural = true;
         }
         else if (!direct)
         {
-            attacker_desc = "The grasping roots";
+            attacker_desc = _("The grasping roots");
             force_plural = true;
         }
         else if (is_player())
-            attacker_desc = "You";
+            attacker_desc = _("You");
         else
-            attacker_desc = name(DESC_THE);
+            attacker_desc = name(I18NCA_CONSTRICTION_DAMAGE_ATTACKER);
 
-        mprf("%s %s %s%s%s", attacker_desc.c_str(),
-             force_plural ? "constrict"
-                          : conj_verb("constrict").c_str(),
-             defender.name(DESC_THE).c_str(),
+        const char* verb = npgettext("The grasping roots %s the jackal for 15, but do no damage.", "constricts", "constrict", force_plural ? 2 : 1);
+        mprf(
+            __("%(The grasping roots)s %(constrict)s %(the jackal)s%( for 15)s%(, but do no damage.)s", "%s %s %s%s%s"),
+            attacker_desc.c_str(),
+            verb,
+            defender.name(I18NCA_CONSTRICTION_DAMAGE_DEFENDER).c_str(),
 #ifdef DEBUG_DIAGNOSTICS
-             make_stringf(" for %d", damage).c_str(),
+            make_stringf(__("The grasping roots constrict the jackal%s, but do no damage.", " for %d"), damage).c_str(),
 #else
-             "",
+            "",
 #endif
-             exclamations.c_str());
+            exclamations.c_str());
     }
     else if (you.can_see(defender) || defender.is_player())
     {
-        mprf("%s %s constricted%s%s",
-             defender.name(DESC_THE).c_str(),
-             defender.conj_verb("are").c_str(),
+        const char* damage_message =
 #ifdef DEBUG_DIAGNOSTICS
-             make_stringf(" for %d", damage).c_str(),
+        make_stringf(__("The jackal is constricted%s, but do no damage.", " for %d"), damage).c_str()
 #else
-             "",
+        ""
 #endif
-             exclamations.c_str());
+        ;
+        mpr(
+            defender.is_player()
+            ? make_stringf(
+                __("You are constricted%( for 15)s%(, but do no damage.)s", "You are constricted%s%s"),
+                damage_message,
+                exclamations.c_str()
+            )
+            : make_stringf(
+                __("%(The jackal)s is constricted%( for 15)s%(, but do no damage.)s", "%s is constricted%s%s"),
+                defender.name(I18NCA_CONSTRICTION_DAMAGE_DEFENDER_PASSIVE).c_str(),
+                damage_message,
+                exclamations.c_str()
+            )
+        );
     }
 
     dprf("constrict at: %s df: %s base %d dur %d ac %d tsc %d inf %d",
@@ -905,26 +923,39 @@ bool actor::torpor_slowed() const
     return false;
 }
 
+static const string resist_messages[] =
+{
+    pgettext_noop("barely resist", " barely %s."),
+    pgettext_noop("barely resist", " %s to resist."),  // special
+    pgettext_noop("barely resist", " %s with significant effort."),
+    pgettext_noop("barely resist", " %s with some effort."),
+    pgettext_noop("barely resist", " easily %s."),
+    pgettext_noop("barely resist", " %s with almost no effort.")
+};
+
 string actor::resist_margin_phrase(int margin) const
 {
     if (willpower() == WILL_INVULN)
-        return " " + conj_verb("are") + " unaffected.";
-
-    static const string resist_messages[][2] =
-    {
-      { " barely %s.",                  "resist" },
-      { " %s to resist.",               "struggle" },
-      { " %s with significant effort.", "resist" },
-      { " %s with some effort.",        "resist" },
-      { " easily %s.",                  "resist" },
-      { " %s with almost no effort.",   "resist" },
-    };
+        return is_player()
+            ? _(" are unaffected.")
+            : _(" is unaffected.");
 
     const int index = max(0, min((int)ARRAYSZ(resist_messages) - 1,
                                  ((margin + 45) / 15)));
+    const char* verb;
+    if (is_player()) {
+        if (index == 1)
+            verb = __("you %s to resist", "struggle");
+        else
+            verb = __("you barely %s", "resist");
+    } else {
+        if (index == 1)
+            verb = __("jackal %s to resist", "struggles");
+        else
+            verb = __("jackal barely %s", "resists");
+    }
 
-    return make_stringf(resist_messages[index][0].c_str(),
-                        conj_verb(resist_messages[index][1]).c_str());
+    return make_stringf(__("barely resist", resist_messages[index].c_str()), verb);
 }
 
 void actor::collide(coord_def newpos, const actor *agent, int pow)

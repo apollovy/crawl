@@ -36,6 +36,11 @@ enum actor_i18n_context_type {
     I18NC_PLAYER_KILL_VICTIM,
     I18NC_IOOD_ACT_ATTACKER,
     I18NCA_KILLED_BY_BEAM,
+    I18NCA_END_CONSTRICTION_ATTACKER,
+    I18NCA_END_CONSTRICTION_DEFENDER,
+    I18NCA_CONSTRICTION_DAMAGE_ATTACKER,
+    I18NCA_CONSTRICTION_DAMAGE_DEFENDER,
+    I18NCA_CONSTRICTION_DAMAGE_DEFENDER_PASSIVE,
 
     ACTOR_I18NC_COUNT
 };
@@ -49,8 +54,13 @@ static const char* const __actor_i18n_cnames[ACTOR_I18NC_COUNT] = {
     "You slice %s like an onion for 10 damage!!",
     "%s is blown up!",
     "You kill %s!",
-    "%s hits a closed door." ,
+    "%s hits a closed door.",
     "blasted by %s",
+    "%s loses its grip on you.",
+    "Octopode loses its grip on %s.",
+    "%s constrict the jackal for 15, but do no damage.",
+    "The grasping roots constrict %s for 15, but do no damage.",
+    "%s is constricted for 15, but do no damage.",
 };
 
 const char* translate_actor(actor_i18n_context_type i18n_context, const char* msgid);

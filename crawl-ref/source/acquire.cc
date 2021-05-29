@@ -1007,7 +1007,7 @@ static bool _do_book_acquirement(item_def &book, int agent)
 static int _failed_acquirement(bool quiet)
 {
     if (!quiet)
-        mpr("The demon of the infinite void smiles upon you.");
+        mpr(_("The demon of the infinite void smiles upon you."));
     return NON_ITEM;
 }
 
@@ -1170,18 +1170,18 @@ static string _why_reject(const item_def &item, int agent)
             || item.base_type == OBJ_ARMOUR
                 && !can_wear_armour(item, false, true)))
     {
-        return "Destroying unusable weapon or armour!";
+        return _("Destroying unusable weapon or armour!");
     }
 
     // Trog does not gift the Wrath of Trog.
     if (agent == GOD_TROG && is_unrandom_artefact(item, UNRAND_TROG))
-        return "Destroying Trog-gifted Wrath of Trog!";
+        return _("Destroying Trog-gifted Wrath of Trog!");
 
     // Pain brand is useless if you've sacrificed Necromacy.
     if (you.get_mutation_level(MUT_NO_NECROMANCY_MAGIC)
         && get_weapon_brand(item) == SPWPN_PAIN)
     {
-        return "Destroying pain weapon after Necro sac!";
+        return _("Destroying pain weapon after Necro sac!");
     }
 
     // Sif Muna shouldn't gift special books.
@@ -1190,7 +1190,7 @@ static string _why_reject(const item_def &item, int agent)
         && is_rare_book(static_cast<book_type>(item.sub_type)))
     {
         ASSERT(item.base_type == OBJ_BOOKS);
-        return "Destroying sif-gifted rarebook!";
+        return _("Destroying sif-gifted rarebook!");
     }
 
     return ""; // all OK
@@ -1418,7 +1418,7 @@ int acquirement_create_item(object_class_type class_wanted,
         && agent < NUM_GODS)
     {
         if (!quiet && agent == GOD_XOM)
-            simple_god_message(" snickers.", GOD_XOM);
+            simple_god_message(_(" snickers."), GOD_XOM);
         else
             return _failed_acquirement(quiet);
     }
@@ -1454,7 +1454,7 @@ class AcquireEntry : public InvEntry
         const string itemstr =
             colour_to_str(menu_colour(text, item_prefix(*item), tag));
         const string gold_text = item->base_type == OBJ_GOLD
-            ? make_stringf(" (you have %d gold)", you.gold) : "";
+            ? make_stringf(_(" (you have %d gold)"), you.gold) : "";
         return make_stringf(" <%s>%c%c%c%c</%s><%s>%s%s</%s>",
                             keystr.c_str(),
                             hotkeys[0],
@@ -1489,7 +1489,7 @@ AcquireMenu::AcquireMenu(CrawlVector &aitems)
 
     update_help();
 
-    set_title("Choose an item to acquire.");
+    set_title(_("Choose an item to acquire."));
 }
 
 void AcquireMenu::init_entries()
@@ -1525,13 +1525,12 @@ void AcquireMenu::update_help()
     set_more(formatted_string::parse_string(top_line + make_stringf(
         //[!] acquire|examine item  [a-i] select item to acquire
         //[Esc/R-Click] exit
-        "%s  [%s] %s\n"
-        "[Esc/R-Click] exit",
-        menu_action == ACT_EXECUTE ? "[<w>!</w>] <w>acquire</w>|examine items" :
-                                     "[<w>!</w>] acquire|<w>examine</w> items",
+        __("%([!] acquire|examine items)s  [%(a-i)s] %(select item for acquirement)s\n[Esc/R-Click] exit", "%s  [%s] %s\n[Esc/R-Click] exit"),
+        menu_action == ACT_EXECUTE ? _("[<w>!</w>] <w>acquire</w>|examine items") :
+                                     _("[<w>!</w>] acquire|<w>examine</w> items"),
         _hyphenated_letters(item_count(), 'a').c_str(),
-        menu_action == ACT_EXECUTE ? "select item for acquirement"
-                                   : "examine item")));
+        menu_action == ACT_EXECUTE ? _("select item for acquirement")
+                                   : _("examine item"))));
 }
 
 static void _create_acquirement_item(item_def &item)
@@ -1576,7 +1575,7 @@ bool AcquireMenu::acquire_selected()
     update_help();
     const formatted_string old_more = more;
     more = formatted_string::parse_string(make_stringf(
-               "<%s>Acquire %s? (%s/N)</%s>\n",
+               __("<%(white)s>Acquire %(a boots of foo)s? (%(y)s/N)</%(white)s>\n", "<%s>Acquire %s? (%s/N)</%s>\n"),
                col.c_str(),
                entry.text.c_str(),
                Options.easy_confirm == easy_confirm_type::none ? "Y" : "y",

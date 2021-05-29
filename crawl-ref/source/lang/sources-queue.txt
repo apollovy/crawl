@@ -1,12 +1,4 @@
-../abyss.h
-../ac-type.h
-../acquire.cc
-../acquire.h
-../act-iter.cc
-../act-iter.h
-../activity-interrupt-type.h
-../actor-los.cc
-../actor.cc
+../actor.cc:961
 ../actor.h
 ../adjust.cc
 ../adjust.h
