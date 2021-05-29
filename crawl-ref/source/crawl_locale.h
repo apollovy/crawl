@@ -36,11 +36,19 @@ enum actor_i18n_context_type {
     I18NC_PLAYER_KILL_VICTIM,
     I18NC_IOOD_ACT_ATTACKER,
     I18NCA_KILLED_BY_BEAM,
+
     I18NCA_END_CONSTRICTION_ATTACKER,
     I18NCA_END_CONSTRICTION_DEFENDER,
     I18NCA_CONSTRICTION_DAMAGE_ATTACKER,
     I18NCA_CONSTRICTION_DAMAGE_DEFENDER,
     I18NCA_CONSTRICTION_DAMAGE_DEFENDER_PASSIVE,
+
+    I18NCA_COLLIDE_ACTIVE,
+    I18NCA_COLLIDE_PASSIVE,
+    I18NCA_COLLIDE_DEATH_SOURCE,
+    I18NCA_COLLIDE_DEATH_INVOKER,
+    I18NCA_COLLIDE_INTO_FEATURE,
+    I18NCA_COLLIDE_STOP_MOVEMENT,
 
     ACTOR_I18NC_COUNT
 };
@@ -56,11 +64,19 @@ static const char* const __actor_i18n_cnames[ACTOR_I18NC_COUNT] = {
     "You kill %s!",
     "%s hits a closed door.",
     "blasted by %s",
+
     "%s loses its grip on you.",
     "Octopode loses its grip on %s.",
     "%s constrict the jackal for 15, but do no damage.",
     "The grasping roots constrict %s for 15, but do no damage.",
     "%s is constricted for 15, but do no damage.",
+
+    "%s collides with you!",
+    "You collide with %s!",
+    "Collided with %s caused by by salamander mystic.",
+    "Collided with the jackal caused by %s.",
+    "%s slams into the wall!",
+    "%s violently stops moving!",
 };
 
 const char* translate_actor(actor_i18n_context_type i18n_context, const char* msgid);
@@ -89,6 +105,7 @@ enum other_i18n_context_type {
     I18NC_PLAYER_CONF_KILL_TYPE,
     I18NC_PLAYER_KILL_TYPE,
     I18NC_IOOD_ACT_DEFENDER,
+    I18NC_SLAM_INTO,
 
     OTHER_I18NC_COUNT
 };
@@ -101,6 +118,7 @@ static const char* const __other_i18n_cnames[OTHER_I18NC_COUNT] = {
     "The jackal is %s!",
     "You %s a jackal!",
     "The orb of death hits %s.",
+    ""
 };
 
 const char* translate_other(other_i18n_context_type i18n_context, const char* msgid);

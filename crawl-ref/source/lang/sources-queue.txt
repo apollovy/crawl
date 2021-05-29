@@ -1,4 +1,3 @@
-../actor.cc:961
 ../actor.h
 ../adjust.cc
 ../adjust.h

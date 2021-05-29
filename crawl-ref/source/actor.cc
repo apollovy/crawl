@@ -984,10 +984,15 @@ void actor::collide(coord_def newpos, const actor *agent, int pow)
     {
         if (you.can_see(*this) || you.can_see(*other))
         {
-            mprf("%s %s with %s!",
-                 name(DESC_THE).c_str(),
-                 conj_verb("collide").c_str(),
-                 other->name(DESC_THE).c_str());
+            if (is_player())
+                mprf(
+                    __("You collide with %(the jackal)s!", "You collide with %s!"),
+                    other->name(I18NCA_COLLIDE_PASSIVE).c_str());
+            else
+                mprf(
+                    __("%(The jackal)s collides with %(you)s!", "%s collides with %s!"),
+                    name(I18NCA_COLLIDE_ACTIVE).c_str(),
+                    other->name(I18NCA_COLLIDE_PASSIVE).c_str());
             if (god_prot || god_prot_other)
             {
                 // do messaging at the right time.
@@ -1000,18 +1005,16 @@ void actor::collide(coord_def newpos, const actor *agent, int pow)
         if (other->is_monster() && !god_prot_other)
             behaviour_event(other->as_monster(), ME_WHACK, agent);
 
-        const string thisname = name(DESC_A, true);
-        const string othername = other->name(DESC_A, true);
         if (other->alive() && !god_prot_other)
         {
             other->hurt(agent, other->apply_ac(damage.roll()),
                         BEAM_MISSILE, KILLED_BY_COLLISION,
-                        othername, thisname);
+                        other->name(I18NCA_COLLIDE_DEATH_SOURCE, true), name(I18NCA_COLLIDE_DEATH_INVOKER, true));
         }
         if (alive() && !god_prot)
         {
             hurt(agent, apply_ac(damage.roll()), BEAM_MISSILE,
-                 KILLED_BY_COLLISION, thisname, othername);
+                 KILLED_BY_COLLISION, name(I18NCA_COLLIDE_DEATH_SOURCE, true), other->name(I18NCA_COLLIDE_DEATH_INVOKER, true));
         }
         return;
     }
@@ -1020,17 +1023,24 @@ void actor::collide(coord_def newpos, const actor *agent, int pow)
     {
         if (!can_pass_through_feat(env.grid(newpos)))
         {
-            mprf("%s %s into %s!",
-                 name(DESC_THE).c_str(), conj_verb("slam").c_str(),
-                 env.map_knowledge(newpos).known()
-                 ? feature_description_at(newpos, false, DESC_THE)
-                       .c_str()
-                 : "something");
+            string feature_string = env.map_knowledge(newpos).known()
+                                    ? feature_description_at(newpos, I18NC_SLAM_INTO, false)
+                                    : __("You slam into %s!", "something");
+            if (is_player())
+                mprf(_("You slam into %s!"), feature_string.c_str());
+            else
+                mprf(
+                    __("%(The jackal)s slams into %(the wall)s!", "%s slams into %s!"),
+                    name(I18NCA_COLLIDE_INTO_FEATURE).c_str(),
+                    feature_string.c_str()
+                );
         }
         else
         {
-            mprf("%s violently %s moving!",
-                 name(DESC_THE).c_str(), conj_verb("stop").c_str());
+            if (is_player())
+                mpr(_("You violently stop moving!"));
+            else
+                mprf(_("%s violently stops moving!"), name(I18NCA_COLLIDE_STOP_MOVEMENT).c_str());
         }
 
         if (god_prot)
