@@ -102,8 +102,6 @@ enum other_i18n_context_type {
     I18NC_MONSTER_ATTACK_DESC,
     I18NC_PLAYER_ATTACK_VERB,
     I18NC_PLAYER_ATTACK_DEGREE,
-    I18NC_PLAYER_CONF_KILL_TYPE,
-    I18NC_PLAYER_KILL_TYPE,
     I18NC_IOOD_ACT_DEFENDER,
     I18NC_SLAM_INTO,
 
@@ -115,10 +113,8 @@ static const char* const __other_i18n_cnames[OTHER_I18NC_COUNT] = {
     "The jackal bites you for 10 damage%s!!!",
     "You %s the jackal like an onion for 10 damage!!",
     "You slice the jackal%s for 10 damage!!",
-    "The jackal is %s!",
-    "You %s a jackal!",
     "The orb of death hits %s.",
-    ""
+    "You slam into %s!",
 };
 
 const char* translate_other(other_i18n_context_type i18n_context, const char* msgid);
