@@ -50,6 +50,14 @@ enum actor_i18n_context_type {
     I18NCA_COLLIDE_INTO_FEATURE,
     I18NCA_COLLIDE_STOP_MOVEMENT,
 
+    I18NCA_SLAIN_BY,
+
+    I18NCA_MELEE_ATTACK_DODGED_ATTACKER,
+    I18NCA_MELEE_ATTACK_DODGED_DEFENDER,
+    I18NCA_MELEE_ATTACK_MISSED_DEFENDER,
+
+    I18NCA_TRAP_VICTIM,
+
     ACTOR_I18NC_COUNT
 };
 
@@ -77,6 +85,14 @@ static const char* const __actor_i18n_cnames[ACTOR_I18NC_COUNT] = {
     "Collided with the jackal caused by %s.",
     "%s slams into the wall!",
     "%s violently stops moving!",
+
+    "slain by",
+
+    "%s completely misses centaur captain skeleton!",
+    "The mighty blow completely misses %s!",
+    "Your bite misses %s.",
+
+    "A dart trap hits %s!",
 };
 
 const char* translate_actor(actor_i18n_context_type i18n_context, const char* msgid);

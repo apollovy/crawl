@@ -1250,7 +1250,7 @@ void trap_def::shoot_ammo(actor& act, bool trig_smart)
             {
                 mprf(__("%(A dart trap)s hits %(the giant cockroach)s%(, but does no damage)s!", "%s hits %s%s!"),
                      __("%s hits the giant cockroach!", shot.name(DESC_A).c_str()),
-                     __("A dart trap hits %s!", act.name(DESC_THE).c_str()),
+                     act.name(I18NCA_TRAP_VICTIM).c_str(),
                      (damage_taken == 0 && !poison) ?
                          _(", but does no damage") : "");
             }

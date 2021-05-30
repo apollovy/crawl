@@ -318,9 +318,9 @@ bool melee_attack::handle_phase_dodged()
             mprf(
                 // FIXME: i18n: @apollov: change into l10n context usage
                     __("%(The mighty blow)s%( completely)s misses %(centaur captain skeleton)s%(!)s", "%s%s misses %s%s"),
-                 __("%s completely misses centaur captain skeleton!", atk_name(DESC_THE).c_str()),
+                 atk_name(I18NCA_MELEE_ATTACK_DODGED_ATTACKER).c_str(),
                  __("The mighty blow%s misses centaur captain skeleton!", evasion_margin_adverb().c_str()),
-                 __("The mighty blow completely misses %s!", defender_name(true).c_str()),
+                 defender_name(I18NCA_MELEE_ATTACK_DODGED_DEFENDER).c_str(),
                  attack_strength_punctuation(damage_done).c_str());
         }
     }
@@ -508,6 +508,7 @@ bool melee_attack::handle_phase_hit()
                       : mons_attack_verb();
 
         // TODO: Clean this up if possible, checking atype for do / does is ugly
+        // FIXME: i18n: @apollov: move to i18n contexts
         mprf("%s %s %s but %s no damage.",
              attacker->name(DESC_THE).c_str(),
              attack_verb.c_str(),
@@ -1271,7 +1272,7 @@ bool melee_attack::player_aux_test_hit()
     mprf(
             __("Your %(bite)s misses %(the zombie goblin)s.", "Your %s misses %s."),
             __("Your %s misses the zombie goblin.", aux_attack.c_str()),
-            __("Your bite misses %s.", defender->name(DESC_THE).c_str())
+            defender->name(I18NCA_MELEE_ATTACK_MISSED_DEFENDER).c_str()
     );
 
     return false;

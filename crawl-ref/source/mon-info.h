@@ -310,7 +310,7 @@ struct monster_info : public monster_info_base
 
     inline string damage_desc() const
     {
-        return get_damage_level_string(holi, dam);
+        return get_damage_level_string(*this, dam);
     }
     string get_max_hp_desc() const;
 

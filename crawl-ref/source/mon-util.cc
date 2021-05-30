@@ -5442,34 +5442,42 @@ mon_dam_level_type mons_get_damage_level(const monster& mons)
         return MDAM_OKAY;
 }
 
-string get_damage_level_string(mon_holy_type holi, mon_dam_level_type mdam)
+string get_damage_level_string(const monster_info& mi, mon_dam_level_type mdam)
 {
-    ostringstream ss;
+    const char* level;
+    bool is_wounded_damaged = wounded_damaged(mi.holi);
+    const char *monster_db_name;
+    monster_db_name = mi.db_name().c_str();
+    const char* description = is_wounded_damaged
+        ? __(monster_db_name, "damaged")
+        : __(monster_db_name, "wounded");
     switch (mdam)
     {
     case MDAM_ALMOST_DEAD:
-        ss << "almost";
-        ss << (wounded_damaged(holi) ? " destroyed" : " dead");
-        return ss.str();
+        level = _("almost");
+        description = is_wounded_damaged ? __(monster_db_name, "destroyed") : __(monster_db_name, "dead");
+        break;
     case MDAM_SEVERELY_DAMAGED:
-        ss << "severely";
+        level = _("severely");
         break;
     case MDAM_HEAVILY_DAMAGED:
-        ss << "heavily";
+        level = _("heavily");
         break;
     case MDAM_MODERATELY_DAMAGED:
-        ss << "moderately";
+        level = _("moderately");
         break;
     case MDAM_LIGHTLY_DAMAGED:
-        ss << "lightly";
+        level = _("lightly");
         break;
     case MDAM_OKAY:
     default:
-        ss << "not";
+        level = _("not");
         break;
     }
-    ss << (wounded_damaged(holi) ? " damaged" : " wounded");
-    return ss.str();
+    return make_stringf(
+        __("%(severely)s %( wounded)s", "%s %s"),
+        level, description
+    );
 }
 
 void print_wounds(const monster& mons)
@@ -5478,10 +5486,10 @@ void print_wounds(const monster& mons)
         return;
 
     mon_dam_level_type dam_level = mons_get_damage_level(mons);
-    string desc = get_damage_level_string(mons.holiness(), dam_level);
-
-    desc.insert(0, " is ");
-    desc += ".";
+    string desc = make_stringf(
+        __(" is %(severely wounded)s.", " is %s."),
+        get_damage_level_string(monster_info(&mons), dam_level).c_str()
+    );
     simple_monster_message(mons, desc.c_str(), MSGCH_MONSTER_DAMAGE,
                            dam_level);
 }

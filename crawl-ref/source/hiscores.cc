@@ -2082,21 +2082,22 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
 
     switch (death_type)
     {
-    case KILLED_BY_MONSTER:
+    case KILLED_BY_MONSTER: {
+        const char* death_source_description = translate_actor(I18NCA_SLAIN_BY, death_source_desc().c_str());
         if (terse)
-            desc += __("slain by", _(death_source_desc().c_str()));
+            desc += death_source_description;
         else if (oneline)
-            desc += make_stringf(_("slain by %s"), __("slain by", death_source_desc().c_str()));
+            desc += make_stringf(_("slain by %s"), death_source_description);
         else
         {
-            desc += make_stringf(__("slain by", "%s by %s"), _(damage_verb()), __("slain by", death_source_desc().c_str()));
+            desc += make_stringf(__("slain by", "%s by %s"), damage_verb(), death_source_description);
         }
 
         // put the damage on the weapon line if there is one
         if (auxkilldata.empty())
             needs_damage = true;
         break;
-
+    }
     case KILLED_BY_HEADBUTT:
         if (terse)
             desc += apostrophise(death_source_desc()) + " headbutt";
