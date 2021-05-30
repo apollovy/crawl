@@ -979,6 +979,7 @@ static inline bool _monster_warning(activity_interrupt ai,
 
         string text = getMiscString(mon->name(DESC_DBNAME) + " title");
         if (text.empty())
+            // FIXME: i18n: @apollov: change into l10n context usage
             text = _(mon->full_name(DESC_A).c_str());
         if (mon->type == MONS_PLAYER_GHOST)
         {

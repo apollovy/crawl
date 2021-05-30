@@ -316,6 +316,7 @@ bool melee_attack::handle_phase_dodged()
         else
         {
             mprf(
+                // FIXME: i18n: @apollov: change into l10n context usage
                     __("%(The mighty blow)s%( completely)s misses %(centaur captain skeleton)s%(!)s", "%s%s misses %s%s"),
                  __("%s completely misses centaur captain skeleton!", atk_name(DESC_THE).c_str()),
                  __("The mighty blow%s misses centaur captain skeleton!", evasion_margin_adverb().c_str()),
