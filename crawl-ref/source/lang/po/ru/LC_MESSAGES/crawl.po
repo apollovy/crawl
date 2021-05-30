@@ -82871,3 +82871,13083 @@ msgctxt "A dart trap hits %s!"
 msgid "nasty sensed monster"
 msgstr "скверному учуянному монстру"
 
+#: 
+msgctxt "program bug"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "program bug"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "program bug"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "program bug"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "bumblebee"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "bumblebee"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "bumblebee"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "bumblebee"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wood golem"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wood golem"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wood golem"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wood golem"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ant larva"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "ant larva"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "ant larva"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "ant larva"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "laboratory rat"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "laboratory rat"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "laboratory rat"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "laboratory rat"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "war dog"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "war dog"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "war dog"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "war dog"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "spirit"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spirit"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spirit"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spirit"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "paladin"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "paladin"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "paladin"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "paladin"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf soldier"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf soldier"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf soldier"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf soldier"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "pan"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "pan"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "pan"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "pan"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "lamia"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "lamia"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "lamia"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "lamia"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "deep dwarf scion"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep dwarf scion"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep dwarf scion"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep dwarf scion"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep dwarf artificer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep dwarf artificer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep dwarf artificer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep dwarf artificer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep dwarf necromancer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep dwarf necromancer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep dwarf necromancer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep dwarf necromancer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "chaos butterfly"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "chaos butterfly"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "chaos butterfly"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "chaos butterfly"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "polymoth"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "polymoth"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "polymoth"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "polymoth"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "moth of suppression"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "moth of suppression"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "moth of suppression"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "moth of suppression"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "rock worm"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "rock worm"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "rock worm"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "rock worm"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "formicid drone"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "formicid drone"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "formicid drone"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "formicid drone"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spirit wolf"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spirit wolf"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spirit wolf"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spirit wolf"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "lava fish"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "lava fish"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "lava fish"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "lava fish"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "jellyfish"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "jellyfish"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "jellyfish"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "jellyfish"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "grey rat"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "grey rat"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "grey rat"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "grey rat"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "spiny worm"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spiny worm"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spiny worm"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spiny worm"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "rock troll"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "rock troll"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "rock troll"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "rock troll"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "monstrous item mimic"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "monstrous item mimic"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "monstrous item mimic"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "monstrous item mimic"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "giant amoeba"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "giant amoeba"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "giant amoeba"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "giant amoeba"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "deep dwarf berserker"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep dwarf berserker"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep dwarf berserker"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep dwarf berserker"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "agate snail"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "agate snail"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "agate snail"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "agate snail"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "giant centipede"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "giant centipede"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "giant centipede"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "giant centipede"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "ancient bear"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ancient bear"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ancient bear"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ancient bear"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "rotting devil"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "rotting devil"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "rotting devil"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "rotting devil"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ignis"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ignis"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ignis"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ignis"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "djinni"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "djinni"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "djinni"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "djinni"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "rakshasa fake"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "rakshasa fake"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "rakshasa fake"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "rakshasa fake"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "mara fake"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "mara fake"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "mara fake"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "mara fake"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "gnome"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "gnome"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "gnome"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "gnome"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "clay golem"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "clay golem"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "clay golem"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "clay golem"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "stone golem"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "stone golem"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "stone golem"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "stone golem"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "formicid venom mage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "formicid venom mage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "formicid venom mage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "formicid venom mage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spriggan assassin"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spriggan assassin"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spriggan assassin"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spriggan assassin"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "vapour"
+msgid "damaged"
+msgstr "повреждены"
+
+#: 
+msgctxt "vapour"
+msgid "wounded"
+msgstr "ранены"
+
+#: 
+msgctxt "vapour"
+msgid "destroyed"
+msgstr "уничтожены"
+
+#: 
+msgctxt "vapour"
+msgid "dead"
+msgstr "мертвы"
+
+#: 
+msgctxt "thorn lotus"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "thorn lotus"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "thorn lotus"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "thorn lotus"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "giant goldfish"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "giant goldfish"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "giant goldfish"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "giant goldfish"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "silver star"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "silver star"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "silver star"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "silver star"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "flaming corpse"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "flaming corpse"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "flaming corpse"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "flaming corpse"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "grizzly bear"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "grizzly bear"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "grizzly bear"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "grizzly bear"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spriggan enchanter"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spriggan enchanter"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spriggan enchanter"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spriggan enchanter"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "phoenix"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "phoenix"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "phoenix"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "phoenix"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shedu"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "shedu"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "shedu"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "shedu"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "plague shambler"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "plague shambler"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "plague shambler"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "plague shambler"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "giant slug"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "giant slug"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "giant slug"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "giant slug"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "firefly"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "firefly"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "firefly"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "firefly"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "brown ooze"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "brown ooze"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "brown ooze"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "brown ooze"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "pulsating lump"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "pulsating lump"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "pulsating lump"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "pulsating lump"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "big fish"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "big fish"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "big fish"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "big fish"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "lava worm"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "lava worm"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "lava worm"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "lava worm"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shark"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "shark"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "shark"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "shark"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "inept item mimic"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "inept item mimic"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "inept item mimic"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "inept item mimic"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "item mimic"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "item mimic"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "item mimic"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "item mimic"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ravenous item mimic"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ravenous item mimic"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ravenous item mimic"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ravenous item mimic"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "inept feature mimic"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "inept feature mimic"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "inept feature mimic"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "inept feature mimic"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "feature mimic"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "feature mimic"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "feature mimic"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "feature mimic"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ravenous feature mimic"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ravenous feature mimic"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ravenous feature mimic"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ravenous feature mimic"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "mnoleg tentacle"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "mnoleg tentacle"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "mnoleg tentacle"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "mnoleg tentacle"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "mnoleg tentacle segment"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "mnoleg tentacle segment"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "mnoleg tentacle segment"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "mnoleg tentacle segment"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "unborn"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "unborn"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "unborn"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "unborn"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "giant mite"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "giant mite"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "giant mite"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "giant mite"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "baby alligator"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "baby alligator"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "baby alligator"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "baby alligator"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "boring beetle"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "boring beetle"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "boring beetle"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "boring beetle"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "chimera"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "chimera"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "chimera"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "chimera"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "raven"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "raven"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "raven"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "raven"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "singularity"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "singularity"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "singularity"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "singularity"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "grand avatar"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "grand avatar"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "grand avatar"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "grand avatar"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "salamander firebrand"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "salamander firebrand"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "salamander firebrand"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "salamander firebrand"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "octopode crusher"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "octopode crusher"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "octopode crusher"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "octopode crusher"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "blue devil"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "blue devil"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "blue devil"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "blue devil"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "brain worm"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "brain worm"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "brain worm"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "brain worm"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf summoner"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf summoner"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf summoner"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf summoner"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf conjurer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf conjurer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf conjurer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf conjurer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf priest"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf priest"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf priest"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf priest"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf fighter"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf fighter"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf fighter"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf fighter"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "trapdoor spider"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "trapdoor spider"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "trapdoor spider"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "trapdoor spider"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "salamander stormcaller"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "salamander stormcaller"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "salamander stormcaller"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "salamander stormcaller"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "norris"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "norris"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "norris"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "norris"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "maud"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "maud"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "maud"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "maud"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wiglaf"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wiglaf"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wiglaf"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wiglaf"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "sheep"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "sheep"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "sheep"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "sheep"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "anubis guard"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "anubis guard"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "anubis guard"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "anubis guard"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "griffon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "griffon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "griffon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "griffon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "beetle"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "beetle"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "beetle"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "beetle"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "putrid demonspawn"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "putrid demonspawn"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "putrid demonspawn"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "putrid demonspawn"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "chaos champion"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "chaos champion"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "chaos champion"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "chaos champion"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wasp"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wasp"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wasp"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wasp"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "mottled draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "mottled draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "mottled draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "mottled draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "draconian zealot"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "draconian zealot"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "draconian zealot"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "draconian zealot"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hill giant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hill giant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hill giant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hill giant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "bultungin"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "bultungin"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "bultungin"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "bultungin"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hyperactive ballistomycete"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hyperactive ballistomycete"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hyperactive ballistomycete"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hyperactive ballistomycete"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "homunculus"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "homunculus"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "homunculus"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "homunculus"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "soupling"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "soupling"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "soupling"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "soupling"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "blessed toe"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "blessed toe"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "blessed toe"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "blessed toe"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "lava orc"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "lava orc"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "lava orc"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "lava orc"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "monstrous feature mimic"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "monstrous feature mimic"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "monstrous feature mimic"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "monstrous feature mimic"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "slave"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "slave"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "slave"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "slave"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hungry ghost"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hungry ghost"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hungry ghost"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hungry ghost"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "crocodile"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "crocodile"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "crocodile"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "crocodile"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hippogriff"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hippogriff"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hippogriff"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hippogriff"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "porcupine"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "porcupine"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "porcupine"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "porcupine"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "crawling corpse"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "crawling corpse"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "crawling corpse"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "crawling corpse"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "macabre mass"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "macabre mass"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "macabre mass"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "macabre mass"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "eye of draining"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "eye of draining"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "eye of draining"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "eye of draining"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "death ooze"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "death ooze"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "death ooze"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "death ooze"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "leopard gecko"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "leopard gecko"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "leopard gecko"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "leopard gecko"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "worker ant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "worker ant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "worker ant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "worker ant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "queen ant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "queen ant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "queen ant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "queen ant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "soldier ant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "soldier ant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "soldier ant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "soldier ant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "imperial myrmidon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "imperial myrmidon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "imperial myrmidon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "imperial myrmidon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "servant of whispers"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "servant of whispers"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "servant of whispers"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "servant of whispers"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ragged hierophant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ragged hierophant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ragged hierophant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ragged hierophant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "bat"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "bat"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "bat"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "bat"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "butterfly"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "butterfly"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "butterfly"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "butterfly"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "vampire bat"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vampire bat"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vampire bat"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vampire bat"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "fire bat"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "fire bat"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "fire bat"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "fire bat"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "bennu"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "bennu"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "bennu"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "bennu"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "caustic shrike"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "caustic shrike"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "caustic shrike"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "caustic shrike"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shard shrike"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "shard shrike"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "shard shrike"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "shard shrike"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "centaur"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "centaur"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "centaur"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "centaur"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "centaur warrior"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "centaur warrior"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "centaur warrior"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "centaur warrior"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "yaktaur"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "yaktaur"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "yaktaur"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "yaktaur"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "yaktaur captain"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "yaktaur captain"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "yaktaur captain"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "yaktaur captain"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "faun"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "faun"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "faun"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "faun"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "satyr"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "satyr"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "satyr"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "satyr"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "black draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "black draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "black draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "black draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "yellow draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "yellow draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "yellow draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "yellow draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "pale draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "pale draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "pale draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "pale draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "green draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "green draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "green draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "green draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "purple draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "purple draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "purple draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "purple draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "red draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "red draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "red draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "red draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "white draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "white draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "white draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "white draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "grey draconian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "grey draconian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "grey draconian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "grey draconian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "draconian stormcaller"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "draconian stormcaller"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "draconian stormcaller"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "draconian stormcaller"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "draconian monk"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "draconian monk"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "draconian monk"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "draconian monk"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "draconian shifter"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "draconian shifter"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "draconian shifter"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "draconian shifter"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "draconian annihilator"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "draconian annihilator"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "draconian annihilator"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "draconian annihilator"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "draconian knight"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "draconian knight"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "draconian knight"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "draconian knight"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "draconian scorcher"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "draconian scorcher"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "draconian scorcher"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "draconian scorcher"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "elf"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "elf"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "elf"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "elf"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf knight"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf knight"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf knight"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf knight"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf archer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf archer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf archer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf archer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf blademaster"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf blademaster"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf blademaster"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf blademaster"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf master archer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf master archer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf master archer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf master archer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf zephyrmancer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf zephyrmancer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf zephyrmancer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf zephyrmancer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf pyromancer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf pyromancer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf pyromancer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf pyromancer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf high priest"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf high priest"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf high priest"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf high priest"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf demonologist"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf demonologist"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf demonologist"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf demonologist"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf annihilator"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf annihilator"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf annihilator"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf annihilator"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf sorcerer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf sorcerer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf sorcerer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf sorcerer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf death mage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf death mage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf death mage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf death mage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep elf elementalist"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep elf elementalist"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep elf elementalist"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep elf elementalist"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wandering mushroom"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wandering mushroom"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wandering mushroom"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wandering mushroom"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deathcap"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "deathcap"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "deathcap"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "deathcap"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "thorn hunter"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "thorn hunter"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "thorn hunter"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "thorn hunter"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shambling mangrove"
+msgid "damaged"
+msgstr "повреждены"
+
+#: 
+msgctxt "shambling mangrove"
+msgid "wounded"
+msgstr "ранены"
+
+#: 
+msgctxt "shambling mangrove"
+msgid "destroyed"
+msgstr "уничтожены"
+
+#: 
+msgctxt "shambling mangrove"
+msgid "dead"
+msgstr "мертвы"
+
+#: 
+msgctxt "vine stalker"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vine stalker"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vine stalker"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vine stalker"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "goblin"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "goblin"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "goblin"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "goblin"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hobgoblin"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hobgoblin"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hobgoblin"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hobgoblin"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "gnoll"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "gnoll"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "gnoll"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "gnoll"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "gnoll shaman"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "gnoll shaman"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "gnoll shaman"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "gnoll shaman"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "gnoll sergeant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "gnoll sergeant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "gnoll sergeant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "gnoll sergeant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "boggart"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "boggart"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "boggart"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "boggart"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "dwarf"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "dwarf"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "dwarf"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "dwarf"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep dwarf"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep dwarf"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep dwarf"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep dwarf"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "jackal"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "jackal"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "jackal"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "jackal"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hound"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "hound"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "hound"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "hound"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "howler monkey"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "howler monkey"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "howler monkey"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "howler monkey"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "warg"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "warg"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "warg"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "warg"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wolf"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wolf"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wolf"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wolf"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hog"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hog"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hog"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hog"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hell hound"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "hell hound"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "hell hound"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "hell hound"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "doom hound"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "doom hound"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "doom hound"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "doom hound"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "raiju"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "raiju"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "raiju"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "raiju"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "hell hog"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "hell hog"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "hell hog"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "hell hog"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "holy swine"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "holy swine"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "holy swine"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "holy swine"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "felid"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "felid"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "felid"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "felid"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "bear"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "bear"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "bear"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "bear"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "polar bear"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "polar bear"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "polar bear"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "polar bear"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "black bear"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "black bear"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "black bear"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "black bear"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spriggan"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spriggan"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spriggan"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spriggan"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spriggan rider"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spriggan rider"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spriggan rider"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spriggan rider"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spriggan druid"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spriggan druid"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spriggan druid"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spriggan druid"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spriggan berserker"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spriggan berserker"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spriggan berserker"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spriggan berserker"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spriggan air mage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spriggan air mage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spriggan air mage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spriggan air mage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spriggan defender"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spriggan defender"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spriggan defender"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spriggan defender"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "drake"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "drake"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "drake"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "drake"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "swamp drake"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "swamp drake"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "swamp drake"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "swamp drake"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "rime drake"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "rime drake"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "rime drake"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "rime drake"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wind drake"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wind drake"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wind drake"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wind drake"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "lindwurm"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "lindwurm"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "lindwurm"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "lindwurm"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "death drake"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "death drake"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "death drake"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "death drake"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "giant lizard"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "giant lizard"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "giant lizard"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "giant lizard"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "frilled lizard"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "frilled lizard"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "frilled lizard"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "frilled lizard"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "iguana"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "iguana"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "iguana"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "iguana"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "basilisk"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "basilisk"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "basilisk"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "basilisk"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wyvern"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "wyvern"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "wyvern"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "wyvern"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "komodo dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "komodo dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "komodo dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "komodo dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "merfolk"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "merfolk"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "merfolk"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "merfolk"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "merfolk impaler"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "merfolk impaler"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "merfolk impaler"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "merfolk impaler"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "merfolk javelineer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "merfolk javelineer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "merfolk javelineer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "merfolk javelineer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "merfolk aquamancer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "merfolk aquamancer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "merfolk aquamancer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "merfolk aquamancer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "merfolk siren"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "merfolk siren"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "merfolk siren"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "merfolk siren"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "merfolk avatar"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "merfolk avatar"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "merfolk avatar"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "merfolk avatar"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "water nymph"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "water nymph"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "water nymph"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "water nymph"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "bog body"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "bog body"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "bog body"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "bog body"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "necrophage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "necrophage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "necrophage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "necrophage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "bloated husk"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "bloated husk"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "bloated husk"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "bloated husk"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "ghoul"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ghoul"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ghoul"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ghoul"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orc"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orc"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orc"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orc"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orc wizard"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orc wizard"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orc wizard"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orc wizard"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orc priest"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orc priest"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orc priest"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orc priest"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orc warrior"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orc warrior"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orc warrior"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orc warrior"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orc knight"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orc knight"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orc knight"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orc knight"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orc warlord"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orc warlord"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orc warlord"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orc warlord"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orc sorcerer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orc sorcerer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orc sorcerer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orc sorcerer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orc high priest"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orc high priest"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orc high priest"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orc high priest"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "human"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "human"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "human"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "human"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hell knight"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hell knight"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hell knight"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hell knight"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "death knight"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "death knight"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "death knight"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "death knight"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "necromancer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "necromancer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "necromancer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "necromancer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wizard"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wizard"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wizard"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wizard"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "vault guard"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vault guard"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vault guard"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vault guard"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "vault sentinel"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vault sentinel"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vault sentinel"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vault sentinel"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "vault warden"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vault warden"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vault warden"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vault warden"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ironbound convoker"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ironbound convoker"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ironbound convoker"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ironbound convoker"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ironbound frostheart"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ironbound frostheart"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ironbound frostheart"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ironbound frostheart"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ironbound preserver"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ironbound preserver"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ironbound preserver"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ironbound preserver"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ironbound beastmaster"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ironbound beastmaster"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ironbound beastmaster"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ironbound beastmaster"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shapeshifter"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "shapeshifter"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "shapeshifter"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "shapeshifter"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "glowing shapeshifter"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "glowing shapeshifter"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "glowing shapeshifter"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "glowing shapeshifter"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Killer Klown"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Killer Klown"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Killer Klown"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Killer Klown"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "demigod"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "demigod"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "demigod"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "demigod"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "halfling"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "halfling"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "halfling"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "halfling"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "rat"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "rat"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "rat"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "rat"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "quokka"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "quokka"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "quokka"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "quokka"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "river rat"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "river rat"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "river rat"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "river rat"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "hell rat"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "hell rat"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "hell rat"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "hell rat"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "scorpion"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "scorpion"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "scorpion"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "scorpion"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "emperor scorpion"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "emperor scorpion"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "emperor scorpion"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "emperor scorpion"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spider"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spider"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spider"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spider"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tarantella"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "tarantella"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "tarantella"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "tarantella"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "jumping spider"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "jumping spider"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "jumping spider"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "jumping spider"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "wolf spider"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wolf spider"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wolf spider"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wolf spider"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "redback"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "redback"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "redback"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "redback"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "demonic crawler"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "demonic crawler"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "demonic crawler"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "demonic crawler"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orb spider"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orb spider"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orb spider"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orb spider"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "alligator"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "alligator"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "alligator"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "alligator"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "snapping turtle"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "snapping turtle"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "snapping turtle"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "snapping turtle"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "alligator snapping turtle"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "alligator snapping turtle"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "alligator snapping turtle"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "alligator snapping turtle"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "crab"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "crab"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "crab"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "crab"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ghost crab"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ghost crab"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ghost crab"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ghost crab"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "apocalypse crab"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "apocalypse crab"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "apocalypse crab"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "apocalypse crab"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ugly thing"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "ugly thing"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "ugly thing"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "ugly thing"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "very ugly thing"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "very ugly thing"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "very ugly thing"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "very ugly thing"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "fire vortex"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "fire vortex"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "fire vortex"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "fire vortex"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spatial vortex"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spatial vortex"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spatial vortex"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spatial vortex"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spatial maelstrom"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spatial maelstrom"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spatial maelstrom"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spatial maelstrom"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "insubstantial wisp"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "insubstantial wisp"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "insubstantial wisp"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "insubstantial wisp"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "will-o-the-wisp"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "will-o-the-wisp"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "will-o-the-wisp"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "will-o-the-wisp"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "twister"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "twister"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "twister"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "twister"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "worm"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "worm"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "worm"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "worm"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "swamp worm"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "swamp worm"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "swamp worm"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "swamp worm"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tyrant leech"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "tyrant leech"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "tyrant leech"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "tyrant leech"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "dart slug"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "dart slug"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "dart slug"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "dart slug"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "torpor snail"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "torpor snail"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "torpor snail"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "torpor snail"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "elephant slug"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "elephant slug"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "elephant slug"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "elephant slug"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "unseen horror"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "unseen horror"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "unseen horror"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "unseen horror"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "small abomination"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "small abomination"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "small abomination"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "small abomination"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "ancient zyme"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ancient zyme"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ancient zyme"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ancient zyme"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "worldbinder"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "worldbinder"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "worldbinder"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "worldbinder"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "killer bee"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "killer bee"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "killer bee"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "killer bee"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "queen bee"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "queen bee"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "queen bee"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "queen bee"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "vampire mosquito"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vampire mosquito"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vampire mosquito"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vampire mosquito"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hornet"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hornet"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hornet"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hornet"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "meliai"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "meliai"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "meliai"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "meliai"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "spark wasp"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "spark wasp"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "spark wasp"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "spark wasp"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "moth"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "moth"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "moth"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "moth"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "ghost moth"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "ghost moth"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "ghost moth"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "ghost moth"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "moth of wrath"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "moth of wrath"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "moth of wrath"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "moth of wrath"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "wight"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "wight"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "wight"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "wight"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "skeletal warrior"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "skeletal warrior"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "skeletal warrior"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "skeletal warrior"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ancient champion"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ancient champion"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ancient champion"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ancient champion"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "flying skull"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "flying skull"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "flying skull"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "flying skull"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "curse skull"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "curse skull"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "curse skull"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "curse skull"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "curse toe"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "curse toe"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "curse toe"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "curse toe"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "angel"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "angel"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "angel"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "angel"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "cherub"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "cherub"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "cherub"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "cherub"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "seraph"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "seraph"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "seraph"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "seraph"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "daeva"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "daeva"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "daeva"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "daeva"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "profane servitor"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "profane servitor"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "profane servitor"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "profane servitor"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "giant cockroach"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "giant cockroach"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "giant cockroach"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "giant cockroach"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "formicid"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "formicid"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "formicid"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "formicid"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "entropy weaver"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "entropy weaver"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "entropy weaver"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "entropy weaver"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "boulder beetle"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "boulder beetle"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "boulder beetle"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "boulder beetle"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "death scarab"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "death scarab"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "death scarab"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "death scarab"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "giant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "giant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "giant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "giant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "cyclops"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "cyclops"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "cyclops"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "cyclops"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ettin"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ettin"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ettin"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ettin"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "fire giant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "fire giant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "fire giant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "fire giant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "frost giant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "frost giant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "frost giant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "frost giant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "stone giant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "stone giant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "stone giant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "stone giant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "titan"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "titan"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "titan"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "titan"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "juggernaut"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "juggernaut"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "juggernaut"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "juggernaut"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "iron giant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "iron giant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "iron giant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "iron giant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "fire dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "fire dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "fire dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "fire dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hydra"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "hydra"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "hydra"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "hydra"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "ice dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ice dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ice dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ice dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "steam dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "steam dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "steam dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "steam dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "swamp dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "swamp dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "swamp dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "swamp dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "acid dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "acid dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "acid dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "acid dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "quicksilver dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "quicksilver dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "quicksilver dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "quicksilver dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "iron dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "iron dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "iron dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "iron dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "storm dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "storm dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "storm dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "storm dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "golden dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "golden dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "golden dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "golden dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shadow dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "shadow dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "shadow dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "shadow dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "bone dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "bone dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "bone dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "bone dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "pearl dragon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "pearl dragon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "pearl dragon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "pearl dragon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "elemental"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "elemental"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "elemental"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "elemental"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "earth elemental"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "earth elemental"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "earth elemental"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "earth elemental"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "fire elemental"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "fire elemental"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "fire elemental"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "fire elemental"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "water elemental"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "water elemental"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "water elemental"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "water elemental"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "air elemental"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "air elemental"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "air elemental"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "air elemental"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "iron elemental"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "iron elemental"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "iron elemental"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "iron elemental"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "elemental wellspring"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "elemental wellspring"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "elemental wellspring"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "elemental wellspring"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "giant frog"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "giant frog"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "giant frog"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "giant frog"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "bullfrog"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "bullfrog"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "bullfrog"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "bullfrog"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "cane toad"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "cane toad"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "cane toad"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "cane toad"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "blink frog"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "blink frog"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "blink frog"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "blink frog"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "goliath frog"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "goliath frog"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "goliath frog"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "goliath frog"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "barachi"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "barachi"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "barachi"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "barachi"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "floating eye"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "floating eye"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "floating eye"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "floating eye"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "glowing orange brain"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "glowing orange brain"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "glowing orange brain"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "glowing orange brain"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "great orb of eyes"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "great orb of eyes"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "great orb of eyes"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "great orb of eyes"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "shining eye"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "shining eye"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "shining eye"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "shining eye"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "eye of devastation"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "eye of devastation"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "eye of devastation"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "eye of devastation"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "golden eye"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "golden eye"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "golden eye"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "golden eye"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "ophan"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ophan"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ophan"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ophan"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "manticore"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "manticore"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "manticore"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "manticore"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "minotaur"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "minotaur"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "minotaur"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "minotaur"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "fenstrider witch"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "fenstrider witch"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "fenstrider witch"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "fenstrider witch"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "sphinx"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "sphinx"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "sphinx"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "sphinx"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "harpy"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "harpy"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "harpy"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "harpy"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "palentonga"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "palentonga"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "palentonga"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "palentonga"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "mutant beast"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "mutant beast"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "mutant beast"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "mutant beast"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ancestor"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ancestor"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ancestor"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ancestor"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "knight"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "knight"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "knight"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "knight"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "battlemage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "battlemage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "battlemage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "battlemage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hexer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hexer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hexer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hexer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "endoplasm"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "endoplasm"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "endoplasm"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "endoplasm"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "jelly"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "jelly"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "jelly"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "jelly"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "slime creature"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "slime creature"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "slime creature"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "slime creature"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "merged slime creature"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "merged slime creature"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "merged slime creature"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "merged slime creature"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "rockslime"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "rockslime"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "rockslime"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "rockslime"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "quicksilver ooze"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "quicksilver ooze"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "quicksilver ooze"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "quicksilver ooze"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "azure jelly"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "azure jelly"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "azure jelly"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "azure jelly"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "acid blob"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "acid blob"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "acid blob"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "acid blob"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "kobold"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "kobold"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "kobold"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "kobold"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "kobold brigand"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "kobold brigand"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "kobold brigand"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "kobold brigand"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "kobold demonologist"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "kobold demonologist"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "kobold demonologist"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "kobold demonologist"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "lich"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "lich"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "lich"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "lich"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ancient lich"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ancient lich"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ancient lich"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ancient lich"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "dread lich"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "dread lich"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "dread lich"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "dread lich"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "revenant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "revenant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "revenant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "revenant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "halazid warlock"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "halazid warlock"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "halazid warlock"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "halazid warlock"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "mummy"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "mummy"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "mummy"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "mummy"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "guardian mummy"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "guardian mummy"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "guardian mummy"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "guardian mummy"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "royal mummy"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "royal mummy"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "royal mummy"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "royal mummy"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "mummy priest"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "mummy priest"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "mummy priest"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "mummy priest"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "naga"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "naga"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "naga"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "naga"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "naga mage"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "naga mage"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "naga mage"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "naga mage"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "naga sharpshooter"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "naga sharpshooter"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "naga sharpshooter"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "naga sharpshooter"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "naga ritualist"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "naga ritualist"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "naga ritualist"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "naga ritualist"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "naga warrior"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "naga warrior"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "naga warrior"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "naga warrior"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "nagaraja"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "nagaraja"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "nagaraja"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "nagaraja"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "ogre"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ogre"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ogre"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ogre"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "two-headed ogre"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "two-headed ogre"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "two-headed ogre"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "two-headed ogre"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ogre mage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ogre mage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ogre mage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ogre mage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ironbound thunderhulk"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ironbound thunderhulk"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ironbound thunderhulk"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ironbound thunderhulk"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "plant"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "plant"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "plant"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "plant"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "demonic plant"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "demonic plant"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "demonic plant"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "demonic plant"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "withered plant"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "withered plant"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "withered plant"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "withered plant"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "oklob sapling"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "oklob sapling"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "oklob sapling"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "oklob sapling"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "oklob plant"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "oklob plant"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "oklob plant"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "oklob plant"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "bush"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "bush"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "bush"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "bush"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "burning bush"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "burning bush"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "burning bush"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "burning bush"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "toadstool"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "toadstool"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "toadstool"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "toadstool"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "fungus"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "fungus"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "fungus"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "fungus"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ballistomycete"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ballistomycete"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ballistomycete"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ballistomycete"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "briar patch"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "briar patch"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "briar patch"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "briar patch"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tengu"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "tengu"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "tengu"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "tengu"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tengu conjurer"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "tengu conjurer"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "tengu conjurer"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "tengu conjurer"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tengu warrior"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "tengu warrior"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "tengu warrior"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "tengu warrior"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tengu reaver"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "tengu reaver"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "tengu reaver"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "tengu reaver"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "efreet"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "efreet"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "efreet"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "efreet"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "rakshasa"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "rakshasa"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "rakshasa"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "rakshasa"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "dryad"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "dryad"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "dryad"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "dryad"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "eleionoma"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "eleionoma"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "eleionoma"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "eleionoma"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "snaplasher vine"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "snaplasher vine"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "snaplasher vine"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "snaplasher vine"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "snaplasher vine segment"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "snaplasher vine segment"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "snaplasher vine segment"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "snaplasher vine segment"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "snake"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "snake"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "snake"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "snake"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "ball python"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ball python"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ball python"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ball python"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "adder"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "adder"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "adder"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "adder"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "water moccasin"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "water moccasin"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "water moccasin"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "water moccasin"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "black mamba"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "black mamba"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "black mamba"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "black mamba"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "sea snake"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "sea snake"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "sea snake"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "sea snake"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "anaconda"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "anaconda"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "anaconda"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "anaconda"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "guardian serpent"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "guardian serpent"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "guardian serpent"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "guardian serpent"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shock serpent"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "shock serpent"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "shock serpent"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "shock serpent"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "mana viper"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "mana viper"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "mana viper"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "mana viper"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "troll"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "troll"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "troll"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "troll"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "iron troll"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "iron troll"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "iron troll"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "iron troll"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep troll"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep troll"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep troll"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep troll"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep troll earth mage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep troll earth mage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep troll earth mage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep troll earth mage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "deep troll shaman"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "deep troll shaman"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "deep troll shaman"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "deep troll shaman"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "vampire"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vampire"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vampire"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vampire"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "vampire knight"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vampire knight"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vampire knight"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vampire knight"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "vampire mage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "vampire mage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "vampire mage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "vampire mage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "jiangshi"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "jiangshi"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "jiangshi"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "jiangshi"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ghost"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ghost"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ghost"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ghost"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "phantom"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "phantom"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "phantom"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "phantom"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "flayed ghost"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "flayed ghost"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "flayed ghost"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "flayed ghost"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "player ghost"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "player ghost"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "player ghost"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "player ghost"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shadow"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "shadow"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "shadow"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "shadow"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "silent spectre"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "silent spectre"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "silent spectre"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "silent spectre"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "drowned soul"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "drowned soul"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "drowned soul"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "drowned soul"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "wraith"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "wraith"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "wraith"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "wraith"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "shadow wraith"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "shadow wraith"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "shadow wraith"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "shadow wraith"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "freezing wraith"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "freezing wraith"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "freezing wraith"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "freezing wraith"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "eidolon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "eidolon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "eidolon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "eidolon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "phantasmal warrior"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "phantasmal warrior"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "phantasmal warrior"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "phantasmal warrior"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "large abomination"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "large abomination"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "large abomination"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "large abomination"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "thrashing horror"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "thrashing horror"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "thrashing horror"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "thrashing horror"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tentacled monstrosity"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "tentacled monstrosity"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "tentacled monstrosity"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "tentacled monstrosity"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "Orb Guardian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Orb Guardian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Orb Guardian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Orb Guardian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tentacled starspawn"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "tentacled starspawn"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "tentacled starspawn"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "tentacled starspawn"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "starspawn tentacle"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "starspawn tentacle"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "starspawn tentacle"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "starspawn tentacle"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "starspawn tentacle segment"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "starspawn tentacle segment"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "starspawn tentacle segment"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "starspawn tentacle segment"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "starcursed mass"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "starcursed mass"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "starcursed mass"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "starcursed mass"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "nameless horror"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "nameless horror"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "nameless horror"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "nameless horror"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "dream sheep"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "dream sheep"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "dream sheep"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "dream sheep"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "yak"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "yak"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "yak"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "yak"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "death yak"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "death yak"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "death yak"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "death yak"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "catoblepas"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "catoblepas"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "catoblepas"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "catoblepas"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "elephant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "elephant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "elephant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "elephant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "dire elephant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "dire elephant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "dire elephant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "dire elephant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hellephant"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hellephant"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hellephant"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hellephant"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "apis"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "apis"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "apis"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "apis"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ice beast"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ice beast"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ice beast"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ice beast"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "sky beast"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "sky beast"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "sky beast"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "sky beast"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "zombie"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "zombie"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "zombie"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "zombie"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "skeleton"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "skeleton"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "skeleton"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "skeleton"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "simulacrum"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "simulacrum"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "simulacrum"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "simulacrum"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "small zombie"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "small zombie"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "small zombie"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "small zombie"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "small skeleton"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "small skeleton"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "small skeleton"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "small skeleton"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "small simulacrum"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "small simulacrum"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "small simulacrum"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "small simulacrum"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "large zombie"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "large zombie"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "large zombie"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "large zombie"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "large skeleton"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "large skeleton"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "large skeleton"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "large skeleton"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "large simulacrum"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "large simulacrum"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "large simulacrum"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "large simulacrum"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spectral thing"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "spectral thing"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "spectral thing"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "spectral thing"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "electric eel"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "electric eel"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "electric eel"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "electric eel"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "kraken"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "kraken"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "kraken"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "kraken"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tentacle"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "tentacle"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "tentacle"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "tentacle"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "tentacle segment"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "tentacle segment"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "tentacle segment"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "tentacle segment"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "octopode"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "octopode"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "octopode"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "octopode"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "lava snake"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "lava snake"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "lava snake"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "lava snake"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "salamander"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "salamander"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "salamander"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "salamander"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "salamander mystic"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "salamander mystic"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "salamander mystic"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "salamander mystic"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "salamander tyrant"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "salamander tyrant"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "salamander tyrant"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "salamander tyrant"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Hellbinder"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Hellbinder"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Hellbinder"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Hellbinder"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Cloud Mage"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Cloud Mage"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Cloud Mage"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Cloud Mage"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "player"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "player"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "player"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "player"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "player illusion"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "player illusion"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "player illusion"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "player illusion"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "dancing weapon"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "dancing weapon"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "dancing weapon"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "dancing weapon"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "spectral weapon"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "spectral weapon"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "spectral weapon"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "spectral weapon"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "animated armour"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "animated armour"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "animated armour"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "animated armour"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "eldritch tentacle"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "eldritch tentacle"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "eldritch tentacle"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "eldritch tentacle"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "eldritch tentacle segment"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "eldritch tentacle segment"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "eldritch tentacle segment"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "eldritch tentacle segment"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "demonspawn"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "demonspawn"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "demonspawn"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "demonspawn"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "monstrous demonspawn"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "monstrous demonspawn"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "monstrous demonspawn"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "monstrous demonspawn"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "gelid demonspawn"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "gelid demonspawn"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "gelid demonspawn"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "gelid demonspawn"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "infernal demonspawn"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "infernal demonspawn"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "infernal demonspawn"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "infernal demonspawn"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "torturous demonspawn"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "torturous demonspawn"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "torturous demonspawn"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "torturous demonspawn"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "blood saint"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "blood saint"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "blood saint"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "blood saint"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "warmonger"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "warmonger"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "warmonger"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "warmonger"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "corrupter"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "corrupter"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "corrupter"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "corrupter"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "black sun"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "black sun"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "black sun"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "black sun"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "crimson imp"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "crimson imp"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "crimson imp"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "crimson imp"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "quasit"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "quasit"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "quasit"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "quasit"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "white imp"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "white imp"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "white imp"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "white imp"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ufetubus"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ufetubus"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ufetubus"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ufetubus"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "iron imp"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "iron imp"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "iron imp"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "iron imp"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "shadow imp"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "shadow imp"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "shadow imp"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "shadow imp"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "lemure"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "lemure"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "lemure"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "lemure"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "rust devil"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "rust devil"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "rust devil"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "rust devil"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orange demon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "orange demon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "orange demon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "orange demon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "red devil"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "red devil"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "red devil"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "red devil"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hellwing"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "hellwing"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "hellwing"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "hellwing"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "ice devil"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ice devil"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ice devil"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ice devil"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "chaos spawn"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "chaos spawn"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "chaos spawn"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "chaos spawn"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "sun demon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "sun demon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "sun demon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "sun demon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "soul eater"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "soul eater"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "soul eater"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "soul eater"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "smoke demon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "smoke demon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "smoke demon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "smoke demon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "neqoxec"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "neqoxec"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "neqoxec"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "neqoxec"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ynoxinul"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "ynoxinul"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "ynoxinul"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "ynoxinul"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "sixfirhy"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "sixfirhy"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "sixfirhy"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "sixfirhy"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "shadow demon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "shadow demon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "shadow demon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "shadow demon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "green death"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "green death"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "green death"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "green death"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "blizzard demon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "blizzard demon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "blizzard demon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "blizzard demon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "balrug"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "balrug"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "balrug"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "balrug"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "cacodemon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "cacodemon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "cacodemon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "cacodemon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hell beast"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hell beast"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hell beast"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hell beast"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hellion"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hellion"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hellion"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hellion"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "reaper"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "reaper"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "reaper"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "reaper"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "lorocyproca"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "lorocyproca"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "lorocyproca"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "lorocyproca"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "tormentor"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "tormentor"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "tormentor"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "tormentor"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Brimstone Fiend"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Brimstone Fiend"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Brimstone Fiend"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Brimstone Fiend"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Ice Fiend"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Ice Fiend"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Ice Fiend"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Ice Fiend"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Tzitzimitl"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Tzitzimitl"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Tzitzimitl"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Tzitzimitl"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Hell Sentinel"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Hell Sentinel"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Hell Sentinel"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Hell Sentinel"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Executioner"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Executioner"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Executioner"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Executioner"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "animated tree"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "animated tree"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "animated tree"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "animated tree"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "saltling"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "saltling"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "saltling"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "saltling"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "peacekeeper"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "peacekeeper"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "peacekeeper"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "peacekeeper"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "iron golem"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "iron golem"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "iron golem"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "iron golem"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "crystal guardian"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "crystal guardian"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "crystal guardian"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "crystal guardian"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "toenail golem"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "toenail golem"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "toenail golem"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "toenail golem"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "electric golem"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "electric golem"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "electric golem"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "electric golem"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ushabti"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "ushabti"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "ushabti"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "ushabti"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "guardian golem"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "guardian golem"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "guardian golem"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "guardian golem"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "spellforged servitor"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "spellforged servitor"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "spellforged servitor"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "spellforged servitor"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ice statue"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "ice statue"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "ice statue"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "ice statue"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "obsidian statue"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "obsidian statue"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "obsidian statue"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "obsidian statue"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "orange crystal statue"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "orange crystal statue"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "orange crystal statue"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "orange crystal statue"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "statue"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "statue"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "statue"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "statue"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "training dummy"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "training dummy"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "training dummy"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "training dummy"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "pillar of salt"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "pillar of salt"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "pillar of salt"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "pillar of salt"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "block of ice"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "block of ice"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "block of ice"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "block of ice"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "diamond obelisk"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "diamond obelisk"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "diamond obelisk"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "diamond obelisk"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "lightning spire"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "lightning spire"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "lightning spire"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "lightning spire"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "gargoyle"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "gargoyle"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "gargoyle"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "gargoyle"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "war gargoyle"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "war gargoyle"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "war gargoyle"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "war gargoyle"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "molten gargoyle"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "molten gargoyle"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "molten gargoyle"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "molten gargoyle"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "pandemonium lord"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "pandemonium lord"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "pandemonium lord"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "pandemonium lord"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "hell lord"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "hell lord"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "hell lord"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "hell lord"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "ballistomycete spore"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "ballistomycete spore"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "ballistomycete spore"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "ballistomycete spore"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "lost soul"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "lost soul"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "lost soul"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "lost soul"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "lurking horror"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "lurking horror"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "lurking horror"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "lurking horror"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "orb of fire"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "orb of fire"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "orb of fire"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "orb of fire"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "orb of destruction"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "orb of destruction"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "orb of destruction"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "orb of destruction"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "foxfire"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "foxfire"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "foxfire"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "foxfire"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "fulminant prism"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "fulminant prism"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "fulminant prism"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "fulminant prism"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "wretched star"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "wretched star"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "wretched star"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "wretched star"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "battlesphere"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "battlesphere"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "battlesphere"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "battlesphere"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "death cob"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "death cob"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "death cob"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "death cob"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Mennas"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Mennas"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Mennas"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Mennas"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Nessos"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Nessos"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Nessos"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Nessos"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Chuck"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Chuck"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Chuck"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Chuck"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Polyphemus"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Polyphemus"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Polyphemus"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Polyphemus"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Antaeus"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Antaeus"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Antaeus"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Antaeus"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Tiamat"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Tiamat"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Tiamat"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Tiamat"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Bai Suzhen"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Bai Suzhen"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Bai Suzhen"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Bai Suzhen"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Xtahua"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Xtahua"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Xtahua"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Xtahua"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "the Lernaean hydra"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "the Lernaean hydra"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "the Lernaean hydra"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "the Lernaean hydra"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "the Serpent of Hell"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "the Serpent of Hell"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "the Serpent of Hell"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "the Serpent of Hell"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Duvessa"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Duvessa"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Duvessa"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Duvessa"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Dowan"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Dowan"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Dowan"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Dowan"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Fannar"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Fannar"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Fannar"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Fannar"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Prince Ribbit"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Prince Ribbit"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Prince Ribbit"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Prince Ribbit"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Ijyb"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Ijyb"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Ijyb"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Ijyb"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Robin"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Robin"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Robin"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Robin"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Grum"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Grum"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Grum"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Grum"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Crazy Yiuf"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Crazy Yiuf"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Crazy Yiuf"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Crazy Yiuf"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Jorgrun"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Jorgrun"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Jorgrun"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Jorgrun"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Natasha"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Natasha"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Natasha"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Natasha"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Arachne"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Arachne"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Arachne"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Arachne"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Asterion"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Asterion"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Asterion"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Asterion"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Agnes"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Agnes"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Agnes"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Agnes"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "the Enchantress"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "the Enchantress"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "the Enchantress"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "the Enchantress"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "the Royal Jelly"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "the Royal Jelly"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "the Royal Jelly"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "the Royal Jelly"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "Dissolution"
+msgid "damaged"
+msgstr "повреждено"
+
+#: 
+msgctxt "Dissolution"
+msgid "wounded"
+msgstr "ранено"
+
+#: 
+msgctxt "Dissolution"
+msgid "destroyed"
+msgstr "уничтожено"
+
+#: 
+msgctxt "Dissolution"
+msgid "dead"
+msgstr "мертво"
+
+#: 
+msgctxt "Sonja"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Sonja"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Sonja"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Sonja"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Pikel"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Pikel"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Pikel"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Pikel"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Boris"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Boris"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Boris"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Boris"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Menkaure"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Menkaure"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Menkaure"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Menkaure"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Khufu"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Khufu"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Khufu"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Khufu"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Ilsuiw"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Ilsuiw"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Ilsuiw"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Ilsuiw"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Vashnia"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Vashnia"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Vashnia"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Vashnia"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Erolcha"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Erolcha"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Erolcha"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Erolcha"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Blork the orc"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Blork the orc"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Blork the orc"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Blork the orc"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Urug"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Urug"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Urug"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Urug"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Nergalle"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Nergalle"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Nergalle"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Nergalle"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Saint Roka"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Saint Roka"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Saint Roka"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Saint Roka"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Sojobo"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Sojobo"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Sojobo"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Sojobo"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Azrael"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Azrael"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Azrael"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Azrael"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Mara"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Mara"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Mara"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Mara"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Aizul"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Aizul"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Aizul"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Aizul"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Snorg"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Snorg"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Snorg"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Snorg"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Purgy"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Purgy"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Purgy"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Purgy"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "moon troll"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "moon troll"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "moon troll"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "moon troll"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Jory"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Jory"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Jory"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Jory"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Gastronok"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Gastronok"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Gastronok"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Gastronok"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Nellie"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Nellie"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Nellie"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Nellie"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Murray"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Murray"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Murray"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Murray"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Ignacio"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Ignacio"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Ignacio"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Ignacio"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Grinder"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Grinder"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Grinder"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Grinder"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Roxanne"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Roxanne"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Roxanne"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Roxanne"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Terence"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Terence"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Terence"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Terence"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Jessica"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Jessica"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Jessica"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Jessica"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Sigmund"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Sigmund"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Sigmund"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Sigmund"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Edmund"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Edmund"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Edmund"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Edmund"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Psyche"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Psyche"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Psyche"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Psyche"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Donald"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Donald"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Donald"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Donald"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Joseph"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Joseph"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Joseph"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Joseph"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Erica"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Erica"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Erica"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Erica"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Josephine"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Josephine"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Josephine"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Josephine"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Harold"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Harold"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Harold"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Harold"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Louise"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Louise"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Louise"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Louise"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Frances"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Frances"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Frances"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Frances"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Rupert"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Rupert"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Rupert"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Rupert"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Kirke"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Kirke"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Kirke"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Kirke"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Frederick"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Frederick"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Frederick"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Frederick"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Maggie"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Maggie"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Maggie"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Maggie"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Margery"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "Margery"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "Margery"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "Margery"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "Eustachio"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Eustachio"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Eustachio"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Eustachio"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Maurice"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Maurice"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Maurice"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Maurice"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Nikola"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Nikola"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Nikola"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Nikola"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Mnoleg"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Mnoleg"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Mnoleg"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Mnoleg"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Lom Lobon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Lom Lobon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Lom Lobon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Lom Lobon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Cerebov"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Cerebov"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Cerebov"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Cerebov"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Gloorx Vloq"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Gloorx Vloq"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Gloorx Vloq"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Gloorx Vloq"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Geryon"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Geryon"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Geryon"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Geryon"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Dispater"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Dispater"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Dispater"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Dispater"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Asmodeus"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Asmodeus"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Asmodeus"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Asmodeus"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "Ereshkigal"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "Ereshkigal"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "Ereshkigal"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "Ereshkigal"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "test spawner"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "test spawner"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "test spawner"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "test spawner"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "test statue"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "test statue"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "test statue"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "test statue"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "test blob"
+msgid "damaged"
+msgstr "повреждена"
+
+#: 
+msgctxt "test blob"
+msgid "wounded"
+msgstr "ранена"
+
+#: 
+msgctxt "test blob"
+msgid "destroyed"
+msgstr "уничтожена"
+
+#: 
+msgctxt "test blob"
+msgid "dead"
+msgstr "метрва"
+
+#: 
+msgctxt "sensed monster"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "sensed monster"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "sensed monster"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "sensed monster"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "friendly sensed monster"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "friendly sensed monster"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "friendly sensed monster"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "friendly sensed monster"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "trivial sensed monster"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "trivial sensed monster"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "trivial sensed monster"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "trivial sensed monster"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "easy sensed monster"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "easy sensed monster"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "easy sensed monster"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "easy sensed monster"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "tough sensed monster"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "tough sensed monster"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "tough sensed monster"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "tough sensed monster"
+msgid "dead"
+msgstr "мёртв"
+
+#: 
+msgctxt "nasty sensed monster"
+msgid "damaged"
+msgstr "повреждён"
+
+#: 
+msgctxt "nasty sensed monster"
+msgid "wounded"
+msgstr "ранен"
+
+#: 
+msgctxt "nasty sensed monster"
+msgid "destroyed"
+msgstr "уничтожен"
+
+#: 
+msgctxt "nasty sensed monster"
+msgid "dead"
+msgstr "мёртв"
+
