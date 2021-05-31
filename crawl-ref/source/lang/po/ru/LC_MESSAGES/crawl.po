@@ -12535,7 +12535,7 @@ msgstr "Айзулу"
 #: 
 msgctxt "The mighty blow completely misses %s!"
 msgid "Snorg"
-msgstr "Сноргу"
+msgstr "Снорг"
 
 #: 
 msgctxt "The mighty blow completely misses %s!"
@@ -40103,7 +40103,7 @@ msgstr "Айзулу"
 #: 
 msgctxt "Your bite misses %s."
 msgid "Snorg"
-msgstr "Сноргу"
+msgstr "Снорг"
 
 #: 
 msgctxt "Your bite misses %s."
@@ -43373,7 +43373,7 @@ msgstr "Айзула"
 #: 
 msgctxt "The jackal bites %s for 10 damage with +3 dagger!!!"
 msgid "Snorg"
-msgstr "Снорга"
+msgstr "Снорг"
 
 #: 
 msgctxt "The jackal bites %s for 10 damage with +3 dagger!!!"
@@ -46648,7 +46648,7 @@ msgstr "Айзула"
 #: 
 msgctxt "You slice %s like an onion for 10 damage!!"
 msgid "Snorg"
-msgstr "Снорга"
+msgstr "Снорг"
 
 #: 
 msgctxt "You slice %s like an onion for 10 damage!!"
@@ -49923,7 +49923,7 @@ msgstr "Айзула"
 #: 
 msgctxt "You kill %s!"
 msgid "Snorg"
-msgstr "Снорга"
+msgstr "Снорг"
 
 #: 
 msgctxt "You kill %s!"
@@ -53198,7 +53198,7 @@ msgstr "Айзула"
 #: 
 msgctxt "The orb of death hits %s."
 msgid "Snorg"
-msgstr "Снорга"
+msgstr "Снорг"
 
 #: 
 msgctxt "The orb of death hits %s."
@@ -56473,7 +56473,7 @@ msgstr "Айзула"
 #: 
 msgctxt "Octopode loses its grip on %s."
 msgid "Snorg"
-msgstr "Снорга"
+msgstr "Снорг"
 
 #: 
 msgctxt "Octopode loses its grip on %s."
@@ -59748,7 +59748,7 @@ msgstr "Айзула"
 #: 
 msgctxt "The grasping roots constrict %s for 15, but do no damage."
 msgid "Snorg"
-msgstr "Снорга"
+msgstr "Снорг"
 
 #: 
 msgctxt "The grasping roots constrict %s for 15, but do no damage."
@@ -63018,7 +63018,7 @@ msgstr "Айзулом"
 #: 
 msgctxt "slain by"
 msgid "Snorg"
-msgstr "Сноргом"
+msgstr "Снорг"
 
 #: 
 msgctxt "slain by"
@@ -66293,7 +66293,7 @@ msgstr "Айзулом"
 #: 
 msgctxt "blasted by %s"
 msgid "Snorg"
-msgstr "Сноргом"
+msgstr "Снорг"
 
 #: 
 msgctxt "blasted by %s"
@@ -69568,7 +69568,7 @@ msgstr "Айзулом"
 #: 
 msgctxt "You collide with %s!"
 msgid "Snorg"
-msgstr "Сноргом"
+msgstr "Снорг"
 
 #: 
 msgctxt "You collide with %s!"
@@ -72843,7 +72843,7 @@ msgstr "Айзулом"
 #: 
 msgctxt "Collided with %s caused by by salamander mystic."
 msgid "Snorg"
-msgstr "Сноргом"
+msgstr "Снорг"
 
 #: 
 msgctxt "Collided with %s caused by by salamander mystic."
@@ -76118,7 +76118,7 @@ msgstr "Айзулом"
 #: 
 msgctxt "Collided with the jackal caused by %s."
 msgid "Snorg"
-msgstr "Сноргом"
+msgstr "Снорг"
 
 #: 
 msgctxt "Collided with the jackal caused by %s."
@@ -82767,7 +82767,7 @@ msgstr "Айзулу"
 #: 
 msgctxt "A dart trap hits %s!"
 msgid "Snorg"
-msgstr "Сноргу"
+msgstr "Снорг"
 
 #: 
 msgctxt "A dart trap hits %s!"
@@ -83017,7 +83017,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "program bug"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "bumblebee"
@@ -83077,7 +83077,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "ant larva"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "laboratory rat"
@@ -83097,7 +83097,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "laboratory rat"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "war dog"
@@ -83117,7 +83117,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "war dog"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "spirit"
@@ -83217,7 +83217,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "lamia"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "deep dwarf scion"
@@ -83297,7 +83297,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "chaos butterfly"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "polymoth"
@@ -83317,7 +83317,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "polymoth"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "moth of suppression"
@@ -83337,7 +83337,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "moth of suppression"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "rock worm"
@@ -83417,7 +83417,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "lava fish"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "jellyfish"
@@ -83437,7 +83437,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "jellyfish"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "grey rat"
@@ -83457,7 +83457,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "grey rat"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "spiny worm"
@@ -83537,7 +83537,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "giant amoeba"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "deep dwarf berserker"
@@ -83577,7 +83577,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "agate snail"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "giant centipede"
@@ -83597,7 +83597,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "giant centipede"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "ancient bear"
@@ -83877,7 +83877,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "giant goldfish"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "silver star"
@@ -83897,7 +83897,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "silver star"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "flaming corpse"
@@ -84077,7 +84077,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "brown ooze"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "pulsating lump"
@@ -84097,7 +84097,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "pulsating lump"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "big fish"
@@ -84117,7 +84117,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "big fish"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "lava worm"
@@ -84157,7 +84157,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "shark"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "inept item mimic"
@@ -86257,7 +86257,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "deathcap"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "thorn hunter"
@@ -86517,7 +86517,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "hound"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "howler monkey"
@@ -86537,7 +86537,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "howler monkey"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "warg"
@@ -86617,7 +86617,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "hell hound"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "doom hound"
@@ -86637,7 +86637,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "doom hound"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "raiju"
@@ -86677,7 +86677,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "hell hog"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "holy swine"
@@ -86697,7 +86697,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "holy swine"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "felid"
@@ -86717,7 +86717,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "felid"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "bear"
@@ -87037,7 +87037,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "giant lizard"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "frilled lizard"
@@ -87057,7 +87057,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "frilled lizard"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "iguana"
@@ -87077,7 +87077,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "iguana"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "basilisk"
@@ -87117,7 +87117,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "wyvern"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "komodo dragon"
@@ -87277,7 +87277,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "water nymph"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "bog body"
@@ -87337,7 +87337,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "bloated husk"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "ghoul"
@@ -87877,7 +87877,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "rat"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "quokka"
@@ -87897,7 +87897,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "quokka"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "river rat"
@@ -87917,7 +87917,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "river rat"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "hell rat"
@@ -87937,7 +87937,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "hell rat"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "scorpion"
@@ -88017,7 +88017,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "tarantella"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "jumping spider"
@@ -88077,7 +88077,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "redback"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "demonic crawler"
@@ -88157,7 +88157,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "snapping turtle"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "alligator snapping turtle"
@@ -88177,7 +88177,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "alligator snapping turtle"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "crab"
@@ -88457,7 +88457,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "tyrant leech"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "dart slug"
@@ -88497,7 +88497,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "torpor snail"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "elephant slug"
@@ -88557,7 +88557,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "small abomination"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "ancient zyme"
@@ -88617,7 +88617,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "killer bee"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "queen bee"
@@ -88637,7 +88637,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "queen bee"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "vampire mosquito"
@@ -88697,7 +88697,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "meliai"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "spark wasp"
@@ -88717,7 +88717,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "spark wasp"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "moth"
@@ -88737,7 +88737,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "moth"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "ghost moth"
@@ -88757,7 +88757,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "ghost moth"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "moth of wrath"
@@ -88777,7 +88777,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "moth of wrath"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "wight"
@@ -88977,7 +88977,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "daeva"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "profane servitor"
@@ -89337,7 +89337,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "hydra"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "ice dragon"
@@ -89717,7 +89717,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "giant frog"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "bullfrog"
@@ -89737,7 +89737,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "bullfrog"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "cane toad"
@@ -89757,7 +89757,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "cane toad"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "blink frog"
@@ -89777,7 +89777,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "blink frog"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "goliath frog"
@@ -89797,7 +89797,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "goliath frog"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "barachi"
@@ -89877,7 +89877,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "great orb of eyes"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "shining eye"
@@ -89977,7 +89977,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "manticore"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "minotaur"
@@ -90017,7 +90017,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "fenstrider witch"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "sphinx"
@@ -90057,7 +90057,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "harpy"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "palentonga"
@@ -90197,7 +90197,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "endoplasm"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "jelly"
@@ -90277,7 +90277,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "rockslime"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "quicksilver ooze"
@@ -90297,7 +90297,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "quicksilver ooze"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "azure jelly"
@@ -90517,7 +90517,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "mummy"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "guardian mummy"
@@ -90537,7 +90537,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "guardian mummy"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "royal mummy"
@@ -90557,7 +90557,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "royal mummy"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "mummy priest"
@@ -90577,7 +90577,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "mummy priest"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "naga"
@@ -90597,7 +90597,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "naga"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "naga mage"
@@ -90617,7 +90617,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "naga mage"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "naga sharpshooter"
@@ -90637,7 +90637,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "naga sharpshooter"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "naga ritualist"
@@ -90657,7 +90657,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "naga ritualist"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "naga warrior"
@@ -90677,7 +90677,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "naga warrior"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "nagaraja"
@@ -90697,7 +90697,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "nagaraja"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "ogre"
@@ -90937,7 +90937,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "toadstool"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "fungus"
@@ -91137,7 +91137,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "dryad"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "eleionoma"
@@ -91157,7 +91157,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "eleionoma"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "snaplasher vine"
@@ -91177,7 +91177,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "snaplasher vine"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "snaplasher vine segment"
@@ -91217,7 +91217,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "snake"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "ball python"
@@ -91257,7 +91257,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "adder"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "water moccasin"
@@ -91297,7 +91297,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "black mamba"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "sea snake"
@@ -91317,7 +91317,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "sea snake"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "anaconda"
@@ -91337,7 +91337,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "anaconda"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "guardian serpent"
@@ -91397,7 +91397,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "mana viper"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "troll"
@@ -91717,7 +91717,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "drowned soul"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "wraith"
@@ -91837,7 +91837,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "large abomination"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "thrashing horror"
@@ -91977,7 +91977,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "starcursed mass"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "nameless horror"
@@ -92017,7 +92017,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "dream sheep"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "yak"
@@ -92517,7 +92517,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "lava snake"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "salamander"
@@ -92537,7 +92537,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "salamander"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "salamander mystic"
@@ -92557,7 +92557,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "salamander mystic"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "salamander tyrant"
@@ -92577,7 +92577,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "salamander tyrant"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Hellbinder"
@@ -92657,7 +92657,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "player illusion"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "dancing weapon"
@@ -92717,7 +92717,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "animated armour"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "eldritch tentacle"
@@ -93357,7 +93357,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "green death"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "blizzard demon"
@@ -93497,7 +93497,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "lorocyproca"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "tormentor"
@@ -93837,7 +93837,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "ice statue"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "obsidian statue"
@@ -93857,7 +93857,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "obsidian statue"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "orange crystal statue"
@@ -93877,7 +93877,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "orange crystal statue"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "statue"
@@ -93897,7 +93897,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "statue"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "training dummy"
@@ -93957,7 +93957,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "block of ice"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "diamond obelisk"
@@ -94017,7 +94017,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "gargoyle"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "war gargoyle"
@@ -94037,7 +94037,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "war gargoyle"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "molten gargoyle"
@@ -94057,7 +94057,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "molten gargoyle"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "pandemonium lord"
@@ -94117,7 +94117,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "ballistomycete spore"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "lost soul"
@@ -94137,7 +94137,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "lost soul"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "lurking horror"
@@ -94177,7 +94177,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "orb of fire"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "orb of destruction"
@@ -94197,7 +94197,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "orb of destruction"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "foxfire"
@@ -94237,7 +94237,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "fulminant prism"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "wretched star"
@@ -94257,7 +94257,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "wretched star"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "battlesphere"
@@ -94277,7 +94277,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "battlesphere"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "death cob"
@@ -94417,7 +94417,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Tiamat"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Bai Suzhen"
@@ -94477,7 +94477,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "the Lernaean hydra"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "the Serpent of Hell"
@@ -94517,7 +94517,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Duvessa"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Dowan"
@@ -94697,7 +94697,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Natasha"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Arachne"
@@ -94717,7 +94717,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Arachne"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Asterion"
@@ -94757,7 +94757,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Agnes"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "the Enchantress"
@@ -94777,7 +94777,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "the Enchantress"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "the Royal Jelly"
@@ -94837,7 +94837,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Sonja"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Pikel"
@@ -94897,7 +94897,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Menkaure"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Khufu"
@@ -94957,7 +94957,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Vashnia"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Erolcha"
@@ -94977,7 +94977,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Erolcha"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Blork the orc"
@@ -95117,7 +95117,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Mara"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Aizul"
@@ -95142,22 +95142,22 @@ msgstr "мёртв"
 #: 
 msgctxt "Snorg"
 msgid "damaged"
-msgstr "повреждён"
+msgstr "повреждена"
 
 #: 
 msgctxt "Snorg"
 msgid "wounded"
-msgstr "ранен"
+msgstr "ранена"
 
 #: 
 msgctxt "Snorg"
 msgid "destroyed"
-msgstr "уничтожен"
+msgstr "уничтожена"
 
 #: 
 msgctxt "Snorg"
 msgid "dead"
-msgstr "мёртв"
+msgstr "мертва"
 
 #: 
 msgctxt "Purgy"
@@ -95177,7 +95177,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Purgy"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "moon troll"
@@ -95217,7 +95217,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Jory"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Gastronok"
@@ -95257,7 +95257,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Nellie"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Murray"
@@ -95337,7 +95337,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Roxanne"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Terence"
@@ -95377,7 +95377,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Jessica"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Sigmund"
@@ -95437,7 +95437,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Psyche"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Donald"
@@ -95497,7 +95497,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Erica"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Josephine"
@@ -95517,7 +95517,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Josephine"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Harold"
@@ -95557,7 +95557,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Louise"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Frances"
@@ -95577,7 +95577,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Frances"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Rupert"
@@ -95657,7 +95657,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Maggie"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Margery"
@@ -95677,7 +95677,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "Margery"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "Eustachio"
@@ -95937,7 +95937,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "test statue"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "test blob"
@@ -95957,7 +95957,7 @@ msgstr "уничтожена"
 #: 
 msgctxt "test blob"
 msgid "dead"
-msgstr "метрва"
+msgstr "мертва"
 
 #: 
 msgctxt "sensed monster"
