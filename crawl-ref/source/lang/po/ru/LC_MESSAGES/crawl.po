@@ -90734,22 +90734,22 @@ msgstr "мёртв"
 #: 
 msgctxt "Menkaure"
 msgid "damaged"
-msgstr "повреждена"
+msgstr "повреждён"
 
 #: 
 msgctxt "Menkaure"
 msgid "wounded"
-msgstr "ранена"
+msgstr "ранен"
 
 #: 
 msgctxt "Menkaure"
 msgid "destroyed"
-msgstr "уничтожена"
+msgstr "уничтожен"
 
 #: 
 msgctxt "Menkaure"
 msgid "dead"
-msgstr "мертва"
+msgstr "мёртв"
 
 #: 
 msgctxt "Khufu"
