@@ -12140,7 +12140,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "The mighty blow completely misses %s!"
 msgid "Bai Suzhen"
-msgstr "Баю Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "The mighty blow completely misses %s!"
@@ -38807,7 +38807,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "Your bite misses %s."
 msgid "Bai Suzhen"
-msgstr "Баю Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "Your bite misses %s."
@@ -42077,7 +42077,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "The jackal bites %s for 10 damage with +3 dagger!!!"
 msgid "Bai Suzhen"
-msgstr "Бая Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "The jackal bites %s for 10 damage with +3 dagger!!!"
@@ -45352,7 +45352,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "You slice %s like an onion for 10 damage!!"
 msgid "Bai Suzhen"
-msgstr "Бая Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "You slice %s like an onion for 10 damage!!"
@@ -48627,7 +48627,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "You kill %s!"
 msgid "Bai Suzhen"
-msgstr "Бая Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "You kill %s!"
@@ -51902,7 +51902,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "The orb of death hits %s."
 msgid "Bai Suzhen"
-msgstr "Бая Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "The orb of death hits %s."
@@ -55177,7 +55177,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "Octopode loses its grip on %s."
 msgid "Bai Suzhen"
-msgstr "Бая Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "Octopode loses its grip on %s."
@@ -58452,7 +58452,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "The grasping roots constrict %s for 15, but do no damage."
 msgid "Bai Suzhen"
-msgstr "Бая Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "The grasping roots constrict %s for 15, but do no damage."
@@ -61722,7 +61722,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "slain by"
 msgid "Bai Suzhen"
-msgstr "Баем Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "slain by"
@@ -64997,7 +64997,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "blasted by %s"
 msgid "Bai Suzhen"
-msgstr "Баем Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "blasted by %s"
@@ -68272,7 +68272,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "You collide with %s!"
 msgid "Bai Suzhen"
-msgstr "Баем Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "You collide with %s!"
@@ -71547,7 +71547,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "Collided with %s caused by by salamander mystic."
 msgid "Bai Suzhen"
-msgstr "Баем Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "Collided with %s caused by by salamander mystic."
@@ -74822,7 +74822,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "Collided with the jackal caused by %s."
 msgid "Bai Suzhen"
-msgstr "Баем Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "Collided with the jackal caused by %s."
@@ -81471,7 +81471,7 @@ msgstr "Тиамат"
 #: 
 msgctxt "A dart trap hits %s!"
 msgid "Bai Suzhen"
-msgstr "Баю Сужень"
+msgstr "Бай Сужень"
 
 #: 
 msgctxt "A dart trap hits %s!"
@@ -93306,22 +93306,22 @@ msgstr "мертва"
 #: 
 msgctxt "Bai Suzhen"
 msgid "damaged"
-msgstr "повреждён"
+msgstr "повреждена"
 
 #: 
 msgctxt "Bai Suzhen"
 msgid "wounded"
-msgstr "ранен"
+msgstr "ранена"
 
 #: 
 msgctxt "Bai Suzhen"
 msgid "destroyed"
-msgstr "уничтожен"
+msgstr "уничтожена"
 
 #: 
 msgctxt "Bai Suzhen"
 msgid "dead"
-msgstr "мёртв"
+msgstr "мертва"
 
 #: 
 msgctxt "Xtahua"
