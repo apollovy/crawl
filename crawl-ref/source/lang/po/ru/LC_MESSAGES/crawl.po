@@ -90546,22 +90546,22 @@ msgstr "мёртв"
 #: 
 msgctxt "shadow"
 msgid "damaged"
-msgstr "повреждён"
+msgstr "повреждена"
 
 #: 
 msgctxt "shadow"
 msgid "wounded"
-msgstr "ранен"
+msgstr "ранена"
 
 #: 
 msgctxt "shadow"
 msgid "destroyed"
-msgstr "уничтожен"
+msgstr "уничтожена"
 
 #: 
 msgctxt "shadow"
 msgid "dead"
-msgstr "мёртв"
+msgstr "мертва"
 
 #: 
 msgctxt "silent spectre"
