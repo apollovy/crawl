@@ -2618,9 +2618,29 @@ msgstr " Лугону"
 msgid "Recommended "
 msgstr "Рекомендуемые "
 
+#: newgame.cc:345
+msgid "Do you want to play this combination? [Y/n/q]"
+msgstr "Вы хотите играть этой комбинацией? [Y/n/q]"
+
+#: newgame.cc:639
+msgid "You have an existing game under this name; really overwrite? [Y/n]"
+msgstr "У вас есть существующая игра с этим именем; хотите её перезаписать? [Y/n/q]"
+
+#: newgame.cc:839
+msgid "[d] Today's daily seed"
+msgstr "[d] Сегодняшнее семя дня"
+
+#: newgame.cc:1784
+msgid "+ - Recommended random choice"
+msgstr "+ - Рекомендованный случайный выбор"
+
 #: newgame.cc:1785
 msgid "Picks a random recommended weapon"
 msgstr "Выбирает случайное рекомендованное оружие"
+
+#: newgame.cc:1787 newgame.cc:2175
+msgid "Lists the numerical skill train aptitudes for all races"
+msgstr "Выводит числовые склонности к тренировке навыков для всех рас"
 
 #: newgame.cc:1790 newgame.cc:2178
 msgid "Opens the help screen"
@@ -2633,6 +2653,14 @@ msgstr "* - Случайное оружие"
 #: newgame.cc:1792
 msgid "Picks a random weapon"
 msgstr "Выбирает случайное оружие"
+
+#: newgame.cc:1793
+msgid "Bksp - Return to character menu"
+msgstr "Bksp - Вернуться к меню персонажа"
+
+#: newgame.cc:1794
+msgid "Lets you return back to Character choice menu"
+msgstr "Позволяет вам вернуться назад к меню выбора персонажа"
 
 #: newgame.cc:1801
 msgid "Random"
@@ -2653,6 +2681,22 @@ msgstr "У вас есть выбор оружия."
 #: newgame.cc:2179
 msgid "* - Random map"
 msgstr "* - Случайная карта"
+
+#: newgame.cc:2180
+msgid "Picks a random sprint map"
+msgstr "Выбирает случайную карту спринта"
+
+#: newgame.cc:2222
+msgid "Custom seed: %<PRIu64>\n"
+""
+msgstr "Особое семя: %<PRIu64>\n"
+""
+
+#: newgame.cc:2225
+msgid "\n"
+"You have a choice of %s:"
+msgstr "\n"
+"У вас есть выбор из %s:"
 
 #: state.cc:614
 msgid "Tutorial"
@@ -2822,6 +2866,10 @@ msgstr "Джин Цзянь Бин"
 msgid "Cai Fang"
 msgstr "Кай Фан"
 
+#: religion.cc:2223
+msgid "Bug"
+msgstr "Глюк"
+
 #: item-name.cc:85
 msgid "god gift"
 msgstr "подарок бога"
@@ -2829,6 +2877,10 @@ msgstr "подарок бога"
 #: 
 msgid "Donald"
 msgstr "Дональд"
+
+#: item-name.cc:250
+msgid " (melded)"
+msgstr " (слившийся)"
 
 #: item-name.cc:257
 msgid " (weapon)"
@@ -2845,6 +2897,22 @@ msgstr " (вокруг мантии)"
 #: item-name.cc:286
 msgid " (around neck)"
 msgstr " (вокруг шеи)"
+
+#: item-name.cc:294
+msgid " (on tentacle)"
+msgstr " (на щупальце)"
+
+#: item-name.cc:297
+msgid " (on amulet)"
+msgstr " (на амулете)"
+
+#: item-name.cc:305
+msgid " (quivered ammo)"
+msgstr " (боеприпас в колчане)"
+
+#: item-name.cc:307
+msgid " (quivered)"
+msgstr " (в колчане)"
 
 #: item-name.cc:319 item-name.cc:1434 item-name.cc:1587 item-name.cc:1724
 #: item-name.cc:1790
@@ -2863,6 +2931,10 @@ msgstr "мороза"
 msgid "poisoned"
 msgstr "отравленное"
 
+#: item-name.cc:364
+msgid "curare-tipped"
+msgstr "с наконечником в кураре"
+
 #: item-name.cc:367
 msgid "explode"
 msgstr "взрыв"
@@ -2871,31 +2943,119 @@ msgstr "взрыв"
 msgid "steel"
 msgstr "стальной"
 
+#: item-name.cc:371 item-name.cc:441 item-name.cc:466
+msgid "returning"
+msgstr "возвращающийся"
+
+#: item-name.cc:373 item-name.cc:447
+msgid "penetration"
+msgstr "проникающий"
+
 #: item-name.cc:376 item-name.cc:645 item-name.cc:864 item-name.cc:891
 #: item-name.cc:907
 msgid "silver"
 msgstr "серебряный"
 
+#: item-name.cc:381
+msgid "slowing"
+msgstr "замедляющийся"
+
+#: item-name.cc:383
+msgid "sleeping"
+msgstr "спящий"
+
 #: item-name.cc:387
 msgid "sickness"
 msgstr "болезни"
+
+#: item-name.cc:390
+msgid "datura-tipped"
+msgstr "с наконечником в дурмане"
+
+#: item-name.cc:394
+msgid "dispersal"
+msgstr "рассредоточения"
+
+#: item-name.cc:396
+msgid "atropa-tipped"
+msgstr "с наконечником в атропине"
+
+#: mon-info.cc:852 mon-info.cc:865 mutant-beast.h:48 mutant-beast.h:54
+#: item-name.cc:400 item-name.cc:495 item-name.cc:506 item-name.cc:608
+#: item-name.cc:808 item-name.cc:829 item-name.cc:925 item-name.cc:3251
+msgid "buggy"
+msgstr "глючный"
 
 #: decks.cc:314 item-name.cc:400 item-name.cc:495 item-name.cc:567
 #: item-name.cc:627 item-name.cc:676 item-name.cc:711 item-name.cc:1088
 msgid "bugginess"
 msgstr "глючности"
 
+#: item-name.cc:406
+msgid "freeze"
+msgstr "мороза"
+
 #: item-name.cc:406 item-name.cc:456
 msgid "holy"
 msgstr "святой"
+
+#: item-name.cc:406
+msgid "elec"
+msgstr "элек"
+
+#: item-name.cc:408 item-name.cc:412 item-name.cc:416 item-name.cc:576
+#: item-name.cc:595 item-name.cc:603
+msgid "obsolete"
+msgstr "устаревший"
 
 #: item-name.cc:410 item-name.cc:435
 msgid "venom"
 msgstr "яда"
 
+#: item-name.cc:410
+msgid "protect"
+msgstr "защиты"
+
+#: item-name.cc:410
+msgid "drain"
+msgstr "осушения"
+
 #: item-name.cc:410 item-name.cc:435
 msgid "speed"
 msgstr "скорости"
+
+#: item-name.cc:410 item-name.cc:422 item-name.cc:447 item-name.cc:460
+#: item-name.cc:472
+msgid "vorpal"
+msgstr "вострый"
+
+#: item-name.cc:414
+msgid "vamp"
+msgstr "вамп"
+
+#: item-name.cc:414 item-name.cc:439 item-name.cc:464
+msgid "antimagic"
+msgstr "антимагии"
+
+#: item-name.cc:414
+msgid "distort"
+msgstr "искривл"
+
+#: item-name.cc:420
+msgid "evade"
+msgstr "уклон"
+
+#: item-name.cc:420 item-name.cc:424
+msgid "confuse"
+msgstr "ошеломл"
+
+#: item-name.cc:422
+msgid "spect"
+msgstr "спект"
+
+#: item-name.cc:426 item-name.cc:451 item-name.cc:476
+msgid "debug"
+msgstr "отладки"
 
 #: item-name.cc:431 item-name.cc:456 item-name.cc:462
 msgid "flaming"
@@ -2908,6 +3068,10 @@ msgstr "замораживающий"
 #: item-name.cc:431
 msgid "holy wrath"
 msgstr "святого гнева"
+
+#: item-name.cc:431
+msgid "electrocution"
+msgstr "короткого замыкания"
 
 #: item-name.cc:433
 msgid "orc slaying"
@@ -2937,9 +3101,17 @@ msgstr "вампиризма"
 msgid "distortion"
 msgstr "искажения"
 
+#: item-name.cc:441 item-name.cc:466
+msgid "reaching"
+msgstr "удлинения"
+
 #: item-name.cc:445 item-name.cc:740
 msgid "evasion"
 msgstr "уклонения"
+
+#: item-name.cc:458
+msgid "orc-killing"
+msgstr "убиения орков"
 
 #: item-name.cc:458
 msgid "dragon-slaying"
@@ -2950,8 +3122,16 @@ msgid "venomous"
 msgstr "ядовитый"
 
 #: item-name.cc:460
+msgid "protective"
+msgstr "защитный"
+
+#: item-name.cc:460
 msgid "fast"
 msgstr "быстрый"
+
+#: item-name.cc:464
+msgid "vampiric"
+msgstr "вампирский"
 
 #: item-name.cc:464
 msgid "painful"
@@ -2968,6 +3148,18 @@ msgstr "хаотичный"
 #: item-name.cc:470
 msgid "evasive"
 msgstr "уклончивый"
+
+#: item-name.cc:470 item-name.cc:474
+msgid "confusing"
+msgstr "ошеломляющий"
+
+#: item-name.cc:472
+msgid "penetrating"
+msgstr "проникающий"
+
+#: item-name.cc:472
+msgid "spectral"
+msgstr "спектральный"
 
 #: item-name.cc:472
 msgid "acidic"
@@ -2989,6 +3181,10 @@ msgstr "сопротивления холоду"
 msgid "poison resistance"
 msgstr "сопротивления яду"
 
+#: item-name.cc:539 item-name.cc:738
+msgid "see invisible"
+msgstr "видеть невидимое"
+
 #: item-name.cc:541 item-name.cc:736
 msgid "strength"
 msgstr "силы"
@@ -3001,13 +3197,29 @@ msgstr "ловкости"
 msgid "intelligence"
 msgstr "интеллекта"
 
+#: item-name.cc:545
+msgid "flying"
+msgstr "полёта"
+
+#: item-name.cc:547 item-name.cc:751
+msgid "willpower"
+msgstr "силы воли"
+
 #: item-name.cc:549 item-name.cc:744
 msgid "stealth"
 msgstr "скрытности"
 
+#: item-name.cc:551 item-name.cc:750
+msgid "positive energy"
+msgstr "позитивной энергии"
+
 #: item-name.cc:552
 msgid "the Archmagi"
 msgstr "Архимага"
+
+#: item-name.cc:554
+msgid "jumping"
+msgstr "прыгающий"
 
 #: item-name.cc:556
 msgid "preservation"
@@ -3025,6 +3237,14 @@ msgstr "щита духа"
 msgid "archery"
 msgstr "стрельбы из лука"
 
+#: item-name.cc:560 item-name.cc:601
+msgid "repulsion"
+msgstr "отталкивания"
+
+#: item-name.cc:562
+msgid "cloud immunity"
+msgstr "иммунитета к облакам"
+
 #: item-name.cc:564 item-name.cc:605 item-name.cc:763
 msgid "harm"
 msgstr "вреда"
@@ -3033,13 +3253,37 @@ msgstr "вреда"
 msgid "shadows"
 msgstr "теней"
 
+#: item-name.cc:566
+msgid "rampaging"
+msgstr "буйствующий"
+
+#: item-name.cc:578 item-name.cc:787
+msgid "rF+"
+msgstr "сОгн+"
+
+#: item-name.cc:579 item-name.cc:789
+msgid "rC+"
+msgstr "сХол+"
+
 #: output.cc:2371 item-name.cc:580 item-name.cc:788
 msgid "rPois"
 msgstr "сЯду"
 
+#: item-name.cc:581
+msgid "SInv"
+msgstr "ВидНевид"
+
+#: item-name.cc:582
+msgid "+Inv"
+msgstr "+Невид"
+
 #: item-name.cc:583
 msgid "Str+3"
 msgstr "Сил+3"
+
+#: item-name.cc:584
+msgid "Dex+3"
+msgstr "Ловк+3"
 
 #: item-name.cc:585
 msgid "Int+3"
@@ -7105,12 +7349,6 @@ msgstr "\n"
 "Лучшие Игроки - %s\n"
 "\n"
 ""
-
-#. For whatever reasons this one goes without leading "a"
-#: 
-msgctxt "slain by"
-msgid "yak"
-msgstr "яком"
 
 #: 
 msgid "Spider"
@@ -58863,3276 +59101,6 @@ msgstr "сложного учуянного монстра"
 msgctxt "The grasping roots constrict %s for 15, but do no damage."
 msgid "nasty sensed monster"
 msgstr "скверного учуянного монстра"
-
-#: 
-msgctxt "slain by"
-msgid "program bug"
-msgstr "ошибкой в программе"
-
-#: 
-msgctxt "slain by"
-msgid "bumblebee"
-msgstr "шмелём"
-
-#: 
-msgctxt "slain by"
-msgid "wood golem"
-msgstr "деревянным големом"
-
-#: 
-msgctxt "slain by"
-msgid "ant larva"
-msgstr "личинкой муравья"
-
-#: 
-msgctxt "slain by"
-msgid "laboratory rat"
-msgstr "лабораторной крысой"
-
-#: 
-msgctxt "slain by"
-msgid "war dog"
-msgstr "военной собакой"
-
-#: 
-msgctxt "slain by"
-msgid "spirit"
-msgstr "духом"
-
-#: 
-msgctxt "slain by"
-msgid "paladin"
-msgstr "паладином"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf soldier"
-msgstr "глубинным эльфом солдата"
-
-#: 
-msgctxt "slain by"
-msgid "pan"
-msgstr "пэном"
-
-#: 
-msgctxt "slain by"
-msgid "lamia"
-msgstr "ламией"
-
-#: 
-msgctxt "slain by"
-msgid "deep dwarf scion"
-msgstr "потомком глубинных дварфов"
-
-#: 
-msgctxt "slain by"
-msgid "deep dwarf artificer"
-msgstr "глубинным дварфом изобретателем"
-
-#: 
-msgctxt "slain by"
-msgid "deep dwarf necromancer"
-msgstr "глубинным дварфом некромантом"
-
-#: 
-msgctxt "slain by"
-msgid "chaos butterfly"
-msgstr "бабочкой хаоса"
-
-#: 
-msgctxt "slain by"
-msgid "polymoth"
-msgstr "полимолем"
-
-#: 
-msgctxt "slain by"
-msgid "moth of suppression"
-msgstr "молью подавления"
-
-#: 
-msgctxt "slain by"
-msgid "rock worm"
-msgstr "каменным червём"
-
-#: 
-msgctxt "slain by"
-msgid "formicid drone"
-msgstr "муравьём трутнем"
-
-#: 
-msgctxt "slain by"
-msgid "spirit wolf"
-msgstr "призрачным волком"
-
-#: 
-msgctxt "slain by"
-msgid "lava fish"
-msgstr "лавовой рыбой"
-
-#: 
-msgctxt "slain by"
-msgid "jellyfish"
-msgstr "медузой"
-
-#: 
-msgctxt "slain by"
-msgid "grey rat"
-msgstr "серой крысой"
-
-#: 
-msgctxt "slain by"
-msgid "spiny worm"
-msgstr "колючим червём"
-
-#: 
-msgctxt "slain by"
-msgid "rock troll"
-msgstr "каменным троллем"
-
-#: 
-msgctxt "slain by"
-msgid "monstrous item mimic"
-msgstr "чудовищным мимиком предмета"
-
-#: 
-msgctxt "slain by"
-msgid "giant amoeba"
-msgstr "гигантской амёбой"
-
-#: 
-msgctxt "slain by"
-msgid "deep dwarf berserker"
-msgstr "глубинным дварфом берсерком"
-
-#: 
-msgctxt "slain by"
-msgid "agate snail"
-msgstr "агатовой улиткой"
-
-#: 
-msgctxt "slain by"
-msgid "giant centipede"
-msgstr "гигантской сороконожкой"
-
-#: 
-msgctxt "slain by"
-msgid "ancient bear"
-msgstr "древним медведем"
-
-#: 
-msgctxt "slain by"
-msgid "rotting devil"
-msgstr "гниющим дьяволом"
-
-#: 
-msgctxt "slain by"
-msgid "ignis"
-msgstr "игнисом"
-
-#: 
-msgctxt "slain by"
-msgid "djinni"
-msgstr "джинном"
-
-#: 
-msgctxt "slain by"
-msgid "rakshasa fake"
-msgstr "фальшивым ракшаса"
-
-#: 
-msgctxt "slain by"
-msgid "mara fake"
-msgstr "фальшивым мара"
-
-#: 
-msgctxt "slain by"
-msgid "gnome"
-msgstr "гномом"
-
-#: 
-msgctxt "slain by"
-msgid "clay golem"
-msgstr "глиняным големом"
-
-#: 
-msgctxt "slain by"
-msgid "stone golem"
-msgstr "каменным големом"
-
-#: 
-msgctxt "slain by"
-msgid "formicid venom mage"
-msgstr "муравьём ядовитым магом"
-
-#: 
-msgctxt "slain by"
-msgid "spriggan assassin"
-msgstr "спригганом убийцой"
-
-#: 
-msgctxt "slain by"
-msgid "vapour"
-msgstr "парами"
-
-#: 
-msgctxt "slain by"
-msgid "thorn lotus"
-msgstr "шипастым лотосом"
-
-#: 
-msgctxt "slain by"
-msgid "giant goldfish"
-msgstr "гигантской золотой рыбкой"
-
-#: 
-msgctxt "slain by"
-msgid "silver star"
-msgstr "серебряной звездой"
-
-#: 
-msgctxt "slain by"
-msgid "flaming corpse"
-msgstr "пылающим трупом"
-
-#: 
-msgctxt "slain by"
-msgid "grizzly bear"
-msgstr "медведем гризли"
-
-#: 
-msgctxt "slain by"
-msgid "spriggan enchanter"
-msgstr "спригганом чародеем"
-
-#: 
-msgctxt "slain by"
-msgid "phoenix"
-msgstr "фениксом"
-
-#: 
-msgctxt "slain by"
-msgid "shedu"
-msgstr "шеду"
-
-#: 
-msgctxt "slain by"
-msgid "plague shambler"
-msgstr "чумным шаркальщиком"
-
-#: 
-msgctxt "slain by"
-msgid "giant slug"
-msgstr "гигантским слизняком"
-
-#: 
-msgctxt "slain by"
-msgid "firefly"
-msgstr "светлячком"
-
-#: 
-msgctxt "slain by"
-msgid "brown ooze"
-msgstr "коричневой слизью"
-
-#: 
-msgctxt "slain by"
-msgid "pulsating lump"
-msgstr "пульсирующей опухолью"
-
-#: 
-msgctxt "slain by"
-msgid "big fish"
-msgstr "большой рыбой"
-
-#: 
-msgctxt "slain by"
-msgid "lava worm"
-msgstr "лавовым червём"
-
-#: 
-msgctxt "slain by"
-msgid "shark"
-msgstr "акулой"
-
-#: 
-msgctxt "slain by"
-msgid "inept item mimic"
-msgstr "неумелым мимиком предмета"
-
-#: 
-msgctxt "slain by"
-msgid "item mimic"
-msgstr "мимиком предмета"
-
-#: 
-msgctxt "slain by"
-msgid "ravenous item mimic"
-msgstr "хищным мимиком предмета"
-
-#: 
-msgctxt "slain by"
-msgid "inept feature mimic"
-msgstr "неумелым мимиком окружения"
-
-#: 
-msgctxt "slain by"
-msgid "feature mimic"
-msgstr "мимиком окружения"
-
-#: 
-msgctxt "slain by"
-msgid "ravenous feature mimic"
-msgstr "хищным мимиком окружения"
-
-#: 
-msgctxt "slain by"
-msgid "mnoleg tentacle"
-msgstr "щупальцем мнолега"
-
-#: 
-msgctxt "slain by"
-msgid "mnoleg tentacle segment"
-msgstr "сегментом щупальца мнолега"
-
-#: 
-msgctxt "slain by"
-msgid "unborn"
-msgstr "нерожденным"
-
-#: 
-msgctxt "slain by"
-msgid "giant mite"
-msgstr "гигантским клещом"
-
-#: 
-msgctxt "slain by"
-msgid "baby alligator"
-msgstr "детёнышем аллигатора"
-
-#: 
-msgctxt "slain by"
-msgid "boring beetle"
-msgstr "скучным жуком"
-
-#: 
-msgctxt "slain by"
-msgid "chimera"
-msgstr "химерой"
-
-#: 
-msgctxt "slain by"
-msgid "raven"
-msgstr "вороном"
-
-#: 
-msgctxt "slain by"
-msgid "singularity"
-msgstr "сингулярностью"
-
-#: 
-msgctxt "slain by"
-msgid "grand avatar"
-msgstr "великим аватаром"
-
-#: 
-msgctxt "slain by"
-msgid "salamander firebrand"
-msgstr "саламандрой головорезом"
-
-#: 
-msgctxt "slain by"
-msgid "octopode crusher"
-msgstr "осьминогом крушителем"
-
-#: 
-msgctxt "slain by"
-msgid "blue devil"
-msgstr "синим дьяволом"
-
-#: 
-msgctxt "slain by"
-msgid "brain worm"
-msgstr "мозговым червём"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf summoner"
-msgstr "глубинным эльфом призывателем"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf conjurer"
-msgstr "глубинным эльфом волшебником"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf priest"
-msgstr "глубинным эльфом жрецом"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf fighter"
-msgstr "глубинным эльфом бойцом"
-
-#: 
-msgctxt "slain by"
-msgid "trapdoor spider"
-msgstr "пауком-люком"
-
-#: 
-msgctxt "slain by"
-msgid "salamander stormcaller"
-msgstr "саламандрой призывателем бури"
-
-#: 
-msgctxt "slain by"
-msgid "norris"
-msgstr "норрисом"
-
-#: 
-msgctxt "slain by"
-msgid "maud"
-msgstr "модом"
-
-#: 
-msgctxt "slain by"
-msgid "wiglaf"
-msgstr "виглафом"
-
-#: 
-msgctxt "slain by"
-msgid "sheep"
-msgstr "овцой"
-
-#: 
-msgctxt "slain by"
-msgid "anubis guard"
-msgstr "стражем Анубиса"
-
-#: 
-msgctxt "slain by"
-msgid "griffon"
-msgstr "грифоном"
-
-#: 
-msgctxt "slain by"
-msgid "beetle"
-msgstr "жуком"
-
-#: 
-msgctxt "slain by"
-msgid "putrid demonspawn"
-msgstr "мерзким демонорождённым"
-
-#: 
-msgctxt "slain by"
-msgid "chaos champion"
-msgstr "чемпионом хаоса"
-
-#: 
-msgctxt "slain by"
-msgid "wasp"
-msgstr "осой"
-
-#: 
-msgctxt "slain by"
-msgid "mottled draconian"
-msgstr "пёстрым драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "draconian zealot"
-msgstr "драконидом фанатиком"
-
-#: 
-msgctxt "slain by"
-msgid "hill giant"
-msgstr "холмовым гигантом"
-
-#: 
-msgctxt "slain by"
-msgid "bultungin"
-msgstr "бультунгиным"
-
-#: 
-msgctxt "slain by"
-msgid "hyperactive ballistomycete"
-msgstr "гиперактивным баллистомицетом"
-
-#: 
-msgctxt "slain by"
-msgid "homunculus"
-msgstr "гомункулом"
-
-#: 
-msgctxt "slain by"
-msgid "soupling"
-msgstr "суплингом"
-
-#: 
-msgctxt "slain by"
-msgid "blessed toe"
-msgstr "благословенным пальцем"
-
-#: 
-msgctxt "slain by"
-msgid "lava orc"
-msgstr "лавовым орком"
-
-#: 
-msgctxt "slain by"
-msgid "monstrous feature mimic"
-msgstr "чудовищным мимиком окружения"
-
-#: 
-msgctxt "slain by"
-msgid "slave"
-msgstr "рабом"
-
-#: 
-msgctxt "slain by"
-msgid "hungry ghost"
-msgstr "голодным призраком"
-
-#: 
-msgctxt "slain by"
-msgid "crocodile"
-msgstr "крокодилом"
-
-#: 
-msgctxt "slain by"
-msgid "hippogriff"
-msgstr "гиппогрифом"
-
-#: 
-msgctxt "slain by"
-msgid "porcupine"
-msgstr "дикобразом"
-
-#: 
-msgctxt "slain by"
-msgid "crawling corpse"
-msgstr "ползущим трупом"
-
-#: 
-msgctxt "slain by"
-msgid "macabre mass"
-msgstr "жуткой массой"
-
-#: 
-msgctxt "slain by"
-msgid "eye of draining"
-msgstr "оком осушения"
-
-#: 
-msgctxt "slain by"
-msgid "death ooze"
-msgstr "смертельной слизью"
-
-#: 
-msgctxt "slain by"
-msgid "leopard gecko"
-msgstr "леопардовым гекконом"
-
-#: 
-msgctxt "slain by"
-msgid "worker ant"
-msgstr "муравьём рабочим"
-
-#: 
-msgctxt "slain by"
-msgid "queen ant"
-msgstr "королевой муравьёв"
-
-#: 
-msgctxt "slain by"
-msgid "soldier ant"
-msgstr "муравьём солдатом"
-
-#: 
-msgctxt "slain by"
-msgid "imperial myrmidon"
-msgstr "имперским мирмидоном"
-
-#: 
-msgctxt "slain by"
-msgid "servant of whispers"
-msgstr "прислужником шёпота"
-
-#: 
-msgctxt "slain by"
-msgid "ragged hierophant"
-msgstr "оборванным иерофантом"
-
-#: 
-msgctxt "slain by"
-msgid "bat"
-msgstr "летучей мышью"
-
-#: 
-msgctxt "slain by"
-msgid "butterfly"
-msgstr "бабочкой"
-
-#: 
-msgctxt "slain by"
-msgid "vampire bat"
-msgstr "летучей мышью вампиром"
-
-#: 
-msgctxt "slain by"
-msgid "fire bat"
-msgstr "огненной летучей мышью"
-
-#: 
-msgctxt "slain by"
-msgid "bennu"
-msgstr "бенну"
-
-#: 
-msgctxt "slain by"
-msgid "caustic shrike"
-msgstr "едким сорокопутом"
-
-#: 
-msgctxt "slain by"
-msgid "shard shrike"
-msgstr "осколочным сорокопутом"
-
-#: 
-msgctxt "slain by"
-msgid "centaur"
-msgstr "кентавром"
-
-#: 
-msgctxt "slain by"
-msgid "centaur warrior"
-msgstr "кентавром воином"
-
-#: 
-msgctxt "slain by"
-msgid "yaktaur"
-msgstr "яктавром"
-
-#: 
-msgctxt "slain by"
-msgid "yaktaur captain"
-msgstr "яктавром капитаном"
-
-#: 
-msgctxt "slain by"
-msgid "faun"
-msgstr "фавном"
-
-#: 
-msgctxt "slain by"
-msgid "satyr"
-msgstr "сатиром"
-
-#: 
-msgctxt "slain by"
-msgid "draconian"
-msgstr "драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "black draconian"
-msgstr "чёрным драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "yellow draconian"
-msgstr "жёлтым драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "pale draconian"
-msgstr "бледным драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "green draconian"
-msgstr "зелёным драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "purple draconian"
-msgstr "фиолетовым драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "red draconian"
-msgstr "красным драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "white draconian"
-msgstr "белым драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "grey draconian"
-msgstr "серым драконидом"
-
-#: 
-msgctxt "slain by"
-msgid "draconian stormcaller"
-msgstr "драконидом призывателем бури"
-
-#: 
-msgctxt "slain by"
-msgid "draconian monk"
-msgstr "драконидом монахом"
-
-#: 
-msgctxt "slain by"
-msgid "draconian shifter"
-msgstr "драконидом перемещателем"
-
-#: 
-msgctxt "slain by"
-msgid "draconian annihilator"
-msgstr "драконидом уничтожителем"
-
-#: 
-msgctxt "slain by"
-msgid "draconian knight"
-msgstr "драконидом рыцарем"
-
-#: 
-msgctxt "slain by"
-msgid "draconian scorcher"
-msgstr "драконидом поджигателем"
-
-#: 
-msgctxt "slain by"
-msgid "elf"
-msgstr "эльфом"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf knight"
-msgstr "глубинным эльфом рыцарем"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf archer"
-msgstr "глубинным эльфом лучником"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf blademaster"
-msgstr "глубинным эльфом мастером меча"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf master archer"
-msgstr "глубинным эльфом мастером лучником"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf zephyrmancer"
-msgstr "глубинным эльфом зефиромантом"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf pyromancer"
-msgstr "глубинным эльфом пиромантом"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf high priest"
-msgstr "глубинным эльфом высшим жрецом"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf demonologist"
-msgstr "глубинным эльфом демонологом"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf annihilator"
-msgstr "глубинным эльфом уничтожителем"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf sorcerer"
-msgstr "глубинным эльфом колдуном"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf death mage"
-msgstr "глубинным эльфом магом смерти"
-
-#: 
-msgctxt "slain by"
-msgid "deep elf elementalist"
-msgstr "глубинным эльфом элементалистом"
-
-#: 
-msgctxt "slain by"
-msgid "wandering mushroom"
-msgstr "блуждающим грибом"
-
-#: 
-msgctxt "slain by"
-msgid "deathcap"
-msgstr "смертной казнью"
-
-#: 
-msgctxt "slain by"
-msgid "thorn hunter"
-msgstr "шипом охотником"
-
-#: 
-msgctxt "slain by"
-msgid "shambling mangrove"
-msgstr "шаркающими мангровыми зарослями"
-
-#: 
-msgctxt "slain by"
-msgid "vine stalker"
-msgstr "лозяным сталкером"
-
-#: 
-msgctxt "slain by"
-msgid "goblin"
-msgstr "гоблином"
-
-#: 
-msgctxt "slain by"
-msgid "hobgoblin"
-msgstr "хобгоблиным"
-
-#: 
-msgctxt "slain by"
-msgid "gnoll"
-msgstr "гноллом"
-
-#: 
-msgctxt "slain by"
-msgid "gnoll shaman"
-msgstr "гноллом шаманом"
-
-#: 
-msgctxt "slain by"
-msgid "gnoll sergeant"
-msgstr "гноллом сержантом"
-
-#: 
-msgctxt "slain by"
-msgid "boggart"
-msgstr "боггартом"
-
-#: 
-msgctxt "slain by"
-msgid "dwarf"
-msgstr "дворфом"
-
-#: 
-msgctxt "slain by"
-msgid "deep dwarf"
-msgstr "глубинным дворфом"
-
-#: 
-msgctxt "slain by"
-msgid "jackal"
-msgstr "шакалом"
-
-#: 
-msgctxt "slain by"
-msgid "hound"
-msgstr "гончей"
-
-#: 
-msgctxt "slain by"
-msgid "howler monkey"
-msgstr "обезьяной ревуном"
-
-#: 
-msgctxt "slain by"
-msgid "warg"
-msgstr "варгом"
-
-#: 
-msgctxt "slain by"
-msgid "wolf"
-msgstr "волком"
-
-#: 
-msgctxt "slain by"
-msgid "hog"
-msgstr "боровом"
-
-#: 
-msgctxt "slain by"
-msgid "hell hound"
-msgstr "адской гончей"
-
-#: 
-msgctxt "slain by"
-msgid "doom hound"
-msgstr "гончей рока"
-
-#: 
-msgctxt "slain by"
-msgid "raiju"
-msgstr "райджу"
-
-#: 
-msgctxt "slain by"
-msgid "hell hog"
-msgstr "адской свиньёй"
-
-#: 
-msgctxt "slain by"
-msgid "holy swine"
-msgstr "священной свиньёй"
-
-#: 
-msgctxt "slain by"
-msgid "felid"
-msgstr "кошкой"
-
-#: 
-msgctxt "slain by"
-msgid "bear"
-msgstr "медведем"
-
-#: 
-msgctxt "slain by"
-msgid "polar bear"
-msgstr "полярным медведем"
-
-#: 
-msgctxt "slain by"
-msgid "black bear"
-msgstr "чёрным медведем"
-
-#: 
-msgctxt "slain by"
-msgid "spriggan"
-msgstr "спригганом"
-
-#: 
-msgctxt "slain by"
-msgid "spriggan rider"
-msgstr "спригганом наездником"
-
-#: 
-msgctxt "slain by"
-msgid "spriggan druid"
-msgstr "спригганом друидом"
-
-#: 
-msgctxt "slain by"
-msgid "spriggan berserker"
-msgstr "спригганом берсерком"
-
-#: 
-msgctxt "slain by"
-msgid "spriggan air mage"
-msgstr "спригганом магом воздуха"
-
-#: 
-msgctxt "slain by"
-msgid "spriggan defender"
-msgstr "спригганом защитником"
-
-#: 
-msgctxt "slain by"
-msgid "drake"
-msgstr "дрейком"
-
-#: 
-msgctxt "slain by"
-msgid "swamp drake"
-msgstr "болотным дрейком"
-
-#: 
-msgctxt "slain by"
-msgid "rime drake"
-msgstr "морозным дрейком"
-
-#: 
-msgctxt "slain by"
-msgid "wind drake"
-msgstr "ветряным дрейком"
-
-#: 
-msgctxt "slain by"
-msgid "lindwurm"
-msgstr "линдвурмом"
-
-#: 
-msgctxt "slain by"
-msgid "death drake"
-msgstr "дрейком смерти"
-
-#: 
-msgctxt "slain by"
-msgid "giant lizard"
-msgstr "гигантской ящерицей"
-
-#: 
-msgctxt "slain by"
-msgid "frilled lizard"
-msgstr "ящерицей с воротником"
-
-#: 
-msgctxt "slain by"
-msgid "iguana"
-msgstr "игуаной"
-
-#: 
-msgctxt "slain by"
-msgid "basilisk"
-msgstr "василиском"
-
-#: 
-msgctxt "slain by"
-msgid "wyvern"
-msgstr "виверной"
-
-#: 
-msgctxt "slain by"
-msgid "komodo dragon"
-msgstr "драконом комодо"
-
-#: 
-msgctxt "slain by"
-msgid "merfolk"
-msgstr "мерфолком"
-
-#: 
-msgctxt "slain by"
-msgid "merfolk impaler"
-msgstr "мерфолком пронзителем"
-
-#: 
-msgctxt "slain by"
-msgid "merfolk javelineer"
-msgstr "мерфолком копейщиком"
-
-#: 
-msgctxt "slain by"
-msgid "merfolk aquamancer"
-msgstr "мерфолком аквамантом"
-
-#: 
-msgctxt "slain by"
-msgid "merfolk siren"
-msgstr "мерфолком сиреной"
-
-#: 
-msgctxt "slain by"
-msgid "merfolk avatar"
-msgstr "мерфолком аватаром"
-
-#: 
-msgctxt "slain by"
-msgid "water nymph"
-msgstr "водной нимфой"
-
-#: 
-msgctxt "slain by"
-msgid "bog body"
-msgstr "болотным телом"
-
-#: 
-msgctxt "slain by"
-msgid "necrophage"
-msgstr "некрофагом"
-
-#: 
-msgctxt "slain by"
-msgid "bloated husk"
-msgstr "раздутой шелухой"
-
-#: 
-msgctxt "slain by"
-msgid "ghoul"
-msgstr "гулем"
-
-#: 
-msgctxt "slain by"
-msgid "orc"
-msgstr "орком"
-
-#: 
-msgctxt "slain by"
-msgid "orc wizard"
-msgstr "орком волшебником"
-
-#: 
-msgctxt "slain by"
-msgid "orc priest"
-msgstr "орком жрецом"
-
-#: 
-msgctxt "slain by"
-msgid "orc warrior"
-msgstr "орком воином"
-
-#: 
-msgctxt "slain by"
-msgid "orc knight"
-msgstr "орком рыцарем"
-
-#: 
-msgctxt "slain by"
-msgid "orc warlord"
-msgstr "орком главнокомандующим"
-
-#: 
-msgctxt "slain by"
-msgid "orc sorcerer"
-msgstr "орком чародеем"
-
-#: 
-msgctxt "slain by"
-msgid "orc high priest"
-msgstr "орком высшим жрецом"
-
-#: 
-msgctxt "slain by"
-msgid "human"
-msgstr "человеком"
-
-#: 
-msgctxt "slain by"
-msgid "hell knight"
-msgstr "рыцарем ада"
-
-#: 
-msgctxt "slain by"
-msgid "death knight"
-msgstr "рыцарем смерти"
-
-#: 
-msgctxt "slain by"
-msgid "necromancer"
-msgstr "некромантом"
-
-#: 
-msgctxt "slain by"
-msgid "wizard"
-msgstr "волшебником"
-
-#: 
-msgctxt "slain by"
-msgid "vault guard"
-msgstr "стражем хранилища"
-
-#: 
-msgctxt "slain by"
-msgid "vault sentinel"
-msgstr "защитником хранилища"
-
-#: 
-msgctxt "slain by"
-msgid "vault warden"
-msgstr "надзирателем хранилища"
-
-#: 
-msgctxt "slain by"
-msgid "ironbound convoker"
-msgstr "закованным в железо созывателем"
-
-#: 
-msgctxt "slain by"
-msgid "ironbound frostheart"
-msgstr "закованным в железо морозным сердцем"
-
-#: 
-msgctxt "slain by"
-msgid "ironbound preserver"
-msgstr "закованным в железо хранителем"
-
-#: 
-msgctxt "slain by"
-msgid "ironbound beastmaster"
-msgstr "закованным в железо укротителем монстров"
-
-#: 
-msgctxt "slain by"
-msgid "shapeshifter"
-msgstr "оборотнем"
-
-#: 
-msgctxt "slain by"
-msgid "glowing shapeshifter"
-msgstr "светящимся оборотнем"
-
-#: 
-msgctxt "slain by"
-msgid "Killer Klown"
-msgstr "Клоуном Убийцей"
-
-#: 
-msgctxt "slain by"
-msgid "demigod"
-msgstr "полубогом"
-
-#: 
-msgctxt "slain by"
-msgid "halfling"
-msgstr "хафлингом"
-
-#: 
-msgctxt "slain by"
-msgid "rat"
-msgstr "крысой"
-
-#: 
-msgctxt "slain by"
-msgid "quokka"
-msgstr "квоккой"
-
-#: 
-msgctxt "slain by"
-msgid "river rat"
-msgstr "речной крысой"
-
-#: 
-msgctxt "slain by"
-msgid "hell rat"
-msgstr "адской крысой"
-
-#: 
-msgctxt "slain by"
-msgid "scorpion"
-msgstr "скорпионом"
-
-#: 
-msgctxt "slain by"
-msgid "emperor scorpion"
-msgstr "императорским скорпионом"
-
-#: 
-msgctxt "slain by"
-msgid "spider"
-msgstr "пауком"
-
-#: 
-msgctxt "slain by"
-msgid "tarantella"
-msgstr "тарантеллой"
-
-#: 
-msgctxt "slain by"
-msgid "jumping spider"
-msgstr "прыгающим пауком"
-
-#: 
-msgctxt "slain by"
-msgid "wolf spider"
-msgstr "пауком волком"
-
-#: 
-msgctxt "slain by"
-msgid "redback"
-msgstr "красной спинкой"
-
-#: 
-msgctxt "slain by"
-msgid "demonic crawler"
-msgstr "демоническим ползуном"
-
-#: 
-msgctxt "slain by"
-msgid "orb spider"
-msgstr "пауком сферой"
-
-#: 
-msgctxt "slain by"
-msgid "alligator"
-msgstr "аллигатором"
-
-#: 
-msgctxt "slain by"
-msgid "snapping turtle"
-msgstr "щелкающей черепахой"
-
-#: 
-msgctxt "slain by"
-msgid "alligator snapping turtle"
-msgstr "каймановой щелкающей черепахой"
-
-#: 
-msgctxt "slain by"
-msgid "crab"
-msgstr "крабом"
-
-#: 
-msgctxt "slain by"
-msgid "ghost crab"
-msgstr "призрачным крабом"
-
-#: 
-msgctxt "slain by"
-msgid "apocalypse crab"
-msgstr "крабом апокалипсиса"
-
-#: 
-msgctxt "slain by"
-msgid "ugly thing"
-msgstr "уродливым нечто"
-
-#: 
-msgctxt "slain by"
-msgid "very ugly thing"
-msgstr "очень уродливым нечто"
-
-#: 
-msgctxt "slain by"
-msgid "fire vortex"
-msgstr "огненным вихрем"
-
-#: 
-msgctxt "slain by"
-msgid "spatial vortex"
-msgstr "пространственным вихрем"
-
-#: 
-msgctxt "slain by"
-msgid "spatial maelstrom"
-msgstr "пространственным водоворотом"
-
-#: 
-msgctxt "slain by"
-msgid "insubstantial wisp"
-msgstr "бесплотным огоньком"
-
-#: 
-msgctxt "slain by"
-msgid "will-o-the-wisp"
-msgstr "блуждающим огоньком"
-
-#: 
-msgctxt "slain by"
-msgid "twister"
-msgstr "обманщиком"
-
-#: 
-msgctxt "slain by"
-msgid "worm"
-msgstr "червём"
-
-#: 
-msgctxt "slain by"
-msgid "swamp worm"
-msgstr "болотным червём"
-
-#: 
-msgctxt "slain by"
-msgid "tyrant leech"
-msgstr "пиявкой тираном"
-
-#: 
-msgctxt "slain by"
-msgid "dart slug"
-msgstr "слизняком метателем дротиков"
-
-#: 
-msgctxt "slain by"
-msgid "torpor snail"
-msgstr "улиткой оцепенения"
-
-#: 
-msgctxt "slain by"
-msgid "elephant slug"
-msgstr "слоновым слизняком"
-
-#: 
-msgctxt "slain by"
-msgid "unseen horror"
-msgstr "невиданным ужасом"
-
-#: 
-msgctxt "slain by"
-msgid "small abomination"
-msgstr "маленькой мерзостью"
-
-#: 
-msgctxt "slain by"
-msgid "ancient zyme"
-msgstr "древним зимом"
-
-#: 
-msgctxt "slain by"
-msgid "worldbinder"
-msgstr "хранителем мира"
-
-#: 
-msgctxt "slain by"
-msgid "bunyip"
-msgstr "банеипом"
-
-#: 
-msgctxt "slain by"
-msgid "killer bee"
-msgstr "пчелой убийцей"
-
-#: 
-msgctxt "slain by"
-msgid "queen bee"
-msgstr "пчелиной маткой"
-
-#: 
-msgctxt "slain by"
-msgid "vampire mosquito"
-msgstr "комаром вампиром"
-
-#: 
-msgctxt "slain by"
-msgid "hornet"
-msgstr "шершнем"
-
-#: 
-msgctxt "slain by"
-msgid "meliai"
-msgstr "мелией"
-
-#: 
-msgctxt "slain by"
-msgid "spark wasp"
-msgstr "искрящейся осой"
-
-#: 
-msgctxt "slain by"
-msgid "moth"
-msgstr "молью"
-
-#: 
-msgctxt "slain by"
-msgid "ghost moth"
-msgstr "призрачной молью"
-
-#: 
-msgctxt "slain by"
-msgid "moth of wrath"
-msgstr "молью гнева"
-
-#: 
-msgctxt "slain by"
-msgid "wight"
-msgstr "вайтом"
-
-#: 
-msgctxt "slain by"
-msgid "skeletal warrior"
-msgstr "скелетом воином"
-
-#: 
-msgctxt "slain by"
-msgid "ancient champion"
-msgstr "древним чемпионом"
-
-#: 
-msgctxt "slain by"
-msgid "flying skull"
-msgstr "летающим черепом"
-
-#: 
-msgctxt "slain by"
-msgid "curse skull"
-msgstr "черепом проклятья"
-
-#: 
-msgctxt "slain by"
-msgid "curse toe"
-msgstr "пальцем проклятья"
-
-#: 
-msgctxt "slain by"
-msgid "angel"
-msgstr "ангелом"
-
-#: 
-msgctxt "slain by"
-msgid "cherub"
-msgstr "херувимом"
-
-#: 
-msgctxt "slain by"
-msgid "seraph"
-msgstr "серафимом"
-
-#: 
-msgctxt "slain by"
-msgid "daeva"
-msgstr "даевой"
-
-#: 
-msgctxt "slain by"
-msgid "profane servitor"
-msgstr "нечистивым слугой"
-
-#: 
-msgctxt "slain by"
-msgid "giant cockroach"
-msgstr "гигантским тараканом"
-
-#: 
-msgctxt "slain by"
-msgid "formicid"
-msgstr "муравьём"
-
-#: 
-msgctxt "slain by"
-msgid "entropy weaver"
-msgstr "ткачом энтропии"
-
-#: 
-msgctxt "slain by"
-msgid "boulder beetle"
-msgstr "жуком-валуном"
-
-#: 
-msgctxt "slain by"
-msgid "death scarab"
-msgstr "скарабеем смерти"
-
-#: 
-msgctxt "slain by"
-msgid "giant"
-msgstr "гигантом"
-
-#: 
-msgctxt "slain by"
-msgid "cyclops"
-msgstr "циклопом"
-
-#: 
-msgctxt "slain by"
-msgid "ettin"
-msgstr "эттиным"
-
-#: 
-msgctxt "slain by"
-msgid "fire giant"
-msgstr "огненным гигантом"
-
-#: 
-msgctxt "slain by"
-msgid "frost giant"
-msgstr "морозным гигантом"
-
-#: 
-msgctxt "slain by"
-msgid "stone giant"
-msgstr "каменным гигантом"
-
-#: 
-msgctxt "slain by"
-msgid "titan"
-msgstr "титаном"
-
-#: 
-msgctxt "slain by"
-msgid "juggernaut"
-msgstr "джаггернаутом"
-
-#: 
-msgctxt "slain by"
-msgid "iron giant"
-msgstr "железным гигантом"
-
-#: 
-msgctxt "slain by"
-msgid "dragon"
-msgstr "драконом"
-
-#: 
-msgctxt "slain by"
-msgid "fire dragon"
-msgstr "огненным драконом"
-
-#: 
-msgctxt "slain by"
-msgid "hydra"
-msgstr "гидрой"
-
-#: 
-msgctxt "slain by"
-msgid "ice dragon"
-msgstr "ледяным драконом"
-
-#: 
-msgctxt "slain by"
-msgid "steam dragon"
-msgstr "паровым драконом"
-
-#: 
-msgctxt "slain by"
-msgid "swamp dragon"
-msgstr "болотным драконом"
-
-#: 
-msgctxt "slain by"
-msgid "acid dragon"
-msgstr "кислотным драконом"
-
-#: 
-msgctxt "slain by"
-msgid "quicksilver dragon"
-msgstr "ртутным драконом"
-
-#: 
-msgctxt "slain by"
-msgid "iron dragon"
-msgstr "железным драконом"
-
-#: 
-msgctxt "slain by"
-msgid "storm dragon"
-msgstr "штормовым драконом"
-
-#: 
-msgctxt "slain by"
-msgid "golden dragon"
-msgstr "золотым драконом"
-
-#: 
-msgctxt "slain by"
-msgid "shadow dragon"
-msgstr "теневым драконом"
-
-#: 
-msgctxt "slain by"
-msgid "bone dragon"
-msgstr "костяным драконом"
-
-#: 
-msgctxt "slain by"
-msgid "pearl dragon"
-msgstr "жемчужным драконом"
-
-#: 
-msgctxt "slain by"
-msgid "elemental"
-msgstr "элементалем"
-
-#: 
-msgctxt "slain by"
-msgid "earth elemental"
-msgstr "земляным элементалем"
-
-#: 
-msgctxt "slain by"
-msgid "fire elemental"
-msgstr "огненным элементалем"
-
-#: 
-msgctxt "slain by"
-msgid "water elemental"
-msgstr "водным элементалем"
-
-#: 
-msgctxt "slain by"
-msgid "air elemental"
-msgstr "воздушным элементалем"
-
-#: 
-msgctxt "slain by"
-msgid "iron elemental"
-msgstr "железным элементалем"
-
-#: 
-msgctxt "slain by"
-msgid "elemental wellspring"
-msgstr "источником стихий"
-
-#: 
-msgctxt "slain by"
-msgid "giant frog"
-msgstr "гигантской лягушкой"
-
-#: 
-msgctxt "slain by"
-msgid "bullfrog"
-msgstr "лягушкой-быком"
-
-#: 
-msgctxt "slain by"
-msgid "cane toad"
-msgstr "тростниковой жабой"
-
-#: 
-msgctxt "slain by"
-msgid "blink frog"
-msgstr "мерцающей лягушкой"
-
-#: 
-msgctxt "slain by"
-msgid "goliath frog"
-msgstr "лягушкой-голиафом"
-
-#: 
-msgctxt "slain by"
-msgid "barachi"
-msgstr "барахимом"
-
-#: 
-msgctxt "slain by"
-msgid "floating eye"
-msgstr "плавающим оком"
-
-#: 
-msgctxt "slain by"
-msgid "glowing orange brain"
-msgstr "светящимся оранжевым мозгом"
-
-#: 
-msgctxt "slain by"
-msgid "great orb of eyes"
-msgstr "великой сферой глаз"
-
-#: 
-msgctxt "slain by"
-msgid "shining eye"
-msgstr "сияющим оком"
-
-#: 
-msgctxt "slain by"
-msgid "eye of devastation"
-msgstr "оком опустошения"
-
-#: 
-msgctxt "slain by"
-msgid "golden eye"
-msgstr "золотым оком"
-
-#: 
-msgctxt "slain by"
-msgid "ophan"
-msgstr "офаном"
-
-#: 
-msgctxt "slain by"
-msgid "manticore"
-msgstr "мантикорой"
-
-#: 
-msgctxt "slain by"
-msgid "minotaur"
-msgstr "минотавром"
-
-#: 
-msgctxt "slain by"
-msgid "fenstrider witch"
-msgstr "ведьмой-фенстрайдером"
-
-#: 
-msgctxt "slain by"
-msgid "sphinx"
-msgstr "сфинксом"
-
-#: 
-msgctxt "slain by"
-msgid "harpy"
-msgstr "гарпией"
-
-#: 
-msgctxt "slain by"
-msgid "palentonga"
-msgstr "палентонгой"
-
-#: 
-msgctxt "slain by"
-msgid "mutant beast"
-msgstr "зверем-мутантом"
-
-#: 
-msgctxt "slain by"
-msgid "ancestor"
-msgstr "предком"
-
-#: 
-msgctxt "slain by"
-msgid "knight"
-msgstr "рыцарем"
-
-#: 
-msgctxt "slain by"
-msgid "battlemage"
-msgstr "боевым магом"
-
-#: 
-msgctxt "slain by"
-msgid "hexer"
-msgstr "ведьмаком"
-
-#: 
-msgctxt "slain by"
-msgid "endoplasm"
-msgstr "эндоплазмой"
-
-#: 
-msgctxt "slain by"
-msgid "jelly"
-msgstr "желе"
-
-#: 
-msgctxt "slain by"
-msgid "slime creature"
-msgstr "склизким существом"
-
-#: 
-msgctxt "slain by"
-msgid "merged slime creature"
-msgstr "слитым склизким существом"
-
-#: 
-msgctxt "slain by"
-msgid "rockslime"
-msgstr "каменной известью"
-
-#: 
-msgctxt "slain by"
-msgid "quicksilver ooze"
-msgstr "ртутной слизью"
-
-#: 
-msgctxt "slain by"
-msgid "azure jelly"
-msgstr "лазурным желе"
-
-#: 
-msgctxt "slain by"
-msgid "acid blob"
-msgstr "кислотным шаром"
-
-#: 
-msgctxt "slain by"
-msgid "kobold"
-msgstr "кобольдом"
-
-#: 
-msgctxt "slain by"
-msgid "kobold brigand"
-msgstr "кобольдом разбойником"
-
-#: 
-msgctxt "slain by"
-msgid "kobold demonologist"
-msgstr "кобольдом демонологом"
-
-#: 
-msgctxt "slain by"
-msgid "lich"
-msgstr "личем"
-
-#: 
-msgctxt "slain by"
-msgid "ancient lich"
-msgstr "древним личем"
-
-#: 
-msgctxt "slain by"
-msgid "dread lich"
-msgstr "ужасным личем"
-
-#: 
-msgctxt "slain by"
-msgid "revenant"
-msgstr "ревенантом"
-
-#: 
-msgctxt "slain by"
-msgid "halazid warlock"
-msgstr "халазидским колдуном"
-
-#: 
-msgctxt "slain by"
-msgid "mummy"
-msgstr "мумией"
-
-#: 
-msgctxt "slain by"
-msgid "guardian mummy"
-msgstr "мумией охранником"
-
-#: 
-msgctxt "slain by"
-msgid "royal mummy"
-msgstr "королевской мумией"
-
-#: 
-msgctxt "slain by"
-msgid "mummy priest"
-msgstr "мумией священником"
-
-#: 
-msgctxt "slain by"
-msgid "naga"
-msgstr "нагой"
-
-#: 
-msgctxt "slain by"
-msgid "naga mage"
-msgstr "нагой магом"
-
-#: 
-msgctxt "slain by"
-msgid "naga sharpshooter"
-msgstr "нагой снайпером"
-
-#: 
-msgctxt "slain by"
-msgid "naga ritualist"
-msgstr "нагой ритуалистом"
-
-#: 
-msgctxt "slain by"
-msgid "naga warrior"
-msgstr "нагой воином"
-
-#: 
-msgctxt "slain by"
-msgid "nagaraja"
-msgstr "нагараджей"
-
-#: 
-msgctxt "slain by"
-msgid "ogre"
-msgstr "огром"
-
-#: 
-msgctxt "slain by"
-msgid "two-headed ogre"
-msgstr "двуглавым огром"
-
-#: 
-msgctxt "slain by"
-msgid "ogre mage"
-msgstr "огром магом"
-
-#: 
-msgctxt "slain by"
-msgid "ironbound thunderhulk"
-msgstr "закованным в железо громовержцем"
-
-#: 
-msgctxt "slain by"
-msgid "plant"
-msgstr "растением"
-
-#: 
-msgctxt "slain by"
-msgid "demonic plant"
-msgstr "демоническим растением"
-
-#: 
-msgctxt "slain by"
-msgid "withered plant"
-msgstr "засохшим растением"
-
-#: 
-msgctxt "slain by"
-msgid "oklob sapling"
-msgstr "саженцем оклоб"
-
-#: 
-msgctxt "slain by"
-msgid "oklob plant"
-msgstr "растением оклоб"
-
-#: 
-msgctxt "slain by"
-msgid "bush"
-msgstr "кустом"
-
-#: 
-msgctxt "slain by"
-msgid "burning bush"
-msgstr "пылающим кустом"
-
-#: 
-msgctxt "slain by"
-msgid "toadstool"
-msgstr "поганкой"
-
-#: 
-msgctxt "slain by"
-msgid "fungus"
-msgstr "грибком"
-
-#: 
-msgctxt "slain by"
-msgid "ballistomycete"
-msgstr "баллистомицетом"
-
-#: 
-msgctxt "slain by"
-msgid "briar patch"
-msgstr "шиповником"
-
-#: 
-msgctxt "slain by"
-msgid "tengu"
-msgstr "тенгу"
-
-#: 
-msgctxt "slain by"
-msgid "tengu conjurer"
-msgstr "тенгу волшебником"
-
-#: 
-msgctxt "slain by"
-msgid "tengu warrior"
-msgstr "тенгу воином"
-
-#: 
-msgctxt "slain by"
-msgid "tengu reaver"
-msgstr "тенгу похитителем"
-
-#: 
-msgctxt "slain by"
-msgid "efreet"
-msgstr "ифритом"
-
-#: 
-msgctxt "slain by"
-msgid "rakshasa"
-msgstr "ракшаса"
-
-#: 
-msgctxt "slain by"
-msgid "dryad"
-msgstr "дриадой"
-
-#: 
-msgctxt "slain by"
-msgid "eleionoma"
-msgstr "элеономой"
-
-#: 
-msgctxt "slain by"
-msgid "snaplasher vine"
-msgstr "плёточной лозой"
-
-#: 
-msgctxt "slain by"
-msgid "snaplasher vine segment"
-msgstr "сегментом плеточной лозы"
-
-#: 
-msgctxt "slain by"
-msgid "snake"
-msgstr "змеёй"
-
-#: 
-msgctxt "slain by"
-msgid "ball python"
-msgstr "шаровым питоном"
-
-#: 
-msgctxt "slain by"
-msgid "adder"
-msgstr "гадюкой"
-
-#: 
-msgctxt "slain by"
-msgid "water moccasin"
-msgstr "водным мокасином"
-
-#: 
-msgctxt "slain by"
-msgid "black mamba"
-msgstr "чёрной мамбой"
-
-#: 
-msgctxt "slain by"
-msgid "sea snake"
-msgstr "морской змеёй"
-
-#: 
-msgctxt "slain by"
-msgid "anaconda"
-msgstr "анакондой"
-
-#: 
-msgctxt "slain by"
-msgid "guardian serpent"
-msgstr "змеем-хранителем"
-
-#: 
-msgctxt "slain by"
-msgid "shock serpent"
-msgstr "шоковым змеем"
-
-#: 
-msgctxt "slain by"
-msgid "mana viper"
-msgstr "мановой гадюкой"
-
-#: 
-msgctxt "slain by"
-msgid "troll"
-msgstr "троллем"
-
-#: 
-msgctxt "slain by"
-msgid "iron troll"
-msgstr "железным троллем"
-
-#: 
-msgctxt "slain by"
-msgid "deep troll"
-msgstr "глубинным троллем"
-
-#: 
-msgctxt "slain by"
-msgid "deep troll earth mage"
-msgstr "глубинным троллем геомантом"
-
-#: 
-msgctxt "slain by"
-msgid "deep troll shaman"
-msgstr "глубинным троллем шаманом"
-
-#: 
-msgctxt "slain by"
-msgid "vampire"
-msgstr "вампиром"
-
-#: 
-msgctxt "slain by"
-msgid "vampire knight"
-msgstr "рыцарем вампиром"
-
-#: 
-msgctxt "slain by"
-msgid "vampire mage"
-msgstr "магом вампиром"
-
-#: 
-msgctxt "slain by"
-msgid "jiangshi"
-msgstr "цзянши"
-
-#: 
-msgctxt "slain by"
-msgid "ghost"
-msgstr "призраком"
-
-#: 
-msgctxt "slain by"
-msgid "phantom"
-msgstr "фантомом"
-
-#: 
-msgctxt "slain by"
-msgid "flayed ghost"
-msgstr "ободранным призраком"
-
-#: 
-msgctxt "slain by"
-msgid "player ghost"
-msgstr "призраком игрока"
-
-#: 
-msgctxt "slain by"
-msgid "shadow"
-msgstr "тенью"
-
-#: 
-msgctxt "slain by"
-msgid "silent spectre"
-msgstr "тихим спектром"
-
-#: 
-msgctxt "slain by"
-msgid "drowned soul"
-msgstr "утонувшей душой"
-
-#: 
-msgctxt "slain by"
-msgid "wraith"
-msgstr "видением"
-
-#: 
-msgctxt "slain by"
-msgid "shadow wraith"
-msgstr "теневым видением"
-
-#: 
-msgctxt "slain by"
-msgid "freezing wraith"
-msgstr "леденящим видением"
-
-#: 
-msgctxt "slain by"
-msgid "eidolon"
-msgstr "эйдолоном"
-
-#: 
-msgctxt "slain by"
-msgid "phantasmal warrior"
-msgstr "призрачным воином"
-
-#: 
-msgctxt "slain by"
-msgid "large abomination"
-msgstr "большой мерзостью"
-
-#: 
-msgctxt "slain by"
-msgid "thrashing horror"
-msgstr "сокрушительным ужасом"
-
-#: 
-msgctxt "slain by"
-msgid "tentacled monstrosity"
-msgstr "чудовищем со щупальцами"
-
-#: 
-msgctxt "slain by"
-msgid "Orb Guardian"
-msgstr "Защитником Сферы"
-
-#: 
-msgctxt "slain by"
-msgid "tentacled starspawn"
-msgstr "порождением звезд со щупальцами"
-
-#: 
-msgctxt "slain by"
-msgid "starspawn tentacle"
-msgstr "щупальцем порождения звезд"
-
-#: 
-msgctxt "slain by"
-msgid "starspawn tentacle segment"
-msgstr "сегментом щупальца порождения звезд"
-
-#: 
-msgctxt "slain by"
-msgid "starcursed mass"
-msgstr "проклятой звёздами массой"
-
-#: 
-msgctxt "slain by"
-msgid "nameless horror"
-msgstr "безымянным ужасом"
-
-#: 
-msgctxt "slain by"
-msgid "dream sheep"
-msgstr "овцой грёз"
-
-#: 
-msgctxt "slain by"
-msgid "death yak"
-msgstr "яком смерти"
-
-#: 
-msgctxt "slain by"
-msgid "catoblepas"
-msgstr "катоблепасом"
-
-#: 
-msgctxt "slain by"
-msgid "elephant"
-msgstr "слоном"
-
-#: 
-msgctxt "slain by"
-msgid "dire elephant"
-msgstr "ужасным слоном"
-
-#: 
-msgctxt "slain by"
-msgid "hellephant"
-msgstr "адским слоном"
-
-#: 
-msgctxt "slain by"
-msgid "apis"
-msgstr "аписом"
-
-#: 
-msgctxt "slain by"
-msgid "ice beast"
-msgstr "ледяным зверем"
-
-#: 
-msgctxt "slain by"
-msgid "sky beast"
-msgstr "небесным зверем"
-
-#: 
-msgctxt "slain by"
-msgid "zombie"
-msgstr "зомби"
-
-#: 
-msgctxt "slain by"
-msgid "skeleton"
-msgstr "скелетом"
-
-#: 
-msgctxt "slain by"
-msgid "simulacrum"
-msgstr "симулякром"
-
-#: 
-msgctxt "slain by"
-msgid "small zombie"
-msgstr "маленьким зомби"
-
-#: 
-msgctxt "slain by"
-msgid "small skeleton"
-msgstr "маленьким скелетом"
-
-#: 
-msgctxt "slain by"
-msgid "small simulacrum"
-msgstr "маленьким симулякром"
-
-#: 
-msgctxt "slain by"
-msgid "large zombie"
-msgstr "большим зомби"
-
-#: 
-msgctxt "slain by"
-msgid "large skeleton"
-msgstr "большим скелетом"
-
-#: 
-msgctxt "slain by"
-msgid "large simulacrum"
-msgstr "большим симулякром"
-
-#: 
-msgctxt "slain by"
-msgid "spectral thing"
-msgstr "призрачным нечто"
-
-#: 
-msgctxt "slain by"
-msgid "electric eel"
-msgstr "электрическим угрём"
-
-#: 
-msgctxt "slain by"
-msgid "kraken"
-msgstr "кракеном"
-
-#: 
-msgctxt "slain by"
-msgid "tentacle"
-msgstr "щупальцем"
-
-#: 
-msgctxt "slain by"
-msgid "tentacle segment"
-msgstr "сегментом щупальца"
-
-#: 
-msgctxt "slain by"
-msgid "octopode"
-msgstr "осьминогом"
-
-#: 
-msgctxt "slain by"
-msgid "lava snake"
-msgstr "лавовой змеёй"
-
-#: 
-msgctxt "slain by"
-msgid "salamander"
-msgstr "саламандрой"
-
-#: 
-msgctxt "slain by"
-msgid "salamander mystic"
-msgstr "саламандрой мистиком"
-
-#: 
-msgctxt "slain by"
-msgid "salamander tyrant"
-msgstr "саламандрой тираном"
-
-#: 
-msgctxt "slain by"
-msgid "Hellbinder"
-msgstr "Адским Связывателем"
-
-#: 
-msgctxt "slain by"
-msgid "Cloud Mage"
-msgstr "Облачным Магом"
-
-#: 
-msgctxt "slain by"
-msgid "player"
-msgstr "игроком"
-
-#: 
-msgctxt "slain by"
-msgid "player illusion"
-msgstr "иллюзией игрока"
-
-#: 
-msgctxt "slain by"
-msgid "dancing weapon"
-msgstr "танцующим оружием"
-
-#: 
-msgctxt "slain by"
-msgid "spectral weapon"
-msgstr "призрачным оружием"
-
-#: 
-msgctxt "slain by"
-msgid "animated armour"
-msgstr "ожившей бронёй"
-
-#: 
-msgctxt "slain by"
-msgid "eldritch tentacle"
-msgstr "жутким щупальцем"
-
-#: 
-msgctxt "slain by"
-msgid "eldritch tentacle segment"
-msgstr "сегментом жуткого щупальца"
-
-#: 
-msgctxt "slain by"
-msgid "demonspawn"
-msgstr "демонорождённым"
-
-#: 
-msgctxt "slain by"
-msgid "monstrous demonspawn"
-msgstr "монструозным демонорождённым"
-
-#: 
-msgctxt "slain by"
-msgid "gelid demonspawn"
-msgstr "желеобразным демонорождённым"
-
-#: 
-msgctxt "slain by"
-msgid "infernal demonspawn"
-msgstr "инфернальным демонорождённым"
-
-#: 
-msgctxt "slain by"
-msgid "torturous demonspawn"
-msgstr "мучительным демонорождённым"
-
-#: 
-msgctxt "slain by"
-msgid "blood saint"
-msgstr "кровавым святым"
-
-#: 
-msgctxt "slain by"
-msgid "warmonger"
-msgstr "разжигателем войн"
-
-#: 
-msgctxt "slain by"
-msgid "corrupter"
-msgstr "развратителем"
-
-#: 
-msgctxt "slain by"
-msgid "black sun"
-msgstr "чёрным солнцем"
-
-#: 
-msgctxt "slain by"
-msgid "crimson imp"
-msgstr "алым бесом"
-
-#: 
-msgctxt "slain by"
-msgid "quasit"
-msgstr "квазитом"
-
-#: 
-msgctxt "slain by"
-msgid "white imp"
-msgstr "белым бесом"
-
-#: 
-msgctxt "slain by"
-msgid "ufetubus"
-msgstr "уфетубусом"
-
-#: 
-msgctxt "slain by"
-msgid "iron imp"
-msgstr "железным бесом"
-
-#: 
-msgctxt "slain by"
-msgid "shadow imp"
-msgstr "теневым бесом"
-
-#: 
-msgctxt "slain by"
-msgid "lemure"
-msgstr "лемуром"
-
-#: 
-msgctxt "slain by"
-msgid "rust devil"
-msgstr "ржавым дьяволом"
-
-#: 
-msgctxt "slain by"
-msgid "orange demon"
-msgstr "оранжевым демоном"
-
-#: 
-msgctxt "slain by"
-msgid "red devil"
-msgstr "красным дьяволом"
-
-#: 
-msgctxt "slain by"
-msgid "hellwing"
-msgstr "адским крылом"
-
-#: 
-msgctxt "slain by"
-msgid "ice devil"
-msgstr "ледяным дьяволом"
-
-#: 
-msgctxt "slain by"
-msgid "chaos spawn"
-msgstr "отродьем хаоса"
-
-#: 
-msgctxt "slain by"
-msgid "sun demon"
-msgstr "демоном солнца"
-
-#: 
-msgctxt "slain by"
-msgid "soul eater"
-msgstr "пожирателем душ"
-
-#: 
-msgctxt "slain by"
-msgid "smoke demon"
-msgstr "дымным демоном"
-
-#: 
-msgctxt "slain by"
-msgid "neqoxec"
-msgstr "некоксеком"
-
-#: 
-msgctxt "slain by"
-msgid "ynoxinul"
-msgstr "иноксинулом"
-
-#: 
-msgctxt "slain by"
-msgid "sixfirhy"
-msgstr "шестфирх"
-
-#: 
-msgctxt "slain by"
-msgid "shadow demon"
-msgstr "теневым демоном"
-
-#: 
-msgctxt "slain by"
-msgid "green death"
-msgstr "зелёной смертью"
-
-#: 
-msgctxt "slain by"
-msgid "blizzard demon"
-msgstr "демоном метели"
-
-#: 
-msgctxt "slain by"
-msgid "balrug"
-msgstr "балругом"
-
-#: 
-msgctxt "slain by"
-msgid "cacodemon"
-msgstr "какодемоном"
-
-#: 
-msgctxt "slain by"
-msgid "hell beast"
-msgstr "адским зверем"
-
-#: 
-msgctxt "slain by"
-msgid "hellion"
-msgstr "геллионом"
-
-#: 
-msgctxt "slain by"
-msgid "reaper"
-msgstr "жнецом"
-
-#: 
-msgctxt "slain by"
-msgid "lorocyproca"
-msgstr "лороципрокой"
-
-#: 
-msgctxt "slain by"
-msgid "tormentor"
-msgstr "мучителем"
-
-#: 
-msgctxt "slain by"
-msgid "Brimstone Fiend"
-msgstr "Серным Извергом"
-
-#: 
-msgctxt "slain by"
-msgid "Ice Fiend"
-msgstr "Ледяным Извергом"
-
-#: 
-msgctxt "slain by"
-msgid "Tzitzimitl"
-msgstr "Цицимитлем"
-
-#: 
-msgctxt "slain by"
-msgid "Hell Sentinel"
-msgstr "Стражем Ада"
-
-#: 
-msgctxt "slain by"
-msgid "Executioner"
-msgstr "Палачом"
-
-#: 
-msgctxt "slain by"
-msgid "animated tree"
-msgstr "оживлённым деревом"
-
-#: 
-msgctxt "slain by"
-msgid "saltling"
-msgstr "соленоидом"
-
-#: 
-msgctxt "slain by"
-msgid "peacekeeper"
-msgstr "миротворцем"
-
-#: 
-msgctxt "slain by"
-msgid "iron golem"
-msgstr "железным големом"
-
-#: 
-msgctxt "slain by"
-msgid "crystal guardian"
-msgstr "кристальным хранителем"
-
-#: 
-msgctxt "slain by"
-msgid "toenail golem"
-msgstr "големом из ногтей"
-
-#: 
-msgctxt "slain by"
-msgid "electric golem"
-msgstr "электрическим големом"
-
-#: 
-msgctxt "slain by"
-msgid "ushabti"
-msgstr "ушебти"
-
-#: 
-msgctxt "slain by"
-msgid "guardian golem"
-msgstr "големом хранителем"
-
-#: 
-msgctxt "slain by"
-msgid "spellforged servitor"
-msgstr "заколдованным слугой"
-
-#: 
-msgctxt "slain by"
-msgid "ice statue"
-msgstr "ледяной статуей"
-
-#: 
-msgctxt "slain by"
-msgid "obsidian statue"
-msgstr "обсидиановой статуей"
-
-#: 
-msgctxt "slain by"
-msgid "orange crystal statue"
-msgstr "статуей из оранжевого кристалла"
-
-#: 
-msgctxt "slain by"
-msgid "statue"
-msgstr "статуей"
-
-#: 
-msgctxt "slain by"
-msgid "training dummy"
-msgstr "тренировочным манекеном"
-
-#: 
-msgctxt "slain by"
-msgid "pillar of salt"
-msgstr "столбом соли"
-
-#: 
-msgctxt "slain by"
-msgid "block of ice"
-msgstr "глыбой льда"
-
-#: 
-msgctxt "slain by"
-msgid "diamond obelisk"
-msgstr "алмазным обелиском"
-
-#: 
-msgctxt "slain by"
-msgid "lightning spire"
-msgstr "шпилем молний"
-
-#: 
-msgctxt "slain by"
-msgid "gargoyle"
-msgstr "гаргулиёй"
-
-#: 
-msgctxt "slain by"
-msgid "war gargoyle"
-msgstr "боевой гаргулиёй"
-
-#: 
-msgctxt "slain by"
-msgid "molten gargoyle"
-msgstr "литой гаргулиёй"
-
-#: 
-msgctxt "slain by"
-msgid "pandemonium lord"
-msgstr "лордом пандемониума"
-
-#: 
-msgctxt "slain by"
-msgid "hell lord"
-msgstr "лордом ада"
-
-#: 
-msgctxt "slain by"
-msgid "ballistomycete spore"
-msgstr "спорой баллистомицета"
-
-#: 
-msgctxt "slain by"
-msgid "lost soul"
-msgstr "потерянной душой"
-
-#: 
-msgctxt "slain by"
-msgid "lurking horror"
-msgstr "таящимся ужасом"
-
-#: 
-msgctxt "slain by"
-msgid "orb of fire"
-msgstr "сферой огня"
-
-#: 
-msgctxt "slain by"
-msgid "orb of destruction"
-msgstr "сферой разрушения"
-
-#: 
-msgctxt "slain by"
-msgid "foxfire"
-msgstr "лисьим огнём"
-
-#: 
-msgctxt "slain by"
-msgid "fulminant prism"
-msgstr "молниеносной призмой"
-
-#: 
-msgctxt "slain by"
-msgid "wretched star"
-msgstr "несчастной звездой"
-
-#: 
-msgctxt "slain by"
-msgid "battlesphere"
-msgstr "боевой сферой"
-
-#: 
-msgctxt "slain by"
-msgid "death cob"
-msgstr "початком смерти"
-
-#: 
-msgctxt "slain by"
-msgid "Mennas"
-msgstr "Меннасом"
-
-#: 
-msgctxt "slain by"
-msgid "Nessos"
-msgstr "Нессосом"
-
-#: 
-msgctxt "slain by"
-msgid "Chuck"
-msgstr "Чаком"
-
-#: 
-msgctxt "slain by"
-msgid "Polyphemus"
-msgstr "Полифемом"
-
-#: 
-msgctxt "slain by"
-msgid "Antaeus"
-msgstr "Антеем"
-
-#: 
-msgctxt "slain by"
-msgid "Tiamat"
-msgstr "Тиамат"
-
-#: 
-msgctxt "slain by"
-msgid "Bai Suzhen"
-msgstr "Бай Сужень"
-
-#: 
-msgctxt "slain by"
-msgid "Xtahua"
-msgstr "Экстахуа"
-
-#: 
-msgctxt "slain by"
-msgid "the Lernaean hydra"
-msgstr "Лернейской гидрой"
-
-#: 
-msgctxt "slain by"
-msgid "the Serpent of Hell"
-msgstr "Змеем Ада"
-
-#: 
-msgctxt "slain by"
-msgid "Duvessa"
-msgstr "Дувессой"
-
-#: 
-msgctxt "slain by"
-msgid "Dowan"
-msgstr "Дованом"
-
-#: 
-msgctxt "slain by"
-msgid "Fannar"
-msgstr "Фаннаром"
-
-#: 
-msgctxt "slain by"
-msgid "Prince Ribbit"
-msgstr "Принцем Риббитом"
-
-#: 
-msgctxt "slain by"
-msgid "Ijyb"
-msgstr "Иджыбом"
-
-#: 
-msgctxt "slain by"
-msgid "Robin"
-msgstr "Робином"
-
-#: 
-msgctxt "slain by"
-msgid "Grum"
-msgstr "Грумом"
-
-#: 
-msgctxt "slain by"
-msgid "Crazy Yiuf"
-msgstr "Сумасшедшим Юфом"
-
-#: 
-msgctxt "slain by"
-msgid "Jorgrun"
-msgstr "Ергруном"
-
-#: 
-msgctxt "slain by"
-msgid "Natasha"
-msgstr "Наташей"
-
-#: 
-msgctxt "slain by"
-msgid "Arachne"
-msgstr "Арахной"
-
-#: 
-msgctxt "slain by"
-msgid "Asterion"
-msgstr "Астерионом"
-
-#: 
-msgctxt "slain by"
-msgid "Agnes"
-msgstr "Агнес"
-
-#: 
-msgctxt "slain by"
-msgid "the Enchantress"
-msgstr "Чародейкой"
-
-#: 
-msgctxt "slain by"
-msgid "the Royal Jelly"
-msgstr "Королевским Желе"
-
-#: 
-msgctxt "slain by"
-msgid "Dissolution"
-msgstr "Растворением"
-
-#: 
-msgctxt "slain by"
-msgid "Sonja"
-msgstr "Соней"
-
-#: 
-msgctxt "slain by"
-msgid "Pikel"
-msgstr "Пикелем"
-
-#: 
-msgctxt "slain by"
-msgid "Boris"
-msgstr "Борисом"
-
-#: 
-msgctxt "slain by"
-msgid "Menkaure"
-msgstr "Менкарой"
-
-#: 
-msgctxt "slain by"
-msgid "Khufu"
-msgstr "Хуфу"
-
-#: 
-msgctxt "slain by"
-msgid "Ilsuiw"
-msgstr "Илсвью"
-
-#: 
-msgctxt "slain by"
-msgid "Vashnia"
-msgstr "Вашнёй"
-
-#: 
-msgctxt "slain by"
-msgid "Erolcha"
-msgstr "Эролчей"
-
-#: 
-msgctxt "slain by"
-msgid "Blork the orc"
-msgstr "орком по имени Блорк"
-
-#: 
-msgctxt "slain by"
-msgid "Urug"
-msgstr "Уругом"
-
-#: 
-msgctxt "slain by"
-msgid "Nergalle"
-msgstr "Нергалле"
-
-#: 
-msgctxt "slain by"
-msgid "Saint Roka"
-msgstr "Святым Рока"
-
-#: 
-msgctxt "slain by"
-msgid "Sojobo"
-msgstr "Соджобо"
-
-#: 
-msgctxt "slain by"
-msgid "Azrael"
-msgstr "Азраэлем"
-
-#: 
-msgctxt "slain by"
-msgid "Mara"
-msgstr "Марой"
-
-#: 
-msgctxt "slain by"
-msgid "Aizul"
-msgstr "Айзулом"
-
-#: 
-msgctxt "slain by"
-msgid "Snorg"
-msgstr "Снорг"
-
-#: 
-msgctxt "slain by"
-msgid "Purgy"
-msgstr "Пергами"
-
-#: 
-msgctxt "slain by"
-msgid "moon troll"
-msgstr "лунным троллем"
-
-#: 
-msgctxt "slain by"
-msgid "Jory"
-msgstr "Джори"
-
-#: 
-msgctxt "slain by"
-msgid "Gastronok"
-msgstr "Гастроноком"
-
-#: 
-msgctxt "slain by"
-msgid "Nellie"
-msgstr "Нелли"
-
-#: 
-msgctxt "slain by"
-msgid "Murray"
-msgstr "Мюрреем"
-
-#: 
-msgctxt "slain by"
-msgid "Ignacio"
-msgstr "Игнацио"
-
-#: 
-msgctxt "slain by"
-msgid "Grinder"
-msgstr "Гриндером"
-
-#: 
-msgctxt "slain by"
-msgid "Roxanne"
-msgstr "Роксаной"
-
-#: 
-msgctxt "slain by"
-msgid "Terence"
-msgstr "Теренсом"
-
-#: 
-msgctxt "slain by"
-msgid "Jessica"
-msgstr "Джессикой"
-
-#: 
-msgctxt "slain by"
-msgid "Sigmund"
-msgstr "Зигмундом"
-
-#: 
-msgctxt "slain by"
-msgid "Edmund"
-msgstr "Эдмундом"
-
-#: 
-msgctxt "slain by"
-msgid "Psyche"
-msgstr "Психеей"
-
-#: 
-msgctxt "slain by"
-msgid "Donald"
-msgstr "Дональдом"
-
-#: 
-msgctxt "slain by"
-msgid "Joseph"
-msgstr "Джозефом"
-
-#: 
-msgctxt "slain by"
-msgid "Erica"
-msgstr "Эрикой"
-
-#: 
-msgctxt "slain by"
-msgid "Josephine"
-msgstr "Жозефиной"
-
-#: 
-msgctxt "slain by"
-msgid "Harold"
-msgstr "Гарольдом"
-
-#: 
-msgctxt "slain by"
-msgid "Louise"
-msgstr "Луизой"
-
-#: 
-msgctxt "slain by"
-msgid "Frances"
-msgstr "Франческой"
-
-#: 
-msgctxt "slain by"
-msgid "Rupert"
-msgstr "Рупертом"
-
-#: 
-msgctxt "slain by"
-msgid "Kirke"
-msgstr "Кирком"
-
-#: 
-msgctxt "slain by"
-msgid "Frederick"
-msgstr "Фредериком"
-
-#: 
-msgctxt "slain by"
-msgid "Maggie"
-msgstr "Мегги"
-
-#: 
-msgctxt "slain by"
-msgid "Margery"
-msgstr "Марджери"
-
-#: 
-msgctxt "slain by"
-msgid "Eustachio"
-msgstr "Евстахио"
-
-#: 
-msgctxt "slain by"
-msgid "Maurice"
-msgstr "Морисом"
-
-#: 
-msgctxt "slain by"
-msgid "Nikola"
-msgstr "Николой"
-
-#: 
-msgctxt "slain by"
-msgid "Mnoleg"
-msgstr "Мнолегом"
-
-#: 
-msgctxt "slain by"
-msgid "Lom Lobon"
-msgstr "Ломом Лобон"
-
-#: 
-msgctxt "slain by"
-msgid "Cerebov"
-msgstr "Церебовым"
-
-#: 
-msgctxt "slain by"
-msgid "Gloorx Vloq"
-msgstr "Глурксом Влок"
-
-#: 
-msgctxt "slain by"
-msgid "Geryon"
-msgstr "Герионом"
-
-#: 
-msgctxt "slain by"
-msgid "Dispater"
-msgstr "Диспатером"
-
-#: 
-msgctxt "slain by"
-msgid "Asmodeus"
-msgstr "Асмодеем"
-
-#: 
-msgctxt "slain by"
-msgid "Ereshkigal"
-msgstr "Эрешкигалем"
-
-#: 
-msgctxt "slain by"
-msgid "test spawner"
-msgstr "тестовым производителем"
-
-#: 
-msgctxt "slain by"
-msgid "test statue"
-msgstr "тестовой статуей"
-
-#: 
-msgctxt "slain by"
-msgid "test blob"
-msgstr "тестовой каплей"
-
-#: 
-msgctxt "slain by"
-msgid "sensed monster"
-msgstr "учуянным монстром"
-
-#: 
-msgctxt "slain by"
-msgid "friendly sensed monster"
-msgstr "дружелюбным учуянным монстром"
-
-#: 
-msgctxt "slain by"
-msgid "trivial sensed monster"
-msgstr "тривиальным учуянным монстром"
-
-#: 
-msgctxt "slain by"
-msgid "easy sensed monster"
-msgstr "лёгким учуянным монстром"
-
-#: 
-msgctxt "slain by"
-msgid "tough sensed monster"
-msgstr "сложным учуянным монстром"
-
-#: 
-msgctxt "slain by"
-msgid "nasty sensed monster"
-msgstr "скверным учуянным монстром"
 
 #: 
 msgctxt "blasted by %s"

@@ -2083,14 +2083,14 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
     switch (death_type)
     {
     case KILLED_BY_MONSTER: {
-        const char* death_source_description = translate_actor(I18NCA_SLAIN_BY, death_source_desc().c_str());
+        string death_source_description = death_source_desc();
         if (terse)
             desc += death_source_description;
         else if (oneline)
-            desc += make_stringf(_("slain by %s"), death_source_description);
+            desc += make_stringf(_("slain by %s"), death_source_description.c_str());
         else
         {
-            desc += make_stringf(__("slain by", "%s by %s"), damage_verb(), death_source_description);
+            desc += make_stringf(__("slain by", "%s by %s"), damage_verb(), death_source_description.c_str());
         }
 
         // put the damage on the weapon line if there is one
