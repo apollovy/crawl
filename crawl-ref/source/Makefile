@@ -1678,7 +1678,7 @@ doxygen-all:
 	$(DOXYGEN) $(DOXYGEN_ALL_CONF)
 l10n:
 	$(shell find . -type f -maxdepth 1 -name '*.h' -or -name '*.cc' | xgettext -k_:1 -k__:1c,2 -kpgettext_noop:1c,2 -f - -o ./lang/po/crawl.pot)
-	$(shell msgfmt -o ./lang/mo/ru/LC_MESSAGES/crawl.mo ./lang/po/ru/LC_MESSAGES/crawl.po)
+	$(shell for lang in en ru; do mkdir -p ./lang/mo/$$lang/LC_MESSAGES; msgfmt -o ./lang/mo/$$lang/LC_MESSAGES/crawl.mo ./lang/po/$$lang/LC_MESSAGES/crawl.po; done)
 # Dependency generation
 #
 ifndef NO_INLINE_DEPGEN
