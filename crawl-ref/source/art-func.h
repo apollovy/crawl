@@ -1236,10 +1236,10 @@ static void _CAPTAIN_melee_effects(item_def* /*weapon*/, actor* attacker,
         item_def *wpn = defender->as_monster()->disarm();
         if (wpn)
         {
-            mprf("The captain's cutlass flashes! You lacerate %s!!",
-                defender->name(DESC_THE).c_str());
-            mprf("%s %s falls to the floor!",
-                apostrophise(defender->name(DESC_THE)).c_str(),
+            mprf(_("The captain's cutlass flashes! You lacerate %s!!"),
+                defender->name(I18NCA_ART_FUNC_CAPTAIN_FLASHES_DEFENDER).c_str());
+            mprf(__("%(Gnoll's)s %(sword)s falls to the floor!", "%s %s falls to the floor!"),
+                defender->name(I18NCA_ART_FUNC_CAPTAIN_WEAPON_FALLS_DEFENDER).c_str(),
                 wpn->name(DESC_PLAIN).c_str());
             defender->hurt(attacker, 18 + random2(18));
         }

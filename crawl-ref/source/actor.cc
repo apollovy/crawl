@@ -802,8 +802,8 @@ void actor::constriction_damage_defender(actor &defender, int duration)
     }
 
     dprf("constrict at: %s df: %s base %d dur %d ac %d tsc %d inf %d",
-         name(DESC_PLAIN, true).c_str(),
-         defender.name(DESC_PLAIN, true).c_str(),
+         name(I18NC_EMPTY, true).c_str(),
+         defender.name(I18NC_EMPTY, true).c_str(),
          basedam, durdam, acdam, timescale_dam, infdam);
 
     if (defender.is_monster() && defender.as_monster()->hit_points < 1)
@@ -882,7 +882,7 @@ string actor::describe_props() const
             case SV_MONST:
             {
                 monster mon = val.get_monster();
-                oss << mon.name(DESC_PLAIN) << "(" << mon.mid << ")";
+                oss << mon.name(I18NC_EMPTY) << "(" << mon.mid << ")";
                 break;
             }
             case SV_INT64:

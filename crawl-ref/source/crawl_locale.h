@@ -56,6 +56,9 @@ enum actor_i18n_context_type {
 
     I18NCA_TRAP_VICTIM,
 
+    I18NCA_ART_FUNC_CAPTAIN_FLASHES_DEFENDER,
+    I18NCA_ART_FUNC_CAPTAIN_WEAPON_FALLS_DEFENDER,
+
     ACTOR_I18NC_COUNT
 };
 
@@ -79,7 +82,7 @@ static const char* const __actor_i18n_cnames[ACTOR_I18NC_COUNT] = {
 
     "%s collides with you!",
     "You collide with %s!",
-    "Collided with %s caused by by salamander mystic.",
+    "Collided with %s caused by salamander mystic.",
     "Collided with the jackal caused by %s.",
     "%s slams into the wall!",
     "%s violently stops moving!",
@@ -89,6 +92,9 @@ static const char* const __actor_i18n_cnames[ACTOR_I18NC_COUNT] = {
     "Your bite misses %s.",
 
     "A dart trap hits %s!",
+
+    "The captain's cutlass flashes! You lacerate %s!!",
+    "%s sword falls to the floor!",
 };
 
 const char* translate_actor(actor_i18n_context_type i18n_context, const char* msgid);

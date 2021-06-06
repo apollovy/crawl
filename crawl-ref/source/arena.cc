@@ -289,7 +289,7 @@ namespace arena
         if (items.empty())
             return;
 
-        fprintf(file, "%s:\n", mon->name(DESC_PLAIN, true).c_str());
+        fprintf(file, "%s:\n", mon->name(I18NC_EMPTY, true).c_str());
 
         for (int iidx : items)
         {
@@ -829,7 +829,7 @@ namespace arena
                     mprf(MSGCH_DIAGNOSTICS,
                          "Dismissing non-respawner %s to make room for "
                          "respawner whose side has 0 active members.",
-                         other.name(DESC_PLAIN, true).c_str());
+                         other.name(I18NC_EMPTY, true).c_str());
                     monster_die(other, KILL_DISMISSED, NON_MONSTER);
                 }
                 else
@@ -838,7 +838,7 @@ namespace arena
                     mprf(MSGCH_DIAGNOSTICS,
                          "Teleporting respawner %s to make room for "
                          "other respawner whose side has 0 active members.",
-                         other.name(DESC_PLAIN, true).c_str());
+                         other.name(I18NC_EMPTY, true).c_str());
                     monster_teleport(&other, true);
                 }
 
