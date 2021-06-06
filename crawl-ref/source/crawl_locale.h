@@ -35,7 +35,6 @@ enum actor_i18n_context_type {
     I18NC_PLAYER_CONF_KILL_VICTIM,
     I18NC_PLAYER_KILL_VICTIM,
     I18NC_IOOD_ACT_ATTACKER,
-    I18NCA_KILLED_BY_BEAM,
 
     I18NCA_END_CONSTRICTION_ATTACKER,
     I18NCA_END_CONSTRICTION_DEFENDER,
@@ -72,7 +71,6 @@ static const char* const __actor_i18n_cnames[ACTOR_I18NC_COUNT] = {
     "%s is blown up!",
     "You kill %s!",
     "%s hits a closed door.",
-    "blasted by %s",
 
     "%s loses its grip on you.",
     "Octopode loses its grip on %s.",

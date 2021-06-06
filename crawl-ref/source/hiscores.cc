@@ -2184,7 +2184,7 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
             desc += make_stringf(
                 __("%(blasted)s by %(yaktaur captain)s", "%s by %s"),
                 _range_type_verb(auxkilldata.c_str()),
-                translate_actor(I18NCA_KILLED_BY_BEAM, death_source_desc().c_str())
+                death_source_desc().c_str()
             );
 
             if (semiverbose)
@@ -2228,7 +2228,7 @@ string scorefile_entry::death_description(death_desc_verbosity verbosity) const
             desc += make_stringf(
                 __("Killed%( from afar)s by %(goblin zombie)s", "Killed%s by %s"),
                 (!(semiverbose || terse)) ? __("Killed%s by goblin zombie", " from afar") : "",
-                translate_actor(I18NCA_KILLED_BY_BEAM, death_source_desc().c_str())
+                death_source_desc().c_str()
             );
 
             if (!auxkilldata.empty())
