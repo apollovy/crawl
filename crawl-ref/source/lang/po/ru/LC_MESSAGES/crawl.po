@@ -81045,22 +81045,22 @@ msgstr "мёртв"
 #: 
 msgctxt "Nergalle"
 msgid "damaged"
-msgstr "повреждён"
+msgstr "повреждена"
 
 #: 
 msgctxt "Nergalle"
 msgid "wounded"
-msgstr "ранен"
+msgstr "ранена"
 
 #: 
 msgctxt "Nergalle"
 msgid "destroyed"
-msgstr "уничтожен"
+msgstr "уничтожена"
 
 #: 
 msgctxt "Nergalle"
 msgid "dead"
-msgstr "мёртв"
+msgstr "мертва"
 
 #: 
 msgctxt "Saint Roka"
