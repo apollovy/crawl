@@ -156,7 +156,7 @@ the Loreminder for magical power and the ability to cast spells beyond their
 magical training. The devout are rewarded with a supply of spellbooks taken
 directly from Sif Muna's legendary library.
 %%%%
-Shining One
+The Shining One
 
 Followers of the Shining One are bound to the code of the honourable warrior,
 soldiers in their god's eternal crusade against evil. For forsaking dark magic
@@ -397,7 +397,7 @@ upon the Loreminder to help cast any spell they've discovered, even if it's
 well beyond their current magical training. Over time, devout followers will
 receive spellbooks containing a vast range of spells.
 %%%%
-Shining One powers
+The Shining One powers
 
 Followers of the Shining One are surrounded by a halo that reveals their
 enemies to them. Followers will gain power by killing evil beings, and with
@@ -602,7 +602,7 @@ them. They are confused and stupefied, their magical reserves drained, their
 enchantments unravelled. Casting spells, too, becomes unreliable – and even
 dangerous.
 %%%%
-Shining One wrath
+The Shining One wrath
 
 The Shining One's wrath is straightforward and unmistakable. Its victims find
 themselves smote with holy fire and beset with holy warriors. Sinners will be
