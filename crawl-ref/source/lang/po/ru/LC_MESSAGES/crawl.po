@@ -98503,3 +98503,113 @@ msgctxt "%(severely)s %( wounded)s"
 msgid "%s %s"
 msgstr "%s %s"
 
+#: 
+msgctxt "%s bites you for 10 damage with +3 dagger!!!"
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s is blown up!"
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s hits a closed door."
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s loses its grip on you."
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s constrict the jackal for 15, but do no damage."
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s collides with you!"
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s violently stops moving!"
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s completely misses centaur captain skeleton!"
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s is constricted for 15, but do no damage."
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s slams into the wall!"
+msgid "you"
+msgstr "вы"
+
+#: 
+msgctxt "%s sword falls to the floor!"
+msgid "you"
+msgstr "вас"
+
+#: 
+msgctxt "The mighty blow completely misses %s!"
+msgid "you"
+msgstr "вам"
+
+#: 
+msgctxt "Your bite misses %s."
+msgid "you"
+msgstr "вам"
+
+#: 
+msgctxt "A dart trap hits %s!"
+msgid "you"
+msgstr "вам"
+
+#: 
+msgctxt "You slice %s like an onion for 10 damage!!"
+msgid "you"
+msgstr "вас"
+
+#: 
+msgctxt "You kill %s!"
+msgid "you"
+msgstr "вас"
+
+#: 
+msgctxt "Octopode loses its grip on %s."
+msgid "you"
+msgstr "вас"
+
+#: 
+msgctxt "The grasping roots constrict %s for 15, but do no damage."
+msgid "you"
+msgstr "вас"
+
+#: 
+msgctxt "The captain's cutlass flashes! You lacerate %s!!"
+msgid "you"
+msgstr "вас"
+
+#: 
+msgctxt "You collide with %s!"
+msgid "you"
+msgstr "вами"
+
+#: 
+msgctxt "Collided with %s caused by salamander mystic."
+msgid "you"
+msgstr "вами"
+
+#: 
+msgctxt "Collided with the jackal caused by %s."
+msgid "you"
+msgstr "вами"
+
