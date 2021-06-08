@@ -1098,7 +1098,7 @@ string monster_info::common_name(actor_i18n_context_type i18n_context) const
         case MONS_ZOMBIE_LARGE:
 #endif
             if (!is(MB_NAME_ZOMBIE))
-                suffix = _("zombie");
+                suffix = translate_actor(i18n_context, "zombie");
             break;
         case MONS_SKELETON:
 #if TAG_MAJOR_VERSION == 34
@@ -1106,7 +1106,7 @@ string monster_info::common_name(actor_i18n_context_type i18n_context) const
         case MONS_SKELETON_LARGE:
 #endif
             if (!is(MB_NAME_ZOMBIE))
-                suffix = _("skeleton");
+                suffix = translate_actor(i18n_context, "skeleton");
             break;
         case MONS_SIMULACRUM:
 #if TAG_MAJOR_VERSION == 34
@@ -1114,17 +1114,17 @@ string monster_info::common_name(actor_i18n_context_type i18n_context) const
         case MONS_SIMULACRUM_LARGE:
 #endif
             if (!is(MB_NAME_ZOMBIE))
-                suffix = _("simulacrum");
+                suffix = translate_actor(i18n_context, "simulacrum");
             break;
         case MONS_SPECTRAL_THING:
             if (nocore)
-                suffix = _("spectre");
+                suffix = translate_actor(i18n_context, "spectre");
             break;
         case MONS_PILLAR_OF_SALT:
-            suffix = _("shaped pillar of salt");
+            suffix = translate_actor(i18n_context, "shaped pillar of salt");
             break;
         case MONS_BLOCK_OF_ICE:
-            suffix = _("shaped block of ice");
+            suffix = translate_actor(i18n_context, "shaped block of ice");
             break;
         default:
             break;

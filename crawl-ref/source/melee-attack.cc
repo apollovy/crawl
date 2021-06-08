@@ -1539,6 +1539,10 @@ int melee_attack::player_apply_final_multipliers(int damage)
     return damage;
 }
 
+
+#define translate_attack_verb(Verb) translate_other(I18NC_PLAYER_ATTACK_VERB, Verb)
+#define translate_verb_degree(Degree) translate_other(I18NC_PLAYER_ATTACK_DEGREE, Degree)
+
 void melee_attack::set_attack_verb(int damage)
 {
     if (!attacker->is_player())
@@ -1564,9 +1568,9 @@ void melee_attack::set_attack_verb(int damage)
         && weap_type != WPN_UNARMED)
     {
         if (weap_type != WPN_UNKNOWN)
-            attack_verb = "hit";
+            attack_verb = translate_attack_verb("hit");
         else
-            attack_verb = "clumsily bash";
+            attack_verb = translate_attack_verb("clumsily bash");
         return;
     }
 
@@ -1578,32 +1582,32 @@ void melee_attack::set_attack_verb(int damage)
     {
     case DAM_PIERCE:
         if (damage < HIT_MED)
-            attack_verb = "puncture";
+            attack_verb = translate_attack_verb("puncture");
         else if (damage < HIT_STRONG)
-            attack_verb = "impale";
+            attack_verb = translate_attack_verb("impale");
         else
         {
             if (defender->is_monster()
                 && defender_visible
                 && defender_genus == MONS_HOG)
             {
-                attack_verb = "spit";
-                verb_degree = "like the proverbial pig";
+                attack_verb = translate_attack_verb("spit");
+                verb_degree = translate_verb_degree("like the proverbial pig");
             }
             else if (defender_genus == MONS_CRAB
                      && Options.has_fake_lang(flang_t::grunt))
             {
-                attack_verb = "attack";
-                verb_degree = "'s weak point";
+                attack_verb = translate_attack_verb("attack");
+                verb_degree = translate_verb_degree("'s weak point");
             }
             else
             {
                 static const char * const pierce_desc[][2] =
                 {
-                    {"spit", "like a pig"},
-                    {"skewer", "like a kebab"},
-                    {"stick", "like a pincushion"},
-                    {"perforate", "like a sieve"}
+                    {translate_attack_verb("spit"),      translate_verb_degree("like a pig")},
+                    {translate_attack_verb("skewer"),    translate_verb_degree("like a kebab")},
+                    {translate_attack_verb("stick"),     translate_verb_degree("like a pincushion")},
+                    {translate_attack_verb("perforate"), translate_verb_degree("like a sieve")}
                 };
                 const int choice = random2(ARRAYSZ(pierce_desc));
                 attack_verb = pierce_desc[choice][0];
@@ -1614,45 +1618,45 @@ void melee_attack::set_attack_verb(int damage)
 
     case DAM_SLICE:
         if (damage < HIT_MED)
-            attack_verb = "slash";
+            attack_verb = translate_attack_verb("slash");
         else if (damage < HIT_STRONG)
-            attack_verb = "slice";
+            attack_verb = translate_attack_verb("slice");
         else if (defender_genus == MONS_OGRE)
         {
-            attack_verb = "dice";
-            verb_degree = "like an onion";
+            attack_verb = translate_attack_verb("dice");
+            verb_degree = translate_verb_degree("like an onion");
         }
         else if (defender_genus == MONS_SKELETON)
         {
-            attack_verb = "fracture";
-            verb_degree = "into splinters";
+            attack_verb = translate_attack_verb("fracture");
+            verb_degree = translate_verb_degree("into splinters");
         }
         else if (defender_genus == MONS_HOG)
         {
-            attack_verb = "carve";
-            verb_degree = "like the proverbial ham";
+            attack_verb = translate_attack_verb("carve");
+            verb_degree = translate_verb_degree("like the proverbial ham");
         }
         else if ((defender_genus == MONS_TENGU
                   || get_mon_shape(defender_genus) == MON_SHAPE_BIRD)
                  && one_chance_in(3))
         {
-            attack_verb = "carve";
-            verb_degree = "like a turkey";
+            attack_verb = translate_attack_verb("carve");
+            verb_degree = translate_verb_degree("like a turkey");
         }
         else if ((defender_genus == MONS_YAK || defender_genus == MONS_YAKTAUR)
                  && Options.has_fake_lang(flang_t::grunt))
         {
-            attack_verb = "shave";
+            attack_verb = translate_attack_verb("shave");
         }
         else
         {
             static const char * const slice_desc[][2] =
             {
-                {"open",    "like a pillowcase"},
-                {"slice",   "like a ripe choko"},
-                {"cut",     "into ribbons"},
-                {"carve",   "like a ham"},
-                {"chop",    "into pieces"}
+                {translate_attack_verb("open"),    translate_verb_degree("like a pillowcase")},
+                {translate_attack_verb("slice"),   translate_verb_degree("like a ripe choko")},
+                {translate_attack_verb("cut"),     translate_verb_degree("into ribbons")},
+                {translate_attack_verb("carve"),   translate_verb_degree("like a ham")},
+                {translate_attack_verb("chop"),    translate_verb_degree("into pieces")}
             };
             const int choice = random2(ARRAYSZ(slice_desc));
             attack_verb = slice_desc[choice][0];
@@ -1662,28 +1666,28 @@ void melee_attack::set_attack_verb(int damage)
 
     case DAM_BLUDGEON:
         if (damage < HIT_MED)
-            attack_verb = one_chance_in(4) ? "thump" : "sock";
+            attack_verb = one_chance_in(4) ? translate_attack_verb("thump") : translate_attack_verb("sock");
         else if (damage < HIT_STRONG)
-            attack_verb = "bludgeon";
+            attack_verb = translate_attack_verb("bludgeon");
         else if (defender_genus == MONS_SKELETON)
         {
-            attack_verb = "shatter";
-            verb_degree = "into splinters";
+            attack_verb = translate_attack_verb("shatter");
+            verb_degree = translate_verb_degree("into splinters");
         }
         else if (defender->type == MONS_GREAT_ORB_OF_EYES)
         {
-            attack_verb = "splatter";
-            verb_degree = "into a gooey mess";
+            attack_verb = translate_attack_verb("splatter");
+            verb_degree = translate_verb_degree("into a gooey mess");
         }
         else
         {
             static const char * const bludgeon_desc[][2] =
             {
-                {"crush",   "like a grape"},
-                {"beat",    "like a drum"},
-                {"hammer",  "like a gong"},
-                {"pound",   "like an anvil"},
-                {"flatten", "like a pancake"}
+                {translate_attack_verb("crush"),   translate_verb_degree("like a grape")},
+                {translate_attack_verb("beat"),    translate_verb_degree("like a drum")},
+                {translate_attack_verb("hammer"),  translate_verb_degree("like a gong")},
+                {translate_attack_verb("pound"),   translate_verb_degree("like an anvil")},
+                {translate_attack_verb("flatten"), translate_verb_degree("like a pancake")}
             };
             const int choice = random2(ARRAYSZ(bludgeon_desc));
             attack_verb = bludgeon_desc[choice][0];
@@ -1693,19 +1697,19 @@ void melee_attack::set_attack_verb(int damage)
 
     case DAM_WHIP:
         if (damage < HIT_MED)
-            attack_verb = "whack";
+            attack_verb = translate_attack_verb("whack");
         else if (damage < HIT_STRONG)
-            attack_verb = "thrash";
+            attack_verb = translate_attack_verb("thrash");
         else
         {
             if (defender->holiness() & (MH_HOLY | MH_NATURAL | MH_DEMONIC))
             {
-                attack_verb = "punish";
-                verb_degree = ", causing immense pain";
+                attack_verb = translate_attack_verb("punish");
+                verb_degree = translate_verb_degree(", causing immense pain");
                 break;
             }
             else
-                attack_verb = "devastate";
+                attack_verb = translate_attack_verb("devastate");
         }
         break;
 
@@ -1728,47 +1732,47 @@ void melee_attack::set_attack_verb(int damage)
         if (you.damage_type() == DVORP_CLAWING)
         {
             if (damage < HIT_WEAK)
-                attack_verb = "scratch";
+                attack_verb = translate_attack_verb("scratch");
             else if (damage < HIT_MED)
-                attack_verb = "claw";
+                attack_verb = translate_attack_verb("claw");
             else if (damage < HIT_STRONG)
-                attack_verb = "mangle";
+                attack_verb = translate_attack_verb( "mangle");
             else
-                attack_verb = "eviscerate";
+                attack_verb = translate_attack_verb("eviscerate");
         }
         else if (you.damage_type() == DVORP_TENTACLE)
         {
             if (damage < HIT_WEAK)
-                attack_verb = "tentacle-slap";
+                attack_verb = translate_attack_verb("tentacle-slap");
             else if (damage < HIT_MED)
-                attack_verb = "bludgeon";
+                attack_verb = translate_attack_verb("bludgeon");
             else if (damage < HIT_STRONG)
-                attack_verb = "batter";
+                attack_verb = translate_attack_verb("batter");
             else
-                attack_verb = "thrash";
+                attack_verb = translate_attack_verb("thrash");
         }
         else
         {
             if (damage < HIT_WEAK)
-                attack_verb = "hit";
+                attack_verb = translate_attack_verb("hit");
             else if (damage < HIT_MED)
-                attack_verb = "punch";
+                attack_verb = translate_attack_verb("punch");
             else if (damage < HIT_STRONG)
-                attack_verb = "pummel";
+                attack_verb = translate_attack_verb("pummel");
             else if (defender->is_monster()
                      && mons_genus(defender->type) == MONS_FORMICID)
             {
-                attack_verb = "squash";
-                verb_degree = "like the proverbial ant";
+                attack_verb = translate_attack_verb("squash");
+                verb_degree = translate_verb_degree("like the proverbial ant");
             }
             else
             {
                 static const char * const punch_desc[][2] =
                 {
-                    {"pound",     "into fine dust"},
-                    {"pummel",    "like a punching bag"},
-                    {"pulverise", ""},
-                    {"squash",    "like an ant"}
+                    {translate_attack_verb("pound"),     translate_verb_degree("into fine dust")},
+                    {translate_attack_verb("pummel"),    translate_verb_degree("like a punching bag")},
+                    {translate_attack_verb("pulverise"), ""},
+                    {translate_attack_verb("squash"),    translate_verb_degree("like an ant")}
                 };
                 const int choice = random2(ARRAYSZ(punch_desc));
                 // XXX: could this distinction work better?
@@ -1776,8 +1780,8 @@ void melee_attack::set_attack_verb(int damage)
                     && defender->is_monster()
                     && mons_has_blood(defender->type))
                 {
-                    attack_verb = "beat";
-                    verb_degree = "into a bloody pulp";
+                    attack_verb = translate_attack_verb("beat");
+                    verb_degree = translate_verb_degree("into a bloody pulp");
                 }
                 else
                 {
@@ -1791,7 +1795,7 @@ void melee_attack::set_attack_verb(int damage)
 
     case WPN_UNKNOWN:
     default:
-        attack_verb = "hit";
+        attack_verb = translate_attack_verb("hit");
         break;
     }
 }
@@ -2412,6 +2416,11 @@ void melee_attack::announce_hit()
     }
     else
     {
+        if (!verb_degree.empty() && verb_degree[0] != ' '
+            && verb_degree[0] != ',' && verb_degree[0] != '\'')
+        {
+            verb_degree = " " + verb_degree;
+        }
         mprf(__("You %(slice)s %(the jackal)s%( like an onion)s%( for 10 damage)s%(!!!!!)s", "You %s %s%s%s%s"),
              translate_other(I18NC_PLAYER_ATTACK_VERB, attack_verb.c_str()),
              defender->name(I18NC_PLAYER_MELEE_DEFENDER).c_str(),

@@ -98613,3 +98613,348 @@ msgctxt "Collided with the jackal caused by %s."
 msgid "you"
 msgstr "вами"
 
+#: melee-attack.cc:1571 melee-attack.cc:1757 melee-attack.cc:1798
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "hit"
+msgstr "бьёте"
+
+#: melee-attack.cc:1573
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "clumsily bash"
+msgstr "неуклюже лупите"
+
+#: melee-attack.cc:1585
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "puncture"
+msgstr "прокалываете"
+
+#: melee-attack.cc:1587
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "impale"
+msgstr "пронзаете"
+
+#: melee-attack.cc:1594 melee-attack.cc:1607
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "spit"
+msgstr "разделяете"
+
+#: melee-attack.cc:1600
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "attack"
+msgstr "атакуете"
+
+#: melee-attack.cc:1608
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "skewer"
+msgstr "насаживаете на палочку"
+
+#: melee-attack.cc:1609
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "stick"
+msgstr "истыкиваете"
+
+#: melee-attack.cc:1610
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "perforate"
+msgstr "дырявите"
+
+#: melee-attack.cc:1621
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "slash"
+msgstr "рубите"
+
+#: melee-attack.cc:1623 melee-attack.cc:1656
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "slice"
+msgstr "режете"
+
+#: melee-attack.cc:1626
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "dice"
+msgstr "мелко нарезаете"
+
+#: melee-attack.cc:1631
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "fracture"
+msgstr "измельчаете"
+
+#: melee-attack.cc:1636 melee-attack.cc:1643 melee-attack.cc:1658
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "carve"
+msgstr "разделываете"
+
+#: melee-attack.cc:1649
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "shave"
+msgstr "обриваете"
+
+#: melee-attack.cc:1655
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "open"
+msgstr "распарываете"
+
+#: melee-attack.cc:1657
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "cut"
+msgstr "режете"
+
+#: melee-attack.cc:1659
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "chop"
+msgstr "нарезаете"
+
+#: melee-attack.cc:1669
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "thump"
+msgstr "колотите"
+
+#: melee-attack.cc:1669
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "sock"
+msgstr "бьёте"
+
+#: melee-attack.cc:1671 melee-attack.cc:1748
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "bludgeon"
+msgstr "шмякаете"
+
+#: melee-attack.cc:1674
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "shatter"
+msgstr "разбиваете"
+
+#: melee-attack.cc:1679
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "splatter"
+msgstr "размазываете"
+
+#: melee-attack.cc:1686
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "crush"
+msgstr "толчёте"
+
+#: melee-attack.cc:1687 melee-attack.cc:1783
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "beat"
+msgstr "бьёте"
+
+#: melee-attack.cc:1688
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "hammer"
+msgstr "колотите"
+
+#: melee-attack.cc:1689 melee-attack.cc:1772
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "pound"
+msgstr "долбите"
+
+#: melee-attack.cc:1690
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "flatten"
+msgstr "раскатываете"
+
+#: melee-attack.cc:1700
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "whack"
+msgstr "шлёпаете"
+
+#: melee-attack.cc:1702 melee-attack.cc:1752
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "thrash"
+msgstr "лупите"
+
+#: melee-attack.cc:1707
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "punish"
+msgstr "наказываете"
+
+#: melee-attack.cc:1712
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "devastate"
+msgstr "уничтожаете"
+
+#: melee-attack.cc:1735
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "scratch"
+msgstr "чиркаете"
+
+#: melee-attack.cc:1737
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "claw"
+msgstr "царапаете когтем"
+
+#: melee-attack.cc:1739
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "mangle"
+msgstr "калечите"
+
+#: melee-attack.cc:1741
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "eviscerate"
+msgstr "потрошите"
+
+#: melee-attack.cc:1746
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "tentacle-slap"
+msgstr "даёте леща"
+
+#: melee-attack.cc:1750
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "batter"
+msgstr "громите"
+
+#: melee-attack.cc:1759
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "punch"
+msgstr "ударяете"
+
+#: melee-attack.cc:1761 melee-attack.cc:1773
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "pummel"
+msgstr "мутузите"
+
+#: melee-attack.cc:1765 melee-attack.cc:1775
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "squash"
+msgstr "давите"
+
+#: melee-attack.cc:1774
+msgctxt "You %s the jackal like an onion for 10 damage!!"
+msgid "pulverise"
+msgstr "измельчаете"
+
+#: melee-attack.cc:1595
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like the proverbial pig"
+msgstr "аки пресловутую свинью"
+
+#: melee-attack.cc:1601
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "'s weak point"
+msgstr "в слабое место"
+
+#: melee-attack.cc:1607
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a pig"
+msgstr "как свинью"
+
+#: melee-attack.cc:1608
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a kebab"
+msgstr "будто кебаб"
+
+#: melee-attack.cc:1609
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a pincushion"
+msgstr "как подушечку для булавок"
+
+#: melee-attack.cc:1610
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a sieve"
+msgstr "будто решето"
+
+#: melee-attack.cc:1627
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like an onion"
+msgstr "словно лук"
+
+#: melee-attack.cc:1632 melee-attack.cc:1675
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "into splinters"
+msgstr "в щепки"
+
+#: melee-attack.cc:1637
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like the proverbial ham"
+msgstr "аки пресловутуюю ветчину"
+
+#: melee-attack.cc:1644
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a turkey"
+msgstr "будто индейку"
+
+#: melee-attack.cc:1655
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a pillowcase"
+msgstr "словно наволочку"
+
+#: melee-attack.cc:1656
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a ripe choko"
+msgstr "точно спелое чоко"
+
+#: melee-attack.cc:1657
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "into ribbons"
+msgstr "на ленты"
+
+#: melee-attack.cc:1658
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a ham"
+msgstr "будто ветчину"
+
+#: melee-attack.cc:1659
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "into pieces"
+msgstr "на куски"
+
+#: melee-attack.cc:1680
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "into a gooey mess"
+msgstr "в клейкое мессиво"
+
+#: melee-attack.cc:1686
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a grape"
+msgstr "будто виноград"
+
+#: melee-attack.cc:1687
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a drum"
+msgstr "словно в барабан"
+
+#: melee-attack.cc:1688
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a gong"
+msgstr "словно в гонг"
+
+#: melee-attack.cc:1689
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like an anvil"
+msgstr "будто наковальню"
+
+#: melee-attack.cc:1690
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a pancake"
+msgstr "аки блин"
+
+#: melee-attack.cc:1708
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid ", causing immense pain"
+msgstr ", причиняя огромную боль"
+
+#: melee-attack.cc:1766
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like the proverbial ant"
+msgstr "словно пресловутого муравья"
+
+#: melee-attack.cc:1772
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "into fine dust"
+msgstr "в мелкую пыль"
+
+#: melee-attack.cc:1773
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like a punching bag"
+msgstr "как боксёрскую грушу"
+
+#: melee-attack.cc:1775
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "like an ant"
+msgstr "точно муравья"
+
+#: melee-attack.cc:1784
+msgctxt "You slice the jackal%s for 10 damage!!"
+msgid "into a bloody pulp"
+msgstr "до состояния кровавого мессива"
+
