@@ -5446,8 +5446,8 @@ string get_damage_level_string(const monster_info& mi, mon_dam_level_type mdam)
 {
     const char* level;
     bool is_wounded_damaged = wounded_damaged(mi.holi);
-    const char *monster_db_name;
-    monster_db_name = mi.db_name().c_str();
+    const string monster_db_name_string = mi.db_name();
+    auto monster_db_name = monster_db_name_string.c_str();
     const char* description = is_wounded_damaged
         ? __(monster_db_name, "damaged")
         : __(monster_db_name, "wounded");
