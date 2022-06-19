@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B577E4B6285FA4B5002E7FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577E4B5285FA4B5002E7FCF /* AppDelegate.swift */; };
 		B577E4B8285FA4B5002E7FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577E4B7285FA4B5002E7FCF /* SceneDelegate.swift */; };
 		B577E4BA285FA4B5002E7FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577E4B9285FA4B5002E7FCF /* ViewController.swift */; };
 		B577E4BD285FA4B5002E7FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B577E4BB285FA4B5002E7FCF /* Main.storyboard */; };
@@ -320,7 +319,6 @@
 		B577E8F7285FA51C002E7FCF /* species.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E7C1285FA51B002E7FCF /* species.cc */; };
 		B577E8F8285FA51C002E7FCF /* branch.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E7C3285FA51B002E7FCF /* branch.cc */; };
 		B577E8F9285FA51C002E7FCF /* mon-gear.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E7C4285FA51B002E7FCF /* mon-gear.cc */; };
-		B577E902285FA789002E7FCF /* Binaries in Resources */ = {isa = PBXBuildFile; fileRef = B577E901285FA789002E7FCF /* Binaries */; };
 		B577E906285FA9EC002E7FCF /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B577E904285FA9B9002E7FCF /* libintl.a */; };
 		B577E99B285FAAE4002E7FCF /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = B577E966285FAAE1002E7FCF /* ltm.c */; };
 		B577E99C285FAAE4002E7FCF /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = B577E968285FAAE1002E7FCF /* print.c */; };
@@ -373,6 +371,9 @@
 		B577ED43285FC27D002E7FCF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B577ED42285FC278002E7FCF /* libsqlite3.tbd */; };
 		B577ED47285FC3EA002E7FCF /* levcomp.lex.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577ED44285FC3EA002E7FCF /* levcomp.lex.cc */; };
 		B577ED48285FC3EA002E7FCF /* levcomp.tab.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577ED45285FC3EA002E7FCF /* levcomp.tab.cc */; };
+		B577ED54285FC78E002E7FCF /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B577ED53285FC78E002E7FCF /* libintl.a */; };
+		B577ED56285FC7E3002E7FCF /* dat in Resources */ = {isa = PBXBuildFile; fileRef = B577ED55285FC7E3002E7FCF /* dat */; };
+		B577ED58285FC894002E7FCF /* lang in Resources */ = {isa = PBXBuildFile; fileRef = B577ED57285FC894002E7FCF /* lang */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1198,7 +1199,6 @@
 		B577E7C3285FA51B002E7FCF /* branch.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = branch.cc; path = ../../branch.cc; sourceTree = "<group>"; };
 		B577E7C4285FA51B002E7FCF /* mon-gear.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "mon-gear.cc"; path = "../../mon-gear.cc"; sourceTree = "<group>"; };
 		B577E7C5285FA51B002E7FCF /* seen-context-type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "seen-context-type.h"; path = "../../seen-context-type.h"; sourceTree = "<group>"; };
-		B577E901285FA789002E7FCF /* Binaries */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Binaries; path = dcss/Binaries; sourceTree = "<group>"; };
 		B577E904285FA9B9002E7FCF /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libintl.a; path = dcss/Binaries/glib/lib/libintl.a; sourceTree = "<group>"; };
 		B577E964285FAAE1002E7FCF /* lzio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzio.h; path = ../../contrib/lua/src/lzio.h; sourceTree = "<group>"; };
 		B577E965285FAAE1002E7FCF /* ltable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ltable.h; path = ../../contrib/lua/src/ltable.h; sourceTree = "<group>"; };
@@ -1294,6 +1294,10 @@
 		B577ED46285FC3EA002E7FCF /* levcomp.tab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = levcomp.tab.h; path = ../../prebuilt/levcomp.tab.h; sourceTree = "<group>"; };
 		B577ED49285FC408002E7FCF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B577ED4B285FC415002E7FCF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B577ED51285FC78E002E7FCF /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
+		B577ED53285FC78E002E7FCF /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
+		B577ED55285FC7E3002E7FCF /* dat */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dat; path = ../../dat; sourceTree = "<group>"; };
+		B577ED57285FC894002E7FCF /* lang */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lang; path = ../../lang; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1303,6 +1307,7 @@
 			files = (
 				B577ED32285FBD88002E7FCF /* AVFAudio.framework in Frameworks */,
 				B577ED24285FB4C3002E7FCF /* libFreetype2.a in Frameworks */,
+				B577ED54285FC78E002E7FCF /* libintl.a in Frameworks */,
 				B577E9EF285FB10A002E7FCF /* libSDL2_image.a in Frameworks */,
 				B577ED3D285FBEF4002E7FCF /* CoreMotion.framework in Frameworks */,
 				B577ED33285FBD9E002E7FCF /* AudioToolbox.framework in Frameworks */,
@@ -1321,8 +1326,10 @@
 		B577E4A9285FA4B5002E7FCF = {
 			isa = PBXGroup;
 			children = (
+				B577ED57285FC894002E7FCF /* lang */,
+				B577ED55285FC7E3002E7FCF /* dat */,
+				B577ED4E285FC78E002E7FCF /* Binaries */,
 				B577E90A285FAA6F002E7FCF /* contrib */,
-				B577E901285FA789002E7FCF /* Binaries */,
 				B577E4C9285FA4C8002E7FCF /* crawl */,
 				B577E4B4285FA4B5002E7FCF /* dcss */,
 				B577E4B3285FA4B5002E7FCF /* Products */,
@@ -2271,6 +2278,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B577ED4E285FC78E002E7FCF /* Binaries */ = {
+			isa = PBXGroup;
+			children = (
+				B577ED4F285FC78E002E7FCF /* glib */,
+			);
+			name = Binaries;
+			path = dcss/Binaries;
+			sourceTree = "<group>";
+		};
+		B577ED4F285FC78E002E7FCF /* glib */ = {
+			isa = PBXGroup;
+			children = (
+				B577ED50285FC78E002E7FCF /* include */,
+				B577ED52285FC78E002E7FCF /* lib */,
+			);
+			path = glib;
+			sourceTree = "<group>";
+		};
+		B577ED50285FC78E002E7FCF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B577ED51285FC78E002E7FCF /* libintl.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B577ED52285FC78E002E7FCF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B577ED53285FC78E002E7FCF /* libintl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2378,9 +2419,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B577ED58285FC894002E7FCF /* lang in Resources */,
+				B577ED56285FC7E3002E7FCF /* dat in Resources */,
 				B577E4C2285FA4B6002E7FCF /* LaunchScreen.storyboard in Resources */,
 				B577E4BF285FA4B6002E7FCF /* Assets.xcassets in Resources */,
-				B577E902285FA789002E7FCF /* Binaries in Resources */,
 				B577E4BD285FA4B5002E7FCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2584,7 +2626,6 @@
 				B577E853285FA51B002E7FCF /* l-dgnevt.cc in Sources */,
 				B577E7C6285FA51B002E7FCF /* god-item.cc in Sources */,
 				B577E99D285FAAE4002E7FCF /* lapi.c in Sources */,
-				B577E4B6285FA4B5002E7FCF /* AppDelegate.swift in Sources */,
 				B577E872285FA51B002E7FCF /* l-subvault.cc in Sources */,
 				B577E871285FA51B002E7FCF /* dgn-proclayouts.cc in Sources */,
 				B577E8E8285FA51C002E7FCF /* windowmanager-sdl.cc in Sources */,
