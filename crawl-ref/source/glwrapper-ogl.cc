@@ -13,10 +13,10 @@
 #  ifdef __ANDROID__
 #   include <SDL.h>
 #  else
-#   include <SDL2/SDL.h>
-#   include <SDL_gles.h>
+#   include <SDL.h>
+#   include <SDL_opengles.h>
 #  endif
-#  include <GLES/gl.h>
+#  include <OpenGLES/ES3/gl.h>
 # else
 #  ifdef __ANDROID__
 #   include <SDL.h>
@@ -75,10 +75,10 @@ namespace opengl
             return "GL_INVALID_FRAMEBUFFER_OPERATION";
         case GL_OUT_OF_MEMORY:
             return "GL_OUT_OF_MEMORY (fatal)";
-        case GL_STACK_UNDERFLOW:
-            return "GL_STACK_UNDERFLOW";
-        case GL_STACK_OVERFLOW:
-            return "GL_STACK_OVERFLOW";
+//        case GL_STACK_UNDERFLOW:
+//            return "GL_STACK_UNDERFLOW";
+//        case GL_STACK_OVERFLOW:
+//            return "GL_STACK_OVERFLOW";
         default:
             return make_stringf("Unknown OpenGL error %d", e);
         }

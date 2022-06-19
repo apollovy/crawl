@@ -74,7 +74,7 @@
 #ifdef TARGET_COMPILER_VC
 # include <SDL_syswm.h>
 #else
-# include <SDL2/SDL_syswm.h>
+# include <SDL_syswm.h>
 #endif
 #endif
 #endif

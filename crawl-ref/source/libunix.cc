@@ -27,7 +27,6 @@
 #include <cstring>
 #include <cwchar>
 #include <langinfo.h>
-#include <term.h>
 #include <termios.h>
 #include <unistd.h>
 

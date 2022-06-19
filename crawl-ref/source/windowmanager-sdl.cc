@@ -18,11 +18,11 @@
 # ifdef TARGET_COMPILER_VC
 #  include <SDL.h>
 # else
-#  include <SDL2/SDL.h>
+#  include <SDL.h>
 # endif
 # include <SDL_image.h>
 # if defined(USE_SOUND) && !defined(WINMM_PLAY_SOUNDS)
-#  include <SDL2/SDL_mixer.h>
+#  include <SDL_mixer.h>
 # endif
 #endif
 

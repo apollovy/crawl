@@ -20,7 +20,7 @@
 #    ifdef __ANDROID__
 #        include <SDL_mixer.h>
 #    else
-#        include <SDL2/SDL_mixer.h>
+#        include <SDL_mixer.h>
 #    endif
     Mix_Chunk* sdl_sound_to_play = nullptr;
 #endif
