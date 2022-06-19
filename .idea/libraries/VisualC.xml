@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="VisualC">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/crawl-ref/source/android-project/jni/SDL2_mixer/external/smpeg2-2.0.0/VisualC.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

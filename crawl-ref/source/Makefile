@@ -273,7 +273,7 @@ ifdef msys
 	endif
 endif
 ifeq ($(uname_S),Darwin)
-	LIBS += /usr/local/lib/libintl.dylib
+	LIBS += /usr/local/lib/libintl.dylib /Library/Frameworks/SDL2.framework/SDL2
 ifdef MAC_TARGET
 	# for reasons I really cannot figure out, setting GAME later (when the
 	# other MAC_TARGET checks are done) really does not work.

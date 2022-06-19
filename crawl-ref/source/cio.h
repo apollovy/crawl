@@ -14,8 +14,10 @@
 
 #ifdef USE_TILE_LOCAL
  #include "tilebuf.h"
- #include <SDL_keycode.h>
+ #include "SDL_keycode.h"
 #endif
+
+#undef TARGET_OS_WINDOWS
 
 enum keyfun_action
 {

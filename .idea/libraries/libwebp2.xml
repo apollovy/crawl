@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libwebp2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/crawl-ref/source/android-project/jni/SDL2_image/external/libwebp-0.3.0/swig/libwebp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MakefileSettings">
+    <option name="linkedExternalProjectsSettings">
+      <MakefileProjectSettings>
+        <option name="buildOptions" value="-j 16 PYTHON=~/.pyenv/versions/dcss/bin/python TILES=1 ENABLE_NLS=1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/crawl-ref/source" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/crawl-ref/source" />
+          </set>
+        </option>
+        <option name="version" value="2" />
+      </MakefileProjectSettings>
+    </option>
+  </component>
+  <component name="MakefileWorkspace" PROJECT_DIR="$PROJECT_DIR$/crawl-ref/source">
+    <contentRoot DIR="$PROJECT_DIR$" />
+  </component>
+</project>
