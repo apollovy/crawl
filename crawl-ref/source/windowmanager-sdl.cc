@@ -366,8 +366,8 @@ int SDLWrapper::init(coord_def *m_windowsz)
 
     // find the current display, based on the mouse position
     // TODO: probably want to allow configuring this?
-    int mouse_x, mouse_y;
-    SDL_GetGlobalMouseState(&mouse_x, &mouse_y);
+//    int mouse_x, mouse_y;
+//    SDL_GetGlobalMouseState(&mouse_x, &mouse_y);
 
     int displays = SDL_GetNumVideoDisplays();
     int cur_display;
@@ -375,11 +375,11 @@ int SDLWrapper::init(coord_def *m_windowsz)
     {
         SDL_Rect bounds;
         SDL_GetDisplayBounds(cur_display, &bounds);
-        if (mouse_x >= bounds.x && mouse_y >= bounds.y &&
-            mouse_x < bounds.x + bounds.w && mouse_y < bounds.y + bounds.h)
-        {
-            break;
-        }
+//        if (mouse_x >= bounds.x && mouse_y >= bounds.y &&
+//            mouse_x < bounds.x + bounds.w && mouse_y < bounds.y + bounds.h)
+//        {
+//            break;
+//        }
     }
     if (cur_display >= displays)
         cur_display = 0; // can this happen?

@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B577E4B8285FA4B5002E7FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577E4B7285FA4B5002E7FCF /* SceneDelegate.swift */; };
-		B577E4BA285FA4B5002E7FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577E4B9285FA4B5002E7FCF /* ViewController.swift */; };
-		B577E4BD285FA4B5002E7FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B577E4BB285FA4B5002E7FCF /* Main.storyboard */; };
+		B5462F36285FEA9C00E3E739 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = B5462F35285FEA9100E3E739 /* fonts */; };
+		B54FB9142860C61800BA35A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB9132860C61800BA35A1 /* UIKit.framework */; };
+		B54FB9152860C63500BA35A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB9112860C5F100BA35A1 /* Foundation.framework */; };
+		B54FB9172860C65200BA35A1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B577ED49285FC408002E7FCF /* OpenGLES.framework */; };
+		B54FB91B2860C6FC00BA35A1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB91A2860C6FB00BA35A1 /* QuartzCore.framework */; };
+		B54FB91D2860C74000BA35A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB9182860C67800BA35A1 /* CoreGraphics.framework */; };
+		B54FB91F2860C74C00BA35A1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB91E2860C74C00BA35A1 /* ImageIO.framework */; };
+		B54FB92C28611FAC00BA35A1 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E5FF285FA507002E7FCF /* main.cc */; };
 		B577E4BF285FA4B6002E7FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B577E4BE285FA4B6002E7FCF /* Assets.xcassets */; };
 		B577E4C2285FA4B6002E7FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B577E4C0285FA4B6002E7FCF /* LaunchScreen.storyboard */; };
 		B577E7C6285FA51B002E7FCF /* god-item.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E4CE285FA501002E7FCF /* god-item.cc */; };
@@ -136,7 +141,6 @@
 		B577E840285FA51B002E7FCF /* coord-circle.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E5F6285FA507002E7FCF /* coord-circle.cc */; };
 		B577E841285FA51B002E7FCF /* attitude-change.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E5F8285FA507002E7FCF /* attitude-change.cc */; };
 		B577E842285FA51B002E7FCF /* command.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E5FC285FA507002E7FCF /* command.cc */; };
-		B577E843285FA51B002E7FCF /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E5FF285FA507002E7FCF /* main.cc */; };
 		B577E844285FA51B002E7FCF /* tilereg-skl.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E602285FA507002E7FCF /* tilereg-skl.cc */; };
 		B577E845285FA51B002E7FCF /* files.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E603285FA508002E7FCF /* files.cc */; };
 		B577E846285FA51B002E7FCF /* colour.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E608285FA508002E7FCF /* colour.cc */; };
@@ -429,11 +433,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5462F35285FEA9100E3E739 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../contrib/fonts; sourceTree = "<group>"; };
+		B54FB9112860C5F100BA35A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B54FB9132860C61800BA35A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B54FB9182860C67800BA35A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B54FB91A2860C6FB00BA35A1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B54FB91E2860C74C00BA35A1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B577E4B2285FA4B5002E7FCF /* dcss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dcss.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B577E4B5285FA4B5002E7FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B577E4B7285FA4B5002E7FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B577E4B9285FA4B5002E7FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B577E4BC285FA4B5002E7FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B577E4BE285FA4B6002E7FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B577E4C1285FA4B6002E7FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B577E4C3285FA4B6002E7FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1307,12 +1313,18 @@
 			files = (
 				B577ED32285FBD88002E7FCF /* AVFAudio.framework in Frameworks */,
 				B577ED24285FB4C3002E7FCF /* libFreetype2.a in Frameworks */,
+				B54FB91F2860C74C00BA35A1 /* ImageIO.framework in Frameworks */,
+				B54FB91B2860C6FC00BA35A1 /* QuartzCore.framework in Frameworks */,
 				B577ED54285FC78E002E7FCF /* libintl.a in Frameworks */,
+				B54FB91D2860C74000BA35A1 /* CoreGraphics.framework in Frameworks */,
 				B577E9EF285FB10A002E7FCF /* libSDL2_image.a in Frameworks */,
 				B577ED3D285FBEF4002E7FCF /* CoreMotion.framework in Frameworks */,
+				B54FB9172860C65200BA35A1 /* OpenGLES.framework in Frameworks */,
+				B54FB9152860C63500BA35A1 /* Foundation.framework in Frameworks */,
 				B577ED33285FBD9E002E7FCF /* AudioToolbox.framework in Frameworks */,
 				B577ED37285FBDED002E7FCF /* CoreServices.framework in Frameworks */,
 				B577ED28285FBD0D002E7FCF /* GameController.framework in Frameworks */,
+				B54FB9142860C61800BA35A1 /* UIKit.framework in Frameworks */,
 				B577E9E6285FAF7C002E7FCF /* libSDL2.a in Frameworks */,
 				B577E9BC285FAB13002E7FCF /* libiconv.tbd in Frameworks */,
 				B577ED43285FC27D002E7FCF /* libsqlite3.tbd in Frameworks */,
@@ -1348,10 +1360,6 @@
 		B577E4B4285FA4B5002E7FCF /* dcss */ = {
 			isa = PBXGroup;
 			children = (
-				B577E4B5285FA4B5002E7FCF /* AppDelegate.swift */,
-				B577E4B7285FA4B5002E7FCF /* SceneDelegate.swift */,
-				B577E4B9285FA4B5002E7FCF /* ViewController.swift */,
-				B577E4BB285FA4B5002E7FCF /* Main.storyboard */,
 				B577E4BE285FA4B6002E7FCF /* Assets.xcassets */,
 				B577E4C0285FA4B6002E7FCF /* LaunchScreen.storyboard */,
 				B577E4C3285FA4B6002E7FCF /* Info.plist */,
@@ -2132,6 +2140,11 @@
 		B577E903285FA9B9002E7FCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B54FB91E2860C74C00BA35A1 /* ImageIO.framework */,
+				B54FB91A2860C6FB00BA35A1 /* QuartzCore.framework */,
+				B54FB9182860C67800BA35A1 /* CoreGraphics.framework */,
+				B54FB9132860C61800BA35A1 /* UIKit.framework */,
+				B54FB9112860C5F100BA35A1 /* Foundation.framework */,
 				B577ED4B285FC415002E7FCF /* GLKit.framework */,
 				B577ED49285FC408002E7FCF /* OpenGLES.framework */,
 				B577ED42285FC278002E7FCF /* libsqlite3.tbd */,
@@ -2156,6 +2169,7 @@
 		B577E90A285FAA6F002E7FCF /* contrib */ = {
 			isa = PBXGroup;
 			children = (
+				B5462F35285FEA9100E3E739 /* fonts */,
 				B577ED44285FC3EA002E7FCF /* levcomp.lex.cc */,
 				B577ED45285FC3EA002E7FCF /* levcomp.tab.cc */,
 				B577ED46285FC3EA002E7FCF /* levcomp.tab.h */,
@@ -2421,9 +2435,9 @@
 			files = (
 				B577ED58285FC894002E7FCF /* lang in Resources */,
 				B577ED56285FC7E3002E7FCF /* dat in Resources */,
+				B5462F36285FEA9C00E3E739 /* fonts in Resources */,
 				B577E4C2285FA4B6002E7FCF /* LaunchScreen.storyboard in Resources */,
 				B577E4BF285FA4B6002E7FCF /* Assets.xcassets in Resources */,
-				B577E4BD285FA4B5002E7FCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2434,7 +2448,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B577E843285FA51B002E7FCF /* main.cc in Sources */,
 				B577E803285FA51B002E7FCF /* l-mapgrd.cc in Sources */,
 				B577E7DC285FA51B002E7FCF /* lookup-help.cc in Sources */,
 				B577E856285FA51B002E7FCF /* chardump.cc in Sources */,
@@ -2474,7 +2487,6 @@
 				B577E7EA285FA51B002E7FCF /* mon-place.cc in Sources */,
 				B577E84B285FA51B002E7FCF /* menu.cc in Sources */,
 				B577E808285FA51B002E7FCF /* l-travel.cc in Sources */,
-				B577E4BA285FA4B5002E7FCF /* ViewController.swift in Sources */,
 				B577E7EC285FA51B002E7FCF /* libw32c.cc in Sources */,
 				B577E87E285FA51B002E7FCF /* acquire.cc in Sources */,
 				B577E86A285FA51B002E7FCF /* clua.cc in Sources */,
@@ -2524,6 +2536,7 @@
 				B577E841285FA51B002E7FCF /* attitude-change.cc in Sources */,
 				B577E8F8285FA51C002E7FCF /* branch.cc in Sources */,
 				B577E83F285FA51B002E7FCF /* wizard.cc in Sources */,
+				B54FB92C28611FAC00BA35A1 /* main.cc in Sources */,
 				B577E9B0285FAAE4002E7FCF /* lgc.c in Sources */,
 				B577E802285FA51B002E7FCF /* tilecell.cc in Sources */,
 				B577E82A285FA51B002E7FCF /* god-companions.cc in Sources */,
@@ -2667,7 +2680,6 @@
 				B577E8DE285FA51C002E7FCF /* lang-fake.cc in Sources */,
 				B577E8DA285FA51C002E7FCF /* mon-speak.cc in Sources */,
 				B577E8CC285FA51C002E7FCF /* tilereg-cmd.cc in Sources */,
-				B577E4B8285FA4B5002E7FCF /* SceneDelegate.swift in Sources */,
 				B577E8A2285FA51B002E7FCF /* tutorial.cc in Sources */,
 				B577E846285FA51B002E7FCF /* colour.cc in Sources */,
 				B577E7E9285FA51B002E7FCF /* hints.cc in Sources */,
@@ -2808,14 +2820,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B577E4BB285FA4B5002E7FCF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B577E4BC285FA4B5002E7FCF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B577E4C0285FA4B6002E7FCF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2876,8 +2880,8 @@
 					"USE_FT=1",
 					"WIZARD=1",
 					"ASSERTS=1",
-					"PROPORTIONAL_FONT=\\\"../../contrib/fonts/DejaVuSans.ttf\\\"",
-					"MONOSPACED_FONT=\\\"../../contrib/fonts/DejaVuSansMono.ttf\\\"",
+					"PROPORTIONAL_FONT=\\\"./fonts/DejaVuSans.ttf\\\"",
+					"MONOSPACED_FONT=\\\"./fonts/DejaVuSansMono.ttf\\\"",
 					"CLUA_BINDINGS=1",
 					"USE_GLES=1",
 				);
@@ -2894,6 +2898,7 @@
 					../../contrib/sdl2/include,
 					"../../contrib/sdl2-image",
 					"/Users/apollov/work/freetype2-ios/include",
+					../../contrib/sdl2/src/video/uikit,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LIBRARY_SEARCH_PATHS = ./dcss/Binaries/glib/lib;
@@ -2954,8 +2959,8 @@
 					"USE_FT=1",
 					"WIZARD=1",
 					"ASSERTS=1",
-					"PROPORTIONAL_FONT=\\\"../../contrib/fonts/DejaVuSans.ttf\\\"",
-					"MONOSPACED_FONT=\\\"../../contrib/fonts/DejaVuSansMono.ttf\\\"",
+					"PROPORTIONAL_FONT=\\\"./fonts/DejaVuSans.ttf\\\"",
+					"MONOSPACED_FONT=\\\"./fonts/DejaVuSansMono.ttf\\\"",
 					"CLUA_BINDINGS=1",
 					"USE_GLES=1",
 				);
@@ -2972,6 +2977,7 @@
 					../../contrib/sdl2/include,
 					"../../contrib/sdl2-image",
 					"/Users/apollov/work/freetype2-ios/include",
+					../../contrib/sdl2/src/video/uikit,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LIBRARY_SEARCH_PATHS = ./dcss/Binaries/glib/lib;
@@ -2997,15 +3003,16 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
+					"DEBUG_DIAGNOSTICS=1",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dcss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3039,10 +3046,10 @@
 				INFOPLIST_FILE = dcss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
