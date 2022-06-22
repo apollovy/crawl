@@ -36,9 +36,12 @@
 #include "version.h"
 #include "windowmanager.h"
 
-//#ifdef DCSS_IOS
-//    #include "dcss_ios.hpp"
-//#endif
+#ifdef DCSS_IOS
+    #include "dcss_ios.hpp"
+#endif
+#if defined(__ANDROID__) || defined(DEBUG_DIAGNOSTICS)
+#include "SDL_opengl.h"
+#endif
 
 WindowManager *wm = nullptr;
 
@@ -518,7 +521,6 @@ int SDLWrapper::init(coord_def *m_windowsz)
     SDL_EnableScreenSaver();
     
 #ifdef DCSS_IOS
-#include "dcss_ios.hpp"
     SDL_SetEventFilter(HandleAppEvents, NULL);
 #endif // DCSS_IOS
     
@@ -1266,15 +1268,23 @@ SDL_Surface *SDLWrapper::load_image(const char *file) const
     return surf;
 }
 
-void SDLWrapper::glDebug(const char* msg)
+bool SDLWrapper::glDebug(const char* msg)
 {
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DEBUG_DIAGNOSTICS)
     int e = glGetError();
     if (e > 0)
-       __android_log_print(ANDROID_LOG_INFO, "Crawl", "ERROR %x: %s", e, msg);
+    {
+# ifdef __ANDROID__
+        __android_log_print(ANDROID_LOG_INFO, "Crawl.gl", "ERROR %x: %s", e, msg);
+# else
+        fprintf(stderr, "SDLWrapper ERROR %x: %s\n", e, msg);
+# endif
+        return true;
+    }
 #else
     UNUSED(msg);
 #endif
+    return false;
 }
 #endif // USE_SDL
 #endif // USE_TILE_LOCAL

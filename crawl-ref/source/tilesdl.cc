@@ -1386,7 +1386,7 @@ void TilesFramework::redraw()
     }
     wm->swap_buffers();
 
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
     glmanager->fixup_gl_state();
 #endif
 

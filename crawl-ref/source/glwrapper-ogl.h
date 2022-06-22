@@ -32,7 +32,7 @@ public:
     virtual void set_scissor(int x, int y, unsigned int w, unsigned int h) override;
     virtual void reset_scissor() override;
 #if defined(__ANDROID__) || defined(DCSS_IOS)
-    virtual void fixup_gl_state();
+    virtual void fixup_gl_state() override;
 #endif
 
     // Texture-specific functinos

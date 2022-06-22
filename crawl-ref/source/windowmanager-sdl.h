@@ -74,7 +74,7 @@ protected:
     int _desktop_height;
 
 private:
-    void glDebug(const char *msg);
+    bool glDebug(const char *msg);
 
     int prev_keycode;
     string m_textinput_queue;
