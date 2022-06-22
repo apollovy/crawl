@@ -149,7 +149,7 @@ OGLStateManager::OGLStateManager()
     glClearColor(0.0, 0.0, 0.0, 1.0f);
     glDepthFunc(GL_LEQUAL);
 
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
     m_last_tex = 0;
 #endif
     m_window_height = 0;
@@ -329,7 +329,7 @@ void OGLStateManager::reset_view_for_resize(const coord_def &m_windowsz,
 
     // For ease, vertex positions are pixel positions.
 #ifdef USE_GLES
-# ifdef __ANDROID__
+# if defined(__ANDROID__) || defined(DCSS_IOS)
     glOrthof(0, m_windowsz.x, m_windowsz.y, 0, -1000, 1000);
 # else
     glOrthox(0, m_windowsz.x, m_windowsz.y, 0, -1000, 1000);
@@ -362,7 +362,7 @@ void OGLStateManager::bind_texture(unsigned int texture)
 {
     glBindTexture(GL_TEXTURE_2D, texture);
     glDebug("glBindTexture");
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
     m_last_tex = texture;
 #endif
 }
@@ -372,7 +372,7 @@ void OGLStateManager::load_texture(unsigned char *pixels, unsigned int width,
                                    int xoffset, int yoffset)
 {
     // Assumptions...
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
     const GLenum bpp = GL_RGBA;
 #else
     const unsigned int bpp = 4;
@@ -436,7 +436,7 @@ void OGLStateManager::reset_view_for_redraw()
     glDebug("glTranslatef");
 }
 
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
 void OGLStateManager::fixup_gl_state()
 {
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

@@ -378,6 +378,7 @@
 		B577ED54285FC78E002E7FCF /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B577ED53285FC78E002E7FCF /* libintl.a */; };
 		B577ED56285FC7E3002E7FCF /* dat in Resources */ = {isa = PBXBuildFile; fileRef = B577ED55285FC7E3002E7FCF /* dat */; };
 		B577ED58285FC894002E7FCF /* lang in Resources */ = {isa = PBXBuildFile; fileRef = B577ED57285FC894002E7FCF /* lang */; };
+		B5FF5E8628638B4800D90679 /* dcss_ios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5FF5E8428638B4700D90679 /* dcss_ios.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1304,6 +1305,8 @@
 		B577ED53285FC78E002E7FCF /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
 		B577ED55285FC7E3002E7FCF /* dat */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dat; path = ../../dat; sourceTree = "<group>"; };
 		B577ED57285FC894002E7FCF /* lang */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lang; path = ../../lang; sourceTree = "<group>"; };
+		B5FF5E8428638B4700D90679 /* dcss_ios.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dcss_ios.cpp; sourceTree = "<group>"; };
+		B5FF5E8528638B4700D90679 /* dcss_ios.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dcss_ios.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1363,6 +1366,8 @@
 				B577E4BE285FA4B6002E7FCF /* Assets.xcassets */,
 				B577E4C0285FA4B6002E7FCF /* LaunchScreen.storyboard */,
 				B577E4C3285FA4B6002E7FCF /* Info.plist */,
+				B5FF5E8428638B4700D90679 /* dcss_ios.cpp */,
+				B5FF5E8528638B4700D90679 /* dcss_ios.hpp */,
 			);
 			path = dcss;
 			sourceTree = "<group>";
@@ -2681,6 +2686,7 @@
 				B577E8DA285FA51C002E7FCF /* mon-speak.cc in Sources */,
 				B577E8CC285FA51C002E7FCF /* tilereg-cmd.cc in Sources */,
 				B577E8A2285FA51B002E7FCF /* tutorial.cc in Sources */,
+				B5FF5E8628638B4800D90679 /* dcss_ios.cpp in Sources */,
 				B577E846285FA51B002E7FCF /* colour.cc in Sources */,
 				B577E7E9285FA51B002E7FCF /* hints.cc in Sources */,
 				B577E849285FA51B002E7FCF /* macro.cc in Sources */,
@@ -2884,6 +2890,7 @@
 					"MONOSPACED_FONT=\\\"./fonts/DejaVuSansMono.ttf\\\"",
 					"CLUA_BINDINGS=1",
 					"USE_GLES=1",
+					"DCSS_IOS=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -2963,6 +2970,7 @@
 					"MONOSPACED_FONT=\\\"./fonts/DejaVuSansMono.ttf\\\"",
 					"CLUA_BINDINGS=1",
 					"USE_GLES=1",
+					"DCSS_IOS=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;

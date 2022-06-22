@@ -36,6 +36,10 @@
 #include "version.h"
 #include "windowmanager.h"
 
+//#ifdef DCSS_IOS
+//    #include "dcss_ios.hpp"
+//#endif
+
 WindowManager *wm = nullptr;
 
 #define MIN_SDL_WINDOW_SIZE_X 800
@@ -351,7 +355,7 @@ SDLWrapper::~SDLWrapper()
 
 int SDLWrapper::init(coord_def *m_windowsz)
 {
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
     // Do SDL initialization
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER
                  | SDL_INIT_NOPARACHUTE) != 0)
@@ -390,7 +394,7 @@ int SDLWrapper::init(coord_def *m_windowsz)
     _desktop_width = display_mode.w;
     _desktop_height = display_mode.h;
 
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
     // Request OpenGL ES 1.0 context
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 1);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
@@ -412,7 +416,7 @@ int SDLWrapper::init(coord_def *m_windowsz)
     SDL_SetHint(SDL_HINT_VIDEO_HIGHDPI_DISABLED, "0");
 
 #ifdef USE_GLES
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
     unsigned int flags = SDL_WINDOW_OPENGL
                          | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI;
 #else
@@ -512,7 +516,12 @@ int SDLWrapper::init(coord_def *m_windowsz)
                              MIN_SDL_WINDOW_SIZE_Y);
 
     SDL_EnableScreenSaver();
-
+    
+#ifdef DCSS_IOS
+#include "dcss_ios.hpp"
+    SDL_SetEventFilter(HandleAppEvents, NULL);
+#endif // DCSS_IOS
+    
     return true;
 }
 

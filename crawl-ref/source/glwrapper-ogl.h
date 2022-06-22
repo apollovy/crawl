@@ -9,6 +9,9 @@
 #ifdef __ANDROID__
 #include <GLES/gl.h>
 #endif
+#ifdef DCSS_IOS
+#include "SDL_opengl.h"
+#endif
 
 using std::vector;
 
@@ -28,8 +31,8 @@ public:
     virtual void get_transform(GLW_3VF *trans, GLW_3VF *scale) override;
     virtual void set_scissor(int x, int y, unsigned int w, unsigned int h) override;
     virtual void reset_scissor() override;
-#ifdef __ANDROID__
-    virtual void fixup_gl_state() override;
+#if defined(__ANDROID__) || defined(DCSS_IOS)
+    virtual void fixup_gl_state();
 #endif
 
     // Texture-specific functinos
@@ -43,7 +46,7 @@ public:
     int device_to_logical(int n, bool round=true) const override;
 protected:
     GLState m_current_state;
-#ifdef __ANDROID__
+#if defined(__ANDROID__) || defined(DCSS_IOS)
     GLint m_last_tex;
 #endif
     int m_window_height;

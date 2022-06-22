@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/crawl-ref/source/android-project/android-project.iml" filepath="$PROJECT_DIR$/crawl-ref/source/android-project/android-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/crawl-ref/source/contrib/contrib.iml" filepath="$PROJECT_DIR$/crawl-ref/source/contrib/contrib.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/dcss.iml" filepath="$PROJECT_DIR$/.idea/dcss.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/dcss2.iml" filepath="$PROJECT_DIR$/.idea/dcss2.iml" />
       <module fileurl="file://$PROJECT_DIR$/crawl-ref/source/android-project/jni/jni.iml" filepath="$PROJECT_DIR$/crawl-ref/source/android-project/jni/jni.iml" />
     </modules>
   </component>

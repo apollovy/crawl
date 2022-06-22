@@ -215,7 +215,10 @@ public:
     int to_lines(int num_tiles, int tile_height = TILE_Y);
 
     int handle_mouse(wm_mouse_event &event);
-
+    
+    void unloadTextures( void );
+    void reloadTextures( void );
+    void setInBackground( bool );
 protected:
     void reconfigure_fonts();
     FontWrapper* load_font(const char *font_file, int font_size,
@@ -338,6 +341,7 @@ protected:
         mouse_mode mode;
     };
     cursor_loc m_cur_loc;
+    bool m_inBackground;
 };
 
 // Main interface for tiles functions
