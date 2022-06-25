@@ -379,6 +379,29 @@
 		B59A53C12867AFCA0013E7DE /* libgui.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E702285FA50E002E7FCF /* libgui.cc */; };
 		B59A53C42867B14C0013E7DE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B59A53BC2867ABB90013E7DE /* main.mm */; };
 		B59A53C52867B1EB0013E7DE /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E5FF285FA507002E7FCF /* main.cc */; };
+		B59A53E62867BBFE0013E7DE /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A53D02867BBFE0013E7DE /* PageUpDownPanGestureRecognizer.swift */; };
+		B59A53E72867BBFE0013E7DE /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53D22867BBFE0013E7DE /* SDL_char_utils.m */; };
+		B59A53E82867BBFE0013E7DE /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53D32867BBFE0013E7DE /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
+		B59A53E92867BBFE0013E7DE /* SDL_uikitviewcontroller+Gamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53D42867BBFE0013E7DE /* SDL_uikitviewcontroller+Gamepad.m */; };
+		B59A53EA2867BBFE0013E7DE /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A53D52867BBFE0013E7DE /* MenuButton.swift */; };
+		B59A53EB2867BBFE0013E7DE /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53D62867BBFE0013E7DE /* SDL_uikitview+CDDA.m */; };
+		B59A53F02867BBFE0013E7DE /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A53E12867BBFE0013E7DE /* ShowAndFixGestureRecognizer.swift */; };
+		B59A53F12867BBFE0013E7DE /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53E22867BBFE0013E7DE /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
+		B59A53F22867BBFE0013E7DE /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53E52867BBFE0013E7DE /* path_utils.m */; };
+		B59A53F52867BE010013E7DE /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59A53F32867BE010013E7DE /* UIControls.storyboard */; };
+		B59A53F82867BEE50013E7DE /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59A53F72867BEE50013E7DE /* dPad-None@2x.png */; };
+		B59A543B2867BF8A0013E7DE /* JSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59A54052867BF8A0013E7DE /* JSViewController.xib */; };
+		B59A543C2867BF8A0013E7DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B59A54072867BF8A0013E7DE /* InfoPlist.strings */; };
+		B59A54402867BF8A0013E7DE /* JSController-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B59A540D2867BF8A0013E7DE /* JSController-Info.plist */; };
+		B59A54452867BF8A0013E7DE /* JSAnalogueStick.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A54142867BF8A0013E7DE /* JSAnalogueStick.m */; };
+		B59A54532867BF8A0013E7DE /* JSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A54242867BF8A0013E7DE /* JSDPad.m */; };
+		B59A54552867BF8A0013E7DE /* Gameboy-landscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = B59A54262867BF8A0013E7DE /* Gameboy-landscape.plist */; };
+		B59A54562867BF8A0013E7DE /* JSControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A54272867BF8A0013E7DE /* JSControlLayout.m */; };
+		B59A54592867BF8A0013E7DE /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A542C2867BF8A0013E7DE /* JSButton.m */; };
+		B59A545E2867BF8A0013E7DE /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A54312867BF8A0013E7DE /* JSViewController.m */; };
+		B59A54622867BF8A0013E7DE /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = B59A54352867BF8A0013E7DE /* README.mdown */; };
+		B59A54632867BF8A0013E7DE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B59A54362867BF8A0013E7DE /* .gitignore */; };
+		B59A54642867C2C20013E7DE /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53DA2867BBFE0013E7DE /* GamePadViewController.m */; };
 		B5FF5E8628638B4800D90679 /* dcss_ios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5FF5E8428638B4700D90679 /* dcss_ios.cpp */; };
 /* End PBXBuildFile section */
 
@@ -431,6 +454,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6382B1B00FB0FC5100ECAC02;
 			remoteInfo = Freetype2;
+		};
+		B59A54382867BF8A0013E7DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B59A54002867BF8A0013E7DE /* JSController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A1DA8651704A5BC00BDA8F9;
+			remoteInfo = JSController;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1307,6 +1337,81 @@
 		B577ED55285FC7E3002E7FCF /* dat */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dat; path = ../../dat; sourceTree = "<group>"; };
 		B577ED57285FC894002E7FCF /* lang */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lang; path = ../../lang; sourceTree = "<group>"; };
 		B59A53BC2867ABB90013E7DE /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		B59A53CF2867BBFE0013E7DE /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
+		B59A53D02867BBFE0013E7DE /* PageUpDownPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageUpDownPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		B59A53D12867BBFE0013E7DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B59A53D22867BBFE0013E7DE /* SDL_char_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDL_char_utils.m; sourceTree = "<group>"; };
+		B59A53D32867BBFE0013E7DE /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
+		B59A53D42867BBFE0013E7DE /* SDL_uikitviewcontroller+Gamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+Gamepad.m"; sourceTree = "<group>"; };
+		B59A53D52867BBFE0013E7DE /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		B59A53D62867BBFE0013E7DE /* SDL_uikitview+CDDA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitview+CDDA.m"; sourceTree = "<group>"; };
+		B59A53D72867BBFE0013E7DE /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
+		B59A53D82867BBFE0013E7DE /* path_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = path_utils.h; sourceTree = "<group>"; };
+		B59A53D92867BBFE0013E7DE /* ZipArchiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipArchiver.swift; sourceTree = "<group>"; };
+		B59A53DA2867BBFE0013E7DE /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
+		B59A53DB2867BBFE0013E7DE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B59A53DC2867BBFE0013E7DE /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
+		B59A53DD2867BBFE0013E7DE /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
+		B59A53DE2867BBFE0013E7DE /* SDL_char_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_char_utils.h; sourceTree = "<group>"; };
+		B59A53DF2867BBFE0013E7DE /* CDDA_iOS_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDA_iOS_main.h; sourceTree = "<group>"; };
+		B59A53E02867BBFE0013E7DE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B59A53E12867BBFE0013E7DE /* ShowAndFixGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAndFixGestureRecognizer.swift; sourceTree = "<group>"; };
+		B59A53E22867BBFE0013E7DE /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
+		B59A53E32867BBFE0013E7DE /* SDL_uikitview+CDDA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitview+CDDA.h"; sourceTree = "<group>"; };
+		B59A53E42867BBFE0013E7DE /* SDL_uikitviewcontroller+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+Gamepad.h"; sourceTree = "<group>"; };
+		B59A53E52867BBFE0013E7DE /* path_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = path_utils.m; sourceTree = "<group>"; };
+		B59A53F42867BE010013E7DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../../CDDA-new/CDDA/Common/Bundle/Base.lproj/UIControls.storyboard"; sourceTree = "<group>"; };
+		B59A53F72867BEE50013E7DE /* dPad-None@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-None@2x.png"; sourceTree = "<group>"; };
+		B59A54002867BF8A0013E7DE /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = JSController.xcodeproj; sourceTree = "<group>"; };
+		B59A54042867BF8A0013E7DE /* dPad-Left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Left@2x.png"; sourceTree = "<group>"; };
+		B59A54062867BF8A0013E7DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JSViewController.xib; sourceTree = "<group>"; };
+		B59A54082867BF8A0013E7DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B59A54092867BF8A0013E7DE /* dPad-Down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Down@2x.png"; sourceTree = "<group>"; };
+		B59A540A2867BF8A0013E7DE /* dPad-UpRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpRight.png"; sourceTree = "<group>"; };
+		B59A540B2867BF8A0013E7DE /* JSDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDPad.h; sourceTree = "<group>"; };
+		B59A540C2867BF8A0013E7DE /* dPad-UpRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpRight@2x.png"; sourceTree = "<group>"; };
+		B59A540D2867BF8A0013E7DE /* JSController-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JSController-Info.plist"; sourceTree = "<group>"; };
+		B59A540E2867BF8A0013E7DE /* dPad-Up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Up@2x.png"; sourceTree = "<group>"; };
+		B59A540F2867BF8A0013E7DE /* JSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAppDelegate.h; sourceTree = "<group>"; };
+		B59A54102867BF8A0013E7DE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B59A54112867BF8A0013E7DE /* dPad-Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Down.png"; sourceTree = "<group>"; };
+		B59A54122867BF8A0013E7DE /* dPad-None@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-None@2x.png"; sourceTree = "<group>"; };
+		B59A54132867BF8A0013E7DE /* JSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSButton.h; sourceTree = "<group>"; };
+		B59A54142867BF8A0013E7DE /* JSAnalogueStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnalogueStick.m; sourceTree = "<group>"; };
+		B59A54152867BF8A0013E7DE /* dPad-DownLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownLeft.png"; sourceTree = "<group>"; };
+		B59A54162867BF8A0013E7DE /* JSControlLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSControlLayout.h; sourceTree = "<group>"; };
+		B59A54172867BF8A0013E7DE /* dPad-Right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Right@2x.png"; sourceTree = "<group>"; };
+		B59A54182867BF8A0013E7DE /* JSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		B59A54192867BF8A0013E7DE /* dPad-UpLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpLeft@2x.png"; sourceTree = "<group>"; };
+		B59A541A2867BF8A0013E7DE /* analogue_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "analogue_bg@2x.png"; sourceTree = "<group>"; };
+		B59A541B2867BF8A0013E7DE /* dPad-DownRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownRight.png"; sourceTree = "<group>"; };
+		B59A541C2867BF8A0013E7DE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B59A541D2867BF8A0013E7DE /* analogue_handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = analogue_handle.png; sourceTree = "<group>"; };
+		B59A541E2867BF8A0013E7DE /* dPad-Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Left.png"; sourceTree = "<group>"; };
+		B59A541F2867BF8A0013E7DE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B59A54202867BF8A0013E7DE /* dPad-DownRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownRight@2x.png"; sourceTree = "<group>"; };
+		B59A54212867BF8A0013E7DE /* dPad-DownLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownLeft@2x.png"; sourceTree = "<group>"; };
+		B59A54222867BF8A0013E7DE /* analogue_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = analogue_bg.png; sourceTree = "<group>"; };
+		B59A54232867BF8A0013E7DE /* button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pressed@2x.png"; sourceTree = "<group>"; };
+		B59A54242867BF8A0013E7DE /* JSDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDPad.m; sourceTree = "<group>"; };
+		B59A54252867BF8A0013E7DE /* button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pressed.png"; sourceTree = "<group>"; };
+		B59A54262867BF8A0013E7DE /* Gameboy-landscape.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Gameboy-landscape.plist"; sourceTree = "<group>"; };
+		B59A54272867BF8A0013E7DE /* JSControlLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSControlLayout.m; sourceTree = "<group>"; };
+		B59A54282867BF8A0013E7DE /* analogue_handle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "analogue_handle@2x.png"; sourceTree = "<group>"; };
+		B59A54292867BF8A0013E7DE /* JSController-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSController-Prefix.pch"; sourceTree = "<group>"; };
+		B59A542A2867BF8A0013E7DE /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
+		B59A542B2867BF8A0013E7DE /* JSAnalogueStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnalogueStick.h; sourceTree = "<group>"; };
+		B59A542C2867BF8A0013E7DE /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSButton.m; sourceTree = "<group>"; };
+		B59A542D2867BF8A0013E7DE /* dPad-None.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-None.png"; sourceTree = "<group>"; };
+		B59A542E2867BF8A0013E7DE /* dPad-UpLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpLeft.png"; sourceTree = "<group>"; };
+		B59A542F2867BF8A0013E7DE /* JSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
+		B59A54302867BF8A0013E7DE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B59A54312867BF8A0013E7DE /* JSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		B59A54322867BF8A0013E7DE /* dPad-Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Right.png"; sourceTree = "<group>"; };
+		B59A54332867BF8A0013E7DE /* dPad-Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Up.png"; sourceTree = "<group>"; };
+		B59A54342867BF8A0013E7DE /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		B59A54352867BF8A0013E7DE /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		B59A54362867BF8A0013E7DE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B5FF5E8428638B4700D90679 /* dcss_ios.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dcss_ios.cpp; sourceTree = "<group>"; };
 		B5FF5E8528638B4700D90679 /* dcss_ios.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dcss_ios.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1343,6 +1448,7 @@
 		B577E4A9285FA4B5002E7FCF = {
 			isa = PBXGroup;
 			children = (
+				B59A53CB2867BB9E0013E7DE /* CDDA */,
 				B577ED57285FC894002E7FCF /* lang */,
 				B577ED55285FC7E3002E7FCF /* dat */,
 				B577ED4E285FC78E002E7FCF /* Binaries */,
@@ -2334,6 +2440,131 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		B59A53CB2867BB9E0013E7DE /* CDDA */ = {
+			isa = PBXGroup;
+			children = (
+				B59A53FF2867BF8A0013E7DE /* JSController */,
+				B59A53F62867BEE50013E7DE /* JSDPad */,
+				B59A53F32867BE010013E7DE /* UIControls.storyboard */,
+				B59A53CE2867BBFE0013E7DE /* source */,
+			);
+			path = CDDA;
+			sourceTree = "<group>";
+		};
+		B59A53CE2867BBFE0013E7DE /* source */ = {
+			isa = PBXGroup;
+			children = (
+				B59A53D12867BBFE0013E7DE /* AppDelegate.h */,
+				B59A53E02867BBFE0013E7DE /* AppDelegate.m */,
+				B59A53DF2867BBFE0013E7DE /* CDDA_iOS_main.h */,
+				B59A53DC2867BBFE0013E7DE /* CDDA-Bridging-Header.h */,
+				B59A53CF2867BBFE0013E7DE /* GamePadViewController.h */,
+				B59A53DA2867BBFE0013E7DE /* GamePadViewController.m */,
+				B59A53DB2867BBFE0013E7DE /* main.m */,
+				B59A53D52867BBFE0013E7DE /* MenuButton.swift */,
+				B59A53D02867BBFE0013E7DE /* PageUpDownPanGestureRecognizer.swift */,
+				B59A53D82867BBFE0013E7DE /* path_utils.h */,
+				B59A53E52867BBFE0013E7DE /* path_utils.m */,
+				B59A53DE2867BBFE0013E7DE /* SDL_char_utils.h */,
+				B59A53D22867BBFE0013E7DE /* SDL_char_utils.m */,
+				B59A53E32867BBFE0013E7DE /* SDL_uikitview+CDDA.h */,
+				B59A53D62867BBFE0013E7DE /* SDL_uikitview+CDDA.m */,
+				B59A53E42867BBFE0013E7DE /* SDL_uikitviewcontroller+Gamepad.h */,
+				B59A53D42867BBFE0013E7DE /* SDL_uikitviewcontroller+Gamepad.m */,
+				B59A53DD2867BBFE0013E7DE /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
+				B59A53D32867BBFE0013E7DE /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
+				B59A53D72867BBFE0013E7DE /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
+				B59A53E22867BBFE0013E7DE /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
+				B59A53E12867BBFE0013E7DE /* ShowAndFixGestureRecognizer.swift */,
+				B59A53D92867BBFE0013E7DE /* ZipArchiver.swift */,
+			);
+			name = source;
+			path = "../../../../../../CDDA-new/CDDA/Common/source";
+			sourceTree = "<group>";
+		};
+		B59A53F62867BEE50013E7DE /* JSDPad */ = {
+			isa = PBXGroup;
+			children = (
+				B59A53F72867BEE50013E7DE /* dPad-None@2x.png */,
+			);
+			name = JSDPad;
+			path = "../../../../../../CDDA-new/CDDA/Common/Bundle/JSDPad";
+			sourceTree = "<group>";
+		};
+		B59A53FF2867BF8A0013E7DE /* JSController */ = {
+			isa = PBXGroup;
+			children = (
+				B59A54002867BF8A0013E7DE /* JSController.xcodeproj */,
+				B59A54032867BF8A0013E7DE /* Controller */,
+				B59A54352867BF8A0013E7DE /* README.mdown */,
+				B59A54362867BF8A0013E7DE /* .gitignore */,
+			);
+			name = JSController;
+			path = "../../../../../../CDDA-new/CDDA/Libraries/JSController";
+			sourceTree = "<group>";
+		};
+		B59A54012867BF8A0013E7DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B59A54392867BF8A0013E7DE /* JSController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B59A54032867BF8A0013E7DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B59A542B2867BF8A0013E7DE /* JSAnalogueStick.h */,
+				B59A540F2867BF8A0013E7DE /* JSAppDelegate.h */,
+				B59A54132867BF8A0013E7DE /* JSButton.h */,
+				B59A54162867BF8A0013E7DE /* JSControlLayout.h */,
+				B59A540B2867BF8A0013E7DE /* JSDPad.h */,
+				B59A54182867BF8A0013E7DE /* JSViewController.h */,
+				B59A54142867BF8A0013E7DE /* JSAnalogueStick.m */,
+				B59A542F2867BF8A0013E7DE /* JSAppDelegate.m */,
+				B59A542C2867BF8A0013E7DE /* JSButton.m */,
+				B59A54272867BF8A0013E7DE /* JSControlLayout.m */,
+				B59A54242867BF8A0013E7DE /* JSDPad.m */,
+				B59A54312867BF8A0013E7DE /* JSViewController.m */,
+				B59A541F2867BF8A0013E7DE /* main.m */,
+				B59A54292867BF8A0013E7DE /* JSController-Prefix.pch */,
+				B59A54262867BF8A0013E7DE /* Gameboy-landscape.plist */,
+				B59A540D2867BF8A0013E7DE /* JSController-Info.plist */,
+				B59A54222867BF8A0013E7DE /* analogue_bg.png */,
+				B59A541A2867BF8A0013E7DE /* analogue_bg@2x.png */,
+				B59A541D2867BF8A0013E7DE /* analogue_handle.png */,
+				B59A54282867BF8A0013E7DE /* analogue_handle@2x.png */,
+				B59A54252867BF8A0013E7DE /* button-pressed.png */,
+				B59A54232867BF8A0013E7DE /* button-pressed@2x.png */,
+				B59A54342867BF8A0013E7DE /* button.png */,
+				B59A542A2867BF8A0013E7DE /* button@2x.png */,
+				B59A541C2867BF8A0013E7DE /* Default-568h@2x.png */,
+				B59A54302867BF8A0013E7DE /* Default.png */,
+				B59A54102867BF8A0013E7DE /* Default@2x.png */,
+				B59A54112867BF8A0013E7DE /* dPad-Down.png */,
+				B59A54092867BF8A0013E7DE /* dPad-Down@2x.png */,
+				B59A54152867BF8A0013E7DE /* dPad-DownLeft.png */,
+				B59A54212867BF8A0013E7DE /* dPad-DownLeft@2x.png */,
+				B59A541B2867BF8A0013E7DE /* dPad-DownRight.png */,
+				B59A54202867BF8A0013E7DE /* dPad-DownRight@2x.png */,
+				B59A541E2867BF8A0013E7DE /* dPad-Left.png */,
+				B59A54042867BF8A0013E7DE /* dPad-Left@2x.png */,
+				B59A542D2867BF8A0013E7DE /* dPad-None.png */,
+				B59A54122867BF8A0013E7DE /* dPad-None@2x.png */,
+				B59A54322867BF8A0013E7DE /* dPad-Right.png */,
+				B59A54172867BF8A0013E7DE /* dPad-Right@2x.png */,
+				B59A54332867BF8A0013E7DE /* dPad-Up.png */,
+				B59A540E2867BF8A0013E7DE /* dPad-Up@2x.png */,
+				B59A542E2867BF8A0013E7DE /* dPad-UpLeft.png */,
+				B59A54192867BF8A0013E7DE /* dPad-UpLeft@2x.png */,
+				B59A540A2867BF8A0013E7DE /* dPad-UpRight.png */,
+				B59A540C2867BF8A0013E7DE /* dPad-UpRight@2x.png */,
+				B59A54072867BF8A0013E7DE /* InfoPlist.strings */,
+				B59A54052867BF8A0013E7DE /* JSViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2390,6 +2621,10 @@
 					ProjectRef = B577ED1E285FB4B9002E7FCF /* freetype2.xcodeproj */;
 				},
 				{
+					ProductGroup = B59A54012867BF8A0013E7DE /* Products */;
+					ProjectRef = B59A54002867BF8A0013E7DE /* JSController.xcodeproj */;
+				},
+				{
 					ProductGroup = B577E9DB285FAF64002E7FCF /* Products */;
 					ProjectRef = B577E9DA285FAF64002E7FCF /* SDL.xcodeproj */;
 				},
@@ -2434,6 +2669,13 @@
 			remoteRef = B577ED22285FB4B9002E7FCF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		B59A54392867BF8A0013E7DE /* JSController.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = JSController.app;
+			remoteRef = B59A54382867BF8A0013E7DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -2441,11 +2683,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59A543B2867BF8A0013E7DE /* JSViewController.xib in Resources */,
+				B59A54552867BF8A0013E7DE /* Gameboy-landscape.plist in Resources */,
+				B59A54632867BF8A0013E7DE /* .gitignore in Resources */,
 				B577ED58285FC894002E7FCF /* lang in Resources */,
+				B59A53F82867BEE50013E7DE /* dPad-None@2x.png in Resources */,
+				B59A54622867BF8A0013E7DE /* README.mdown in Resources */,
 				B577ED56285FC7E3002E7FCF /* dat in Resources */,
+				B59A53F52867BE010013E7DE /* UIControls.storyboard in Resources */,
 				B5462F36285FEA9C00E3E739 /* fonts in Resources */,
 				B577E4C2285FA4B6002E7FCF /* LaunchScreen.storyboard in Resources */,
+				B59A54402867BF8A0013E7DE /* JSController-Info.plist in Resources */,
 				B577E4BF285FA4B6002E7FCF /* Assets.xcassets in Resources */,
+				B59A543C2867BF8A0013E7DE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2516,6 +2766,7 @@
 				B577E8F7285FA51C002E7FCF /* species.cc in Sources */,
 				B577E898285FA51B002E7FCF /* spl-summoning.cc in Sources */,
 				B577E80F285FA51B002E7FCF /* fearmonger.cc in Sources */,
+				B59A54642867C2C20013E7DE /* GamePadViewController.m in Sources */,
 				B577E8EC285FA51C002E7FCF /* dlua.cc in Sources */,
 				B577E8F5285FA51C002E7FCF /* place.cc in Sources */,
 				B577E83B285FA51B002E7FCF /* areas.cc in Sources */,
@@ -2523,6 +2774,7 @@
 				B577E9B5285FAAE4002E7FCF /* loslib.c in Sources */,
 				B577E80E285FA51B002E7FCF /* items.cc in Sources */,
 				B577E852285FA51B002E7FCF /* spl-other.cc in Sources */,
+				B59A545E2867BF8A0013E7DE /* JSViewController.m in Sources */,
 				B577E8E2285FA51C002E7FCF /* l-file.cc in Sources */,
 				B577E9D5285FAB5E002E7FCF /* tiledef-main.cc in Sources */,
 				B577E9AD285FAAE4002E7FCF /* ldo.c in Sources */,
@@ -2531,9 +2783,11 @@
 				B577E81C285FA51B002E7FCF /* mon-ench.cc in Sources */,
 				B577E864285FA51B002E7FCF /* tilereg-mon.cc in Sources */,
 				B577E83D285FA51B002E7FCF /* travel.cc in Sources */,
+				B59A53E62867BBFE0013E7DE /* PageUpDownPanGestureRecognizer.swift in Sources */,
 				B577E836285FA51B002E7FCF /* religion.cc in Sources */,
 				B577E9AE285FAAE4002E7FCF /* lbaselib.c in Sources */,
 				B577E7F5285FA51B002E7FCF /* l-debug.cc in Sources */,
+				B59A54532867BF8A0013E7DE /* JSDPad.m in Sources */,
 				B577E893285FA51B002E7FCF /* random.cc in Sources */,
 				B577E800285FA51B002E7FCF /* mon-pick.cc in Sources */,
 				B577E7D7285FA51B002E7FCF /* known-items.cc in Sources */,
@@ -2554,6 +2808,7 @@
 				B577E7D5285FA51B002E7FCF /* viewchar.cc in Sources */,
 				B577E8B7285FA51C002E7FCF /* tilereg-abl.cc in Sources */,
 				B577E8C6285FA51C002E7FCF /* game-options.cc in Sources */,
+				B59A54452867BF8A0013E7DE /* JSAnalogueStick.m in Sources */,
 				B577E829285FA51B002E7FCF /* exclude.cc in Sources */,
 				B577E9D9285FAB5E002E7FCF /* tiledef-feat.cc in Sources */,
 				B577E9AF285FAAE4002E7FCF /* lmathlib.c in Sources */,
@@ -2598,6 +2853,7 @@
 				B577E8D8285FA51C002E7FCF /* l-dgngrd.cc in Sources */,
 				B577E7EB285FA51B002E7FCF /* transform.cc in Sources */,
 				B577E9A1285FAAE4002E7FCF /* lundump.c in Sources */,
+				B59A53F02867BBFE0013E7DE /* ShowAndFixGestureRecognizer.swift in Sources */,
 				B577E867285FA51B002E7FCF /* viewgeom.cc in Sources */,
 				B577E826285FA51B002E7FCF /* ranged-attack.cc in Sources */,
 				B577E9BA285FAAE4002E7FCF /* lparser.c in Sources */,
@@ -2610,12 +2866,14 @@
 				B577E8F4285FA51C002E7FCF /* bitary.cc in Sources */,
 				B577E8E0285FA51C002E7FCF /* tilereg.cc in Sources */,
 				B577E8BC285FA51C002E7FCF /* tileview.cc in Sources */,
+				B59A53E72867BBFE0013E7DE /* SDL_char_utils.m in Sources */,
 				B577E8E1285FA51C002E7FCF /* tileweb-text.cc in Sources */,
 				B577E875285FA51B002E7FCF /* l-mapmrk.cc in Sources */,
 				B577E8B2285FA51C002E7FCF /* monster.cc in Sources */,
 				B577E82E285FA51B002E7FCF /* beam.cc in Sources */,
 				B577E8A0285FA51B002E7FCF /* l-dgnlvl.cc in Sources */,
 				B577E9D7285FAB5E002E7FCF /* tiledef-dngn.cc in Sources */,
+				B59A54562867BF8A0013E7DE /* JSControlLayout.m in Sources */,
 				B577E8DC285FA51C002E7FCF /* god-conduct.cc in Sources */,
 				B577E85C285FA51B002E7FCF /* lev-pand.cc in Sources */,
 				B577E805285FA51B002E7FCF /* player-act.cc in Sources */,
@@ -2623,6 +2881,7 @@
 				B577E812285FA51B002E7FCF /* message.cc in Sources */,
 				B577E8EB285FA51C002E7FCF /* mon-movetarget.cc in Sources */,
 				B577E9D6285FAB5E002E7FCF /* tiledef-unrand.cc in Sources */,
+				B59A53F12867BBFE0013E7DE /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B577E7F2285FA51B002E7FCF /* libutil.cc in Sources */,
 				B577E873285FA51B002E7FCF /* spl-zap.cc in Sources */,
 				B577E80D285FA51B002E7FCF /* ng-setup.cc in Sources */,
@@ -2641,6 +2900,7 @@
 				B577E8B0285FA51C002E7FCF /* kills.cc in Sources */,
 				B577E820285FA51B002E7FCF /* stairs.cc in Sources */,
 				B577E82B285FA51B002E7FCF /* cloud.cc in Sources */,
+				B59A53EA2867BBFE0013E7DE /* MenuButton.swift in Sources */,
 				B577E7E4285FA51B002E7FCF /* player-stats.cc in Sources */,
 				B577E863285FA51B002E7FCF /* tiledoll.cc in Sources */,
 				B577E878285FA51B002E7FCF /* target-compass.cc in Sources */,
@@ -2653,6 +2913,7 @@
 				B577E8E8285FA51C002E7FCF /* windowmanager-sdl.cc in Sources */,
 				B577E848285FA51B002E7FCF /* misc.cc in Sources */,
 				B577E7F3285FA51B002E7FCF /* crawl_locale.cc in Sources */,
+				B59A54592867BF8A0013E7DE /* JSButton.m in Sources */,
 				B577E804285FA51B002E7FCF /* invent.cc in Sources */,
 				B577E834285FA51B002E7FCF /* l-dgnmon.cc in Sources */,
 				B577E7FB285FA51B002E7FCF /* delay.cc in Sources */,
@@ -2691,6 +2952,7 @@
 				B577E8CC285FA51C002E7FCF /* tilereg-cmd.cc in Sources */,
 				B577E8A2285FA51B002E7FCF /* tutorial.cc in Sources */,
 				B5FF5E8628638B4800D90679 /* dcss_ios.cpp in Sources */,
+				B59A53E92867BBFE0013E7DE /* SDL_uikitviewcontroller+Gamepad.m in Sources */,
 				B577E846285FA51B002E7FCF /* colour.cc in Sources */,
 				B577E7E9285FA51B002E7FCF /* hints.cc in Sources */,
 				B577E849285FA51B002E7FCF /* macro.cc in Sources */,
@@ -2725,6 +2987,8 @@
 				B577E847285FA51B002E7FCF /* ng-init.cc in Sources */,
 				B577E84D285FA51B002E7FCF /* l-dgntil.cc in Sources */,
 				B577E821285FA51B002E7FCF /* mon-behv.cc in Sources */,
+				B59A53EB2867BBFE0013E7DE /* SDL_uikitview+CDDA.m in Sources */,
+				B59A53F22867BBFE0013E7DE /* path_utils.m in Sources */,
 				B577E8B3285FA51C002E7FCF /* tilepick-p.cc in Sources */,
 				B577E89B285FA51B002E7FCF /* target.cc in Sources */,
 				B577E858285FA51B002E7FCF /* mon-util.cc in Sources */,
@@ -2794,6 +3058,7 @@
 				B577E87B285FA51B002E7FCF /* tilereg-msg.cc in Sources */,
 				B577E8B6285FA51C002E7FCF /* glwrapper.cc in Sources */,
 				B577E7FE285FA51B002E7FCF /* database.cc in Sources */,
+				B59A53E82867BBFE0013E7DE /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B577E888285FA51B002E7FCF /* l-item.cc in Sources */,
 				B577E866285FA51B002E7FCF /* l-global.cc in Sources */,
 				B577E7D0285FA51B002E7FCF /* fprop.cc in Sources */,
@@ -2836,6 +3101,30 @@
 				B577E4C1285FA4B6002E7FCF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B59A53F32867BE010013E7DE /* UIControls.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59A53F42867BE010013E7DE /* Base */,
+			);
+			name = UIControls.storyboard;
+			sourceTree = "<group>";
+		};
+		B59A54052867BF8A0013E7DE /* JSViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59A54062867BF8A0013E7DE /* en */,
+			);
+			name = JSViewController.xib;
+			sourceTree = "<group>";
+		};
+		B59A54072867BF8A0013E7DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59A54082867BF8A0013E7DE /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
