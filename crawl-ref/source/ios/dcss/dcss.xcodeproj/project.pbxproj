@@ -14,7 +14,6 @@
 		B54FB91B2860C6FC00BA35A1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB91A2860C6FB00BA35A1 /* QuartzCore.framework */; };
 		B54FB91D2860C74000BA35A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB9182860C67800BA35A1 /* CoreGraphics.framework */; };
 		B54FB91F2860C74C00BA35A1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB91E2860C74C00BA35A1 /* ImageIO.framework */; };
-		B54FB92C28611FAC00BA35A1 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E5FF285FA507002E7FCF /* main.cc */; };
 		B577E4BF285FA4B6002E7FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B577E4BE285FA4B6002E7FCF /* Assets.xcassets */; };
 		B577E4C2285FA4B6002E7FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B577E4C0285FA4B6002E7FCF /* LaunchScreen.storyboard */; };
 		B577E7C6285FA51B002E7FCF /* god-item.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E4CE285FA501002E7FCF /* god-item.cc */; };
@@ -246,7 +245,6 @@
 		B577E8AA285FA51C002E7FCF /* item-name.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E6FE285FA50E002E7FCF /* item-name.cc */; };
 		B577E8AB285FA51C002E7FCF /* describe-god.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E700285FA50E002E7FCF /* describe-god.cc */; };
 		B577E8AC285FA51C002E7FCF /* fineff.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E701285FA50E002E7FCF /* fineff.cc */; };
-		B577E8AD285FA51C002E7FCF /* libgui.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E702285FA50E002E7FCF /* libgui.cc */; };
 		B577E8AE285FA51C002E7FCF /* perlin.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E709285FA50F002E7FCF /* perlin.cc */; };
 		B577E8AF285FA51C002E7FCF /* ghost.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E70A285FA50F002E7FCF /* ghost.cc */; };
 		B577E8B0285FA51C002E7FCF /* kills.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E70F285FA50F002E7FCF /* kills.cc */; };
@@ -378,6 +376,9 @@
 		B577ED54285FC78E002E7FCF /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B577ED53285FC78E002E7FCF /* libintl.a */; };
 		B577ED56285FC7E3002E7FCF /* dat in Resources */ = {isa = PBXBuildFile; fileRef = B577ED55285FC7E3002E7FCF /* dat */; };
 		B577ED58285FC894002E7FCF /* lang in Resources */ = {isa = PBXBuildFile; fileRef = B577ED57285FC894002E7FCF /* lang */; };
+		B59A53C12867AFCA0013E7DE /* libgui.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E702285FA50E002E7FCF /* libgui.cc */; };
+		B59A53C42867B14C0013E7DE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B59A53BC2867ABB90013E7DE /* main.mm */; };
+		B59A53C52867B1EB0013E7DE /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B577E5FF285FA507002E7FCF /* main.cc */; };
 		B5FF5E8628638B4800D90679 /* dcss_ios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5FF5E8428638B4700D90679 /* dcss_ios.cpp */; };
 /* End PBXBuildFile section */
 
@@ -1305,6 +1306,7 @@
 		B577ED53285FC78E002E7FCF /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
 		B577ED55285FC7E3002E7FCF /* dat */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dat; path = ../../dat; sourceTree = "<group>"; };
 		B577ED57285FC894002E7FCF /* lang */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lang; path = ../../lang; sourceTree = "<group>"; };
+		B59A53BC2867ABB90013E7DE /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		B5FF5E8428638B4700D90679 /* dcss_ios.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dcss_ios.cpp; sourceTree = "<group>"; };
 		B5FF5E8528638B4700D90679 /* dcss_ios.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dcss_ios.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1368,6 +1370,7 @@
 				B577E4C3285FA4B6002E7FCF /* Info.plist */,
 				B5FF5E8428638B4700D90679 /* dcss_ios.cpp */,
 				B5FF5E8528638B4700D90679 /* dcss_ios.hpp */,
+				B59A53BC2867ABB90013E7DE /* main.mm */,
 			);
 			path = dcss;
 			sourceTree = "<group>";
@@ -2493,6 +2496,7 @@
 				B577E84B285FA51B002E7FCF /* menu.cc in Sources */,
 				B577E808285FA51B002E7FCF /* l-travel.cc in Sources */,
 				B577E7EC285FA51B002E7FCF /* libw32c.cc in Sources */,
+				B59A53C42867B14C0013E7DE /* main.mm in Sources */,
 				B577E87E285FA51B002E7FCF /* acquire.cc in Sources */,
 				B577E86A285FA51B002E7FCF /* clua.cc in Sources */,
 				B577E86C285FA51B002E7FCF /* item-prop.cc in Sources */,
@@ -2541,7 +2545,6 @@
 				B577E841285FA51B002E7FCF /* attitude-change.cc in Sources */,
 				B577E8F8285FA51C002E7FCF /* branch.cc in Sources */,
 				B577E83F285FA51B002E7FCF /* wizard.cc in Sources */,
-				B54FB92C28611FAC00BA35A1 /* main.cc in Sources */,
 				B577E9B0285FAAE4002E7FCF /* lgc.c in Sources */,
 				B577E802285FA51B002E7FCF /* tilecell.cc in Sources */,
 				B577E82A285FA51B002E7FCF /* god-companions.cc in Sources */,
@@ -2577,6 +2580,7 @@
 				B577E8C1285FA51C002E7FCF /* ng-wanderer.cc in Sources */,
 				B577E7D9285FA51B002E7FCF /* bloodspatter.cc in Sources */,
 				B577E8A8285FA51C002E7FCF /* melee-attack.cc in Sources */,
+				B59A53C52867B1EB0013E7DE /* main.cc in Sources */,
 				B577E89E285FA51B002E7FCF /* output.cc in Sources */,
 				B577E86F285FA51B002E7FCF /* show.cc in Sources */,
 				B577E831285FA51B002E7FCF /* hiscores.cc in Sources */,
@@ -2774,7 +2778,6 @@
 				B577E7F1285FA51B002E7FCF /* ng-input.cc in Sources */,
 				B577E8C2285FA51C002E7FCF /* directn.cc in Sources */,
 				B577E7D3285FA51B002E7FCF /* l-option.cc in Sources */,
-				B577E8AD285FA51C002E7FCF /* libgui.cc in Sources */,
 				B577E8E9285FA51C002E7FCF /* mapmark.cc in Sources */,
 				B577E89D285FA51B002E7FCF /* mon-poly.cc in Sources */,
 				B577E7EF285FA51B002E7FCF /* notes.cc in Sources */,
@@ -2783,6 +2786,7 @@
 				B577E840285FA51B002E7FCF /* coord-circle.cc in Sources */,
 				B577E8F6285FA51C002E7FCF /* quiver.cc in Sources */,
 				B577E99E285FAAE4002E7FCF /* ltablib.c in Sources */,
+				B59A53C12867AFCA0013E7DE /* libgui.cc in Sources */,
 				B577E865285FA51B002E7FCF /* l-you.cc in Sources */,
 				B577E81A285FA51B002E7FCF /* l-spells.cc in Sources */,
 				B577E8F9285FA51C002E7FCF /* mon-gear.cc in Sources */,
@@ -2891,6 +2895,7 @@
 					"USE_SDL=1",
 					"USE_TILE=1",
 					"USE_TILE_LOCAL=1",
+					"HAVE_STAT=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -2971,6 +2976,7 @@
 					"USE_SDL=1",
 					"USE_TILE=1",
 					"USE_TILE_LOCAL=1",
+					"HAVE_STAT=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
