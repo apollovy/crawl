@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B522261128688F93000D823E /* docs in Resources */ = {isa = PBXBuildFile; fileRef = B522260D28688F93000D823E /* docs */; };
 		B5462F36285FEA9C00E3E739 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = B5462F35285FEA9100E3E739 /* fonts */; };
 		B54FB9142860C61800BA35A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB9132860C61800BA35A1 /* UIKit.framework */; };
 		B54FB9152860C63500BA35A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FB9112860C5F100BA35A1 /* Foundation.framework */; };
@@ -390,16 +391,12 @@
 		B59A53F22867BBFE0013E7DE /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53E52867BBFE0013E7DE /* path_utils.m */; };
 		B59A53F52867BE010013E7DE /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59A53F32867BE010013E7DE /* UIControls.storyboard */; };
 		B59A53F82867BEE50013E7DE /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59A53F72867BEE50013E7DE /* dPad-None@2x.png */; };
-		B59A543B2867BF8A0013E7DE /* JSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59A54052867BF8A0013E7DE /* JSViewController.xib */; };
 		B59A543C2867BF8A0013E7DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B59A54072867BF8A0013E7DE /* InfoPlist.strings */; };
-		B59A54402867BF8A0013E7DE /* JSController-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B59A540D2867BF8A0013E7DE /* JSController-Info.plist */; };
 		B59A54452867BF8A0013E7DE /* JSAnalogueStick.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A54142867BF8A0013E7DE /* JSAnalogueStick.m */; };
 		B59A54532867BF8A0013E7DE /* JSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A54242867BF8A0013E7DE /* JSDPad.m */; };
-		B59A54552867BF8A0013E7DE /* Gameboy-landscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = B59A54262867BF8A0013E7DE /* Gameboy-landscape.plist */; };
 		B59A54562867BF8A0013E7DE /* JSControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A54272867BF8A0013E7DE /* JSControlLayout.m */; };
 		B59A54592867BF8A0013E7DE /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A542C2867BF8A0013E7DE /* JSButton.m */; };
 		B59A545E2867BF8A0013E7DE /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A54312867BF8A0013E7DE /* JSViewController.m */; };
-		B59A54622867BF8A0013E7DE /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = B59A54352867BF8A0013E7DE /* README.mdown */; };
 		B59A54632867BF8A0013E7DE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B59A54362867BF8A0013E7DE /* .gitignore */; };
 		B59A54642867C2C20013E7DE /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A53DA2867BBFE0013E7DE /* GamePadViewController.m */; };
 		B5FF5E8628638B4800D90679 /* dcss_ios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5FF5E8428638B4700D90679 /* dcss_ios.cpp */; };
@@ -465,6 +462,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B522260D28688F93000D823E /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = docs; path = ../../../docs; sourceTree = "<group>"; };
 		B5462F35285FEA9100E3E739 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../contrib/fonts; sourceTree = "<group>"; };
 		B54FB9112860C5F100BA35A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B54FB9132860C61800BA35A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1448,6 +1446,7 @@
 		B577E4A9285FA4B5002E7FCF = {
 			isa = PBXGroup;
 			children = (
+				B522260D28688F93000D823E /* docs */,
 				B59A53CB2867BB9E0013E7DE /* CDDA */,
 				B577ED57285FC894002E7FCF /* lang */,
 				B577ED55285FC7E3002E7FCF /* dat */,
@@ -2683,19 +2682,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B59A543B2867BF8A0013E7DE /* JSViewController.xib in Resources */,
-				B59A54552867BF8A0013E7DE /* Gameboy-landscape.plist in Resources */,
 				B59A54632867BF8A0013E7DE /* .gitignore in Resources */,
 				B577ED58285FC894002E7FCF /* lang in Resources */,
 				B59A53F82867BEE50013E7DE /* dPad-None@2x.png in Resources */,
-				B59A54622867BF8A0013E7DE /* README.mdown in Resources */,
 				B577ED56285FC7E3002E7FCF /* dat in Resources */,
 				B59A53F52867BE010013E7DE /* UIControls.storyboard in Resources */,
 				B5462F36285FEA9C00E3E739 /* fonts in Resources */,
 				B577E4C2285FA4B6002E7FCF /* LaunchScreen.storyboard in Resources */,
-				B59A54402867BF8A0013E7DE /* JSController-Info.plist in Resources */,
 				B577E4BF285FA4B6002E7FCF /* Assets.xcassets in Resources */,
 				B59A543C2867BF8A0013E7DE /* InfoPlist.strings in Resources */,
+				B522261128688F93000D823E /* docs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3300,8 +3296,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -3310,6 +3307,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dcss/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dungeon Crawl - Stone Soup";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -3325,8 +3323,9 @@
 					"$(PROJECT_DIR)/dcss/Binaries/glib/lib",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.dcss;
+				PRODUCT_BUNDLE_IDENTIFIER = "tk.apollov.dcss-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "dcss-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3341,12 +3340,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dcss/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dungeon Crawl - Stone Soup";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -3362,8 +3363,9 @@
 					"$(PROJECT_DIR)/dcss/Binaries/glib/lib",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.dcss;
+				PRODUCT_BUNDLE_IDENTIFIER = "tk.apollov.dcss-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "dcss-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
