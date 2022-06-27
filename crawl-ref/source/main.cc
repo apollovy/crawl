@@ -232,7 +232,11 @@ static void _startup_asserts()
 __attribute__((externally_visible))
 # endif
 #endif
+#if defined(DCSS_IOS)
+int DCSS_main(int argc, char *argv[])
+#else
 int main(int argc, char *argv[])
+#endif
 {
 #ifndef __ANDROID__
 # ifdef DGAMELAUNCH
