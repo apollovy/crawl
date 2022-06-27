@@ -340,7 +340,7 @@ int DungeonRegion::handle_mouse(wm_mouse_event &event)
     if (!inside(event.px, event.py))
         return 0;
 
-#ifdef TOUCH_UI
+#if defined(TOUCH_UI) && !defined(DCSS_IOS)
     if (event.event == wm_mouse_event::WHEEL && (event.mod & TILES_MOD_CTRL))
         zoom(event.button == wm_mouse_event::SCROLL_UP);
 #endif

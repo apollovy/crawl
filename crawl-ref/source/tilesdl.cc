@@ -121,6 +121,9 @@ TilesFramework::TilesFramework() :
     m_active_layer(LAYER_CRT),
     m_mouse(-1, -1),
     m_last_tick_redraw(0)
+#if defined(DCSS_IOS)
+    ,m_inBackground(false)
+#endif
 {
 }
 
@@ -1363,6 +1366,10 @@ void TilesFramework::redraw()
 #ifdef DEBUG_TILES_REDRAW
     cprintf("\nredrawing tiles");
 #endif
+#if defined(DCSS_IOS)
+    if( m_inBackground )
+        return;
+#endif
     m_need_redraw = false;
 
     glmanager->reset_view_for_redraw();
@@ -1518,4 +1525,20 @@ int TilesFramework::to_lines(int num_tiles, int tile_height)
 {
     return num_tiles * tile_height / get_crt_font()->char_height();
 }
+
+void TilesFramework::setInBackground( bool inBackground )
+{
+    m_inBackground = inBackground;
+}
+
+void TilesFramework::unloadTextures( void )
+{
+    m_image->unload_textures();
+}
+
+void TilesFramework::reloadTextures( void )
+{
+    m_image->load_textures( true );
+}
+
 #endif

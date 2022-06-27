@@ -321,10 +321,10 @@ public:
 
     char_set_type  char_set;
     FixedVector<char32_t, NUM_DCHAR_TYPES> char_table;
-
+#ifdef WIZARD
     wizard_option_type wiz_mode;      // no, never, start in wiz mode
     wizard_option_type explore_mode;  // no, never, start in explore mode
-
+#endif
     vector<string> terp_files; // Lua files to load for luaterp
     bool           no_save;    // don't use persistent save files
     bool           no_player_bones;   // don't save player's info in bones files
