@@ -294,7 +294,7 @@ bool player_tracer(zap_type ztype, int power, bolt &pbolt, int range)
     pbolt.source_id     = MID_PLAYER;
     pbolt.attitude      = ATT_FRIENDLY;
     pbolt.thrower       = KILL_YOU_MISSILE;
-
+    pbolt.overshoot_prompt = false;
 
     // Init tracer variables.
     pbolt.friend_info.reset();
@@ -329,6 +329,9 @@ bool player_tracer(zap_type ztype, int power, bolt &pbolt, int range)
         you.turn_is_over = false;
         return false;
     }
+
+    if (pbolt.friendly_past_target)
+        pbolt.aimed_at_spot = true;
 
     // Set to non-tracing for actual firing.
     pbolt.is_tracer = false;
@@ -1284,8 +1287,13 @@ void bolt::do_fire()
         {
             if (cell_is_solid(pos()))
                 affect_wall();
-            if (actor_at(pos()))
+            const actor *victim = actor_at(pos());
+            if (victim
+                && !ignores_monster(victim->as_monster())
+                && (!is_tracer || agent()->can_see(*victim)))
+            {
                 finish_beam();
+            }
         }
         else if (!affects_nothing)
             affect_cell();
@@ -4261,6 +4269,15 @@ void bolt::handle_stop_attack_prompt(monster* mon)
         return;
     }
 
+    // If prompts for overshooting the target are disabled, instead
+    // just let the caller know that there was something there. They
+    // should be resposible and keep the player from shooting friends.
+    if (passed_target && !overshoot_prompt && you.can_see(*mon))
+    {
+        friendly_past_target = true;
+        return;
+    }
+
     bool prompted = false;
 
     if (stop_attack_prompt(mon, true, target, &prompted)
@@ -4706,7 +4723,7 @@ void bolt::knockback_actor(actor *act, int dam)
 
 void bolt::pull_actor(actor *act, int dam)
 {
-    if (!act || !can_pull(*act, dam))
+    if (!act || !can_pull(*act, dam) || act->resists_dislodge("being pulled"))
         return;
 
     // How far we'll try to pull the actor to make them adjacent to the source.
@@ -6813,12 +6830,8 @@ bool bolt::can_knockback(const actor &act, int dam) const
 */
 bool bolt::can_pull(const actor &act, int dam) const
 {
-    if (act.is_stationary()
-        || adjacent(source, act.pos())
-        || act.resists_dislodge("being pulled"))
-    {
+    if (act.is_stationary() || adjacent(source, act.pos()))
         return false;
-    }
 
     return origin_spell == SPELL_HARPOON_SHOT && dam;
 }
