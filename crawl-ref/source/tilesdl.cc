@@ -100,6 +100,12 @@ bool HiDPIState::update(int ndevice, int nlogical, int ngame_scale)
     nlogical = apply_game_scale(nlogical);
     // sanity check: should be impossible for this to happen without changing
     // code.
+    if (nlogical == 0)
+    {
+        mpr("HiDPIState::update(nlogical == 0)");
+        logical = device = 1;
+        return true;
+    }
     ASSERT(nlogical != 0);
     if (nlogical == ndevice)
         logical = device = 1;
