@@ -3643,6 +3643,11 @@ void game_options::read_option_line(const string &str, bool runscript)
                 sound_mapping entry;
                 entry.pattern = sub.substr(0, cpos);
                 entry.soundfile = sound_file_path + sub.substr(cpos + 1);
+# if defined(DCSS_IOS)
+                // under iOS one can't simply obtain stable uunchanging
+                // absolute path, so the crawl_dir is the best place for sounds
+                entry.soundfile = catpath(SysEnv.crawl_dir, entry.soundfile);
+# endif
                 if (key == "hold_sound")
                     entry.interrupt_game = true;
                 else

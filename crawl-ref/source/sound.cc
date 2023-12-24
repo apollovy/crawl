@@ -17,7 +17,7 @@
 #        define SND_NODEFAULT 0x0002
 #    endif
 #elif defined(USE_SDL)
-#    ifdef __ANDROID__
+#    if defined(__ANDROID__) || defined(DCSS_IOS)
 #        include <SDL_mixer.h>
 #    else
 #        include <SDL2/SDL_mixer.h>
