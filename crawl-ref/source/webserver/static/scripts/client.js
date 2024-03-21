@@ -1775,6 +1775,8 @@ function (exports, $, key_conversion, chat, comm) {
         return x > 0 ? x : -x;
     }
 
+    showCharacterStatsOnStatsPanelClick({root: document.getElementById('game'), comm});
+
     window.onmessage = function (ev)
     {
         const data = ev.data;
@@ -1803,3 +1805,19 @@ function (exports, $, key_conversion, chat, comm) {
 
     return exports;
 });
+
+const showCharacterStatsOnStatsPanelClick = ({ root, comm }) => {
+  console.debug("showCharacterStatsOnStatsPanelClick", { root, comm });
+  let observer = new MutationObserver(() => {
+    const stats = document.getElementById("stats");
+    if (stats !== null && stats.onclick === null) {
+      console.debug("showCharacterStatsOnStatsPanelClick/observer callback");
+      stats.onclick = () => comm.send_message("input", { text: "%" });
+      observer.disconnect();
+      observer = null;
+    }
+  });
+  observer.observe(root, {
+    childList: true,
+  });
+};
