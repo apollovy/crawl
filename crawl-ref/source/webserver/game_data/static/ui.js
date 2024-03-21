@@ -396,6 +396,47 @@ function ($, comm, client, options, focus_trap) {
                 options.get("tile_display_mode"));
     });
 
+    const onload = () => {
+        console.debug("onload");
+        showCharacterStatsOnStatsPanelClick({
+          root: document.getElementById("game"),
+          comm,
+        });
+        (function setGlobals({ container }) {
+          console.debug("setGlobals", { container });
+          const postMessage = (data) => {
+            const event = {
+              preventDefault: () => null,
+              isDefaultPrevented: () => false,
+              isPropagationStopped: () => false,
+              stopImmediatePropagation: () => null,
+              originalEvent: {},
+              ...data.value,
+            };
+            switch (data.name) {
+              case "handle_keydown":
+                return client.handle_keydown(event);
+              case "handle_keypress":
+                return client.handle_keypress(event);
+              case "text":
+                return comm.send_message("input", data.value);
+              default:
+                console.error("Unknown function: " + data.name);
+                return null;
+            }
+          };
+          container.escape = escapeFactory({ postMessage });
+          container.regularLetter = regularLetterFactory({ postMessage });
+          container.letterWithModificators = letterWithModificatorsFactory({
+            postMessage,
+          });
+          container.tab = tabFactory({ postMessage });
+          container.stab = stabFactory({ postMessage });
+          container.enter = enterFactory({ postMessage });
+        })({ container: window });
+        makeButtons();
+      };
+
     var has_received_ui_state = false;
     $(document).off("game_init.ui")
         .on("game_init.ui", function () {
@@ -412,6 +453,7 @@ function ($, comm, client, options, focus_trap) {
             .off("focusin.ui", "#chat_input")
             .on("focusin.ui", "#chat_input",  ui_chat_focus_handler);
         $(window).off("resize.ui").on("resize.ui", ui_resize_handler);
+        onload();
     });
 
     function sync_save_state(elem, state)
@@ -513,3 +555,125 @@ function ($, comm, client, options, focus_trap) {
         sync_focus_state: sync_focus_state,
     };
 });
+
+const showCharacterStatsOnStatsPanelClick = ({ root, comm }) => {
+  console.debug("showCharacterStatsOnStatsPanelClick", { root, comm });
+  let observer = new MutationObserver(() => {
+    const stats = document.getElementById("stats");
+    if (stats !== null && stats.onclick === null) {
+      console.debug("showCharacterStatsOnStatsPanelClick/observer callback");
+      stats.onclick = () => comm.send_message("input", { text: "%" });
+      observer.disconnect();
+      observer = null;
+    }
+  });
+  observer.observe(root, {
+    childList: true,
+  });
+};
+
+const buttonsFactory = ({ container, buttonConfigs }) => {
+  let buttonsCode = "";
+  for (const buttonConfig of buttonConfigs) {
+    buttonsCode += `<div class="button" onclick="${buttonConfig.onclick}">
+        <div class="button-text">${buttonConfig.text}</div>
+    </div>`;
+  }
+  container.innerHTML += buttonsCode;
+  // prevent empty space click-through
+  container.onclick = () => undefined;
+  buttonsCode = "";
+};
+
+const makeButtons = () => {
+  console.debug("makeButtons");
+  const simpleButtons = (text) =>
+    Array.from(text).map((letter) => ({
+      text: letter,
+      onclick: `regularLetter({letter: '${letter}'})`,
+    }));
+  // (function esc() {
+  //   buttonsFactory({
+  //     container: document.getElementById('esc'),
+  //     buttonConfigs: [
+  //       { text: 'ESC', onclick: 'escape()' },
+  //       {
+  //         text: 'C-X',
+  //         onclick: "letterWithModificators({letter: 'X', ctrlKey: 1})",
+  //       },
+  //       ...simpleButtons('!><'),
+  //     ],
+  //   });
+  // })();
+  // (function commonActions() {
+  //   buttonsFactory({
+  //     container: document.getElementById('common-actions'),
+  //     buttonConfigs: [
+  //       ...simpleButtons('o'),
+  //       { text: '&#8677;', onclick: 'tab()' },
+  //       { text: '&#8676;', onclick: 'stab()' },
+  //     ],
+  //   });
+  // })();
+  // (function gamepad() {
+  //   buttonsFactory({
+  //     container: document.getElementById('gamepad'),
+  //     buttonConfigs: simpleButtons('ykuh.lbjn'),
+  //   });
+  // })();
+  (function buttons() {
+    buttonsFactory({
+      container: document.getElementById("buttons"),
+      buttonConfigs: [
+        ...simpleButtons("zaX"),
+        { text: "&#9166;", onclick: "enter()" },
+        ...simpleButtons("iI?"),
+        ...simpleButtons("qwertyuiop[]\\asdfghjkl;'zxcvbnm,./"),
+        ...simpleButtons('QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>?'),
+      ],
+    });
+  })();
+};
+
+const regularLetterFactory = ({ postMessage }) => {
+  return ({ letter }) => {
+    postMessage({
+      name: "handle_keypress",
+      value: { which: letter.charCodeAt(0) },
+    });
+  };
+};
+const letterWithModificatorsFactory = ({ postMessage }) => {
+  return ({ letter, ...args }) => {
+    postMessage({
+      name: "handle_keydown",
+      value: { which: letter.charCodeAt(0), ...args },
+    });
+  };
+};
+const escapeFactory = ({ postMessage }) => {
+  return () => {
+    postMessage({ name: "handle_keydown", value: { which: 27 } });
+  };
+};
+const tabFactory = ({ postMessage }) => {
+  return () => {
+    postMessage({ name: "handle_keydown", value: { which: 9 } });
+  };
+};
+const stabFactory = ({ postMessage }) => {
+  return () => {
+    postMessage({
+      name: "handle_keydown",
+      value: { which: 9, shiftKey: true },
+    });
+  };
+};
+const enterFactory = ({ postMessage }) => {
+  return () => {
+    postMessage({
+      name: "text",
+      value: { text: "\r" },
+    });
+  };
+};

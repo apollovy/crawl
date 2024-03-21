@@ -256,6 +256,7 @@ function (exports, $, key_conversion, chat, comm) {
         else
             send_message("input", { text: s });
     }
+    exports.handle_keypress = handle_keypress;
 
     function send_keycode(code)
     {
@@ -444,6 +445,7 @@ function (exports, $, key_conversion, chat, comm) {
             //    log("Unhandled key: " + e.which + ", " + code);
         }
     }
+    exports.handle_keydown = handle_keydown;
 
     function start_login()
     {
@@ -1775,49 +1777,5 @@ function (exports, $, key_conversion, chat, comm) {
         return x > 0 ? x : -x;
     }
 
-    showCharacterStatsOnStatsPanelClick({root: document.getElementById('game'), comm});
-
-    window.onmessage = function (ev)
-    {
-        const data = ev.data;
-        const event = {
-            preventDefault: () => null,
-            isDefaultPrevented: () => false,
-            isPropagationStopped: () => false,
-            stopImmediatePropagation: () => null,
-            originalEvent: {},
-            ...data.value
-        };
-        switch (data.name) {
-            case "handle_keydown":
-                return handle_keydown(event);
-            case "handle_keypress":
-                return handle_keypress(event);
-            case "text":
-                return comm.send_message("input", data.value);
-            case "eval":
-                return eval(data.value)
-            default:
-                console.error("Unknown function: " + data.name);
-                return null;
-        }
-    };
-
     return exports;
 });
-
-const showCharacterStatsOnStatsPanelClick = ({ root, comm }) => {
-  console.debug("showCharacterStatsOnStatsPanelClick", { root, comm });
-  let observer = new MutationObserver(() => {
-    const stats = document.getElementById("stats");
-    if (stats !== null && stats.onclick === null) {
-      console.debug("showCharacterStatsOnStatsPanelClick/observer callback");
-      stats.onclick = () => comm.send_message("input", { text: "%" });
-      observer.disconnect();
-      observer = null;
-    }
-  });
-  observer.observe(root, {
-    childList: true,
-  });
-};
