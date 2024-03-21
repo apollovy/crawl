@@ -432,3 +432,50 @@ a:hover {
 #minimap, #minimap_overlay {
     position: absolute;
 }
+
+.buttons {
+    --button-height: 64px;
+    --button-width: 64px;
+    --buttons-gap: 4px;
+    --buttons-width: calc(var(--button-width) * var(--buttons-per-row) + var(--buttons-gap) * (var(--buttons-per-row) - 1));
+    --buttons-z-index: 100;
+
+    align-content: baseline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--buttons-gap);
+    position: absolute;
+    width: var(--buttons-width);
+    z-index: var(--buttons-z-index);
+}
+
+#buttons {
+  --buttons-per-row: 6;
+
+  height: 140px;
+  overflow: scroll;
+  position: relative;
+  scrollbar-width: none;
+  z-index: 0;
+}
+
+.button {
+  align-items: center;
+  background: #0f2809;
+  border: 1px #255016 solid;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: column;
+  height: var(--button-height);
+  justify-content: center;
+  width: var(--button-width);
+}
+
+.button-text {
+  text-align: center;
+  color: #f4e669;
+  font-size: calc(var(--button-width) / 2);
+  font-family: Inter;
+  font-weight: 400;
+}
