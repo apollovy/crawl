@@ -479,3 +479,10 @@ a:hover {
   font-family: Inter;
   font-weight: 400;
 }
+
+#mobile-gamepad {
+  --buttons-per-row: 3;
+
+  left: 0px;
+  top: 376px;
+}

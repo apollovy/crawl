@@ -457,12 +457,12 @@ function ($, comm, client, options, focus_trap) {
       //     ],
       //   });
       // })();
-      // (function gamepad() {
-      //   buttonsFactory({
-      //     container: document.getElementById('gamepad'),
-      //     buttonConfigs: simpleButtons('ykuh.lbjn'),
-      //   });
-      // })();
+      (function gamepad() {
+        buttonsFactory({
+          container: document.getElementById('mobile-gamepad'),
+          buttonConfigs: simpleButtons('ykuh.lbjn'),
+        });
+      })();
       (function buttons() {
         buttonsFactory({
           container: document.getElementById("mobile-buttons"),
