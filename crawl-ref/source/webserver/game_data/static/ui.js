@@ -434,29 +434,29 @@ function ($, comm, client, options, focus_trap) {
           text: letter,
           onclick: `regularLetter({letter: '${letter}'})`,
         }));
-      // (function esc() {
-      //   buttonsFactory({
-      //     container: document.getElementById('esc'),
-      //     buttonConfigs: [
-      //       { text: 'ESC', onclick: 'escape()' },
-      //       {
-      //         text: 'C-X',
-      //         onclick: "letterWithModificators({letter: 'X', ctrlKey: 1})",
-      //       },
-      //       ...simpleButtons('!><'),
-      //     ],
-      //   });
-      // })();
-      // (function commonActions() {
-      //   buttonsFactory({
-      //     container: document.getElementById('common-actions'),
-      //     buttonConfigs: [
-      //       ...simpleButtons('o'),
-      //       { text: '&#8677;', onclick: 'tab()' },
-      //       { text: '&#8676;', onclick: 'stab()' },
-      //     ],
-      //   });
-      // })();
+      (function esc() {
+        buttonsFactory({
+          container: document.getElementById('mobile-esc'),
+          buttonConfigs: [
+            { text: 'ESC', onclick: 'escape()' },
+            {
+              text: 'C-X',
+              onclick: "letterWithModificators({letter: 'X', ctrlKey: 1})",
+            },
+            ...simpleButtons('!><'),
+          ],
+        });
+      })();
+      (function commonActions() {
+        buttonsFactory({
+          container: document.getElementById('mobile-common-actions'),
+          buttonConfigs: [
+            ...simpleButtons('o'),
+            { text: '&#8677;', onclick: 'tab()' },
+            { text: '&#8676;', onclick: 'stab()' },
+          ],
+        });
+      })();
       (function gamepad() {
         buttonsFactory({
           container: document.getElementById('mobile-gamepad'),

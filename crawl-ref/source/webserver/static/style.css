@@ -438,7 +438,6 @@ a:hover {
     --button-width: 64px;
     --buttons-gap: 4px;
     --buttons-width: calc(var(--button-width) * var(--buttons-per-row) + var(--buttons-gap) * (var(--buttons-per-row) - 1));
-    --buttons-z-index: 100;
 
     align-content: baseline;
     display: flex;
@@ -447,7 +446,6 @@ a:hover {
     gap: var(--buttons-gap);
     position: absolute;
     width: var(--buttons-width);
-    z-index: var(--buttons-z-index);
 }
 
 #mobile-buttons {
@@ -457,7 +455,6 @@ a:hover {
   overflow: scroll;
   position: relative;
   scrollbar-width: none;
-  z-index: 0;
 }
 
 .mobile-button {
@@ -485,4 +482,20 @@ a:hover {
 
   left: 0px;
   top: 376px;
+}
+
+#mobile-common-actions {
+  --buttons-per-row: 1;
+
+  left: 0px;
+  top: 40px;
+}
+
+#mobile-esc {
+  --buttons-per-row: 1;
+
+  right: 0px;
+  top: 40px;
+
+  z-index: 100;
 }
