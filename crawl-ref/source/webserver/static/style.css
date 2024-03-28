@@ -499,3 +499,7 @@ a:hover {
 
   z-index: 100;
 }
+
+#remove_account {
+  color: darkred;
+}
