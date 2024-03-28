@@ -519,6 +519,7 @@ function (exports, $, key_conversion, chat, comm) {
         $('#chem_link').show();
         $('#chpw_link').show();
         $("#logout_link").show();
+        $("#remove_account").show();
 
         chat.reset_visibility(true);
         $("#chat_input").show();
@@ -573,6 +574,7 @@ function (exports, $, key_conversion, chat, comm) {
         $('#chem_link').hide();
         $('#chpw_link').hide();
         $("#logout_link").hide();
+        $("#remove_account").hide();
         $("#account_restricted").hide();
         $("#play_now").html("");
 
@@ -1537,6 +1539,13 @@ function (exports, $, key_conversion, chat, comm) {
         $(document).on("keydown.client", handle_keydown);
     }
 
+    function remove_account() {
+      if (confirm("Are you sure you want to remove your account?")) {
+        send_message("remove_account");
+        logout();
+      }
+    }
+
     // Global functions for backwards compatibility (HACK)
     window.log = log;
     window.set_layer = set_layer;
@@ -1622,6 +1631,7 @@ function (exports, $, key_conversion, chat, comm) {
 
         $("#login_form").bind("submit", login);
         $("#logout_link").bind("click", logout);
+        $("#remove_account").bind("click", remove_account);
         $("#chat_login_link").bind("click", chat_login);
 
         $("#reg_link").bind("click", start_register);
