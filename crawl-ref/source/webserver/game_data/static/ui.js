@@ -417,8 +417,8 @@ function ($, comm, client, options, focus_trap) {
     const buttonsFactory = ({ container, buttonConfigs }) => {
       let buttonsCode = "";
       for (const buttonConfig of buttonConfigs) {
-        buttonsCode += `<div class="button" onclick="${buttonConfig.onclick}">
-        <div class="button-text">${buttonConfig.text}</div>
+        buttonsCode += `<div class="mobile-button" onclick="${buttonConfig.onclick}">
+        <div class="mobile-button-text">${buttonConfig.text}</div>
     </div>`;
       }
       container.innerHTML += buttonsCode;
@@ -465,7 +465,7 @@ function ($, comm, client, options, focus_trap) {
       // })();
       (function buttons() {
         buttonsFactory({
-          container: document.getElementById("buttons"),
+          container: document.getElementById("mobile-buttons"),
           buttonConfigs: [
             ...simpleButtons("zaX"),
             { text: "&#9166;", onclick: "enter()" },

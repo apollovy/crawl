@@ -433,7 +433,7 @@ a:hover {
     position: absolute;
 }
 
-.buttons {
+.mobile-buttons {
     --button-height: 64px;
     --button-width: 64px;
     --buttons-gap: 4px;
@@ -450,7 +450,7 @@ a:hover {
     z-index: var(--buttons-z-index);
 }
 
-#buttons {
+#mobile-buttons {
   --buttons-per-row: 6;
 
   height: 140px;
@@ -460,7 +460,7 @@ a:hover {
   z-index: 0;
 }
 
-.button {
+.mobile-button {
   align-items: center;
   background: #0f2809;
   border: 1px #255016 solid;
@@ -472,7 +472,7 @@ a:hover {
   width: var(--button-width);
 }
 
-.button-text {
+.mobile-button-text {
   text-align: center;
   color: #f4e669;
   font-size: calc(var(--button-width) / 2);
