@@ -1741,13 +1741,13 @@ function (exports, $, key_conversion, chat, comm) {
                 enqueue_messages(msg.data);
             };
 
+            const reloadCode = "<button onclick='window.location.reload();'>Reload</button>";
             socket.onerror = function ()
             {
                 if (!showing_close_message)
                 {
                     set_layer("crt");
-                    $("#crt").html("");
-                    $("#crt").append("The WebSocket connection failed.<br>");
+                    $("#crt").html(`The WebSocket connection failed.<br>${reloadCode}<br>`);
                     showing_close_message = true;
                 }
             };
@@ -1757,8 +1757,7 @@ function (exports, $, key_conversion, chat, comm) {
                 if (!showing_close_message)
                 {
                     set_layer("crt");
-                    $("#crt").html("");
-                    $("#crt").append("The Websocket connection was closed.<br>");
+                    $("#crt").html(`The Websocket connection was closed.<br>${reloadCode}<br>`);
                     if (ev.reason)
                     {
                         $("#crt").append("Reason:<br>" + ev.reason + "<br>");
