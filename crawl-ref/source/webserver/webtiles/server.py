@@ -191,11 +191,17 @@ def reload_signal_handler(signum, frame):
         logging.error("Incompatible Tornado version")
 
 
+class CachingHandler(tornado.web.StaticFileHandler):
+    def set_extra_headers(self, path: str):
+        self.set_header("Cache-Control", "no-cache")
+
+
 def bind_server():
     settings = {
         "static_path": config.get('static_path'),
         "template_loader": util.DynamicTemplateLoader.get(config.get('template_path')),
         "debug": bool(config.get('development_mode', False)),
+        "static_handler_class": CachingHandler,
         }
 
     if config.get('no_cache', False):
