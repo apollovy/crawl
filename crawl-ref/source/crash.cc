@@ -11,7 +11,7 @@
 #include <unistd.h>
 #include <sys/param.h>
 #ifndef __HAIKU__
-        #define BACKTRACE_SUPPORTED
+        // #define BACKTRACE_SUPPORTED
 #endif
 #endif
 

@@ -13,7 +13,7 @@
 # include <android/log.h>
 # include <SDL_mixer.h>
 #else
-# ifdef TARGET_COMPILER_VC
+# if defined(TARGET_COMPILER_VC) || defined(EMSCRIPTEN)
 #  include <SDL.h>
 # else
 #  include <SDL2/SDL.h>
@@ -513,12 +513,8 @@ int SDLWrapper::init(coord_def *m_windowsz)
 
     SDL_SetHint(SDL_HINT_VIDEO_HIGHDPI_DISABLED, "0");
 
-#ifdef USE_GLES
-    unsigned int flags = SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI;
-#else
     unsigned int flags = SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE
                          | SDL_WINDOW_ALLOW_HIGHDPI;
-#endif
 
     bool too_small = (_desktop_width < 1024 || _desktop_height < 800);
     if (Options.tile_full_screen == SCREENMODE_FULL

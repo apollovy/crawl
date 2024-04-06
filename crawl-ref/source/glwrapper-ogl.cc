@@ -13,8 +13,8 @@
 #  ifdef __ANDROID__
 #   include <SDL.h>
 #  else
-#   include <SDL2/SDL.h>
-#   include <SDL_gles.h>
+#   include <SDL.h>
+#   include <SDL_opengles2.h>
 #  endif
 #  include <GLES/gl.h>
 # else
@@ -325,11 +325,11 @@ void OGLStateManager::reset_view_for_resize(const coord_def &m_windowsz,
 
     // For ease, vertex positions are pixel positions.
 #ifdef USE_GLES
-# ifdef __ANDROID__
+// # ifdef __ANDROID__
     glOrthof(0, m_windowsz.x, m_windowsz.y, 0, -1000, 1000);
-# else
-    glOrthox(0, m_windowsz.x, m_windowsz.y, 0, -1000, 1000);
-# endif
+// # else
+//     glOrthox(0, m_windowsz.x, m_windowsz.y, 0, -1000, 1000);
+// # endif
 #else
     glOrtho(0, m_windowsz.x, m_windowsz.y, 0, -1000, 1000);
 #endif
@@ -365,17 +365,17 @@ void OGLStateManager::load_texture(unsigned char *pixels, unsigned int width,
                                    int xoffset, int yoffset)
 {
     // Assumptions...
-#ifdef __ANDROID__
+// #ifdef __ANDROID__
     const GLenum bpp = GL_RGBA;
-#else
-    const unsigned int bpp = 4;
-#endif
+// #else
+//     const unsigned int bpp = 4;
+// #endif
     const GLenum texture_format = GL_RGBA;
     const GLenum format = GL_UNSIGNED_BYTE;
     // Also assume that the texture is already bound using bind_texture
 
-    glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-    glDebug("glTexEnvf");
+    // glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+    // glDebug("glTexEnvf");
 
 #ifdef GL_CLAMP
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
