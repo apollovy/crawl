@@ -12,7 +12,7 @@
 	url = https://github.com/crawl/crawl-pcre.git
 [submodule "crawl-ref/source/contrib/freetype"]
 	path = crawl-ref/source/contrib/freetype
-	url = https://github.com/crawl/crawl-freetype.git
+	url = https://github.com/apollovy/freetype2-ios.git
 [submodule "crawl-ref/source/contrib/libpng"]
 	path = crawl-ref/source/contrib/libpng
 	url = https://github.com/crawl/crawl-libpng.git
